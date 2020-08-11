@@ -1,0 +1,36 @@
+<div class="inwave-domain-check home-domain-check style1">
+	<form method="post" action="{$action_url}">
+		<div class="domain-check-inner">
+			<div class="input-search-box">
+				<div class="search-input">
+					<div class="left-col theme-bg">
+						<input type="text" name="domain">
+						{*
+						{if !empty($combo_data.rows)}
+						<div class="list-domain-radio">
+							<ul class="domain-list">
+								{foreach from=$combo_data.rows item=whmp}
+								<li>
+									<input name="tld" type="radio" value="{$whmp.extension}">
+								</li>
+								{/foreach}
+							</ul>
+							<div class="output-error-msg theme-color" style="display: none;"></div>
+						</div>
+						{/if}
+						*}
+					</div>
+					<div class="right-col">
+						<a class="theme-bg ibutton ibutton1 ibutton-large" href="#"><span
+							data-hover="Search">Search</span></a>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+			<div class="output-search-box">
+				<div class="list-domain-checked">
+				</div>
+			</div>
+		</div>
+	</form>
+</div>

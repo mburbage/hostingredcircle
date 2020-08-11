@@ -1,0 +1,275 @@
+@import "jquery-ui.css";
+
+/*! Plugin Styling      */
+.wpct_clear-fix {
+	&:before, &:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+#wpct_admin_logo {
+	background-image: url(../images/whitelogo189.png);
+	background-color: #32373c;
+}
+
+/*!*****************************************/
+/*!*         Grid System Styling          **/
+/*!*****************************************/
+.wpct_admin_row {
+	margin-left: -15px;
+	margin-right: -15px;
+	* {
+		box-sizing: border-box;
+	}
+	&:before, &:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+	.wpct_admin_pull_left {
+		float: left;
+	}
+	.wpct_admin_pull_right {
+		float: right;
+	}
+	[class^="wpct_admin_column"] {
+		padding: 15px;
+		min-height: 16px;
+	}
+	
+	@media only screen and (min-width: 769px) {
+		[class^="wpct_admin_column"] {
+			float: left;
+		}
+		
+		.wpct_admin_column-1 {
+			width: (100% / 12);
+		}
+		
+		.wpct_admin_column-2 {
+			width: (100% / 6);
+		}
+		
+		.wpct_admin_column-3 {
+			width: (100% / 4);
+		}
+		
+		.wpct_admin_column-4 {
+			width: (100% / 3);
+		}
+		
+		.wpct_admin_column-5 {
+			width: (100% / (12 / 5));
+		}
+		
+		.wpct_admin_column-6 {
+			width: (100% / 2);
+		}
+		
+		.wpct_admin_column-7 {
+			width: (100% / (12 / 7));
+		}
+		
+		.wpct_admin_column-8 {
+			width: (100% / (12 / 8));
+		}
+		
+		.wpct_admin_column-9 {
+			width: (100% / (12 / 9));
+		}
+		
+		.wpct_admin_column-10 {
+			width: (100% / (12 / 10));
+		}
+		
+		.wpct_admin_column-11 {
+			width: (100% / (12 / 11));
+		}
+		
+		.wpct_admin_column-12 {
+			width: 100%;
+		}
+	}
+}
+
+/******************************************/
+/**         Admin Page Styling           **/
+/******************************************/
+
+@bgPrimary: #0085ba;
+.wpct_admin_page {
+	font-size: 16px;
+	line-height: 1.4;
+	textarea {
+		width: 100%;
+		display: block;
+	}
+	.dashicons {
+		font-size: inherit;
+		line-height: inherit;
+		height: auto;
+	}
+	.wpct_admin_page_title {
+		position: relative;
+		padding: 15px 15px 15px 100px;
+		border: 2px solid #32373c;
+		margin-bottom: 20px;
+		> h2 {
+			margin: 0 0 15px;
+		}
+		> p {
+			
+		}
+		> span.wpct_admin_logo {
+			background: #32373c url('../images/whitelogo189.png') center center / 50px 50px no-repeat;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			height: 70px;
+			overflow: hidden;
+			width: 90px;
+			margin-top: -35px;
+		}
+		&:before {
+			position: absolute;
+			content: '';
+			left: 0;
+			width: 90px;
+			top: 0;
+			bottom: 0;
+			background: #32373c;
+		}
+	}
+	img {
+		max-width: 100%;
+	}
+}
+
+.button {
+	&.button-block {
+		display: block;
+		margin-bottom: 15px;
+	}
+	&.button-big {
+		padding: 12px 36px;
+		height: auto;
+		font-size: 18px;
+	}
+}
+
+.wpct_admin_text_center {
+	text-align: center;
+}
+
+.wpct_admin_feature_list {
+	margin: 0 0 20px;
+	padding: 0;
+	list-style: none;
+	li {
+		margin: 0 0 5px;
+		padding: 0 10px 5px;
+		position: relative;
+		&.has_icon {
+			padding-left: 50px;
+			.lnr {
+				font-size: 30px;
+				line-height: 30px;
+				position: absolute;
+				height: 30px;
+				width: 30px;
+				text-align: center;
+				top: 50%;
+				left: 10px;
+				margin-top: -20px;
+			}
+		}
+	}
+}
+
+.wpct_admin_card {
+	border: 1px solid #ddd;
+	background: white;
+	h3, h4, p {
+		margin: 0;
+	}
+	.wpct_card_heading {
+		border-bottom: 1px solid #ddd;
+		padding: 10px;
+		h3 {
+			font-size: 18px;
+			line-height: 1.4;
+		}
+	}
+	.wpct_card_body {
+		padding: 10px;
+		height: 250px;
+		overflow-y: auto;
+	}
+	.wpct_admin_feature_list {
+		margin-left: -10px;
+	}
+}
+
+.wpct_dialog {
+	max-width: 640px;
+	width: 90%;
+	background: white;
+	padding: 15px;
+	textarea {
+		width: 100%;
+		display: block;
+		margin-bottom: 30px;
+		min-height: 350px;
+	}
+	.ui-dialog-titlebar {
+		background: 0;
+		border: 0;
+		&:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+	}
+	.ui-dialog-titlebar-close {
+		float: right;
+	}
+}
+
+.wpct_admin_pretty_table {
+	width: 100% !important;
+	overflow-x: auto;
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+	margin: 0 0 60px;
+	tr {
+		border: 1px solid #ddd;
+		td, th {
+			padding: 10px;
+			border: 1px solid #ddd;
+		}
+		&:hover {
+			background: lighten(slategrey, 30%);
+		}
+		&.active {
+			background: lighten(slategrey, 20%);
+		}
+		&.table-heading1 {
+			background: transparent;
+			th {
+				border-color: transparent;
+			}
+		}
+		&.table-heading2 {
+			background: #32373c;
+			color: white;
+			border-bottom-color: #32373c;
+		}
+		&.table-heading3 {
+			background: darkslategrey;
+			color: whitesmoke;
+			border-bottom-color: darkslategray;
+		}
+	}
+}

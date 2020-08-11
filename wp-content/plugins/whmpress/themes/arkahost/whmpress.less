@@ -1,0 +1,112 @@
+/***************************************************************/
+/*-------------------WHMPress Styles overrides-----------------*/
+/***************************************************************/
+.whmpress {
+	button,
+	a.whmpress-btn,
+	a.buy-button,
+	a.www-button,
+	a.whois-button,
+	input[type="submit"] {
+		background: #86C724;
+		color: #ffffff;
+		&:hover {
+			background: #ffffff;
+			color: #86C724;
+		}
+	}
+}
+
+.whmp_domain_search_ajax_results {
+	h3 {
+		text-align: center;
+		line-height: 4;
+		margin-bottom: -20px;
+	}
+	.whmp_found_title,
+	.whmp_not_found_title,
+	.whmp_found_result,
+	.whmp_not_found_result {
+		background: none;
+		border: 1px solid #42454A;
+		border-radius: 0;
+		margin-top: -1px;
+		color: #42454A;
+		margin-bottom: 0;
+		border-collapse: collapse;
+		.whmp_search_ajax_buttons a {
+			background: #42454A;
+			border: 0;
+			border-radius: 4px;
+			&:hover {
+				background: #FD4326;
+			}
+		}
+	}
+}
+
+/*********************************************************
+*******************Domain Search Ajax*********************
+*********************************************************/
+/*Ajax Form*/
+.whmpress_domain_search_ajax form input {
+	border-right: 2px solid rgb(230, 230, 230);
+}
+
+.whmpress_domain_search_ajax form button {
+	color: #fff;
+}
+
+.whmpress_domain_search_ajax form button:hover {
+	color: #fff;
+}
+
+/*Ajax Search Results*/
+.whmp_found_title,
+.whmp_not_found_title {
+	border: 2px solid #72757a;
+	border-top-width: 6px;
+	background: #fff;
+	color: #42454a;
+}
+
+.whmp_found_result,
+.whmp_not_found_result {
+	margin-bottom: 0;
+	border-radius: 0;
+	border: 3px solid #72757a;
+	background: #fff;
+	border-top: 0;
+	color: #42454a;
+}
+
+.whmp_not_found_result:first-child,
+.whmp_found_result:first-child {
+	border-top: 3px solid #72757a;
+}
+
+.whmp_found_title .whmp_search_ajax_buttons a,
+.whmp_found_result .whmp_search_ajax_buttons a,
+.whmpress_domain_search_ajax_results .result-div button {
+	background: #42454a;
+	border-color: #42454a;
+	color: #fff;
+}
+
+.whmp_found_title .whmp_search_ajax_buttons a:hover,
+.whmp_found_result .whmp_search_ajax_buttons a:hover,
+.whmpress_domain_search_ajax_results .result-div button:hover {
+	background: #fd4326;
+	border-color: #fd4326;
+	color: #fff;
+}
+
+.whmp_not_found_title .whmp_search_ajax_buttons a,
+.whmp_not_found_result .whmp_search_ajax_buttons a,
+.whmp_not_found_title .whmp_search_ajax_buttons a:hover,
+.whmp_not_found_result .whmp_search_ajax_buttons a:hover {
+	background: none;
+	border: 0;
+	color: #fd4326;
+	font-weight: 500;
+}

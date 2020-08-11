@@ -1,0 +1,3 @@
+param_name,heading,description,type,value,group
+featured,Featured Product,Select if the product is featured product or not,dropdown,"['normal','featured']",whmpress
+promo_text,Promo Text,Promo Text to Display,textfield,Value,whmpress

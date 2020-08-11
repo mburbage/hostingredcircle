@@ -1,0 +1,12 @@
+.icon-st {
+  background-image: url(images/logo-OT.png) !important;
+}
+.rAds img,
+.redux-dev-qtip {
+  display: none!important;
+}
+#input_blog_layout label,
+#input_post_layout label{
+	margin: 10px;
+}
+/*# sourceMappingURL=admin-style.css.map */

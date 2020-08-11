@@ -1,0 +1,230 @@
+/*--------------------------------------------------------------
+Pricing Matrix Styling
+--------------------------------------------------------------*/
+.wpct_comparison_matrix {
+	box-sizing: border-box;
+	*, *:before, *:after { box-sizing: border-box}
+	font-family: 'Roboto', sans-serif;
+	table {
+		width: 100%;
+		overflow: auto;
+		border-collapse: collapse;
+		th, td {
+			text-align: center;
+			width: 10%;
+		}
+		td {
+			border: 1px solid #D9D9D9;
+			padding: 20px 8px 15px;
+			background: #f3f3f3;
+			font-weight: 400;
+			color: #252525;
+			text-transform: uppercase;
+		}
+	}
+	.wpct_group_title th {
+		background: #42454a;
+		color: #fff;
+		font-size: 18px;
+		padding: 17px;
+	}
+	.wpct_description_titles td {
+		text-transform: uppercase;
+		background: #ccc;
+		font-size: 12px;
+		padding: 8px;
+	}
+	.wpct_plan_title {
+		span {
+			display: block;
+			&.wpct_plan_title_name {
+				font-weight: bold;
+			}
+		}
+	}
+	.wpct_unit, .wpct_amount {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	.wpct_compare_unit {
+		font-weight: 300;
+		text-transform: lowercase;
+		display: block;
+	}
+	.wpct_button {
+		.wpct_submit-button {
+			border-radius: 3px;
+			background: #fd4326;
+			padding: 0 15px;
+			line-height: 38px;
+			text-transform: uppercase;
+			color: #fff;
+			font-size: 11px;
+			letter-spacing: 1px;
+			display: inline-block;
+			text-decoration: none;
+			border: 1px solid #fd4326;
+			transition: all .5s ease-in-out;
+			&:hover {
+				background: white;
+				color: #FD4326;
+			}
+		}
+	}
+	@media only screen and (max-width: 768px) {
+		table, tbody, tbody tr, td {
+			display: block;
+			height: auto;
+			width: 100%;
+			td {
+				width: 100%;
+			}
+		}
+		table thead {
+			display: none;
+		}
+		tr {
+			border: 1px solid #ccc;
+		}
+		td {
+			border: none;
+			border-bottom: 1px solid #eee;
+		}
+		td[data-title] {
+			text-align: left;
+		}
+		td[data-title]:before {
+			content: attr(data-title) ": ";
+			display: inline-block;
+			font-weight: bold;
+			width: 45%;
+		}
+		td:not([data-title]) {
+			text-align: center;
+		}
+	}
+
+	&.matrix-01 {
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 18px;
+		color: #303030;
+		table {
+			td {
+				padding: 8px;
+				background: white;
+			}
+		}
+		.wpct_group_title {
+			th {
+				background: #e6e6e6;
+				font-size: 11px;
+				line-height: 14px;
+				font-weight: normal;
+				text-transform: uppercase;
+				padding: 8px;
+				color: #303030;
+			}
+		}
+		.wpct_description_titles {
+			td {
+				background: white;
+			}
+		}
+		.wpct_plan_title {
+			text-align: left;
+			padding-left: 40px;
+			position: relative;
+			overflow: hidden;
+			span {
+				display: block;
+				&.wpct_plan_title_name {
+					font-weight: normal;
+				}
+			}
+			.wpct_ribbon_text {
+				position: absolute;
+				width: 100px;
+				height: 14px;
+				background: #da2727;
+				color: white;
+				transform: rotate(-45deg);
+				top: 10px;
+				left: -35px;
+				text-align: center;
+				font-size: 12px;
+				line-height: 14px;
+			}
+			@media only screen and (max-width: 640px) {
+				text-align: center;
+				padding: 8px;
+			}
+		}
+		.wpct_amount {
+			font-size: inherit;
+			line-height: inherit;
+		}
+		.wpct_compare_unit {
+			text-transform: none;
+		}
+		.wpct_button .wpct_submit-button {
+			font-size: 14px;
+			line-height: 18px;
+			background: white;
+			color: #303030;
+			border-radius: 0;
+			border: 1px solid #303030;
+			padding: 4px 8px;
+			transition: all 0.3s linear;
+			&:hover {
+				background: #da2727;
+				color: white;
+				border-color: #da2727;
+			}
+		}
+	}
+	&.webreplex_matrix {
+		font-size: 13px;
+		line-height: 19px;
+		table {
+			border: 1px solid #ddd;
+			border-collapse: collapse;
+			tr {
+				border-bottom: 1px solid #ddd;
+				background: #F2F2F2;
+				&:nth-child(even) {
+					background: white;
+				}
+				td {
+					background: 0;
+					border: 0;
+					padding: 5px 10px;
+				}
+			}
+		}
+		.wpct_description_titles {
+			th {
+				background: #00ace8;
+				color: white;
+				font-weight: bold;
+				vertical-align: middle;
+				height: 60px;
+			}
+		}
+		.wpct_group_price {
+		}
+		.wpct_button {
+			.wpct_submit-button {
+				background: #00ace8;
+				border-radius: 0;
+				color: white;
+				border: 0;
+				&:hover {
+					background: darken(#00ace8, 10%);
+					color: white;
+				}
+			}
+		}
+	}
+}
+

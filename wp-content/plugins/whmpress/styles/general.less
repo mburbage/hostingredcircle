@@ -1,0 +1,1275 @@
+/***********************************************************
+/***********************************************************
+	General Styles Common for all themes
+***********************************************************/
+/***********************************************************
+      Section: Definitions
+***********************************************************/
+@textColor: #333;
+@borderRadius: 4px;
+@baseColor: #fb4400;
+@btnBg: @baseColor;
+@btnBgHvr: darken(@btnBg, 10%);
+
+.whmpBoxShadow {
+	box-shadow: 0 0 0 4px #eee inset, 0 0 0 5px #ddd inset;
+	border: 6px solid transparent;
+	border-radius: (@borderRadius * 5);
+}
+
+.whmpInputStyles {
+	outline: 0;
+	padding: 8px 10px;
+	border-radius: @borderRadius;
+	border: 2px solid #ddd;
+}
+
+.whmpBtnStyles {
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: @borderRadius;
+	text-align: center;
+	height: auto;
+	background: @btnBg;
+	transition: background .5s ease-in-out;
+	display: inline-block;
+
+	&:visited, &:hover, &:active {
+		color: #fff;
+	}
+	&:hover {
+		background: @btnBgHvr;
+	}
+}
+
+/***********************************************************
+      Section: General Styling
+***********************************************************/
+.whmpress {
+	color: @textColor;
+	max-width: 100%;
+	font-size: 16px;
+	line-height: 1.4;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+	*, *:before, *:after, input[type="search"] {
+		box-sizing: border-box;
+	}
+	
+	a {
+		cursor: pointer;
+		color: @btnBg;
+		text-decoration: none;
+		&:hover {
+			color: @btnBgHvr
+		}
+	}
+	
+	ul, ol {
+		&, li {
+			margin: 0;
+			padding: 0;
+		}
+	}
+	
+	ul {
+		&, li {
+			list-style: none;
+		}
+	}
+	
+	button,
+	a.whmpress-btn,
+	a.buy-button,
+	a.www-button,
+	a.whois-button,
+	a.whmpress_order_button,
+	input[type="submit"] {
+		.whmpBtnStyles;
+	}
+	
+	input[type="radio"], input[type="checkbox"] {
+		vertical-align: middle;
+		margin: 0;
+	}
+	
+	input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]), select, textarea {
+		.whmpInputStyles;
+	}
+	
+	input[type="search"] {
+		-webkit-appearance: textfield;
+	}
+	
+}
+
+/***********************************************************
+      Section: WHMPress Tooltip
+***********************************************************/
+.whmpress_has_tooltip {
+	cursor: help;
+	z-index: 99;
+	-webkit-transform: translateZ(0); /* webkit flicker fix */
+	-webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+	
+	.whmpress_tooltip {
+		background: orange;
+		top: 0;
+		right: -100%;
+		color: #fff;
+		display: block;
+		margin-bottom: 15px;
+		opacity: 0;
+		padding: 20px;
+		pointer-events: none;
+		position: absolute;
+		width: 100%;
+		transform: translateX(10px);
+		transition: all .25s ease-out;
+		box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+		&:before {
+			content: " ";
+			display: block;
+			width: 40px;
+			left: -40px;
+			top: 0;
+			bottom: 0;
+			position: absolute;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 10px 20px 10px;
+			border-color: transparent orange transparent transparent;
+			left: -40px;
+			top: 10px;
+		}
+	}
+	&:hover {
+		.whmpress_tooltip {
+			opacity: 1;
+			pointer-events: auto;
+			transform: translateX(0px);
+		}
+	}
+}
+/* IE can just show/hide with no transition */
+.lte8 .wrapper .whmpress_tooltip {
+	display: none;
+}
+.lte8 .wpct_has_tooltip:hover .whmpress_tooltip {
+	display: block;
+}
+/***********************************************************
+      Section: WHMPress Order Button
+***********************************************************/
+
+.whmpress_order_button {
+	.whmpBtnStyles;
+}
+
+/***********************************************************
+      Section: WHMP Drop-Down
+***********************************************************/
+.whmp_dropdown_outer {
+	position: relative;
+	.whmp_dropdown_toggle {
+		cursor: pointer;
+	}
+	.whmp_dropdown_inner {
+		display: none;
+	}
+	&.active {
+		.whmp_dropdown_inner {
+			display: block;
+		}
+	}
+}
+
+/***********************************************************
+      Section: WHMPress Order Combo
+***********************************************************/
+.whmpress_order_combo form {
+	display: flex;
+	select {
+		margin-right: 10px;
+		width: 100%;
+	}
+	button {
+		width: 20%;
+		min-width: 120px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.whmpress_order_combo form {
+		display: block;
+		select {
+			margin: 0 0 10px;
+			width: 100%;
+		}
+		button {
+			width: 100%;
+		}
+	}
+}
+
+/***********************************************************
+    Section: WHMPress Price Matrix and Domain Matrix
+***********************************************************/
+.whmpress_price_matrix, .whmpress_price_matrix_domain {
+	overflow-x: auto;
+	input {
+		margin-bottom: 15px;
+	}
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		vertical-align: middle;
+		tr {
+			height: 50px;
+			border: 0;
+		}
+		td, th {
+			vertical-align: middle;
+			padding: 8px;
+			border: 0;
+		}
+		th {
+			background: #333;
+			color: #fff;
+		}
+		thead tr {
+			height: 60px;
+		}
+		tr:nth-of-type(odd) {
+			background: #eee !important;
+		}
+		tr:nth-of-type(even) {
+			background: #fff;
+		}
+		button {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.whmpress_price_matrix input, .whmpress_price_matrix_domain input {
+	margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 640px) {
+	.whmpress {
+		table, tbody, tbody tr, td {
+			display: block;
+			height: auto;
+		}
+		table thead {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+	}
+	
+	tr {
+		border: 1px solid #ccc;
+	}
+	
+	td {
+		border: none;
+		border-bottom: 1px solid #eee;
+	}
+	
+	td[data-content]:before {
+		content: attr(data-content) ": ";
+		display: inline-block;
+		font-weight: bold;
+		width: 45%;
+	}
+	
+	td:not([data-content]) {
+		text-align: center;
+	}
+}
+
+/***********************************************************
+    Section: WHMPress Domain Price Matrix
+***********************************************************/
+.whmpress_price_matrix_domain {
+	&.style_1 {
+		margin: 0 auto;
+		@color_hot: green;
+		@color_promo: red;
+		@color_sale: purple;
+		@color_new: darkblue;
+		table thead tr {
+			height: 30px;
+		}
+		.whmpress_price_matrix_header {
+			background: #ddd;
+			padding: 15px 10px;
+		}
+		.whmp_domain_search_container,
+		.whmp_domain_type_toggle_container,
+		.whmp_domain_special_toggle_container {
+			float: left;
+			width: 33.33%;
+			margin-bottom: 10px;
+			label {
+				font-weight: normal;
+				margin-right: 5px;
+				display: inline-block;
+				min-width: 50px;
+			}
+			input[type="search"] {
+				margin-bottom: 0;
+				height: 30px;
+				padding: 2px 10px;
+				border: 1px solid #333;
+				border-radius: 0;
+				font-size: 14px;
+			}
+		}
+		.whmp_domain_type_toggle_container {
+			.whmp_domain_type_toggle {
+				background: #333;
+				color: white;
+				cursor: pointer;
+				padding: 6px;
+				font-size: 14px;
+				margin-right: 5px;
+				display: inline-block;
+			}
+		}
+		.whmp_domain_special_toggle_container {
+			.whmp_domain_special_toggle {
+				background: #333;
+				color: white;
+				font-size: 14px;
+				cursor: pointer;
+				padding: 6px;
+				margin-right: 5px;
+				display: inline-block;
+			}
+		}
+		.duration_plus, .duration_minus {
+			background: white;
+			margin: 0 5px;
+			width: 18px;
+			height: 18px;
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 18px;
+			padding: 0;
+			text-align: center;
+		}
+		.duration_minus {
+			line-height: 15px;
+		}
+		tr {
+			text-align: center;
+			.whmp_domain {
+				position: relative;
+				text-align: left;
+				span.whmp_special,
+				span.whmp_promo,
+				span.whmp_dropdown_toggle {
+					text-align: center;
+					font-size: 12px;
+					color: #fff;
+					background: #666;
+					padding: 2px 6px 3px;
+					line-height: 12px;
+					border-radius: 3px;
+					text-transform: uppercase;
+					float: right;
+					margin-right: 5px;
+					&.whmp_hot {
+						background: @color_hot;
+					}
+					&.whmp_new {
+						background: @color_new;
+					}
+					&.whmp_promo {
+						background: @color_promo;
+						text-transform: none;
+					}
+					&.whmp_sale {
+						background: @color_sale;
+					}
+					&.whmp_dorpdown_toggle {
+					}
+					&.whmp_none {
+						display: none;
+					}
+				}
+			}
+			.whmp_type {
+				text-align: left;
+			}
+			.whmp_price {
+				.whmp_show_price {
+					text-decoration: line-through;
+					padding: 0 5px;
+				}
+			}
+		}
+		.whmp_dropdown_outer {
+			position: static;
+			float: right;
+			.whmp_dropdown_toggle {
+				text-transform: none !important;
+				padding-right: 18px;
+				&:after {
+					content: "\f078";
+					font-size: .8em;
+					font-family: FontAwesome;
+					line-height: 1;
+					padding: 0 1px 1px;
+					margin-top: -1px;
+					display: inline-block;
+					vertical-align: middle;
+					width: 16px;
+				}
+			}
+			.whmp_dropdown_inner {
+				position: absolute;
+				top: 100%;
+				right: 13px;
+				text-align: right;
+				padding: 10px;
+				width: auto;
+				z-index: 999;
+				border-radius: 6px;
+				margin-top: -15px;
+				background: #666;
+				color: white;
+				li {
+					position: relative;
+					padding-right: 80px;
+					text-align: left;
+					margin-bottom: 5px;
+					font-size: 12px;
+					.whmp_addon_price {
+						line-height: inherit;
+						position: absolute;
+						right: 0;
+						top: 0;
+						text-align: right;
+						font-weight: bold;
+					}
+				}
+			}
+			&.active {
+				.whmp_dropdown_inner {
+					
+				}
+				.whmp_dropdown_toggle {
+					&:after {
+						content: "\f077";
+					}
+				}
+			}
+		}
+		&.multi_durations {
+			
+		}
+		@media (max-width: 980px) {
+			.whmp_domain_search_container,
+			.whmp_domain_type_toggle_container,
+			.whmp_domain_special_toggle_container {
+				float: none;
+				width: 100%;
+				label {
+					min-width: 80px;
+				}
+			}
+		}
+	}
+}
+
+/***********************************************************
+    Section: WHMPress Price Box
+***********************************************************/
+.whmpress_price_box {
+	.whmpBoxShadow;
+	padding: 20px;
+	text-align: left;
+	max-width: 600px;
+	h3 {
+		margin: 0;
+		padding: 10px;
+		text-align: center;
+		text-transform: uppercase;
+		border-bottom: 1px solid #eee;
+	}
+	.style1_wrapper {
+		display: flex;
+	}
+	.style1_left, .style1_right {
+		padding-top: 10px;
+		width: 50%;
+	}
+	ul, ol {
+		padding: 0 0 20px;
+		margin: 0;
+		min-width: 250px;
+		text-align: left;
+	}
+	li {
+		padding: 0 0 5px;
+		list-style: none;
+	}
+	.style1_right {
+		text-align: center;
+	}
+	h2 {
+		border-bottom: 1px solid #ddd;
+	}
+	.whmpress_order_combo, h2 {
+		margin: 0 auto 10px;
+		padding: 0;
+	}
+	.whmpress_order_combo form {
+		display: block;
+	}
+	.whmpress_order_combo form select {
+		width: 100%;
+		margin: 0;
+	}
+	.whmpress_price {
+		color: @btnBg;
+	}
+	button {
+		margin: 10px 0 0;
+		width: 90%;
+		text-transform: uppercase;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.whmpress_price_box {
+		.style1_wrapper {
+			display: block;
+		}
+		.style1_left, .style1_right {
+			width: 90%;
+			margin: 0 auto 20px;
+			text-align: center;
+		}
+	}
+}
+
+/***********************************************************
+    Section: WHMPress Pricing Table
+***********************************************************/
+.whmpress_pricing_table {
+	.whmpBoxShadow;
+	max-width: 300px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 0;
+	ul {
+		width: 100%;
+		padding: 15px;
+		margin: 10px 0 0;
+		border-top: 1px solid #ddd;
+	}
+	ul li {
+		width: 100%;
+		padding: 5px 0;
+		margin: 0;
+		border-bottom: 1px solid #ddd;
+		list-style: none;
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+	h4 {
+		width: 100%;
+		border-top: 1px solid #ddd;
+		margin: 0;
+		padding: 20px 0 10px;
+	}
+	.whmpress_order_combo form {
+		display: block;
+		select, button {
+			display: block;
+			width: 90%;
+			margin: 0 auto 15px;
+		}
+	}
+	.whmpress_order_button {
+		width: 90%;
+		display: inline-block;
+	}
+	.whmpress_has_tooltip {
+		cursor: help;
+		z-index: 99;
+		-webkit-transform: translateZ(0); /* webkit flicker fix */
+		-webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+
+		.whmpress_tooltip {
+			background: @baseColor;
+			top: auto;
+			right: 0;
+			left: 0;
+			bottom: 100%;
+			color: #fff;
+			display: block;
+			margin-bottom: 15px;
+			opacity: 0;
+			padding: 20px;
+			pointer-events: none;
+			position: absolute;
+			width: 100%;
+			transform: translateY(10px);
+			transition: all .25s ease-out;
+			box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+			&:before {
+				content: " ";
+				display: block;
+				width: 40px;
+				left: -40px;
+				top: 0;
+				bottom: 0;
+				position: absolute;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 10px 10px 0 10px;
+				border-color: @baseColor transparent transparent transparent;
+				left: 50%;
+				top: 100%;
+				margin-left: -10px;
+			}
+		}
+		&:hover {
+			.whmpress_tooltip {
+				opacity: 1;
+				pointer-events: auto;
+				transform: translateY(0px);
+			}
+		}
+	}
+}
+
+/***********************************************************
+    Section: WHMPress Domain Search
+***********************************************************/
+.whmpress_domain_search {
+	form {
+		display: flex;
+		line-height: 2;
+		max-width: 980px;
+		margin-left: auto;
+		margin-right: auto;
+		div {
+			input, select {
+				width: 100%;
+				font-size: 18px;
+				height: 56px;
+			}
+			input#search_domain {
+				border-right: 0;
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+			input[type="submit"] {
+				border-left: 0;
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+				height: 56px;
+			}
+			select {
+				border-radius: 0;
+				text-align: right;
+				border-right: 0;
+				border-left: 0;
+				width: auto;
+			}
+		}
+		div.search_div {
+			width: 100%;
+		}
+		div.submit_div {
+			width: 25%;
+			min-width: 120px;
+		}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.whmpress_domain_search {
+		form {
+			display: block;
+			padding: 10px;
+			div {
+				margin-bottom: 10px;
+			}
+			div, input, select {
+				width: 100% !important;
+			}
+			input[type="search"], select {
+				.whmpInputStyles !important;
+			}
+			input[type="submit"] {
+				border-radius: @borderRadius !important;
+			}
+		}
+	}
+}
+
+/***********************************************************
+    Section: WHMPress Domain Search Ajax Form
+***********************************************************/
+.whmpress_domain_search_ajax {
+	form {
+		display: flex;
+		font-size: 18px;
+		max-width: 980px;
+		margin-left: auto;
+		margin-right: auto;
+		input#search_box {
+			border-bottom-right-radius: 0;
+			border-top-right-radius: 0;
+			border-right: 0;
+			height: 56px;
+			width: 80%;
+		}
+		button {
+			border-bottom-left-radius: 0;
+			border-top-left-radius: 0;
+			width: 20%;
+			height: 56px;
+		}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.whmpress_domain_search_ajax {
+		form {
+			display: block;
+			input, button {
+				width: 100% !important;
+			}
+			input[type="search"] {
+				.whmpInputStyles !important;
+				margin-bottom: 10px;
+			}
+			button {
+				border-radius: @borderRadius !important;
+			}
+		}
+	}
+}
+
+/***********************************************************
+    Section: WHMPress Domain Search Ajax Results
+***********************************************************/
+.whmpress_domain_search_ajax_results, .whmpress_domain_search_bulk {
+	.found-title, .not-found-title, .found-div, .not-found-div, .recommended {
+		display: flex;
+		padding: 10px;
+		align-items: center;
+		min-height: 64px;
+		border-bottom: 1px solid #eee;
+		.domain-name {
+			width: 50%;
+			b {
+				display: block;
+			}
+		}
+		.rate, .year {
+			min-width: 100px;
+		}
+		.select-box {
+			margin-left: auto;
+			text-align: center;
+			a {
+				display: inline-block;
+				margin: 5px;
+			}
+		}
+	}
+	.not-found-title, .not-found-div {
+		.rate, .year {
+			display: none;
+		}
+	}
+	.recommended {
+		justify-content: center;
+	}
+	.load-more-div {
+		padding: 10px;
+		text-align: center;
+	}
+}
+.whmp-not-valid-name{
+	padding-top:5px;
+	color:red;
+}
+
+@media only screen and (max-width: 768px) {
+	.whmpress_domain_search_ajax_results {
+		.found-title, .not-found-title, .found-div, .not-found-div, .recommended {
+			flex-direction: column;
+			text-align: center;
+			div[style="clear:both"] {
+				display: none !important;
+			}
+			.select-box {
+				margin-right: auto;
+			}
+		}
+	}
+}
+
+/***********************************************************
+    Section: WHMPress Domain Search Ajax Results (template)
+***********************************************************/
+.whmp_domain_search_ajax_results {
+	
+	padding-top: 60px;
+	
+	.whmp_search_ajax_title {
+		padding: 20px;
+		text-align: center;
+		max-width: 640px;
+		margin: 0 auto 20px;
+		border-radius: 6px;
+		.whmp_search_ajax_domain {
+			font-size: 2.5em;
+			font-weight: bold;
+			word-break: break-all;
+		}
+		.whmp_search_ajax_buttons a {
+			cursor: pointer;
+			padding: 8px 15px;
+			color: #fff;
+			border-radius: 6px;
+			border: 1px solid #ccc;
+			display: inline-block;
+		}
+
+		&.whmp_found_title {
+			background: #bfd6c1;
+			color: #3a573d;
+			border-top: 6px solid #3a573d;
+			.whmp_search_ajax_buttons a {
+				cursor: pointer;
+				background: #3a573d;
+				border-color: #5a775d;;
+			}
+		}
+		&.whmp_not_found_title {
+			background: #f7c6c6;
+			color: #4A2929;
+			border-top: 6px solid #4A2929;
+			.whmp_search_ajax_buttons a {
+				cursor: pointer;
+				background: #4A2929;
+				border-color: #6A4949;
+			}
+		}
+	}
+	
+	.whmp_search_ajax_result {
+		padding: 15px;
+		display: flex;
+		flex-wrap: wrap;
+		color: #fff;
+		border-radius: 3px;
+		margin: 0 0 15px;
+		align-items: center;
+		li {
+			list-style: none;
+		}
+		.whmp_icon {
+			margin-right: 10px;
+		}
+		.whmp_domain {
+			width: 40%;
+			strong {
+				display: block;
+				margin-right: 10px;
+			}
+		}
+		.whmp_domain_price {
+			width: 15%;
+		}
+		.whmp_duration {
+			width: 15%;
+		}
+		.whmp_search_ajax_buttons {
+			width: 20%;
+			min-width: 150px;
+			text-align: right;
+			a {
+				padding: 8px 15px;
+				color: #fff;
+				border-radius: 6px;
+				border: 1px solid #ccc;
+				display: inline-block;
+			}
+		}
+	}
+	.whmp_found_result {
+		background: #bfd6c1;
+		color: #3a573d;
+		border-left: 3px solid #3a573d;
+		.whmp_search_ajax_buttons a {
+			cursor: pointer;
+			background: #3a573d;
+			border-color: #5a775d;
+		}
+	}
+	.whmp_not_found_result {
+		background: #f7c6c6;
+		color: #4A2929;
+		border-left: 3px solid #4A2929;
+		.whmp_duration {
+			display: none;
+		}
+		.whmp_search_ajax_buttons {
+			width: 35%;
+			min-width: 150px;
+			a {
+				background: #4A2929;
+				border-color: #6A4949;
+			}
+		}
+	}
+	
+	.load-more-div {
+		padding: 10px;
+		text-align: center;
+		button {
+			padding: 8px 15px;
+			color: #fff;
+			border-radius: 6px;
+			border: 1px solid #5a775d;
+			display: inline-block;
+			background: #3a573d;
+			&:hover {
+				background: darken(#3a573d, 5%);
+			}
+		}
+	}
+	
+	.whmp_loading_div {
+		text-align: center;
+		font-size: 24px;
+	}
+	
+	@media only screen and (max-width: 768px) {
+		.whmp_search_ajax_result {
+			text-align: center;
+			li {
+				margin-bottom: 15px;
+			}
+			.whmp_icon {
+				display: none;
+			}
+			.whmp_domain {
+				width: 100%;
+			}
+			.whmp_duration,
+			.whmp_domain_price {
+				display: block;
+				width: 50%;
+				padding: 0 10px;
+				text-align: left;
+			}
+			.whmp_domain_price {
+				text-align: right;
+			}
+			.whmp_search_ajax_buttons {
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+	@media only screen and (max-width: 640px) {
+		.whmp_search_ajax_title .whmp_search_ajax_domain {
+			font-size: 1.5em;
+		}
+		
+		.whmp_search_ajax_result {
+			.whmp_icon {
+				margin-right: 10px;
+			}
+			.whmp_domain {
+				width: 100%;
+			}
+			.whmp_search_ajax_buttons {
+				width: 100%;
+				min-width: 150px;
+			}
+		}
+	}
+}
+
+/***********************************************************
+    Section: WHMPress Domain Search Bulk
+***********************************************************/
+.whmpress_domain_search_bulk {
+	form {
+		display: flex;
+		.bulk-domains, .bulk-options {
+			width: 50%;
+			padding: 10px;
+		}
+		.bulk-domains textarea {
+			width: 100%;
+			height: 200px;
+			max-width: 100%;
+		}
+		.bulk-options .extentions {
+			margin: 20px auto;
+			display: block;
+			div {
+				width: 20%;
+				display: inline-block;
+				&:last-child:after {
+					content: "";
+					display: block;
+					clear: both;
+				}
+				label {
+					display: inline-block;
+				}
+			}
+		}
+	}
+	.search-button {
+		text-align: center;
+		padding: 10px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.whmpress_domain_search_bulk {
+		form {
+			display: block;
+			.bulk-domains, .bulk-options {
+				width: 100%;
+			}
+			.bulk-options .extentions > div {
+				width: 30%;
+			}
+		}
+	}
+}
+
+/***********************************************************
+    Section: WHMPress Domain Search Whois
+***********************************************************/
+.whmpress_domain_whois {
+	max-width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	form {
+		display: flex;
+		font-size: 18px;
+		input {
+			border-bottom-right-radius: 0 !important;
+			border-top-right-radius: 0 !important;
+			border-right: 0 !important;
+			height: 56px;
+			width: 80%;
+		}
+		button {
+			border-bottom-left-radius: 0;
+			border-top-left-radius: 0;
+			width: 20%;
+			height: 56px;
+		}
+	}
+	
+}
+
+@media only screen and (max-width: 480px) {
+	.whmpress_domain_whois {
+		form {
+			display: block;
+			input, button {
+				width: 100% !important;
+			}
+			input {
+				.whmpInputStyles !important;
+				margin-bottom: 10px;
+			}
+			button {
+				border-radius: @borderRadius !important;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+/***********************************************************
+    Section: WHMPress Login Form
+***********************************************************/
+
+.whmpress_login_form {
+	.whmpBoxShadow;
+	max-width: 480px;
+	min-width: 450px;
+	padding: 50px 20px 30px;
+	margin-left: auto;
+	margin-right: auto;
+	form {
+		div {
+			margin-bottom: 20px;
+		}
+		label, input {
+			display: block;
+			width: 100%;
+		}
+		button {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	
+	.whmpress_login_form form div label,
+	.whmpress_login_form form div input {
+		display: block;
+		width: 100%;
+		min-width: 160px;
+	}
+	
+	.whmpress_login_form form button {
+		display: block;
+		width: 100%;
+	}
+}
+
+/***********************************************************
+	.whmpress_announcements Css
+***********************************************************/
+.whmpress_announcements {
+	.announcement-date {
+		background-color: @btnBg;
+		display: inline-block;
+		width: 150px;
+		padding: 5px 10px;
+		margin-right: 15px;
+		color: white;
+	}
+	.announcement-summary {
+		margin-top: 15px;
+	}
+	a {
+		color: @btnBg;
+		text-decoration: none;
+		:hover {
+			color: @btnBgHvr
+		}
+	}
+}
+
+/***********************************************************
+	Section: WHMPress Domain Price List
+***********************************************************/
+.whmpress_domain_price_list {
+	padding: 0;
+	margin-bottom: 40px;
+	ul {
+		padding: 15px;
+		margin: 0;
+		list-style: none;
+		font-size: 0;
+		font-size: 0.000px;
+		text-align: center;
+		li {
+			list-style: none;
+			background: white;
+			padding: 5px;
+			font-size: 16px;
+			text-align: left;
+			display: inline-block;
+			> a {
+				border: 1px solid #666;
+				display: block;
+				padding: 10px;
+				color: #333;
+				> span {
+					display: block;
+				}
+				&:hover {
+					color: #222;
+					border-color: #1A5EC6;
+				}
+			}
+			.domain_tld {
+				font-size: 48px;
+				text-align: center;
+				.price_title {
+					display: none;
+				}
+			}
+			//.renew_price,
+			//.transfer_price,
+			//.registration_duration {
+			//	display: none;
+			//}
+		}
+	}
+}
+
+/***********************************************************
+	Section: WHMPress Pricing Bubdle
+***********************************************************/
+.whmpress_pricing_bundle {
+	.whmpBoxShadow;
+	text-align: center;
+	.pricing_bundle_heading {
+		padding: 15px;
+		span {
+			font-size: 28px;
+		}
+	}
+	.pricing_bundle_items {
+		border: 1px solid #e1e1e1;
+		.pricing_bundle_item {
+			border-bottom: 1px solid #e1e1e1;
+			padding: 15px;
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
+	}
+	.pricing_bundle_submit {
+		padding: 15px;
+	}
+	
+	&.whmpress-02 {
+		.pricing_bundle_items {
+			display: flex;
+			flex-wrap: wrap;
+			.pricing_bundle_item {
+				flex-grow: 1;
+				min-width: 300px;
+				border: 0;
+				width: 10%;
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+<div class="row pricing-table two-cols " data-style="default">
+	<div class="pricing-column {$featured} accent-color" style="width: 100%">
+		<h3>{$product_name}{if $featured=="highlight"}<span class="highlight-reason">{$promo_text}</span>{/if}</h3>
+		
+		<div class="pricing-column-content">
+			<h4><span class="dollar-sign">{$prefix}</span> {$amount} </h4>
+			<span class="interval">Per {$duration}</span>
+			{$product_description}
+			<a class="nectar-button large accent-color regular-button" href="{$order_url}" data-color-override="false"
+			   data-hover-color-override="false" data-hover-text-color-override="#fff"
+			   style="visibility: visible;"><span>{$button_text}</span> </a></div>
+	</div>
+</div>

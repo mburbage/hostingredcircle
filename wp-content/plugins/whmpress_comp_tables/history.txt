@@ -1,0 +1,72 @@
+﻿v. 4
+- implimented template previews
+- Discount banners
+- Fontawsome
+- 2ndary billing cycle discount
+- table carousel and price dots
+- hide option for mobile
+v. 4.1
+- implimented compatibility for WCOP
+v.4.1.1
+- Fixed comparison table for latest php version
+v.4.2.0
+- Added translation file into plugin (previously it was being used from WHMPress)
+- Fixed duration conversion tables to be used with translations
+v.4.2.1
+- Fixed bug in spliting descriptions with Greek character “υ”
+4.2.2
+- Fixed featured not unsetting bug
+- Removed limit of 4 comparision
+v.4.5.1
+- Moved JS file in footer
+- Removed JS code from template files.
+- Improved short-code output mechanism
+v.4.5.2
+- Currency parameter implementation
+v.4.5.3
+- Tooltip implementation on mobile
+v. 4
+- implimented template previews
+- Discount banners
+- Fontawsome
+- 2ndary billing cycle discount
+- table carousel and price dots
+- hide option for mobile
+v. 4.1
+- implimented compatibility for WCOP
+v.4.1.1
+- Fixed comparison table for latest php version
+v.4.2.0
+- Added translation file into plugin (previously it was being used from WHMPress)
+- Fixed duration conversion tables to be used with translations
+v.4.2.1
+- Fixed bug in spliting descriptions with Greek character “υ”
+4.2.2
+- Fixed featured not unsetting bug
+- Removed limit of 4 comparision
+v.4.5.1
+- Moved JS file in footer
+- Removed JS code from template files.
+- Improved short-code output mechanism
+v.4.5.2
+- Currency parameter implementation
+v.4.5.3
+- Tooltip implementation on mobile
+v.4.5.4
+- Compatibility confirmed with WordPress 5
+v.4.5.5
+- SQL query issue fixed. 3-11-2019
+v.4.5.5-revision-0
+- Make Comparison table responsive
+v.4.5.5-revision-1
+- Bug Fixed about One Time Billing cycle
+v.4.5.6
+- Fix speed issues
+- Fixed "row" keyword issue
+- Completed tested, removed bugged while editing of groups, and in tooltip editing, where id was not being passed.
+v.4.5.7
+- increase features limit in shortcodes as user wants
+v.4.5.8
+- Tooltip Bug fixed
+v.4.5.9
+- Discount issue fixed in comparison tables

@@ -1,0 +1,35 @@
+<div class="ts-pricing-table-style3 {$featured}" style="margin-top: 50px">
+	<div class="price-icon">
+		<span class="pricing-icon"><i class="{$sub_icon}"></i></span>
+	</div>
+	<div class="price-title">
+		<h3>{$product_name}</h3>
+		<p>{$cdescription}</p>
+	</div>
+	<div class="price-unit">
+		from
+		<div class="price-unit">
+			<span class="price">{$prefix}{$amount}{$decimal}{$fraction}</span>
+			<span class="unit">{$duration}</span>
+		</div>
+		<p>{$tax_info}<br>
+			{$tax_info_2}</p>
+	</div>
+	<ul>
+		{$product_description}
+	</ul>
+	{if $product_order_combo ne ""}
+	<div class="pricing_table_combo" style="background: none">
+		<div class="holder">
+			{$product_order_combo}
+		</div>
+	</div>
+	<script>
+		jQuery(".ts-pricing-table-style3 .whmpress_order_combo").removeClass("whmpress");
+		jQuery(".ts-pricing-table-style3 .whmpress_order_combo button").addClass("cta_pricing");
+	</script>
+	{/if}
+	{if $product_order_combo eq ""}
+	<p><a class="cta_pricing" href="{$order_url}">{$button_text}</a></p>
+	{/if}
+</div>

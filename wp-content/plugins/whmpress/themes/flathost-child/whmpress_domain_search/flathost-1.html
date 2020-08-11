@@ -1,0 +1,42 @@
+{if !empty($combo_data.rows)}
+<form action="{$action_url}" method="post">
+	<input type="hidden" name="direct" value="true">
+	<div class="row">
+		<div class="col-sm-12 form-group">
+			<div class="input-group">
+				<input class="form-control" type="text" name="domain" size="20" placeholder="your domain name">
+				{if !empty($combo_data.rows)}
+				<span class="input-group-btn">
+                        <select class="btn btn-default" name="tld">
+                            {foreach from=$combo_data.rows item=whmp}
+                            <option value="{$whmp.extension}">{$whmp.extension}</option>
+                            {/foreach}
+                        </select>
+                    </span>
+				{/if}
+			</div>
+		</div>
+	</div>
+	<div class="submitbtn">
+		<input type="submit" class="btn btn-success btn-lg" value="Search Domain">
+	</div>
+</form>
+{/if}
+
+
+{if empty($combo_data.rows)}
+<div class="flathost_domain_search">
+	<form action="{$action_url}" method="post">
+		<div class="row">
+			<div class="col-sm-12 form-group">
+				<div class="input-group">
+					<input class="form-control" type="text" name="domain" size="20" placeholder="your domain name">
+					<span class="input-group-btn">
+                        <input type="submit" class="btn btn-success" value="Search Domain">
+                    </span>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+{/if}

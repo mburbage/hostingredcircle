@@ -1,0 +1,2 @@
+param_name,heading,description,type,value,group
+whmp_description,Product Description,Product Description to be shown,textfield,Value,whmpress

@@ -1,0 +1,4 @@
+param_name,heading,description,type,value,group
+featured,Featured Product,Select if the product is featured product or not,dropdown,"['notfeatured','featured']",whmpress
+sub_heading,Sub Heading,Sub Heading Text to Display under Heading,textfield,Value,whmpress
+bg_color,Base Color,Base color of template,colorpicker,#ab3b42,whmpress

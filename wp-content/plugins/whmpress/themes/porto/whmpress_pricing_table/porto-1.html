@@ -1,0 +1,12 @@
+<div class="porto-price-boxes pricing-table ">
+	<div class="porto-price-box plan {if $featured=="featured"} most-popular {/if} plan-custom plan-btn-top">
+	{if $featured=="featured"}
+	<div class="plan-ribbon-wrapper">
+		<div class="plan-ribbon">{$promo_text}</div>
+	</div>
+	{/if}
+	<h3>{$product_name}<span>{$prefix}{$amount}{if $fraction ne ""}{$decimal}{$fraction}{/if}</span></h3>
+	<a href="{$order_url}" class="btn btn-lg btn-primary btn-top">{$button_text}</a>
+	{$product_description}
+</div>
+</div>

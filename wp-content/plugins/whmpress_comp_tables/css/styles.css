@@ -1,0 +1,4252 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(http://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(http://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN8rsOUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url(http://fonts.gstatic.com/s/robotocondensed/v18/ieVi2ZhZI2eCN5jzbjEETS9weq8-33mZGCQYag.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(http://fonts.gstatic.com/s/robotocondensed/v18/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7CA.ttf) format('truetype');
+}
+/*
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+.x-column {
+  max-width: 100% !important;
+}
+.wpct_hidden {
+  display: none;
+}
+.wpct_has_tooltip {
+  cursor: help;
+  z-index: auto;
+  -webkit-transform: inherit;
+  /* webkit flicker fix */
+  -webkit-font-smoothing: inherit;
+  /* webkit text rendering fix */
+}
+.wpct_has_tooltip .wpct_tooltip {
+  background: orange;
+  top: -37px;
+  left: 0px;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 15px;
+  opacity: 0;
+  padding: 6px;
+  pointer-events: none;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  -webkit-transform: translateX(10px);
+  transform: translateX(10px);
+  transition: all 0.25s ease-out;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  z-index: 999;
+}
+.wpct_has_tooltip .wpct_tooltip:before {
+  content: " ";
+  display: block;
+  width: 40px;
+  left: -40px;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+.wpct_has_tooltip .wpct_tooltip:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  left: 48%;
+  top: 34px;
+  border-width: 10px 10px 0px 9px;
+  border-color: #54b4f2 transparent transparent transparent;
+}
+.wpct_has_tooltip:hover .wpct_tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0px);
+}
+/* IE can just show/hide with no transition */
+.lte8 .wrapper .wpct_tooltip {
+  display: none;
+}
+.lte8 .wpct_has_tooltip:hover .wpct_tooltip {
+  display: block;
+}
+.wpct_price_toggle {
+  text-align: center;
+}
+.wpct_price_toggle input {
+  display: none;
+}
+.wpct_price_toggle label {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  font-size: 0px;
+  cursor: pointer;
+}
+.wpct_price_toggle label span {
+  display: block;
+  padding: 6px;
+  transition: all 0.1s ease-in-out;
+  background-color: #e4e4e4;
+}
+.wpct_price_toggle label * {
+  font-size: 14px;
+}
+.wpct_price_toggle input:checked + span {
+  background-color: #A5DC86;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.wpct_error {
+  background-color: #f2dede;
+  border: 1px solid #ebcccc;
+  color: #a94442;
+  padding: 15px 15px 15px 45px;
+  position: relative;
+}
+.wpct_error:before {
+  width: 20px;
+  position: absolute;
+  left: 15px;
+  font-size: 1.4em;
+  text-align: center;
+  content: "\f05a";
+  height: 20px;
+  line-height: 20px;
+  top: 50%;
+  margin-top: -10px;
+  font-family: FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.wpct_submit {
+  cursor: pointer;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+  transition: background 0.5s ease-in-out;
+}
+@media only screen and (max-width: 767px) {
+  .wpct_comparison_table .wpct_comparison_table_col {
+    width: 100% !important;
+  }
+}
+/*--------------------------------------------------------------
+		WPCT Pricing Tables (For Comparison Tables
+--------------------------------------------------------------*/
+.wpct_combo {
+  display: none !important;
+}
+.wpct_pricing_table {
+  box-sizing: border-box;
+  background: #eee;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 15px;
+  border: 2px solid #d5d5d5;
+  /*--------Pricing Table first styles--------*/
+  /*--------Pricing Table second styles-------*/
+  /*--------Pricing Table third styles--------*/
+  /*--------Pricing Table fourth styles-------*/
+  /*--------Pricing Table fifth styles-------*/
+  /*--------Pricing Table sixth styles-------*/
+  /*--------Pricing Table seventh styles-----*/
+  /*--------Pricing Table eighth styles-----*/
+  /*--------Pricing Table alaska styles-----*/
+  /*--------Pricing Table simple-09 styles-----*/
+}
+.wpct_pricing_table *,
+.wpct_pricing_table *:after,
+.wpct_pricing_table *:before {
+  box-sizing: border-box;
+}
+.wpct_pricing_table .wpct_heading h2 {
+  margin: 0;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+.wpct_pricing_table .whmp_text {
+  padding: 15px 0;
+}
+.wpct_pricing_table .whmp_text p {
+  margin: 0;
+  padding: 0;
+}
+.wpct_pricing_table .wpct_features ul {
+  margin: 0 -15px;
+  padding: 0;
+  list-style: none;
+}
+.wpct_pricing_table .wpct_features ul li {
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid #d5d5d5;
+}
+.wpct_pricing_table .wpct_features ul li:last-child {
+  border-bottom: 0;
+}
+.wpct_pricing_table .wpct_price {
+  padding: 15px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 1;
+  background: #d5d5d5;
+  margin: 0 -15px;
+}
+.wpct_pricing_table .wpct_price .wpct_unit,
+.wpct_pricing_table .wpct_price .wpct_fraction {
+  font-size: 40%;
+}
+.wpct_pricing_table .wpct_price .wpct_period {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  word-spacing: 0;
+}
+.wpct_pricing_table .wpct_button {
+  padding: 15px;
+  text-align: center;
+}
+.wpct_pricing_table .wpct_button .wpct_submit-button {
+  background: #FB4400;
+  border: 2px solid #c83600;
+  color: #fff;
+  cursor: pointer;
+  padding: 6px 15px;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  font-weight: 300;
+}
+.wpct_pricing_table .wpct_button .wpct_submit-button:hover {
+  background: #c83600;
+  color: #fff;
+}
+.wpct_pricing_table.comparison-01 .wpct_icon {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: -50px;
+  left: 0;
+}
+.wpct_pricing_table.comparison-01 .wpct_icon .wpct_holder {
+  background: #999;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 50%;
+  font-size: 40px;
+}
+.wpct_pricing_table.comparison-01 .wpct_promo-text {
+  display: none;
+}
+.wpct_pricing_table.comparison-01 .whmp_text {
+  display: block;
+}
+.wpct_pricing_table.comparison-01 .wpct_heading h2 {
+  padding-bottom: 0;
+}
+.wpct_pricing_table.comparison-01 .wpct_price {
+  margin-right: -15px;
+  margin-left: -15px;
+  background: #bbb;
+  color: #333;
+}
+.wpct_pricing_table.comparison-01 .wpct_price .wpct_decimal {
+  display: none;
+}
+.wpct_pricing_table.comparison-01 .wpct_submit-button {
+  background: #337ab7;
+  border: 1px solid #285f8f;
+}
+.wpct_pricing_table.comparison-01 .wpct_submit-button:hover {
+  background: #285f8f;
+}
+.wpct_pricing_table.comparison-01.featured {
+  background: #4796b3;
+  border-color: #39778e;
+  color: #fff;
+}
+.wpct_pricing_table.comparison-01.featured .wpct_icon .wpct_holder {
+  background: #2776b3;
+  border: 3px solid #fff;
+}
+.wpct_pricing_table.comparison-01.featured .wpct_price {
+  background: #2776b3;
+  color: #fff;
+}
+.wpct_pricing_table.comparison-01.featured .wpct_heading h2 {
+  color: #fff;
+}
+.wpct_pricing_table.comparison-02 {
+  background: #fff;
+  padding-top: 0;
+  border: 2px solid #333;
+}
+.wpct_pricing_table.comparison-02 .wpct_promo-text {
+  display: none;
+}
+.wpct_pricing_table.comparison-02 .wpct_text {
+  display: none;
+}
+.wpct_pricing_table.comparison-02 .wpct_icon {
+  display: none;
+}
+.wpct_pricing_table.comparison-02 .wpct_heading {
+  padding-bottom: 60px;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-top: 25px;
+  background: #333;
+  color: #fff;
+}
+.wpct_pricing_table.comparison-02 .wpct_price {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: inset 0 0 5px 5px #666;
+  margin-top: -50px;
+  padding: 0;
+  background: #fff;
+  border: 3px solid #fff;
+}
+.wpct_pricing_table.comparison-02 .wpct_price .wpct_amount {
+  font-size: 36px;
+  font-weight: 700;
+}
+.wpct_pricing_table.comparison-02 .wpct_price .wpct_unit,
+.wpct_pricing_table.comparison-02 .wpct_price .wpct_fraction {
+  font-size: 18px;
+}
+.wpct_pricing_table.comparison-02 .wpct_price .wpct_decimal {
+  display: none;
+}
+.wpct_pricing_table.comparison-02 .wpct_heading h2 {
+  color: #fff;
+}
+.wpct_pricing_table.comparison-02.featured {
+  background: #333;
+  color: #fff;
+}
+.wpct_pricing_table.comparison-02.featured .wpct_price {
+  border-color: #777;
+  box-shadow: none;
+  color: #333;
+}
+.wpct_pricing_table.comparison-02 .wpct_button .wpct_submit-button {
+  background: #00ab00;
+  border: 0;
+}
+.wpct_pricing_table.comparison-02 .wpct_button .wpct_submit-button:hover {
+  background: #007800;
+}
+.wpct_pricing_table.comparison-03 {
+  background: #fff;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  padding-top: 15px;
+}
+.wpct_pricing_table.comparison-03 .wpct_promo-text,
+.wpct_pricing_table.comparison-03 .wpct_text,
+.wpct_pricing_table.comparison-03 .wpct_icon {
+  display: none;
+}
+.wpct_pricing_table.comparison-03 .wpct_price .wpct_decimal {
+  display: none;
+}
+.wpct_pricing_table.comparison-03 .wpct_button .wpct_submit-button {
+  border-radius: 4px;
+  background: #ff4d00;
+  border: 0;
+}
+.wpct_pricing_table.comparison-03 .wpct_button .wpct_submit-button:hover {
+  background: #cc3e00;
+}
+.wpct_pricing_table.comparison-03.featured {
+  border-color: #ff4d00;
+}
+.wpct_pricing_table.comparison-03.featured .wpct_price {
+  color: #fff;
+  background: #ff4d00;
+}
+.wpct_pricing_table.comparison-04 {
+  border: 0;
+  background: #42444a;
+  border-radius: 10px;
+  color: #fff;
+  padding-top: 25px;
+}
+.wpct_pricing_table.comparison-04 .wpct_promo-text,
+.wpct_pricing_table.comparison-04 .wpct_text,
+.wpct_pricing_table.comparison-04 .wpct_icon {
+  display: none;
+}
+.wpct_pricing_table.comparison-04 .wpct_price {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #42444a;
+  margin: 0 auto;
+  padding: 0;
+  border: 2px solid #fff;
+}
+.wpct_pricing_table.comparison-04 .wpct_price .wpct_amount {
+  font-size: 38px;
+}
+.wpct_pricing_table.comparison-04 .wpct_price .wpct_unit,
+.wpct_pricing_table.comparison-04 .wpct_price .wpct_fraction,
+.wpct_pricing_table.comparison-04 .wpct_price .wpct_period {
+  font-size: 16px;
+  line-height: 1;
+}
+.wpct_pricing_table.comparison-04 .wpct_price .wpct_decimal {
+  display: none;
+}
+.wpct_pricing_table.comparison-04 .wpct_heading h2 {
+  color: #fff;
+}
+.wpct_pricing_table.comparison-04 .wpct_submit-button {
+  background: #84c9f6;
+  border: 0;
+}
+.wpct_pricing_table.comparison-04 .wpct_submit-button:hover {
+  background: #54b4f3;
+}
+.wpct_pricing_table.comparison-04.featured {
+  background: #54b4f2;
+}
+.wpct_pricing_table.comparison-04.featured .wpct_price {
+  background: #54b4f2;
+}
+.wpct_pricing_table.comparison-05 {
+  background: #323232;
+  color: #fff;
+  border: 0;
+}
+.wpct_pricing_table.comparison-05 .wpct_promo-text,
+.wpct_pricing_table.comparison-05 .wpct_text,
+.wpct_pricing_table.comparison-05 .wpct_icon {
+  display: none;
+}
+.wpct_pricing_table.comparison-05 .wpct_heading {
+  background: gold;
+  color: #323232;
+  margin-top: -30px;
+}
+.wpct_pricing_table.comparison-05 .wpct_heading h2 {
+  margin: 0;
+  padding-bottom: 0;
+  line-height: 60px;
+}
+.wpct_pricing_table.comparison-05 .wpct_price {
+  position: relative;
+  background: none;
+  color: #fff;
+}
+.wpct_pricing_table.comparison-05 .wpct_price .wpct_fraction {
+  position: absolute;
+  top: 20px;
+  font-size: 25px;
+}
+.wpct_pricing_table.comparison-05 .wpct_price .wpct_decimal {
+  display: none;
+}
+.wpct_pricing_table.comparison-05 .wpct_submit-button {
+  background: gold;
+  color: #333;
+  border: 0;
+}
+.wpct_pricing_table.comparison-05 .wpct_submit-button:hover {
+  background: goldenrod;
+  color: #333;
+}
+.wpct_pricing_table.comparison-06 {
+  background: #3399fe;
+  color: #fff;
+  padding-top: 30px;
+  border: 0;
+}
+.wpct_pricing_table.comparison-06 .wpct_text,
+.wpct_pricing_table.comparison-06 .wpct_icon,
+.wpct_pricing_table.comparison-06 .wpct_promo-text {
+  display: none;
+}
+.wpct_pricing_table.comparison-06 .wpct_heading h2 {
+  color: #fff;
+}
+.wpct_pricing_table.comparison-06 .wpct_price {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  background: #62b2fe;
+  border: 5px solid #4eaefd;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  padding: 30px 20px 0 0;
+}
+.wpct_pricing_table.comparison-06 .wpct_price .wpct_fraction {
+  position: absolute;
+  top: 40px;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 20px;
+  margin-left: 3px;
+}
+.wpct_pricing_table.comparison-06 .wpct_price .wpct_decimal {
+  display: none;
+}
+.wpct_pricing_table.comparison-06 .wpct_features ul li {
+  border-color: #1379de;
+}
+.wpct_pricing_table.comparison-06 .wpct_submit-button {
+  background: #1379de;
+  border: none;
+  width: 100%;
+  font-size: 18px;
+  font-weight: normal;
+}
+.wpct_pricing_table.comparison-06 .wpct_submit-button:hover {
+  background: #0f5faf;
+}
+.wpct_pricing_table.comparison-06.featured .wpct_promo-text {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #008000;
+  font-size: 12px;
+  padding: 2px 10px;
+}
+.wpct_pricing_table.comparison-06.featured .wpct_price {
+  margin-left: -15px;
+  margin-right: -15px;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  width: auto;
+}
+.wpct_pricing_table.comparison-07 {
+  background: #fff;
+  padding: 0;
+  box-shadow: 0 -2px 2px 2px #ccc;
+}
+.wpct_pricing_table.comparison-07 .wpct_text,
+.wpct_pricing_table.comparison-07 .wpct_icon,
+.wpct_pricing_table.comparison-07 .wpct_promo-text {
+  display: none;
+}
+.wpct_pricing_table.comparison-07 .wpct_heading {
+  background: #fda462;
+  margin: 0 0 10px;
+  box-shadow: 0 0 2px 2px #ccc;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.wpct_pricing_table.comparison-07 .wpct_heading h2 {
+  margin: 0;
+  padding-bottom: 0;
+}
+.wpct_pricing_table.comparison-07 .wpct_price {
+  position: relative;
+  margin: 0;
+  box-shadow: 0 -1px 2px 2px #ccc;
+  background: #fd8730;
+}
+.wpct_pricing_table.comparison-07 .wpct_price .wpct_unit {
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: bold;
+}
+.wpct_pricing_table.comparison-07 .wpct_price .wpct_amount {
+  font-size: 60px;
+  font-weight: 700;
+}
+.wpct_pricing_table.comparison-07 .wpct_price .wpct_decimal {
+  display: none;
+}
+.wpct_pricing_table.comparison-07 .wpct_price .wpct_fraction {
+  position: absolute;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 20px;
+}
+.wpct_pricing_table.comparison-07 .wpct_price .wpct_period {
+  display: block;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.wpct_pricing_table.comparison-07 .wpct_features ul {
+  margin: 0;
+}
+.wpct_pricing_table.comparison-07 .wpct_features ul li {
+  color: #f56a05;
+  border: none;
+}
+.wpct_pricing_table.comparison-07 .wpct_features ul li:nth-child(even) {
+  background: #fdeadc;
+}
+.wpct_pricing_table.comparison-07 .wpct_submit-button {
+  background: #fda462;
+  border: 0;
+}
+.wpct_pricing_table.comparison-07.featured .wpct_promo-text {
+  position: absolute;
+  display: block;
+  top: 57px;
+  width: 120px;
+  left: 0;
+  right: 0;
+  background: orange;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 2px 2px #ccc;
+  z-index: 10;
+}
+.wpct_pricing_table.comparison-07.featured .wpct_heading {
+  background: #f56a05;
+}
+.wpct_pricing_table.comparison-07.featured .wpct_features ul li:nth-child(odd) {
+  background: #fda462;
+  color: #fff;
+}
+.wpct_pricing_table.comparison-07.featured .wpct_features ul li:nth-child(even) {
+  background: #fd8730;
+  color: #fff;
+}
+.wpct_pricing_table.comparison-07.featured .wpct_button {
+  background: #f56a05;
+}
+.wpct_pricing_table.comparison-08 {
+  background: #EEEEEE;
+  border: 0;
+  padding: 0;
+}
+.wpct_pricing_table.comparison-08 .wpct_heading {
+  padding-top: 20px;
+  background: 0;
+}
+.wpct_pricing_table.comparison-08 .wpct_price {
+  margin: 0;
+  background: 0;
+}
+.wpct_pricing_table.comparison-08 .wpct_price .wpct_amount {
+  font-size: 45px;
+  font-weight: 800;
+  color: #86C724;
+}
+.wpct_pricing_table.comparison-08 .wpct_price .wpct_decimal {
+  display: none;
+}
+.wpct_pricing_table.comparison-08 .wpct_button .wpct_submit-button {
+  background: #2A363F;
+  border: 0;
+  border-radius: 4px;
+}
+.wpct_pricing_table.comparison-08 .wpct_button .wpct_submit-button:hover {
+  background: #86C724;
+}
+.wpct_pricing_table.comparison-08.featured {
+  background: #2A363F;
+  padding-top: 30px;
+  position: relative;
+  color: #fff;
+}
+.wpct_pricing_table.comparison-08.featured .wpct_promo-text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #86C724;
+  line-height: 2;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.wpct_pricing_table.comparison-08.featured .wpct_heading h2 {
+  color: #fff;
+}
+.wpct_pricing_table.comparison-08.featured .wpct_button .wpct_submit-button {
+  background: #eee;
+  color: #2A363F;
+}
+.wpct_pricing_table.comparison-08.featured .wpct_button .wpct_submit-button:hover {
+  background: #86C724;
+  color: #fff;
+}
+.wpct_pricing_table.alaska {
+  border: 0;
+  background: #f8f8f8;
+  padding-top: 20px;
+}
+.wpct_pricing_table.alaska .wpct_icon .holder {
+  background: #fd4326;
+  height: 78px;
+  width: 78px;
+  border-radius: 78px;
+  color: #fff;
+  margin: 0 auto;
+}
+.wpct_pricing_table.alaska .wpct_icon .holder .fa {
+  font-size: 27px;
+  line-height: 78px;
+}
+.wpct_pricing_table.alaska .wpct_heading h2 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 17px 0 20px;
+}
+.wpct_pricing_table.alaska .wpct_price {
+  background: #ebebeb;
+  color: #fd4326;
+  font-size: 40px;
+  line-height: 26px;
+}
+.wpct_pricing_table.alaska .wpct_price .wpct_unit,
+.wpct_pricing_table.alaska .wpct_price .wpct_amount,
+.wpct_pricing_table.alaska .wpct_price .wpct_fraction {
+  font-size: 100%;
+}
+.wpct_pricing_table.alaska .wpct_price .wpct_period {
+  font-size: 14px;
+  display: inline;
+}
+.wpct_pricing_table.alaska .wpct_summary {
+  font-family: 'Roboto', sans-serif;
+  padding: 20px 5px;
+  font-size: 13px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.wpct_pricing_table.alaska .wpct_button .wpct_submit-button {
+  border-radius: 4px;
+  border: 1px solid #fd4326;
+  background: #fd4326;
+  color: #fff;
+  font-size: 12px;
+  line-height: 40px;
+  text-transform: uppercase;
+  padding: 0 15px;
+}
+.wpct_pricing_table.alaska .wpct_button .wpct_submit-button:hover {
+  background: #fff;
+  color: #fd4326;
+}
+.wpct_pricing_table.simple-09 {
+  border: 1px solid #ccc;
+  background: 0;
+  padding-top: 35px;
+}
+.wpct_pricing_table.simple-09 .wpct_promo-text {
+  display: none;
+}
+.wpct_pricing_table.simple-09 .wpct_heading {
+  background: 0;
+  padding-bottom: 20px;
+}
+.wpct_pricing_table.simple-09 .wpct_heading h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 23px;
+  text-transform: uppercase;
+  padding: 0;
+}
+.wpct_pricing_table.simple-09 .wpct_price {
+  color: black;
+  padding: 0;
+  background: 0;
+  font-size: 46px;
+}
+.wpct_pricing_table.simple-09 .wpct_price .wpct_unit {
+  vertical-align: super;
+}
+.wpct_pricing_table.simple-09 .wpct_price .wpct_unit,
+.wpct_pricing_table.simple-09 .wpct_price .wpct_fraction {
+  font-size: 40%;
+}
+.wpct_pricing_table.simple-09 .wpct_price .wpct_period {
+  color: gray;
+}
+.wpct_pricing_table.simple-09 .wpct_button .wpct_submit-button {
+  border: 0;
+  background-color: #ffd800;
+  border-bottom: 4px solid rgba(174, 117, 0, 0.5);
+  color: #ae7500;
+  padding: 16px 32px;
+  width: 100%;
+  border-radius: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.wpct_pricing_table.simple-09 .wpct_button .wpct_submit-button:hover {
+  background-color: #ffea00;
+  color: #ae7500;
+  outline: 0;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+/*--------------------------------------------------------------
+		Comparison Tables Styling
+--------------------------------------------------------------*/
+.wpct_comparison_table {
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 20px;
+  min-width: 640px;
+  overflow-x: auto;
+}
+.wpct_comparison_table *,
+.wpct_comparison_table *:before,
+.wpct_comparison_table *:after {
+  box-sizing: border-box;
+}
+.wpct_comparison_table .wpct_comparison_table_row {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.wpct_comparison_table .wpct_comparison_table_row:before,
+.wpct_comparison_table .wpct_comparison_table_row::before,
+.wpct_comparison_table .wpct_comparison_table_row:after,
+.wpct_comparison_table .wpct_comparison_table_row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.wpct_comparison_table .wpct_comparison_table_row.wpct_comparison_table_section_summary,
+.wpct_comparison_table .wpct_comparison_table_row.wpct_comparison_table_section_content {
+  align-items: flex-start;
+}
+.wpct_comparison_table .wpct_comparison_table_col {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.wpct_comparison_table .wpct_comparison_table_col > h2,
+.wpct_comparison_table .wpct_comparison_table_col > p {
+  display: none;
+}
+.wpct_comparison_table.one_col .wpct_comparison_table_col {
+  width: 50%;
+}
+.wpct_comparison_table.two_cols .wpct_comparison_table_col {
+  width: 33.33%;
+}
+.wpct_comparison_table.three_cols .wpct_comparison_table_col {
+  width: 25%;
+}
+.wpct_comparison_table.four_cols .wpct_comparison_table_col {
+  width: 20%;
+}
+.wpct_comparison_table.five_cols .wpct_comparison_table_col {
+  width: 16.66%;
+}
+.wpct_comparison_table.six_cols .wpct_comparison_table_col {
+  width: 14.28%;
+}
+.wpct_comparison_table.seven_cols .wpct_comparison_table_col {
+  width: 12.5%;
+}
+.wpct_comparison_table.eight_cols .wpct_comparison_table_col {
+  width: 11.11%;
+}
+.wpct_comparison_table.nine_cols .wpct_comparison_table_col {
+  width: 10%;
+}
+.wpct_comparison_table.ten_cols .wpct_comparison_table_col {
+  width: 9.09%;
+}
+.wpct_comparison_table.eleven_cols .wpct_comparison_table_col {
+  width: 8.33%;
+}
+.wpct_comparison_table .wpct_comparison_table_section_heading {
+  background: #42444a;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px;
+}
+.wpct_comparison_table .wpct_comparison_table_section_content {
+  background: #dfdfdf;
+}
+.wpct_comparison_table .wpct_comparison_table_section_content .wpct_comparison_table_feature_values li:nth-child(odd) {
+  background: #efefef;
+  border-bottom-color: #efefef;
+}
+.wpct_comparison_table .wpct_comparison_table_section_content .wpct_comparison_table_feature_values li:nth-child(even) {
+  background: #e1e1e1;
+  border-bottom-color: #e1e1e1;
+}
+.wpct_comparison_table ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wpct_comparison_table .wpct_comparison_table_feature_titles li,
+.wpct_comparison_table .wpct_comparison_table_feature_values li {
+  list-style: none;
+  padding: 10px 0;
+  border-bottom: 1px solid #adadad;
+}
+.wpct_comparison_table .wpct_comparison_table_feature_titles li.wpct_has_tooltip,
+.wpct_comparison_table .wpct_comparison_table_feature_values li.wpct_has_tooltip {
+  padding-left: 20px;
+  position: relative;
+}
+.wpct_comparison_table .wpct_comparison_table_feature_titles li.wpct_has_tooltip:before,
+.wpct_comparison_table .wpct_comparison_table_feature_values li.wpct_has_tooltip:before {
+  width: 20px;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  content: "\f059";
+  font-family: FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.wpct_comparison_table .wpct_comparison_table_feature_titles li .wpct_feature_title_text,
+.wpct_comparison_table .wpct_comparison_table_feature_values li .wpct_feature_title_text {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wpct_comparison_table .wpct_comp_feature_title_responsive {
+  display: none;
+}
+.wpct_comparison_table .wpct_comparison_table_feature_titles li:last-child,
+.wpct_comparison_table .wpct_comparison_table_feature_values li:last-child {
+  border: 0;
+}
+.wpct_comparison_table .wpct_comparison_table_feature_values li {
+  text-align: center;
+}
+.wpct_comparison_table .wpct_comparison_table_feature_values li .fa {
+  font-size: 1.15em;
+}
+.wpct_comparison_table .wpct_comparison_table_feature_values li .fa.wpct_icon_yes {
+  color: #00ee00;
+}
+.wpct_comparison_table .wpct_comparison_table_feature_values li .fa.wpct_icon_no {
+  color: #ee0000;
+}
+.wpct_comparison_table .wpct_comparison_table_section_summary .wpct_pricing_table {
+  margin: 0;
+  border-top: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+.wpct_comparison_table .wpct_comparison_table_section_summary .wpct_pricing_table .wpct_price,
+.wpct_comparison_table .wpct_comparison_table_section_summary .wpct_pricing_table .wpct_heading {
+  display: none;
+}
+.wpct_comparison_table .wpct_price_caption {
+  display: none;
+}
+.wpct_comparison_table .wpct_plan_description_responsive {
+  display: none;
+}
+.wpct_comparison_table .wpct_discounts_container {
+  text-align: center;
+  padding: 15px 0;
+}
+.wpct_comparison_table .wpct_discounts_container .wpct_holder:not(:empty) {
+  background: orange;
+  color: #fff;
+  padding: 10px;
+  width: 80%;
+  display: inline-block;
+  position: relative;
+  border-radius: 4px 4px 4px 0;
+  font-size: 1.3em;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+.wpct_comparison_table .wpct_discounts_container .wpct_holder:not(:empty):after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 6px 0 0;
+  border-color: orange transparent transparent transparent;
+  bottom: -10px;
+  left: 0;
+}
+.wpct_comparison_table .wpct_discounts_container .wpct_discount_text,
+.wpct_comparison_table .wpct_discounts_container .wpct_discount_value {
+  display: block;
+}
+.wpct_comparison_table .wpct_pricing_table .wpct_discounts_container .wpct_holder {
+  font-size: 0.8em;
+  border-radius: 4px 0 4px 4px;
+  margin-bottom: 0;
+}
+.wpct_comparison_table .wpct_pricing_table .wpct_discounts_container .wpct_holder:after {
+  top: -10px;
+  right: 0;
+  transform: rotate(180deg);
+  left: auto;
+  bottom: auto;
+}
+.wpct_comparison_table.first {
+  padding-top: 70px;
+}
+.wpct_comparison_table.first .wpct_comparison_table_section_heading {
+  background: #4796b3;
+}
+.wpct_comparison_table.first .wpct_comparison_table_feature_values li .fa.wpct_icon_yes {
+  color: #337ab7;
+}
+.wpct_comparison_table.first .wpct_price_toggle input:checked + span {
+  color: white;
+  background: #4796b3;
+}
+.wpct_comparison_table.first .wpct_discounts_container .wpct_holder:not(:empty) {
+  background: #337ab7;
+}
+.wpct_comparison_table.first .wpct_discounts_container .wpct_holder:not(:empty):after {
+  border-top-color: #337ab7;
+}
+.wpct_comparison_table.first .wpct_tooltip {
+  background: #337ab7;
+}
+.wpct_comparison_table.first .wpct_tooltip:after {
+  border-color: transparent #337ab7 transparent transparent;
+}
+.wpct_comparison_table.second .wpct_comparison_table_section_heading {
+  background: #333;
+}
+.wpct_comparison_table.second .wpct_comparison_table_feature_values li .fa.wpct_icon_yes {
+  color: #00ab00;
+}
+.wpct_comparison_table.second .wpct_price_toggle input:checked + span {
+  color: white;
+  background: #333;
+}
+.wpct_comparison_table.second .wpct_discounts_container .wpct_holder:not(:empty) {
+  background: #00ab00;
+}
+.wpct_comparison_table.second .wpct_discounts_container .wpct_holder:not(:empty):after {
+  border-top-color: #00ab00;
+}
+.wpct_comparison_table.second .wpct_tooltip {
+  background: #00ab00;
+}
+.wpct_comparison_table.second .wpct_tooltip:after {
+  border-color: transparent #00ab00 transparent transparent;
+}
+.wpct_comparison_table.third .wpct_comparison_table_section_heading {
+  background: #ff4d00;
+}
+.wpct_comparison_table.third .wpct_comparison_table_feature_values li .fa.wpct_icon_yes {
+  color: #ff4d00;
+}
+.wpct_comparison_table.third .wpct_price_toggle input:checked + span {
+  color: white;
+  background: #ff4d00;
+}
+.wpct_comparison_table.third .wpct_discounts_container .wpct_holder:not(:empty) {
+  background: #ff4d00;
+}
+.wpct_comparison_table.third .wpct_discounts_container .wpct_holder:not(:empty):after {
+  border-top-color: #ff4d00;
+}
+.wpct_comparison_table.third .wpct_tooltip {
+  background: #ff4d00;
+}
+.wpct_comparison_table.third .wpct_tooltip:after {
+  border-color: transparent #ff4d00 transparent transparent;
+}
+.wpct_comparison_table.fourth .wpct_comparison_table_section_heading {
+  background: #54b4f2;
+}
+.wpct_comparison_table.fourth .wpct_comparison_table_feature_values li .fa.wpct_icon_yes {
+  color: #54b4f2;
+}
+.wpct_comparison_table.fourth .wpct_price_toggle input:checked + span {
+  color: white;
+  background: #54b4f2;
+}
+.wpct_comparison_table.fourth .wpct_discounts_container .wpct_holder:not(:empty) {
+  background: #54b4f2;
+}
+.wpct_comparison_table.fourth .wpct_discounts_container .wpct_holder:not(:empty):after {
+  border-top-color: #54b4f2;
+}
+.wpct_comparison_table.fourth .wpct_tooltip {
+  background: #54b4f2;
+}
+.wpct_comparison_table.fourth .wpct_tooltip:after {
+  border-color: transparent #54b4f2 transparent transparent;
+}
+.wpct_comparison_table.fifth .wpct_comparison_table_section_heading {
+  background: #323232;
+}
+.wpct_comparison_table.fifth .wpct_comparison_table_feature_values li .fa.wpct_icon_yes {
+  color: #323232;
+}
+.wpct_comparison_table.fifth .wpct_price_toggle input:checked + span {
+  color: white;
+  background: #323232;
+}
+.wpct_comparison_table.fifth .wpct_discounts_container .wpct_holder:not(:empty) {
+  background: #323232;
+}
+.wpct_comparison_table.fifth .wpct_discounts_container .wpct_holder:not(:empty):after {
+  border-top-color: #323232;
+}
+.wpct_comparison_table.fifth .wpct_tooltip {
+  background: #323232;
+}
+.wpct_comparison_table.fifth .wpct_tooltip:after {
+  border-color: transparent #323232 transparent transparent;
+}
+.wpct_comparison_table.sixth .wpct_comparison_table_section_heading {
+  background: #62b2fe;
+}
+.wpct_comparison_table.sixth .wpct_comparison_table_feature_values li .fa.wpct_icon_yes {
+  color: #3399fe;
+}
+.wpct_comparison_table.sixth .wpct_price_toggle input:checked + span {
+  color: white;
+  background: #3399fe;
+}
+.wpct_comparison_table.sixth .wpct_discounts_container .wpct_holder:not(:empty) {
+  background: #3399fe;
+}
+.wpct_comparison_table.sixth .wpct_discounts_container .wpct_holder:not(:empty):after {
+  border-top-color: #3399fe;
+}
+.wpct_comparison_table.sixth .wpct_tooltip {
+  background: #3399fe;
+}
+.wpct_comparison_table.sixth .wpct_tooltip:after {
+  border-color: transparent #3399fe transparent transparent;
+}
+.wpct_comparison_table.seventh .wpct_comparison_table_section_heading {
+  background: #f56a05;
+}
+.wpct_comparison_table.seventh .wpct_comparison_table_feature_values li .fa.wpct_icon_yes {
+  color: #f56a05;
+}
+.wpct_comparison_table.seventh .wpct_price_toggle input:checked + span {
+  color: white;
+  background: #f56a05;
+}
+.wpct_comparison_table.seventh .wpct_discounts_container .wpct_holder:not(:empty) {
+  background: #f56a05;
+}
+.wpct_comparison_table.seventh .wpct_discounts_container .wpct_holder:not(:empty):after {
+  border-top-color: #f56a05;
+}
+.wpct_comparison_table.seventh .wpct_tooltip {
+  background: #f56a05;
+}
+.wpct_comparison_table.seventh .wpct_tooltip:after {
+  border-color: transparent #f56a05 transparent transparent;
+}
+.wpct_comparison_table.eighth {
+  background: #fff;
+}
+.wpct_comparison_table.eighth .wpct_comparison_table_section_content,
+.wpct_comparison_table.eighth .wpct_comparison_table_section_summary {
+  align-items: flex-start;
+}
+.wpct_comparison_table.eighth .wpct_comparison_table_section_content .wpct_pricing_table .wpct_price,
+.wpct_comparison_table.eighth .wpct_comparison_table_section_summary .wpct_pricing_table .wpct_price {
+  display: block;
+}
+.wpct_comparison_table.eighth .wpct_comparison_table_section_heading {
+  background: #2A363F;
+}
+.wpct_comparison_table.eighth .wpct_comparison_table_feature_values li .fa.wpct_icon_yes {
+  color: #86c724;
+}
+.wpct_comparison_table.eighth .wpct_comparison_table_titles_col .wpct-arrow-box {
+  position: relative;
+  background: #5f686f;
+  padding: 12px 20px 12px 0;
+  text-align: right;
+  color: #fff;
+  margin: 0 15px 0 -15px;
+}
+.wpct_comparison_table.eighth .wpct_comparison_table_titles_col .wpct-arrow-box:after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(153, 153, 153, 0);
+  border-left-color: #5f686f;
+  border-width: 18px;
+  margin-top: -18px;
+}
+.wpct_comparison_table.eighth .wpct_comparison_table_titles_col .wpct-arrow-box h2 {
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+.wpct_comparison_table.eighth .wpct_comparison_table_titles_col .wpct-arrow-box h4 {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: normal;
+  margin: 0;
+}
+.wpct_comparison_table.eighth .wpct_price_toggle input:checked + span {
+  color: white;
+  background: #86c724;
+}
+.wpct_comparison_table.eighth .wpct_discounts_container .wpct_holder:not(:empty) {
+  background: #86c724;
+}
+.wpct_comparison_table.eighth .wpct_discounts_container .wpct_holder:not(:empty):after {
+  border-top-color: #86c724;
+}
+.wpct_comparison_table.eighth .wpct_tooltip {
+  background: #86c724;
+}
+.wpct_comparison_table.eighth .wpct_tooltip:after {
+  border-color: transparent #86c724 transparent transparent;
+}
+.wpct_comparison_table.alaska .wpct_comparison_table_section_heading {
+  background: #42454a;
+  justify-content: flex-start;
+  font-size: 12px;
+  line-height: 26px;
+}
+.wpct_comparison_table.alaska .wpct_comparison_table_section_content {
+  background: #f3f3f3;
+  align-items: flex-start;
+}
+.wpct_comparison_table.alaska .wpct_comparison_table_feature_titles li,
+.wpct_comparison_table.alaska .wpct_comparison_table_feature_values li {
+  border-color: #e6e6e6;
+}
+.wpct_comparison_table.alaska .wpct_comparison_table_feature_values li .fa {
+  font-size: 22px;
+}
+.wpct_comparison_table.alaska .wpct_comparison_table_feature_values li .fa.fa-check {
+  color: #fd4326;
+}
+.wpct_comparison_table.alaska .wpct_comparison_table_feature_values li .fa.fa-close {
+  color: #42454a;
+}
+.wpct_comparison_table.alaska .wpct_comparison_table_feature_values li:nth-child(odd) {
+  background: #f8f8f8;
+}
+.wpct_comparison_table.alaska .wpct_comparison_table_feature_values li:nth-child(even) {
+  background: #ffffff;
+}
+.wpct_comparison_table.alaska .wpct_comparison_table_summary_box {
+  background: #42454a;
+}
+.wpct_comparison_table.alaska .wpct_comparison_table_summary_box .wpct_price {
+  display: block;
+  background: 0;
+}
+.wpct_comparison_table.simple-01 .wpct_comparison_table_row {
+  border-bottom: 1px solid #e4e4e4;
+}
+.wpct_comparison_table.simple-01 .wpct_comparison_table_row .wpct_comparison_table_col {
+  border-right: 1px solid #e4e4e4;
+  padding: 0;
+}
+.wpct_comparison_table.simple-01 .wpct_comparison_table_row .wpct_comparison_table_col.featured {
+  background: #fafafa;
+}
+.wpct_comparison_table.simple-01 .wpct_comparison_table_row.wpct_first_row .wpct_comparison_table_col {
+  border: 0;
+  padding: 15px 0;
+}
+.wpct_comparison_table.simple-01 .wpct_comparison_table_row .wpct_comparison_table_title {
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+}
+.wpct_comparison_table.simple-01 .wpct_pricing_table {
+  border: 0;
+  background: 0;
+  text-align: center;
+}
+.wpct_comparison_table.simple-01 .wpct_heading {
+  text-align: center;
+}
+.wpct_comparison_table.simple-01 .wpct_heading h2 {
+  font-size: 14px;
+  line-height: 21px;
+  color: #39bce5;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 0;
+}
+.wpct_comparison_table.simple-01 .whmp_text {
+  display: none;
+}
+.wpct_comparison_table.simple-01 .wpct_price {
+  text-align: center;
+  font-size: 18px;
+  line-height: 27px;
+  background: 0;
+  padding: 0;
+  color: #333;
+}
+.wpct_comparison_table.simple-01 .wpct_price * {
+  display: inline;
+  font-size: inherit;
+  font-weight: inherit;
+  position: relative;
+}
+.wpct_comparison_table.simple-01 .wpct_price *.wpct_period {
+  display: block;
+}
+.wpct_comparison_table.simple-01 .wpct_promo-text {
+  display: none;
+}
+.wpct_comparison_table.simple-01 .wpct_button .wpct_submit-button {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  padding: 0 20px;
+  color: #fff;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #97a1b7;
+  white-space: nowrap;
+  border: 0;
+}
+.wpct_comparison_table.simple-01 .wpct_button .wpct_submit-button:hover {
+  background-color: #838c9f;
+}
+.wpct_comparison_table.simple-01 .featured .wpct_button .wpct_submit-button {
+  background-color: #646bbc;
+}
+.wpct_comparison_table.simple-01 .featured .wpct_button .wpct_submit-button:hover {
+  background-color: #2e3353;
+}
+.wpct_comparison_table.simple-01 .wpct_comparison_table_section_content {
+  background: 0;
+}
+.wpct_comparison_table.simple-01 .wpct_comparison_table_feature_values,
+.wpct_comparison_table.simple-01 .wpct_comparison_table_feature_titles {
+  padding: 0;
+}
+.wpct_comparison_table.simple-01 .wpct_comparison_table_feature_values li,
+.wpct_comparison_table.simple-01 .wpct_comparison_table_feature_titles li {
+  background: 0;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 15px 0;
+}
+.wpct_comparison_table.simple-01 .wpct_comparison_table_feature_values li:last-child,
+.wpct_comparison_table.simple-01 .wpct_comparison_table_feature_titles li:last-child {
+  border-bottom: 0;
+}
+.wpct_comparison_table.simple-01 .wpct_comparison_table_section_summary .wpct_comparison_table_titles_col {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wpct_comparison_table.simple-02 .wpct_pricing_table {
+  border: 0;
+  background: 0;
+  text-align: center;
+}
+.wpct_comparison_table.simple-02 .wpct_first_row {
+  background: #2980b9;
+}
+.wpct_comparison_table.simple-02 .wpct_first_row .wpct_heading {
+  text-align: center;
+  padding: 10px 0;
+}
+.wpct_comparison_table.simple-02 .wpct_first_row .wpct_heading h2 {
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+  font-weight: bold;
+  margin: 0;
+}
+.wpct_comparison_table.simple-02 .wpct_first_row .wpct_plan_description_responsive {
+  background: white;
+}
+.wpct_comparison_table.simple-02 .wpct_comparison_table_section_content {
+  background: 0;
+}
+.wpct_comparison_table.simple-02 .wpct_comparison_table_section_content .wpct_comparison_table_col {
+  padding: 0;
+}
+.wpct_comparison_table.simple-02 .wpct_comparison_table_section_content .wpct_comparison_table_feature_values li,
+.wpct_comparison_table.simple-02 .wpct_comparison_table_section_content .wpct_comparison_table_feature_titles li {
+  background: 0;
+  border-bottom: 1px solid #EEEEEE;
+}
+.wpct_comparison_table.simple-02 .wpct_comparison_table_section_content .wpct_comparison_table_feature_values li:nth-child(even),
+.wpct_comparison_table.simple-02 .wpct_comparison_table_section_content .wpct_comparison_table_feature_titles li:nth-child(even) {
+  background: #f9f9f9;
+}
+.wpct_comparison_table.simple-02 .wpct_comparison_table_section_content .wpct_comparison_table_feature_titles {
+  text-align: right;
+  font-weight: bold;
+}
+.wpct_comparison_table.simple-02 .wpct_price_row {
+  font-weight: bold;
+  align-items: center;
+}
+.wpct_comparison_table.simple-02 .wpct_price_row .wpct_comparison_table_titles_col {
+  text-align: right;
+}
+.wpct_comparison_table.simple-02 .wpct_price {
+  font-size: 20px;
+  line-height: 40px;
+  color: #2980b9;
+  text-align: center;
+}
+.wpct_comparison_table.simple-02 .wpct_button .wpct_submit-button {
+  border: 0;
+  background: #2980b9;
+}
+.wpct_comparison_table.simple-02 .wpct_button .wpct_submit-button:hover {
+  background: #20638f;
+}
+.wpct_comparison_table.simple-02 .wpct_comparison_table_section_heading {
+  color: #555;
+  background: none;
+}
+@media only screen and (max-width: 767px) {
+  .wpct_comparison_table.simple-02 .wpct_first_row {
+    background: #fff;
+  }
+  .wpct_comparison_table.simple-02 .wpct_first_row .wpct_heading {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .wpct_comparison_table.simple-02 .wpct_first_row .wpct_heading h2 {
+    font-size: 14px;
+    line-height: 22px;
+    background: #2980b9;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .wpct_comparison_table.simple-02 .wpct_first_row .wpct_plan_description_responsive {
+    background: white;
+  }
+  .wpct_comparison_table.simple-02 .wpct_price * {
+    font-weight: bold;
+  }
+}
+.wpct_comparison_table.simple-03 {
+  border-top: 3px solid #f9a13a;
+  padding-top: 0;
+}
+.wpct_comparison_table.simple-03 .wpct_heading_row {
+  color: #fff;
+  text-align: center;
+  background: #005793;
+  padding: 20px 0;
+}
+.wpct_comparison_table.simple-03 .wpct_heading_row .wpct_heading h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 900;
+}
+.wpct_comparison_table.simple-03 .wpct_heading_row .wpct_price {
+  color: #f9a13a;
+}
+.wpct_comparison_table.simple-03 .wpct_heading_row .wpct_price .wpct_amount {
+  font-size: 26px;
+  font-weight: 900;
+}
+.wpct_comparison_table.simple-03 .wpct_heading_row .wpct_button .wpct_submit-button {
+  background-color: #ffcb08;
+  border: 1px solid #815627;
+  box-shadow: 0 3px 0 #815627, 0 6px 4px -2px rgba(0, 0, 0, 0.3);
+  color: #333333;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 8px 16px;
+}
+.wpct_comparison_table.simple-03 .wpct_heading_row .wpct_button .wpct_submit-button:hover {
+  background: #ffd43d;
+}
+.wpct_comparison_table.simple-03 .wpct_heading_row .wpct_button .wpct_submit-button:active {
+  box-shadow: none;
+}
+.wpct_comparison_table.simple-03 .wpct_comparison_table_section_content {
+  background: 0;
+}
+.wpct_comparison_table.simple-03 .wpct_comparison_table_section_content .wpct_comparison_table_col {
+  padding: 0;
+  border-right: 1px solid #adadad;
+}
+.wpct_comparison_table.simple-03 .wpct_comparison_table_section_content .wpct_comparison_table_col:first-child {
+  border-left: 1px solid #adadad;
+}
+.wpct_comparison_table.simple-03 .wpct_comparison_table_section_content .wpct_comparison_table_feature_titles,
+.wpct_comparison_table.simple-03 .wpct_comparison_table_section_content .wpct_comparison_table_feature_values {
+  background: 0;
+}
+.wpct_comparison_table.simple-03 .wpct_comparison_table_section_content .wpct_comparison_table_feature_titles li,
+.wpct_comparison_table.simple-03 .wpct_comparison_table_section_content .wpct_comparison_table_feature_values li {
+  background: 0;
+  border-bottom: 1px solid #adadad;
+  padding: 10px;
+}
+.wpct_comparison_table.simple-03 .wpct_comparison_table_section_content .wpct_comparison_table_feature_titles {
+  font-weight: bold;
+}
+.wpct_comparison_table.simple-03 .wpct_comparison_table_section_heading {
+  background: #005793;
+}
+@media only screen and (max-width: 767px) {
+  .wpct_comparison_table.simple-03 {
+    border-top: 0;
+    padding: 0;
+  }
+  .wpct_comparison_table.simple-03 .wpct_heading_row {
+    margin: 15px auto 25px;
+    padding-top: 0;
+    background: white;
+  }
+  .wpct_comparison_table.simple-03 .wpct_heading_row .wpct_comparison_table_titles_col {
+    display: none;
+  }
+  .wpct_comparison_table.simple-03 .wpct_heading_row .wpct_comparison_table_col {
+    border-top: 3px solid #f9a13a;
+    margin: 15px auto 25px;
+    padding: 25px 15px 35px;
+    background: #005793;
+  }
+}
+.wpct_comparison_table.simple-04 {
+  max-width: 100%;
+  min-width: 0;
+  border: 1px solid #adadad;
+  padding-top: 0;
+}
+.wpct_comparison_table.simple-04 .wpct_table_container {
+  min-width: 991px;
+  overflow-x: auto;
+}
+.wpct_comparison_table.simple-04 .wpct_heading_row {
+  text-align: center;
+  background: #e9e8e8;
+  color: #fff;
+}
+.wpct_comparison_table.simple-04 .wpct_heading_row .wpct_comparison_table_titles_col {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wpct_comparison_table.simple-04 .wpct_heading_row .wpct_comparison_table_titles_col h2 {
+  margin: 0 !important;
+  color: #000;
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: bold;
+}
+.wpct_comparison_table.simple-04 .wpct_heading_row .wpct_comparison_table_col .wpct_heading {
+  background: #879097;
+  padding: 15px 0;
+}
+.wpct_comparison_table.simple-04 .wpct_heading_row .wpct_comparison_table_col .wpct_heading h2 {
+  margin: 0 0 40px;
+}
+.wpct_comparison_table.simple-04 .wpct_heading_row .wpct_comparison_table_col .wpct_price {
+  padding: 30px 0;
+  background: #c8c9c9;
+  font-size: 35px;
+  font-weight: bold;
+}
+.wpct_comparison_table.simple-04 .wpct_heading_row .wpct_comparison_table_col.featured .wpct_heading {
+  background: green;
+}
+.wpct_comparison_table.simple-04 .wpct_heading_row .wpct_comparison_table_col.featured .wpct_price {
+  background: #96d3fc;
+}
+.wpct_comparison_table.simple-04 .wpct_comparison_table_col {
+  padding: 0;
+  border-right: 1px solid #adadad;
+}
+.wpct_comparison_table.simple-04 .wpct_comparison_table_col:last-child {
+  border: 0;
+}
+.wpct_comparison_table.simple-04 .wpct_comparison_table_section_content {
+  background: 0;
+}
+.wpct_comparison_table.simple-04 .wpct_comparison_table_section_content .wpct_comparison_table_feature_titles,
+.wpct_comparison_table.simple-04 .wpct_comparison_table_section_content .wpct_comparison_table_feature_values {
+  border: 0;
+}
+.wpct_comparison_table.simple-04 .wpct_comparison_table_section_content .wpct_comparison_table_feature_titles li,
+.wpct_comparison_table.simple-04 .wpct_comparison_table_section_content .wpct_comparison_table_feature_values li {
+  background: none;
+}
+.wpct_comparison_table.simple-04 .wpct_comparison_table_section_content .wpct_comparison_table_feature_titles li:nth-child(even),
+.wpct_comparison_table.simple-04 .wpct_comparison_table_section_content .wpct_comparison_table_feature_values li:nth-child(even) {
+  background: #e9e8e8;
+}
+.wpct_comparison_table.simple-04 .wpct_comparison_table_section_content .wpct_comparison_table_feature_titles {
+  text-align: center;
+  font-weight: bold;
+}
+.wpct_comparison_table.simple-04 .wpct_button .wpct_submit-button {
+  color: #fff;
+  width: 50%;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 8px 18px;
+  border: 0;
+  background: #79c923;
+}
+.wpct_comparison_table.simple-05 {
+  font-size: 18px;
+  font-weight: bolder;
+}
+.wpct_comparison_table.simple-05 .wpct_price {
+  background: none;
+}
+.wpct_comparison_table.simple-05 .wpct_comparison_table_feature_titles li,
+.wpct_comparison_table.simple-05 .wpct_comparison_table_feature_values li {
+  border-bottom: 1px solid #f2f2f2;
+  padding: 10px 15px;
+}
+.wpct_comparison_table.simple-05 .wpct_comparison_table_feature_titles li:nth-child(odd),
+.wpct_comparison_table.simple-05 .wpct_comparison_table_feature_values li:nth-child(odd) {
+  background: #f8f8f8;
+}
+.wpct_comparison_table.simple-05 .wpct_comparison_table_feature_titles li:nth-child(even),
+.wpct_comparison_table.simple-05 .wpct_comparison_table_feature_values li:nth-child(even) {
+  background: 0;
+}
+.wpct_comparison_table.simple-05 .wpct_comparison_table_feature_titles li:last-child,
+.wpct_comparison_table.simple-05 .wpct_comparison_table_feature_values li:last-child {
+  border-bottom: 0;
+}
+.wpct_comparison_table.simple-05 .wpct_submit-button {
+  width: 100%;
+  display: block;
+  background: green;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  opacity: 0.8;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 800;
+  transition: all 0.3s ease-in-out;
+}
+.wpct_comparison_table.simple-05 .wpct_submit-button:hover {
+  opacity: 1;
+}
+.wpct_comparison_table.simple-05 .wpct_comparison_table_col {
+  border: 1px solid #f2f2f2;
+  border-top: 0;
+  align-self: stretch;
+}
+.wpct_comparison_table.simple-05 .wpct_comparison_table_col:not(:first-child) {
+  border-left: 0;
+}
+.wpct_comparison_table.simple-05 .wpct_comparison_table_col:nth-child(odd) .wpct_submit-button {
+  background: #43cb83;
+}
+.wpct_comparison_table.simple-05 .wpct_comparison_table_col:nth-child(even) .wpct_submit-button {
+  background: #845a9f;
+}
+.wpct_comparison_table.simple-05 .wpct_pricing_table {
+  background: 0;
+  border: 0;
+  padding: 0;
+}
+.wpct_comparison_table.simple-05 .wpct_comparison_table_section_tables .wpct_comparison_table_col {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-end;
+  text-align: center;
+  flex-direction: column;
+  padding: 24px 15px;
+  border-top: 15px solid #ccc;
+}
+.wpct_comparison_table.simple-05 .wpct_comparison_table_section_tables .wpct_comparison_table_col > * {
+  width: 100%;
+}
+.wpct_comparison_table.simple-05 .wpct_comparison_table_section_tables .wpct_comparison_table_col:nth-child(odd) {
+  border-top-color: #43cb83;
+}
+.wpct_comparison_table.simple-05 .wpct_comparison_table_section_tables .wpct_comparison_table_col:nth-child(even) {
+  border-top-color: #845a9f;
+}
+.wpct_comparison_table.simple-05 .wpct_comparison_table_section_tables .wpct_comparison_table_col:first-child {
+  border-top-color: #ccc;
+}
+.wpct_comparison_table.simple-05 .wpct_comparison_table_section_tables h2 {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 29px;
+  margin: 0;
+  padding: 0 0 10px;
+}
+.wpct_comparison_table.simple-05 .wpct_comparison_table_section_content {
+  background: 0;
+}
+.wpct_comparison_table.simple-05 .wpct_comparison_table_section_content .wpct_comparison_table_col {
+  padding: 0;
+}
+.wpct_comparison_table.simple-06 {
+  padding-top: 50px;
+}
+.wpct_comparison_table.simple-06 .wpct_price {
+  background: none;
+}
+.wpct_comparison_table.simple-06 .wpct_comparison_table_feature_titles li,
+.wpct_comparison_table.simple-06 .wpct_comparison_table_feature_values li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 15px;
+}
+.wpct_comparison_table.simple-06 .wpct_comparison_table_feature_titles li:nth-child(odd),
+.wpct_comparison_table.simple-06 .wpct_comparison_table_feature_values li:nth-child(odd) {
+  background: 0;
+}
+.wpct_comparison_table.simple-06 .wpct_comparison_table_feature_titles li:nth-child(even),
+.wpct_comparison_table.simple-06 .wpct_comparison_table_feature_values li:nth-child(even) {
+  background: 0;
+}
+.wpct_comparison_table.simple-06 .wpct_comparison_table_feature_titles li:last-child,
+.wpct_comparison_table.simple-06 .wpct_comparison_table_feature_values li:last-child {
+  border-bottom: 0;
+}
+.wpct_comparison_table.simple-06 .wpct_submit-button {
+  border-radius: 100px;
+  border: 0;
+  padding: 10px 25px;
+}
+.wpct_comparison_table.simple-06 .wpct_comparison_table_col {
+  border: 1px solid #ccc;
+  border-top: 0;
+  align-self: stretch;
+}
+.wpct_comparison_table.simple-06 .wpct_comparison_table_col:not(:last-child) {
+  border-right: 0;
+}
+.wpct_comparison_table.simple-06 .wpct_comparison_table_col.featured {
+  background: #eff8f7;
+}
+@media only screen and (max-width: 768px) {
+  .wpct_comparison_table.simple-06 .wpct_comparison_table_col:not(:last-child) {
+    border-right: 1px solid #ccc;
+  }
+}
+.wpct_comparison_table.simple-06 .wpct_pricing_table {
+  background: 0;
+  border: 0;
+  padding: 0;
+}
+.wpct_comparison_table.simple-06 .wpct_pricing_table .wpct_promo-text {
+  background: #6bc991;
+  position: absolute;
+  top: -66px;
+  color: white;
+  padding: 10px;
+  margin: 0 -15px;
+  left: -1px;
+  right: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.wpct_comparison_table.simple-06 .wpct_comparison_table_section_tables .wpct_comparison_table_col {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-end;
+  text-align: center;
+  flex-direction: column;
+  padding: 24px 15px;
+  border-top: 1px solid #ccc;
+}
+.wpct_comparison_table.simple-06 .wpct_comparison_table_section_tables .wpct_comparison_table_col > * {
+  width: 100%;
+}
+.wpct_comparison_table.simple-06 .wpct_comparison_table_section_tables .wpct_comparison_table_col:first-child {
+  border-top: 0;
+  border-left: 0;
+}
+.wpct_comparison_table.simple-06 .wpct_comparison_table_section_tables h2 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 29px;
+  margin: 0;
+  padding: 0 0 10px;
+}
+.wpct_comparison_table.simple-06 .wpct_comparison_table_section_tables .wpct_button {
+  display: block;
+}
+.wpct_comparison_table.simple-06 .wpct_comparison_table_section_heading {
+  background: #eff8f7;
+  border: 1px solid #ccc;
+  border-top: 0;
+  font-weight: bold;
+  color: #45545f;
+  text-transform: none;
+  font-size: 18px;
+}
+.wpct_comparison_table.simple-06 .wpct_comparison_table_section_content {
+  background: 0;
+}
+.wpct_comparison_table.simple-06 .wpct_comparison_table_section_content .wpct_comparison_table_col {
+  padding: 0;
+}
+.wpct_comparison_table.simple-07 {
+  padding-top: 50px;
+  color: #666c70;
+}
+.wpct_comparison_table.simple-07 .wpct_heading h2 {
+  font-size: 26px;
+  line-height: 32px;
+}
+.wpct_comparison_table.simple-07 .wpct_price {
+  background: none;
+  font-size: 17px;
+  line-height: 26px;
+  margin: 0;
+  word-spacing: 0;
+}
+.wpct_comparison_table.simple-07 .wpct_submit-button {
+  border-radius: 100px;
+  border: 1px solid #666c70;
+  padding: 10px 25px;
+  background: none;
+  color: #2990ea;
+  font-weight: bold;
+}
+.wpct_comparison_table.simple-07 .wpct_submit-button:hover {
+  color: #1269b5;
+  background: 0;
+}
+.wpct_comparison_table.simple-07 .wpct_comparison_table_feature_titles li,
+.wpct_comparison_table.simple-07 .wpct_comparison_table_feature_values li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 15px;
+}
+.wpct_comparison_table.simple-07 .wpct_comparison_table_feature_titles li:nth-child(odd),
+.wpct_comparison_table.simple-07 .wpct_comparison_table_feature_values li:nth-child(odd) {
+  background: 0;
+}
+.wpct_comparison_table.simple-07 .wpct_comparison_table_feature_titles li:nth-child(even),
+.wpct_comparison_table.simple-07 .wpct_comparison_table_feature_values li:nth-child(even) {
+  background: 0;
+}
+.wpct_comparison_table.simple-07 .wpct_comparison_table_feature_titles li:last-child,
+.wpct_comparison_table.simple-07 .wpct_comparison_table_feature_values li:last-child {
+  border-bottom: 0;
+}
+.wpct_comparison_table.simple-07 .wpct_comparison_table_feature_titles li .fa.wpct_icon_yes,
+.wpct_comparison_table.simple-07 .wpct_comparison_table_feature_values li .fa.wpct_icon_yes {
+  color: #1269b5;
+}
+.wpct_comparison_table.simple-07 .wpct_comparison_table_col {
+  border: 1px solid #ccc;
+  border-top: 0;
+  align-self: stretch;
+}
+.wpct_comparison_table.simple-07 .wpct_comparison_table_col:not(:last-child) {
+  border-right: 0;
+}
+.wpct_comparison_table.simple-07 .wpct_comparison_table_col.featured {
+  background: #eff8f7;
+}
+@media only screen and (max-width: 768px) {
+  .wpct_comparison_table.simple-07 .wpct_comparison_table_col:not(:last-child) {
+    border-right: 1px solid #ccc;
+  }
+}
+.wpct_comparison_table.simple-07 .wpct_pricing_table {
+  background: 0;
+  border: 0;
+  padding: 0;
+}
+.wpct_comparison_table.simple-07 .wpct_pricing_table .wpct_promo-text {
+  background: #6bc991;
+  position: absolute;
+  top: -66px;
+  color: white;
+  padding: 10px;
+  margin: 0 -15px;
+  left: -1px;
+  right: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.wpct_comparison_table.simple-07 .wpct_comparison_table_section_tables .wpct_comparison_table_col {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-end;
+  text-align: center;
+  flex-direction: column;
+  padding: 24px 15px;
+  border-top: 1px solid #ccc;
+}
+.wpct_comparison_table.simple-07 .wpct_comparison_table_section_tables .wpct_comparison_table_col > * {
+  width: 100%;
+}
+.wpct_comparison_table.simple-07 .wpct_comparison_table_section_tables .wpct_comparison_table_col:first-child {
+  border-top: 0;
+  border-left: 0;
+}
+.wpct_comparison_table.simple-07 .wpct_comparison_table_section_tables h2 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 29px;
+  margin: 0;
+  padding: 0 0 10px;
+}
+.wpct_comparison_table.simple-07 .wpct_comparison_table_section_tables .wpct_button {
+  display: block;
+}
+.wpct_comparison_table.simple-07 .wpct_comparison_table_section_heading {
+  background: #eff8f7;
+  border: 1px solid #ccc;
+  border-top: 0;
+  font-weight: bold;
+  color: #45545f;
+  text-transform: none;
+  font-size: 18px;
+}
+.wpct_comparison_table.simple-07 .wpct_comparison_table_section_content {
+  background: 0;
+}
+.wpct_comparison_table.simple-07 .wpct_comparison_table_section_content .wpct_comparison_table_col {
+  padding: 0;
+}
+.wpct_comparison_table.simple-08 {
+  padding-top: 50px;
+}
+.wpct_comparison_table.simple-08 .wpct_price {
+  background: none;
+  font-weight: 900;
+}
+.wpct_comparison_table.simple-08 .wpct_price .wpct_unit {
+  vertical-align: super;
+}
+.wpct_comparison_table.simple-08 .wpct_pricing_table {
+  background: 0;
+  border: 0;
+  padding: 0;
+}
+.wpct_comparison_table.simple-08 .wpct_pricing_table .wpct_promo-text {
+  background: #fa7921;
+  position: absolute;
+  top: -66px;
+  color: white;
+  padding: 10px;
+  margin: 0 -15px;
+  left: -1px;
+  right: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.wpct_comparison_table.simple-08 .wpct_submit-button {
+  border-radius: 4px;
+  border: 0;
+  padding: 5px 15px;
+  background: #1e5694;
+  font-weight: bold;
+}
+.wpct_comparison_table.simple-08 .wpct_submit-button:hover {
+  background: #1f73d0;
+}
+.wpct_comparison_table.simple-08 .wpct_comparison_table_col {
+  border: 1px solid #ccc;
+  border-top: 0;
+  align-self: stretch;
+}
+.wpct_comparison_table.simple-08 .wpct_comparison_table_col:not(:last-child) {
+  border-right: 0;
+}
+.wpct_comparison_table.simple-08 .wpct_comparison_table_col.featured {
+  background: 0;
+}
+.wpct_comparison_table.simple-08 .wpct_comparison_table_col.featured .wpct_submit-button {
+  background: #fa7921;
+}
+.wpct_comparison_table.simple-08 .wpct_comparison_table_col.featured .wpct_submit-button:hover {
+  background: #ff9020;
+}
+@media only screen and (max-width: 768px) {
+  .wpct_comparison_table.simple-08 .wpct_comparison_table_col:not(:last-child) {
+    border-right: 1px solid #ccc;
+  }
+}
+.wpct_comparison_table.simple-08 .wpct_comparison_table_feature_titles li,
+.wpct_comparison_table.simple-08 .wpct_comparison_table_feature_values li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 15px;
+}
+.wpct_comparison_table.simple-08 .wpct_comparison_table_feature_titles li:nth-child(odd),
+.wpct_comparison_table.simple-08 .wpct_comparison_table_feature_values li:nth-child(odd) {
+  background: 0;
+}
+.wpct_comparison_table.simple-08 .wpct_comparison_table_feature_titles li:nth-child(even),
+.wpct_comparison_table.simple-08 .wpct_comparison_table_feature_values li:nth-child(even) {
+  background: 0;
+}
+.wpct_comparison_table.simple-08 .wpct_comparison_table_feature_titles li:last-child,
+.wpct_comparison_table.simple-08 .wpct_comparison_table_feature_values li:last-child {
+  border-bottom: 0;
+}
+.wpct_comparison_table.simple-08 .wpct_comparison_table_feature_titles li .fa.wpct_icon_yes,
+.wpct_comparison_table.simple-08 .wpct_comparison_table_feature_values li .fa.wpct_icon_yes,
+.wpct_comparison_table.simple-08 .wpct_comparison_table_feature_titles li .fa.wpct_icon_no,
+.wpct_comparison_table.simple-08 .wpct_comparison_table_feature_values li .fa.wpct_icon_no {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  background: #32b17b;
+  border-radius: 50px;
+  text-align: center;
+  color: white;
+}
+.wpct_comparison_table.simple-08 .wpct_comparison_table_feature_titles li .fa.wpct_icon_no,
+.wpct_comparison_table.simple-08 .wpct_comparison_table_feature_values li .fa.wpct_icon_no {
+  background: red;
+}
+.wpct_comparison_table.simple-08 .wpct_comparison_table_section_tables .wpct_comparison_table_col {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-end;
+  text-align: center;
+  flex-direction: column;
+  padding: 24px 15px;
+  border-top: 1px solid #ccc;
+}
+.wpct_comparison_table.simple-08 .wpct_comparison_table_section_tables .wpct_comparison_table_col > * {
+  width: 100%;
+}
+.wpct_comparison_table.simple-08 .wpct_comparison_table_section_tables .wpct_comparison_table_col:first-child {
+  border-top: 0;
+  border-left: 0;
+}
+.wpct_comparison_table.simple-08 .wpct_comparison_table_section_tables h2 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 29px;
+  margin: 0;
+  padding: 0 0 10px;
+}
+.wpct_comparison_table.simple-08 .wpct_comparison_table_section_tables .wpct_button {
+  display: block;
+}
+.wpct_comparison_table.simple-08 .wpct_comparison_table_section_heading {
+  background: 0;
+  border: 1px solid #ccc;
+  border-top: 0;
+  font-weight: bold;
+  color: #45545f;
+  text-transform: none;
+  font-size: 18px;
+  text-align: left;
+}
+.wpct_comparison_table.simple-08 .wpct_comparison_table_section_content {
+  background: 0;
+}
+.wpct_comparison_table.simple-08 .wpct_comparison_table_section_content .wpct_comparison_table_col {
+  padding: 0;
+}
+.wpct_comparison_table.simple-09 .wpct_button {
+  display: block !important;
+}
+.wpct_comparison_table.simple-09 .wpct_comparison_table_section_heading {
+  background: #63b770;
+  text-align: left;
+}
+.wpct_comparison_table.simple-10 .wpct_comparison_table_row {
+  background: #f4f5f9;
+}
+@media only screen and (max-width: 992px) {
+  .wpct_comparison_table .wpct_comparison_table_feature_titles {
+    display: none;
+  }
+  .wpct_comparison_table .wpct_comparison_table_titles_col {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+  .wpct_comparison_table .wpct_comp_feature_title_responsive {
+    display: block;
+    font-weight: bold;
+  }
+  .wpct_comparison_table.one_col .wpct_comparison_table_col {
+    width: 100%;
+  }
+  .wpct_comparison_table.two_cols .wpct_comparison_table_col {
+    width: 50%;
+  }
+  .wpct_comparison_table.three_cols .wpct_comparison_table_col {
+    width: 33.33%;
+  }
+  .wpct_comparison_table.four_cols .wpct_comparison_table_col {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wpct_comparison_table {
+    min-width: 200px;
+  }
+  .wpct_comparison_table.one_col .wpct_comparison_table_col,
+  .wpct_comparison_table.two_cols .wpct_comparison_table_col,
+  .wpct_comparison_table.three_cols .wpct_comparison_table_col,
+  .wpct_comparison_table.four_cols .wpct_comparison_table_col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .wpct_comparison_table .wpct_comparison_table_section_content,
+  .wpct_comparison_table .wpct_comparison_table_section_heading,
+  .wpct_comparison_table .wpct_comparison_table_section_summary,
+  .wpct_comparison_table .wpct_price_row {
+    display: none;
+  }
+  .wpct_comparison_table .wpct_comparison_table_titles_col,
+  .wpct_comparison_table .wpct_plan_description_responsive {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .wpct_comparison_table .wpct_comparison_table_section_tables .wpct_pricing_table {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .wpct_comparison_table .wpct_comparison_table_section_tables .wpct_pricing_table .wpct_features,
+  .wpct_comparison_table .wpct_comparison_table_section_tables .wpct_pricing_table .wpct_button {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wpct_comparison_table .wpct_comparison_table_col {
+    width: 100% !important;
+  }
+}
+.wpct_table_group .whmpress_pricing_table {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+.wpct_table_group .whmpress_pricing_table ul {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0 0;
+  border-top: 1px solid #ddd;
+}
+.wpct_table_group .whmpress_pricing_table ul li {
+  width: 100%;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+  list-style: none;
+}
+.wpct_table_group .whmpress_pricing_table ul li:last-child {
+  border-bottom: 0;
+}
+.wpct_table_group .whmpress_pricing_table h4 {
+  width: 100%;
+  border-top: 1px solid #ddd;
+  margin: 0;
+  padding: 20px 0 10px;
+}
+.wpct_table_group .whmpress_pricing_table .whmpress_order_combo form {
+  display: block;
+}
+.wpct_table_group .whmpress_pricing_table .whmpress_order_combo form select,
+.wpct_table_group .whmpress_pricing_table .whmpress_order_combo form button {
+  display: block;
+  width: 90%;
+  margin: 0 auto 15px;
+}
+.wpct_table_group .whmpress_pricing_table .whmpress_order_button {
+  width: 90%;
+  display: inline-block;
+}
+/*--------------------------------------------------------------
+		Pricing Tables Group Styling
+--------------------------------------------------------------*/
+.wpct_table_group {
+  box-sizing: border-box;
+}
+.wpct_table_group *,
+.wpct_table_group *:before,
+.wpct_table_group *:after {
+  box-sizing: border-box;
+}
+.wpct_table_group .wpct_table_group_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+.wpct_table_group .wpct_table_group_col {
+  width: 20%;
+  padding: 10px;
+  min-width: 250px;
+  text-align: center;
+}
+.wpct_table_group .wpct_table_group_col .whmpress_pricing_table {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100% !important;
+}
+.wpct_table_group .wpct_table_group_col .whmpress_pricing_table .whmpress_order_button {
+  display: inline-block;
+}
+.wpct_table_group.wpct_have_carousel .wpct_table_group_col {
+  min-width: 100px;
+}
+.wpct_table_group.one_col .wpct_table_group_col {
+  width: 100%;
+}
+.wpct_table_group.two_cols .wpct_table_group_col {
+  width: 50%;
+}
+.wpct_table_group.three_cols .wpct_table_group_col {
+  width: 33%;
+}
+.wpct_table_group.four_cols .wpct_table_group_col {
+  width: 25%;
+}
+.wpct_table_group .slick-dots {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 auto 15px;
+}
+.wpct_table_group .slick-dots:after {
+  content: '';
+  position: absolute;
+  background: #7ecefd;
+  height: 10px;
+  border-radius: 10px;
+  left: 10px;
+  right: 10px;
+  z-index: 97;
+  bottom: 10px;
+}
+.wpct_table_group .slick-dots li {
+  position: relative;
+  cursor: pointer;
+  min-width: 70px;
+  text-align: center;
+}
+.wpct_table_group .slick-dots li > span {
+  content: '';
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 5px auto;
+  background: #7ecefd;
+  border-radius: 20px;
+  z-index: 98;
+}
+.wpct_table_group .slick-dots li > span:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  z-index: 99;
+  background: #7ecefd;
+  border-radius: 10px;
+  left: 5px;
+  top: 5px;
+}
+.wpct_table_group .slick-dots li.slick-active {
+  cursor: default;
+}
+.wpct_table_group .slick-dots li.slick-active > span:after {
+  background: white !important;
+}
+.wpct_table_group .wpct_group_title {
+  display: none !important;
+}
+.wpct_table_group.wpct_have_carousel .wpct_table_group_row {
+  padding-left: 60px;
+  padding-right: 60px;
+  position: relative;
+}
+.wpct_table_group.wpct_have_carousel .wpct_table_group_row .wpct_prev,
+.wpct_table_group.wpct_have_carousel .wpct_table_group_row .wpct_next {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  box-sizing: border-box;
+  padding: 0;
+  background: 0;
+  left: 2px;
+  top: 50%;
+  margin-top: -25px;
+  color: #333;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 0;
+  outline: transparent !important;
+}
+.wpct_table_group.wpct_have_carousel .wpct_table_group_row .wpct_prev:hover,
+.wpct_table_group.wpct_have_carousel .wpct_table_group_row .wpct_next:hover {
+  color: #333;
+  background: 0;
+  border: 0;
+}
+.wpct_table_group.wpct_have_carousel .wpct_table_group_row .wpct_prev.wpct_next,
+.wpct_table_group.wpct_have_carousel .wpct_table_group_row .wpct_next.wpct_next {
+  left: auto;
+  right: 0;
+}
+.wpct_table_group.group-01 .slick-dots:after {
+  background: #2cd26c;
+}
+.wpct_table_group.group-01 .slick-dots li > span {
+  background: #2cd26c;
+}
+.wpct_table_group.group-01 .slick-dots li > span:after {
+  background: #2cd26c;
+}
+.wpct_table_group.group-02 .slick-dots:after {
+  background: #e84c3d;
+}
+.wpct_table_group.group-02 .slick-dots li > span {
+  background: #e84c3d;
+}
+.wpct_table_group.group-02 .slick-dots li > span:after {
+  background: #e84c3d;
+}
+.wpct_table_group.group-03 .slick-dots:after {
+  background: #ffac00;
+}
+.wpct_table_group.group-03 .slick-dots li > span {
+  background: #ffac00;
+}
+.wpct_table_group.group-03 .slick-dots li > span:after {
+  background: #ffac00;
+}
+.wpct_table_group.group-04 .slick-dots:after {
+  background: #7c3ac9;
+}
+.wpct_table_group.group-04 .slick-dots li > span {
+  background: #7c3ac9;
+}
+.wpct_table_group.group-04 .slick-dots li > span:after {
+  background: #7c3ac9;
+}
+.wpct_table_group.group-05 .slick-dots:after {
+  background: #a6374a;
+}
+.wpct_table_group.group-05 .slick-dots li > span {
+  background: #a6374a;
+}
+.wpct_table_group.group-05 .slick-dots li > span:after {
+  background: #a6374a;
+}
+.wpct_table_group.group-06 .slick-dots:after {
+  background: #7ec01e;
+}
+.wpct_table_group.group-06 .slick-dots li > span {
+  background: #7ec01e;
+}
+.wpct_table_group.group-06 .slick-dots li > span:after {
+  background: #7ec01e;
+}
+.wpct_table_group.group-07 .slick-dots:after {
+  background: #d4300c;
+}
+.wpct_table_group.group-07 .slick-dots li > span {
+  background: #d4300c;
+}
+.wpct_table_group.group-07 .slick-dots li > span:after {
+  background: #d4300c;
+}
+.wpct_table_group.group-08 .slick-dots:after {
+  background: #2edb7c;
+}
+.wpct_table_group.group-08 .slick-dots li > span {
+  background: #2edb7c;
+}
+.wpct_table_group.group-08 .slick-dots li > span:after {
+  background: #2edb7c;
+}
+.wpct_table_group.group-09 .slick-dots:after {
+  background: #ff813b;
+}
+.wpct_table_group.group-09 .slick-dots li > span {
+  background: #ff813b;
+}
+.wpct_table_group.group-09 .slick-dots li > span:after {
+  background: #ff813b;
+}
+.wpct_table_group.group-10 .slick-dots:after {
+  background: #26c3f6;
+}
+.wpct_table_group.group-10 .slick-dots li > span {
+  background: #26c3f6;
+}
+.wpct_table_group.group-10 .slick-dots li > span:after {
+  background: #26c3f6;
+}
+.wpct_table_group.simple-01 .slick-dots:after {
+  background: #009cfc;
+}
+.wpct_table_group.simple-01 .slick-dots li > span {
+  background: #009cfc;
+}
+.wpct_table_group.simple-01 .slick-dots li > span:after {
+  background: #009cfc;
+}
+.wpct_table_group.simple-02 .slick-dots:after {
+  background: #b43a7e;
+}
+.wpct_table_group.simple-02 .slick-dots li > span {
+  background: #b43a7e;
+}
+.wpct_table_group.simple-02 .slick-dots li > span:after {
+  background: #b43a7e;
+}
+.wpct_table_group.simple-03 .slick-dots:after {
+  background: #242424;
+}
+.wpct_table_group.simple-03 .slick-dots li > span {
+  background: #242424;
+}
+.wpct_table_group.simple-03 .slick-dots li > span:after {
+  background: #242424;
+}
+/*--------------------------------------------------------------
+						 General Styling
+--------------------------------------------------------------*/
+.wpct_hosting_slider {
+  box-sizing: border-box;
+  background: #e5e5e5;
+  margin: 50px auto 30px;
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 35px 25px 20px;
+  box-shadow: inset 0 0 3px 3px #cccccc;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+.wpct_hosting_slider *,
+.wpct_hosting_slider *:before,
+.wpct_hosting_slider *:after {
+  box-sizing: border-box;
+}
+.wpct_hosting_slider .wpct_package_title ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 0 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.wpct_hosting_slider .wpct_package_title ul li {
+  background: #008000;
+  text-align: center;
+  padding: 6px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  width: 10%;
+  min-width: 90px;
+  margin-bottom: 15px !important;
+}
+.wpct_hosting_slider .ui-slider {
+  width: 90%;
+  margin: 0 auto 30px;
+}
+.wpct_hosting_slider .wpct_slider_content {
+  padding-bottom: 30px;
+}
+.wpct_hosting_slider .wpct_slider_submit_button {
+  text-align: center;
+}
+.wpct_hosting_slider .wpct_slider_submit_button .wpct_submit {
+  display: inline-block;
+  background: #5cb85c;
+  border-radius: 6px;
+  padding: 6px 10px;
+  border: 1px solid #4cae4c;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.wpct_hosting_slider .wpct_slider_submit_button .wpct_submit:hover {
+  background: #449d44;
+  border-color: #398439;
+}
+.wpct_hosting_slider .wpct_package_title_mobile {
+  display: none;
+}
+.wpct_hosting_slider .wpct_price_toggle {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.wpct_hosting_slider .wpct_price_toggle label span {
+  background-color: #dff0d8;
+}
+.wpct_hosting_slider .wpct_price_toggle input:checked + span {
+  background-color: #008000;
+  color: white;
+}
+.wpct_hosting_slider .wpct_slider_discounts_container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.wpct_hosting_slider .wpct_slider_discounts_container .wpct_holder {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+}
+.wpct_hosting_slider .wpct_slider_discounts_container .wpct_discount_text:after {
+  content: " ";
+}
+@media (min-width: 641px) {
+  .wpct_hosting_slider .wpct_price_toggle {
+    width: 50%;
+    float: left;
+    text-align: left;
+  }
+  .wpct_hosting_slider .wpct_slider_discounts_container {
+    width: 50%;
+    float: right;
+    text-align: right;
+  }
+}
+@media (max-width: 640px) {
+  .wpct_hosting_slider .wpct_package_title ul {
+    padding: 0;
+  }
+  .wpct_hosting_slider .wpct_package_title ul li {
+    background: 0;
+    padding: 6px 0;
+    border-radius: 0;
+    color: unset;
+    cursor: pointer;
+    width: 10%;
+    min-width: 10px;
+  }
+  .wpct_hosting_slider .wpct_package_title_mobile {
+    display: block;
+  }
+  .wpct_hosting_slider .wpct_package_title_desktop {
+    display: none;
+  }
+  .wpct_hosting_slider .wpct_price_toggle,
+  .wpct_hosting_slider .wpct_discounts_container {
+    float: none;
+    max-width: 100%;
+  }
+}
+.wpct_hosting_slider.first .wpct_slider_output {
+  float: left;
+  padding: 10px 15px;
+  margin-right: 10px;
+  color: #3c763d;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+  position: relative;
+}
+.wpct_hosting_slider.first .wpct_slider_output .wpct_tooltip {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  margin-bottom: 10px;
+  background: white;
+}
+.wpct_hosting_slider.first .wpct_slider_output:hover .wpct_tooltip {
+  display: block;
+}
+.wpct_hosting_slider.first .wpct_slider_heading {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.wpct_hosting_slider.second {
+  background: #e1ecf4;
+  border: 1px solid #c1dcc4;
+  box-shadow: none;
+  padding-bottom: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.wpct_hosting_slider.second .wpct_price_toggle label span {
+  background-color: #41728e;
+  color: white;
+}
+.wpct_hosting_slider.second .wpct_price_toggle label:first-child > span {
+  border-radius: 6px 0 0 6px;
+}
+.wpct_hosting_slider.second .wpct_price_toggle label:last-child > span {
+  border-radius: 0 6px 6px 0;
+}
+.wpct_hosting_slider.second .wpct_price_toggle input:checked + span {
+  background-color: #21526e;
+}
+.wpct_hosting_slider.second .ui-slider {
+  background: #21526e;
+}
+.wpct_hosting_slider.second .ui-slider .ui-widget-header {
+  background: #62A028;
+}
+.wpct_hosting_slider.second .wpct_slider_content {
+  background: #41728e;
+  margin-right: -25px;
+  margin-left: -25px;
+  margin-bottom: 0;
+  padding: 0 25px;
+  border-top: 1px solid #21526e;
+}
+.wpct_hosting_slider.second .wpct_slider_content .wpct_slider_output {
+  float: left;
+  width: 20%;
+  min-width: 150px;
+  color: #e1ecf4;
+  padding: 20px 10px;
+  text-align: center;
+  border-right: 1px solid #21526e;
+}
+.wpct_hosting_slider.second .wpct_slider_content .wpct_slider_output:first-child {
+  border-left: 1px solid #21526e;
+}
+.wpct_hosting_slider.second .wpct_slider_content .wpct_slider_output .wpct_slider_description_title {
+  display: block;
+}
+.wpct_hosting_slider.second .wpct_slider_content .wpct_slider_output .wpct_slider_description_title .wpct_price .wpct_unit,
+.wpct_hosting_slider.second .wpct_slider_content .wpct_slider_output .wpct_slider_description_title .wpct_price .wpct_amount,
+.wpct_hosting_slider.second .wpct_slider_content .wpct_slider_output .wpct_slider_description_title .wpct_price .wpct_decimal,
+.wpct_hosting_slider.second .wpct_slider_content .wpct_slider_output .wpct_slider_description_title .wpct_price .wpct_fraction {
+  display: none;
+}
+.wpct_hosting_slider.second .wpct_slider_content .wpct_slider_output .wpct_slider_description_title .wpct_price .wpct_period {
+  display: block;
+}
+.wpct_hosting_slider.second .wpct_slider_content .wpct_slider_output .wpct_slider_description_detail {
+  font-weight: bold;
+  display: block;
+  font-size: 24px;
+}
+.wpct_hosting_slider.second .wpct_slider_content .wpct_slider_output .wpct_slider_description_detail .wpct_price .wpct_period {
+  display: none;
+}
+.wpct_hosting_slider.second .wpct_package_title ul li {
+  background: #21526e;
+  padding: 3px 6px;
+}
+.wpct_hosting_slider.second .wpct_slider_submit {
+  text-align: right;
+  margin-right: -25px;
+  margin-left: -25px;
+  padding: 25px;
+  background: #41728e;
+  border-top: 1px solid #21526e;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.wpct_hosting_slider.second .wpct_slider_submit .wpct_submit {
+  background: #e1ecf4;
+  border: 5px solid #21526e;
+  border-radius: 0;
+  color: #21526e;
+  padding: 15px 30px;
+  font-size: 18px;
+  display: inline-block;
+  font-weight: bold;
+}
+.wpct_hosting_slider.second .wpct_slider_submit .wpct_submit:hover {
+  border-color: #e1ecf4;
+  background: #21526e;
+  color: #e1ecf4;
+}
+@media (max-width: 993px) {
+  .wpct_hosting_slider.second .wpct_slider_content {
+    border-bottom: 0;
+  }
+  .wpct_hosting_slider.second .wpct_slider_content .wpct_slider_output {
+    border-top: 1px solid #21526e;
+  }
+  .wpct_hosting_slider.second .wpct_slider_content .wpct_slider_output:nth-child(1) {
+    width: 33.33%;
+  }
+  .wpct_hosting_slider.second .wpct_slider_content .wpct_slider_output:nth-child(2) {
+    width: 33.33%;
+  }
+  .wpct_hosting_slider.second .wpct_slider_content .wpct_slider_output:nth-child(3) {
+    width: 33.33%;
+  }
+  .wpct_hosting_slider.second .wpct_slider_content .wpct_slider_output:nth-child(4) {
+    width: 50%;
+    border-left: 1px solid #21526e;
+  }
+  .wpct_hosting_slider.second .wpct_slider_content .wpct_slider_output:nth-child(5) {
+    width: 50%;
+  }
+}
+@media (max-width: 640px) {
+  .wpct_hosting_slider.second .wpct_slider_content {
+    border-bottom: 0;
+  }
+  .wpct_hosting_slider.second .wpct_slider_content .wpct_slider_output {
+    border-top: 1px solid #21526e;
+    border-left: 1px solid #21526e;
+    width: 100% !important;
+  }
+  .wpct_hosting_slider.second .wpct_package_title ul li {
+    background: 0;
+    padding: 3px 0;
+  }
+}
+.wpct_hosting_slider.third {
+  background: #fff;
+  border-radius: 0;
+  box-shadow: none;
+}
+.wpct_hosting_slider.third .wpct_package_title ul {
+  width: 90%;
+  display: block;
+  padding-bottom: 0;
+  position: relative;
+  min-height: 20px;
+}
+.wpct_hosting_slider.third .wpct_package_title ul li {
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  min-width: 40px;
+  margin-left: -20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wpct_hosting_slider.third .ui-slider {
+  margin: 0 auto 10px;
+}
+.wpct_hosting_slider.third .bottom-holder {
+  border: 3px solid #333;
+  border-right: 0;
+  margin-bottom: 20px;
+}
+.wpct_hosting_slider.third .bottom-holder .slider-container {
+  float: left;
+  width: calc(100% - 180px);
+  margin: 20px auto;
+}
+.wpct_hosting_slider.third .bottom-holder .wpct_price {
+  float: right;
+  width: 180px;
+  line-height: 40px;
+  background: #333;
+  color: #fff;
+}
+.wpct_hosting_slider.third .bottom-holder .wpct_price .wpct_slider_description_title {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+.wpct_hosting_slider.third .bottom-holder .wpct_price .wpct_slider_description_detail {
+  font-size: 34px;
+  background: #fff;
+  width: 100%;
+  display: block;
+  border-right: 3px solid #333;
+  color: #333;
+}
+.wpct_hosting_slider.third .bottom-holder .wpct_price .wpct_slider_description_detail .wpct_unit {
+  padding: 0 5px 0 15px;
+  background: #333;
+  color: #fff;
+  display: inline-block;
+}
+.wpct_hosting_slider.third .wpct_slider_content .wpct_slider_output {
+  float: left;
+  width: 18%;
+  max-width: 150px;
+  min-width: 120px;
+  margin-right: 2%;
+  border: 2px solid #333;
+  line-height: 2.5;
+  text-align: center;
+}
+.wpct_hosting_slider.third .wpct_slider_content .wpct_slider_output span {
+  display: block;
+  font-weight: bold;
+}
+.wpct_hosting_slider.third .wpct_slider_content .wpct_slider_output span.wpct_slider_description_title {
+  background: #f78f8f;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.wpct_hosting_slider.third .wpct_slider_content .wpct_slider_output:nth-child(1) .wpct_slider_description_title {
+  background: #f78f8f;
+}
+.wpct_hosting_slider.third .wpct_slider_content .wpct_slider_output:nth-child(2) .wpct_slider_description_title {
+  background: #e2b088;
+}
+.wpct_hosting_slider.third .wpct_slider_content .wpct_slider_output:nth-child(3) .wpct_slider_description_title {
+  background: #3697f2;
+}
+.wpct_hosting_slider.third .wpct_slider_content .wpct_slider_output:nth-child(4) .wpct_slider_description_title {
+  background: #85e02d;
+}
+.wpct_hosting_slider.third .wpct_slider_content .wpct_slider_output:nth-child(5) .wpct_slider_description_title {
+  background: #f78f8f;
+}
+.wpct_hosting_slider.third .wpct_slider_content .wpct_slider_output:nth-child(6) .wpct_slider_description_title {
+  background: #e2b088;
+}
+.wpct_hosting_slider.third .wpct_slider_content:before,
+.wpct_hosting_slider.third .wpct_slider_content:after {
+  display: block;
+  clear: both;
+}
+.wpct_hosting_slider.third .ui-slider {
+  background: #999;
+  border-radius: 0;
+  border: 0;
+  box-shadow: none;
+  height: 8px;
+}
+.wpct_hosting_slider.third .ui-slider .ui-widget-header {
+  background: #333;
+  border-radius: 0;
+}
+.wpct_hosting_slider.third .wpct_submit {
+  background: #333;
+  border: 5px solid #fff;
+  border-radius: 0;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 18px;
+  display: inline-block;
+  font-weight: bold;
+}
+.wpct_hosting_slider.third .wpct_submit:hover {
+  border-color: #333;
+  background: #fff;
+  color: #333;
+}
+.wpct_hosting_slider.third .wpct_slider_heading {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+@media (max-width: 769px) {
+  .wpct_hosting_slider.third .wpct_slider_content .wpct_slider_output {
+    max-width: 23%;
+    width: 23%;
+    margin: 1%;
+  }
+}
+@media (max-width: 640px) {
+  .wpct_hosting_slider.third .bottom-holder {
+    border: 3px solid #333 !important;
+  }
+  .wpct_hosting_slider.third .bottom-holder .slider-container {
+    float: none;
+    width: 100%;
+    margin: 20px auto 15px;
+  }
+  .wpct_hosting_slider.third .bottom-holder .wpct_price {
+    float: none;
+    width: 100%;
+  }
+  .wpct_hosting_slider.third .bottom-holder .wpct_price .wpct_slider_description_title {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .wpct_hosting_slider.third .bottom-holder .wpct_price .wpct_slider_description_detail {
+    text-align: center;
+    border-right: 0;
+    width: 100%;
+  }
+  .wpct_hosting_slider.third .bottom-holder .wpct_price .wpct_slider_description_detail .wpct_unit {
+    background: white;
+    color: #333;
+    margin-right: -5px;
+  }
+  .wpct_hosting_slider.third .wpct_slider_content .wpct_slider_output {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 0 20px !important;
+  }
+}
+.wpct_hosting_slider.fourth {
+  background: #6c7a89;
+  color: #fff;
+  box-shadow: none;
+  border: 0;
+  border-radius: 6px;
+  padding: 55px 0 0;
+  margin-top: 35px;
+  width: 100%;
+}
+.wpct_hosting_slider.fourth .wpct_slider_container {
+  padding: 0 60px;
+}
+.wpct_hosting_slider.fourth .ui-slider {
+  background: #000;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  height: 17px;
+  margin: 0 0 12px;
+  padding: 0;
+  width: 100%;
+}
+.wpct_hosting_slider.fourth .ui-slider .ui-slider-range {
+  background: #DE6262;
+  border-radius: 6px;
+}
+.wpct_hosting_slider.fourth .wpct_package_title ul {
+  padding: 20px 60px;
+}
+.wpct_hosting_slider.fourth .wpct_package_title ul li {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 0;
+  background: 0;
+  width: auto;
+  padding: 0;
+  margin-bottom: 40px;
+}
+.wpct_hosting_slider.fourth .wpct_slider_content:not(.wpct_hidden) {
+  display: flex !important;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 25px 0;
+  text-align: center;
+}
+.wpct_hosting_slider.fourth .wpct_slider_content:not(.wpct_hidden) .wpct_slider_output {
+  width: 25%;
+  color: #fff;
+}
+.wpct_hosting_slider.fourth .wpct_slider_content:not(.wpct_hidden) .wpct_slider_output h3 {
+  margin: 0;
+  font-size: 19px;
+  line-height: 21px;
+  color: #fff;
+}
+.wpct_hosting_slider.fourth .wpct_slider_content:not(.wpct_hidden) .wpct_slider_output .wpct_slider_description_detail {
+  font-size: 29px;
+  font-weight: 900;
+}
+.wpct_hosting_slider.fourth .wpct_slider_content:not(.wpct_hidden) .wpct_slider_submit a {
+  font-size: 17px;
+  font-weight: 900;
+  padding: 6px 15px;
+  background-color: #73ae95;
+  border-color: #4cae4c;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.wpct_hosting_slider.fourth .wpct_slider_content:not(.wpct_hidden) .wpct_plan_title_responsive {
+  display: none;
+  background: #6c7a89;
+}
+.wpct_hosting_slider.fourth .wpct_slider_content:not(.wpct_hidden) .wpct_plan_title_responsive h3 {
+  position: relative;
+  background: #72AC94;
+  text-align: center;
+  color: #fff;
+  padding: 8px 17px;
+  margin: 30px auto 0;
+  font-size: 20px;
+  display: inline-block;
+}
+.wpct_hosting_slider.fourth .wpct_slider_content:not(.wpct_hidden) .wpct_plan_title_responsive h3:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(114, 172, 148, 0);
+  border-top-color: #72AC94;
+  border-width: 10px;
+  margin-left: -10px;
+}
+@media only screen and (max-width: 768px) {
+  .wpct_hosting_slider.fourth .wpct_package_title {
+    display: none;
+  }
+  .wpct_hosting_slider.fourth .wpct_slider_content:not(.wpct_hidden) {
+    display: block !important;
+    padding-top: 0;
+  }
+  .wpct_hosting_slider.fourth .wpct_slider_content:not(.wpct_hidden) .wpct_slider_output {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #6C7A89;
+  }
+  .wpct_hosting_slider.fourth .wpct_slider_content:not(.wpct_hidden) .wpct_plan_title_responsive {
+    display: block;
+    margin-top: 25px;
+  }
+}
+.wpct_hosting_slider.slider-05 {
+  box-shadow: none;
+  background: 0;
+}
+.wpct_hosting_slider.slider-05 .ui-slider {
+  height: 20px;
+  border-radius: 20px 20px 0 0;
+  background: #6da7c5;
+}
+.wpct_hosting_slider.slider-05 .ui-slider .ui-widget-header {
+  background: #68bd4e;
+  border-radius: 20px 20px 0 0;
+}
+.wpct_hosting_slider.slider-05 .wpct_package_title ul li {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  color: #666;
+}
+.wpct_hosting_slider.slider-05 .wpct_package_title ul li.active {
+  font-weight: bold;
+  color: black;
+}
+.wpct_hosting_slider.slider-05 .wpct_slider_content {
+  width: 90%;
+  background: white;
+  margin: -30px auto 0;
+  padding: 20px;
+  box-shadow: 0 1px 5px 1px #666;
+  text-align: center;
+}
+.wpct_hosting_slider.slider-05 .wpct_slider_content .wpct_description_holder {
+  width: 75%;
+  float: left;
+}
+.wpct_hosting_slider.slider-05 .wpct_slider_content .wpct_description_holder > .wpct_slider_output {
+  float: left;
+  width: 25%;
+  min-width: 120px;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 5px;
+}
+.wpct_hosting_slider.slider-05 .wpct_slider_content .wpct_slider_description_title {
+  font-size: 14px;
+  line-height: 26px;
+}
+.wpct_hosting_slider.slider-05 .wpct_slider_content .wpct_slider_description_detail {
+  font-size: 24px;
+  line-height: 26px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  display: block;
+}
+.wpct_hosting_slider.slider-05 .wpct_slider_content .wpct_slider_description_detail:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 5px;
+  background: #68bd4e;
+  border-radius: 5px;
+  left: 5px;
+  right: 5px;
+}
+.wpct_hosting_slider.slider-05 .wpct_slider_content .wpct_price_holder {
+  width: 25%;
+  float: right;
+}
+.wpct_hosting_slider.slider-05 .wpct_slider_content .wpct_price_holder .wpct_slider_description_detail {
+  padding-top: 32px;
+  padding-bottom: 15px;
+}
+.wpct_hosting_slider.slider-05 .wpct_slider_content .wpct_price_holder .wpct_slider_description_detail:after {
+  display: none;
+}
+.wpct_hosting_slider.slider-05 .wpct_slider_content .wpct_price_holder .wpct_submit {
+  background: #4891b6;
+  display: inline-block;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.wpct_hosting_slider.slider-05 .wpct_slider_content .wpct_price_holder .wpct_submit:hover {
+  background: #3a7491;
+  color: white;
+}
+.wpct_hosting_slider.slider-05 .wpct_toggle_discount_contianer {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.wpct_hosting_slider.slider-05 .wpct_toggle_discount_contianer .wpct_price_toggle label span {
+  background-color: #4891b6;
+  color: white;
+}
+.wpct_hosting_slider.slider-05 .wpct_toggle_discount_contianer .wpct_price_toggle input:checked + span {
+  background: #3a7491;
+}
+@media (max-width: 640px) {
+  .wpct_hosting_slider.slider-05 .wpct_slider_content .wpct_description_holder {
+    width: 105%;
+    float: none;
+  }
+  .wpct_hosting_slider.slider-05 .wpct_slider_content .wpct_description_holder > .wpct_slider_output {
+    float: none;
+    width: 100%;
+  }
+  .wpct_hosting_slider.slider-05 .wpct_slider_content .wpct_price_holder {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
+.wpct_hosting_slider.slider-06 {
+  box-shadow: none;
+  max-width: 860px;
+  margin: 50px auto;
+  border: 0;
+  color: white;
+  border-radius: 10px;
+}
+.wpct_hosting_slider.slider-06 .ui-slider {
+  height: 18px;
+  background: #415a89;
+  border: 1px solid #38678B;
+  border-color: #314366 #5171ac #5171ac #314366;
+}
+.wpct_hosting_slider.slider-06 .ui-slider .ui-widget-header {
+  background: #5377b6;
+  border: 1px solid #5377b6;
+  border-color: #7793c5 #405f96 #405f96 #7793c5;
+}
+.wpct_hosting_slider.slider-06 .wpct_package_title ul li {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  color: #ccc;
+}
+.wpct_hosting_slider.slider-06 .wpct_package_title ul li.active {
+  font-weight: bold;
+  color: #fff;
+}
+.wpct_hosting_slider.slider-06 .wpct_description_holder {
+  min-height: 240px;
+  position: relative;
+}
+.wpct_hosting_slider.slider-06 .wpct_description_holder > .wpct_slider_output {
+  position: absolute;
+  width: 100px;
+  overflow: hidden;
+  height: 100px;
+  border-radius: 100px;
+  background: #24305f;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.wpct_hosting_slider.slider-06 .wpct_description_holder > .wpct_slider_output > * {
+  text-align: center;
+  text-transform: uppercase;
+}
+.wpct_hosting_slider.slider-06 .wpct_description_holder > .wpct_slider_output .wpct_slider_description_detail {
+  font-size: 22px;
+}
+.wpct_hosting_slider.slider-06 .wpct_description_holder > .wpct_slider_output .wpct_slider_description_title {
+  font-size: 10px;
+  margin-top: -5px;
+}
+.wpct_hosting_slider.slider-06 .wpct_description_holder > .wpct_slider_output:nth-child(1) {
+  left: 12%;
+  bottom: -80px;
+}
+.wpct_hosting_slider.slider-06 .wpct_description_holder > .wpct_slider_output:nth-child(2) {
+  left: 5%;
+  bottom: 20px;
+}
+.wpct_hosting_slider.slider-06 .wpct_description_holder > .wpct_slider_output:nth-child(3) {
+  left: 15%;
+  bottom: 120px;
+}
+.wpct_hosting_slider.slider-06 .wpct_description_holder > .wpct_slider_output:nth-child(4) {
+  left: 35%;
+  bottom: 140px;
+}
+@media only screen and (max-width: 640px) {
+  .wpct_hosting_slider.slider-06 .wpct_description_holder {
+    min-height: 480px;
+  }
+  .wpct_hosting_slider.slider-06 .wpct_description_holder > .wpct_slider_output {
+    left: 50%;
+    margin-left: -50px;
+  }
+  .wpct_hosting_slider.slider-06 .wpct_description_holder > .wpct_slider_output:nth-child(1) {
+    left: 50%;
+    bottom: 0;
+  }
+  .wpct_hosting_slider.slider-06 .wpct_description_holder > .wpct_slider_output:nth-child(2) {
+    left: 50%;
+    bottom: 120px;
+  }
+  .wpct_hosting_slider.slider-06 .wpct_description_holder > .wpct_slider_output:nth-child(3) {
+    left: 50%;
+    bottom: 240px;
+  }
+  .wpct_hosting_slider.slider-06 .wpct_description_holder > .wpct_slider_output:nth-child(4) {
+    left: 50%;
+    bottom: 360px;
+  }
+}
+.wpct_hosting_slider.slider-06 .wpct_price_holder {
+  text-align: right;
+}
+.wpct_hosting_slider.slider-06 .wpct_price_holder .wpct_price {
+  font-size: 30px;
+  line-height: 1.4;
+  margin: 10px auto 15px;
+}
+.wpct_hosting_slider.slider-06 .wpct_price_holder .whmpress_order_button {
+  display: inline-block;
+  color: white;
+  background: #24305f;
+}
+.wpct_hosting_slider.slider-06 .wpct_price_holder .whmpress_order_button:hover {
+  color: white;
+  background: #324384;
+}
+@media only screen and (max-width: 640px) {
+  .wpct_hosting_slider.slider-06 .wpct_price_holder {
+    text-align: center;
+  }
+}
+.wpct_hosting_slider.slider-07 {
+  background: #ececec;
+  box-shadow: none;
+  border-radius: 0;
+}
+.wpct_hosting_slider.slider-07 .wpct_slider_container {
+  padding-right: 180px;
+}
+.wpct_hosting_slider.slider-07 .wpct_slider_heading {
+  font-size: 30px;
+  font-weight: normal;
+  color: #3767a2;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.wpct_hosting_slider.slider-07 .ui-slider {
+  height: 8px;
+  background: #dbdbdb;
+  border: 0;
+  margin-bottom: 0 !important;
+}
+.wpct_hosting_slider.slider-07 .ui-slider .ui-widget-header {
+  background: #dbdbdb;
+  border: 0;
+}
+.wpct_hosting_slider.slider-07 .wpct_package_title ul li {
+  min-width: 10px;
+  text-align: center;
+  background: 0;
+  color: #666;
+  font-size: 15px;
+}
+.wpct_hosting_slider.slider-07 .wpct_package_title ul li.active {
+  color: black;
+  font-weight: bold;
+}
+.wpct_hosting_slider.slider-07 .wpct_package_title ul li > div {
+  position: relative;
+}
+.wpct_hosting_slider.slider-07 .wpct_package_title ul li:not(:first-child):not(:last-child) > div:before {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 2px;
+  background: #666;
+  top: -14px;
+  left: 50%;
+  margin-left: -1px;
+  z-index: 1;
+}
+.wpct_hosting_slider.slider-07 .wpct_slider_content {
+  position: relative;
+  padding-right: 180px;
+  background: white;
+  margin-bottom: 35px !important;
+  border-radius: 10px;
+  border-bottom: 3px solid #999;
+  overflow: hidden;
+}
+.wpct_hosting_slider.slider-07 .wpct_slider_content .wpct_slider_output {
+  width: 20%;
+  float: left;
+  border-right: 1px solid #666;
+  padding: 15px 10px;
+  text-align: center;
+  min-width: 120px;
+}
+.wpct_hosting_slider.slider-07 .wpct_slider_content .wpct_slider_output .wpct_slider_description_title {
+  font-size: 15px;
+  line-height: 22px;
+  color: #999;
+  font-weight: normal;
+}
+.wpct_hosting_slider.slider-07 .wpct_slider_content .wpct_slider_output .wpct_slider_description_detail {
+  font-size: 20px;
+  line-height: 22px;
+  color: #000;
+  font-weight: normal;
+}
+.wpct_hosting_slider.slider-07 .wpct_slider_content .wpct_slider_submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 180px;
+}
+.wpct_hosting_slider.slider-07 .wpct_slider_content .wpct_slider_submit .wpct_submit {
+  background: #3767a2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 0;
+  font-size: 22px;
+}
+.wpct_hosting_slider.slider-07 .wpct_slider_content .wpct_slider_submit .wpct_submit:hover {
+  background: #2a4f7c;
+  color: white;
+}
+.wpct_hosting_slider.slider-07 .wpct_slider_content:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media only screen and (max-width: 640px) {
+  .wpct_hosting_slider.slider-07 .wpct_slider_content {
+    padding-right: 0;
+  }
+  .wpct_hosting_slider.slider-07 .wpct_slider_content .wpct_slider_output {
+    width: 100%;
+    float: none;
+    border-right: 0;
+  }
+  .wpct_hosting_slider.slider-07 .wpct_slider_content .wpct_slider_submit {
+    position: relative;
+    width: 100%;
+    height: 80px;
+  }
+  .wpct_hosting_slider.slider-07 .wpct_slider_container {
+    padding-right: 0;
+  }
+}
+.wpct_hosting_slider.slider-08 {
+  background: #fff;
+  box-shadow: 0 0 1px 1px #ddd;
+  border-radius: 6px;
+}
+.wpct_hosting_slider.slider-08 .wpct_price_toggle {
+  margin-bottom: 25px;
+}
+.wpct_hosting_slider.slider-08 .wpct_price_toggle .ribbon {
+  color: white;
+  line-height: 1.4;
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 20px 10px 40px;
+  margin-left: -45px;
+  position: relative;
+  background: #0d8ff2;
+  box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+.wpct_hosting_slider.slider-08 .wpct_price_toggle .ribbon:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -1px;
+  top: 100%;
+  border-width: 6px 10px;
+  border-style: solid;
+  border-color: #085691 #085691 transparent transparent;
+}
+.wpct_hosting_slider.slider-08 .wpct_price_toggle label span {
+  background: #3da5f5;
+}
+.wpct_hosting_slider.slider-08 .wpct_price_toggle input:checked + span {
+  background: #0a72c2;
+}
+.wpct_hosting_slider.slider-08 .wpct_slider_discounts_container {
+  padding: 10px 20px;
+}
+.wpct_hosting_slider.slider-08 .wpct_slider_container {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+}
+.wpct_hosting_slider.slider-08 .ui-slider {
+  height: 12px;
+  background: #cbcbcb;
+  border: 0;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.wpct_hosting_slider.slider-08 .ui-slider .ui-widget-header {
+  background: #0d8ff2;
+  border: 0;
+}
+.wpct_hosting_slider.slider-08 .wpct_package_title ul li {
+  text-align: center;
+  background: 0;
+  color: #666;
+  font-size: 15px;
+}
+.wpct_hosting_slider.slider-08 .wpct_package_title ul li.active {
+  color: #0d8ff2;
+  font-weight: bold;
+}
+.wpct_hosting_slider.slider-08 .wpct_slider_content_container .wpct_slider_heading {
+  color: black;
+  font-size: 18px;
+  padding: 15px;
+  text-align: center;
+}
+.wpct_hosting_slider.slider-08 .wpct_slider_content {
+  position: relative;
+  padding-right: 180px;
+  background: white;
+  margin-bottom: 35px !important;
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 160px;
+  text-align: center;
+}
+.wpct_hosting_slider.slider-08 .wpct_slider_content .wpct_slider_output {
+  width: 20%;
+  display: inline-block;
+  padding: 15px 10px;
+  text-align: center;
+  min-width: 120px;
+}
+.wpct_hosting_slider.slider-08 .wpct_slider_content .wpct_slider_output .wpct_slider_description_title {
+  font-size: 15px;
+  line-height: 22px;
+  color: #999;
+  font-weight: normal;
+}
+.wpct_hosting_slider.slider-08 .wpct_slider_content .wpct_slider_output .wpct_slider_description_detail {
+  font-size: 20px;
+  line-height: 22px;
+  color: #000;
+  font-weight: normal;
+}
+.wpct_hosting_slider.slider-08 .wpct_slider_content .wpct_price_holder {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 180px;
+  text-align: center;
+}
+.wpct_hosting_slider.slider-08 .wpct_slider_content .wpct_price_holder .wpct_slider_description_title {
+  font-size: 14px;
+  line-height: 22px;
+  color: #000;
+  font-weight: normal;
+}
+.wpct_hosting_slider.slider-08 .wpct_slider_content .wpct_price_holder .wpct_slider_description_title .wpct_price .wpct_unit,
+.wpct_hosting_slider.slider-08 .wpct_slider_content .wpct_price_holder .wpct_slider_description_title .wpct_price .wpct_amount,
+.wpct_hosting_slider.slider-08 .wpct_slider_content .wpct_price_holder .wpct_slider_description_title .wpct_price .wpct_decimal,
+.wpct_hosting_slider.slider-08 .wpct_slider_content .wpct_price_holder .wpct_slider_description_title .wpct_price .wpct_fraction {
+  display: none;
+}
+.wpct_hosting_slider.slider-08 .wpct_slider_content .wpct_price_holder .wpct_slider_description_title .wpct_price .wpct_period {
+  display: block;
+}
+.wpct_hosting_slider.slider-08 .wpct_slider_content .wpct_price_holder .wpct_slider_description_detail {
+  font-size: 28px;
+  line-height: 22px;
+  color: #0d8ff2;
+  font-weight: bold;
+}
+.wpct_hosting_slider.slider-08 .wpct_slider_content .wpct_price_holder .wpct_slider_description_detail .wpct_price .wpct_period {
+  display: none;
+}
+.wpct_hosting_slider.slider-08 .wpct_slider_content .wpct_submit {
+  background: #62b738;
+  color: white;
+  border-radius: 6px;
+  font-size: 22px;
+  display: inline-block;
+  margin: 10px auto;
+}
+.wpct_hosting_slider.slider-08 .wpct_slider_content .wpct_submit:hover {
+  background: #4d902c;
+  color: white;
+}
+.wpct_hosting_slider.slider-08 .wpct_slider_content:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media only screen and (max-width: 640px) {
+  .wpct_hosting_slider.slider-08 .wpct_slider_content {
+    padding-right: 0;
+  }
+  .wpct_hosting_slider.slider-08 .wpct_slider_content .wpct_slider_output {
+    width: 100%;
+    float: none;
+    border-right: 0;
+  }
+  .wpct_hosting_slider.slider-08 .wpct_slider_content .wpct_price_holder {
+    position: relative;
+    width: 100%;
+  }
+  .wpct_hosting_slider.slider-08 .wpct_slider_container {
+    padding-right: 0;
+  }
+  .wpct_hosting_slider.slider-08 .wpct_price_toggle {
+    text-align: left;
+  }
+}
+@media (min-width: 641px) {
+  .wpct_hosting_slider.slider-08 .wpct_price_toggle,
+  .wpct_hosting_slider.slider-08 .wpct_slider_discounts_container {
+    width: auto;
+    float: left;
+  }
+}
+.wpct_hosting_slider.slider-09 {
+  background: #f5f6f7;
+  background: -moz-linear-gradient(top, #f5f6f7 0%, #e6e6e6 100%);
+  background: -webkit-linear-gradient(top, #f5f6f7 0%, #e6e6e6 100%);
+  background: linear-gradient(to bottom, #f5f6f7 0%, #e6e6e6 100%);
+  padding: 35px 0 0;
+  box-shadow: 0 0 1px 1px #ddd;
+  border-radius: 6px;
+}
+.wpct_hosting_slider.slider-09 .wpct_price_toggle {
+  padding: 10px 20px;
+}
+.wpct_hosting_slider.slider-09 .wpct_price_toggle label span {
+  background-color: #0290cd;
+  color: white;
+}
+.wpct_hosting_slider.slider-09 .wpct_price_toggle label:first-child > span {
+  border-radius: 6px 0 0 6px;
+}
+.wpct_hosting_slider.slider-09 .wpct_price_toggle label:last-child > span {
+  border-radius: 0 6px 6px 0;
+}
+.wpct_hosting_slider.slider-09 .wpct_price_toggle input:checked + span {
+  background-color: #026d9a;
+}
+.wpct_hosting_slider.slider-09 .wpct_slider_discounts_container {
+  padding: 10px 20px;
+}
+.wpct_hosting_slider.slider-09 .wpct_slider_heading {
+  font-size: 30px;
+  font-weight: normal;
+  color: #0290CD;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.wpct_hosting_slider.slider-09 .ui-slider {
+  height: 4px;
+  background: #c1c1c1;
+  border: 0;
+  border-radius: 4px;
+  margin-bottom: 0 !important;
+}
+.wpct_hosting_slider.slider-09 .ui-slider .ui-widget-header {
+  background: #dbdbdb;
+  border: 0;
+}
+.wpct_hosting_slider.slider-09 .wpct_package_title ul li {
+  min-width: 47px;
+  padding: 15px 0 0;
+  text-align: center;
+  background: 0;
+  color: #666;
+  font-size: 15px;
+}
+.wpct_hosting_slider.slider-09 .wpct_package_title ul li.active {
+  color: black;
+  font-weight: bold;
+}
+.wpct_hosting_slider.slider-09 .wpct_package_title ul li > div {
+  position: relative;
+}
+.wpct_hosting_slider.slider-09 .wpct_slider_container {
+  border-bottom: 1px solid #999;
+}
+.wpct_hosting_slider.slider-09 .wpct_slider_content {
+  position: relative;
+  padding-right: 180px;
+  margin-bottom: 35px !important;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.wpct_hosting_slider.slider-09 .wpct_slider_content .wpct_slider_output {
+  width: 20%;
+  float: left;
+  border-right: 1px solid #999;
+  padding: 15px 10px;
+  text-align: center;
+  min-width: 120px;
+}
+.wpct_hosting_slider.slider-09 .wpct_slider_content .wpct_slider_output .wpct_slider_description_title {
+  font-size: 15px;
+  line-height: 22px;
+  color: #999;
+  font-weight: normal;
+}
+.wpct_hosting_slider.slider-09 .wpct_slider_content .wpct_slider_output .wpct_slider_description_detail {
+  font-size: 20px;
+  color: #0290CD;
+  font-weight: normal;
+  line-height: 34px;
+}
+.wpct_hosting_slider.slider-09 .wpct_slider_content .wpct_slider_output.wpct_price_holder .wpct_slider_description_title .wpct_price .wpct_unit,
+.wpct_hosting_slider.slider-09 .wpct_slider_content .wpct_slider_output.wpct_price_holder .wpct_slider_description_title .wpct_price .wpct_amount,
+.wpct_hosting_slider.slider-09 .wpct_slider_content .wpct_slider_output.wpct_price_holder .wpct_slider_description_title .wpct_price .wpct_decimal,
+.wpct_hosting_slider.slider-09 .wpct_slider_content .wpct_slider_output.wpct_price_holder .wpct_slider_description_title .wpct_price .wpct_fraction {
+  display: none;
+}
+.wpct_hosting_slider.slider-09 .wpct_slider_content .wpct_slider_output.wpct_price_holder .wpct_slider_description_title .wpct_price .wpct_period {
+  display: block;
+}
+.wpct_hosting_slider.slider-09 .wpct_slider_content .wpct_slider_output.wpct_price_holder .wpct_slider_description_detail {
+  color: #62af01;
+  font-size: 28px;
+}
+.wpct_hosting_slider.slider-09 .wpct_slider_content .wpct_slider_output.wpct_price_holder .wpct_slider_description_detail .wpct_price .wpct_period {
+  display: none;
+}
+.wpct_hosting_slider.slider-09 .wpct_slider_content .wpct_slider_submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 180px;
+  padding: 15px;
+  text-align: center;
+}
+.wpct_hosting_slider.slider-09 .wpct_slider_content .wpct_slider_submit .wpct_submit {
+  background: #0290CD;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  display: inline-block;
+}
+.wpct_hosting_slider.slider-09 .wpct_slider_content .wpct_slider_submit .wpct_submit:hover {
+  background: #026d9a;
+  color: white;
+}
+.wpct_hosting_slider.slider-09 .wpct_slider_content:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media only screen and (max-width: 640px) {
+  .wpct_hosting_slider.slider-09 {
+    padding-bottom: 25px;
+  }
+  .wpct_hosting_slider.slider-09 .wpct_slider_content {
+    padding-right: 0;
+  }
+  .wpct_hosting_slider.slider-09 .wpct_slider_content .wpct_slider_output {
+    width: 100%;
+    float: none;
+    border-right: 0;
+  }
+  .wpct_hosting_slider.slider-09 .wpct_slider_content .wpct_slider_submit {
+    position: relative;
+    width: 100%;
+    height: 80px;
+  }
+  .wpct_hosting_slider.slider-09 .wpct_slider_container {
+    padding-right: 0;
+  }
+}
+.wpct_hosting_slider.slider-10 {
+  background: #ebebeb;
+  border: 10px solid white;
+  box-shadow: none;
+  border-radius: 5px;
+  color: #333;
+  margin: 50px auto 30px;
+  position: relative;
+  border: 1px solid #ebf7ff;
+  border-radius: 0;
+}
+.wpct_hosting_slider.slider-10 .ui-slider {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  height: 24px;
+  margin-bottom: 10px;
+}
+.wpct_hosting_slider.slider-10 .ui-slider .ui-widget-header {
+  background: white;
+  border-radius: 0;
+}
+.wpct_hosting_slider.slider-10 .ui-slider .ui-slider-handle {
+  background: white;
+  border: 1px solid #ddd;
+  height: 28px;
+  width: 18px;
+  border-radius: 0;
+  top: -3px;
+  cursor: pointer;
+}
+.wpct_hosting_slider.slider-10 .ui-slider .ui-slider-handle:before,
+.wpct_hosting_slider.slider-10 .ui-slider .ui-slider-handle:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 3px;
+  left: 4px;
+  top: 9px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.wpct_hosting_slider.slider-10 .ui-slider .ui-slider-handle:after {
+  top: 13px;
+}
+.wpct_hosting_slider.slider-10 .ui-slider .wpct_slider_pipe {
+  width: 1px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1px;
+  background: #ddd;
+  z-index: 2;
+}
+.wpct_hosting_slider.slider-10 .wpct_slider_heading {
+  font-size: 40px;
+  font-weight: 100;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.wpct_hosting_slider.slider-10 .wpct_package_title ul li {
+  background: 0;
+  padding: 0;
+  border-radius: 0;
+  color: #333;
+  min-width: 80px;
+}
+.wpct_hosting_slider.slider-10 .wpct_package_title ul li.active {
+  font-weight: bold;
+}
+.wpct_hosting_slider.slider-10 .wpct_slider_output {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.wpct_hosting_slider.slider-10 .wpct_slider_output .wpct_slider_description_detail {
+  border-bottom: 1px solid #ddd;
+  display: block;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.wpct_hosting_slider.slider-10 .wpct_slider_submit {
+  text-align: center;
+}
+.wpct_hosting_slider.slider-10 .wpct_slider_submit .wpct_submit,
+.wpct_hosting_slider.slider-10 .wpct_slider_submit .wpct_submit-button {
+  display: inline-block;
+  color: white;
+  background: white;
+  border-radius: 0;
+  border: 2px solid #ddd;
+  padding: 12px 20px 12px 40px;
+  color: #333;
+  font-size: 20px;
+  position: relative;
+}
+.wpct_hosting_slider.slider-10 .wpct_slider_submit .wpct_submit:before,
+.wpct_hosting_slider.slider-10 .wpct_slider_submit .wpct_submit-button:before,
+.wpct_hosting_slider.slider-10 .wpct_slider_submit .wpct_submit:after,
+.wpct_hosting_slider.slider-10 .wpct_slider_submit .wpct_submit-button:after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 6px;
+  left: 12px;
+  top: 50%;
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  margin-top: -7px;
+}
+.wpct_hosting_slider.slider-10 .wpct_slider_submit .wpct_submit:after,
+.wpct_hosting_slider.slider-10 .wpct_slider_submit .wpct_submit-button:after {
+  margin-top: 1px;
+}
+.wpct_hosting_slider.slider-10 .wpct_slider_submit .wpct_submit:hover,
+.wpct_hosting_slider.slider-10 .wpct_slider_submit .wpct_submit-button:hover {
+  background: #c4c4c4;
+}
+.wpct_hosting_slider.slider-10 .wpct_description_holder {
+  margin-bottom: 50px;
+}
+.wpct_hosting_slider.slider-10 .wpct_package_title_desktop .wpct_price .wpct_period,
+.wpct_hosting_slider.slider-10 .wpct_package_title_mobile .wpct_price .wpct_period {
+  display: none !important;
+}
+@media (max-width: 640px) {
+  .wpct_hosting_slider.slider-10 .wpct_slider_output {
+    float: none;
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  .wpct_hosting_slider.slider-10 .wpct_slider_output .wpct_slider_description_detail {
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+.wpct_hosting_slider.slider-10 .wpct_discounts_container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  min-height: 85px;
+  background: #c4c4c4;
+  color: #333;
+  min-width: 200px;
+  line-height: 1.1;
+}
+.wpct_hosting_slider.slider-10 .wpct_discounts_container .wpct_discount_text,
+.wpct_hosting_slider.slider-10 .wpct_discounts_container .wpct_discount_value {
+  display: block;
+  text-align: center;
+}
+.wpct_hosting_slider.slider-10 .wpct_discounts_container .wpct_discount_text.wpct_discount_text,
+.wpct_hosting_slider.slider-10 .wpct_discounts_container .wpct_discount_value.wpct_discount_text {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.wpct_hosting_slider.slider-10 .wpct_discounts_container .wpct_discount_text.wpct_discount_value,
+.wpct_hosting_slider.slider-10 .wpct_discounts_container .wpct_discount_value.wpct_discount_value {
+  font-size: 38px;
+}
+.wpct_hosting_slider.slider-10 .wpct_discounts_container .wpct_discount {
+  display: block;
+}
+.wpct_hosting_slider.slider-10 .wpct_price_heading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  min-height: 85px;
+  background: #c4c4c4;
+  color: #333;
+  min-width: 150px;
+  line-height: 1.1;
+}
+.wpct_hosting_slider.slider-10 .wpct_price_heading .wpct_unit {
+  font-size: 28px;
+  vertical-align: baseline;
+  top: -20px;
+  position: relative;
+}
+.wpct_hosting_slider.slider-10 .wpct_price_heading .wpct_amount {
+  font-size: 56px;
+}
+.wpct_hosting_slider.slider-10 .wpct_price_heading .wpct_decimal {
+  position: absolute;
+  margin-top: 13px;
+  font-size: 24px;
+}
+.wpct_hosting_slider.slider-10 .wpct_price_heading .wpct_fraction {
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 10px;
+  font-size: 24px;
+  text-decoration: underline;
+}
+.wpct_hosting_slider.slider-10 .wpct_price_heading sup,
+.wpct_hosting_slider.slider-10 .wpct_price_heading sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+.wpct_hosting_slider.slider-10 .wpct_price_heading sub {
+  top: 0.4em;
+}
+.wpct_hosting_slider.slider-10 .wpct_price_toggle {
+  position: absolute;
+  left: 0;
+  top: -35px;
+  text-align: center;
+  width: auto !important;
+  float: none !important;
+}
+.wpct_hosting_slider.slider-10 .wpct_price_toggle input {
+  display: none;
+}
+.wpct_hosting_slider.slider-10 .wpct_price_toggle label span {
+  background: white;
+  border-radius: 0;
+  border: 2px solid #ddd;
+}
+.wpct_hosting_slider.slider-10 .wpct_price_toggle input:checked + span {
+  background: #c4c4c4;
+}
+.wpct_hosting_slider.slider-10 .wpct_slider_heading {
+  width: calc(100% - 390px);
+  margin: 0 auto;
+}
+.wpct_hosting_slider.slider-10 .wpct_slider_heading span {
+  display: inline-block;
+  border: 1px solid;
+  padding: 2px 24px;
+}
+@media (max-width: 767px) {
+  .wpct_hosting_slider.slider-10 {
+    padding-top: 105px;
+  }
+  .wpct_hosting_slider.slider-10 .wpct_slider_heading {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .wpct_hosting_slider.slider-10 .wpct_discounts_container,
+  .wpct_hosting_slider.slider-10 .wpct_price_heading {
+    width: 50%;
+  }
+  .wpct_hosting_slider.slider-10 .wpct_discounts_container .wpct_price,
+  .wpct_hosting_slider.slider-10 .wpct_price_heading .wpct_price {
+    text-align: center;
+  }
+}
+/*--------------------------------------------------------------
+Pricing Matrix Styling
+--------------------------------------------------------------*/
+.wpct_comparison_matrix {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.wpct_comparison_matrix *,
+.wpct_comparison_matrix *:before,
+.wpct_comparison_matrix *:after {
+  box-sizing: border-box;
+}
+.wpct_comparison_matrix table {
+  width: 100%;
+  overflow: auto;
+  border-collapse: collapse;
+}
+.wpct_comparison_matrix table th,
+.wpct_comparison_matrix table td {
+  text-align: center;
+  width: 10%;
+}
+.wpct_comparison_matrix table td {
+  border: 1px solid #D9D9D9;
+  padding: 20px 8px 15px;
+  background: #f3f3f3;
+  font-weight: 400;
+  color: #252525;
+  text-transform: uppercase;
+}
+.wpct_comparison_matrix .wpct_group_title th {
+  background: #42454a;
+  color: #fff;
+  font-size: 18px;
+  padding: 17px;
+}
+.wpct_comparison_matrix .wpct_description_titles td {
+  text-transform: uppercase;
+  background: #ccc;
+  font-size: 12px;
+  padding: 8px;
+}
+.wpct_comparison_matrix .wpct_plan_title span {
+  display: block;
+}
+.wpct_comparison_matrix .wpct_plan_title span.wpct_plan_title_name {
+  font-weight: bold;
+}
+.wpct_comparison_matrix .wpct_unit,
+.wpct_comparison_matrix .wpct_amount {
+  font-size: 30px;
+  line-height: 40px;
+}
+.wpct_comparison_matrix .wpct_compare_unit {
+  font-weight: 300;
+  text-transform: lowercase;
+  display: block;
+}
+.wpct_comparison_matrix .wpct_button .wpct_submit-button {
+  border-radius: 3px;
+  background: #fd4326;
+  padding: 0 15px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fd4326;
+  transition: all 0.5s ease-in-out;
+}
+.wpct_comparison_matrix .wpct_button .wpct_submit-button:hover {
+  background: white;
+  color: #FD4326;
+}
+@media only screen and (max-width: 768px) {
+  .wpct_comparison_matrix table,
+  .wpct_comparison_matrix tbody,
+  .wpct_comparison_matrix tbody tr,
+  .wpct_comparison_matrix td {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+  .wpct_comparison_matrix table td,
+  .wpct_comparison_matrix tbody td,
+  .wpct_comparison_matrix tbody tr td,
+  .wpct_comparison_matrix td td {
+    width: 100%;
+  }
+  .wpct_comparison_matrix table thead {
+    display: none;
+  }
+  .wpct_comparison_matrix tr {
+    border: 1px solid #ccc;
+  }
+  .wpct_comparison_matrix td {
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+  .wpct_comparison_matrix td[data-title] {
+    text-align: left;
+  }
+  .wpct_comparison_matrix td[data-title]:before {
+    content: attr(data-title) ": ";
+    display: inline-block;
+    font-weight: bold;
+    width: 45%;
+  }
+  .wpct_comparison_matrix td:not([data-title]) {
+    text-align: center;
+  }
+}
+.wpct_comparison_matrix.matrix-01 {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #303030;
+}
+.wpct_comparison_matrix.matrix-01 table td {
+  padding: 8px;
+  background: white;
+}
+.wpct_comparison_matrix.matrix-01 .wpct_group_title th {
+  background: #e6e6e6;
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 8px;
+  color: #303030;
+}
+.wpct_comparison_matrix.matrix-01 .wpct_description_titles td {
+  background: white;
+}
+.wpct_comparison_matrix.matrix-01 .wpct_plan_title {
+  text-align: left;
+  padding-left: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.wpct_comparison_matrix.matrix-01 .wpct_plan_title span {
+  display: block;
+}
+.wpct_comparison_matrix.matrix-01 .wpct_plan_title span.wpct_plan_title_name {
+  font-weight: normal;
+}
+.wpct_comparison_matrix.matrix-01 .wpct_plan_title .wpct_ribbon_text {
+  position: absolute;
+  width: 100px;
+  height: 14px;
+  background: #da2727;
+  color: white;
+  transform: rotate(-45deg);
+  top: 10px;
+  left: -35px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+}
+@media only screen and (max-width: 640px) {
+  .wpct_comparison_matrix.matrix-01 .wpct_plan_title {
+    text-align: center;
+    padding: 8px;
+  }
+}
+.wpct_comparison_matrix.matrix-01 .wpct_amount {
+  font-size: inherit;
+  line-height: inherit;
+}
+.wpct_comparison_matrix.matrix-01 .wpct_compare_unit {
+  text-transform: none;
+}
+.wpct_comparison_matrix.matrix-01 .wpct_button .wpct_submit-button {
+  font-size: 14px;
+  line-height: 18px;
+  background: white;
+  color: #303030;
+  border-radius: 0;
+  border: 1px solid #303030;
+  padding: 4px 8px;
+  transition: all 0.3s linear;
+}
+.wpct_comparison_matrix.matrix-01 .wpct_button .wpct_submit-button:hover {
+  background: #da2727;
+  color: white;
+  border-color: #da2727;
+}
+.wpct_comparison_matrix.webreplex_matrix {
+  font-size: 13px;
+  line-height: 19px;
+}
+.wpct_comparison_matrix.webreplex_matrix table {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+.wpct_comparison_matrix.webreplex_matrix table tr {
+  border-bottom: 1px solid #ddd;
+  background: #F2F2F2;
+}
+.wpct_comparison_matrix.webreplex_matrix table tr:nth-child(even) {
+  background: white;
+}
+.wpct_comparison_matrix.webreplex_matrix table tr td {
+  background: 0;
+  border: 0;
+  padding: 5px 10px;
+}
+.wpct_comparison_matrix.webreplex_matrix .wpct_description_titles th {
+  background: #00ace8;
+  color: white;
+  font-weight: bold;
+  vertical-align: middle;
+  height: 60px;
+}
+.wpct_comparison_matrix.webreplex_matrix .wpct_button .wpct_submit-button {
+  background: #00ace8;
+  border-radius: 0;
+  color: white;
+  border: 0;
+}
+.wpct_comparison_matrix.webreplex_matrix .wpct_button .wpct_submit-button:hover {
+  background: #0086b5;
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,7 @@
+param_name,heading,description,type,value,group
+sub_icon,icon heading,icon description,whmpress_icon,"fa fa-shakeel",whmpress
+featured,Featured Product,Select if the product is featured product or not,dropdown,"['normal','featured']",whmpress
+old_price,Old Price,Old Price to be shown as deleted (line through),textfield,Value,whmpress
+feature_detail,Feature Detail,Feature Details where it is required,textfield,Value,whmpress
+text1,Special Text 1,Text used in design 3 (in circle) Line 1,textfield,Value,whmpress
+text2,Special Text 2,Text used in design 3 (in circle) Line 2,textfield,Value,whmpress

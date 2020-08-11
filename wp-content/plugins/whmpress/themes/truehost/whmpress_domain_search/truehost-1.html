@@ -1,0 +1,18 @@
+<div class="envor-domain-search">
+	<form method="post" action="{$action_url}">
+		<div class="envor-domain-search-inner">
+			<input type="text" name="domain" placeholder="Search domain name...">
+			{if !empty($combo_data.rows)}
+			<div class="zone">
+				<select id="tld" name="tld">
+					<option value>Select Extention</option>
+					{foreach from=$combo_data.rows item=whmp}
+					<option value="{$whmp.extension}">{$whmp.extension}</option>
+					{/foreach}
+				</select>
+			</div>
+			{/if}
+		</div>
+		<input type="submit" value="SEARCH" class="btn btn-primary">
+	</form>
+</div>

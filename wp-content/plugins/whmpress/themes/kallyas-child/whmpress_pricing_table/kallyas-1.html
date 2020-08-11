@@ -1,0 +1,58 @@
+<div class="pricing-table-element prc-table {$bg_color|replace:'#':'class-'} prt--light element-scheme--light">
+	<style>
+		.prc-table-col {
+			width: 100%;
+		}
+		
+		.prc-table-col.featured {
+			width: calc(100% + 40px);
+			z-index: 9;
+		}
+		
+		.pricing-table-element {
+			border: 0;
+		}
+		
+		.pricing-table-element .plan-column {
+			
+		}
+	</style>
+	<div class="plan-column prc-table-col {$featured}">
+		<ul class="prc-table-col-list">
+			<li class="plan-title prc-table-col-title text-custom">
+				<div class="inner-cell prc-table-col-title-cell kl-font-alt" data-featuredtitle="{$promo_text}">
+					{$product_name}
+				</div>
+			</li>
+			<li class="subscription-price prc-table-col-price">
+				<div class="inner-cell prc-table-col-title"><span class="currency">$</span><span
+					class="price kl-font-alt">{$amount}{if $fraction}{$decimal}{$fraction}{/if}</span><br> {if
+					$duration}per {$duration}{/if}
+				</div>
+			</li>
+			{$product_description}
+			<li>
+				<div class="inner-cell"><a href="{$order_url}" class="btn btn-fullcolor prc-table-btn" title="Order Now"
+				                           target="_self">{$button_text}</a></div>
+			</li>
+		</ul>
+	</div>
+</div>
+{literal}
+<script>
+	jQuery(document).ready(function ()
+	{
+		jQuery('.prc-table-col').each(function ()
+		{
+			var $table = jQuery(this);
+			$table.find('.prc-table-col-list > div > ul li').addClass('description_li');
+			$table.find('.prc-table-col-list > div > ul li').unwrap();
+			$table.find('.prc-table-col-list > div > li').unwrap();
+			if (($table.find('.prc-table-col-list > .description_li').find("div").length) == 0) {
+				$table.find('.prc-table-col-list > .description_li').wrapInner('<div></div>');
+			}
+			$table.find('.prc-table-col-list > .description_li > div').addClass('inner-cell');
+		});
+	});
+</script>
+{/literal}

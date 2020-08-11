@@ -1,0 +1,227 @@
+- 1.3
+- WCOP is now standalone (WHMpress is not needed for WCOP to work)
+- WHMPress Helper is needed by WCOP to work
+1.3.5
+- dutch language file added
+1.3.6
+- All commonly used languages added
+2.0 (b11)
+- WCOP + WHMCS template matched
+2.0 (b12)
+- WCOM updated with main page
+- Few bugs removed
+2.0 (b13)
+- Exactly matched to WHMCS
+2.0
+- A few refinements in admin section
+- WCOM name/text updated
+2.1
+- Added single page order
+2.2
+- HTML/ CSS optimized
+- WCOM updated
+2.2.1
+- Bug fixes > Domain field now prefilled
+- Optional fields marked correctly for user registration
+- Cards dropdown
+- Payment gateway is being updated in client profile.
+2.2.2
+- Typos fixed.
+2.2.3
+- marchange gateway form fixed
+- Admin panel > explain marchant gateway
+- bug fixed (in CAP) when both COP/CAP are installed
+2.2.4
+- updated whcom with new shortcode, [whcom_order_process]
+2.3
+- code-refactored
+- all previous code now works with common libarary
+2.3.1
+- whcom updated
+2.5.3-revision.1
+- Added invoice POPUP/ New tab option/ Minimal invoice options
+- Fixed Terms of service, bug
+2.5.4
+- gateway selection is now on checkout page
+- terms and services for existing customers fixed
+- product services links pages
+- Free domain bug
+- merchant gateway interface improved
+- translations optimized
+2.5.4-revision.1
+- configure-product product selections tabs do not respond when loaded with Ajax
+2.5.4-revision.2
+- whcom updated
+- Billing cycles , separated to ensure responsiveness
+- missing templates included in helper
+2.5.4-revision.4
+- Basic order process is now same as that of WCAP
+- Admin settings and pages improved for better customer experience
+2.5.4-revision.5
+- registration implemented
+2.6.0
+- plugin verification added
+- single page order implemented
+- multi-domain orders implemented with new domain search ajax extended shortcode
+- custom invoice templates implemented
+- whcom updated
+- new whmpress helper
+-2.6.0-revision.0
+- modified to support styles
+- simple_1 style implimented for whmpress_cart_single_page
+
+-2.6.0-revision.2
+- several tweaks
+
+2.6.0-revision.4
+- Fixed bug in debug showing warning for whcom
+- tweaked order process shortcode
+
+2.6.0-revision.5
+- custom templates form theme folders implimented
+- templates are now in their own folder
+- option added to ignore SSL warnings
+
+2.6.0-revision.6
+- Fixed verification issue with new name
+
+2.6.0-revision.7
+- Updated language files.
+
+2.6.2
+- helper updated.
+
+2.6.2-revision.1
+- Country taxes impliment in common and single page
+
+2.6.3-revision.1
+- Taxes finalized, common updated along with other improvements.
+
+2.6.4-revision.2
+- Serveral tweaks
+
+2.6.4-revision.3
+- Fixed Tax double show issue
+
+2.5.4-revsion.5
+- reverted all makli
+
+2.6.5
+Compatibility ensured with PHP 7.2
+Compatibility ensured with WHMCS 7.5
+
+2.6.6
+domain first template implimented
+
+2.7
+Releasing domain first template
+- Custom Order completion messages implimented
+- Code conversion, scripts implimented
+- Hide discount options in order processing
+
+2.7.1
+- Bug Fixes
+- Translations
+
+2.7.4
+- Scroll down bug fix
+- Strip spaces from domain search for both product domain and check domain (standard)
+- Compatibility confirmed with WordPress 5
+
+2.7.4 revision-0
+- Applied url promocode in single page checkout
+
+2.7.4 revision-1
+- EPP code in single page checkout implemented
+
+3.0
+- Tax issue fixed
+- Debug log feature implemented
+- New single page templates implemented
+
+3.1
+- Compatible with fusion builder and wp bakery
+
+3.1-revision-0
+- Swedish translation
+- Templates name change
+- Templates bug fixes
+
+3.1-revision-1
+- Fusion Builder and VC implemented in a better way
+
+3.2
+- shortcode js button for wp classic mode
+
+3.2 revision-0 3-5-2019
+- Scroll on top at order complete
+
+3.2 revision-1 3-13-2019
+- Single page not loading bug fixed.
+
+3.2 revision-2 3-19-2019
+- Order summery not generating issue fixed in single page templates. (Reason: Change the name of templates)
+
+3.3 3-27-2019
+- Implement new template 06_sleek
+- Improve other templates
+- Edit domain feature
+
+3.3 revision-0 4-13-2019
+- Template improve for creativeON
+
+3.4 4-23-2019
+- Bold Template Improve
+- Single Page parameters implement by Get method (Pass through URL)
+- Custom Product Label implement by passing through URL
+- Get invoice id and print it on order completion page
+- Updating rotation on single page bold template
+- One Time summery generation implemented
+- Order completion custom message with placeholders implemented.
+- Hidden configuration option bug fix.
+
+3.4-revision-0 5-9-2019
+- .00 issue fix
+- templates bugs fix
+
+3.4-revision-1 31-07-2019
+- Translate Final_Price, Base_price
+
+3.4-revision-2 05-08-2019
+- hide product step 2nd step, if product is passed and parameter is set.
+- move coupon on summary side.
+- include product description in summary if parameter is set.
+
+3.4-revision-3
+- Make WCOP compatible with Elementor
+
+3.4-revision-4
+- Added Gator template of order page and much more changings by Abdul Waheed
+
+3.4-revision-5
+- Bug fixed if "/" occurs in helper response
+
+3.5-revision-0
+- Resolve speed issues
+- get translated product name from WHMCS
+- Refine 08_gator template
+- introduce new parameters in one page checkout
+- And Much more
+
+3.5-revision-1
+- Add 09_collapse template in one page checkout.
+
+3.5-revision-2
+- Add 10_server template in one page checkout.
+
+3.5-revision-3
+- Added our own category(WCOP) in Elementor.
+
+3.5-revision-4
+- Compatibility issue with elementor pro is fixed.
+
+3.5-revision-5
+- invalid id issue fixed in store shortcode
+
+3.5-revision-6
+- Little CSS changings

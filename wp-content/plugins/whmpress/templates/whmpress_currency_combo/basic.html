@@ -1,0 +1,46 @@
+{$currency_combo}
+
+
+{*------------Notes------------
+
+[whmpress_currency_combo] Shows a currency drop down to select currency if you are using multi-currencies. When user the currency it is set for user session.
+
+Place Holders:
+=============
+{$currency_combo}: returns the complete combo as a whole (most simple form, used in this template)
+$data: Data array containing all currencies to select.
+$id: used in loop, returns currency id
+$code: used in loop, returns currency code
+$prefix: used in loop, returns currency prefix
+
+
+Example:
+=======
+
+<div class="whmp_currency_combo">
+<!-- *start* no change needed in this part, use as is -->
+    {literal}
+    <script>
+    jQuery(function(){
+        jQuery("#combo_id").change(function(){
+            val = jQuery(this).val();
+            jQuery.post(WHMPAjax.ajaxurl + '?setCurrency',{'curency': val,'action':'whmpress_action'},function(data){
+                if (data=='OK')
+                    window.location.reload();
+                else
+                    alert(data);
+            });
+        });
+    });
+    </script>
+    {/literal}
+<!-- *end* no change needed -->
+    <select id="combo_id" class="form-control">
+    {foreach from=$data item=row}
+        <option value="{$row.id}">{$row.code} - {$row.prefix}</option>
+    {/foreach}
+    </select>
+</div>
+
+
+------------End Notes------------*}

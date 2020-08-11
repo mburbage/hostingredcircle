@@ -1,0 +1,318 @@
+version.4
+- Domain search ajax > fixed registeration links issue when domain sppining is disabled
+- Domain search ajax > implimented url to append in domain search
+version 4.1
+- Domain search ajax > fixed registeration links issue when domain sppining is disabled
+version 4.1.1
+- Added convert monthly function to pricing table
+version 4.1.2
+- Fixed: Price Matrix was not showing price to right of thousand seperator
+version 4.1.3
+- Added more translation strings
+- fixed duration converstion function to work with translated strings
+- added flags images
+- added pot file
+version 4.1.4
+- Fixed whois button
+- Fixed load more
+version 4.1.5
+- Fixed undefined veriable in ajax search
+- implimented stayle + multiple template support on domain ajax search (AW)
+version 4.1.6
+- Fixed missing extension in transfer link for WHMCS
+version 4.1.7
+- Added missing translation in comobo save strings
+- Fixed: with feature name if feature value is empty
+- Fixed: whois search was not working if www, or http:// was present in domain name
+version 4.1.8
+- Fixed WCOM error on languge files
+- Implemented sudo_monthly price in templates, whmpress_price_i function updated
+- New option, explain_sudo_monthly implimented
+version 4.1.9
+- Fixed domain URL logic in ajax.php
+version 4.1.10
+- implemented direct ordering for WCAP
+version 4.2
+- implimented new URL generation for COP/CAP
+version 4.2.1
+- remove pre tag from order combo page
+- fixed a bug in check plugin activation
+- refined URL generation in relation to COP, CAP and WHMCS
+- refactored domain search whois code
+- refactored code and removed refrences of lagacy client area
+4.2.3
+- Fixed VC latest version bug: all shortcodes now work with VC
+4.2.4
+- Fixed Cron Jobs bug, that will keep adding the cron jobs again and again in WP
+- Changed currency session from "currency" to "whcom_currency"
+4.3
+- compatibility with WP 4.9
+- URLs updated to match with new client area scheme
+- UTF-8 encoding bug removed
+4.5.0
+- tested with WHMCS 7.4.1
+- bug in domain whois link fixed
+- bug in transfer with whmcs direct fixed
+4.5.0a
+- fixed transfer link.
+4.6.0
+- Domain search ajax extended shortcode to work with WCOP/ WCAP
+- removed shortcodes related to legacy version of client area
+- Admin dashboard improvements
+
+4.6.0-revision.4
+- colors implemented for pricing tables from shortcode
+- removed cloud flare hosted files
+- pricing not showing bug fixed in domain search ajax
+- domain search extended only show if CAP or COP is installed
+
+4.6.0-revision.4a
+- fixed bug > domain search ajax not accepting default parameters for trailing zeros and decimals.
+
+4.6.0-revision.5
+- implimented tooltips and custom list icons
+- Added new paramters to pricing table shortcode to accumodate tooltips, icons, and a new parameter to not process.
+
+4.6.0-revision.6
+- Fixed domain register links for WHMCS
+
+4.6.0-revision.7
+- Fixed domain_search_ajax (was showing extra domains even if were skipped).
+
+4.6.0-revision.8
+- removed extra text from simple-1 pricing template
+
+4.6.0-revision.9
+- Tax support implimented in price_i shortcode
+
+4.6.0-revision.10
+- Added slick slider in WHMPress > removed from WPCT
+
+4.6.0-revision.11
+- Fixed issues with duration conversion codes to be used with WPCT
+
+4.6.0-revision.12
+- Fixed smarty template bug for domain search ajax, converted to lower before comparing parameters
+
+4.6.0-revision.13
+- Fixed duraiton style and duration connector correctly in pricing tables.
+- Domain search bulk rendering is now fixed.
+- Order link for domain now opens in a new window
+- improvements in verify process
+
+4.6.0-revision.14
+- Pricing tables are now following the price format given in WP settings.
+
+4.6.0-revision.14a
+- Added missing currency suffix in whmpress-9 and easyweb custom tables. Pending in rest.
+
+4.6.0-revision.15
+- Domain search extended is now honoring the next URL, same page divs are not supported.
+
+4.6.0-revision.16
+- Domain search bulk, parameters and templates are implimented.
+
+4.6.0-revision.17
+- domain search extended improvements
+
+4.6.1-revision.0
+- changed translation context for admin strings
+
+4.6.1-revision.1
+- changed translation context for admin strings
+- fixed message for domain_search_extended shortcode
+- trasnlated some untrasnlated strings in default strings
+- removed option for debug info to be mailed to author
+
+4.6.1-revision.3
+-fixed bug where child theme templates are not being returned.
+
+4.6.1-revision.2
+- Improved domain_price shortcode with new functions.
+- Added new URL override Parameter in pricing table shortcode
+- prefix, suffix problem in domain search ajax is resolved.
+
+4.6.1-revision.4
+- Fixed domain search Ajax page count parameter
+
+4.6.1-revision.5
+- Optimized domain_price shortcode to respond to all parameters.
+- Added new URL append Parameter in pricing table shortcode
+- Added new URL append Parameter in order button shortcode
+
+4.6.2-revision.0
+- Added new pricing tables.
+
+4.6.6-revision.0
+- Several Bug Fixes
+
+4.7
+- Compatiblity with WCOP/ WCAP 2.7
+- 7.2 checked with with VC.
+- Domain search bulk, bug fixes
+
+4.7-revision.0
+- Domain Search ajax Bug fixes
+- .pk domain name should be greater the 3
+
+4.7-revision.1
+- stripeslashes in tooltips
+
+4.7.1
+- Added country specific currency option
+- whois refactor
+- Sync options in shortcodes
+- nexum licence message implementation
+
+4.7.1 revision-0
+- Country option bug fixes
+
+4.7.2
+- Bug Fixes
+
+4.7.2 revision-0
+- Domain search bulk and whois search domains on other pages
+
+4.7.3
+- Purchase code issue fixed
+
+4.7.4
+- Currency Combo and Country currency bug fixed
+- Removed special characters and spaces from Domain search Ajax
+  and Domain search extened
+- Compatibility confirmed with WP 5
+
+4.7.4 revision-0
+- Round Prices in whmpress_price shortcode
+
+4.8.0
+- Compatible with fusion builder
+- Bug fixes
+4.9.0
+- Compatibility Check with WHMCS 7.7
+
+4.9.0-revision-0
+- Round price flag implemented
+
+4.9.0-revision-1 3-5-2019
+Currency combo bug fix.
+//For developer(Don't mention in change log)
+//functions_i.php line number 664
+
+4.9.0-revision-2 3-5-2019
+Reverse the html template array of Pricing table for fusion builder
+
+4.9.0-revision-3 3-20-2019
+-Include quick search in domain matrix bug fix
+
+4.9.0-revision-4 4-13-2019
+- Thousand separator bug fix
+
+4.9.1 4-23-2019
+- Currency combo: Pass currency id to URL
+- Implement order combo override url in pricing table
+- Implement filter domains in domain search ajax extended
+
+4.9.2
+- Price Table Extended new shortcode implemented.
+
+4.9.2-revision-0
+- Improve Price Table Extended
+- session_cache_limiter implemented
+
+4.9.2-revision-1 5-14-2019
+- Price Table Extended with smarty template only page 1
+
+4.9.2-revision-2 5-22-2019
+- Smarty section template implemented
+
+4.9.2-revision-3 05-31-2019
+- Domain search bulk bug fixed
+
+5.0 6-24-2019
+- Compatible with elementor page builder
+
+5.0-revision-0 2-8-2019
+- Fixed decimal issue, currency issue and some others
+
+5.0-revision-2 19-9-2019
+- Fixed decimal issue, decimal should not be from WHMCS but from plugin default settings.
+
+5.0-revision-3 23-9-2019
+- price issue fixed for monthly price.
+- currency session issue's fixed.
+
+5.0-revision-5 26-9-2019
+- Elemontor delete issues fixed
+- Elemontor rendering issues for certain shortcodes fixed
+
+5.0-revision-6 03-10-2019
+- Domain price matrix, reverse parameters for yes/no issues fixed.
+- Domain pirce matrix > elementor not accepting category parameters fixed.
+
+5.0-revision-7 03-10-2019
+- Currency Selector / Currency combo > added basic template
+
+5.0-revision-8 04-10-2019
+- language strings added for price matrix domain style1 n style2
+- "s" was being added through code for years, properly implimented now through language strings.
+- pot file updated, and all language files synced to match with pot.
+
+5.0-revision-9 11/10/2019
+- broken language code fixed in header of domain matrix
+
+5.1-revision-0 16/10/2019
+- Bug fixed in price matrix extended shortcode
+- Styling Issues fixed in price matrix extended shortcode
+- Fix Detail button issue while set the shortcode (Price Matrix Extended) by Elementor
+
+5.2 24/10/2019
+- Fix Speed issues
+
+5.2-revision-1
+- Add Registrar column in Domain pricing section.
+
+5.2-revision-2
+- Add more whois servers in the list
+
+5.2-revision-3
+- Add an option to show both prefix and suffix with price
+- Fixed Decimal and thousand separator problem in pricing table.
+
+5.2-revision-4
+- Fixed Decimal symbol issue if fraction is empty in Domain price.
+- Fixed Decimal symbol in order combo.
+- Fixed issue in WHMpress notice on settings page
+
+5.2-revision-5
+- Fixed CSS issue when author picks it's own templates
+- Add both prefix and suffix with price in domain price matrix
+
+5.2-revision-6
+- Fixed warnings in vc.php
+
+5.3
+- Implement Pricing slab in Price Matrix Domain
+- Added template for Price Matrix Domain (ul li implementation)
+- Fixed Default country currency issue when default settings are saved
+
+5.3 -revision-1
+- Added order combo templates
+
+5.3-revision-2
+- Add whmpress section in pricing tables
+
+5.3-revision-3
+- Add pricing table templates and order combo templates
+
+5.3-revision-4
+- Bug fixed about currency switching in Domain price shortcode
+
+5.4-revision-0
+- Make compatible with WHMCS 7.10
+
+5.4-revision-1
+- Bug fixed pic templates about picking images
+
+5.4-revisin-2
+- Bug fixed in rendering tlds

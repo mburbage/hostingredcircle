@@ -1,0 +1,15 @@
+<div
+	class="whmp_pricing_plan plan {if $featured} {$featured} {else} notfeatured {/if} {$bg_color|replace:'#':'class-'}">
+	<span class="price" style="background:{$bg_color}">{$prefix}{$amount}</span>
+	<h3>{$product_name}</h3>
+	<small>{$sub_heading}</small>
+	<ul>
+		{$product_description}
+		<li><a href="{$order_url}" style="background:{$bg_color}">{$button_text}</a></li>
+	</ul>
+</div>
+{literal}
+<script>
+	jQuery(".whmp_pricing_plan ul ul li").unwrap();
+</script>
+{/literal}

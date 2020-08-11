@@ -1,0 +1,1900 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"Project-Id-Version: WHMpress\n"
+"Language: ar\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-15 12:28+0000\n"
+"PO-Revision-Date: 2017-08-15 12:30+0000\n"
+"Last-Translator: admin <farooqomer@gmail.com>\n"
+"Language-Team: Arabic\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100 >= 3 "
+"&& n%100<=10 ? 3 : n%100 >= 11 && n%100<=99 ? 4 : 5"
+
+#: whmpress.php:309
+#, php-format
+msgid ""
+"Your WHMPress installation folder name is %1s. Please rename folder to %2s, "
+"otherwise you may face problems in performance."
+msgstr ""
+
+#. wpml-name: a19f39e60d21d845554104ecf00b10ab
+#: admin/admin.php:11 admin/admin.php:43
+msgid "WHMpress Warning!"
+msgstr ""
+
+#. wpml-name: 56c149cc22717be37322cd9127e0fc53
+#: admin/admin.php:12
+#, php-format
+msgid "No data synced from hosting server, Please run %s to use WHMpress"
+msgstr ""
+
+#: admin/admin.php:24
+msgid "Verify Purchase"
+msgstr ""
+
+#: admin/admin.php:28
+#, php-format
+msgid ""
+"%1s WHMPress is not verified, kindly click %2s here%3s to verify your "
+"purchase.%4s"
+msgstr ""
+
+#: admin/admin.php:29
+#, php-format
+msgid ""
+"%1s Or you can purchase WHMPress using below link %2s %3s purchase WHMPress "
+"%4s"
+msgstr ""
+
+#. wpml-name: 8a12caa666c251397ccca53d2bfbd7df
+#: admin/admin.php:47
+#, php-format
+msgid "WHMpress data not found, Please run %1s Sync WHMCS %2s to use WHMpress"
+msgstr ""
+
+#. wpml-name: e24343cf48c7b69addd6ef7d476b2c6c
+#: admin/admin.php:138
+msgid "WHMpress Dashboard"
+msgstr ""
+
+#. wpml-name: f1d469af7965b11f56e1e79895e03834
+#: admin/admin.php:138
+msgid "WHMpress"
+msgstr ""
+
+#. wpml-name: 867113d19fd2f3c2be038935f8227ead
+#: admin/admin.php:153 admin/services.php:30
+msgid "Products/Services"
+msgstr ""
+
+#. wpml-name: 3934dfa8abc2d07bd9fb8716acaae201
+#: admin/admin.php:182 admin/services.php:34 admin/sync.php:69
+msgid "Sync WHMCS"
+msgstr ""
+
+#. wpml-name: 9cab17e61b35688ad49ee7e1e82f52b4
+#: admin/admin.php:193
+msgid "Search Logs"
+msgstr ""
+
+#. wpml-name: 8d7226fdfd44467a5d8469e9019724de
+#: admin/country_settings.php:28
+msgid "-- Currency --"
+msgstr ""
+
+#. wpml-name: 28077b6dd0355b3515db86e7e4528cee
+#: admin/country_settings.php:46
+msgid "Country Redirection"
+msgstr ""
+
+#. wpml-name: 549b94e8e8a67194638298e75104fb55
+#: admin/country_settings.php:48
+msgid "Set default currency for specific country. Default currency is"
+msgstr ""
+
+#. wpml-name: 575f5f86d2c7ea113c6710c1037c4465
+#: admin/country_settings.php:56
+msgid "Saving..."
+msgstr ""
+
+#. wpml-name: 505a83f220c02df2f85c3810cd9ceb38
+#: admin/custom-css.php:7
+msgid "Success"
+msgstr ""
+
+#. wpml-name: e90c7d3c0e0a348cbe2433eb3b696ca4
+#: admin/custom-css.php:7
+msgid "CSS saved"
+msgstr ""
+
+#. wpml-name: f92965e2c8a7afb3c1b9a5c09a263636
+#: admin/dashboard.php:27
+msgid "Done"
+msgstr ""
+
+#: admin/dashboard.php:28
+msgid "WHMpress cached data removed ...."
+msgstr ""
+
+#. wpml-name: ae11a756bf3cc86e2b337c8e531a8f40
+#: admin/dashboard.php:142
+msgid "No system info available"
+msgstr ""
+
+#. wpml-name: 7e3a9ff1c7669a9dbe66e25add60d1bc
+#: admin/extensions.php:29
+msgid "WHMCS Client Area Integration"
+msgstr ""
+
+#: admin/extensions.php:32
+msgid ""
+"Go one step further, offer your users their WHMCS client area with the same "
+"look and feel as your website. \n"
+"                    Giving them a feel that they never left your website for "
+"their hosting management and website. \n"
+"                    Again offering several Shortcodes for seamless "
+"integration with your site."
+msgstr ""
+
+#. wpml-name: 66d185b1caa7ae6ba81600678e24cc37
+#: admin/extensions.php:46
+msgid "WHMCS Pricing Sliders and Comparison Tables"
+msgstr ""
+
+#: admin/extensions.php:51
+msgid ""
+"Comparison Table and Slider are essential part of every web-hosting site. \n"
+"                        It helps user to make informed decisions. \n"
+"                        Simply select packages to compare and get a complete "
+"comparison table or slider in your desired template."
+msgstr ""
+
+#. wpml-name: 193cfc9be3b995831c6af2fea6650e60
+#: admin/search_logs.php:48
+msgid "Page"
+msgstr ""
+
+#. wpml-name: cf1128144fc4e54d84dab939191d6e34
+#: admin/search_logs.php:54
+msgid "Total Records:"
+msgstr ""
+
+#. wpml-name: 5bb5d8366a1c8b919a560ba09247f275
+#: admin/search_logs.php:58
+msgid "Search Term"
+msgstr ""
+
+#. wpml-name: f659929bb9b0a6b53912ac431221b917
+#: admin/search_logs.php:59
+msgid "Domain Available"
+msgstr ""
+
+#. wpml-name: c01a8097453cc3b75b0dee33db70672d
+#: admin/search_logs.php:60
+msgid "Search Time"
+msgstr ""
+
+#. wpml-name: 48ffe83bdf5de95ec171a460b4789d55
+#: admin/search_logs.php:61
+msgid "From IP"
+msgstr ""
+
+#: admin/services.php:42
+msgid "Products and Services"
+msgstr ""
+
+#: admin/services.php:44
+msgid "You will not be able to view/modify any products until you sync WHMCS"
+msgstr ""
+
+#: admin/services.php:97
+msgid "Description Override"
+msgstr ""
+
+#: admin/services.php:98
+msgid "Description Append"
+msgstr ""
+
+#. wpml-name: 7acdf85c69cc3c5305456a293524386e
+#: admin/services.php:107 admin/services.php:115
+msgid "Hidden"
+msgstr ""
+
+#: admin/services.php:133
+msgid "Tag line"
+msgstr ""
+
+#: admin/services.php:149
+msgid "Override description according to current language"
+msgstr ""
+
+#: admin/services.php:157
+msgid "Append description according to current language"
+msgstr ""
+
+#: admin/services.php:166 admin/services.php:275 admin/services.php:363
+msgid "Save"
+msgstr ""
+
+#. wpml-name: fb2aa5d6e5e580b61c2ae8c084585e91
+#: admin/services.php:188
+msgid "You are selling"
+msgstr ""
+
+#. wpml-name: 03937134cedab9078be39a77ee3a48a0
+#: admin/services.php:193 includes/shortcodes/whmpress_price_table.php:71
+msgid "Group"
+msgstr ""
+
+#: admin/services.php:195
+msgid "Registeration"
+msgstr ""
+
+#: admin/services.php:196
+msgid "Renewel"
+msgstr ""
+
+#: admin/services.php:197 includes/ajax.php:152 includes/ajax.php:301
+#: includes/ajax.php:527 includes/ajax.php:899 includes/ajax.php:959
+#: includes/tmp.php:157 includes/shortcodes/whmpress_price_table_domain.php:386
+msgid "Transfer"
+msgstr ""
+
+#: admin/services.php:198
+#: includes/shortcodes/whmpress_price_table_domain.php:389
+msgid "Restore"
+msgstr ""
+
+#: admin/services.php:199
+msgid "Promo"
+msgstr ""
+
+#: admin/services.php:200
+msgid "Promo Text"
+msgstr ""
+
+#: admin/services.php:201
+msgid "Promo Details"
+msgstr ""
+
+#: admin/services.php:202
+msgid "Register Off"
+msgstr ""
+
+#: admin/services.php:203
+msgid "Renew Off"
+msgstr ""
+
+#: admin/services.php:204
+msgid "Transfer Off"
+msgstr ""
+
+#: admin/services.php:205
+msgid "Apply all years"
+msgstr ""
+
+#: admin/services.php:283
+msgid "Decimal Sep."
+msgstr ""
+
+#: admin/services.php:284
+msgid "Thousand Sep."
+msgstr ""
+
+#: admin/services.php:325
+msgid "Override code"
+msgstr ""
+
+#: admin/services.php:332
+msgid "Override pefix"
+msgstr ""
+
+#: admin/services.php:339
+msgid "Override suffix"
+msgstr ""
+
+#: admin/services.php:346
+msgid "Override decimal separator"
+msgstr ""
+
+#: admin/services.php:354
+msgid "Override thousand separator"
+msgstr ""
+
+#: admin/settings.php:75
+#, php-format
+msgid ""
+"This plugin comes pre-configured for your current theme %1s.\n"
+"            The look and feel of WHMCS client area have been adjusted to "
+"match %2s."
+msgstr ""
+
+#. wpml-name: c7ba095c013f4f2e0a2cb4255df02479
+#: admin/settings.php:78
+msgid "To further adjust the settings click the button(s) below."
+msgstr ""
+
+#. wpml-name: 7bf6bfb6f37913f149d723bb1a6087d3
+#: admin/settings.php:82
+msgid "Adjust All Settings"
+msgstr ""
+
+#: admin/settings.php:116
+msgid "You will not be able to modify any settings until you sync WHMCS"
+msgstr ""
+
+#. wpml-name: 675178cd54df251b1f81c8a6573c6ab5
+#: admin/settings.php:131 admin/settings-tabs/defaults.php:11
+msgid "Domain Search"
+msgstr ""
+
+#. wpml-name: 82071a8712bec4a5c57f1bd6d9f7144e
+#: admin/settings.php:134
+msgid "3rd Party"
+msgstr ""
+
+#. wpml-name: 15719f7683f9f08640bedb86df8f5153
+#: admin/settings.php:137
+msgid "Debug Info"
+msgstr ""
+
+#: admin/settings.php:176
+msgid "Price Styling options"
+msgstr ""
+
+#: admin/settings.php:179
+msgid ""
+"These settings will be applied to prices shown through out the plugin, "
+"except price shortcode it self."
+msgstr ""
+
+#: admin/settings.php:210
+msgid "Duration Style"
+msgstr ""
+
+#: admin/settings.php:215
+msgid "Default"
+msgstr ""
+
+#: admin/settings.php:217
+msgid "Long (year)"
+msgstr ""
+
+#: admin/settings.php:219
+msgid "Short (yr)"
+msgstr ""
+
+#: admin/settings.php:221
+msgid "Convert to Months (12 month)"
+msgstr ""
+
+#: admin/settings.php:226
+msgid "Duration Connector"
+msgstr ""
+
+#: admin/settings.php:240
+msgid "String to show if price not configured"
+msgstr ""
+
+#: admin/settings.php:247
+msgid "String to show if price is zero"
+msgstr ""
+
+#: admin/settings.php:254
+msgid "Override string if billing cycle is \"One Time\""
+msgstr ""
+
+#: admin/settings.php:262
+msgid "Calculate Configurable Options"
+msgstr ""
+
+#: admin/settings.php:274
+msgid "Include Setup Price"
+msgstr ""
+
+#: admin/settings.php:286
+msgid "Calculate Tax"
+msgstr ""
+
+#: admin/settings.php:318
+msgid ""
+"These styles are used if you do not select any templates while inserting "
+"WHMpress shortcodes."
+msgstr ""
+
+#: admin/settings.php:340
+msgid " Templates by Theme Author"
+msgstr ""
+
+#: admin/settings.php:342 admin/settings.php:347
+msgid "(Not found)"
+msgstr ""
+
+#: admin/settings.php:345
+msgid " Templates by WHMpress"
+msgstr ""
+
+#: admin/settings.php:351
+msgid "Templates to Use"
+msgstr ""
+
+#: admin/settings.php:355
+msgid "Default (Works with any theme)"
+msgstr ""
+
+#: admin/settings.php:363
+msgid ""
+"Matching Pricing Tables and other templates for your active theme are "
+"available. To use them select appropriate option"
+msgstr ""
+
+#. wpml-name: f71a9af651ef72b2428fc37dfd364e0c
+#: admin/settings.php:381
+msgid "Custom CSS codes"
+msgstr ""
+
+#. wpml-name: 1745260238a43ab5ec6b65104ef8387b
+#: admin/settings.php:559
+msgid "Use UTF encode/decode"
+msgstr ""
+
+#: admin/settings.php:575
+msgid "Package Details from WHMpress"
+msgstr ""
+
+#: admin/settings.php:587
+msgid "WHMCS Sync Frequency"
+msgstr ""
+
+#. wpml-name: f9d5bbfe3eda1b62cbbf00d9e4cc465d
+#: admin/settings.php:622
+msgid "Un-Register WHMpress"
+msgstr ""
+
+#. wpml-name: 7e97dc618c72716fe40e7052b71371c1
+#: admin/settings.php:709
+msgid "WordPress Memory Limit"
+msgstr ""
+
+#. wpml-name: 5ffb5692ce3f2bf591ff92f5ab968455
+#: admin/settings.php:727
+msgid "MySQLi Extension"
+msgstr ""
+
+#. wpml-name: a57dbc843e2a17b4508ad42fc806f27f
+#: admin/settings.php:882
+msgid "Parent Theme Author URL"
+msgstr ""
+
+#. wpml-name: 7a5e6031f00daa4d0f0e8e2c27bbeba3
+#: includes/ajax.php:83
+msgid "Domain name required."
+msgstr ""
+
+#: includes/functions.php:1457 includes/functions.php:1477
+msgid "[domain-name] is not available"
+msgstr ""
+
+#: includes/functions_i.php:65
+msgid "Service/Product id not provided"
+msgstr ""
+
+#: includes/functions_i.php:76
+msgid "Product with this ID does not exist."
+msgstr ""
+
+#. wpml-name: 9030e39f00132d583da4122532e509e9
+#: includes/functions_i.php:403 admin/settings-tabs/defaults.php:27
+#: includes/shortcodes/whmpress_price_table.php:72
+#: includes/shortcodes/whmpress_price_table.php:92
+msgid "Monthly"
+msgstr ""
+
+#: includes/functions_i.php:404
+msgid "1 month"
+msgstr ""
+
+#: includes/functions_i.php:405 includes/shortcodes/whmpress_price.php:234
+msgid "Month"
+msgstr ""
+
+#. wpml-name: 27c9d5187cd283f8d160ec1ed2b5ac89
+#: includes/functions_i.php:406
+#: includes/shortcodes/whmpress_order_combo.php:225
+#: includes/shortcodes/whmpress_order_combo.php:287
+#: includes/shortcodes/whmpress_order_combo.php:353
+#: includes/shortcodes/whmpress_order_combo.php:425
+#: includes/shortcodes/whmpress_order_combo.php:498
+#: includes/shortcodes/whmpress_price.php:282
+msgid "mo"
+msgstr "شهر"
+
+#. wpml-name: cf13b270a2e3ac80a4e88b6e6c7a7faa
+#: includes/functions_i.php:407
+#: includes/shortcodes/whmpress_order_combo.php:122
+#: includes/shortcodes/whmpress_order_combo.php:141
+#: includes/shortcodes/whmpress_order_combo.php:160
+msgid "1 Month"
+msgstr ""
+
+#. wpml-name: be92c62702dcec6751c101b5adb0ce3b
+#: includes/functions_i.php:412 admin/settings-tabs/defaults.php:29
+msgid "Quarterly"
+msgstr ""
+
+#: includes/functions_i.php:413
+msgid "3 month"
+msgstr ""
+
+#: includes/functions_i.php:414
+msgid "Quarter"
+msgstr ""
+
+#: includes/functions_i.php:415
+msgid "qu"
+msgstr ""
+
+#. wpml-name: 3bb674664da7dcebbaabf832c7191d99
+#: includes/functions_i.php:416
+#: includes/shortcodes/whmpress_order_combo.php:188
+#: includes/shortcodes/whmpress_order_combo.php:207
+#: includes/shortcodes/whmpress_order_combo.php:225
+#: includes/shortcodes/whmpress_price_table.php:73
+#: includes/shortcodes/whmpress_price_table.php:93
+msgid "3 Months"
+msgstr ""
+
+#. wpml-name: d29d693432851d9b8f233586912317cf
+#: includes/functions_i.php:421 admin/settings-tabs/defaults.php:30
+msgid "Semi Annually"
+msgstr ""
+
+#: includes/functions_i.php:422
+msgid "6 month"
+msgstr ""
+
+#: includes/functions_i.php:423
+msgid "Half year"
+msgstr ""
+
+#: includes/functions_i.php:424
+msgid "sa"
+msgstr ""
+
+#. wpml-name: 1d4545e8dacda9a91cc894203e1040a9
+#: includes/functions_i.php:425
+#: includes/shortcodes/whmpress_order_combo.php:252
+#: includes/shortcodes/whmpress_order_combo.php:269
+#: includes/shortcodes/whmpress_order_combo.php:287
+#: includes/shortcodes/whmpress_price_table.php:74
+#: includes/shortcodes/whmpress_price_table.php:94
+msgid "6 Months"
+msgstr ""
+
+#. wpml-name: 10b34207c4ef4df0cf0d0cf792e61bf9
+#: includes/functions_i.php:430 admin/settings-tabs/defaults.php:28
+msgid "Annually"
+msgstr ""
+
+#: includes/functions_i.php:431
+msgid "1 year"
+msgstr ""
+
+#: includes/functions_i.php:433
+msgid "yr"
+msgstr ""
+
+#. wpml-name: f535419642ceeb6361113199dc2dc695
+#: includes/functions_i.php:434
+#: includes/shortcodes/whmpress_order_combo.php:318
+#: includes/shortcodes/whmpress_order_combo.php:351
+msgid "12 Months"
+msgstr ""
+
+#. wpml-name: 24e5dfbea611a351408766b423a283fc
+#: includes/functions_i.php:439 admin/settings-tabs/defaults.php:31
+msgid "Biennially"
+msgstr ""
+
+#: includes/functions_i.php:440
+#: includes/shortcodes/whmpress_price_table_domain.php:531
+msgid "2 Year"
+msgstr ""
+
+#. wpml-name: a70c5f92d6eb51524440c5b61b067b11
+#: includes/functions_i.php:441
+#: includes/shortcodes/whmpress_order_combo.php:403
+#: includes/shortcodes/whmpress_price_table.php:76
+#: includes/shortcodes/whmpress_price_table.php:96
+msgid "2 Years"
+msgstr ""
+
+#: includes/functions_i.php:442
+msgid "2 yrs"
+msgstr ""
+
+#. wpml-name: 0085088d53a4e6db9d209ab6fbd409eb
+#: includes/functions_i.php:443
+#: includes/shortcodes/whmpress_order_combo.php:387
+#: includes/shortcodes/whmpress_order_combo.php:423
+msgid "24 Months"
+msgstr ""
+
+#. wpml-name: c5b46511a5800074f84846c3353d6f00
+#: includes/functions_i.php:448 admin/settings-tabs/defaults.php:32
+msgid "Triennially"
+msgstr ""
+
+#: includes/functions_i.php:449
+#: includes/shortcodes/whmpress_price_table_domain.php:532
+msgid "3 Year"
+msgstr ""
+
+#. wpml-name: fd6e738fc6619f7145fdd34d71635ba7
+#: includes/functions_i.php:450
+#: includes/shortcodes/whmpress_order_combo.php:476
+#: includes/shortcodes/whmpress_price_table.php:77
+#: includes/shortcodes/whmpress_price_table.php:97
+msgid "3 Years"
+msgstr ""
+
+#: includes/functions_i.php:451
+msgid "3 yrs"
+msgstr ""
+
+#. wpml-name: f4863036c60c5d16b3ad102ea790bc34
+#: includes/functions_i.php:452
+#: includes/shortcodes/whmpress_order_combo.php:460
+#: includes/shortcodes/whmpress_order_combo.php:496
+msgid "36 Months"
+msgstr ""
+
+#. wpml-name: 730a42f38de1f8db904e22028021e8da
+#: includes/shortcodes.php:277
+msgid "No domain selected"
+msgstr ""
+
+#. wpml-name: a40cb9f2a1f5332b2d64ede2d172f63e
+#: admin/settings-tabs/defaults.php:5
+msgid "Domain Price"
+msgstr ""
+
+#. wpml-name: ae798375fe68f9689f592b56ce26fa5f
+#: admin/settings-tabs/defaults.php:6
+msgid "Price Matrix"
+msgstr ""
+
+#. wpml-name: 72f9f354c690a87ee1fd0eac5bb99361
+#: admin/settings-tabs/defaults.php:7
+msgid "Price Matrix Domain"
+msgstr ""
+
+#. wpml-name: 8e8aab40baad50f4410ad42b88f70ce1
+#: admin/settings-tabs/defaults.php:8
+msgid "Order Combo"
+msgstr ""
+
+#. wpml-name: 890f82d85a554667f7311756a9934c6e
+#: admin/settings-tabs/defaults.php:9
+msgid "Order Button"
+msgstr ""
+
+#. wpml-name: 7456630c7fb330331a1b53f59f3dee99
+#: admin/settings-tabs/defaults.php:10
+msgid "Pricing Table"
+msgstr ""
+
+#. wpml-name: 523589e6c18d88cc18e6182b5c64f00a
+#: admin/settings-tabs/defaults.php:12
+msgid "Domain Search Ajax"
+msgstr ""
+
+#. wpml-name: 0995b5f1743fe14827bc6148a77d6f70
+#: admin/settings-tabs/defaults.php:13
+msgid "Domain Search Bulk"
+msgstr ""
+
+#. wpml-name: 80cdc396f10f746b505ec0cbab1dd2f6
+#: admin/settings-tabs/defaults.php:14
+msgid "Domain WhoIS"
+msgstr ""
+
+#. wpml-name: c12a4f3e549e746068cea730a22f7f08
+#: admin/settings-tabs/defaults.php:15
+msgid "Order Link"
+msgstr ""
+
+#. wpml-name: 476d0596d5816725df4678d4cb93de4b
+#: admin/settings-tabs/defaults.php:38
+msgid "Select default billing cycle for price"
+msgstr ""
+
+#. wpml-name: 9c81e09ebdfe7a99d602098683212b53
+#: admin/settings-tabs/defaults.php:50
+msgid "Hide/Show decimals with price"
+msgstr ""
+
+#. wpml-name: 26c8c264871fa960cec4e7fe48aeaa3f
+#: admin/settings-tabs/defaults.php:140
+msgid "Price/Setup"
+msgstr ""
+
+#. wpml-name: fc76fce6a4d30520489ecab4e771aa6c
+#: admin/settings-tabs/defaults.php:150
+msgid "Convert price into monthly price"
+msgstr ""
+
+#. wpml-name: 633bb513cbaf00c54700afdbed775365
+#: admin/settings-tabs/defaults.php:160
+msgid "Calculate configurable options"
+msgstr ""
+
+#. wpml-name: 2fe186e682741efc895cdd976a7a66fa
+#: admin/settings-tabs/defaults.php:170
+msgid "String for config price"
+msgstr ""
+
+#. wpml-name: f42a93cf992f4f7f8a1097e2cb51bbeb
+#: admin/settings-tabs/defaults.php:177 admin/settings-tabs/defaults.php:340
+msgid "Price/Tax"
+msgstr ""
+
+#. wpml-name: 386c339d37e737a436499d423a77df0c
+#: admin/settings-tabs/defaults.php:192
+msgid "Currency"
+msgstr ""
+
+#. wpml-name: a1fa27779242b4902f7ae3bdd5c6d508
+#: admin/settings-tabs/defaults.php:219
+#: includes/shortcodes/whmpress_price_table_domain.php:379
+msgid "Type"
+msgstr ""
+
+#. wpml-name: 57a0a54c900f41939085bcb552c084b7
+#: admin/settings-tabs/defaults.php:259
+msgid "Hide Decimals"
+msgstr ""
+
+#. wpml-name: 557421ebaf51c99c8772dc2f591b4c91
+#: admin/settings-tabs/defaults.php:269
+msgid "Show Decimals As"
+msgstr ""
+
+#. wpml-name: 5429d3756abb4f0b49473e8949f8567a
+#: admin/settings-tabs/defaults.php:286
+msgid "Show Currency Prefix"
+msgstr ""
+
+#. wpml-name: 6fc6ee2b0fcccb8970c1cde759ef0352
+#: admin/settings-tabs/defaults.php:304
+msgid "Show Currency Suffix"
+msgstr ""
+
+#. wpml-name: 56cb703239c039f9cdf7a95b769679d4
+#: admin/settings-tabs/defaults.php:322
+msgid "Show number of years"
+msgstr ""
+
+#. wpml-name: 4200bec1a461b2488f4fc69e208ae508
+#: admin/settings-tabs/defaults.php:377
+msgid "Show Hidden"
+msgstr ""
+
+#. wpml-name: 2be7c14a2c47712057f8a375d7520e45
+#: admin/settings-tabs/defaults.php:387
+msgid "Replace Zero With"
+msgstr ""
+
+#. wpml-name: 8e2b1ca7e55dfcf7c2b2a9c5289c00b2
+#: admin/settings-tabs/defaults.php:394
+msgid "Replace Empty With"
+msgstr ""
+
+#. wpml-name: 4737a16157c59643b193b318b3d90378
+#: admin/settings-tabs/defaults.php:404 admin/settings-tabs/defaults.php:474
+msgid "Hide Search"
+msgstr ""
+
+#. wpml-name: 9ea00f10d8488950ad213dad6a39b1ff
+#: admin/settings-tabs/defaults.php:414 admin/settings-tabs/defaults.php:484
+msgid "Search Label"
+msgstr ""
+
+#. wpml-name: 5c1c9638154e9dc81b237c9f87c91145
+#: admin/settings-tabs/defaults.php:423 admin/settings-tabs/defaults.php:493
+msgid "Search Placeholder"
+msgstr ""
+
+#. wpml-name: e536a6727b3fa84401b487d553b85c58
+#: admin/settings-tabs/defaults.php:454
+msgid "Show Renewel Price"
+msgstr ""
+
+#. wpml-name: bc1ec826fe08915c096ed95047240e94
+#: admin/settings-tabs/defaults.php:464
+msgid "Show Transfer Price"
+msgstr ""
+
+#. wpml-name: 9a238ccb855f8e68ee2b58985009e904
+#: admin/settings-tabs/defaults.php:502
+msgid "Show Disabled Domains"
+msgstr ""
+
+#. wpml-name: c4edc01b27dc1bcc00d7d04011d0c3e7
+#: admin/settings-tabs/defaults.php:612 admin/settings-tabs/defaults.php:647
+msgid "Billing Cycle"
+msgstr ""
+
+#. wpml-name: 3b916fc8872fea5743ec9d4b4fee2de3
+#: admin/settings-tabs/defaults.php:664 admin/settings-tabs/defaults.php:823
+msgid "Show Price"
+msgstr ""
+
+#. wpml-name: d53ac8bb874f616b4385235a08a96147
+#: admin/settings-tabs/defaults.php:674 admin/settings-tabs/defaults.php:712
+msgid "Show Combo"
+msgstr ""
+
+#. wpml-name: 0c2686f2bab1dc5f3bcbd49002838751
+#: admin/settings-tabs/defaults.php:684
+msgid "Show Button"
+msgstr ""
+
+#. wpml-name: 68753d36ec0c4d7768b20993268d68d1
+#: admin/settings-tabs/defaults.php:722 admin/settings-tabs/defaults.php:748
+#: admin/settings-tabs/defaults.php:863 admin/settings-tabs/defaults.php:889
+msgid "Placeholder"
+msgstr ""
+
+#. wpml-name: 45b5de8fb2930cf2cc1dc2c6d20bd72a
+#: admin/settings-tabs/defaults.php:731 admin/settings-tabs/defaults.php:755
+#: admin/settings-tabs/defaults.php:872 admin/settings-tabs/defaults.php:898
+msgid "Button Text"
+msgstr ""
+
+#. wpml-name: b51e9e69c86c222721ad205676dea29b
+#: admin/settings-tabs/defaults.php:765
+msgid "Show WhoIs Link"
+msgstr ""
+
+#. wpml-name: be664a4857eaeb1b2e7ba1620c7e8521
+#: admin/settings-tabs/defaults.php:776
+msgid "Show WWW Link"
+msgstr ""
+
+#. wpml-name: 694db2a4243576c492871a486e0862bb
+#: admin/settings-tabs/defaults.php:787
+msgid "Show Transfer Link"
+msgstr ""
+
+#. wpml-name: 682b6a4beca74dda04b2cf5e875e657a
+#: admin/settings-tabs/defaults.php:798
+msgid "Disable Domain Spinning"
+msgstr ""
+
+#. wpml-name: 11843aa44dcd4a02f96bda140485c7e9
+#: admin/settings-tabs/defaults.php:809
+msgid "Order Landing Page"
+msgstr ""
+
+#. wpml-name: 522af9064a560fd951d1e2892b8fd176
+#: admin/settings-tabs/defaults.php:834
+msgid "Show Years"
+msgstr ""
+
+#. wpml-name: b9df26e289d0a904da73f534e6b431b1
+#: admin/settings-tabs/defaults.php:845
+msgid "Search in Extensions"
+msgstr ""
+
+#. wpml-name: bb2e52704310b28d8df62319181ae9c7
+#: admin/settings-tabs/defaults.php:915
+msgid "Link Text"
+msgstr ""
+
+#. wpml-name: 2e6216cce63f157398424e6f1e8764b5
+#: admin/settings-tabs/defaults.php:932
+msgid "Show As"
+msgstr ""
+
+#. wpml-name: b4805a9af05d82889758dda70003cfc6
+#: admin/settings-tabs/domain_search.php:7
+#: admin/settings-tabs/domain_search.php:13
+msgid "Search Options"
+msgstr ""
+
+#. wpml-name: e61f5a6e7d120ebf40f80b5c1b38cefe
+#: admin/settings-tabs/domain_search.php:16
+msgid "Enable logs for searches"
+msgstr ""
+
+#: includes/shortcodes/whmpress_bundle_description.php:12
+msgid "No bundle found in database"
+msgstr ""
+
+#: includes/shortcodes/whmpress_bundle_name.php:17
+#: includes/shortcodes/whmpress_bundle_order_button_function.php:30
+#: includes/shortcodes/whmpress_bundle_pricing_table.php:18
+#, php-format
+msgid "No Bundle Found for ID: %1$s"
+msgstr ""
+
+#: includes/shortcodes/whmpress_bundle_pricing_table.php:32
+msgid "Bundle data not found"
+msgstr ""
+
+#: includes/shortcodes/whmpress_bundle_pricing_table.php:49
+msgid "No Template file selected or selected file is not available"
+msgstr ""
+
+#. wpml-name: 839c45276739f5d31e2be991d3f6a913
+#: includes/shortcodes/whmpress_domain_price.php:31
+msgid "Invalid type"
+msgstr ""
+
+#. wpml-name: 288402361b82f19c1c233ae846d27b32
+#: includes/shortcodes/whmpress_domain_price.php:61
+msgid "Invalid year"
+msgstr ""
+
+#. wpml-name: 64b7ffb646592102f68f87de47137fdc
+#: includes/shortcodes/whmpress_domain_price.php:166
+msgid " Years"
+msgstr ""
+
+#: includes/shortcodes/whmpress_domain_search_ajax2.php:75
+msgid "Searching Domains..."
+msgstr ""
+
+#. wpml-name: c6395bd87045f885e0660f3ba3639de9
+#: includes/shortcodes/whmpress_domain_search_bulk.php:273
+msgid "Search these extentions"
+msgstr ""
+
+#. wpml-name: c1c8a564c10a0efe07bb4e4b20d88cc9
+#: includes/shortcodes/whmpress_order_combo.php:76
+msgid "Invalid ID"
+msgstr ""
+
+#. wpml-name: 994e1aa7bbf3e5408f20dd89c5b962cf
+#: includes/shortcodes/whmpress_order_combo.php:115
+#: includes/shortcodes/whmpress_price.php:276
+#: includes/shortcodes/whmpress_price.php:287
+#: includes/shortcodes/whmpress_price.php:329
+msgid "One Time"
+msgstr ""
+
+#: includes/shortcodes/whmpress_order_combo.php:333
+#: includes/shortcodes/whmpress_price_table_domain.php:530
+msgid "1 Year"
+msgstr ""
+
+#: includes/shortcodes/whmpress_price.php:81
+#, php-format
+msgid "Invalid ID (%1s) or Invalid Currency (%2s)"
+msgstr ""
+
+#. wpml-name: b24ce0cd392a5b0b8dedc66c25213594
+#: includes/shortcodes/whmpress_price.php:235
+#: includes/shortcodes/whmpress_price.php:274
+#: includes/shortcodes/whmpress_price.php:327
+msgid "Free"
+msgstr ""
+
+#: includes/shortcodes/whmpress_price.php:236
+msgid "Onetime"
+msgstr ""
+
+#: includes/shortcodes/whmpress_price.php:239
+msgid "Yr"
+msgstr ""
+
+#: includes/shortcodes/whmpress_price.php:240
+msgid "Mo"
+msgstr ""
+
+#: includes/shortcodes/whmpress_price.php:241
+msgid "Fe"
+msgstr ""
+
+#. wpml-name: 557b9cc093fba62204951d2daff6e95e
+#: includes/shortcodes/whmpress_price.php:242
+#: includes/shortcodes/whmpress_price.php:267
+msgid "Ot"
+msgstr ""
+
+#. wpml-name: 7436f942d5ea836cb84f1bb2527d8286
+#: includes/shortcodes/whmpress_price.php:284
+msgid "month"
+msgstr ""
+
+#. wpml-name: aa2d6e4f578eb0cfaba23beef76c2194
+#: includes/shortcodes/whmpress_price.php:297
+msgid "free"
+msgstr ""
+
+#. wpml-name: 4eea3a439fa46f1e7395b327a0e9ee54
+#: includes/shortcodes/whmpress_price.php:299
+msgid "onetime"
+msgstr ""
+
+#. wpml-name: 583dce1e7a2507b30a9eb71314c47d1c
+#: includes/shortcodes/whmpress_price.php:321
+msgid "OT"
+msgstr ""
+
+#. wpml-name: 8aed7b13501e351db8ecf73c4fa5e65e
+#: includes/shortcodes/whmpress_price_table.php:68
+msgid "Sr"
+msgstr ""
+
+#. wpml-name: cf5ea7953dc47105e0eb179dbefaaf46
+#: includes/shortcodes/whmpress_price_table.php:75
+#: includes/shortcodes/whmpress_price_table.php:95
+msgid "Yearly"
+msgstr ""
+
+#: includes/shortcodes/whmpress_price_table_domain.php:385
+msgid "Register"
+msgstr ""
+
+#: includes/shortcodes/whmpress_price_table_domain.php:387
+msgid "Renew"
+msgstr ""
+
+#: includes/shortcodes/whmpress_price_table_domain.php:533
+msgid "4 Year"
+msgstr ""
+
+#: includes/shortcodes/whmpress_price_table_domain.php:534
+msgid "5 Year"
+msgstr ""
+
+#: includes/shortcodes/whmpress_price_table_domain.php:535
+msgid "6 Year"
+msgstr ""
+
+#: includes/shortcodes/whmpress_price_table_domain.php:536
+msgid "7 Year"
+msgstr ""
+
+#: includes/shortcodes/whmpress_price_table_domain.php:537
+msgid "8 Year"
+msgstr ""
+
+#: includes/shortcodes/whmpress_price_table_domain.php:538
+msgid "9 Year"
+msgstr ""
+
+#: includes/shortcodes/whmpress_price_table_domain.php:539
+msgid "10 Year"
+msgstr ""
+
+#. wpml-name: a12ec2aee6988965ca2ad2a920dac511
+#: includes/shortcodes/whmpress_price_table_domain.php:651
+msgid "Renewal Price"
+msgstr ""
+
+#. wpml-name: c50b8aa176fadeedd7800cef2d746ad7
+#: includes/shortcodes/whmpress_price_table_domain.php:652
+msgid "Transfer Price"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"WHMpress makes it easy for you to sell webhosting using WordPress & WHMCS. "
+"It offers you several options including prices, order links, order button, "
+"order drop downs, domain registration and domain search forms to integrate "
+"WHMCS services (plans, packages, resellers packages, VPS & dedicated servers)"
+" into your wordpress installation."
+msgstr ""
+
+#. URI of the plugin
+msgid "http://www.whmpress.com"
+msgstr ""
+
+#. Author of the plugin
+msgid "creativeON"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://creativeon.com"
+msgstr ""
+
+#. wpml-name: 1ae7fdcbf6b510b09d57b2642d3ca784
+#: includes/ajax.php:860 admin/settings-tabs/domain_search.php:78
+#, fuzzy
+msgid "[domain-name] is registered"
+msgstr "[domain-name] مسجل"
+
+#. wpml-name: 390c95fb109995a2a126d2edfdb287af
+#: whmpress.php:573
+msgid "An unknown error occurred"
+msgstr "حدث خطأ غير معروف"
+
+#. wpml-name: 2938c7f7e560ed972f8a4f68e80ff834
+#: admin/admin.php:144 admin/services.php:28
+msgid "Dashboard"
+msgstr "لوحة المعلومات"
+
+#. wpml-name: f4f70727dc34561dfde1a3c529b6205c
+#: admin/admin.php:173 admin/services.php:32 admin/settings.php:114
+msgid "Settings"
+msgstr "الإعدادات"
+
+#. wpml-name: b3f252777a69b110667756babe83a98f
+#: admin/admin.php:224 admin/dashboard.php:179 admin/services.php:36
+#: admin/settings.php:889
+msgid "Addons"
+msgstr "الإضافات"
+
+#. wpml-name: 16bfbf9c462762cf1cba4134ec53c504
+#: admin/dashboard.php:45 admin/settings.php:59
+#: includes/shortcodes/whmpress_domain_search_ajax.php:81
+msgid "Loading"
+msgstr "جار التحميل"
+
+#. wpml-name: 1b1b12f4382b4c246c1c158300773606
+#: admin/dashboard.php:62
+msgid "Registered WHMpress"
+msgstr "WHMpress مسجل"
+
+#. wpml-name: 56fd51295e732c9db259ea529e0a6a95
+#: admin/dashboard.php:64 admin/dashboard.php:95
+msgid "Congratulation! Your product is verified with us"
+msgstr "تهانينا! تم التحقق من المنتج الخاص بك معنا"
+
+#. wpml-name: aeee19a94dde55606964253ce0c9674d
+#: admin/dashboard.php:69 admin/dashboard.php:99
+msgid "Verify your purchase"
+msgstr "تحقق من الشراء"
+
+#. wpml-name: 419c1a1010d86c94f64881234445a8eb
+#: admin/dashboard.php:74 admin/dashboard.php:104 admin/settings.php:630
+msgid "Email required for providing support for this product"
+msgstr "البريد الإلكتروني إلزامي لتوفير الدعم لهذا المنتج"
+
+#. wpml-name: b357b524e740bc85b9790a0712d84a30
+#: admin/dashboard.php:78 admin/dashboard.php:108 admin/settings.php:634
+#: admin/settings.php:762 includes/shortcodes.php:230
+#: includes/shortcodes.php:230
+msgid "Email address"
+msgstr "البريد الإلكتروني"
+
+#. wpml-name: 2c20ef4efc28233813b9563954d34264
+#: admin/dashboard.php:81 admin/dashboard.php:111 admin/settings.php:638
+msgid "Purchase Code"
+msgstr "كود الشراء"
+
+#. wpml-name: 5a750f86ef41f22f852c43351e3ff383
+#: admin/dashboard.php:84 admin/dashboard.php:114 admin/settings.php:642
+msgid "Verify"
+msgstr "تحقق"
+
+#. wpml-name: 74b2b3aa6df6935e8bbf500a1b8150ed
+#: admin/dashboard.php:93
+msgid "Verified Product"
+msgstr "منتج مرخص"
+
+#. wpml-name: 0db377921f4ce762c62526131097968f
+#: admin/dashboard.php:123 admin/settings.php:128
+#: admin/js/shortcodes.js.php:369
+msgid "General"
+msgstr "عام"
+
+#. wpml-name: b81099fb73deb79ba68015015ade7283
+#: admin/dashboard.php:124
+msgid "Watch this video to quickly learn about the use of WHMpress"
+msgstr "شاهد هذا الفيديو لتتعلم بسرعة حول استخدام WHMpress"
+
+#. wpml-name: 5fcc740ee31b8f7f73be4a84065d39f6
+#: admin/dashboard.php:126
+msgid "Introduction Tour"
+msgstr "جولة المقدمة"
+
+#. wpml-name: 14a992c09b62fdfbf904b89d45a08a04
+#: admin/dashboard.php:129 admin/dashboard.php:134
+msgid "Reset WHMpress"
+msgstr "إعادة تعيين WHMpress"
+
+#: admin/dashboard.php:130
+msgid ""
+"If you want to reset all WHMpress as it was newly installed, press this "
+"button"
+msgstr ""
+"إذا كنت ترغب في إعادة تعيين كافة إعدادات WHMpress كما تم تثبيته حديثا، اضغط "
+"على هذا الزر"
+
+#. wpml-name: 47d8ee65ba107916b5a5d0c1697dfab3
+#: admin/dashboard.php:141 admin/dashboard.php:147
+msgid "System Info"
+msgstr "معلومات النظام"
+
+#. wpml-name: bfdf2f7dd4dcf9fbebef19dadd570746
+#: admin/dashboard.php:143 admin/services.php:45 admin/settings.php:117
+msgid "Please Sync WHMCS"
+msgstr "الرجاء مزامنة WHMCS"
+
+#. wpml-name: 34b6cd75171affba6957e308dcbd92be
+#: admin/dashboard.php:148 admin/dashboard.php:149 admin/settings.php:739
+msgid "Version"
+msgstr "إصدار"
+
+#. wpml-name: e7b47c58815acf1d3afa59a84b5db7fb
+#: admin/dashboard.php:151 admin/settings.php:758
+msgid "Company Name"
+msgstr "اسم الشركة"
+
+#. wpml-name: 4994a8ffeba4ac3140beb89e8d41f174
+#: admin/dashboard.php:153
+msgid "Language"
+msgstr "اللغة"
+
+#. wpml-name: ce8ae9da5b7cd6c3df2929543a9af92d
+#: admin/dashboard.php:155
+msgid "Email"
+msgstr "البريد"
+
+#. wpml-name: 500c05f23c47192efdde745ce21476b7
+#: admin/dashboard.php:157 admin/settings.php:743
+msgid "Last Synced"
+msgstr "آخر مزامنة"
+
+#. wpml-name: 78cd2c7d5422ffdb6d9545211ca49eeb
+#: admin/dashboard.php:161 admin/services.php:82 admin/settings.php:766
+msgid "Domains"
+msgstr "النطاقات"
+
+#. wpml-name: 068f80c7519d0528fb08e82137a72131
+#: admin/dashboard.php:163 admin/settings.php:770
+msgid "Products"
+msgstr "المنتجات"
+
+#. wpml-name: 953a899f7a6e2107ba6e088c0e3cd208
+#: admin/dashboard.php:165 admin/settings.php:774
+msgid "Product Groups"
+msgstr "مجموعات المنتجات"
+
+#. wpml-name: dfcfc43722eef1eab1e4a12e50a068b1
+#: admin/dashboard.php:167 admin/services.php:83 admin/settings.php:778
+msgid "Currencies"
+msgstr "العملات"
+
+#. wpml-name: 002dbac1f29af581f4433975da18c3bc
+#: admin/dashboard.php:182 admin/dashboard.php:188
+msgid "You have installed"
+msgstr "تم تنصيب"
+
+#. wpml-name: 4c1c211c160867f99e90c235838c2ff7
+#: admin/dashboard.php:201
+msgid "Warning! All cached data and all settings of WHMpress will removed"
+msgstr ""
+"تحذير! سيتم إزالة كافة البيانات المخزنة مؤقتا وكافة الإعدادات من WHMpress"
+
+#. wpml-name: 868e1daafcda0d0e5ae7f68a2b403e77
+#: admin/dashboard.php:201
+msgid "Are you sure"
+msgstr "هل أنت متأكد؟"
+
+#. wpml-name: 0095a9fa74d1713e43e370a7d7846224
+#: admin/export.php:2
+msgid "Export"
+msgstr "تصدير"
+
+#. wpml-name: b9df4904d8bbb4535cfc57d2828f9aa1
+#: admin/extensions.php:39 admin/extensions.php:58
+msgid "Buy this Addon"
+msgstr "شراء هذا الملحق"
+
+#. wpml-name: 72d6d7a1885885bb55a565fd1070581a
+#: admin/import.php:2
+msgid "Import"
+msgstr "استيراد"
+
+#. wpml-name: 428147101967a4d602cd03d23590d96b
+#: admin/services.php:43 admin/settings.php:115
+msgid "WHMCS is not Synced"
+msgstr "لم تتم مزامنة WHMCS"
+
+#. wpml-name: 7b9d9e596936f1d39e76a05b348366ad
+#: admin/services.php:52
+msgid "This page has all services list"
+msgstr ""
+"تسرد هذه الصفحة كافة المنتجات والخدمات التي تم تكوينها في تركيب WHMCS. سوف "
+"تجد جميع الخدمات في علامات التبويب الخاصة بها. تعطيك لمحة عامة عن الخدمات "
+"لديك دون أن تترك ووردبريس. بالإضافة إلى أنك قد تستخدم أيضا هذه الصفحة للعثور "
+"على رقم الخدمة/المنتج لاستخدامها في الأكواد. إذا وجدت هذه الصفحة فارغة، انقر "
+"فوق مزامنة WHMCS لتخزين الإعدادات الخاصة بك من WHMCS."
+
+#. wpml-name: b718adec73e04ce3ec720dd11a06a308
+#: admin/services.php:94 admin/services.php:192 admin/services.php:279
+#: includes/shortcodes/whmpress_price_table.php:69
+msgid "ID"
+msgstr "الرقم"
+
+#. wpml-name: 49ee3087348e8d44e1feda1917443987
+#: admin/services.php:95 includes/shortcodes/whmpress_price_table.php:70
+msgid "Name"
+msgstr "الأسم"
+
+#. wpml-name: b5a7adde1af5c87d7fd797b6245c2a39
+#: admin/services.php:96
+msgid "Description"
+msgstr "الوصف"
+
+#. wpml-name: eae639a70006feff484a39363c977e24
+#: admin/services.php:194
+#: includes/shortcodes/whmpress_price_table_domain.php:377
+#: includes/shortcodes/whmpress_price_table_domain.php:529
+#: includes/shortcodes/whmpress_price_table_domain.php:648
+msgid "Domain"
+msgstr "النطاق"
+
+#. wpml-name: ca0dbad92a874b2f69b549293387925e
+#: admin/services.php:280 admin/settings.php:203
+msgid "Code"
+msgstr "الكود"
+
+#. wpml-name: 716de874a0d74f25c0aa8c444c3a7539
+#: admin/services.php:281 admin/settings.php:199
+msgid "Prefix"
+msgstr "البادئة"
+
+#. wpml-name: 56e6ddd1cb6cec596b433440dfb21c17
+#: admin/services.php:282 admin/settings.php:201
+msgid "Suffix"
+msgstr "اللاحقة"
+
+#. wpml-name: 4c1c7d945fcd04d68bd3b3f1d99a55a1
+#: admin/settings.php:129
+msgid "Styles"
+msgstr "الاستايلات"
+
+#. wpml-name: 4fed11a02070ea88747f829cf7e47865
+#: admin/settings.php:133
+msgid "Default Values"
+msgstr "القيم الافتراضية"
+
+#. wpml-name: 9b6545e4cea9b4ad4979d41bb9170e2b
+#: admin/settings.php:135
+msgid "Advanced"
+msgstr "متقدم"
+
+#. wpml-name: 0f98b7f230f3c91292f0de4c99e263f2
+#: admin/settings.php:136
+msgid "Registration"
+msgstr "التسجيل"
+
+#. wpml-name: 08c450b6db737c3f2208d17d0d6bdc5a
+#: admin/settings.php:150
+msgid ""
+"If you have SSL URL configured in WHMCS Admin Area > Setup > General "
+"Settings then you must select HTTPS from here, Or you will endup with "
+"redirect loop."
+msgstr ""
+"إذا كان لديك رابط SSL تم تكوينه في منطقة إدارة WHMCS > الإعدادات > الإعدادات "
+"العامة, إذاّ يجب عليك إختيار HTTPS من هنا, وإلا ستخلق مشكلة حلقة غير منتهية "
+"من إعادة التوجيه."
+
+#. wpml-name: 4c0b57fa3bba7259939e0f5c28f0e481
+#: admin/settings.php:156 admin/settings.php:782
+msgid "WHMCS URL"
+msgstr "رابط WHMCS "
+
+#. wpml-name: c701b9355deac04133466876367d788c
+#: admin/settings.php:184
+msgid "Show trailing zeros in price"
+msgstr "عرض الأصفار الزائدة في السعر"
+
+#. wpml-name: bafd7322c6e97d25b6299b5d6fe8920b
+#: admin/settings.php:188 admin/settings.php:266 admin/settings.php:278
+#: admin/settings.php:290 admin/settings.php:371 admin/settings.php:672
+#: admin/settings.php:685 admin/settings.php:867
+msgid "No"
+msgstr "لا"
+
+#. wpml-name: 93cba07454f06a4a960172bbd6e2a435
+#: admin/settings.php:190 admin/settings.php:268 admin/settings.php:280
+#: admin/settings.php:292 admin/settings.php:373 admin/settings.php:669
+#: admin/settings.php:682 admin/settings.php:867
+msgid "Yes"
+msgstr "نعم"
+
+#. wpml-name: 96033521304b4bfacc7fd90270bb07f2
+#: admin/settings.php:195
+msgid "Show symbol with price"
+msgstr "إظهار الرمز مع السعر"
+
+#. wpml-name: 6adf97f83acf6453d4a6a4b1070f3754
+#: admin/settings.php:205
+msgid "None"
+msgstr "لا شيء"
+
+#. wpml-name: 2b417805040de3a3df31c8fd3626b57c
+#: admin/settings.php:233 admin/settings-tabs/defaults.php:54
+#: admin/settings-tabs/defaults.php:246 admin/settings-tabs/defaults.php:364
+#: admin/settings-tabs/defaults.php:441 admin/settings-tabs/defaults.php:540
+msgid "Decimals"
+msgstr "الكسور العشرية"
+
+#. wpml-name: ad79d802959d0f7d72f1cabe6742d2f6
+#: admin/settings.php:305
+msgid "Select style"
+msgstr "حدد الأستايل"
+
+#. wpml-name: 34ad48eabc23263b40a1ec587ef6795f
+#: admin/settings.php:368
+msgid "Include font awesome"
+msgstr "تضمين Font Awesome"
+
+#. wpml-name: adf37c00444c3335742de246e6760066
+#: admin/settings.php:402
+msgid "URL override for compatibility with third party tools (WHMCS Bridge)"
+msgstr "رابط التجاوز من أجل التوافق مع الأدوات الخارجية (WHMCS Bridge)"
+
+#. wpml-name: 19d3f67d1a44460a1c68e2a263777e3d
+#: admin/settings.php:407
+msgid ""
+"WHMCS Client Area Addon is Active. If you want to use a third party plugin "
+"for this purpose (WHMCS-bridge) please deactivate the WHMCS Client Area "
+"Addon by WHMpress"
+msgstr ""
+"ملحق منطقة العميل غير نشط. إذا كنت ترغب في استخدام الإضافة لطرف ثالث (WHMCS-"
+"bridge) يرجى تنشيط إضافة منطقة العميل (WHMCS Client Area) الخاص بـ WHMpress"
+
+#. wpml-name: 0b1045681d6f426b1c5764020f164b95
+#: admin/settings.php:415 admin/settings.php:787
+msgid "Client Area URL"
+msgstr "رابط منطقة العميل"
+
+#. wpml-name: de5daf94e557ab7c6c6fb001fc3dae14
+#: admin/settings.php:423
+msgid "Announcements URL"
+msgstr "رابط الإعلانات"
+
+#. wpml-name: d6342382f40b6754e0828494a920726c
+#: admin/settings.php:431
+msgid "Submit Ticket URL"
+msgstr "رابط تذكرة جديدة"
+
+#. wpml-name: 84c755a06f6d5b50350b1e790a96fd7e
+#: admin/settings.php:439
+msgid "Downloads page URL"
+msgstr "رابط صفحة التنزيلات"
+
+#. wpml-name: 82acdf6d64be683a73c7cfe1c64f1982
+#: admin/settings.php:447
+msgid "Support Tickets URL"
+msgstr "رابط تذاكر الدعم الفني"
+
+#. wpml-name: a96112440be711018824ff7de562ddcd
+#: admin/settings.php:455
+msgid "Knowledgebase URL"
+msgstr "رابط مكتبة الشروحات"
+
+#. wpml-name: c77a21259eca386341439a5dc8841211
+#: admin/settings.php:463
+msgid "Affiliates URL"
+msgstr "رابط الشركات التابعة"
+
+#. wpml-name: 125c81e424f2d47c81fe3a51d6078717
+#: admin/settings.php:471
+msgid "Order URL"
+msgstr "رابط الطلب"
+
+#. wpml-name: e3623c3809dd9c4c05135fca6393713a
+#: admin/settings.php:479
+msgid "Pre-sales Contact URL"
+msgstr "رابط الاتصال ماقبل البيع"
+
+#. wpml-name: 184a56f6cba553e9e67ca12d5238c2ad
+#: admin/settings.php:488
+msgid "Domain Checker URL"
+msgstr "رابط فاحص النطاقات"
+
+#. wpml-name: a8edf8a91ec0651f0489dd37c29b51ad
+#: admin/settings.php:496
+msgid "Server Status URL"
+msgstr "رابط حالة الخادم"
+
+#. wpml-name: b96216d1df25ae0d0beef764b2de2d72
+#: admin/settings.php:504
+msgid "Network Issues URL"
+msgstr "رابط مشاكل الشبكة"
+
+#. wpml-name: c4f12f6ff46716ff32e7819be685d61d
+#: admin/settings.php:512
+msgid "WHMCS Login URL"
+msgstr "رابط الدخول"
+
+#. wpml-name: 46105713f9d4fbdf73706da86c1a5d07
+#: admin/settings.php:520
+msgid "WHMCS Register URL"
+msgstr "رابط التسجيل"
+
+#. wpml-name: 3ffcd1fc0975d784d659b95fcf814e68
+#: admin/settings.php:528
+msgid "WHMCS Forget Password URL"
+msgstr "رابط غستعادة كلمة المرور"
+
+#. wpml-name: f5d6040ed78ca86ddc73296a49b18510
+#: admin/settings.php:543
+msgid "Save Changes"
+msgstr "حفظ التغييرات"
+
+#. wpml-name: 63b0932a63f24fcaf3f9be5dab85c298
+#: admin/settings.php:551
+msgid "Override WHMCS URL"
+msgstr "رابط التجاوز WHMCS"
+
+#. wpml-name: fde31686817fe5029025586d51b35861
+#: admin/settings.php:652
+msgid "WordPress"
+msgstr "ووردبريس"
+
+#. wpml-name: 1bacb9caa60813ee730288d7dd95e7fc
+#: admin/settings.php:655
+msgid "Site URL"
+msgstr "رابط الموقع"
+
+#. wpml-name: 7ce3183f94851606d3fa85d2722616fa
+#: admin/settings.php:659
+msgid "Home URL"
+msgstr "رابط الرئيسية"
+
+#. wpml-name: b33681e5c8f412a380bd985420ae2309
+#: admin/settings.php:663
+msgid "WordPress Version"
+msgstr "إصدار ووردبريس"
+
+#. wpml-name: 28eb924204828a2c1c6648470e6b558a
+#: admin/settings.php:667
+msgid "WordPress Multisite"
+msgstr "ووردبريس متعدد المواقع"
+
+#. wpml-name: c7107168f64cc5de230bbc58e7d1cdf4
+#: admin/settings.php:676
+msgid "WordPress Language"
+msgstr "لغة ووردبريس"
+
+#. wpml-name: 301cf2d41b36c768ec16c10f64420547
+#: admin/settings.php:680
+msgid "WordPress Debug Mode"
+msgstr "وضع التصحيح ووردبريس"
+
+#. wpml-name: 3af5dcff356e27a453491545df5b8754
+#: admin/settings.php:689
+msgid "WordPress Active Plugins"
+msgstr "إضافات ووردبريس النشطة"
+
+#. wpml-name: 6afc3fb9a0d28ac803a63835f0a4879b
+#: admin/settings.php:693
+msgid "WordPress Max Upload Size"
+msgstr "حجم الرفع الأقصى للووردبريس"
+
+#. wpml-name: 0f5a4afc628ea6389a7343f0a6f83fa0
+#: admin/settings.php:703
+#, php-format
+msgid "%s (The server only allows %s)"
+msgstr "%s (الخادم يسمح بـ %s)"
+
+#. wpml-name: d613fdecc0129bc1b9f74684f0e04371
+#: admin/settings.php:714
+msgid "Server Info"
+msgstr "معلومات الخادم"
+
+#. wpml-name: ab64e3d5feb645333b320d80a84c8255
+#: admin/settings.php:717
+msgid "PHP Version"
+msgstr "إصدار PHP"
+
+#. wpml-name: f6ea71c59b696b19a9b331b6ffaa6d8b
+#: admin/settings.php:723
+msgid "Server Software"
+msgstr "برامج الخادم"
+
+#. wpml-name: 98dd43dfae05b11befe1f140e0ec787a
+#: admin/settings.php:728 admin/settings.php:732 admin/settings.php:804
+msgid "Installed"
+msgstr "المثبتة"
+
+#. wpml-name: ddd8eef6f86868a07f62b0e3810711f0
+#: admin/settings.php:728 admin/settings.php:732
+msgid "Not Installed"
+msgstr "غير مثبتة"
+
+#. wpml-name: 3fcd2c490fc737eec8b647bb5eaab2fe
+#: admin/settings.php:754
+msgid "WHMCS Version"
+msgstr "إصدار WHMCS "
+
+#. wpml-name: bb38096ab39160dc20d44f3ea6b44507
+#: admin/settings.php:801
+msgid "Plugins"
+msgstr "الإضافات"
+
+#. wpml-name: d721757161f7f70c5b0949fdb6ec2c30
+#: admin/settings.php:844
+msgid "Theme"
+msgstr "الاستايل"
+
+#. wpml-name: 452ccd13ee01a00ad75d67f8efb7bcdc
+#: admin/settings.php:847
+msgid "Theme Name"
+msgstr "اسم الاستايل"
+
+#. wpml-name: 8f6daaf2b048702eb814781894bc1a3e
+#: admin/settings.php:854
+msgid "Theme Version"
+msgstr "إصدار الاستايل"
+
+#. wpml-name: 958725b1a8d8b697269808db2b42156b
+#: admin/settings.php:860
+msgid "Theme Author URL"
+msgstr "رابط مصمم الاستايل"
+
+#. wpml-name: f8ab979fd504f8e72d67d84c22efa844
+#: admin/settings.php:866
+msgid "Is Child Theme"
+msgstr "هو ستايل طفل"
+
+#. wpml-name: 70ad792fad1cbc7d0e1ba91607fdce2f
+#: admin/settings.php:874
+msgid "Parent Theme Name"
+msgstr "اسم الاستايل الأصل"
+
+#. wpml-name: 56d75fd38c0c404b2ea77684ce4685c3
+#: admin/settings.php:878
+msgid "Parent Theme Version"
+msgstr "إصدار الاستايل الأصل"
+
+#. wpml-name: 2d27cb3a987059aaaae6b3a89167c193
+#: admin/sidebar.php:4
+msgid "Spread the word"
+msgstr "نشر الكلمة"
+
+#. wpml-name: a5a7b3e3c7cbf1cdb8c5c2fe0796ab66
+#: admin/sidebar.php:5
+msgid ""
+"We are working hard to make your WHMpress more useful for your hosting "
+"business. Please support us, here is how"
+msgstr ""
+"ونحن نعمل بجد لجعل WHMpress أكثر فائدة لأعمال الاستضافة. يرجى دعمنا، هنا كيف "
+"يكون ذلك:"
+
+#. wpml-name: f79a2808a3bdd86c6574c3d227a892e0
+#: admin/sidebar.php:8
+msgid "Give us a Good Rating"
+msgstr "أعطنا تقييم جيد"
+
+#. wpml-name: 9cfc9b74983d504ec71db33967591249
+#: admin/sidebar.php:10
+msgid "Contact Us"
+msgstr "اتصل بنا"
+
+#. wpml-name: cae804ee83388de1d159db5cfa20ff42
+#: admin/sidebar.php:12
+msgid "Post to Twitter"
+msgstr "أنشر على تويتر"
+
+#. wpml-name: 1e5bbe8bd968316aad1a3c7e93d17153
+#: admin/sync.php:25
+msgid ""
+"WHMpress makes your life easy by fetching all the services related "
+"information from WHMCS. Once you Sync WHMCS, all the services are fetched "
+"from WHMCS and are cached and made available in WHMpress for quick access"
+msgstr ""
+"WHMpress يجعل حياتك سهلة عن طريق جلب جميع الخدمات المعلومات ذات الصلة من "
+"WHMCS. بمجرد مزامنة WHMCS يتم جلب جميع الخدمات من  WHMCS وتوفيرها في "
+"WHMpress للوصول السريع."
+
+#. wpml-name: 08930b451fab89ba39ff3741c12fa032
+#: admin/sync.php:40
+msgid "WHMCS Database Server"
+msgstr "سيرفر قاعدة بيانات WHMCS "
+
+#. wpml-name: a368c94f602d77cfadf6f57f60bf1f09
+#: admin/sync.php:45
+msgid "WHMCS Database Name"
+msgstr "أسم قاعدة بيانات WHMCS "
+
+#. wpml-name: 7710ae1f4bc5eba629ed2b561817c27d
+#: admin/sync.php:50
+msgid "WHMCS Database User"
+msgstr "أسم مستخدم قاعدة WHMCS "
+
+#. wpml-name: d98b1237842c5f05936ffe322a2d916f
+#: admin/sync.php:55
+msgid "WHMCS Database Password"
+msgstr "كلمة مرور قاعدة WHMCS "
+
+#. wpml-name: 7e129c6b2a469b6523013703fcb1db1c
+#: includes/ajax.php:59 includes/ajax.php:928
+#: admin/settings-tabs/domain_search.php:92
+msgid "Load More"
+msgstr "تحميل المزيد"
+
+#. wpml-name: 793b899a4f8fdf8109b9b0e71aa0f28e
+#: includes/ajax.php:150 includes/ajax.php:866 includes/ajax.php:957
+#: includes/functions.php:1444
+#: includes/shortcodes/whmpress_domain_search_bulk.php:177
+msgid "WWW"
+msgstr "WWW"
+
+#. wpml-name: a719cd29bc683c1d1ee601b640a231bf
+#: includes/ajax.php:151 includes/ajax.php:905 includes/ajax.php:958
+#: includes/functions.php:1433
+#: includes/shortcodes/whmpress_domain_search_bulk.php:184
+msgid "WHOIS"
+msgstr "WHOIS"
+
+#. wpml-name: 94f5c19438796baf34b3b9d55b086037
+#: includes/ajax.php:770 includes/functions.php:1467
+#: includes/functions.php:1487 admin/settings-tabs/domain_search.php:71
+#: includes/shortcodes/whmpress_domain_search_bulk.php:97
+msgid "[domain-name] is available"
+msgstr "[domain-name] متاح"
+
+#. wpml-name: 537c66b24ef5c83b7382cdc3f34885f2
+#: includes/functions.php:1182 includes/functions_i.php:432
+#: includes/shortcodes/whmpress_domain_price.php:170
+#: includes/shortcodes/whmpress_domain_price.php:190
+#: includes/shortcodes/whmpress_domain_search_bulk.php:145
+#: includes/shortcodes/whmpress_price.php:233
+msgid "Year"
+msgstr "سنة"
+
+#. wpml-name: e4a00407f4e14849a66f076123f38494
+#: includes/functions.php:1185 admin/settings-tabs/defaults.php:233
+#: includes/shortcodes/whmpress_domain_price.php:172
+#: includes/shortcodes/whmpress_domain_price.php:192
+#: includes/shortcodes/whmpress_domain_search_bulk.php:147
+#: includes/shortcodes/whmpress_price_table_domain.php:381
+#: includes/shortcodes/whmpress_price_table_domain.php:650
+msgid "Years"
+msgstr "سنوات"
+
+#. wpml-name: e0626222614bdee31951d84c64e5e9ff
+#: includes/functions.php:1498 admin/settings-tabs/domain_search.php:85
+#: includes/shortcodes/whmpress_domain_search_bulk.php:116
+msgid "Select"
+msgstr "تحديد"
+
+#. wpml-name: b85a103c89e8074d5a69f8dbe651dd96
+#: includes/functions.php:1509
+msgid "Recommended domains list"
+msgstr "قائمة النطاقات الموصى بها"
+
+#. wpml-name: dc647eb65e6711e155375218212b3964
+#: includes/shortcodes.php:231 includes/shortcodes.php:231
+msgid "Password"
+msgstr "كلمة المرور"
+
+#. wpml-name: b106627ff0b000b3364dcd42c11407a8
+#: includes/shortcodes.php:1145
+msgid "Please fill out this field"
+msgstr "يرجى ملء هذا الحقل"
+
+#. wpml-name: 3601146c4e948c32b6424d2c0a7f0118
+#: admin/settings-tabs/defaults.php:4
+#: includes/shortcodes/whmpress_price_table_domain.php:649
+msgid "Price"
+msgstr "السعر"
+
+#. wpml-name: 935cc6518bb4069cc22f456bc1ee8032
+#: admin/settings-tabs/defaults.php:22
+msgid "Billing cycle"
+msgstr "دورة الفوترة"
+
+#. wpml-name: 23a2c870ebc7023b78f39e83a36462df
+#: admin/settings-tabs/defaults.php:42
+msgid "Hide decimals"
+msgstr "إخفاء العشرية"
+
+#. wpml-name: 539897380dc1f1e486ae52608108517d
+#: admin/settings-tabs/defaults.php:77 admin/settings-tabs/defaults.php:583
+msgid "Show prefix"
+msgstr "عرض البادئة"
+
+#. wpml-name: 488af6778b6e236b772a07408db30868
+#: admin/settings-tabs/defaults.php:95 admin/settings-tabs/defaults.php:593
+msgid "Show suffix"
+msgstr "عرض اللاحقة"
+
+#. wpml-name: b117e056a52daecf9956f394a36002d6
+#: admin/settings-tabs/defaults.php:113
+msgid "Show duration"
+msgstr "عرض المدة"
+
+#. wpml-name: 3790fe82067455e16dd502d3d156a8eb
+#: admin/settings-tabs/defaults.php:132
+msgid "Long Duration (Year)"
+msgstr "المدة طويل (سنة)"
+
+#. wpml-name: e07b5323ad8869304d2af2b68e1885b2
+#: admin/settings-tabs/defaults.php:133
+msgid "Short Duration (Yr)"
+msgstr "المدة قصير (س)"
+
+#. wpml-name: 94705afb26e475fbe832fb49521bad01
+#: admin/settings-tabs/defaults.php:536
+msgid "Press {Ctrl} button for multiple selection"
+msgstr "أضغط {Ctrl} لإختيارات متعددة"
+
+#. wpml-name: 04331f6bb9cbb4fe0ed5da011c1a7f7c
+#: admin/settings-tabs/defaults.php:550
+msgid "Show button"
+msgstr "عرض الزر"
+
+#. wpml-name: 111082bb18b636c4493e0370dce09f00
+#: admin/settings-tabs/defaults.php:560 admin/settings-tabs/defaults.php:629
+#: admin/settings-tabs/defaults.php:694
+msgid "Button text"
+msgstr "نص الزر"
+
+#. wpml-name: 5ff30b086e6b6964720014f63d2887d6
+#: admin/settings-tabs/defaults.php:569
+msgid "Show discount"
+msgstr "عرض الخصم"
+
+#. wpml-name: 0adf77ccdfe96df65a99d3078b87eea3
+#: admin/settings-tabs/domain_search.php:8
+#: admin/settings-tabs/domain_search.php:44
+msgid "Custom Messages"
+msgstr "رسائل مخصصة"
+
+#. wpml-name: 0b0c68825ab26996346da4096e0bf1a6
+#: admin/settings-tabs/domain_search.php:9
+#: admin/settings-tabs/domain_search.php:102
+#: admin/settings-tabs/domain_search.php:106
+msgid "WhoIs Servers"
+msgstr "خوادم WHOIS"
+
+#. wpml-name: 17c7aedf6d5f1470fc7369ae4b99b82e
+#: admin/settings-tabs/domain_search.php:29
+msgid "Number of domains to show in load more page"
+msgstr "عدد النطاقات المعروضة في صفحة تحميل المزيد"
+
+#. wpml-name: e36726a553e95ed7dfe5b01346a53399
+#: admin/settings-tabs/domain_search.php:47
+msgid "Domain available message"
+msgstr "رسالة النطاق متاح"
+
+#. wpml-name: 2145ac178e64e141a58ffa81ec430a91
+#: admin/settings-tabs/domain_search.php:54
+msgid "Domain not available message"
+msgstr "رسالة النطاق غير متاح"
+
+#. wpml-name: 758657d085669645bbc92645f2bf75f7
+#: admin/settings-tabs/domain_search.php:61
+msgid "Recommended domains list message"
+msgstr "رسالة قائمة النطاقات ذات الأولوية"
+
+#. wpml-name: 31a7281e95de2c850ff9925fa4956a00
+#: admin/settings-tabs/domain_search.php:68
+msgid "Ongoing domain available message"
+msgstr "رسالة النطاق المستمر المتاح"
+
+#. wpml-name: 0ff6231d105c7a3a17b953bfee3cacc1
+#: admin/settings-tabs/domain_search.php:75
+msgid "Ongoing domain not available message"
+msgstr "رسالة النطاق المستمر الغير متاح"
+
+#. wpml-name: a5b8707a84ee0c7713dec2282c6c2314
+#: admin/settings-tabs/domain_search.php:82
+msgid "Register domain button text"
+msgstr "نص زر تسجيل النطاق"
+
+#. wpml-name: be88dc30b1cc95bad8bc75e1a696940f
+#: admin/settings-tabs/domain_search.php:89
+msgid "Load more button text"
+msgstr "نص زر تحميل المزيد"
+
+#. wpml-name: fb5612447fe4bd49d18c15a7cf09db50
+#: includes/shortcodes/whmpress_domain_search_bulk.php:272
+msgid "I entered fully qualified names"
+msgstr "أدخلت الأسماء المؤهلة بشكل كامل"

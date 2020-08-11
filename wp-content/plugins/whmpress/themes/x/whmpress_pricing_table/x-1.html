@@ -1,0 +1,25 @@
+<div class="x-pricing-column {$featured}">
+	<h2 class="man">{$product_name} <span>{$promo_text}</span></h2>
+
+	<div class="x-pricing-column-info">
+		<h3 class="x-price">{$prefix}{$amount}{if $fraction}{$decimal}{/if}{$fraction}</h3>
+		<span>Per {$duration}</span>
+		{$product_description}
+		{if $product_order_combo ne ""}
+		<div class="pricing_table_combo" style="background: none">
+			<div class="holder">
+				{$product_order_combo}
+			</div>
+		</div>
+		<script>
+			jQuery(".x-pricing-column .whmpress_order_combo button").addClass("x-btn x-btn-rounded");
+			jQuery(".x-pricing-column .whmpress_order_combo").removeClass("whmpress whmpress_order_combo");
+		</script>
+		{else}
+		<a class="x-btn x-btn-rounded x-btn-x-large" href="{$order_url}" title="{$button_text}">{$button_text}</a>
+		{/if}
+	</div>
+	{literal}
+	<script>jQuery('ul').addClass('x-ul-icons');</script>
+	{/literal}
+</div>

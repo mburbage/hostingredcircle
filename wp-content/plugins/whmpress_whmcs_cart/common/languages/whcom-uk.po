@@ -1,0 +1,5718 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WHMPress - WHMCS Client Area (API)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-13 21:07+0000\n"
+"PO-Revision-Date: 2017-12-13 21:12+0000\n"
+"Last-Translator: admin <farooqomer@gmail.com>\n"
+"Language-Team: Ukrainian\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: common/whcom.php:32
+msgctxt "admin"
+msgid "Main Text Color"
+msgstr ""
+
+#: common/whcom.php:38
+msgctxt "admin"
+msgid "Main Font Size"
+msgstr ""
+
+#: common/whcom.php:44
+msgctxt "admin"
+msgid "Primary Color (buttons bg, anchor color ect etc...)"
+msgstr ""
+
+#: common/whcom.php:50
+msgctxt "admin"
+msgid "Link Color"
+msgstr ""
+
+#: common/whcom.php:56
+msgctxt "admin"
+msgid "Link Color Hover"
+msgstr ""
+
+#: common/whcom.php:62
+msgctxt "admin"
+msgid "Button Primary: Color"
+msgstr ""
+
+#: common/whcom.php:68
+msgctxt "admin"
+msgid "Button Primary: Background"
+msgstr ""
+
+#: common/whcom.php:74
+msgctxt "admin"
+msgid "Button Primary: Border Color"
+msgstr ""
+
+#: common/whcom.php:80
+msgctxt "admin"
+msgid "Button Primary Hover: Color"
+msgstr ""
+
+#: common/whcom.php:86
+msgctxt "admin"
+msgid "Button Primary Hover: Background"
+msgstr ""
+
+#: common/whcom.php:92
+msgctxt "admin"
+msgid "Button Primary Hover: Border Color"
+msgstr ""
+
+#: common/whcom.php:98
+msgctxt "admin"
+msgid "Button Secondary: Color"
+msgstr ""
+
+#: common/whcom.php:104
+msgctxt "admin"
+msgid "Button Secondary: Background"
+msgstr ""
+
+#: common/whcom.php:110
+msgctxt "admin"
+msgid "Button Secondary: Border Color"
+msgstr ""
+
+#: common/whcom.php:116
+msgctxt "admin"
+msgid "Button Secondary Hover: Color"
+msgstr ""
+
+#: common/whcom.php:122
+msgctxt "admin"
+msgid "Button Secondary Hover: Background"
+msgstr ""
+
+#: common/whcom.php:128
+msgctxt "admin"
+msgid "Button Secondary Hover: Border Color"
+msgstr ""
+
+#: common/whcom.php:134
+msgctxt "admin"
+msgid "Border Radius General"
+msgstr ""
+
+#: common/whcom.php:140
+msgctxt "admin"
+msgid "Border Radius Button"
+msgstr ""
+
+#: common/whcom.php:146
+msgctxt "admin"
+msgid "Success Color"
+msgstr ""
+
+#: common/whcom.php:152
+msgctxt "admin"
+msgid "Warning Info"
+msgstr ""
+
+#: common/whcom.php:158
+msgctxt "admin"
+msgid "Warning Color"
+msgstr ""
+
+#: common/whcom.php:164
+msgctxt "admin"
+msgid "Danger Color"
+msgstr ""
+
+#: admin/pages/sync.php:10 admin/pages/settings.php:12
+#: common/assets/translations.php:658
+msgctxt "admin"
+msgid "Settings"
+msgstr ""
+
+#: admin/pages/sync.php:77
+msgctxt "admin,"
+msgid "SSO Settings"
+msgstr ""
+
+#: admin/pages/sync.php:83 common/assets/translations.php:595
+msgctxt "admin"
+msgid "Enable WHMCS SSO"
+msgstr ""
+
+#: admin/pages/sync.php:98 common/assets/translations.php:613
+msgctxt "admin"
+msgid "Hide WP Admin bar"
+msgstr ""
+
+#: admin/pages/sync.php:114 common/assets/translations.php:597
+msgctxt "admin"
+msgid "Exclude WP roles from SSO"
+msgstr ""
+
+#: admin/pages/sync.php:135 common/assets/translations.php:663
+msgctxt "admin"
+msgid "Sync Address / Profile Fields"
+msgstr ""
+
+#: admin/pages/sync.php:162
+msgctxt "admin,"
+msgid "WHMCS-WP profile fields mapping"
+msgstr ""
+
+#: admin/pages/sync.php:171
+msgctxt "admin,"
+msgid "WHMCS fields"
+msgstr ""
+
+#: admin/pages/sync.php:223
+msgctxt "admin,"
+msgid "Sync Settings"
+msgstr ""
+
+#: admin/pages/sync.php:229
+msgctxt "admin,"
+msgid "Settings to create users in WordPress"
+msgstr ""
+
+#: admin/pages/sync.php:237 common/assets/translations.php:649
+msgctxt "admin"
+msgid "Role for new user"
+msgstr ""
+
+#: admin/pages/sync.php:259 common/assets/translations.php:672
+msgctxt "admin"
+msgid "Username for new user"
+msgstr ""
+
+#: admin/pages/sync.php:265 common/assets/translations.php:599
+msgctxt "admin"
+msgid "First Name + Last Name"
+msgstr ""
+
+#: admin/pages/sync.php:267 common/assets/translations.php:593
+msgctxt "admin"
+msgid "Email (Recommended)"
+msgstr ""
+
+#: admin/pages/sync.php:277
+msgctxt "admin,"
+msgid "Settings to create users in WHMCS"
+msgstr ""
+
+#: admin/pages/sync.php:291 common/assets/translations.php:616
+msgctxt "admin"
+msgid "How to handle empty address fields?"
+msgstr ""
+
+#: admin/pages/sync.php:299 common/assets/translations.php:625
+msgctxt "admin"
+msgid "Leave empty fields as its"
+msgstr ""
+
+#: admin/pages/sync.php:302 common/assets/translations.php:598
+msgctxt "admin"
+msgid "Fill with Dummy Data"
+msgstr ""
+
+#: admin/pages/sync.php:314 common/assets/translations.php:652
+msgctxt "admin"
+msgid "Save SSO Settings"
+msgstr ""
+
+#: admin/pages/sync.php:328
+msgctxt "admin,"
+msgid "One Time Sync"
+msgstr ""
+
+#: admin/pages/sync.php:337 common/assets/translations.php:665
+msgctxt "admin"
+msgid "Sync. Direction"
+msgstr ""
+
+#: admin/pages/sync.php:343 common/assets/translations.php:685
+msgctxt "admin"
+msgid "WHMCS to WP"
+msgstr ""
+
+#: admin/pages/sync.php:345 common/assets/translations.php:690
+msgctxt "admin"
+msgid "WP to WHMCS"
+msgstr ""
+
+#: admin/pages/sync.php:348 common/assets/translations.php:691
+msgctxt "admin"
+msgid ""
+"You can run sync users from WHMCS to WP or other way around, or both to suit "
+"your needs"
+msgstr ""
+"Ви можете запустити синхронізацію користувачів від WHMCS до WP або іншим "
+"чином навколо, або обидва, щоб задовольнити ваші потреби"
+
+#: admin/pages/sync.php:358 common/assets/translations.php:641
+msgctxt "admin"
+msgid "Perform one time sync"
+msgstr ""
+
+#: admin/pages/dashboard.php:18 common/assets/translations.php:646
+msgctxt "admin"
+msgid "Rate Us"
+msgstr ""
+
+#: admin/pages/dashboard.php:32 common/assets/translations.php:635
+msgctxt "admin"
+msgid "Online Support"
+msgstr ""
+
+#: admin/pages/dashboard.php:38 common/assets/translations.php:634
+msgctxt "admin"
+msgid "Online Documentation"
+msgstr ""
+
+#: admin/pages/dashboard.php:43
+#, php-format
+msgctxt "admin"
+msgid "Here is a %1$s Step by Step Guide %2$s for first time setup."
+msgstr ""
+
+#: admin/pages/dashboard.php:49 common/assets/translations.php:583
+msgctxt "admin"
+msgid "Browse FAQ's"
+msgstr ""
+
+#: admin/pages/dashboard.php:50 common/assets/translations.php:620
+msgctxt "admin"
+msgid "Instant solutions for most common issues"
+msgstr ""
+
+#: admin/pages/dashboard.php:54 common/assets/translations.php:667
+msgctxt "admin"
+msgid "Ticket Support"
+msgstr ""
+
+#: admin/pages/dashboard.php:55 common/assets/translations.php:591
+msgctxt "admin"
+msgid "Direct help from our qualified support team"
+msgstr ""
+
+#: admin/pages/dashboard.php:58 common/assets/translations.php:636
+msgctxt "admin"
+msgid "Open Support Ticket"
+msgstr ""
+
+#: admin/pages/dashboard.php:67 common/assets/translations.php:632
+msgctxt "admin"
+msgid "Newsletters"
+msgstr ""
+
+#: admin/pages/dashboard.php:73 common/assets/translations.php:659
+msgctxt "admin"
+msgid "Stay Updated"
+msgstr ""
+
+#: admin/pages/dashboard.php:74 common/assets/translations.php:647
+msgctxt "admin"
+msgid "Receive info on the latest product updates & products"
+msgstr ""
+
+#: admin/pages/dashboard.php:78 common/assets/translations.php:602
+msgctxt "admin"
+msgid "Free Goodies"
+msgstr ""
+
+#: admin/pages/dashboard.php:79 common/assets/translations.php:624
+msgctxt "admin"
+msgid "Learn about free stuff we offer on a regular basis"
+msgstr ""
+
+#: admin/pages/dashboard.php:83 common/assets/translations.php:645
+msgctxt "admin"
+msgid "Provide Feedback"
+msgstr ""
+
+#: admin/pages/dashboard.php:84 common/assets/translations.php:640
+msgctxt "admin"
+msgid "Participate in survey and help us improve constantly"
+msgstr ""
+
+#: admin/pages/dashboard.php:87 common/assets/translations.php:662
+msgctxt "admin"
+msgid "Subscribe"
+msgstr ""
+
+#: admin/pages/settings.php:27 admin/pages/admin_menu.php:36
+#: common/assets/translations.php:603
+msgctxt "admin"
+msgid "General Settings"
+msgstr ""
+
+#: admin/pages/settings.php:36
+msgctxt "admin"
+msgid "Client Area URL"
+msgstr ""
+
+#: admin/pages/settings.php:53 common/assets/translations.php:579
+msgctxt "admin"
+msgid "After Login Redirect URL"
+msgstr ""
+
+#: admin/pages/settings.php:70 common/assets/translations.php:580
+msgctxt "admin"
+msgid "After Logout Redirect URL"
+msgstr ""
+
+#: admin/pages/settings.php:86 common/assets/translations.php:694
+msgctxt "admin"
+msgid "cURL timeout in seconds"
+msgstr ""
+
+#: admin/pages/settings.php:105 common/assets/translations.php:629
+msgctxt "admin"
+msgid "Menu Settings"
+msgstr ""
+
+#: admin/pages/settings.php:114 common/assets/translations.php:612
+msgctxt "admin"
+msgid "Hide WHMCS Menu (Login Area)"
+msgstr ""
+
+#: admin/pages/settings.php:133 common/assets/translations.php:618
+msgctxt "admin"
+msgid "Individual menu settings"
+msgstr ""
+
+#: admin/pages/settings.php:158 admin/pages/settings.php:320
+#: admin/pages/settings.php:381 common/assets/translations.php:614
+msgctxt "admin"
+msgid "Hide"
+msgstr ""
+
+#: admin/pages/settings.php:179 admin/pages/settings.php:240
+#: admin/pages/settings.php:340 admin/pages/settings.php:401
+#: common/assets/translations.php:610
+msgctxt "admin"
+msgid "Hide Sidebar"
+msgstr ""
+
+#: admin/pages/settings.php:196 admin/pages/settings.php:259
+#: admin/pages/settings.php:357 admin/pages/settings.php:419
+#: common/assets/translations.php:670
+msgctxt "admin"
+msgid "URL Override"
+msgstr ""
+
+#: admin/pages/settings.php:276 common/assets/translations.php:611
+msgctxt "admin"
+msgid "Hide WHMCS Menu (Frontend)"
+msgstr ""
+
+#: admin/pages/settings.php:295 common/assets/translations.php:617
+msgctxt "admin"
+msgid "Individual menu settings (Front End)"
+msgstr ""
+
+#: admin/pages/settings.php:434 common/assets/translations.php:653
+#: common/admin/pages/styles.php:42
+msgctxt "admin"
+msgid "Save Settings"
+msgstr ""
+
+#: admin/pages/admin_menu.php:35 common/assets/translations.php:675
+msgctxt "admin"
+msgid "WCAP Dashboard"
+msgstr ""
+
+#: admin/pages/admin_menu.php:37 common/assets/translations.php:680
+msgctxt "admin"
+msgid "WHMCS Configuration"
+msgstr ""
+
+#: admin/pages/admin_menu.php:38 common/assets/translations.php:650
+msgctxt "admin"
+msgid "SSO Settings"
+msgstr ""
+
+#: admin/pages/admin_menu.php:40
+msgctxt "admin"
+msgid "Debug"
+msgstr ""
+
+#: common/includes/order_process.php:312 common/includes/order_process.php:345
+#: common/includes/order_process.php:379
+msgid " Added to Cart (Remove)"
+msgstr ""
+
+#: common/includes/order_process.php:560
+msgid "Added to Cart (Remove)"
+msgstr ""
+
+#: common/includes/functions.php:301
+msgid "Afghanistan"
+msgstr ""
+
+#: common/includes/functions.php:302
+msgid "Aland Islands"
+msgstr ""
+
+#: common/includes/functions.php:303
+msgid "Albania"
+msgstr ""
+
+#: common/includes/functions.php:304
+msgid "Algeria"
+msgstr ""
+
+#: common/includes/functions.php:305
+msgid "American Samoa"
+msgstr ""
+
+#: common/includes/functions.php:306
+msgid "Andorra"
+msgstr ""
+
+#: common/includes/functions.php:307
+msgid "Angola"
+msgstr ""
+
+#: common/includes/functions.php:308
+msgid "Anguilla"
+msgstr ""
+
+#: common/includes/functions.php:309
+msgid "Antarctica"
+msgstr ""
+
+#: common/includes/functions.php:310
+msgid "Antigua And Barbuda"
+msgstr ""
+
+#: common/includes/functions.php:311
+msgid "Argentina"
+msgstr ""
+
+#: common/includes/functions.php:312
+msgid "Armenia"
+msgstr ""
+
+#: common/includes/functions.php:313
+msgid "Aruba"
+msgstr ""
+
+#: common/includes/functions.php:314
+msgid "Australia"
+msgstr ""
+
+#: common/includes/functions.php:315
+msgid "Austria"
+msgstr ""
+
+#: common/includes/functions.php:316
+msgid "Azerbaijan"
+msgstr ""
+
+#: common/includes/functions.php:317
+msgid "Bahamas"
+msgstr ""
+
+#: common/includes/functions.php:318
+msgid "Bahrain"
+msgstr ""
+
+#: common/includes/functions.php:319
+msgid "Bangladesh"
+msgstr ""
+
+#: common/includes/functions.php:320
+msgid "Barbados"
+msgstr ""
+
+#: common/includes/functions.php:321
+msgid "Belarus"
+msgstr ""
+
+#: common/includes/functions.php:322
+msgid "Belgium"
+msgstr ""
+
+#: common/includes/functions.php:323
+msgid "Belize"
+msgstr ""
+
+#: common/includes/functions.php:324
+msgid "Benin"
+msgstr ""
+
+#: common/includes/functions.php:325
+msgid "Bermuda"
+msgstr ""
+
+#: common/includes/functions.php:326
+msgid "Bhutan"
+msgstr ""
+
+#: common/includes/functions.php:327
+msgid "Bolivia"
+msgstr ""
+
+#: common/includes/functions.php:328
+msgid "Bosnia And Herzegovina"
+msgstr ""
+
+#: common/includes/functions.php:329
+msgid "Botswana"
+msgstr ""
+
+#: common/includes/functions.php:330
+msgid "Bouvet Island"
+msgstr ""
+
+#: common/includes/functions.php:331
+msgid "Brazil"
+msgstr ""
+
+#: common/includes/functions.php:332
+msgid "British Indian Ocean Territory"
+msgstr ""
+
+#: common/includes/functions.php:333
+msgid "Brunei Darussalam"
+msgstr ""
+
+#: common/includes/functions.php:334
+msgid "Bulgaria"
+msgstr ""
+
+#: common/includes/functions.php:335
+msgid "Burkina Faso"
+msgstr ""
+
+#: common/includes/functions.php:336
+msgid "Burundi"
+msgstr ""
+
+#: common/includes/functions.php:337
+msgid "Cambodia"
+msgstr ""
+
+#: common/includes/functions.php:338
+msgid "Cameroon"
+msgstr ""
+
+#: common/includes/functions.php:339
+msgid "Canada"
+msgstr ""
+
+#: common/includes/functions.php:340
+msgid "Cape Verde"
+msgstr ""
+
+#: common/includes/functions.php:341
+msgid "Cayman Islands"
+msgstr ""
+
+#: common/includes/functions.php:342
+msgid "Central African Republic"
+msgstr ""
+
+#: common/includes/functions.php:343
+msgid "Chad"
+msgstr ""
+
+#: common/includes/functions.php:344
+msgid "Chile"
+msgstr ""
+
+#: common/includes/functions.php:345
+msgid "China"
+msgstr ""
+
+#: common/includes/functions.php:346
+msgid "Christmas Island"
+msgstr ""
+
+#: common/includes/functions.php:347
+msgid "Cocos (Keeling) Islands"
+msgstr ""
+
+#: common/includes/functions.php:348
+msgid "Colombia"
+msgstr ""
+
+#: common/includes/functions.php:349
+msgid "Comoros"
+msgstr ""
+
+#: common/includes/functions.php:350
+msgid "Congo"
+msgstr ""
+
+#: common/includes/functions.php:351
+msgid "Congo, Democratic Republic"
+msgstr ""
+
+#: common/includes/functions.php:352
+msgid "Cook Islands"
+msgstr ""
+
+#: common/includes/functions.php:353
+msgid "Costa Rica"
+msgstr ""
+
+#: common/includes/functions.php:354
+msgid "Cote D'Ivoire"
+msgstr ""
+
+#: common/includes/functions.php:355
+msgid "Croatia"
+msgstr ""
+
+#: common/includes/functions.php:356
+msgid "Cuba"
+msgstr ""
+
+#: common/includes/functions.php:357
+msgid "Cyprus"
+msgstr ""
+
+#: common/includes/functions.php:358
+msgid "Czech Republic"
+msgstr ""
+
+#: common/includes/functions.php:359
+msgid "Denmark"
+msgstr ""
+
+#: common/includes/functions.php:360
+msgid "Djibouti"
+msgstr ""
+
+#: common/includes/functions.php:361
+msgid "Dominica"
+msgstr ""
+
+#: common/includes/functions.php:362
+msgid "Dominican Republic"
+msgstr ""
+
+#: common/includes/functions.php:363
+msgid "Ecuador"
+msgstr ""
+
+#: common/includes/functions.php:364
+msgid "Egypt"
+msgstr ""
+
+#: common/includes/functions.php:365
+msgid "El Salvador"
+msgstr ""
+
+#: common/includes/functions.php:366
+msgid "Equatorial Guinea"
+msgstr ""
+
+#: common/includes/functions.php:367
+msgid "Eritrea"
+msgstr ""
+
+#: common/includes/functions.php:368
+msgid "Estonia"
+msgstr ""
+
+#: common/includes/functions.php:369
+msgid "Ethiopia"
+msgstr ""
+
+#: common/includes/functions.php:370
+msgid "Falkland Islands (Malvinas)"
+msgstr ""
+
+#: common/includes/functions.php:371
+msgid "Faroe Islands"
+msgstr ""
+
+#: common/includes/functions.php:372
+msgid "Fiji"
+msgstr ""
+
+#: common/includes/functions.php:373
+msgid "Finland"
+msgstr ""
+
+#: common/includes/functions.php:374
+msgid "France"
+msgstr ""
+
+#: common/includes/functions.php:375
+msgid "French Guiana"
+msgstr ""
+
+#: common/includes/functions.php:376
+msgid "French Polynesia"
+msgstr ""
+
+#: common/includes/functions.php:377
+msgid "French Southern Territories"
+msgstr ""
+
+#: common/includes/functions.php:378
+msgid "Gabon"
+msgstr ""
+
+#: common/includes/functions.php:379
+msgid "Gambia"
+msgstr ""
+
+#: common/includes/functions.php:380
+msgid "Georgia"
+msgstr ""
+
+#: common/includes/functions.php:381
+msgid "Germany"
+msgstr ""
+
+#: common/includes/functions.php:382
+msgid "Ghana"
+msgstr ""
+
+#: common/includes/functions.php:383
+msgid "Gibraltar"
+msgstr ""
+
+#: common/includes/functions.php:384
+msgid "Greece"
+msgstr ""
+
+#: common/includes/functions.php:385
+msgid "Greenland"
+msgstr ""
+
+#: common/includes/functions.php:386
+msgid "Grenada"
+msgstr ""
+
+#: common/includes/functions.php:387
+msgid "Guadeloupe"
+msgstr ""
+
+#: common/includes/functions.php:388
+msgid "Guam"
+msgstr ""
+
+#: common/includes/functions.php:389
+msgid "Guatemala"
+msgstr ""
+
+#: common/includes/functions.php:390
+msgid "Guernsey"
+msgstr ""
+
+#: common/includes/functions.php:391
+msgid "Guinea"
+msgstr ""
+
+#: common/includes/functions.php:392
+msgid "Guinea-Bissau"
+msgstr ""
+
+#: common/includes/functions.php:393
+msgid "Guyana"
+msgstr ""
+
+#: common/includes/functions.php:394
+msgid "Haiti"
+msgstr ""
+
+#: common/includes/functions.php:395
+msgid "Heard Island & Mcdonald Islands"
+msgstr ""
+
+#: common/includes/functions.php:396
+msgid "Holy See (Vatican City State)"
+msgstr ""
+
+#: common/includes/functions.php:397
+msgid "Honduras"
+msgstr ""
+
+#: common/includes/functions.php:398
+msgid "Hong Kong"
+msgstr ""
+
+#: common/includes/functions.php:399
+msgid "Hungary"
+msgstr ""
+
+#: common/includes/functions.php:400
+msgid "Iceland"
+msgstr ""
+
+#: common/includes/functions.php:401
+msgid "India"
+msgstr ""
+
+#: common/includes/functions.php:402
+msgid "Indonesia"
+msgstr ""
+
+#: common/includes/functions.php:403
+msgid "Iran, Islamic Republic Of"
+msgstr ""
+
+#: common/includes/functions.php:404
+msgid "Iraq"
+msgstr ""
+
+#: common/includes/functions.php:405
+msgid "Ireland"
+msgstr ""
+
+#: common/includes/functions.php:406
+msgid "Isle Of Man"
+msgstr ""
+
+#: common/includes/functions.php:407
+msgid "Israel"
+msgstr ""
+
+#: common/includes/functions.php:408
+msgid "Italy"
+msgstr ""
+
+#: common/includes/functions.php:409
+msgid "Jamaica"
+msgstr ""
+
+#: common/includes/functions.php:410
+msgid "Japan"
+msgstr ""
+
+#: common/includes/functions.php:411
+msgid "Jersey"
+msgstr ""
+
+#: common/includes/functions.php:412
+msgid "Jordan"
+msgstr ""
+
+#: common/includes/functions.php:413
+msgid "Kazakhstan"
+msgstr ""
+
+#: common/includes/functions.php:414
+msgid "Kenya"
+msgstr ""
+
+#: common/includes/functions.php:415
+msgid "Kiribati"
+msgstr ""
+
+#: common/includes/functions.php:416
+msgid "Korea"
+msgstr ""
+
+#: common/includes/functions.php:417
+msgid "Kuwait"
+msgstr ""
+
+#: common/includes/functions.php:418
+msgid "Kyrgyzstan"
+msgstr ""
+
+#: common/includes/functions.php:419
+msgid "Lao People's Democratic Republic"
+msgstr ""
+
+#: common/includes/functions.php:420
+msgid "Latvia"
+msgstr ""
+
+#: common/includes/functions.php:421
+msgid "Lebanon"
+msgstr ""
+
+#: common/includes/functions.php:422
+msgid "Lesotho"
+msgstr ""
+
+#: common/includes/functions.php:423
+msgid "Liberia"
+msgstr ""
+
+#: common/includes/functions.php:424
+msgid "Libyan Arab Jamahiriya"
+msgstr ""
+
+#: common/includes/functions.php:425
+msgid "Liechtenstein"
+msgstr ""
+
+#: common/includes/functions.php:426
+msgid "Lithuania"
+msgstr ""
+
+#: common/includes/functions.php:427
+msgid "Luxembourg"
+msgstr ""
+
+#: common/includes/functions.php:428
+msgid "Macao"
+msgstr ""
+
+#: common/includes/functions.php:429
+msgid "Macedonia"
+msgstr ""
+
+#: common/includes/functions.php:430
+msgid "Madagascar"
+msgstr ""
+
+#: common/includes/functions.php:431
+msgid "Malawi"
+msgstr ""
+
+#: common/includes/functions.php:432
+msgid "Malaysia"
+msgstr ""
+
+#: common/includes/functions.php:433
+msgid "Maldives"
+msgstr ""
+
+#: common/includes/functions.php:434
+msgid "Mali"
+msgstr ""
+
+#: common/includes/functions.php:435
+msgid "Malta"
+msgstr ""
+
+#: common/includes/functions.php:436
+msgid "Marshall Islands"
+msgstr ""
+
+#: common/includes/functions.php:437
+msgid "Martinique"
+msgstr ""
+
+#: common/includes/functions.php:438
+msgid "Mauritania"
+msgstr ""
+
+#: common/includes/functions.php:439
+msgid "Mauritius"
+msgstr ""
+
+#: common/includes/functions.php:440
+msgid "Mayotte"
+msgstr ""
+
+#: common/includes/functions.php:441
+msgid "Mexico"
+msgstr ""
+
+#: common/includes/functions.php:442
+msgid "Micronesia, Federated States Of"
+msgstr ""
+
+#: common/includes/functions.php:443
+msgid "Moldova"
+msgstr ""
+
+#: common/includes/functions.php:444
+msgid "Monaco"
+msgstr ""
+
+#: common/includes/functions.php:445
+msgid "Mongolia"
+msgstr ""
+
+#: common/includes/functions.php:446
+msgid "Montenegro"
+msgstr ""
+
+#: common/includes/functions.php:447
+msgid "Montserrat"
+msgstr ""
+
+#: common/includes/functions.php:448
+msgid "Morocco"
+msgstr ""
+
+#: common/includes/functions.php:449
+msgid "Mozambique"
+msgstr ""
+
+#: common/includes/functions.php:450
+msgid "Myanmar"
+msgstr ""
+
+#: common/includes/functions.php:451
+msgid "Namibia"
+msgstr ""
+
+#: common/includes/functions.php:452
+msgid "Nauru"
+msgstr ""
+
+#: common/includes/functions.php:453
+msgid "Nepal"
+msgstr ""
+
+#: common/includes/functions.php:454
+msgid "Netherlands"
+msgstr ""
+
+#: common/includes/functions.php:455
+msgid "Netherlands Antilles"
+msgstr ""
+
+#: common/includes/functions.php:456
+msgid "New Caledonia"
+msgstr ""
+
+#: common/includes/functions.php:457
+msgid "New Zealand"
+msgstr ""
+
+#: common/includes/functions.php:458
+msgid "Nicaragua"
+msgstr ""
+
+#: common/includes/functions.php:459
+msgid "Niger"
+msgstr ""
+
+#: common/includes/functions.php:460
+msgid "Nigeria"
+msgstr ""
+
+#: common/includes/functions.php:461
+msgid "Niue"
+msgstr ""
+
+#: common/includes/functions.php:462
+msgid "Norfolk Island"
+msgstr ""
+
+#: common/includes/functions.php:463
+msgid "Northern Mariana Islands"
+msgstr ""
+
+#: common/includes/functions.php:464
+msgid "Norway"
+msgstr ""
+
+#: common/includes/functions.php:465
+msgid "Oman"
+msgstr ""
+
+#: common/includes/functions.php:466
+msgid "Pakistan"
+msgstr ""
+
+#: common/includes/functions.php:467
+msgid "Palau"
+msgstr ""
+
+#: common/includes/functions.php:468
+msgid "Palestinian Territory, Occupied"
+msgstr ""
+
+#: common/includes/functions.php:469
+msgid "Panama"
+msgstr ""
+
+#: common/includes/functions.php:470
+msgid "Papua New Guinea"
+msgstr ""
+
+#: common/includes/functions.php:471
+msgid "Paraguay"
+msgstr ""
+
+#: common/includes/functions.php:472
+msgid "Peru"
+msgstr ""
+
+#: common/includes/functions.php:473
+msgid "Philippines"
+msgstr ""
+
+#: common/includes/functions.php:474
+msgid "Pitcairn"
+msgstr ""
+
+#: common/includes/functions.php:475
+msgid "Poland"
+msgstr ""
+
+#: common/includes/functions.php:476
+msgid "Portugal"
+msgstr ""
+
+#: common/includes/functions.php:477
+msgid "Puerto Rico"
+msgstr ""
+
+#: common/includes/functions.php:478
+msgid "Qatar"
+msgstr ""
+
+#: common/includes/functions.php:479
+msgid "Reunion"
+msgstr ""
+
+#: common/includes/functions.php:480
+msgid "Romania"
+msgstr ""
+
+#: common/includes/functions.php:481
+msgid "Russian Federation"
+msgstr ""
+
+#: common/includes/functions.php:482
+msgid "Rwanda"
+msgstr ""
+
+#: common/includes/functions.php:483
+msgid "Saint Barthelemy"
+msgstr ""
+
+#: common/includes/functions.php:484
+msgid "Saint Helena"
+msgstr ""
+
+#: common/includes/functions.php:485
+msgid "Saint Kitts And Nevis"
+msgstr ""
+
+#: common/includes/functions.php:486
+msgid "Saint Lucia"
+msgstr ""
+
+#: common/includes/functions.php:487
+msgid "Saint Martin"
+msgstr ""
+
+#: common/includes/functions.php:488
+msgid "Saint Pierre And Miquelon"
+msgstr ""
+
+#: common/includes/functions.php:489
+msgid "Saint Vincent And Grenadines"
+msgstr ""
+
+#: common/includes/functions.php:490
+msgid "Samoa"
+msgstr ""
+
+#: common/includes/functions.php:491
+msgid "San Marino"
+msgstr ""
+
+#: common/includes/functions.php:492
+msgid "Sao Tome And Principe"
+msgstr ""
+
+#: common/includes/functions.php:493
+msgid "Saudi Arabia"
+msgstr ""
+
+#: common/includes/functions.php:494
+msgid "Senegal"
+msgstr ""
+
+#: common/includes/functions.php:495
+msgid "Serbia"
+msgstr ""
+
+#: common/includes/functions.php:496
+msgid "Seychelles"
+msgstr ""
+
+#: common/includes/functions.php:497
+msgid "Sierra Leone"
+msgstr ""
+
+#: common/includes/functions.php:498
+msgid "Singapore"
+msgstr ""
+
+#: common/includes/functions.php:499
+msgid "Slovakia"
+msgstr ""
+
+#: common/includes/functions.php:500
+msgid "Slovenia"
+msgstr ""
+
+#: common/includes/functions.php:501
+msgid "Solomon Islands"
+msgstr ""
+
+#: common/includes/functions.php:502
+msgid "Somalia"
+msgstr ""
+
+#: common/includes/functions.php:503
+msgid "South Africa"
+msgstr ""
+
+#: common/includes/functions.php:504
+msgid "South Georgia And Sandwich Isl."
+msgstr ""
+
+#: common/includes/functions.php:505
+msgid "Spain"
+msgstr ""
+
+#: common/includes/functions.php:506
+msgid "Sri Lanka"
+msgstr ""
+
+#: common/includes/functions.php:507
+msgid "Sudan"
+msgstr ""
+
+#: common/includes/functions.php:508
+msgid "Suriname"
+msgstr ""
+
+#: common/includes/functions.php:509
+msgid "Svalbard And Jan Mayen"
+msgstr ""
+
+#: common/includes/functions.php:510
+msgid "Swaziland"
+msgstr ""
+
+#: common/includes/functions.php:511
+msgid "Sweden"
+msgstr ""
+
+#: common/includes/functions.php:512
+msgid "Switzerland"
+msgstr ""
+
+#: common/includes/functions.php:513
+msgid "Syrian Arab Republic"
+msgstr ""
+
+#: common/includes/functions.php:514
+msgid "Taiwan"
+msgstr ""
+
+#: common/includes/functions.php:515
+msgid "Tajikistan"
+msgstr ""
+
+#: common/includes/functions.php:516
+msgid "Tanzania"
+msgstr ""
+
+#: common/includes/functions.php:517
+msgid "Thailand"
+msgstr ""
+
+#: common/includes/functions.php:518
+msgid "Timor-Leste"
+msgstr ""
+
+#: common/includes/functions.php:519
+msgid "Togo"
+msgstr ""
+
+#: common/includes/functions.php:520
+msgid "Tokelau"
+msgstr ""
+
+#: common/includes/functions.php:521
+msgid "Tonga"
+msgstr ""
+
+#: common/includes/functions.php:522
+msgid "Trinidad And Tobago"
+msgstr ""
+
+#: common/includes/functions.php:523
+msgid "Tunisia"
+msgstr ""
+
+#: common/includes/functions.php:524
+msgid "Turkey"
+msgstr ""
+
+#: common/includes/functions.php:525
+msgid "Turkmenistan"
+msgstr ""
+
+#: common/includes/functions.php:526
+msgid "Turks And Caicos Islands"
+msgstr ""
+
+#: common/includes/functions.php:527
+msgid "Tuvalu"
+msgstr ""
+
+#: common/includes/functions.php:528
+msgid "Uganda"
+msgstr ""
+
+#: common/includes/functions.php:529
+msgid "Ukraine"
+msgstr ""
+
+#: common/includes/functions.php:530
+msgid "United Arab Emirates"
+msgstr ""
+
+#: common/includes/functions.php:531
+msgid "United Kingdom"
+msgstr ""
+
+#: common/includes/functions.php:532
+msgid "United States"
+msgstr ""
+
+#: common/includes/functions.php:533
+msgid "United States Outlying Islands"
+msgstr ""
+
+#: common/includes/functions.php:534
+msgid "Uruguay"
+msgstr ""
+
+#: common/includes/functions.php:535
+msgid "Uzbekistan"
+msgstr ""
+
+#: common/includes/functions.php:536
+msgid "Vanuatu"
+msgstr ""
+
+#: common/includes/functions.php:537
+msgid "Venezuela"
+msgstr ""
+
+#: common/includes/functions.php:538
+msgid "Viet Nam"
+msgstr ""
+
+#: common/includes/functions.php:539
+msgid "Virgin Islands, British"
+msgstr ""
+
+#: common/includes/functions.php:540
+msgid "Virgin Islands, U.S."
+msgstr ""
+
+#: common/includes/functions.php:541
+msgid "Wallis And Futuna"
+msgstr ""
+
+#: common/includes/functions.php:542
+msgid "Western Sahara"
+msgstr ""
+
+#: common/includes/functions.php:543
+msgid "Yemen"
+msgstr ""
+
+#: common/includes/functions.php:544
+msgid "Zambia"
+msgstr ""
+
+#: common/includes/functions.php:545
+msgid "Zimbabwe"
+msgstr ""
+
+#: common/assets/translations.php:258
+msgctxt "admin"
+msgid "Merchant Gateway key (text), ie. bluepay"
+msgstr ""
+
+#. WCAP - WHMCS Client Area Plugin brings WHMCS client area (mainly the features within client login) inside WP. WCAP will integrate products, services, domains, invoices and support areas in WordPress frontend, where your client will be able to login and manage their account, instead of login to WHMCS
+#: common/assets/translations.php:573 common/admin/pages/styles.php:26
+msgctxt "admin"
+msgid "1. WCAP - WHMCS Client Area Plugin"
+msgstr ""
+
+#: common/assets/translations.php:574 common/admin/pages/styles.php:29
+msgctxt "admin"
+msgid "2. WCOP - WHMCS Cart & Order Pages"
+msgstr ""
+
+#: common/assets/translations.php:575 common/assets/translations.php:761
+#: common/assets/translations.php:775
+msgctxt "menu"
+msgid "A"
+msgstr ""
+
+#: common/assets/translations.php:577
+msgctxt "admin"
+msgid "Advance Payment Settings (beta)"
+msgstr ""
+
+#: common/assets/translations.php:581 common/admin/pages/settings.php:18
+#: common/admin/pages/settings.php:54
+msgctxt "admin"
+msgid "All Good!"
+msgstr ""
+
+#: common/assets/translations.php:584
+msgctxt "admin"
+msgid "Cart and Checkout Page URL"
+msgstr ""
+
+#: common/assets/translations.php:585 common/assets/translations.php:760
+#: common/assets/translations.php:774
+msgctxt "menu"
+msgid "Cart"
+msgstr ""
+
+#: common/assets/translations.php:589
+msgctxt "admin"
+msgid "Continue Shopping URL"
+msgstr ""
+
+#: common/assets/translations.php:590
+msgctxt "admin"
+msgid "Debug Info"
+msgstr ""
+
+#: common/assets/translations.php:596
+msgctxt "admin"
+msgid "Enter WHMCS URL including http"
+msgstr ""
+
+#: common/assets/translations.php:600
+msgctxt "admin"
+msgid "For more details on using WHMCS client area visit "
+msgstr ""
+
+#: common/assets/translations.php:604
+msgctxt "admin"
+msgid "Getting Started with Client Area"
+msgstr ""
+
+#: common/assets/translations.php:605 common/admin/pages/main.php:37
+#: common/admin/pages/main.php:55 common/admin/pages/main.php:73
+msgctxt "admin"
+msgid "Go to Settings"
+msgstr ""
+
+#: common/assets/translations.php:608 common/admin/pages/settings.php:39
+msgctxt "admin"
+msgid "Helper Docs"
+msgstr ""
+
+#: common/assets/translations.php:619 common/admin/pages/styles.php:20
+msgctxt "admin"
+msgid ""
+"Info: You can use this section to match WHMCS component style with your "
+"theme."
+msgstr ""
+"Інформація: Ви можете використовувати цей розділ, щоб відповідати стилю "
+"компонента WHMCS з вашою темою."
+
+#: common/assets/translations.php:621 common/admin/pages/settings.php:32
+#: common/admin/pages/settings.php:61
+msgctxt "admin"
+msgid "Kindly Check!"
+msgstr ""
+
+#: common/assets/translations.php:633
+msgctxt "admin"
+msgid "One Time Sync"
+msgstr ""
+
+#: common/assets/translations.php:638
+msgctxt "admin"
+msgid "Order Complete Redirect URL"
+msgstr ""
+
+#: common/assets/translations.php:639 common/admin/pages/debug.php:356
+msgctxt "admin"
+msgid "Page URL is not correct"
+msgstr ""
+
+#: common/assets/translations.php:642
+msgctxt "admin"
+msgid "Plugin URL settings"
+msgstr ""
+
+#: common/assets/translations.php:643 common/admin/pages/styles.php:23
+msgctxt "admin"
+msgid "Plugins affected by the following styling"
+msgstr ""
+
+#: common/assets/translations.php:644 common/admin/pages/debug.php:351
+msgctxt "admin"
+msgid "Product configuration URL"
+msgstr ""
+
+#: common/assets/translations.php:651 common/admin/pages/domain-fields.php:67
+msgctxt "admin"
+msgid "Save All"
+msgstr ""
+
+#: common/assets/translations.php:654
+msgctxt "admin"
+msgid "Scrolling Sections offset"
+msgstr ""
+
+#: common/assets/translations.php:656
+msgctxt "admin"
+msgid "Settings to create users in WHMCS"
+msgstr ""
+
+#: common/assets/translations.php:657
+msgctxt "admin"
+msgid "Settings to create users in WordPress"
+msgstr ""
+
+#: common/assets/translations.php:660
+msgctxt "admin"
+msgid "Sticky Navbar offset"
+msgstr ""
+
+#: common/assets/translations.php:664
+msgctxt "admin"
+msgid "Sync Settings"
+msgstr ""
+
+#: common/assets/translations.php:666
+msgctxt "admin"
+msgid "Template Settings"
+msgstr ""
+
+#: common/assets/translations.php:669 common/admin/pages/domain-fields.php:22
+msgctxt "admin"
+msgid "Type TLD for live search"
+msgstr ""
+
+#: common/assets/translations.php:671
+msgctxt "admin"
+msgid "Use Merchant Gateway? (beta)"
+msgstr ""
+
+#: common/assets/translations.php:673
+msgctxt "admin"
+msgid "Version"
+msgstr ""
+
+#: common/assets/translations.php:674 common/admin/pages/debug.php:361
+msgctxt "admin"
+msgid "Visit Page"
+msgstr ""
+
+#: common/assets/translations.php:676
+msgctxt "admin"
+msgid "WHMCS API Access Key"
+msgstr ""
+
+#: common/assets/translations.php:677 common/admin/pages/settings.php:80
+msgctxt "admin"
+msgid "WHMCS Admin Password"
+msgstr ""
+
+#: common/assets/translations.php:678 common/admin/pages/settings.php:74
+msgctxt "admin"
+msgid "WHMCS Admin User"
+msgstr ""
+
+#: common/assets/translations.php:679
+msgctxt "admin"
+msgid "WHMCS Cart & Order Pages - WCOP"
+msgstr ""
+
+#: common/assets/translations.php:681 common/admin/pages/settings.php:96
+msgctxt "admin"
+msgid "WHMCS Invoice Auth Key"
+msgstr ""
+
+#: common/assets/translations.php:682
+msgctxt "admin"
+msgid "WHMCS Merchant Gateways"
+msgstr ""
+
+#: common/assets/translations.php:683
+msgctxt "admin"
+msgid "WHMCS URL (WHMCS Homepage);"
+msgstr ""
+
+#: common/assets/translations.php:684
+msgctxt "admin"
+msgid "WHMCS fields"
+msgstr ""
+
+#: common/assets/translations.php:686
+msgctxt "admin"
+msgid "WHMCS-WP profile fields mapping"
+msgstr ""
+
+#: common/assets/translations.php:687
+msgctxt "admin"
+msgid "WHMPress API Configuration"
+msgstr ""
+
+#: common/assets/translations.php:688 common/admin/pages/settings.php:14
+#: common/admin/pages/settings.php:28
+msgctxt "admin"
+msgid "WHMPress Helper Configuration"
+msgstr ""
+
+#: common/assets/translations.php:689 common/admin/pages/settings.php:33
+msgctxt "admin"
+msgid "WHMPress helper is not installed/active in WHMCS addon modules"
+msgstr ""
+
+#: common/assets/translations.php:692 common/admin/pages/settings.php:55
+msgctxt "admin"
+msgid "You have successfully connected with your WHMCS API"
+msgstr ""
+
+#: common/assets/translations.php:693 common/admin/pages/settings.php:19
+msgctxt "admin"
+msgid ""
+"You have successfully installed and activated WHMPress helper in WHMCS addon "
+"modules"
+msgstr ""
+"Ви успішно встановили та активували помічник WHMPress в модулях аддона Whmcs"
+
+#: common/assets/translations.php:698
+msgctxt "admin"
+msgid ""
+"Note: You do not need to enable this option until you are using a Merchant "
+"Gateway."
+msgstr ""
+"Примітка: Вам не потрібно, щоб включити цю опцію, поки ви не використовуєте "
+"Merchant Gateway."
+
+#: common/assets/translations.php:704 common/admin/pages/settings.php:37
+msgctxt "admin"
+msgid ""
+"Visit below link for instructions on how to install and activate WHMPress "
+"helper"
+msgstr ""
+"Відвідайте посилання нижче для отримання інструкцій про те, як встановити та "
+"активувати помічник WHMPress"
+
+#. Either you have not entered all information or your WHMCS API can't be accessed using below credentials.
+#: common/assets/translations.php:706 common/admin/pages/styles.php:15
+msgctxt "admin"
+msgid "Colors and Styling Override Settings"
+msgstr ""
+
+#: common/assets/translations.php:707 common/admin/pages/domain-fields.php:17
+msgctxt "admin"
+msgid "Deactivate Custom Domain Fields"
+msgstr ""
+
+#: common/assets/translations.php:708 common/admin/pages/domain-fields.php:36
+msgctxt "admin"
+msgid "Deactivate custom domain fields for"
+msgstr ""
+
+#: common/assets/translations.php:709 common/admin/pages/main.php:40
+#: common/admin/pages/main.php:58 common/admin/pages/main.php:76
+msgctxt "admin"
+msgid "Get it Now"
+msgstr ""
+
+#: common/assets/translations.php:710 common/admin/pages/settings.php:103
+msgctxt "admin"
+msgid "Save Auth Settings"
+msgstr ""
+
+#: common/assets/translations.php:711 common/admin/pages/main.php:9
+msgctxt "admin"
+msgid "WCOM"
+msgstr ""
+
+#: common/assets/translations.php:712 common/admin/pages/settings.php:87
+msgctxt "admin"
+msgid "WHMCS API Key"
+msgstr ""
+
+#: common/assets/translations.php:713 common/admin/pages/settings.php:48
+msgctxt "admin"
+msgid "WHMCS Authentication Credentials"
+msgstr ""
+
+#: common/assets/translations.php:714 common/admin/pages/main.php:66
+msgctxt "admin"
+msgid "WHMCS Client Area with API (WCAP)"
+msgstr ""
+
+#: common/assets/translations.php:847
+msgid "Showing _START_ to _END_ of _TOTAL_ entries"
+msgstr "Показані _START_ з _END_ записів _TOTAL_"
+
+#: common/assets/translations.php:848
+msgid "Showing 0 to 0 of 0 entries"
+msgstr "Показано з 0 по 0 з 0 записів"
+
+#: common/assets/translations.php:849
+msgid "(filtered from _MAX_ total entries)"
+msgstr "(Відфільтровує від загальної кількості записів _MAX_)"
+
+#: common/assets/translations.php:850
+msgid "Show _MENU_ entries"
+msgstr "Показати записи _MENU_"
+
+#: common/admin/pages/main.php:29
+msgctxt "admin"
+msgid "WHMpress"
+msgstr ""
+
+#: common/admin/pages/main.php:48
+msgctxt "admin"
+msgid "WHMCS Cart & Order Pages (WCOP)"
+msgstr ""
+
+#: common/admin/pages/settings.php:68
+msgctxt "admin"
+msgid "WHMCS URL (WHMCS homepage)"
+msgstr ""
+
+#: common/admin/pages/debug.php:165 common/admin/pages/debug.php:188
+#: common/admin/pages/debug.php:211
+msgid "N/A"
+msgstr ""
+
+#: common/admin/pages/debug.php:333
+msgid "WHCOM:"
+msgstr ""
+
+#: common/admin/pages/debug.php:339
+msgid "WHMPress:"
+msgstr ""
+
+#: common/admin/pages/debug.php:346
+msgid "WCOP:"
+msgstr ""
+
+#: common/admin/pages/debug.php:369
+msgid "WCAP:"
+msgstr ""
+
+#: common/shortcodes/order_process/03_summary_generator.php:533
+msgid "%"
+msgstr ""
+
+#: library/ajax.php:189 library/order_process_ajax.php:190
+#: common/includes/ajax.php:101 common/includes/ajax.php:245
+#: common/assets/translations.php:117
+msgid "Continue to register this domain for "
+msgstr "Продовжити зареєструвати цей домен"
+
+#: library/ajax.php:205 library/order_process_ajax.php:206
+#: views/updowngrade.php:274 common/assets/translations.php:371
+msgid "Product not found in database"
+msgstr "Продукт не знайдено в базі даних"
+
+#: library/ajax.php:226 library/order_process_ajax.php:227
+#: common/assets/translations.php:188
+msgid ""
+"Find your new domain name. Enter your name or keywords below to check "
+"availability."
+msgstr ""
+"Знайдіть своє нове доменне ім'я. Введіть своє ім'я або ключові слова нижче, "
+"щоб перевірити наявність."
+
+#: library/ajax.php:231 library/order_process_ajax.php:232
+#: common/assets/translations.php:355
+msgid "Please enter a Valid Domain Name"
+msgstr "Введіть дійсне доменне ім'я"
+
+#: library/ajax.php:320 library/order_process_ajax.php:321
+#: common/assets/translations.php:303
+msgid "No domain name found to renew"
+msgstr "Ім'я домену не знайдено для поновлення"
+
+#: library/ajax.php:327 library/order_process_ajax.php:328
+#: common/assets/translations.php:452
+msgid "System can't process domain renew"
+msgstr "Система не може обробити оновлення домену"
+
+#: library/ajax.php:367 library/ajax.php:395 library/order_process_ajax.php:368
+#: library/order_process_ajax.php:396 common/assets/translations.php:461
+msgid ""
+"The following addons are available for this product. Choose the addons you "
+"wish to order below"
+msgstr ""
+"Для цього продукту доступні наступні додатки. Виберіть додатки, які ви "
+"хочете замовити нижче"
+
+#: library/ajax.php:371 library/ajax.php:399 library/order_process_ajax.php:372
+#: library/order_process_ajax.php:400 common/assets/translations.php:358
+msgid "Please provide serviceid"
+msgstr "Будь ласка, надайте послуги"
+
+#: library/functions_i.php:409 common/includes/functions.php:104
+#: common/assets/translations.php:262
+msgid "Monthly"
+msgstr "щомісяця"
+
+#: library/functions_i.php:416 common/includes/functions.php:113
+#: common/assets/translations.php:377
+msgid "Quarterly"
+msgstr "квартальний"
+
+#: library/functions_i.php:424 common/includes/functions.php:122
+#: common/assets/translations.php:416
+msgid "Semi Annually"
+msgstr "Раз в півроку"
+
+#: library/functions_i.php:432 common/includes/functions.php:131
+#: common/assets/translations.php:49
+msgid "Annually"
+msgstr "щорічно"
+
+#: library/functions_i.php:440 common/assets/translations.php:59
+msgid "Bi Annually"
+msgstr "Bi Щорічно"
+
+#: library/functions_i.php:448 common/assets/translations.php:488
+msgid "Tri Annually"
+msgstr "Tri Щорічно"
+
+#: library/functions_i.php:996 views/services.php:96 views/domains.php:40
+#: common/assets/translations.php:24
+msgid "Active"
+msgstr "Активний"
+
+#: library/functions_i.php:997
+msgid "Completed"
+msgstr "завершений"
+
+#: library/functions_i.php:998 views/services.php:101 views/domains.php:48
+#: common/assets/translations.php:351
+msgid "Pending"
+msgstr "В обробці"
+
+#: library/functions_i.php:999 views/services.php:106
+#: common/assets/translations.php:451
+msgid "Suspended"
+msgstr "Призупинено"
+
+#: library/functions_i.php:1000 views/services.php:111
+#: common/assets/translations.php:455
+msgid "Terminated"
+msgstr "Видалено"
+
+#: library/functions_i.php:1001 views/services.php:116 views/mass_pay.php:85
+#: views/my_invoices.php:102 common/assets/translations.php:67
+msgid "Cancelled"
+msgstr "Скасовано"
+
+#: library/functions_i.php:1002 views/mass_pay.php:75 views/my_invoices.php:92
+#: common/assets/translations.php:332
+msgid "Paid"
+msgstr "Оплачений"
+
+#: library/functions_i.php:1003 views/mass_pay.php:80 views/my_invoices.php:97
+#: common/assets/translations.php:491
+msgid "Unpaid"
+msgstr "Неоплачений"
+
+#: library/functions_i.php:1004 views/mass_pay.php:90 views/my_invoices.php:107
+#: common/assets/translations.php:382
+msgid "Refunded"
+msgstr "Повернено"
+
+#: library/functions_i.php:1005 views/my_quotes.php:52
+#: common/assets/translations.php:134
+msgid "Delivered"
+msgstr "Доставлено"
+
+#: library/functions_i.php:1006 views/my_quotes.php:57
+#: common/assets/translations.php:19
+msgid "Accepted"
+msgstr "Прийнято"
+
+#: library/functions_i.php:1007 views/domains.php:44 views/my_quotes.php:63
+#: common/assets/translations.php:181
+msgid "Expired"
+msgstr "Прострочений"
+
+#: library/functions_i.php:1008 views/tickets.php:57
+#: common/assets/translations.php:318
+msgid "Open"
+msgstr "Відкритий"
+
+#: library/functions_i.php:1009 views/tickets.php:64
+#: common/assets/translations.php:50
+msgid "Answered"
+msgstr "Очікує клієнта"
+
+#: library/functions_i.php:1010 views/tickets.php:69
+#: common/assets/translations.php:124
+msgid "Customer-Reply"
+msgstr "Очікує супорт"
+
+#: library/functions_i.php:1011 views/tickets.php:74
+#: common/assets/translations.php:94
+msgid "Closed"
+msgstr "Закритий"
+
+#: library/functions_i.php:1024 admin/pages/debug.php:18
+#: common/assets/translations.php:540 common/assets/translations.php:541
+#: common/assets/translations.php:542 common/admin/pages/debug.php:70
+#: common/shortcodes/order_process/02_product_sidebar.php:113
+msgid "Yes"
+msgstr "Так"
+
+#: library/functions_i.php:1026 admin/pages/debug.php:18
+#: common/assets/translations.php:307 common/admin/pages/debug.php:70
+msgid "No"
+msgstr "Ні"
+
+#: library/functions_i.php:1062 common/includes/ajax.php:555
+#: common/assets/translations.php:93
+msgid "Close"
+msgstr "близько"
+
+#: library/functions_i.php:1065 common/includes/ajax.php:557
+#: common/assets/translations.php:511
+msgid "View Invoice"
+msgstr "Дивитися/Оплатити рахунок"
+
+#: library/functions_i.php:1112 common/includes/ajax.php:254
+#: common/includes/ajax.php:287 common/includes/ajax.php:320
+#: common/assets/translations.php:118
+#: common/shortcodes/order_process/01_domains_config.php:66
+#: common/shortcodes/order_process/02_product.php:202
+msgid "Continue"
+msgstr "продовжувати"
+
+#: library/functions_i.php:1247
+msgid "Something Went Wrong"
+msgstr "Щось пішло не так..."
+
+#: library/functions.php:128 common/assets/translations.php:450
+msgid "Support"
+msgstr "Підтримка"
+
+#: library/functions.php:135 common/assets/translations.php:271
+msgid "My Support Tickets"
+msgstr "Підтримка"
+
+#: library/functions.php:141 views/open_ticket2.php:25
+#: views/submitticket.php:23 common/assets/translations.php:317
+msgid "Open Ticket"
+msgstr "Відкрити тікет"
+
+#: library/functions.php:146 views/announcements.php:24
+#: common/assets/translations.php:48
+msgid "Announcements"
+msgstr "Сповіщення"
+
+#: library/functions.php:151 common/assets/translations.php:569
+msgid "knowledgebase"
+msgstr "База знань"
+
+#: library/functions.php:156 views/downloads.php:20 views/download_files.php:22
+#: common/assets/translations.php:161
+msgid "Downloads"
+msgstr "Файли"
+
+#: library/functions.php:161 views/network_status.php:36
+#: common/assets/translations.php:287
+msgid "Network Status"
+msgstr "Статус мережі"
+
+#: library/functions.php:179 common/assets/translations.php:472
+msgid "Ticket Information"
+msgstr "Ticket Information"
+
+#: library/functions.php:195 views/tickets.php:98 views/open_ticket2.php:54
+#: views/contact.php:99 common/assets/translations.php:135
+msgid "Department"
+msgstr "Відділ"
+
+#: library/functions.php:201 common/assets/translations.php:446
+msgid "Submitted"
+msgstr "представлений"
+
+#: library/functions.php:207 views/tickets.php:102
+#: common/assets/translations.php:237
+msgid "Last Updated"
+msgstr "Оновлено"
+
+#: library/functions.php:214 views/network_status.php:56
+#: views/open_ticket2.php:96 views/contact.php:113
+#: common/assets/translations.php:363
+msgid "Priority"
+msgstr "Пріоритет"
+
+#: library/functions.php:230
+msgid "Return to Client Area"
+msgstr "Повернення до клієнтської області"
+
+#: library/functions.php:242 common/assets/translations.php:42
+#: common/assets/translations.php:43
+#: common/shortcodes/order_process/04_checkout.php:974
+msgid "Already Registered?"
+msgstr "Вже зареєстровані?"
+
+#: library/functions.php:248 common/assets/translations.php:45
+msgid ""
+"Already registered with us? If so, click the button below to login to our "
+"client area from where you can manage your account."
+msgstr ""
+"Уже зареєстровано у нас? Якщо так, натисніть кнопку нижче, щоб увійти в нашу "
+"клієнтську область, звідки ви зможете керувати своїм обліковим записом."
+
+#: library/functions.php:256 views/login.php:22
+#: library/shortcodes/wcap_whmcs_nav_menu.php:40
+#: common/assets/translations.php:245
+msgid "Login"
+msgstr "Увійти"
+
+#: library/functions.php:261 common/assets/translations.php:248
+msgid "Lost Password reset"
+msgstr "Забули скинути пароль"
+
+#: library/functions.php:270 common/assets/translations.php:530
+msgid "Why security questions?"
+msgstr "Чому питання безпеки?"
+
+#: library/functions.php:276 common/assets/translations.php:422
+msgid ""
+"Setting a security question will provide extra security, as all changes to "
+"your account require providing the additional information from your question."
+msgstr ""
+"Встановлення безпечного запитання забезпечить додаткову безпеку, оскільки "
+"всі зміни в обліковому записі вимагають надання додаткової інформації з "
+"вашого запитання."
+
+#: library/functions.php:296 views/tickets.php:41 views/services.php:85
+#: views/email_history.php:52 views/my_invoices.php:156 views/domains.php:30
+#: common/assets/translations.php:514
+msgid "View"
+msgstr "Переглянути"
+
+#: library/functions.php:302 views/mass_pay.php:49 views/dashboard.php:200
+#: views/my_invoices.php:55 views/my_invoices.php:121
+#: common/assets/translations.php:266
+msgid "My Invoices"
+msgstr "Мої рахунки"
+
+#: library/functions.php:308 views/my_quotes.php:78
+#: common/assets/translations.php:268
+msgid "My Quotes"
+msgstr "Пропозиції/оцінки"
+
+#: library/functions.php:314 views/mass_pay.php:102
+#: common/assets/translations.php:254
+msgid "Mass Payment"
+msgstr "Масовий платіж"
+
+#: library/functions.php:319 common/assets/translations.php:250
+msgid "Manage Credit Card"
+msgstr "Керування кредитною карткою"
+
+#: library/functions.php:335 library/functions.php:598 views/services.php:143
+#: views/productdetails.php:77 common/assets/translations.php:22
+msgid "Actions"
+msgstr "Дії"
+
+#: library/functions.php:341 common/assets/translations.php:150
+msgid "Domain Renewals"
+msgstr "доменні Продовження"
+
+#: library/functions.php:346 views/dashboard.php:133
+#: common/assets/translations.php:386
+msgid "Register a New Domain"
+msgstr "Реєструвати новий домен"
+
+#: library/functions.php:351 common/assets/translations.php:484
+msgid "Transfer in a Domain"
+msgstr "Передача в домені"
+
+#: library/functions.php:357 library/functions.php:615
+#: common/assets/translations.php:510
+msgid "View Cart"
+msgstr "Переглянути кошик"
+
+#: library/functions.php:386 views/domain_addons.php:73
+#: common/assets/translations.php:252
+msgid "Manage"
+msgstr "Управляти"
+
+#: library/functions.php:393 views/domaindetail.php:101
+#: views/productdetails.php:59 common/assets/translations.php:325
+msgid "Overview"
+msgstr "Огляд"
+
+#: library/functions.php:401 views/domaindetail.php:177 views/domains.php:68
+#: common/assets/translations.php:55
+msgid "Auto Renew"
+msgstr "Авто-поновлення"
+
+#: library/functions.php:409 views/domaindetail.php:239
+#: common/includes/domains.php:8 common/assets/translations.php:285
+#: common/assets/translations.php:286
+msgid "Nameservers"
+msgstr "Name-сервери"
+
+#: library/functions.php:418 views/domaindetail.php:289
+#: common/assets/translations.php:393
+msgid "Registrar Lock"
+msgstr "Блокування реєстратора"
+
+#: library/functions.php:427 views/domaindetail.php:369
+#: views/productdetails.php:70 common/assets/translations.php:33
+#: common/shortcodes/order_process/03_summary_generator_backup.php:274
+msgid "Addons"
+msgstr "Додатки"
+
+#: library/functions.php:435 views/domaindetail.php:464
+#: common/assets/translations.php:112
+msgid "Contact Information"
+msgstr "Контактна інформація"
+
+#: library/functions.php:444 common/assets/translations.php:163
+msgid "EPP Code"
+msgstr "Код ЄНП"
+
+#: library/functions.php:469 views/order_new_service.php:85
+#: views/knowledgebase.php:27 views/downloads.php:25
+#: common/assets/translations.php:73 common/assets/translations.php:74
+#: common/shortcodes/list_products.php:41
+msgid "Categories"
+msgstr "Категорії"
+
+#: library/functions.php:604 common/assets/translations.php:353
+msgid "Place a New Order"
+msgstr "Зробити нове замовлення"
+
+#: library/functions.php:609 common/assets/translations.php:509
+msgid "View Available Addons"
+msgstr "Переглянути наявні додатки"
+
+#: library/functions.php:632 common/assets/translations.php:263
+msgid "My Account"
+msgstr "Мій аккаунт"
+
+#: library/functions.php:638 views/profile.php:797
+#: common/assets/translations.php:264
+msgid "My Details"
+msgstr "Мої Деталі"
+
+#: library/functions.php:644 library/functions.php:668
+#: common/assets/translations.php:62
+msgid "Billing Information"
+msgstr "Білінгова інформація"
+
+#: library/functions.php:649 views/contacts.php:835
+#: library/shortcodes/wcap_whmcs_nav_menu.php:16
+#: common/assets/translations.php:114 common/assets/translations.php:776
+msgid "Contacts/Sub-Accounts"
+msgstr "Контакти/Суб-акаунти"
+
+#: library/functions.php:653 views/change_password.php:22
+#: library/shortcodes/wcap_whmcs_nav_menu.php:21
+#: common/assets/translations.php:76
+msgid "Change Password"
+msgstr "Змінити пароль"
+
+#: library/functions.php:658 library/functions.php:673
+#: views/security_settings.php:30 common/assets/translations.php:411
+msgid "Security Settings"
+msgstr "Налаштування безпеки"
+
+#: library/functions.php:663 views/email_history.php:34
+#: library/shortcodes/wcap_whmcs_nav_menu.php:26
+#: common/assets/translations.php:169
+msgid "Email History"
+msgstr "Надіслані email"
+
+#: views/network_status.php:62 views/network_status.php:68
+#: common/assets/translations.php:38
+msgid "Affecting"
+msgstr "Дія"
+
+#: views/network_status.php:77 common/assets/translations.php:130
+msgid "Date"
+msgstr "Дата"
+
+#: views/network_status.php:89 common/assets/translations.php:238
+msgid "Last updated"
+msgstr "Останнє оновлення"
+
+#: views/profile.php:813 common/assets/translations.php:493
+msgid "Update Client"
+msgstr "оновлення клієнта"
+
+#: views/profile.php:813 common/assets/translations.php:384
+msgid "Register Client"
+msgstr "Реєстрація Клієнта"
+
+#: views/security_settings.php:37 common/assets/translations.php:77
+msgid "Change Security Question"
+msgstr "Змінити секретне питання"
+
+#: views/security_settings.php:41 common/assets/translations.php:421
+msgid ""
+"Setting a security question and answer helps protect your account from "
+"unauthorized password resets and allows us to verify your identity when "
+"requesting account changes."
+msgstr ""
+"Установка питання і відповідь допомагає захистити обліковий запис від "
+"несанкціонованого скидання пароля і дозволяє підтвердити свою особистість "
+"при запиті зміни облікового запису."
+
+#: views/security_settings.php:51 common/includes/client.php:484
+msgid "Please choose a security question"
+msgstr "Будь ласка, виберіть секретне питання"
+
+#: views/security_settings.php:64 common/assets/translations.php:859
+msgid "Please enter an answer"
+msgstr "Будь ласка, введіть відповідь"
+
+#: views/security_settings.php:71 common/assets/translations.php:858
+msgid "Please confirm your answer"
+msgstr "Будь ласка, підтвердіть свою відповідь"
+
+#: views/security_settings.php:78 views/contacts.php:1147
+#: views/contacts.php:1357 views/domaindetail.php:557 views/credit_card.php:191
+#: views/change_password.php:59 views/password_reset_final.php:58
+#: common/assets/translations.php:404 common/assets/translations.php:817
+msgid "Save Changes"
+msgstr "Зберегти зміни"
+
+#: views/security_settings.php:79 views/contacts.php:1148
+#: views/contacts.php:1359 views/open_ticket2.php:114
+#: views/request_cancel.php:67 views/viewticket.php:83
+#: views/credit_card.php:192 common/assets/translations.php:66
+#: common/assets/translations.php:818
+msgid "Cancel"
+msgstr "скасувати"
+
+#: views/tickets.php:49 views/services.php:90 views/mass_pay.php:69
+#: views/my_invoices.php:86 views/domains.php:35 views/my_quotes.php:46
+#: common/assets/translations.php:41
+msgid "All"
+msgstr "Усе"
+
+#: views/tickets.php:88 common/assets/translations.php:270
+msgid "My Support Tickets "
+msgstr "Моя Підтримка Квитки"
+
+#: views/tickets.php:99 views/open_ticket2.php:48 views/contact.php:92
+#: views/my_quotes.php:86 common/assets/translations.php:444
+msgid "Subject"
+msgstr "Тема"
+
+#: views/tickets.php:100 views/services.php:142 views/mass_pay.php:63
+#: views/domaindetail.php:138 views/my_invoices.php:80
+#: views/my_invoices.php:132 views/domains.php:69 views/my_quotes.php:40
+#: views/domain_renewals.php:60 common/assets/translations.php:441
+msgid "Status"
+msgstr "Статус"
+
+#: views/services.php:133 common/assets/translations.php:267
+msgid "My Products & Services"
+msgstr "Тут усі замовлені вами послуги."
+
+#: views/services.php:139 views/updowngrade_final.php:80
+#: views/updowngrade.php:65 common/assets/translations.php:372
+msgid "Product/Service"
+msgstr "Продукт/Послуга"
+
+#: views/services.php:140 common/assets/translations.php:361
+msgid "Pricing"
+msgstr "Ціни"
+
+#: views/services.php:141 views/domaindetail.php:131
+#: common/assets/translations.php:291
+msgid "Next Due Date"
+msgstr "Дата наступної оплати"
+
+#: views/services.php:178 common/assets/translations.php:138
+msgid "Details"
+msgstr "деталі"
+
+#: views/ask_domain.php:5 common/includes/domains.php:235
+#: common/assets/translations.php:86
+msgid "Choose a Domain"
+msgstr "Виберіть домен"
+
+#: views/ask_domain.php:22 common/includes/domains.php:283
+#: common/assets/translations.php:387 common/assets/translations.php:388
+msgid "Register a new domain"
+msgstr "Зареєструйте новий домен"
+
+#: views/ask_domain.php:29 common/includes/domains.php:371
+#: common/assets/translations.php:209 common/assets/translations.php:210
+msgid "I will use my existing domain and update my nameservers"
+msgstr "Я буду використовувати свій існуючий домен і оновити свої сервери імен"
+
+#: views/ask_domain.php:38 common/assets/translations.php:187
+msgid "Find your new domain name"
+msgstr "Знайдіть своє нове доменне ім'я"
+
+#: views/ask_domain.php:40 common/includes/domains.php:314
+#: common/assets/translations.php:79 common/assets/translations.php:80
+msgid "Check"
+msgstr "Перевірте"
+
+#: views/ask_domain.php:44 common/includes/domains.php:270
+#: common/includes/domains.php:393 common/assets/translations.php:500
+msgid "Use"
+msgstr "Використано"
+
+#: views/mass_pay.php:43 views/my_invoices.php:48
+#: common/assets/translations.php:229
+msgid "Invoices Due"
+msgstr "Рахунки до сплати"
+
+#: views/mass_pay.php:51 views/my_invoices.php:57
+#, php-format
+msgid "You have %1$s invoice(s) currently unpaid with a total balance of %2$s"
+msgstr ""
+"У вас є% 1 $ s рахунки-фактури, які наразі несплачені загальним балансом% 2 "
+"$ s"
+
+#: views/mass_pay.php:57 views/my_invoices.php:72
+#: common/assets/translations.php:345
+msgid "Pay All"
+msgstr "Сплатити всі"
+
+#: views/mass_pay.php:106 views/updowngrade_final.php:142
+#: views/updowngrade_final.php:225 common/assets/translations.php:136
+#: common/assets/translations.php:137
+msgid "Description"
+msgstr "опис"
+
+#: views/mass_pay.php:107 common/assets/translations.php:47
+msgid "Amount"
+msgstr "сума"
+
+#: views/mass_pay.php:126 views/my_invoices.php:128
+#: common/assets/translations.php:227
+msgid "Invoice #"
+msgstr "Рахунок-фактура #"
+
+#: views/mass_pay.php:169 common/assets/translations.php:443
+msgid "Sub Total:"
+msgstr "Проміжний підсумок:"
+
+#: views/mass_pay.php:172 common/assets/translations.php:336
+msgid "Partial Payments:"
+msgstr "Часткові платежі:"
+
+#: views/mass_pay.php:180 common/assets/translations.php:364
+msgid "Proceed Mass Payment"
+msgstr "Продовжити масовий платіж"
+
+#: views/contacts.php:846 common/assets/translations.php:84
+#: common/assets/translations.php:777
+msgid "Choose Contact"
+msgstr "Оберіть контакт"
+
+#: views/contacts.php:848 common/assets/translations.php:25
+#: common/assets/translations.php:778
+msgid "Add New Contact"
+msgstr "Додати новий контакт"
+
+#: views/contacts.php:876 views/contacts.php:1164
+#: common/includes/client.php:532 common/includes/client.php:533
+#: common/includes/client.php:728 common/includes/client.php:729
+#: common/assets/translations.php:189 common/assets/translations.php:779
+#: common/shortcodes/order_process/04_checkout.php:53
+msgid "First Name"
+msgstr "Ім'я"
+
+#: views/contacts.php:882 views/contacts.php:1170
+#: common/includes/client.php:542 common/includes/client.php:543
+#: common/includes/client.php:738 common/includes/client.php:739
+#: common/assets/translations.php:236 common/assets/translations.php:780
+#: common/shortcodes/order_process/04_checkout.php:64
+msgid "Last Name"
+msgstr "Прізвище"
+
+#: views/contacts.php:887 views/contacts.php:1175
+#: common/includes/client.php:576 common/includes/client.php:577
+#: common/includes/client.php:773 common/includes/client.php:774
+#: common/assets/translations.php:95 common/assets/translations.php:781
+#: common/shortcodes/order_process/04_checkout.php:88
+msgid "Company Name"
+msgstr "Назва компанії"
+
+#: views/contacts.php:892 views/contacts.php:1180 views/open_ticket2.php:42
+#: views/viewticket.php:66 views/contact.php:86 views/password_reset.php:56
+#: views/login.php:34 common/includes/client.php:552
+#: common/includes/client.php:553 common/includes/client.php:748
+#: common/includes/client.php:749 common/assets/translations.php:167
+#: common/assets/translations.php:782
+#: common/shortcodes/order_process/04_checkout.php:71
+#: common/shortcodes/order_process/04_checkout.php:990
+msgid "Email Address"
+msgstr "Email-адреса"
+
+#: views/contacts.php:897 views/contacts.php:1185
+#: common/includes/client.php:562 common/includes/client.php:563
+#: common/includes/client.php:758 common/includes/client.php:759
+#: common/assets/translations.php:352 common/assets/translations.php:783
+#: common/shortcodes/order_process/04_checkout.php:78
+msgid "Phone Number"
+msgstr "Номер телефону"
+
+#: views/contacts.php:902 views/contacts.php:1190
+#: common/assets/translations.php:784
+msgid "Address 1"
+msgstr "адреса 1"
+
+#: views/contacts.php:907 views/contacts.php:1195 views/domaindetail.php:544
+#: common/assets/translations.php:34 common/assets/translations.php:785
+msgid "Address 2"
+msgstr "Адреса (другий рядок)"
+
+#: views/contacts.php:912 views/contacts.php:1200
+#: common/includes/client.php:634 common/includes/client.php:635
+#: common/includes/client.php:833 common/includes/client.php:834
+#: common/assets/translations.php:88 common/assets/translations.php:786
+#: common/shortcodes/order_process/04_checkout.php:128
+msgid "City"
+msgstr "Місто"
+
+#: views/contacts.php:917 views/contacts.php:1205
+#: common/includes/client.php:619 common/includes/client.php:620
+#: common/includes/client.php:623 common/includes/client.php:817
+#: common/includes/client.php:818 common/includes/client.php:821
+#: common/assets/translations.php:440 common/assets/translations.php:787
+msgid "State/Region"
+msgstr "Регіон/область"
+
+#: views/contacts.php:925 views/contacts.php:1213
+#: common/includes/client.php:644 common/includes/client.php:645
+#: common/includes/client.php:844 common/includes/client.php:845
+#: common/assets/translations.php:561 common/assets/translations.php:788
+msgid "Zip Code"
+msgstr "Поштовий індекс"
+
+#: views/contacts.php:930 views/contacts.php:1218
+#: common/includes/client.php:605 common/includes/client.php:803
+#: common/assets/translations.php:119 common/assets/translations.php:789
+#: common/shortcodes/order_process/04_checkout.php:112
+msgid "Country"
+msgstr "Країна"
+
+#: views/contacts.php:948 views/contacts.php:1232
+#: common/assets/translations.php:790
+msgid "Tick to configure as a sub-account with client area access"
+msgstr ""
+"Відзначте, щоб налаштувати як субрахунка з доступом клієнтської області"
+
+#: views/contacts.php:954 common/assets/translations.php:791
+msgid "Sub-Account Permissions"
+msgstr "Права доступу субрахунок"
+
+#: views/contacts.php:962 views/contacts.php:1242
+#: common/assets/translations.php:792
+msgid "Modify Master Account Profile"
+msgstr "Змінити Master Account Профіль"
+
+#: views/contacts.php:970 views/contacts.php:1246
+#: common/assets/translations.php:793
+msgid "View & Manage Contacts"
+msgstr "Перегляд і управління Контакти"
+
+#: views/contacts.php:978 views/contacts.php:1250
+#: common/assets/translations.php:794
+msgid "View Products & Services"
+msgstr "Всі товари і послуги"
+
+#: views/contacts.php:986 common/assets/translations.php:795
+msgid "View & Modify Product Passwords"
+msgstr "Перегляд і зміна паролі продукту"
+
+#: views/contacts.php:994 views/contacts.php:1258
+#: common/assets/translations.php:796
+msgid "Perform Single Sign-On"
+msgstr "Виконайте Single Sign-On"
+
+#: views/contacts.php:1002 views/contacts.php:1262
+#: common/assets/translations.php:797
+msgid "View Domains"
+msgstr "переглянути домени"
+
+#: views/contacts.php:1010 views/contacts.php:1266
+#: common/assets/translations.php:798
+msgid "Manage Domain Settings"
+msgstr "Управління настройками домену"
+
+#: views/contacts.php:1018 views/contacts.php:1270
+#: common/assets/translations.php:799
+msgid "View & Pay Invoices"
+msgstr "Перегляд і оплачувати рахунки"
+
+#: views/contacts.php:1026 views/contacts.php:1274
+#: common/assets/translations.php:800
+msgid "View & Accept Quotes"
+msgstr "Перегляд і Accept цитати"
+
+#: views/contacts.php:1034 views/contacts.php:1278
+#: common/assets/translations.php:801
+msgid "View & Open Support Tickets"
+msgstr "Перегляд і Open Квитки Підтримка"
+
+#: views/contacts.php:1042 views/contacts.php:1282
+#: common/assets/translations.php:802
+msgid "View & Manage Affiliate Account"
+msgstr "Перегляд і управління партнерського рахунку"
+
+#: views/contacts.php:1050 views/contacts.php:1286
+#: common/assets/translations.php:803
+msgid "View Emails"
+msgstr "Перегляд повідомлень електронної пошти"
+
+#: views/contacts.php:1058 views/contacts.php:1290
+#: common/assets/translations.php:804
+msgid "Place New Orders/Upgrades/Cancellations"
+msgstr "Розміщувати нові замовлення / Оновлення / Скасування"
+
+#: views/contacts.php:1064 views/contacts.php:1296
+#: common/includes/client.php:673 common/includes/client.php:674
+#: common/assets/translations.php:341 common/assets/translations.php:342
+#: common/assets/translations.php:343 common/assets/translations.php:805
+#: common/shortcodes/order_process/04_checkout.php:996
+msgid "Password"
+msgstr "Пароль"
+
+#: views/contacts.php:1079 views/contacts.php:1311 views/change_password.php:49
+#: views/password_reset_final.php:48 common/assets/translations.php:475
+#: common/assets/translations.php:806
+msgid "Tips for a good password"
+msgstr "Поради щодо правильного пароля"
+
+#: views/contacts.php:1079 views/contacts.php:1312
+#: common/assets/translations.php:807
+msgid "Use both upper and lowercase characters"
+msgstr ""
+"Використовуйте як верхні і малі символи включають принаймні один символ (# "
+"$% & і т.д ...!); Не використовуйте слова зі словника"
+
+#: views/contacts.php:1079 common/assets/translations.php:808
+msgid "Include at least one symbol (# $ ! % & etc...)"
+msgstr "Увімкніть принаймні один символ (# $!% & І т.д ...)"
+
+#: views/contacts.php:1079 views/contacts.php:1314
+#: common/assets/translations.php:809
+msgid "Don't use dictionary words"
+msgstr "Не використовуйте слова зі словника"
+
+#: views/contacts.php:1085 views/contacts.php:1320
+#: common/includes/client.php:690 common/includes/client.php:691
+#: common/assets/translations.php:107 common/assets/translations.php:108
+#: common/assets/translations.php:810 common/assets/translations.php:824
+msgid "Confirm Password"
+msgstr "Підтвердіть пароль"
+
+#: views/contacts.php:1096 views/contacts.php:1331
+#: common/assets/translations.php:811
+msgid "Email Preferences"
+msgstr "Налаштування електронної пошти"
+
+#: views/contacts.php:1105 views/contacts.php:1335
+#: common/assets/translations.php:812
+msgid "General Emails - General Announcements & Password Reminders"
+msgstr ""
+"Загальні повідомлення електронної пошти - Загальні Оголошення та нагадування "
+"пароля"
+
+#: views/contacts.php:1114 views/contacts.php:1339
+#: common/assets/translations.php:813
+msgid "Product Emails - Order Details, Welcome Emails, etc..."
+msgstr ""
+"Листи продукту - Інформація для замовлення, Ласкаво просимо повідомлення "
+"електронної пошти, і т.д. ..."
+
+#: views/contacts.php:1123 views/contacts.php:1343
+#: common/assets/translations.php:814
+msgid "Domain Emails - Renewal Notices, Registration Confirmations, etc..."
+msgstr ""
+"Електронні листи домен - повідомлення про відновлення, реєстрація "
+"Підтвердження, і т.д ..."
+
+#: views/contacts.php:1132 views/contacts.php:1347
+#: common/assets/translations.php:815
+msgid "Invoice Emails - Invoices & Billing Reminders"
+msgstr "Рахунок-фактура - Листи рахунків-фактури і платіжне Нагадування"
+
+#: views/contacts.php:1141 views/contacts.php:1351
+#: common/assets/translations.php:816
+msgid "Support Emails - Allow this user to open tickets in your account"
+msgstr ""
+"Підтримка повідомлень електронної пошти - Дозволити користувачеві відкривати "
+"квитки в ваш обліковий запис"
+
+#: views/contacts.php:1150 common/assets/translations.php:819
+msgid "Delete Contact"
+msgstr "видалити контакт"
+
+#: views/contacts.php:1228 common/assets/translations.php:820
+msgid "Activate Sub-Account"
+msgstr "активувати Субрахунок"
+
+#: views/contacts.php:1238 common/assets/translations.php:821
+msgid "Sub-Account Permission"
+msgstr "Права доступу субрахунок"
+
+#: views/contacts.php:1254 common/assets/translations.php:822
+msgid "View Modify Product Passwords"
+msgstr "Переглянути зміни паролів продуктів"
+
+#: views/contacts.php:1313 common/assets/translations.php:823
+msgid "Include at least one symbol (# $ ! % &; etc...)"
+msgstr "Увімкніть принаймні один символ (# $% & !; І т.д ...)"
+
+#: views/open_ticket2.php:36 views/viewticket.php:60 views/contact.php:80
+#: common/assets/translations.php:274
+msgid "Name"
+msgstr "Ім’я"
+
+#: views/open_ticket2.php:67 common/assets/translations.php:397
+msgid "Related Service"
+msgstr "Відповідна служба"
+
+#: views/open_ticket2.php:84 common/assets/translations.php:308
+msgid "None"
+msgstr "ні"
+
+#: views/open_ticket2.php:98 views/contact.php:115
+#: common/assets/translations.php:205
+msgid "High"
+msgstr "висока"
+
+#: views/open_ticket2.php:99 views/contact.php:116
+#: common/assets/translations.php:256
+msgid "Medium"
+msgstr "середа"
+
+#: views/open_ticket2.php:100 views/contact.php:117
+#: common/assets/translations.php:249
+msgid "Low"
+msgstr "низький"
+
+#: views/open_ticket2.php:107 views/viewticket.php:72 views/contact.php:125
+#: common/assets/translations.php:261
+msgid "Message"
+msgstr "Повідомлення"
+
+#: views/open_ticket2.php:113 views/viewticket.php:80
+#: common/assets/translations.php:445
+msgid "Submit"
+msgstr "уявити"
+
+#: views/submitticket.php:29 common/assets/translations.php:214
+msgid ""
+"If you can't find a solution to your problems in our knowledgebase, you can "
+"submit a ticket by selecting the appropriate department below."
+msgstr ""
+"Якщо Ви не змогли знайти відповідь в нашій базі знань, Ви можете створити "
+"квиток, обравши відповідний відділ."
+
+#: views/submitticket.php:39
+#, php-format
+msgid "Ticket Related to %1$s"
+msgstr "Квиток, пов'язаний із% 1 $ s"
+
+#: views/order_new_service.php:38 common/assets/translations.php:296
+#: common/assets/translations.php:297 common/shortcodes/list_products.php:14
+msgid "No Groups/Products Found"
+msgstr "Немає Групи / Продукти не знайдені"
+
+#: views/order_new_service.php:170 views/addons.php:124
+#: views/domain_renewals.php:135 common/assets/translations.php:321
+#: common/shortcodes/list_products.php:96
+msgid "Order Now"
+msgstr "Замовити зараз"
+
+#: views/email_history.php:50 common/assets/translations.php:129
+msgid "Date Sent"
+msgstr "Дата відправлення"
+
+#: views/email_history.php:51 common/assets/translations.php:260
+msgid "Message Subject"
+msgstr "Тема повідомлення"
+
+#: views/email_history.php:82 common/assets/translations.php:512
+msgid "View Message"
+msgstr "Перегляд повідомлення"
+
+#: views/dashboard.php:63 common/assets/translations.php:557
+msgid "Your info"
+msgstr "Ваша інформація"
+
+#: views/dashboard.php:84 common/assets/translations.php:494
+msgid "Update"
+msgstr "Оновити"
+
+#: views/dashboard.php:89 common/assets/translations.php:428
+msgid "Shortcuts"
+msgstr "Ярлики"
+
+#: views/dashboard.php:95 views/productdetails.php:87
+#: common/assets/translations.php:320
+msgid "Order New Services"
+msgstr "Замовлення нових послуг"
+
+#: views/dashboard.php:138 library/shortcodes/wcap_whmcs_nav_menu.php:31
+#: common/assets/translations.php:246
+msgid "Logout"
+msgstr "Вихід"
+
+#: views/dashboard.php:150 common/assets/translations.php:529
+msgid "Welcome Back"
+msgstr "Ласкаво просимо,"
+
+#: views/dashboard.php:163 common/assets/translations.php:420
+msgid "Services"
+msgstr "Послуги"
+
+#: views/dashboard.php:175 common/assets/translations.php:159
+msgid "Domains"
+msgstr "Домени"
+
+#: views/dashboard.php:187 common/assets/translations.php:474
+msgid "Tickets"
+msgstr "Тікети"
+
+#: views/dashboard.php:212 common/assets/translations.php:551
+msgid "Your Active Products/Services"
+msgstr "Ваші активні продукти / послуги"
+
+#: views/dashboard.php:214 common/assets/translations.php:508
+msgid "View All"
+msgstr "дивитись все"
+
+#: views/dashboard.php:236 common/assets/translations.php:299
+msgid "No Products Found"
+msgstr "Нічого не знайдено"
+
+#: views/dashboard.php:247 common/assets/translations.php:380
+msgid "Recent Support Tickets"
+msgstr "Ваші останні тікети"
+
+#: views/dashboard.php:250 common/assets/translations.php:316
+msgid "Open New Ticket"
+msgstr "Відкрити новий тікет"
+
+#: views/dashboard.php:280 common/assets/translations.php:300
+msgid "No Ticket Found"
+msgstr "Тікет не знайдений"
+
+#: views/domaindetail.php:66 common/assets/translations.php:253
+msgid "Managing"
+msgstr "управління"
+
+#: views/domaindetail.php:86 common/assets/translations.php:469
+msgid ""
+"This domain is not currently active. Domains cannot be managed unless active."
+msgstr ""
+"Цей домен не в даний момент. Домени не можуть управлятися, якщо активна."
+
+#: views/domaindetail.php:107 common/assets/translations.php:144
+msgid "Domain Currently Unlocked!"
+msgstr "Домен розблоковано!"
+
+#: views/domaindetail.php:108 common/assets/translations.php:550
+msgid ""
+"You should enable the registrar lock unless you are transferring the domain."
+msgstr ""
+"Ви повинні включити блокування реєстратора, крім випадку, коли ви переносите "
+"домен."
+
+#: views/domaindetail.php:117 views/updowngrade_final.php:88
+#: views/updowngrade.php:73 views/domains.php:65 views/domain_renewals.php:56
+#: common/assets/translations.php:142 common/assets/translations.php:157
+msgid "Domain"
+msgstr "Домен"
+
+#: views/domaindetail.php:124 views/productdetails.php:306
+#: common/assets/translations.php:394
+msgid "Registration Date"
+msgstr "Дата реєстрації"
+
+#: views/domaindetail.php:148 views/productdetails.php:245
+#: common/assets/translations.php:190
+msgid "First Payment Amount"
+msgstr "Сума першого платежу"
+
+#: views/domaindetail.php:155 views/productdetails.php:257
+#: common/assets/translations.php:381
+msgid "Recurring Amount"
+msgstr "Сума поновлення"
+
+#: views/domaindetail.php:162 views/productdetails.php:281
+#: common/assets/translations.php:350
+msgid "Payment Method"
+msgstr "Спосіб оплати"
+
+#: views/domaindetail.php:181 common/assets/translations.php:174
+msgid ""
+"Enable auto renew to have us automatically send you a renewal invoice before "
+"your domain expires. "
+msgstr ""
+"Включення автоматичного продовження, щоб ми автоматично відправити вам кап "
+"рахунок до закінчення терміну дії домену."
+
+#: views/domaindetail.php:192 common/assets/translations.php:139
+msgid "Disable Auto Renew"
+msgstr "Відключити автоматичне продовження"
+
+#: views/domaindetail.php:193 views/domaindetail.php:325
+#: common/assets/translations.php:175
+msgid "Enabled"
+msgstr "Увімкнено"
+
+#: views/domaindetail.php:196 common/assets/translations.php:172
+msgid "Enable Auto Renew"
+msgstr "Увімкнути автоматичне продовження"
+
+#: views/domaindetail.php:197 views/domaindetail.php:314
+#: common/assets/translations.php:141
+msgid "Disabled"
+msgstr "Вимкнено"
+
+#: views/domaindetail.php:203 views/domains.php:122
+#: common/assets/translations.php:56
+msgid "Auto Renewal Status"
+msgstr "статус автоподовження"
+
+#: views/domaindetail.php:244 common/assets/translations.php:543
+msgid ""
+"You can change where your domain points to here. Please be aware changes can "
+"take up to 24 hours to propagate."
+msgstr ""
+"Ви можете змінити місце, куди вказує домен. Зверніть увагу, що зміни можуть "
+"зайняти до 24 годин (час поширення DNS)."
+
+#: views/domaindetail.php:256 common/includes/order_process.php:61
+#: common/includes/domains.php:16 common/assets/translations.php:275
+#: common/assets/translations.php:276
+msgid "Nameserver 1"
+msgstr "Name-сервер 1"
+
+#: views/domaindetail.php:260 common/includes/order_process.php:69
+#: common/includes/domains.php:26 common/assets/translations.php:277
+#: common/assets/translations.php:278
+msgid "Nameserver 2"
+msgstr "Name-сервер 2"
+
+#: views/domaindetail.php:264 common/includes/order_process.php:77
+#: common/includes/domains.php:36 common/assets/translations.php:279
+#: common/assets/translations.php:280
+msgid "Nameserver 3"
+msgstr "Name-сервер 3"
+
+#: views/domaindetail.php:268 common/includes/order_process.php:85
+#: common/includes/domains.php:46 common/assets/translations.php:281
+#: common/assets/translations.php:282
+msgid "Nameserver 4"
+msgstr "Name-сервер 4"
+
+#: views/domaindetail.php:272 common/includes/order_process.php:93
+#: common/includes/domains.php:56 common/assets/translations.php:283
+#: common/assets/translations.php:284
+msgid "Nameserver 5"
+msgstr "Name-сервер 5"
+
+#: views/domaindetail.php:276 common/assets/translations.php:75
+msgid "Change Nameservers"
+msgstr "Змінити name-сервери"
+
+#: views/domaindetail.php:294 common/assets/translations.php:241
+msgid ""
+"Lock your domain to prevent it from being transferred away without your "
+"authorization."
+msgstr "Заблокуйте ваш домен, щоб запобігти його перенесення без вашої згоди."
+
+#: views/domaindetail.php:317 common/assets/translations.php:173
+msgid "Enable Registrar Lock"
+msgstr "Активувати блокування реєстратора"
+
+#: views/domaindetail.php:328 common/assets/translations.php:140
+msgid "Disable Registrar Lock"
+msgstr "Відключити блокування реєстратора"
+
+#: views/domaindetail.php:335
+msgid "Registrar Lock Status:"
+msgstr "Реєстратор Блокування Статус:"
+
+#: views/domaindetail.php:371
+msgid "The following addons are available for your domain(s)..."
+msgstr "Наступні додатки доступні для вашого домену (ів) ..."
+
+#: views/domaindetail.php:386 views/domain_addons.php:36
+#: common/includes/order_process.php:367 common/assets/translations.php:211
+#: common/shortcodes/order_process/03_summary_generator.php:405
+#: common/shortcodes/order_process/03_summary_generator_backup.php:347
+#: common/shortcodes/order_process/03_summary_generator_backup.php:413
+msgid "ID Protection"
+msgstr "ID Protection"
+
+#: views/domaindetail.php:390 views/domain_addons.php:37
+msgid ""
+"Protect your personal information and reduce the amount of spam to your "
+"inbox by enabling ID Protection."
+msgstr ""
+"Захистіть свою особисту інформацію та зменшити кількість спаму в вашу "
+"поштову скриньку, дозволяючи ID Protection."
+
+#: views/domaindetail.php:394 views/domaindetail.php:421
+#: views/domaindetail.php:449
+msgid "Buy Now"
+msgstr "Купити зараз"
+
+#: views/domaindetail.php:413 views/domain_addons.php:48
+msgid "DNS Host Record Management"
+msgstr "Вузол управління записи DNS"
+
+#: views/domaindetail.php:417 views/domain_addons.php:49
+msgid ""
+"External DNS Hosting can help speed up your website and improve availability "
+"with increased redundancy."
+msgstr ""
+"Зовнішній DNS хостинг може допомогти прискорити ваш сайт і підвищити "
+"доступність з підвищеною надмірністю."
+
+#: views/domaindetail.php:441 views/domain_addons.php:42
+#: common/assets/translations.php:168
+#: common/shortcodes/order_process/03_summary_generator.php:397
+#: common/shortcodes/order_process/03_summary_generator_backup.php:335
+#: common/shortcodes/order_process/03_summary_generator_backup.php:401
+msgid "Email Forwarding"
+msgstr "Email Forwarding"
+
+#: views/domaindetail.php:445 views/domain_addons.php:43
+#: common/includes/order_process.php:336
+msgid ""
+"Get emails forwarded to alternate email addresses of your choice so that you "
+"can monitor all from a single account."
+msgstr ""
+"Отримуйте електронні повідомлення, що направляються альтернативні адреси "
+"електронної пошти вашого вибору, так що ви можете контролювати все з одного "
+"рахунку."
+
+#: views/domaindetail.php:466
+msgid ""
+"It is important to keep your domain WHOIS contact information up-to-date at "
+"all times to avoid losing control of your domain."
+msgstr ""
+"Важливо, щоб зберегти ваш домен WHOIS контактної інформації уточненого в "
+"будь-який час, щоб не втратити контроль над доменом."
+
+#: views/domaindetail.php:559
+msgid "Cancel Changes"
+msgstr "Скасувати зміни"
+
+#: views/domaindetail.php:566 common/assets/translations.php:146
+msgid "Domain EPP Code"
+msgstr "EPP-код"
+
+#: views/domaindetail.php:568
+msgid ""
+"The EPP Code is basically a password for a domain name. It is a security "
+"measure, ensuring that only the domain name owner can transfer a domain name."
+" You will need it if you are wanting to transfer the domain to another "
+"registrar."
+msgstr ""
+"EPP код в основному пароль для доменного імені. Це міра безпеки, гарантуючи, "
+"що тільки власник доменного імені може передати доменне ім'я. Ви будете мати "
+"потребу в цьому, якщо ви хочете опублікувати домен до іншого реєстратора."
+
+#: views/domaindetail.php:576
+msgid "The EPP Code for your domain is:"
+msgstr "EPP код для вашого домену:"
+
+#: views/request_cancel.php:34 common/assets/translations.php:20
+msgid "Account Cancellation Request"
+msgstr "Запит про скасування рахунку"
+
+#: views/request_cancel.php:53 common/assets/translations.php:64
+msgid "Briefly Describe your reason for Cancellation"
+msgstr "Коротко опишіть причину для анулювання"
+
+#: views/request_cancel.php:58 common/assets/translations.php:68
+msgid "Cancellation Type:"
+msgstr "Скасування Тип:"
+
+#: views/request_cancel.php:60 common/assets/translations.php:216
+msgid "Immediate"
+msgstr "негайний"
+
+#: views/request_cancel.php:61 common/assets/translations.php:176
+msgid "End of Billing Period"
+msgstr "Кінець розрахункового періоду"
+
+#: views/request_cancel.php:66 views/productdetails.php:106
+#: common/assets/translations.php:401
+msgid "Request Cancellation"
+msgstr "Скасувати послугу"
+
+#: views/request_cancel.php:75 common/assets/translations.php:457
+msgid ""
+"Thank You. Your cancellation request has been submitted. If you have done "
+"this in error, open a support ticket to notify us immediately or your "
+"account may be terminated."
+msgstr ""
+"Дякую. Ваш запит скасування був представлений. Якщо ви зробили це помилково, "
+"відкрийте квиток підтримки, щоб негайно повідомити нас або ваш обліковий "
+"запис може бути припинена."
+
+#: views/request_cancel.php:90 common/assets/translations.php:462
+msgid "The following errors occurred:"
+msgstr "Наступні помилки:"
+
+#: views/affiliates.php:124 common/assets/translations.php:39
+msgid "Affiliates"
+msgstr "партнери"
+
+#: views/404.php:4 common/assets/translations.php:331
+msgid "Page not found"
+msgstr "Сторінку не знайдено"
+
+#: views/404.php:7 common/assets/translations.php:115
+msgid "Contents are not found"
+msgstr "Зміст не знайдено"
+
+#: views/viewticket.php:41 common/assets/translations.php:513
+msgid "View Ticket"
+msgstr "Дивитись тікет"
+
+#: views/viewticket.php:49 common/assets/translations.php:26
+msgid "Add Reply"
+msgstr "Відповісти"
+
+#: views/my_invoices.php:129 common/assets/translations.php:228
+msgid "Invoice Date"
+msgstr "Дата виставляння рахунку"
+
+#: views/my_invoices.php:130 common/assets/translations.php:162
+msgid "Due Date"
+msgstr "Термін сплати"
+
+#: views/my_invoices.php:131 common/assets/translations.php:479
+msgid "Total"
+msgstr "Всього до оплати"
+
+#: views/updowngrade_final.php:74 views/updowngrade.php:59
+#: common/assets/translations.php:492
+msgid "Up/Downgrade"
+msgstr "Змінити тариф/пакет"
+
+#: views/updowngrade_final.php:99 views/updowngrade.php:84
+#: common/assets/translations.php:58
+msgid "Back to Service Details"
+msgstr "Назад до продукту"
+
+#: views/updowngrade_final.php:112 views/updowngrade.php:97
+#: views/productdetails.php:99 common/assets/translations.php:496
+msgid "Upgrade/Downgrade Options"
+msgstr "Оновлення / Опції DownGrade"
+
+#: views/updowngrade_final.php:114 views/updowngrade.php:99
+#: views/productdetails.php:92 views/productdetails.php:223
+#: views/productdetails.php:227 common/assets/translations.php:498
+msgid "Upgrade/Downgrade"
+msgstr "Змінити послугу"
+
+#: views/updowngrade_final.php:127 views/updowngrade.php:136
+#: views/updowngrade.php:295 common/assets/translations.php:123
+msgid "Current Configuration"
+msgstr "Поточна конфігурація"
+
+#: views/updowngrade_final.php:145 views/updowngrade_final.php:228
+#: common/assets/translations.php:360
+msgid "Price"
+msgstr "ціна"
+
+#: views/updowngrade_final.php:166 views/updowngrade_final.php:245
+#: common/assets/translations.php:447 common/assets/translations.php:448
+#: common/shortcodes/order_process/03_summary_generator.php:505
+#: common/shortcodes/order_process/03_summary_generator_backup.php:533
+msgid "Subtotal"
+msgstr "підрівень"
+
+#: views/updowngrade_final.php:176 views/updowngrade_final.php:255
+#: common/assets/translations.php:477 common/assets/translations.php:478
+#: common/shortcodes/order_process/02_product_sidebar.php:240
+#: common/shortcodes/order_process/03_summary_generator.php:595
+#: common/shortcodes/order_process/03_summary_generator_backup.php:613
+msgid "Total Due Today"
+msgstr "Разом В даний час"
+
+#: views/updowngrade_final.php:201 views/updowngrade.php:412
+#: common/assets/translations.php:90
+msgid "Click to Continue >>"
+msgstr "Натисніть, щоб продовжити >>"
+
+#: views/contact.php:62 common/assets/translations.php:113
+msgid "Contact Us"
+msgstr "Зв'яжіться з нами"
+
+#: views/contact.php:132 common/assets/translations.php:417
+msgid "Send Message"
+msgstr "Відправити повідомлення"
+
+#: views/knowledgebase.php:22 views/kb_articles.php:22
+#: common/assets/translations.php:233
+msgid "Knowledgebase"
+msgstr "База знань"
+
+#: views/create_client_account.php:796
+#: library/shortcodes/wcap_whmcs_nav_menu.php:43
+#: common/assets/translations.php:389
+msgid "Register"
+msgstr "Зареєструватись"
+
+#: views/password_reset.php:24 views/password_reset_update.php:17
+#: views/password_reset_final.php:17 common/assets/translations.php:247
+msgid "Lost Password Reset"
+msgstr "Загублений пароль скидання"
+
+#: views/password_reset.php:40 views/password_reset_update.php:25
+#: common/assets/translations.php:507
+msgid "Validation Email Sent"
+msgstr "Перевірка електронної пошти надіслано"
+
+#: views/password_reset.php:43 views/password_reset_update.php:28
+#: common/assets/translations.php:463
+msgid ""
+"The password reset process has now been started. Please check your email for "
+"instructions on what to do next."
+msgstr ""
+"Процес скидання пароля зараз розпочато. Будь ласка, перевірте свою "
+"електронну пошту, щоб отримати інструкції щодо того, що робити далі."
+
+#: views/password_reset.php:51 common/assets/translations.php:194
+msgid ""
+"Forgotten your password? Enter your email address below to begin the reset "
+"process."
+msgstr ""
+"Забули пароль? Введіть адресу електронної пошти нижче, щоб почати процес "
+"скидання."
+
+#: views/updowngrade.php:113 common/assets/translations.php:545
+msgid ""
+"You cannot currently upgrade or downgrade this product because an invoice "
+"has already been generated for the next renewal."
+msgstr ""
+"Ви не можете в даний момент оновити або знизити цей продукт, тому що рахунок-"
+"фактура вже була створена для наступного оновлення."
+
+#: views/updowngrade.php:117 views/updowngrade.php:253
+#: common/assets/translations.php:476
+msgid ""
+"To proceed, please first pay the outstanding invoice and then you will be "
+"able to upgrade or downgrade immediately following that and be charged the "
+"difference or credited as appropriate."
+msgstr ""
+"Щоб продовжити, будь ласка, спочатку оплатити видатний рахунок і тоді ви "
+"будете мати можливість оновити або знизити відразу ж після цього і бути "
+"утримана різниця або кредитується в залежності від обставин."
+
+#: views/updowngrade.php:123 common/assets/translations.php:562
+msgid "back"
+msgstr "назад"
+
+#: views/updowngrade.php:132 common/assets/translations.php:87
+msgid ""
+"Choose the package you want to upgrade/downgrade your current package to "
+"from the options below."
+msgstr ""
+"Оберіть пакет, на який Ви хочете перевести Ваш обліковий запис, з "
+"налаштування нижче."
+
+#: views/updowngrade.php:146 views/updowngrade.php:299
+#: common/assets/translations.php:288
+msgid "New Configuration"
+msgstr "Нова конфігурація"
+
+#: views/updowngrade.php:208 views/addons.php:119
+#: common/includes/products.php:151 common/includes/order_process.php:420
+#: common/includes/order_process.php:442 common/includes/order_process.php:466
+#: common/includes/order_process.php:491 common/includes/order_process.php:557
+#: common/assets/translations.php:424
+#: common/shortcodes/order_process/02_product_sidebar.php:79
+#: common/shortcodes/order_process/02_product_sidebar.php:98
+#: common/shortcodes/order_process/02_product_sidebar.php:116
+#: common/shortcodes/order_process/02_product_sidebar.php:136
+#: common/shortcodes/order_process/03_summary_generator.php:236
+#: common/shortcodes/order_process/03_summary_generator.php:292
+#: common/shortcodes/order_process/03_summary_generator.php:354
+#: common/shortcodes/order_process/03_summary_generator_backup.php:196
+#: common/shortcodes/order_process/03_summary_generator_backup.php:459
+#: common/shortcodes/order_process/02_product.php:98
+msgid "Setup Fee"
+msgstr "Вартість встановлення"
+
+#: views/updowngrade.php:217 common/assets/translations.php:85
+msgid "Choose Product"
+msgstr "Виберіть продукт"
+
+#: views/updowngrade.php:240 common/assets/translations.php:305
+msgid "No upgrade options available for this product."
+msgstr "Немає варіантів модернізації доступні для цього продукту."
+
+#: views/updowngrade.php:242 common/assets/translations.php:497
+msgid "Upgrade/Downgrade the configurable options on this product."
+msgstr "Оновлення / Знизити настроюються параметри на цей продукт."
+
+#: views/updowngrade.php:251 common/assets/translations.php:546
+msgid ""
+"You cannot currently upgrade or downgrade this product because an upgrade or "
+"downgrade is already in progress."
+msgstr ""
+"Ви не можете в даний момент оновити або знизити цей продукт, так як "
+"оновлення або зниження вже йде."
+
+#: views/updowngrade.php:255 common/assets/translations.php:213
+msgid ""
+"If you believe you are receiving this message in error, please submit a "
+"trouble ticket."
+msgstr ""
+"Якщо ви вважаєте, що отримали це повідомлення помилково, будь ласка, "
+"надішліть квиток несправності."
+
+#: views/updowngrade.php:291 common/assets/translations.php:319
+msgid "Option Name"
+msgstr "ім'я параметра"
+
+#: views/updowngrade.php:357 common/assets/translations.php:295
+msgid "No Change"
+msgstr "Без змін"
+
+#: views/credit_card.php:24 common/assets/translations.php:122
+msgid "Credit Card Details"
+msgstr "Дані кредитної картки"
+
+#: views/credit_card.php:104 common/assets/translations.php:177
+msgid "Enter New Card Information Below"
+msgstr "Enter New Card Інформація Нижче"
+
+#: views/addons.php:69 common/assets/translations.php:365
+msgid "Product Addons"
+msgstr "Addons продукту"
+
+#: views/addons.php:76 common/assets/translations.php:294
+msgid "No Addons Available for your Products & Services"
+msgstr "Немає Addons Доступного для продуктів і послуг"
+
+#: views/addons.php:105 common/assets/translations.php:413
+msgid "Select Service"
+msgstr "Виберіть Сервіс"
+
+#: views/change_password.php:39 common/assets/translations.php:180
+msgid "Existing Password"
+msgstr "існуючий пароль"
+
+#: views/change_password.php:44 views/password_reset_final.php:42
+#: common/assets/translations.php:289
+msgid "New Password"
+msgstr "Новий пароль"
+
+#: views/change_password.php:51 views/password_reset_final.php:50
+msgid ""
+"Use both upper and lowercase characters Include at least one symbol (# $ ! % "
+"& etc...) Don't use dictionary words"
+msgstr ""
+"Використовуйте символи як верхнього, так і нижнього регістрів. Включіть "
+"щонайменше один символ (# $!% & ...). Не використовуйте словарні слова"
+
+#: views/change_password.php:55 common/assets/translations.php:106
+msgid "Confirm New Password"
+msgstr "Підтвердити новий пароль"
+
+#: views/productdetails.php:22 common/assets/translations.php:304
+msgid "No service found"
+msgstr "No service found"
+
+#: views/productdetails.php:65 common/assets/translations.php:218
+msgid "Information"
+msgstr "Інформація"
+
+#: views/productdetails.php:83 common/assets/translations.php:269
+msgid "My Services"
+msgstr "Продукти/послуги"
+
+#: views/productdetails.php:125 common/assets/translations.php:468
+msgid "There is an outstanding cancellation request for this product/service"
+msgstr "Існує видає запит скасування для даного продукту / послуги"
+
+#: views/productdetails.php:132 common/assets/translations.php:470
+msgid "This hosting package is currently Pending."
+msgstr "Цей хостинг пакет в даний час на розгляді."
+
+#: views/productdetails.php:133 common/assets/translations.php:544
+msgid "You cannot begin using this hosting account until it is activated."
+msgstr ""
+"Ви не можете почати використовувати цей обліковий запис хостингу, поки він "
+"не буде активований."
+
+#: views/productdetails.php:142 common/assets/translations.php:330
+msgid "Package/Domain"
+msgstr "Пакет / Домен"
+
+#: views/productdetails.php:164 common/assets/translations.php:515
+msgid "Visit Website"
+msgstr "Перейти на сайт"
+
+#: views/productdetails.php:167 common/assets/translations.php:527
+msgid "WHOIS Info"
+msgstr "WHOIS інформація"
+
+#: views/productdetails.php:178 common/assets/translations.php:32
+msgid "Addons & Extras"
+msgstr "Додатки та додаткові матеріали"
+
+#: views/productdetails.php:213 common/assets/translations.php:376
+msgid "Purchase & Activate"
+msgstr "Купівля і Activate"
+
+#: views/productdetails.php:237 common/assets/translations.php:63
+msgid "Billing Overview"
+msgstr "Огляд розрахунків"
+
+#: views/productdetails.php:269 common/assets/translations.php:61
+msgid "Billing Cycle"
+msgstr "Цифровий платіж"
+
+#: views/productdetails.php:295 common/assets/translations.php:293
+msgid "Next due date"
+msgstr "Наступна дата"
+
+#: views/productdetails.php:327 common/assets/translations.php:98
+#: common/assets/translations.php:99
+#: common/shortcodes/order_process/02_product.php:127
+msgid "Configurable Options"
+msgstr "Опції, які налаштовуються"
+
+#: views/productdetails.php:356 common/assets/translations.php:30
+msgid "Additional Information"
+msgstr "Додаткова необхідна інформація"
+
+#: views/productdetails.php:369
+msgid "(no value)"
+msgstr "(пусто)"
+
+#: views/kb_articles.php:33 common/assets/translations.php:52
+msgid "Articles"
+msgstr "Статті"
+
+#: views/transfer.php:13 common/assets/translations.php:481
+msgid "Transfer Domain"
+msgstr "Перенести домен"
+
+#: views/transfer.php:35 common/assets/translations.php:429
+msgid "Single Domain Transfer"
+msgstr "Single Transfer Domain"
+
+#: views/transfer.php:54 common/assets/translations.php:460
+msgid "The domain you entered is not valid"
+msgstr "Домен, який ви ввели не дійсні"
+
+#: views/transfer.php:55 common/assets/translations.php:547
+msgid "You cannot transfer a domain that isn't registered"
+msgstr "Ви не можете передати домен, який не зареєстрований"
+
+#: views/transfer.php:60 common/assets/translations.php:110
+msgid "Congratulations, this domain is available!"
+msgstr "Вітаємо, цей домен доступний!"
+
+#: views/transfer.php:64 common/includes/ajax.php:106
+#: common/includes/ajax.php:141 common/includes/order_process.php:117
+#: common/includes/order_process.php:315 common/includes/order_process.php:348
+#: common/includes/order_process.php:382 common/includes/order_process.php:563
+#: common/assets/translations.php:27 common/assets/translations.php:28
+msgid "Add to Cart"
+msgstr "Додати в кошик"
+
+#: views/transfer.php:78 common/assets/translations.php:179
+msgid "Excludes certain TLDs and recently renewed domains"
+msgstr "Виключає певні домени верхнього рівня і недавно оновлені домени"
+
+#: views/domains.php:59 common/assets/translations.php:265
+msgid "My Domains"
+msgstr "Мої Домени"
+
+#: views/domains.php:66 common/assets/translations.php:383
+msgid "Reg Date"
+msgstr "Дата реєстрації"
+
+#: views/domains.php:67 common/assets/translations.php:292
+msgid "Next Due"
+msgstr "Наступний платіж"
+
+#: views/domains.php:110 common/assets/translations.php:251
+msgid "Manage Nameservers"
+msgstr "управління NameServers"
+
+#: views/domains.php:116 common/assets/translations.php:165
+msgid "Edit Contact Information"
+msgstr "Редагувати Контактна інформація"
+
+#: views/logged_out.php:22 common/assets/translations.php:244
+msgid "Logged Out"
+msgstr "вийшов з"
+
+#: views/logged_out.php:31 common/assets/translations.php:549
+msgid "You have been successfully logged out."
+msgstr "Ви успішно вийшли з системи."
+
+#: views/logged_out.php:38 common/assets/translations.php:89
+msgid "Click here to continue"
+msgstr "Натисніть тут, щоб продовжити"
+
+#: views/domain_addons.php:83
+msgid "Domain:"
+msgstr "домен:"
+
+#: views/domain_addons.php:98
+msgid "Buy Now for"
+msgstr "Купити зараз за"
+
+#: views/my_quotes.php:85 common/assets/translations.php:378
+msgid "Quote"
+msgstr "Пропозиція/оцінка"
+
+#: views/my_quotes.php:87 common/assets/translations.php:128
+msgid "Date Created"
+msgstr "Дата створення"
+
+#: views/my_quotes.php:88 common/assets/translations.php:503
+msgid "Valid Until"
+msgstr "Дійсно до"
+
+#: views/my_quotes.php:89 common/assets/translations.php:437
+msgid "Stage"
+msgstr "Етап/Стадія"
+
+#: views/my_quotes.php:127 common/assets/translations.php:160
+msgid "Download"
+msgstr "Завантажити"
+
+#: views/domain_renewals.php:40 common/assets/translations.php:158
+msgid "Domains Renew"
+msgstr "Домени Renew"
+
+#: views/domain_renewals.php:64 common/assets/translations.php:131
+msgid "Days till expiry"
+msgstr "Термін до закінчення терміну дії"
+
+#: views/domain_renewals.php:68 common/assets/translations.php:21
+msgid "Action"
+msgstr "дію"
+
+#: views/domain_renewals.php:122 common/assets/translations.php:538
+msgid "Year/s"
+msgstr "Рік / s"
+
+#: views/viewinvoice.php:30 common/assets/translations.php:322
+msgid "Order Received.."
+msgstr "Замовлення отримано.."
+
+#: views/viewinvoice.php:38
+msgid "Click Pay Invoice to proceed with payment or return to dashboard. "
+msgstr ""
+"Натисніть Pay накладної перейти з оплатою або повернутися до приладової "
+"панелі."
+
+#: views/viewinvoice.php:44 common/assets/translations.php:346
+#: common/assets/translations.php:347
+msgid "Pay Invoice"
+msgstr "Сплатити рахунок-фактура"
+
+#: views/viewinvoice.php:47 common/includes/ajax.php:536
+#: common/includes/ajax.php:541 common/assets/translations.php:126
+#: common/assets/translations.php:127
+msgid "Dashboard"
+msgstr "Панель приладів"
+
+#: views/download_files.php:33 common/assets/translations.php:186
+msgid "Files"
+msgstr "Файли"
+
+#: views/download_files.php:54 common/assets/translations.php:489
+msgid "Type"
+msgstr "Тип"
+
+#: views/login.php:39 common/assets/translations.php:344
+msgid "Password:"
+msgstr "Пароль:"
+
+#: views/login.php:48 common/assets/translations.php:402
+msgid "Reset Password"
+msgstr "Скинути пароль"
+
+#: views/password_reset_final.php:22 common/assets/translations.php:338
+msgid "Password Reset Successful"
+msgstr "Скидання пароля Успішна"
+
+#: views/password_reset_final.php:24 common/assets/translations.php:560
+msgid "Your password has now been reset. Continue to the client area"
+msgstr "Ваш пароль буде скинутий. Продовжуйте в клієнтської області"
+
+#: views/password_reset_final.php:32 common/assets/translations.php:356
+msgid "Please enter your desired new password below."
+msgstr "Введіть бажаний новий пароль нижче."
+
+#: views/password_reset_final.php:44 common/assets/translations.php:340
+msgid "Password required at least 8 characters"
+msgstr "Пароль потрібно не менше 8 символів"
+
+#: views/password_reset_final.php:53 common/assets/translations.php:290
+msgid "New password Again"
+msgstr "Будь ласка, введіть новий пароль."
+
+#: views/password_reset_final.php:55 common/assets/translations.php:339
+msgid "Password must match with password 1"
+msgstr "Пароль повинен відповідати паролю 1"
+
+#: views/password_reset_final.php:63 common/assets/translations.php:225
+msgid "Invalid reset link or reset link expired"
+msgstr "Термін дії недійсної посилання для скидання або скидання закінчився"
+
+#: library/shortcodes/whmcs_client_area.php:7
+#: common/assets/translations.php:202
+msgid "Guidelines"
+msgstr "Посібник"
+
+#: library/shortcodes/wcap_whmcs_nav_menu.php:7
+#: common/assets/translations.php:607 common/assets/translations.php:752
+msgctxt "menu"
+msgid "Hello"
+msgstr "Здрастуйте"
+
+#: library/shortcodes/wcap_whmcs_nav_menu.php:11
+#: common/assets/translations.php:164
+msgid "Edit Account Details"
+msgstr "Змінити дані облікового запису"
+
+#: library/shortcodes/wcap_whmcs_nav_menu.php:37
+msgid "Account"
+msgstr "рахунки"
+
+#: library/shortcodes/wcap_whmcs_nav_menu.php:46
+#: common/assets/translations.php:193
+msgid "Forgot Password?"
+msgstr "Забули пароль?"
+
+#. done
+#: admin/pages/sync.php:154 common/assets/translations.php:700
+msgctxt "admin"
+msgid ""
+"NOTE: By default WHMCS requires address fields for user creation, while "
+"WordPress dont. WCAP create these fileds in WP. Users who are already using "
+"address/profile fields from an other plugin, can map those fields with WHMCS "
+"fields below"
+msgstr ""
+"Примітка: За замовчуванням WHMCS вимагає полів адреси для створення "
+"користувача, в той час як WordPress не роблять. WCAP створити цей fileds в "
+"WP. Користувачі, які вже використовують поля адреси / профіль з іншого "
+"плагіна, можна зіставити ці поля з Whmcs нижче полем"
+
+#: admin/pages/sync.php:224 common/assets/translations.php:701
+msgctxt "admin"
+msgid ""
+"Following options are related to how new users are created and existing are "
+"synced in between WHMCS and WordPress when SSO is enabled"
+msgstr ""
+"такі опції пов'язані з тим, як нові користувачі створюються і існуючі "
+"синхронізуються між WHMCS і WordPress, коли SSO включена"
+
+#: admin/pages/sync.php:283
+msgctxt "admin"
+msgid ""
+"WordPress by default do not have address fields. Select below how to handle "
+"empty address while WP users are created in WHMCS. \n"
+"                                This only take effect if *Sync Address* is "
+"enabled"
+msgstr ""
+"WordPress за замовчуванням не мають полів адреси. Виберіть нижче, як "
+"поводитися з порожнім адресою, а WP користувачі створюються в WHMCS."
+
+#: admin/pages/sync.php:329 common/assets/translations.php:702
+msgctxt "admin"
+msgid ""
+"While SSO is enabled it keeps track and syncs users between WHMCS and "
+"WordPress. For the existing users (those are created before SSO is activated)"
+", you need to run sync process below. This is a one time task and is needed "
+"for a smooth SSO experience."
+msgstr ""
+"Хоча SSO включений він відстежує і синхронізує користувачів між WHMCS і "
+"WordPress. Для існуючих користувачів (ті, які створені до SSO активації), "
+"необхідно запустити процес синхронізації нижче. Це один раз завдання а й "
+"необхідно для рівного досвіду SSO."
+
+#: admin/pages/debug.php:19 common/assets/translations.php:453
+#: common/admin/pages/debug.php:80
+msgid "TRUE"
+msgstr "ІСТИНА"
+
+#: admin/pages/debug.php:19 common/assets/translations.php:183
+#: common/admin/pages/debug.php:80
+msgid "FALSE"
+msgstr "ПОМИЛКОВИЙ"
+
+#: admin/pages/debug.php:27 common/admin/pages/debug.php:90
+#, php-format
+msgid "%s (The server only allows %s)"
+msgstr "% S (Сервер дозволяє лише% s)"
+
+#: admin/pages/debug.php:38 admin/pages/debug.php:60
+#: common/assets/translations.php:566 common/admin/pages/debug.php:572
+#: common/admin/pages/debug.php:594
+msgid "cURL not Installed"
+msgstr "CURL не встановлено"
+
+#: admin/pages/debug.php:46 admin/pages/debug.php:70
+#: common/assets/translations.php:184 common/admin/pages/debug.php:580
+#: common/admin/pages/debug.php:604
+msgid "Failed"
+msgstr "Помилка"
+
+#: admin/pages/debug.php:53 admin/pages/debug.php:77
+#: common/assets/translations.php:337 common/admin/pages/debug.php:588
+#: common/admin/pages/debug.php:612
+msgid "Passed"
+msgstr "Пройдено"
+
+#: admin/pages/debug.php:85 common/assets/translations.php:132
+#: common/admin/pages/debug.php:40
+msgid "Debug Info"
+msgstr "Інформація про налагодження"
+
+#: admin/pages/debug.php:96 common/assets/translations.php:133
+#: common/admin/pages/debug.php:43
+msgid "Debug info to copy and send"
+msgstr "Інформація про налагодження для копіювання та відправлення"
+
+#: admin/pages/debug.php:106 common/assets/translations.php:430
+#: common/admin/pages/debug.php:122
+msgid "Site URL:"
+msgstr "URL-адреса сайту:"
+
+#: admin/pages/debug.php:110 common/assets/translations.php:206
+#: common/admin/pages/debug.php:126
+msgid "Home URL:"
+msgstr "URL-адреса домашньої сторінки:"
+
+#: admin/pages/debug.php:115 common/assets/translations.php:535
+#: common/admin/pages/debug.php:130
+msgid "WordPress Version:"
+msgstr "Версія WordPress:"
+
+#: admin/pages/debug.php:120 common/assets/translations.php:534
+#: common/admin/pages/debug.php:134
+msgid "WordPress Multi site:"
+msgstr "WordPress Multisite:"
+
+#: admin/pages/debug.php:125 common/assets/translations.php:533
+#: common/admin/pages/debug.php:138
+msgid "WordPress Language:"
+msgstr "Мова WordPress:"
+
+#: admin/pages/debug.php:130 common/assets/translations.php:532
+#: common/admin/pages/debug.php:142
+msgid "WordPress Debug Mode:"
+msgstr "Режим налагодження WordPress:"
+
+#: admin/pages/debug.php:135 common/assets/translations.php:255
+#: common/admin/pages/debug.php:146
+msgid "Max Upload Size:"
+msgstr "Макс розмір завантаження:"
+
+#: admin/pages/debug.php:139 common/assets/translations.php:257
+msgid "Memory Limit:"
+msgstr "Обмеження пам'яті:"
+
+#: admin/pages/debug.php:152 common/assets/translations.php:524
+#: common/admin/pages/debug.php:276
+msgid "WHMCS Version:"
+msgstr "Версія WHMCS:"
+
+#: admin/pages/debug.php:157 common/assets/translations.php:526
+#: common/admin/pages/debug.php:280
+msgid "WHMPress Helper Version:"
+msgstr "WHMPress Helper Версія:"
+
+#: admin/pages/debug.php:162 common/assets/translations.php:18
+#: common/admin/pages/debug.php:284
+msgid "API Request/response time:"
+msgstr "Час запиту / відповіді API:"
+
+#: admin/pages/debug.php:167 common/assets/translations.php:204
+#: common/admin/pages/debug.php:288
+msgid "Helper Request/response time:"
+msgstr "Помічник Запит / час відповіді:"
+
+#: admin/pages/debug.php:172 common/assets/translations.php:203
+#: common/admin/pages/debug.php:292
+msgid "Helper Request/response time (DB):"
+msgstr "Час запиту / відповідь помічника (БД):"
+
+#: admin/pages/debug.php:185 common/assets/translations.php:531
+#: common/admin/pages/debug.php:393
+msgid "WordPress Active Plugins:"
+msgstr "Активні плагіни WordPress:"
+
+#: admin/pages/debug.php:191 common/assets/translations.php:23
+#: common/admin/pages/debug.php:398
+msgid "Active Plugins List:"
+msgstr "Список активних плагінів:"
+
+#: admin/pages/debug.php:221 common/assets/translations.php:467
+#: common/admin/pages/debug.php:437
+msgid "Theme Name:"
+msgstr "Тема Ім'я:"
+
+#: admin/pages/debug.php:226 common/assets/translations.php:466
+#: common/admin/pages/debug.php:441
+msgid "Theme Author URL:"
+msgstr "Тема Автор URL:"
+
+#: admin/pages/debug.php:231 common/assets/translations.php:230
+#: common/admin/pages/debug.php:445
+msgid "Is Child Theme:"
+msgstr "Дитяча тема:"
+
+#: admin/pages/debug.php:237 common/assets/translations.php:334
+#: common/admin/pages/debug.php:450
+msgid "Parent Theme Name:"
+msgstr "Ім'я батьківської теми:"
+
+#: admin/pages/debug.php:243 common/assets/translations.php:335
+#: common/admin/pages/debug.php:454
+msgid "Parent Theme Version:"
+msgstr "Батьківська версія теми:"
+
+#: admin/pages/debug.php:249 common/assets/translations.php:333
+#: common/admin/pages/debug.php:458
+msgid "Parent Theme Author URL:"
+msgstr "Батьківська тема Автор URL:"
+
+#: admin/pages/debug.php:265 common/assets/translations.php:329
+#: common/admin/pages/debug.php:518
+msgid "PHP Version:"
+msgstr "Версія PHP:"
+
+#: admin/pages/debug.php:271 common/assets/translations.php:326
+#: common/admin/pages/debug.php:526
+msgid "PHP Safe Mode:"
+msgstr "PHP безпечний режим:"
+
+#: admin/pages/debug.php:273 common/assets/translations.php:314
+#: common/admin/pages/debug.php:527
+msgid "ON"
+msgstr "ON"
+
+#: admin/pages/debug.php:273 common/assets/translations.php:313
+#: common/admin/pages/debug.php:527
+msgid "OFF"
+msgstr "ВИМКНЕНО"
+
+#: admin/pages/debug.php:277 common/assets/translations.php:328
+#: common/admin/pages/debug.php:530
+msgid "PHP Time Execution:"
+msgstr "Час виконання PHP:"
+
+#: admin/pages/debug.php:283 common/assets/translations.php:327
+#: common/admin/pages/debug.php:534
+msgid "PHP Temporary Directory:"
+msgstr "Тимчасовий каталог PHP:"
+
+#: admin/pages/debug.php:288 common/assets/translations.php:272
+#: common/admin/pages/debug.php:538
+msgid "MySQL Version:"
+msgstr "Версія MySQL:"
+
+#: admin/pages/debug.php:294 common/assets/translations.php:419
+#: common/admin/pages/debug.php:542
+msgid "Server Software:"
+msgstr "Серверне програмне забезпечення:"
+
+#: admin/pages/debug.php:300 common/assets/translations.php:273
+#: common/admin/pages/debug.php:546
+msgid "MySQLi Extension:"
+msgstr "MySQLi Extension:"
+
+#: admin/pages/debug.php:302 admin/pages/debug.php:316
+#: common/assets/translations.php:219 common/admin/pages/debug.php:547
+#: common/admin/pages/debug.php:558
+msgid "Installed"
+msgstr "Встановлено"
+
+#: admin/pages/debug.php:302 admin/pages/debug.php:316
+#: common/assets/translations.php:310 common/admin/pages/debug.php:309
+#: common/admin/pages/debug.php:547 common/admin/pages/debug.php:558
+msgid "Not Installed"
+msgstr "Не встановлено"
+
+#: admin/pages/debug.php:314 common/assets/translations.php:563
+#: common/admin/pages/debug.php:625
+msgid "cURL Extension:"
+msgstr "Розширення cURL:"
+
+#: admin/pages/debug.php:319 common/assets/translations.php:564
+#: common/admin/pages/debug.php:629
+msgid "cURL Test with google.com:"
+msgstr "Тест cURL з google.com:"
+
+#: admin/pages/debug.php:323 common/assets/translations.php:565
+#: common/admin/pages/debug.php:633
+msgid "cURL Test with port 443 and google.com:"
+msgstr "Тестування cURL з портом 443 і google.com:"
+
+#: common/includes/products.php:106
+msgid "Starting From"
+msgstr "Починаючи з"
+
+#: common/includes/client.php:53
+msgid "Something went wrong when trying to get client details from WHMCS"
+msgstr "Щось пішло не так під час спроби отримати інформацію клієнта від WHMCS"
+
+#: common/includes/client.php:254 common/assets/translations.php:70
+msgid "Card Type"
+msgstr "Тип карти"
+
+#: common/includes/client.php:265 common/assets/translations.php:69
+msgid "Card Number"
+msgstr "Номер картки"
+
+#: common/includes/client.php:272 common/assets/translations.php:182
+msgid "Expiry Date"
+msgstr "Термін придатності"
+
+#: common/includes/client.php:277
+msgid "Jan"
+msgstr "січ"
+
+#: common/includes/client.php:278
+msgid "Feb"
+msgstr "лютого"
+
+#: common/includes/client.php:279
+msgid "Mar"
+msgstr "мар"
+
+#: common/includes/client.php:280
+msgid "Apr"
+msgstr "кві"
+
+#: common/includes/client.php:281
+msgid "May"
+msgstr "Мож"
+
+#: common/includes/client.php:282
+msgid "Jun"
+msgstr "чер"
+
+#: common/includes/client.php:283
+msgid "Jul"
+msgstr "липе"
+
+#: common/includes/client.php:284
+msgid "Aug"
+msgstr "найя"
+
+#: common/includes/client.php:285
+msgid "Sep"
+msgstr "Вере"
+
+#: common/includes/client.php:286
+msgid "Oct"
+msgstr "жовт"
+
+#: common/includes/client.php:287
+msgid "Nov"
+msgstr "Лист"
+
+#: common/includes/client.php:288
+msgid "Dec"
+msgstr "Грудень"
+
+#: common/includes/client.php:293
+msgid "2017"
+msgstr "2017"
+
+#: common/includes/client.php:294
+msgid "2018"
+msgstr "2018"
+
+#: common/includes/client.php:295
+msgid "2019"
+msgstr "2019"
+
+#: common/includes/client.php:296
+msgid "2020"
+msgstr "2020"
+
+#: common/includes/client.php:297
+msgid "2021"
+msgstr "2021"
+
+#: common/includes/client.php:298
+msgid "2022"
+msgstr "2022"
+
+#: common/includes/client.php:299
+msgid "2023"
+msgstr "2023"
+
+#: common/includes/client.php:300
+msgid "2024"
+msgstr "2024"
+
+#: common/includes/client.php:301
+msgid "2025"
+msgstr "2025"
+
+#: common/includes/client.php:302
+msgid "2026"
+msgstr "2026"
+
+#: common/includes/client.php:303
+msgid "2027"
+msgstr "2027"
+
+#: common/includes/client.php:313
+msgid "Card CVV"
+msgstr "CVV карти"
+
+#: common/includes/client.php:381 common/assets/translations.php:31
+#: common/shortcodes/order_process/02_product.php:138
+msgid "Additional Required Information"
+msgstr "Потрібна додаткова інформація"
+
+#: common/includes/client.php:522 common/includes/client.php:718
+#: common/assets/translations.php:844
+msgid "Personal Information"
+msgstr "Персональна інформація"
+
+#: common/includes/client.php:568 common/includes/client.php:764
+#: common/assets/translations.php:829
+msgid "Billing Address"
+msgstr "Адреса виставлення рахунку"
+
+#: common/includes/client.php:586 common/includes/client.php:587
+#: common/includes/client.php:783 common/includes/client.php:784
+#: common/assets/translations.php:35
+#: common/shortcodes/order_process/04_checkout.php:98
+msgid "Address Line 1"
+msgstr "Адресний рядок 1"
+
+#: common/includes/client.php:596 common/includes/client.php:597
+#: common/includes/client.php:794 common/includes/client.php:795
+#: common/assets/translations.php:36
+#: common/shortcodes/order_process/04_checkout.php:105
+msgid "Address Line 2"
+msgstr "Адресний рядок 2"
+
+#: common/includes/client.php:652 common/includes/client.php:852
+msgid "Currency"
+msgstr "валюта"
+
+#: common/includes/client.php:664 common/assets/translations.php:828
+msgid "Account Security"
+msgstr "Безпека облікового запису"
+
+#: common/includes/client.php:873 common/includes/client.php:882
+#: common/includes/order_process.php:899 common/includes/order_process.php:908
+msgid "Terms of Service"
+msgstr "умови обслуговування"
+
+#: common/includes/client.php:880 common/includes/order_process.php:906
+#: common/assets/translations.php:208
+msgid "I have read and agree to the"
+msgstr "Я прочитав і згоден на"
+
+#: common/includes/ajax.php:70 common/includes/ajax.php:218
+msgid " For "
+msgstr "для"
+
+#: common/includes/ajax.php:72 common/includes/ajax.php:220
+#: common/includes/order_process.php:44 common/includes/order_process.php:246
+#: common/includes/order_process.php:770 common/includes/order_process.php:872
+#: common/includes/order_process.php:947 common/includes/order_process.php:975
+#: common/shortcodes/order_process/01_domain_config.php:21
+#: common/shortcodes/order_process/03_summary_generator_backup.php:121
+#: common/shortcodes/order_process/03_summary_generator_backup.php:149
+msgid " Year"
+msgstr "рік"
+
+#: common/includes/ajax.php:72 common/includes/ajax.php:220
+#: common/includes/order_process.php:44 common/includes/order_process.php:246
+#: common/includes/order_process.php:770 common/includes/order_process.php:872
+#: common/includes/order_process.php:947 common/includes/order_process.php:975
+#: common/shortcodes/order_process/01_domain_config.php:21
+#: common/shortcodes/order_process/03_summary_generator_backup.php:121
+#: common/shortcodes/order_process/03_summary_generator_backup.php:149
+msgid " Years"
+msgstr "років"
+
+#: common/includes/ajax.php:97 common/includes/ajax.php:240
+#: common/assets/translations.php:109
+msgid "Congratulations!"
+msgstr "Вітаємо!"
+
+#: common/includes/ajax.php:98 common/includes/ajax.php:241
+#: common/assets/translations.php:567
+msgid "is available!"
+msgstr "доступний!"
+
+#: common/includes/ajax.php:114 common/includes/ajax.php:261
+#: common/assets/translations.php:568
+msgid "is unavailable"
+msgstr "недоступний"
+
+#: common/includes/ajax.php:131 common/includes/ajax.php:272
+#: common/assets/translations.php:555
+msgid "Your domain is eligible for transfer!"
+msgstr "Ваш домен має право на передачу!"
+
+#: common/includes/ajax.php:133 common/includes/ajax.php:274
+#: common/assets/translations.php:354
+msgid ""
+"Please ensure you have unlocked your domain at your current registrar before "
+"continuing."
+msgstr ""
+"Будь ласка, переконайтеся, що ви розблокували домен в поточному реєстраторі, "
+"перш ніж продовжити."
+
+#: common/includes/ajax.php:136 common/includes/ajax.php:278
+#: common/assets/translations.php:485
+msgid "Transfer to us and extend by "
+msgstr "Перехід до нас і продовжити на"
+
+#: common/includes/ajax.php:150 common/includes/ajax.php:295
+#: common/assets/translations.php:309
+msgid "Not Eligible for Transfer"
+msgstr "Чи не Прийнятні для передачі"
+
+#: common/includes/ajax.php:153 common/includes/ajax.php:298
+#: common/assets/translations.php:459
+msgid "The domain you entered does not appear to be registered."
+msgstr "Домен, який ви увійшли як видається, не зареєстрований."
+
+#: common/includes/ajax.php:156 common/includes/ajax.php:301
+#: common/assets/translations.php:212
+msgid "If the domain was registered recently, you may need to try again later."
+msgstr ""
+"Якщо домен був зареєстрований останнім часом, можливо, доведеться повторити "
+"спробу пізніше."
+
+#: common/includes/ajax.php:159 common/includes/ajax.php:304
+#: common/assets/translations.php:46
+msgid "Alternatively, you can perform a search to register this domain."
+msgstr "Крім того, ви можете виконати пошук, щоб зареєструвати цей домен."
+
+#: common/includes/ajax.php:189
+msgid "No Valid domains submitted"
+msgstr "Ні Допустимі домени не представлені"
+
+#: common/includes/ajax.php:339 common/includes/ajax.php:347
+#: common/assets/translations.php:154
+msgid "Domain is attached with product..."
+msgstr "Домен кріпиться за допомогою продукту ..."
+
+#: common/includes/ajax.php:387 common/assets/translations.php:156
+msgid ""
+"Domain is required with this package, kindly attach a domain using above "
+"options"
+msgstr ""
+"Потрібно домен з цим пакетом, люб'язно прикріпити домен за допомогою "
+"вищевказаних варіантів"
+
+#: common/includes/ajax.php:411
+msgid "Add product form has some issue in it."
+msgstr "Додати форму продукту мають деякі проблеми в ньому."
+
+#: common/includes/ajax.php:471 common/assets/translations.php:399
+msgid "Repopulating product Summary"
+msgstr "Заселивши Огляд продукту"
+
+#: common/includes/ajax.php:481
+msgid "Redirecting to Checkout Page"
+msgstr "Перенаправлення на замовлення Сторінка"
+
+#: common/includes/ajax.php:490 common/assets/translations.php:92
+msgid "Client is already logged in"
+msgstr "Клієнт вже увійшли в систему"
+
+#: common/includes/ajax.php:496 common/assets/translations.php:390
+msgid "Registering New Client"
+msgstr "Реєстрація нового клієнта"
+
+#: common/includes/ajax.php:506 common/assets/translations.php:506
+msgid "Validating Client"
+msgstr "Перевірка клієнта"
+
+#: common/includes/ajax.php:564 common/assets/translations.php:559
+msgid ""
+"Your order has been placed, it will be activated once the invoice is paid. "
+"If you have just paid the invoice, ignore this message"
+msgstr ""
+"Ваше замовлення було зроблено, він буде активований після того, як рахунок-"
+"фактура оплачений. Якщо ви тільки що заплатили рахунок, ігнорувати це "
+"повідомлення"
+
+#: common/includes/ajax.php:602 common/assets/translations.php:71
+msgid "Cart is emptied, reloading the page"
+msgstr "Кошик спорожняється, перезавантаження сторінки"
+
+#: common/includes/cart.php:160
+msgid "Item not available in cart"
+msgstr "Товар не доступний в кошику"
+
+#: common/includes/cart.php:167
+msgid "Item deleted from cart"
+msgstr "Елемент видалений з кошика"
+
+#: common/includes/cart.php:627
+msgid "Are you sure you want to empty the cart?"
+msgstr "Ви впевнені, що хочете очистити кошик?"
+
+#: common/includes/cart.php:629 common/assets/translations.php:825
+msgid "Empty Cart"
+msgstr "Очистити кошик"
+
+#: common/includes/shortcodes.php:10 common/includes/shortcodes.php:24
+#: common/includes/shortcodes.php:38 common/includes/shortcodes.php:52
+#: common/includes/shortcodes.php:66 common/includes/shortcodes.php:80
+#: common/includes/shortcodes.php:94 common/includes/shortcodes.php:108
+msgid "Ordering is not configured properly, kindly contact site owner"
+msgstr ""
+"Замовлення не налаштований належним чином, будь ласка, зв'язатися з "
+"власником сайту"
+
+#: common/includes/admin_pages.php:10 common/includes/admin_pages.php:11
+msgid "WCOM"
+msgstr "WCOM"
+
+#: common/includes/admin_pages.php:21 common/includes/admin_pages.php:22
+#: common/assets/translations.php:423
+msgid "Settings"
+msgstr "Налаштування"
+
+#: common/includes/admin_pages.php:30 common/includes/admin_pages.php:31
+msgid "Styles"
+msgstr "стилі"
+
+#: common/includes/admin_pages.php:39 common/includes/admin_pages.php:40
+#: common/includes/order_process.php:137 common/assets/translations.php:147
+msgid "Domain Fields"
+msgstr "поля домену"
+
+#: common/includes/admin_pages.php:48 common/includes/admin_pages.php:49
+msgid "Debug"
+msgstr "Відлагоджувати"
+
+#: common/includes/currency.php:205 common/assets/translations.php:431
+msgid "Something went wrong..."
+msgstr "Щось пішло не так..."
+
+#: common/includes/currency.php:210
+msgid "Payment gateways are found"
+msgstr "Платіжні шлюзи знайдені"
+
+#: common/includes/order_process.php:8 common/assets/translations.php:434
+msgid "Something went wrong, kindly try again later ..."
+msgstr "Щось пішло не так, будь ласка, спробуйте ще раз пізніше ..."
+
+#: common/includes/order_process.php:28 common/assets/translations.php:143
+msgid "Domain Configuration"
+msgstr "конфігурація домена"
+
+#: common/includes/order_process.php:39 common/includes/order_process.php:759
+#: common/assets/translations.php:145
+msgid "Domain Duration"
+msgstr "Domain Duration"
+
+#: common/includes/order_process.php:42 common/includes/order_process.php:768
+#: common/shortcodes/order_process/01_domain_config.php:19
+msgid " For"
+msgstr "для"
+
+#: common/includes/order_process.php:57 common/assets/translations.php:148
+msgid "Domain Nameservers"
+msgstr "Домен сервера імен"
+
+#: common/includes/order_process.php:103 common/includes/order_process.php:106
+#: common/assets/translations.php:54
+msgid "Authorization Code"
+msgstr "код авторизації"
+
+#: common/includes/order_process.php:282 common/assets/translations.php:57
+#: common/shortcodes/order_process/02_product.php:150
+msgid "Available Addons"
+msgstr "доступні плагіни"
+
+#: common/includes/order_process.php:300 common/assets/translations.php:125
+#: common/shortcodes/order_process/03_summary_generator.php:389
+#: common/shortcodes/order_process/03_summary_generator_backup.php:322
+#: common/shortcodes/order_process/03_summary_generator_backup.php:388
+msgid "DNS Management"
+msgstr "управління DNS"
+
+#: common/includes/order_process.php:303
+msgid ""
+"External DNS Hosting can help speed up your website and improve availability "
+"with reduced redundancy."
+msgstr ""
+"Зовнішній DNS хостинг може допомогти прискорити ваш сайт і підвищити "
+"доступність зі зменшеною надмірністю."
+
+#: common/includes/order_process.php:370
+msgid ""
+"Protect your personal information and reduce the amount of spam to your "
+"inbox by enabling ID Protection"
+msgstr ""
+"Захистіть свою особисту інформацію та зменшити кількість спаму в вашу "
+"поштову скриньку, дозволяючи ID Protection."
+
+#: common/includes/order_process.php:874 common/assets/translations.php:395
+msgid "Registration For"
+msgstr "Реєстрація Для"
+
+#: common/includes/order_process.php:874 common/assets/translations.php:482
+msgid "Transfer For"
+msgstr "передача Для"
+
+#: common/includes/order_process.php:945 common/includes/order_process.php:973
+#: common/shortcodes/order_process/03_summary_generator_backup.php:119
+#: common/shortcodes/order_process/03_summary_generator_backup.php:147
+msgid "For "
+msgstr "для"
+
+#: common/includes/domains.php:11
+msgid ""
+"If you want to use custom nameservers then enter them below. By default, new "
+"domains will use our nameservers for hosting on our network."
+msgstr ""
+"Якщо ви хочете використовувати власні сервери імен, то введіть їх нижче. За "
+"замовчуванням нові домени будуть використовувати наші сервера імен для "
+"хостингу в нашій мережі."
+
+#: common/includes/domains.php:243 common/assets/translations.php:44
+msgid "Already in Cart"
+msgstr "Уже в кошику"
+
+#: common/includes/domains.php:254 common/assets/translations.php:414
+msgid "Select a domain"
+msgstr "Виберіть домен"
+
+#: common/includes/domains.php:327 common/assets/translations.php:486
+msgid "Transfer your domain from another registrar"
+msgstr "Перенесення домену від іншого реєстратора"
+
+#: common/includes/domains.php:358 common/assets/translations.php:487
+msgid "Transfer"
+msgstr "Перенос"
+
+#: common/includes/functions.php:105
+msgid "1 month"
+msgstr "1 місяць"
+
+#: common/includes/functions.php:106
+msgid "Month"
+msgstr "місяць"
+
+#: common/includes/functions.php:107
+msgid "mo"
+msgstr "мі"
+
+#: common/includes/functions.php:108
+msgid "1 Month"
+msgstr "1 місяць"
+
+#: common/includes/functions.php:114
+msgid "3 month"
+msgstr "3 місяць"
+
+#: common/includes/functions.php:115
+msgid "Quarter"
+msgstr "чверть"
+
+#: common/includes/functions.php:116
+msgid "qu"
+msgstr "чв"
+
+#: common/includes/functions.php:117
+msgid "3 Months"
+msgstr "3 місяці"
+
+#: common/includes/functions.php:123
+msgid "6 month"
+msgstr "6 місяці"
+
+#: common/includes/functions.php:124
+msgid "Half year"
+msgstr "раз в півроку"
+
+#: common/includes/functions.php:125
+msgid "sa"
+msgstr "ра в пі"
+
+#: common/includes/functions.php:126
+msgid "6 Months"
+msgstr "6 місяць"
+
+#: common/includes/functions.php:132
+msgid "1 year"
+msgstr "1 рік"
+
+#: common/includes/functions.php:133 common/assets/translations.php:537
+msgid "Year"
+msgstr "рік"
+
+#: common/includes/functions.php:134
+msgid "yr"
+msgstr "рі"
+
+#: common/includes/functions.php:135
+msgid "12 Months"
+msgstr "12 рік"
+
+#: common/includes/functions.php:140
+msgid "Biennially"
+msgstr "раз на два роки"
+
+#: common/includes/functions.php:141
+msgid "2 Year"
+msgstr "2 рік"
+
+#: common/includes/functions.php:142
+msgid "2 Years"
+msgstr "2 роки"
+
+#: common/includes/functions.php:143
+msgid "2 yrs"
+msgstr "2 років"
+
+#: common/includes/functions.php:144
+msgid "24 Months"
+msgstr "24 місяців"
+
+#: common/includes/functions.php:149
+msgid "Triennially"
+msgstr "трирічної"
+
+#: common/includes/functions.php:150
+msgid "3 Year"
+msgstr "3 роки"
+
+#: common/includes/functions.php:151
+msgid "3 Years"
+msgstr "3 роки"
+
+#: common/includes/functions.php:152
+msgid "3 yrs"
+msgstr "3 ро"
+
+#: common/includes/functions.php:153
+msgid "36 Months"
+msgstr "36 місяців"
+
+#: common/includes/functions.php:158 common/includes/functions.php:159
+#: common/includes/functions.php:160 common/includes/functions.php:161
+#: common/includes/functions.php:162
+msgid "Free"
+msgstr "безкоштовно"
+
+#: common/includes/functions.php:167 common/includes/functions.php:168
+#: common/includes/functions.php:169 common/includes/functions.php:170
+#: common/includes/functions.php:171 common/assets/translations.php:315
+msgid "One Time"
+msgstr "Одного разу"
+
+#: common/assets/translations.php:2
+#, php-format
+msgid "%s (The server only allows %s);"
+msgstr "%s (Сервер допускає тільки %s);"
+
+#: common/assets/translations.php:3
+msgid ".au Eligibility"
+msgstr ".au Прийнятність"
+
+#: common/assets/translations.php:4
+msgid ".com.au & .net.au"
+msgstr ".com.au & .net.au"
+
+#: common/assets/translations.php:5
+msgid ""
+".com.au and .net.au are for Please Select commercial purposes. To confirm "
+"your eligibility you must enter your business Eligibility ID Number name, "
+"number and type."
+msgstr ""
+".com.au і .net.au призначений для Виберіть комерційні цілі. Для "
+"підтвердження права необхідно ввести свій бізнес Eligibility ім'я "
+"ідентифікаційний номер, номер і тип."
+
+#: common/assets/translations.php:6
+msgid "1"
+msgstr "1"
+
+#: common/assets/translations.php:7
+msgid "2"
+msgstr "2"
+
+#: common/assets/translations.php:8
+msgid "3"
+msgstr "3"
+
+#: common/assets/translations.php:9
+msgid "4"
+msgstr "4"
+
+#: common/assets/translations.php:10
+msgid "5"
+msgstr "5"
+
+#: common/assets/translations.php:11
+msgid "6"
+msgstr "6"
+
+#: common/assets/translations.php:12
+msgid "7"
+msgstr "7"
+
+#: common/assets/translations.php:13
+msgid "8"
+msgstr "8"
+
+#: common/assets/translations.php:14
+msgid "9"
+msgstr "9"
+
+#: common/assets/translations.php:15
+msgid "10"
+msgstr "10"
+
+#: common/assets/translations.php:16
+msgid "Enter a Coupon Code"
+msgstr "Введіть код купона"
+
+#: common/assets/translations.php:17
+msgid "Review Order Details"
+msgstr "Огляд Інформація для замовлення"
+
+#: common/assets/translations.php:29
+msgid "Added"
+msgstr "доданої"
+
+#: common/assets/translations.php:37
+msgid "Admin Contact"
+msgstr "Адміністратор Контакт"
+
+#: common/assets/translations.php:40
+msgid "All Good!"
+msgstr "Все добре!"
+
+#: common/assets/translations.php:51
+#: common/shortcodes/order_process/03_summary.php:37
+msgid "Apply Promo Code"
+msgstr "Застосувати промо-код"
+
+#: common/assets/translations.php:53
+msgid "Attach Product"
+msgstr "докласти продукт"
+
+#: common/assets/translations.php:60
+msgid "Billing Contact"
+msgstr "платіжний контакт"
+
+#: common/assets/translations.php:65
+msgid "Business Confirmation"
+msgstr "бізнес Підтвердження"
+
+#. todo: removed ...
+#: common/assets/translations.php:72
+msgid "Cart listing page URL is not correct"
+msgstr "Кошик лістингу сторінка URL не є правильним"
+
+#: common/assets/translations.php:78
+msgid "Changes Saved Successfully!"
+msgstr "Зміни успішно збережені!"
+
+#: common/assets/translations.php:81
+msgid "Checkout Now!"
+msgstr "Оформити замовлення прямо зараз!"
+
+#: common/assets/translations.php:82
+#: common/shortcodes/order_process/03_summary.php:94
+#: common/shortcodes/order_process/04_checkout.php:37
+msgid "Checkout"
+msgstr "Перевірити"
+
+#: common/assets/translations.php:83
+#: common/shortcodes/order_process/02_product.php:92
+msgid "Choose Billing Cycle"
+msgstr "Оберіть термін оплати"
+
+#: common/assets/translations.php:96
+#: common/shortcodes/order_process/04_checkout.php:1018
+msgid "Complete Order"
+msgstr "повний замовлення"
+
+#: common/assets/translations.php:97
+#: common/shortcodes/order_process/03_summary_generator_backup.php:209
+msgid "Config Options"
+msgstr "варіанти Config"
+
+#: common/assets/translations.php:100
+msgid "Configuration"
+msgstr "конфігурація"
+
+#: common/assets/translations.php:101
+msgid "Configure Domain"
+msgstr "Налаштування домену"
+
+#: common/assets/translations.php:102
+msgid "Configure Product page URL is not correct"
+msgstr "Налаштування URL сторінки продукту не є правильним"
+
+#: common/assets/translations.php:103
+msgid "Configure Products"
+msgstr "Налаштування продуктів"
+
+#: common/assets/translations.php:104
+#: common/shortcodes/order_process/02_product.php:51
+msgid "Configure your desired options and continue to checkout."
+msgstr "Налаштуйте потрібні параметри і продовжити перевірки."
+
+#: common/assets/translations.php:105
+#: common/shortcodes/order_process/02_product.php:48
+msgid "Configure"
+msgstr "Вибір конфігурації"
+
+#: common/assets/translations.php:111
+msgid "Contact Deleted Successfully!"
+msgstr "Контакт успішно знищений!"
+
+#: common/assets/translations.php:116
+msgid "Continue To Client Area"
+msgstr "Продовжує клієнтську область"
+
+#: common/assets/translations.php:120
+msgid "Coupon Code"
+msgstr "купон"
+
+#: common/assets/translations.php:121
+msgid "Create Account or Log In"
+msgstr "Створити обліковий запис або увійти"
+
+#: common/assets/translations.php:149
+msgid "Domain Register Duration"
+msgstr "Домен Реєстрація Тривалість"
+
+#: common/assets/translations.php:151
+msgid "Domain Transfer Duration"
+msgstr "Передача домену Тривалість"
+
+#: common/assets/translations.php:152
+msgid "Domain is added to cart"
+msgstr "Домен доданий в кошик"
+
+#: common/assets/translations.php:153
+msgid "Domain is added to cart. Kindly select an item from below list"
+msgstr "Домен додано до кошика. Будь ласка, виберіть елемент зі списку нижче"
+
+#. todo: removed ...
+#: common/assets/translations.php:155
+msgid "Domain is removed from cart"
+msgstr "Домен видаляється з кошика"
+
+#: common/assets/translations.php:166
+msgid "Eligibility"
+msgstr "прийнятність"
+
+#: common/assets/translations.php:170
+msgid "Email for Your Business Cards"
+msgstr "Email для візитних карток"
+
+#: common/assets/translations.php:171
+msgid "Email"
+msgstr "E-mail"
+
+#: common/assets/translations.php:178
+#: common/shortcodes/order_process/03_summary.php:46
+msgid "Enter Promo Code if you have one"
+msgstr "Введіть промо-код, якщо у вас є один"
+
+#: common/assets/translations.php:185
+msgid "Fee "
+msgstr "плата"
+
+#: common/assets/translations.php:191
+msgid "for"
+msgstr "для"
+
+#. todo: removed space
+#: common/assets/translations.php:192
+msgid "For"
+msgstr "для"
+
+#: common/assets/translations.php:195
+msgid "Free Domain is only available for following TLD\\'s"
+msgstr "Безкоштовний домен доступний тільки для наступних TLD \\ 's"
+
+#: common/assets/translations.php:196
+#: common/shortcodes/order_process/02_product.php:171
+msgid "Free Domain is only available for following billingcycles..."
+msgstr "Безкоштовний домен доступний тільки для наступних billingcycles ..."
+
+#. todo: removed ...
+#: common/assets/translations.php:197
+#: common/shortcodes/order_process/02_product.php:100
+msgid "Free Domain"
+msgstr "Безкоштовний домен"
+
+#: common/assets/translations.php:198
+msgid "General Settings"
+msgstr "Загальні налаштування"
+
+#: common/assets/translations.php:199
+msgid "Get EPP Code"
+msgstr "Отримати EPP-код"
+
+#: common/assets/translations.php:200
+msgid "Get Professional Email"
+msgstr "Отримати професійний e-mail"
+
+#: common/assets/translations.php:201
+msgid "Grand Total:"
+msgstr "Загальний підсумок:"
+
+#: common/assets/translations.php:207
+msgid "I already Own a Domain"
+msgstr "У мене вже є домен"
+
+#: common/assets/translations.php:215
+msgid ""
+"If you have any questions about your order, please open a support ticket "
+"from your client area and quote your order number."
+msgstr ""
+"Якщо у вас є які-небудь питання про вашому замовленні, будь ласка, відкрийте "
+"квиток підтримки з вашої клієнтської області і вказати номер замовлення."
+
+#: common/assets/translations.php:217
+msgid ""
+"In order to register your .au domain name(s); auDA (.au Domain "
+"Administration); requires that we collect some additional data to verify "
+"your eligibility."
+msgstr ""
+"Для того, щоб зареєструвати доменне ім'я .au (ів); AUDA (.au Адміністрації "
+"домену); вимагає, щоб ми збираємо деякі додаткові дані для перевірки вашого "
+"права."
+
+#: common/assets/translations.php:220
+msgid "Invalid WHMCS URL"
+msgstr "Невірний WHMCS URL"
+
+#: common/assets/translations.php:221
+msgid "Invalid WordPress user info"
+msgstr "Невірна інформація про користувача WordPress"
+
+#: common/assets/translations.php:222
+msgid "Invalid email address"
+msgstr "невірна адреса електронної пошти"
+
+#: common/assets/translations.php:223
+msgid "Invalid password confirmation"
+msgstr "Invalid підтвердження пароля"
+
+#: common/assets/translations.php:224
+msgid "Invalid promotion code."
+msgstr "Невірний код акції."
+
+#: common/assets/translations.php:226
+msgid "Invalid token validation"
+msgstr "Перевірка Неприпустимий маркер"
+
+#: common/assets/translations.php:231
+msgid "Item Total:"
+msgstr "Пункт Разом:"
+
+#: common/assets/translations.php:232
+msgid "Kindly fill below form to proceed with domain order"
+msgstr "Будь ласка, заповніть форму нижче, щоб продовжити замовлення домену"
+
+#: common/assets/translations.php:234
+#: common/shortcodes/order_process/03_summary_generator.php:555
+#: common/shortcodes/order_process/03_summary_generator_backup.php:583
+msgid "L1 Tax rule, @ "
+msgstr "L1 Tax правило, @"
+
+#: common/assets/translations.php:235
+#: common/shortcodes/order_process/03_summary_generator.php:563
+#: common/shortcodes/order_process/03_summary_generator_backup.php:591
+msgid "L2 Tax rule, @ "
+msgstr "L2 Податкове правило, @"
+
+#: common/assets/translations.php:239
+msgid "Launch"
+msgstr "запуск"
+
+#: common/assets/translations.php:240
+msgid "Links"
+msgstr "Посилання"
+
+#: common/assets/translations.php:242
+msgid "Log In"
+msgstr "увійти"
+
+#: common/assets/translations.php:243
+msgid "Log Out"
+msgstr "Вийти"
+
+#: common/assets/translations.php:259
+msgid ""
+"Merchant Gateways store credit card information securely in the WHMCS "
+"database. Majorty of small hosts use Third party gateways, which require no "
+"configuration in this plugins. To find out more about how payment gateways "
+"work, visit below link on WHMCS site."
+msgstr ""
+"Інформація про торгові шлюзи магазину кредитної картки надійно в базі даних "
+"WHMCS. Majorty невеликих хостів використання третє стороною шлюзів, які не "
+"вимагають ніяких налаштувань в цьому плагін. Щоб дізнатися більше про те, як "
+"працюють платіжні шлюзи, відвідайте нижче посилання на WHMCS сайті."
+
+#: common/assets/translations.php:298
+msgid "No Payment method selected"
+msgstr "Ні Спосіб оплати обраний"
+
+#: common/assets/translations.php:301
+msgid "No configuration options available"
+msgstr "Немає опції конфігурації доступні"
+
+#: common/assets/translations.php:302
+msgid "No discount available."
+msgstr "Немає надаються знижки."
+
+#: common/assets/translations.php:306
+#: common/shortcodes/order_process/02_product.php:7
+#: common/shortcodes/order_process/02_product.php:14
+msgid "No valid product_id provided"
+msgstr "Чи не діє product_id за умови,"
+
+#: common/assets/translations.php:311
+msgid "Not Set"
+msgstr "Не встановлено"
+
+#: common/assets/translations.php:312
+msgid ""
+"Note: You do not need to enable this option until you are using a Merchant "
+"Gateway."
+msgstr ""
+"Примітка: Вам не потрібно, щоб включити цю опцію, поки ви не використовуєте "
+"Merchant Gateway."
+
+#: common/assets/translations.php:323 common/assets/translations.php:324
+#: common/shortcodes/order_process/03_summary.php:80
+#: common/shortcodes/order_process/02_product.php:187
+msgid "Order Summary"
+msgstr "Підсумок Замовлення"
+
+#: common/assets/translations.php:348
+#: common/shortcodes/order_process/04_checkout.php:1004
+msgid "Payment Details"
+msgstr "Платіжні реквізити"
+
+#: common/assets/translations.php:349
+msgid "Payment Gateway"
+msgstr "платіжний шлюз"
+
+#: common/assets/translations.php:357
+msgid "Please provide new password."
+msgstr "Будь ласка, вкажіть новий пароль."
+
+#: common/assets/translations.php:359
+#: common/shortcodes/order_process/04_checkout.php:135
+msgid "Post Code"
+msgstr "Поштовий індекс"
+
+#: common/assets/translations.php:362
+msgid "Primary"
+msgstr "первинний"
+
+#: common/assets/translations.php:366
+msgid "Product Config"
+msgstr "конфігурація продукту"
+
+#: common/assets/translations.php:367
+msgid "Product Configuration"
+msgstr "конфігурація продукту"
+
+#: common/assets/translations.php:368
+msgid "Product Type"
+msgstr "Тип продукту"
+
+#: common/assets/translations.php:369
+msgid "Product is attahced with domain"
+msgstr "Продукт attahced з доменом"
+
+#: common/assets/translations.php:370
+msgid "Product is detached from domain"
+msgstr "Продукт відділяється від домену"
+
+#: common/assets/translations.php:373
+msgid "Promotion Code expired"
+msgstr "Промокод закінчився"
+
+#: common/assets/translations.php:374
+msgid "Promotion code used."
+msgstr "Промокод використовується."
+
+#: common/assets/translations.php:375
+msgid "Provide valid WHMCS user row"
+msgstr "Забезпечити дійсну рядок користувача WHMCS"
+
+#: common/assets/translations.php:379
+msgid "Ready for Launch"
+msgstr "Готовий до запуску"
+
+#: common/assets/translations.php:385
+#: common/shortcodes/order_process/04_checkout.php:971
+msgid "Register New Account"
+msgstr "Зареєструвати новий акаунт"
+
+#: common/assets/translations.php:391
+msgid "Registrant Contact"
+msgstr "Реєстрант Контакт"
+
+#: common/assets/translations.php:392
+msgid "Registrar Lock Status"
+msgstr "Статус блокування реєстратором"
+
+#: common/assets/translations.php:396
+#: common/shortcodes/order_process/03_summary_generator.php:380
+msgid "Registration"
+msgstr "реєстрація"
+
+#: common/assets/translations.php:398
+#: common/shortcodes/order_process/03_summary.php:68
+msgid "Remove Promotion Code"
+msgstr "Видалити промо-код"
+
+#: common/assets/translations.php:400
+msgid "Repopulating product options"
+msgstr "Заселивши варіанти продукту"
+
+#: common/assets/translations.php:403
+msgid "SSO Settings"
+msgstr "Налаштування єдиного входу"
+
+#: common/assets/translations.php:405
+msgid "Save Settings"
+msgstr "Зберегти налаштування"
+
+#: common/assets/translations.php:406
+msgid "Search Results"
+msgstr "Результати пошуку"
+
+#: common/assets/translations.php:407
+msgid "Search for your dream domain below"
+msgstr "Пошук по домену вашої мрії нижче"
+
+#: common/assets/translations.php:408
+msgid "Search"
+msgstr "пошук"
+
+#: common/assets/translations.php:409
+msgid "Secure Payment"
+msgstr "безпечні платежі"
+
+#: common/assets/translations.php:410
+msgid "Security Code"
+msgstr "Код безпеки"
+
+#: common/assets/translations.php:412
+msgid "Select Payment Gateway"
+msgstr "Виберіть Платіжний шлюз"
+
+#: common/assets/translations.php:415
+msgid "Select"
+msgstr "вибрати"
+
+#: common/assets/translations.php:418
+#: common/shortcodes/order_process/02_product.php:118
+msgid "Server Options"
+msgstr "параметри сервера"
+
+#: common/assets/translations.php:425
+msgid "Setup"
+msgstr "установка"
+
+#: common/assets/translations.php:426
+msgid "Setup Fee:"
+msgstr "Вартість установки:"
+
+#: common/assets/translations.php:427
+#: common/shortcodes/order_process/02_product_sidebar.php:56
+msgid "Setup Price"
+msgstr "Налаштування цін"
+
+#: common/assets/translations.php:432
+#: common/shortcodes/order_process/01_domains_config.php:27
+msgid "Something went wrong, kindly refresh the page and start over..."
+msgstr ""
+"Щось пішло не так, будь ласка, поновіть сторінку і почати все спочатку ..."
+
+#. todo: removed ...
+#: common/assets/translations.php:433
+msgid "Something went wrong, kindly refresh the page"
+msgstr "Щось пішло не так, будь ласка, поновіть сторінку"
+
+#. todo: removed ...
+#: common/assets/translations.php:435
+msgid "Sorry! This domain can not be added to cart at the moment"
+msgstr "На жаль! Цей домен не може бути доданий в кошик на даний момент"
+
+#: common/assets/translations.php:436
+msgid "Sorry! This product can not be added to cart at the moment"
+msgstr "На жаль! Цей продукт не може бути доданий в кошик на даний момент"
+
+#: common/assets/translations.php:438
+msgid "Starting from"
+msgstr "Починаючи з"
+
+#: common/assets/translations.php:439
+#: common/shortcodes/order_process/04_checkout.php:121
+msgid "State"
+msgstr "стан"
+
+#: common/assets/translations.php:442
+msgid "Step"
+msgstr "крок"
+
+#: common/assets/translations.php:449
+msgid "Summary"
+msgstr "резюме"
+
+#: common/assets/translations.php:454
+msgid "Tech Contact"
+msgstr "Tech Contact"
+
+#: common/assets/translations.php:456
+msgid "Terms of Services"
+msgstr "умови обслуговування"
+
+#: common/assets/translations.php:458
+msgid ""
+"Thank you for your order. You will receive a confirmation email shortly."
+msgstr ""
+"Дякуємо за ваше замовлення. Ви отримаєте підтвердження по електронній пошті "
+"найближчим часом."
+
+#: common/assets/translations.php:464
+msgid "The passwords entered do not match"
+msgstr "Введені паролі не збігаються"
+
+#: common/assets/translations.php:465
+msgid ""
+"The registrant warrants at the time of registration and renewal of any .au "
+"domain name that it meets, and will continue to meet for the period of its "
+"registration, the eligibility criteria prescribed in auDA\\'s Published "
+"Policies for registering a domain name; and that the details in respect of "
+"its domain name submitted to Netregistry by the Licensee are true and "
+"correct, and that any future additions or alterations to those details will "
+"be true and correct."
+msgstr ""
+"Реєстрантом гарантує, в момент реєстрації та оновлення будь-якого доменного "
+"імені .au, що вона зустрічається, і буде продовжувати зустрічатися в період "
+"його реєстрації, критерії прийнятності, запропонованої в опублікованій "
+"політиці AUDA \\ 's для реєстрації доменного імені; і що подробиці щодо "
+"доменного імені, представленого Netregistry ліцензіата є істинними і "
+"правильними, і що будь-які майбутні доповнення або зміни в ці деталі будуть "
+"вірні і правильні."
+
+#: common/assets/translations.php:480
+#: common/shortcodes/order_process/03_summary_generator.php:571
+#: common/shortcodes/order_process/03_summary_generator_backup.php:599
+msgid "Totals"
+msgstr "загальні дані"
+
+#: common/assets/translations.php:483
+msgid "Transfer a Domain"
+msgstr "передача домену"
+
+#: common/assets/translations.php:490
+msgid "Unable to connect: "
+msgstr "Не може підключитися:"
+
+#: common/assets/translations.php:495
+#: common/shortcodes/order_process/03_summary_generator.php:604
+#: common/shortcodes/order_process/03_summary_generator_backup.php:622
+msgid "Updating Cart Summaries"
+msgstr "Оновлення кошика Зведення"
+
+#: common/assets/translations.php:499
+msgid ""
+"Use both upper and lowercase characters Include at least one symbol (# $ ! % "
+"& etc...); Don't use dictionary words"
+msgstr ""
+"Використовуйте як верхні і малі символи включають принаймні один символ (# "
+"$% & і т.д ...!); Не використовуйте слова зі словника"
+
+#: common/assets/translations.php:501
+msgid "User Email"
+msgstr "Електронна пошта користувача"
+
+#: common/assets/translations.php:502
+msgid "User Name"
+msgstr "ім'я користувача"
+
+#: common/assets/translations.php:504
+#: common/shortcodes/order_process/03_summary.php:50
+msgid "Validate Code"
+msgstr "підтвердити код"
+
+#: common/assets/translations.php:505
+msgid "Validate"
+msgstr "стверджувати"
+
+#: common/assets/translations.php:516
+msgid "WCAP "
+msgstr "WCAP"
+
+#: common/assets/translations.php:517
+msgid "WCAP - WHMCS Client Area"
+msgstr "WCAP - WHMCS Client Area"
+
+#: common/assets/translations.php:518
+msgid "WCAP Dashboard"
+msgstr "Панель WCAP"
+
+#: common/assets/translations.php:519
+msgid "WCAP Help"
+msgstr "WCAP Допомога"
+
+#: common/assets/translations.php:520
+msgid "WCAP Page"
+msgstr "WCAP Page"
+
+#: common/assets/translations.php:521
+msgid ""
+"WHMCS Cart & Order Pages (WCOP); has beautifully designed order pages, which "
+"are feature-rich, user-friendly and functional."
+msgstr ""
+"WHMCS Кошик & Order Сторінки (WCOP); є сторінки красиво оформлених замовлень,"
+" які наворочений, зручним і функціональним."
+
+#: common/assets/translations.php:522
+msgid "WHMCS Cart"
+msgstr "WHMCS Кошик"
+
+#: common/assets/translations.php:523
+msgid "WHMCS Config"
+msgstr "WHMCS Config"
+
+#: common/assets/translations.php:525
+msgid "WHMCS user not found"
+msgstr "Користувач WHMCS не найден"
+
+#: common/assets/translations.php:528
+msgid ""
+"We have received your order, please proceed with payment or return to "
+"dashboard. "
+msgstr ""
+"Ми отримали ваше замовлення, будь ласка, приступити до оплати або "
+"повернутися до приладової панелі."
+
+#: common/assets/translations.php:536
+msgid "Wrong Product ID provided"
+msgstr "ID Неправильний продукт за умови,"
+
+#: common/assets/translations.php:539
+msgid "Years"
+msgstr "рік/а"
+
+#: common/assets/translations.php:552
+msgid "Your Details"
+msgstr "Ваші дані"
+
+#: common/assets/translations.php:553
+msgid "Your Message has been Sent"
+msgstr "Ваше повідомлення було відправлене"
+
+#: common/assets/translations.php:554
+#: common/shortcodes/order_process/03_summary_generator.php:479
+#: common/shortcodes/order_process/03_summary_generator_backup.php:523
+msgid "Your Shopping Cart is Empty"
+msgstr "Ваш кошик порожній"
+
+#: common/assets/translations.php:556
+msgid "Your existing password was not correct"
+msgstr "Ваш існуючий пароль неправильний"
+
+#: common/assets/translations.php:558
+msgid "Your invoice ID is: "
+msgstr "Ваш рахунок-фактура є ID:"
+
+#: common/assets/translations.php:570
+msgid "no value"
+msgstr "немає значення"
+
+#: common/assets/translations.php:571
+msgid "to Client Area"
+msgstr "в клієнтської області"
+
+#: common/assets/translations.php:576 common/assets/translations.php:770
+msgctxt "menu"
+msgid "Account"
+msgstr "Аккаунт"
+
+#: common/assets/translations.php:578 common/assets/translations.php:751
+#: common/assets/translations.php:769
+msgctxt "menu"
+msgid "Affiliates"
+msgstr "Партнерство"
+
+#: common/assets/translations.php:582 common/assets/translations.php:746
+#: common/assets/translations.php:765
+msgctxt "menu"
+msgid "Announcements"
+msgstr "Сповіщення"
+
+#: common/assets/translations.php:586 common/assets/translations.php:756
+msgctxt "menu"
+msgid "Change Password"
+msgstr "Змінити пароль"
+
+#: common/assets/translations.php:587 common/assets/translations.php:768
+msgctxt "menu"
+msgid "Contact Us"
+msgstr "Зв'язок з нами"
+
+#: common/assets/translations.php:588 common/assets/translations.php:755
+msgctxt "menu"
+msgid "Contacts/Sub-Accounts"
+msgstr "Контакти/Суб-акаунти"
+
+#: common/assets/translations.php:592 common/assets/translations.php:753
+msgctxt "menu"
+msgid "Edit Account Details"
+msgstr "Особисті дані"
+
+#: common/assets/translations.php:594 common/assets/translations.php:758
+msgctxt "menu"
+msgid "Email History"
+msgstr "Надіслані email"
+
+#: common/assets/translations.php:601 common/assets/translations.php:773
+msgctxt "menu"
+msgid "Forgot Password?"
+msgstr "Забули пароль?"
+
+#: common/assets/translations.php:606
+msgid "Go to Settings"
+msgstr "Перейдіть в розділ Налаштування"
+
+#: common/assets/translations.php:615 common/assets/translations.php:729
+#: common/assets/translations.php:762
+msgctxt "menu"
+msgid "Home"
+msgstr "Головна"
+
+#: common/assets/translations.php:622
+msgctxt "admin"
+msgid ""
+"Kindly configure whmcs settings first by clicking on below button to check "
+"if helper is all good or not"
+msgstr ""
+"Прохання налаштувати Whmcs параметри першого, натиснувши на кнопку нижче, "
+"щоб перевірити, якщо помічник все добре чи ні"
+
+#: common/assets/translations.php:623 common/assets/translations.php:747
+#: common/assets/translations.php:766
+msgctxt "menu"
+msgid "Knowledgebase"
+msgstr "База знань"
+
+#: common/assets/translations.php:626 common/assets/translations.php:771
+msgctxt "menu"
+msgid "Login"
+msgstr "Вхід"
+
+#: common/assets/translations.php:627 common/assets/translations.php:759
+msgctxt "menu"
+msgid "Logout"
+msgstr "Вихід"
+
+#: common/assets/translations.php:628 common/assets/translations.php:754
+msgctxt "menu"
+msgid "Manage Credit Card"
+msgstr "Кредитна карта"
+
+#: common/assets/translations.php:630 common/assets/translations.php:731
+#: common/assets/translations.php:764
+msgctxt "menu"
+msgid "My Services"
+msgstr "Мої рахунки"
+
+#: common/assets/translations.php:631 common/assets/translations.php:749
+#: common/assets/translations.php:767
+msgctxt "menu"
+msgid "Network Status"
+msgstr "Статус мережі"
+
+#: common/assets/translations.php:637 common/assets/translations.php:750
+msgctxt "menu"
+msgid "Open Ticket"
+msgstr "Відкрити тікет"
+
+#: common/assets/translations.php:648 common/assets/translations.php:772
+msgctxt "menu"
+msgid "Register"
+msgstr "Реєстрація"
+
+#: common/assets/translations.php:655 common/assets/translations.php:757
+msgctxt "menu"
+msgid "Security Settings"
+msgstr "Налаштування безпеки"
+
+#: common/assets/translations.php:661 common/assets/translations.php:763
+msgctxt "menu"
+msgid "Store"
+msgstr "Store"
+
+#: common/assets/translations.php:668
+msgctxt "admin"
+msgid ""
+"To start using WHMCS Client Area, simply place the following shortcode in a "
+"WordPress page."
+msgstr ""
+"Для того, щоб почати використовувати WHMCS Client Area, просто помістіть "
+"наступний шорткод в WordPress сторінці."
+
+#: common/assets/translations.php:696
+msgctxt "admin"
+msgid ""
+"Merchant Gateways store credit card information securely in the WHMCS "
+"database. Majorty of small hosts use Third party gateways, which require no "
+"configuration in this plugins. To find out more about how payment gateways "
+"work, visit below link on WHMCS site."
+msgstr ""
+"Інформація про торгові шлюзи магазину кредитної картки надійно в базі даних "
+"WHMCS. Majorty невеликих хостів використання третє стороною шлюзів, які не "
+"вимагають ніяких налаштувань в цьому плагін. Щоб дізнатися більше про те, як "
+"працюють платіжні шлюзи, відвідайте нижче посилання на WHMCS сайті."
+
+#: common/assets/translations.php:703 common/admin/pages/settings.php:36
+msgctxt "admin"
+msgid ""
+"WHMpress helper takes WHMCS-WP integration to next level. It is an important "
+"component in the integration process and is installed on WHMCS."
+msgstr ""
+"WHMpress помічник бере інтеграцію WHMCS-WP до наступного рівня. Це є "
+"важливим компонентом в процесі інтеграції і встановлюється на WHMCS."
+
+#: common/assets/translations.php:705
+msgctxt "admin"
+msgid ""
+"Either you have not entered all information or your WHMCS API can't be "
+"accessed using below credentials."
+msgstr ""
+"Або ви не ввели всю інформацію або ваш WHMCS API не можуть бути доступні за "
+"допомогою нижче облікових даних."
+
+#: common/assets/translations.php:715
+msgctxt "admin"
+msgid ""
+"help: Enter URL to page with product listings, your users will be redirected "
+"to this page when the click continue shopping"
+msgstr ""
+"Або ви не ввели всю інформацію або ваш WHMCS API не можуть бути доступні за "
+"допомогою нижче облікових даних."
+
+#: common/assets/translations.php:716
+msgctxt "admin"
+msgid ""
+"help: You can enter the link to Client Area page here, so user can be "
+"redirected to client-area..."
+msgstr ""
+"Підказка: Ви можете ввести посилання на сторінку Client Area тут, так що "
+"користувач може бути перенаправлений на клієнтську область ..."
+
+#: common/assets/translations.php:718 common/admin/pages/main.php:51
+msgctxt "admin"
+msgid ""
+"WCOP has beautifully designed order pages, which are feature-rich, user-"
+"friendly and functional. Users will not link to WHMCS anymore, and whole "
+"order process will complete on WordPress site including user login/ "
+"registration if needed."
+msgstr ""
+"WCOP красиво розроблений порядок сторінок, які наворочений, зручним і "
+"функціональним. Його користувачі не будуть посилатися на WHMCS більше, і "
+"весь процес замовлення буде завершено на WordPress сайті, включаючи вхід "
+"користувача / реєстрацію, якщо це необхідно."
+
+#: common/assets/translations.php:730
+msgctxt "menu"
+msgid "Services"
+msgstr "Послуги"
+
+#: common/assets/translations.php:732
+msgctxt "menu"
+msgid "Order New Services"
+msgstr "Замовлення нових послуг"
+
+#: common/assets/translations.php:733
+msgctxt "menu"
+msgid "View Available Addons"
+msgstr "Переглянути наявні додатки"
+
+#: common/assets/translations.php:734
+msgctxt "menu"
+msgid "Domains"
+msgstr "Домени"
+
+#: common/assets/translations.php:735
+msgctxt "menu"
+msgid "My Domains"
+msgstr "Мої Домени"
+
+#: common/assets/translations.php:736
+msgctxt "menu"
+msgid "Renew Domains"
+msgstr "Поновити домени"
+
+#: common/assets/translations.php:737
+msgctxt "menu"
+msgid "Register a new Domain"
+msgstr "Зареєструвати домен"
+
+#: common/assets/translations.php:738
+msgctxt "menu"
+msgid "Transfer Domains to Us"
+msgstr "Перенести домен до нас"
+
+#: common/assets/translations.php:739 common/assets/translations.php:740
+msgctxt "menu"
+msgid "Domain Search"
+msgstr "Domain Search"
+
+#: common/assets/translations.php:741
+msgctxt "menu"
+msgid "Billing"
+msgstr "Біллінг"
+
+#: common/assets/translations.php:742
+msgctxt "menu"
+msgid "My Invoices"
+msgstr "Мої рахунки"
+
+#: common/assets/translations.php:743
+msgctxt "menu"
+msgid "My Quotes"
+msgstr "Пропозиції/оцінки"
+
+#: common/assets/translations.php:744
+msgctxt "menu"
+msgid "Support"
+msgstr "Підтримка"
+
+#: common/assets/translations.php:745
+msgctxt "menu"
+msgid "Tickets"
+msgstr "Тікети"
+
+#: common/assets/translations.php:748
+msgctxt "menu"
+msgid "Downloads"
+msgstr "Файли"
+
+#: common/assets/translations.php:826
+#: common/shortcodes/order_process/03_summary.php:20
+msgid "Price/Cycle"
+msgstr "Ціна / цикл"
+
+#: common/assets/translations.php:827
+#: common/shortcodes/order_process/03_summary.php:5
+msgid "Review & Checkout"
+msgstr "Огляд і замовлення"
+
+#: common/assets/translations.php:830
+msgid "You did not enter your first name"
+msgstr "Ви не ввели ім'я"
+
+#: common/assets/translations.php:831
+msgid "You did not enter your last name"
+msgstr "Ви не ввели прізвище"
+
+#: common/assets/translations.php:832
+msgid "You did not enter your email address"
+msgstr "Ви не ввели свою адресу електронної пошти"
+
+#: common/assets/translations.php:833
+msgid "You did not enter your address (line 1)"
+msgstr "Ви не ввели адресу (рядок 1)"
+
+#: common/assets/translations.php:834
+msgid "You did not enter your city"
+msgstr "Ви не ввели своє місто"
+
+#: common/assets/translations.php:835
+msgid "You did not enter your state"
+msgstr "Ви не ввели свій стан"
+
+#: common/assets/translations.php:836
+msgid "You did not enter your postcode"
+msgstr "Ви не ввели свій поштовий індекс"
+
+#: common/assets/translations.php:837
+msgid "You did not enter your country"
+msgstr "Ви не ввели країну"
+
+#: common/assets/translations.php:838
+msgid "You did not enter your phone number"
+msgstr "Ви не вказали номер телефону"
+
+#: common/assets/translations.php:839
+msgid "You did not enter a password"
+msgstr "Ви не ввели пароль"
+
+#: common/assets/translations.php:840
+msgid "You did not confirm your password"
+msgstr "Ви не підтвердите свій пароль"
+
+#: common/assets/translations.php:841
+msgid "You are required to select a security question"
+msgstr "Вам необхідно вибрати секретне питання"
+
+#: common/assets/translations.php:842
+msgid "You are required to enter a security answer"
+msgstr "Вам необхідно ввести секретне питання"
+
+#: common/assets/translations.php:843
+msgid "You must accept our Terms of Service"
+msgstr "Ви повинні прийняти наші Загальні положення та умови"
+
+#: common/assets/translations.php:846 common/assets/translations.php:853
+msgid "No Records Found"
+msgstr "Записів не знайдено"
+
+#: common/assets/translations.php:851
+msgid "Loading..."
+msgstr "Loading ..."
+
+#: common/assets/translations.php:852
+msgid "Processing..."
+msgstr "Обробка ..."
+
+#: common/assets/translations.php:855
+msgid "Last"
+msgstr "останній"
+
+#: common/assets/translations.php:856
+msgid "Next"
+msgstr "наступного"
+
+#: common/assets/translations.php:857
+msgid "Previous"
+msgstr "Попередній"
+
+#: common/admin/pages/main.php:12
+msgctxt "admin"
+msgid ""
+"Welcome to common settings area for WHMPress - A WHMCS WP Integration Stack. "
+"This section holds settings that are shared between two or more components. "
+"Unlike framing existing WHMCS-WordPress integration solutions, our "
+"integration works in modules so every user can have as much integration as "
+"he needs."
+msgstr ""
+"Ласкаво просимо в загальній області налаштувань для WHMPress - A WHMCS WP "
+"інтеграції стека. Цей розділ містить параметри, які розділені між двома або "
+"більше компонентами. На відміну від існуючих кадрування Whmcs-WordPress "
+"інтеграційних рішень, наша інтеграція працює в модулях так що кожен "
+"користувач може мати стільки інтеграції, скільки йому потрібно."
+
+#: common/admin/pages/main.php:23
+msgctxt "admin"
+msgid ""
+"We have three components in this stack. Each component of the stack can work "
+"in collaboration with each other or individually"
+msgstr ""
+"У нас є три компонента в цьому стеку. Кожен компонент стека може працювати у "
+"співпраці один з одним або окремо"
+
+#: common/admin/pages/main.php:69
+msgctxt "admin"
+msgid ""
+"WCAP will bring client area to WordPress, this is the part that user will "
+"access after logging into to their WHMCS."
+msgstr ""
+"WCAP принесе клієнтську область в WordPress, це та частина, яка буде мати "
+"доступ користувач після входу в їх WHMCS."
+
+#: common/admin/pages/debug.php:99 common/admin/pages/debug.php:478
+msgid "Minimum Memory limit is "
+msgstr "Межа Мінімальна Пам'ять"
+
+#: common/admin/pages/debug.php:105 common/admin/pages/debug.php:484
+msgid "Recommended Memory Limit is "
+msgstr "Рекомендована межа пам'яті"
+
+#: common/admin/pages/debug.php:150
+msgid "Memory Limit WP:"
+msgstr "Обмеження пам'яті WP:"
+
+#: common/admin/pages/debug.php:172 common/admin/pages/debug.php:195
+#: common/admin/pages/debug.php:218
+msgid "Should not be exceeding "
+msgstr "Не повинно бути перевищення"
+
+#: common/admin/pages/debug.php:178 common/admin/pages/debug.php:201
+#: common/admin/pages/debug.php:224
+msgid "Recommended is below "
+msgstr "Рекомендовані нижче"
+
+#: common/admin/pages/debug.php:236
+msgid "Minimum required Helper version is "
+msgstr "Мінімальна версія необхідної Helper є"
+
+#: common/admin/pages/debug.php:242 common/admin/pages/debug.php:261
+#: common/admin/pages/debug.php:502
+msgid "Recommended is above "
+msgstr "рекомендується вище"
+
+#: common/admin/pages/debug.php:255
+msgid "Minimum Required WHMCS version is "
+msgstr "Мінімальна необхідна WHMCS версія"
+
+#: common/admin/pages/debug.php:310
+msgid "WHCOM is required"
+msgstr "WHCOM потрібно"
+
+#: common/admin/pages/debug.php:315
+msgid "WHCOM seems outdated, Minimum required is "
+msgstr "WHCOM здається застарілим, мінімум потрібно"
+
+#: common/admin/pages/debug.php:316 common/admin/pages/debug.php:321
+msgid "WHCOM path"
+msgstr "шлях WHCOM"
+
+#: common/admin/pages/debug.php:496
+msgid "Minimum Required PHP version is "
+msgstr "Мінімальна необхідна PHP версія"
+
+#: common/admin/pages/debug.php:522
+msgid "Memory Limit PHP:"
+msgstr "Обмеження пам'яті PHP:"
+
+#: common/admin/pages/debug.php:563
+msgid "cURL is required but not installed, "
+msgstr "Curl потрібно, але не встановлені,"
+
+#: common/shortcodes/order_process/03_summary.php:17
+msgid "Product/Options"
+msgstr "Продукт / Варіанти"
+
+#: common/shortcodes/order_process/03_summary.php:102
+msgid "Continue Shopping"
+msgstr "Продовжити покупки"
+
+#: common/shortcodes/order_process/04_checkout.php:40
+msgid "Please enter your personal details and billing information to checkout."
+msgstr ""
+"Будь ласка, введіть свої особисті дані та платіжну інформацію для перевірки."
+
+#: common/shortcodes/order_process/04_checkout.php:983
+msgid "Existing Customer Login"
+msgstr "Існуючий клієнт Логін"
+
+#: common/shortcodes/order_process/03_summary_generator.php:288
+msgid "Addon"
+msgstr "Додаток"
+
+#: common/shortcodes/order_process/03_summary_generator.php:380
+#: common/shortcodes/order_process/03_summary_generator_backup.php:308
+#: common/shortcodes/order_process/03_summary_generator_backup.php:374
+msgid "Domain "
+msgstr "домен"
+
+#: common/shortcodes/order_process/03_summary_generator.php:514
+msgid "One Time Discount"
+msgstr "одноразова Знижка"
+
+#: common/shortcodes/order_process/03_summary_generator.php:516
+msgid "Recurring Discount"
+msgstr "періодична Знижка"
+
+#: common/shortcodes/order_process/03_summary_generator.php:521
+msgid "Free Setup"
+msgstr "Безкоштовна установка"
+
+#: common/shortcodes/order_process/03_summary_generator.php:529
+msgid "Price Override"
+msgstr "Ціна Override"
+
+#: common/shortcodes/order_process/01_domains_config.php:32
+msgid "Domains Configuration"
+msgstr "конфігурація доменів"
+
+#: common/shortcodes/order_process/01_domains_config.php:35
+msgid ""
+"Please review your domain name selections and any addons that are available "
+"for them."
+msgstr ""
+"Будь ласка, ознайомтеся з вашим доменним ім'ям вибір і будь-які доповнення, "
+"які доступні для них."
+
+#: common/shortcodes/order_process/01_domain_config.php:15
+msgid "Registration Period"
+msgstr "терміни реєстрації"
+
+#: common/shortcodes/order_process/01_domain_config.php:44
+msgid "Has Hosting"
+msgstr "є хостинг"
+
+#: common/shortcodes/order_process/01_domain_config.php:50
+msgid "No Hosting! Click to Add"
+msgstr "Немає хостинг! Натисніть, щоб додати"
+
+#: common/shortcodes/order_process/02_product.php:26
+msgid "Product is not valid"
+msgstr "Продукт не є дійсним"
+
+#: common/shortcodes/order_process/02_product.php:164
+msgid "Free Domain is only available for following TLD's"
+msgstr "Безкоштовний домен доступний тільки для наступного ДВА"
+
+#. Name of the plugin
+msgid "WHMPress - WHMCS Client Area"
+msgstr "WHMPress - WHMCS Client Area"
+
+#. Description of the plugin
+msgid ""
+"WHMCS Client Area using API (WCAP) for WordPress impliments WHMCS Client "
+"Area within WordPress using API. It uses WHMCS API and Extended API called "
+"WHMPress Helper."
+msgstr ""
+"WHMCS Область клієнта з використанням API (WCAP) для WordPress impliments "
+"WHMCS Області клієнта в WordPress за допомогою API. Він використовує WHMCS "
+"API і розширений API під назвою WHMPress Helper."
+
+#. URI of the plugin
+msgid "http://WHMpress.com"
+msgstr "http://WHMpress.com (Http://WHMpress.com)"
+
+#. Author of the plugin
+msgid "creativeON"
+msgstr "CreativeON"
+
+#. Author URI of the plugin
+msgid "http://creativeon.com"
+msgstr "http://creativeon.com (Http://creativeon.com)"

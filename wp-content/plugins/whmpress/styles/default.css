@@ -1,0 +1,1786 @@
+/***********************************************************
+/***********************************************************
+	General Styles Common for all themes
+***********************************************************/
+/***********************************************************
+      Section: Definitions
+***********************************************************/
+.whmpBoxShadow {
+  box-shadow: 0 0 0 4px #eee inset, 0 0 0 5px #ddd inset;
+  border: 6px solid transparent;
+  border-radius: 20px;
+}
+.whmpInputStyles {
+  outline: 0;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 2px solid #ddd;
+}
+.whmpBtnStyles {
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+  height: auto;
+  background: #fb4400;
+  transition: background 0.5s ease-in-out;
+  display: inline-block;
+}
+.whmpBtnStyles:visited,
+.whmpBtnStyles:hover,
+.whmpBtnStyles:active {
+  color: #fff;
+}
+.whmpBtnStyles:hover {
+  background: #c83600;
+}
+/***********************************************************
+      Section: General Styling
+***********************************************************/
+.whmpress {
+  color: #333;
+  max-width: 100%;
+  font-size: 16px;
+  line-height: 1.4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.whmpress *,
+.whmpress *:before,
+.whmpress *:after,
+.whmpress input[type="search"] {
+  box-sizing: border-box;
+}
+.whmpress a {
+  cursor: pointer;
+  color: #fb4400;
+  text-decoration: none;
+}
+.whmpress a:hover {
+  color: #c83600;
+}
+.whmpress ul,
+.whmpress ol,
+.whmpress ul li,
+.whmpress ol li {
+  margin: 0;
+  padding: 0;
+}
+.whmpress ul,
+.whmpress ul li {
+  list-style: none;
+}
+.whmpress button,
+.whmpress a.whmpress-btn,
+.whmpress a.buy-button,
+.whmpress a.www-button,
+.whmpress a.whois-button,
+.whmpress a.whmpress_order_button,
+.whmpress input[type="submit"] {
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+  height: auto;
+  background: #fb4400;
+  transition: background 0.5s ease-in-out;
+  display: inline-block;
+}
+.whmpress button:visited,
+.whmpress a.whmpress-btn:visited,
+.whmpress a.buy-button:visited,
+.whmpress a.www-button:visited,
+.whmpress a.whois-button:visited,
+.whmpress a.whmpress_order_button:visited,
+.whmpress input[type="submit"]:visited,
+.whmpress button:hover,
+.whmpress a.whmpress-btn:hover,
+.whmpress a.buy-button:hover,
+.whmpress a.www-button:hover,
+.whmpress a.whois-button:hover,
+.whmpress a.whmpress_order_button:hover,
+.whmpress input[type="submit"]:hover,
+.whmpress button:active,
+.whmpress a.whmpress-btn:active,
+.whmpress a.buy-button:active,
+.whmpress a.www-button:active,
+.whmpress a.whois-button:active,
+.whmpress a.whmpress_order_button:active,
+.whmpress input[type="submit"]:active {
+  color: #fff;
+}
+.whmpress button:hover,
+.whmpress a.whmpress-btn:hover,
+.whmpress a.buy-button:hover,
+.whmpress a.www-button:hover,
+.whmpress a.whois-button:hover,
+.whmpress a.whmpress_order_button:hover,
+.whmpress input[type="submit"]:hover {
+  background: #c83600;
+}
+.whmpress input[type="radio"],
+.whmpress input[type="checkbox"] {
+  vertical-align: middle;
+  margin: 0;
+}
+.whmpress input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]),
+.whmpress select,
+.whmpress textarea {
+  outline: 0;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 2px solid #ddd;
+}
+.whmpress input[type="search"] {
+  -webkit-appearance: textfield;
+}
+/***********************************************************
+      Section: WHMPress Tooltip
+***********************************************************/
+.whmpress_has_tooltip {
+  cursor: help;
+  z-index: 99;
+  -webkit-transform: translateZ(0);
+  /* webkit flicker fix */
+  -webkit-font-smoothing: antialiased;
+  /* webkit text rendering fix */
+}
+.whmpress_has_tooltip .whmpress_tooltip {
+  background: orange;
+  top: 0;
+  right: -100%;
+  color: #fff;
+  display: block;
+  margin-bottom: 15px;
+  opacity: 0;
+  padding: 20px;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  transform: translateX(10px);
+  transition: all 0.25s ease-out;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+}
+.whmpress_has_tooltip .whmpress_tooltip:before {
+  content: " ";
+  display: block;
+  width: 40px;
+  left: -40px;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+.whmpress_has_tooltip .whmpress_tooltip:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 20px 10px;
+  border-color: transparent orange transparent transparent;
+  left: -40px;
+  top: 10px;
+}
+.whmpress_has_tooltip:hover .whmpress_tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0px);
+}
+/* IE can just show/hide with no transition */
+.lte8 .wrapper .whmpress_tooltip {
+  display: none;
+}
+.lte8 .wpct_has_tooltip:hover .whmpress_tooltip {
+  display: block;
+}
+/***********************************************************
+      Section: WHMPress Order Button
+***********************************************************/
+.whmpress_order_button {
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+  height: auto;
+  background: #fb4400;
+  transition: background 0.5s ease-in-out;
+  display: inline-block;
+}
+.whmpress_order_button:visited,
+.whmpress_order_button:hover,
+.whmpress_order_button:active {
+  color: #fff;
+}
+.whmpress_order_button:hover {
+  background: #c83600;
+}
+/***********************************************************
+      Section: WHMP Drop-Down
+***********************************************************/
+.whmp_dropdown_outer {
+  position: relative;
+}
+.whmp_dropdown_outer .whmp_dropdown_toggle {
+  cursor: pointer;
+}
+.whmp_dropdown_outer .whmp_dropdown_inner {
+  display: none;
+}
+.whmp_dropdown_outer.active .whmp_dropdown_inner {
+  display: block;
+}
+/***********************************************************
+      Section: WHMPress Order Combo
+***********************************************************/
+.whmpress_order_combo form {
+  display: flex;
+}
+.whmpress_order_combo form select {
+  margin-right: 10px;
+  width: 100%;
+}
+.whmpress_order_combo form button {
+  width: 20%;
+  min-width: 120px;
+}
+@media only screen and (max-width: 480px) {
+  .whmpress_order_combo form {
+    display: block;
+  }
+  .whmpress_order_combo form select {
+    margin: 0 0 10px;
+    width: 100%;
+  }
+  .whmpress_order_combo form button {
+    width: 100%;
+  }
+}
+/***********************************************************
+    Section: WHMPress Price Matrix and Domain Matrix
+***********************************************************/
+.whmpress_price_matrix,
+.whmpress_price_matrix_domain {
+  overflow-x: auto;
+}
+.whmpress_price_matrix input,
+.whmpress_price_matrix_domain input {
+  margin-bottom: 15px;
+}
+.whmpress_price_matrix table,
+.whmpress_price_matrix_domain table {
+  width: 100%;
+  border-collapse: collapse;
+  vertical-align: middle;
+}
+.whmpress_price_matrix table tr,
+.whmpress_price_matrix_domain table tr {
+  height: 50px;
+  border: 0;
+}
+.whmpress_price_matrix table td,
+.whmpress_price_matrix_domain table td,
+.whmpress_price_matrix table th,
+.whmpress_price_matrix_domain table th {
+  vertical-align: middle;
+  padding: 8px;
+  border: 0;
+}
+.whmpress_price_matrix table th,
+.whmpress_price_matrix_domain table th {
+  background: #333;
+  color: #fff;
+}
+.whmpress_price_matrix table thead tr,
+.whmpress_price_matrix_domain table thead tr {
+  height: 60px;
+}
+.whmpress_price_matrix table tr:nth-of-type(odd),
+.whmpress_price_matrix_domain table tr:nth-of-type(odd) {
+  background: #eee !important;
+}
+.whmpress_price_matrix table tr:nth-of-type(even),
+.whmpress_price_matrix_domain table tr:nth-of-type(even) {
+  background: #fff;
+}
+.whmpress_price_matrix table button,
+.whmpress_price_matrix_domain table button {
+  margin-bottom: 0;
+}
+.whmpress_price_matrix input,
+.whmpress_price_matrix_domain input {
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 640px) {
+  .whmpress table,
+  .whmpress tbody,
+  .whmpress tbody tr,
+  .whmpress td {
+    display: block;
+    height: auto;
+  }
+  .whmpress table thead {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {
+    border: 1px solid #ccc;
+  }
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+  td[data-content]:before {
+    content: attr(data-content) ": ";
+    display: inline-block;
+    font-weight: bold;
+    width: 45%;
+  }
+  td:not([data-content]) {
+    text-align: center;
+  }
+}
+/***********************************************************
+    Section: WHMPress Domain Price Matrix
+***********************************************************/
+.whmpress_price_matrix_domain.style_1 {
+  margin: 0 auto;
+}
+.whmpress_price_matrix_domain.style_1 table thead tr {
+  height: 30px;
+}
+.whmpress_price_matrix_domain.style_1 .whmpress_price_matrix_header {
+  background: #ddd;
+  padding: 15px 10px;
+}
+.whmpress_price_matrix_domain.style_1 .whmp_domain_search_container,
+.whmpress_price_matrix_domain.style_1 .whmp_domain_type_toggle_container,
+.whmpress_price_matrix_domain.style_1 .whmp_domain_special_toggle_container {
+  float: left;
+  width: 33.33%;
+  margin-bottom: 10px;
+}
+.whmpress_price_matrix_domain.style_1 .whmp_domain_search_container label,
+.whmpress_price_matrix_domain.style_1 .whmp_domain_type_toggle_container label,
+.whmpress_price_matrix_domain.style_1 .whmp_domain_special_toggle_container label {
+  font-weight: normal;
+  margin-right: 5px;
+  display: inline-block;
+  min-width: 50px;
+}
+.whmpress_price_matrix_domain.style_1 .whmp_domain_search_container input[type="search"],
+.whmpress_price_matrix_domain.style_1 .whmp_domain_type_toggle_container input[type="search"],
+.whmpress_price_matrix_domain.style_1 .whmp_domain_special_toggle_container input[type="search"] {
+  margin-bottom: 0;
+  height: 30px;
+  padding: 2px 10px;
+  border: 1px solid #333;
+  border-radius: 0;
+  font-size: 14px;
+}
+.whmpress_price_matrix_domain.style_1 .whmp_domain_type_toggle_container .whmp_domain_type_toggle {
+  background: #333;
+  color: white;
+  cursor: pointer;
+  padding: 6px;
+  font-size: 14px;
+  margin-right: 5px;
+  display: inline-block;
+}
+.whmpress_price_matrix_domain.style_1 .whmp_domain_special_toggle_container .whmp_domain_special_toggle {
+  background: #333;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 6px;
+  margin-right: 5px;
+  display: inline-block;
+}
+.whmpress_price_matrix_domain.style_1 .duration_plus,
+.whmpress_price_matrix_domain.style_1 .duration_minus {
+  background: white;
+  margin: 0 5px;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 18px;
+  padding: 0;
+  text-align: center;
+}
+.whmpress_price_matrix_domain.style_1 .duration_minus {
+  line-height: 15px;
+}
+.whmpress_price_matrix_domain.style_1 tr {
+  text-align: center;
+}
+.whmpress_price_matrix_domain.style_1 tr .whmp_domain {
+  position: relative;
+  text-align: left;
+}
+.whmpress_price_matrix_domain.style_1 tr .whmp_domain span.whmp_special,
+.whmpress_price_matrix_domain.style_1 tr .whmp_domain span.whmp_promo,
+.whmpress_price_matrix_domain.style_1 tr .whmp_domain span.whmp_dropdown_toggle {
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  background: #666;
+  padding: 2px 6px 3px;
+  line-height: 12px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  float: right;
+  margin-right: 5px;
+}
+.whmpress_price_matrix_domain.style_1 tr .whmp_domain span.whmp_special.whmp_hot,
+.whmpress_price_matrix_domain.style_1 tr .whmp_domain span.whmp_promo.whmp_hot,
+.whmpress_price_matrix_domain.style_1 tr .whmp_domain span.whmp_dropdown_toggle.whmp_hot {
+  background: green;
+}
+.whmpress_price_matrix_domain.style_1 tr .whmp_domain span.whmp_special.whmp_new,
+.whmpress_price_matrix_domain.style_1 tr .whmp_domain span.whmp_promo.whmp_new,
+.whmpress_price_matrix_domain.style_1 tr .whmp_domain span.whmp_dropdown_toggle.whmp_new {
+  background: darkblue;
+}
+.whmpress_price_matrix_domain.style_1 tr .whmp_domain span.whmp_special.whmp_promo,
+.whmpress_price_matrix_domain.style_1 tr .whmp_domain span.whmp_promo.whmp_promo,
+.whmpress_price_matrix_domain.style_1 tr .whmp_domain span.whmp_dropdown_toggle.whmp_promo {
+  background: red;
+  text-transform: none;
+}
+.whmpress_price_matrix_domain.style_1 tr .whmp_domain span.whmp_special.whmp_sale,
+.whmpress_price_matrix_domain.style_1 tr .whmp_domain span.whmp_promo.whmp_sale,
+.whmpress_price_matrix_domain.style_1 tr .whmp_domain span.whmp_dropdown_toggle.whmp_sale {
+  background: purple;
+}
+.whmpress_price_matrix_domain.style_1 tr .whmp_domain span.whmp_special.whmp_none,
+.whmpress_price_matrix_domain.style_1 tr .whmp_domain span.whmp_promo.whmp_none,
+.whmpress_price_matrix_domain.style_1 tr .whmp_domain span.whmp_dropdown_toggle.whmp_none {
+  display: none;
+}
+.whmpress_price_matrix_domain.style_1 tr .whmp_type {
+  text-align: left;
+}
+.whmpress_price_matrix_domain.style_1 tr .whmp_price .whmp_show_price {
+  text-decoration: line-through;
+  padding: 0 5px;
+}
+.whmpress_price_matrix_domain.style_1 .whmp_dropdown_outer {
+  position: static;
+  float: right;
+}
+.whmpress_price_matrix_domain.style_1 .whmp_dropdown_outer .whmp_dropdown_toggle {
+  text-transform: none !important;
+  padding-right: 18px;
+}
+.whmpress_price_matrix_domain.style_1 .whmp_dropdown_outer .whmp_dropdown_toggle:after {
+  content: "\f078";
+  font-size: 0.8em;
+  font-family: FontAwesome;
+  line-height: 1;
+  padding: 0 1px 1px;
+  margin-top: -1px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+}
+.whmpress_price_matrix_domain.style_1 .whmp_dropdown_outer .whmp_dropdown_inner {
+  position: absolute;
+  top: 100%;
+  right: 13px;
+  text-align: right;
+  padding: 10px;
+  width: auto;
+  z-index: 999;
+  border-radius: 6px;
+  margin-top: -15px;
+  background: #666;
+  color: white;
+}
+.whmpress_price_matrix_domain.style_1 .whmp_dropdown_outer .whmp_dropdown_inner li {
+  position: relative;
+  padding-right: 80px;
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+.whmpress_price_matrix_domain.style_1 .whmp_dropdown_outer .whmp_dropdown_inner li .whmp_addon_price {
+  line-height: inherit;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: right;
+  font-weight: bold;
+}
+.whmpress_price_matrix_domain.style_1 .whmp_dropdown_outer.active .whmp_dropdown_toggle:after {
+  content: "\f077";
+}
+@media (max-width: 980px) {
+  .whmpress_price_matrix_domain.style_1 .whmp_domain_search_container,
+  .whmpress_price_matrix_domain.style_1 .whmp_domain_type_toggle_container,
+  .whmpress_price_matrix_domain.style_1 .whmp_domain_special_toggle_container {
+    float: none;
+    width: 100%;
+  }
+  .whmpress_price_matrix_domain.style_1 .whmp_domain_search_container label,
+  .whmpress_price_matrix_domain.style_1 .whmp_domain_type_toggle_container label,
+  .whmpress_price_matrix_domain.style_1 .whmp_domain_special_toggle_container label {
+    min-width: 80px;
+  }
+}
+/***********************************************************
+    Section: WHMPress Price Box
+***********************************************************/
+.whmpress_price_box {
+  box-shadow: 0 0 0 4px #eee inset, 0 0 0 5px #ddd inset;
+  border: 6px solid transparent;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: left;
+  max-width: 600px;
+}
+.whmpress_price_box h3 {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid #eee;
+}
+.whmpress_price_box .style1_wrapper {
+  display: flex;
+}
+.whmpress_price_box .style1_left,
+.whmpress_price_box .style1_right {
+  padding-top: 10px;
+  width: 50%;
+}
+.whmpress_price_box ul,
+.whmpress_price_box ol {
+  padding: 0 0 20px;
+  margin: 0;
+  min-width: 250px;
+  text-align: left;
+}
+.whmpress_price_box li {
+  padding: 0 0 5px;
+  list-style: none;
+}
+.whmpress_price_box .style1_right {
+  text-align: center;
+}
+.whmpress_price_box h2 {
+  border-bottom: 1px solid #ddd;
+}
+.whmpress_price_box .whmpress_order_combo,
+.whmpress_price_box h2 {
+  margin: 0 auto 10px;
+  padding: 0;
+}
+.whmpress_price_box .whmpress_order_combo form {
+  display: block;
+}
+.whmpress_price_box .whmpress_order_combo form select {
+  width: 100%;
+  margin: 0;
+}
+.whmpress_price_box .whmpress_price {
+  color: #fb4400;
+}
+.whmpress_price_box button {
+  margin: 10px 0 0;
+  width: 90%;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 640px) {
+  .whmpress_price_box .style1_wrapper {
+    display: block;
+  }
+  .whmpress_price_box .style1_left,
+  .whmpress_price_box .style1_right {
+    width: 90%;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+}
+/***********************************************************
+    Section: WHMPress Pricing Table
+***********************************************************/
+.whmpress_pricing_table {
+  box-shadow: 0 0 0 4px #eee inset, 0 0 0 5px #ddd inset;
+  border: 6px solid transparent;
+  border-radius: 20px;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+.whmpress_pricing_table ul {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0 0;
+  border-top: 1px solid #ddd;
+}
+.whmpress_pricing_table ul li {
+  width: 100%;
+  padding: 5px 0;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+  list-style: none;
+}
+.whmpress_pricing_table ul li:last-child {
+  border-bottom: 0;
+}
+.whmpress_pricing_table h4 {
+  width: 100%;
+  border-top: 1px solid #ddd;
+  margin: 0;
+  padding: 20px 0 10px;
+}
+.whmpress_pricing_table .whmpress_order_combo form {
+  display: block;
+}
+.whmpress_pricing_table .whmpress_order_combo form select,
+.whmpress_pricing_table .whmpress_order_combo form button {
+  display: block;
+  width: 90%;
+  margin: 0 auto 15px;
+}
+.whmpress_pricing_table .whmpress_order_button {
+  width: 90%;
+  display: inline-block;
+}
+.whmpress_pricing_table .whmpress_has_tooltip {
+  cursor: help;
+  z-index: 99;
+  -webkit-transform: translateZ(0);
+  /* webkit flicker fix */
+  -webkit-font-smoothing: antialiased;
+  /* webkit text rendering fix */
+}
+.whmpress_pricing_table .whmpress_has_tooltip .whmpress_tooltip {
+  background: #fb4400;
+  top: auto;
+  right: 0;
+  left: 0;
+  bottom: 100%;
+  color: #fff;
+  display: block;
+  margin-bottom: 15px;
+  opacity: 0;
+  padding: 20px;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  transform: translateY(10px);
+  transition: all 0.25s ease-out;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+}
+.whmpress_pricing_table .whmpress_has_tooltip .whmpress_tooltip:before {
+  content: " ";
+  display: block;
+  width: 40px;
+  left: -40px;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+.whmpress_pricing_table .whmpress_has_tooltip .whmpress_tooltip:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #fb4400 transparent transparent transparent;
+  left: 50%;
+  top: 100%;
+  margin-left: -10px;
+}
+.whmpress_pricing_table .whmpress_has_tooltip:hover .whmpress_tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0px);
+}
+/***********************************************************
+    Section: WHMPress Domain Search
+***********************************************************/
+.whmpress_domain_search form {
+  display: flex;
+  line-height: 2;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.whmpress_domain_search form div input,
+.whmpress_domain_search form div select {
+  width: 100%;
+  font-size: 18px;
+  height: 56px;
+}
+.whmpress_domain_search form div input#search_domain {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.whmpress_domain_search form div input[type="submit"] {
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  height: 56px;
+}
+.whmpress_domain_search form div select {
+  border-radius: 0;
+  text-align: right;
+  border-right: 0;
+  border-left: 0;
+  width: auto;
+}
+.whmpress_domain_search form div.search_div {
+  width: 100%;
+}
+.whmpress_domain_search form div.submit_div {
+  width: 25%;
+  min-width: 120px;
+}
+@media only screen and (max-width: 480px) {
+  .whmpress_domain_search form {
+    display: block;
+    padding: 10px;
+  }
+  .whmpress_domain_search form div {
+    margin-bottom: 10px;
+  }
+  .whmpress_domain_search form div,
+  .whmpress_domain_search form input,
+  .whmpress_domain_search form select {
+    width: 100% !important;
+  }
+  .whmpress_domain_search form input[type="search"],
+  .whmpress_domain_search form select {
+    outline: 0 !important;
+    padding: 8px 10px !important;
+    border-radius: 4px !important;
+    border: 2px solid #ddd !important;
+  }
+  .whmpress_domain_search form input[type="submit"] {
+    border-radius: 4px !important;
+  }
+}
+/***********************************************************
+    Section: WHMPress Domain Search Ajax Form
+***********************************************************/
+.whmpress_domain_search_ajax form {
+  display: flex;
+  font-size: 18px;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.whmpress_domain_search_ajax form input#search_box {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-right: 0;
+  height: 56px;
+  width: 80%;
+}
+.whmpress_domain_search_ajax form button {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  width: 20%;
+  height: 56px;
+}
+@media only screen and (max-width: 480px) {
+  .whmpress_domain_search_ajax form {
+    display: block;
+  }
+  .whmpress_domain_search_ajax form input,
+  .whmpress_domain_search_ajax form button {
+    width: 100% !important;
+  }
+  .whmpress_domain_search_ajax form input[type="search"] {
+    outline: 0 !important;
+    padding: 8px 10px !important;
+    border-radius: 4px !important;
+    border: 2px solid #ddd !important;
+    margin-bottom: 10px;
+  }
+  .whmpress_domain_search_ajax form button {
+    border-radius: 4px !important;
+  }
+}
+/***********************************************************
+    Section: WHMPress Domain Search Ajax Results
+***********************************************************/
+.whmpress_domain_search_ajax_results .found-title,
+.whmpress_domain_search_bulk .found-title,
+.whmpress_domain_search_ajax_results .not-found-title,
+.whmpress_domain_search_bulk .not-found-title,
+.whmpress_domain_search_ajax_results .found-div,
+.whmpress_domain_search_bulk .found-div,
+.whmpress_domain_search_ajax_results .not-found-div,
+.whmpress_domain_search_bulk .not-found-div,
+.whmpress_domain_search_ajax_results .recommended,
+.whmpress_domain_search_bulk .recommended {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  min-height: 64px;
+  border-bottom: 1px solid #eee;
+}
+.whmpress_domain_search_ajax_results .found-title .domain-name,
+.whmpress_domain_search_bulk .found-title .domain-name,
+.whmpress_domain_search_ajax_results .not-found-title .domain-name,
+.whmpress_domain_search_bulk .not-found-title .domain-name,
+.whmpress_domain_search_ajax_results .found-div .domain-name,
+.whmpress_domain_search_bulk .found-div .domain-name,
+.whmpress_domain_search_ajax_results .not-found-div .domain-name,
+.whmpress_domain_search_bulk .not-found-div .domain-name,
+.whmpress_domain_search_ajax_results .recommended .domain-name,
+.whmpress_domain_search_bulk .recommended .domain-name {
+  width: 50%;
+}
+.whmpress_domain_search_ajax_results .found-title .domain-name b,
+.whmpress_domain_search_bulk .found-title .domain-name b,
+.whmpress_domain_search_ajax_results .not-found-title .domain-name b,
+.whmpress_domain_search_bulk .not-found-title .domain-name b,
+.whmpress_domain_search_ajax_results .found-div .domain-name b,
+.whmpress_domain_search_bulk .found-div .domain-name b,
+.whmpress_domain_search_ajax_results .not-found-div .domain-name b,
+.whmpress_domain_search_bulk .not-found-div .domain-name b,
+.whmpress_domain_search_ajax_results .recommended .domain-name b,
+.whmpress_domain_search_bulk .recommended .domain-name b {
+  display: block;
+}
+.whmpress_domain_search_ajax_results .found-title .rate,
+.whmpress_domain_search_bulk .found-title .rate,
+.whmpress_domain_search_ajax_results .not-found-title .rate,
+.whmpress_domain_search_bulk .not-found-title .rate,
+.whmpress_domain_search_ajax_results .found-div .rate,
+.whmpress_domain_search_bulk .found-div .rate,
+.whmpress_domain_search_ajax_results .not-found-div .rate,
+.whmpress_domain_search_bulk .not-found-div .rate,
+.whmpress_domain_search_ajax_results .recommended .rate,
+.whmpress_domain_search_bulk .recommended .rate,
+.whmpress_domain_search_ajax_results .found-title .year,
+.whmpress_domain_search_bulk .found-title .year,
+.whmpress_domain_search_ajax_results .not-found-title .year,
+.whmpress_domain_search_bulk .not-found-title .year,
+.whmpress_domain_search_ajax_results .found-div .year,
+.whmpress_domain_search_bulk .found-div .year,
+.whmpress_domain_search_ajax_results .not-found-div .year,
+.whmpress_domain_search_bulk .not-found-div .year,
+.whmpress_domain_search_ajax_results .recommended .year,
+.whmpress_domain_search_bulk .recommended .year {
+  min-width: 100px;
+}
+.whmpress_domain_search_ajax_results .found-title .select-box,
+.whmpress_domain_search_bulk .found-title .select-box,
+.whmpress_domain_search_ajax_results .not-found-title .select-box,
+.whmpress_domain_search_bulk .not-found-title .select-box,
+.whmpress_domain_search_ajax_results .found-div .select-box,
+.whmpress_domain_search_bulk .found-div .select-box,
+.whmpress_domain_search_ajax_results .not-found-div .select-box,
+.whmpress_domain_search_bulk .not-found-div .select-box,
+.whmpress_domain_search_ajax_results .recommended .select-box,
+.whmpress_domain_search_bulk .recommended .select-box {
+  margin-left: auto;
+  text-align: center;
+}
+.whmpress_domain_search_ajax_results .found-title .select-box a,
+.whmpress_domain_search_bulk .found-title .select-box a,
+.whmpress_domain_search_ajax_results .not-found-title .select-box a,
+.whmpress_domain_search_bulk .not-found-title .select-box a,
+.whmpress_domain_search_ajax_results .found-div .select-box a,
+.whmpress_domain_search_bulk .found-div .select-box a,
+.whmpress_domain_search_ajax_results .not-found-div .select-box a,
+.whmpress_domain_search_bulk .not-found-div .select-box a,
+.whmpress_domain_search_ajax_results .recommended .select-box a,
+.whmpress_domain_search_bulk .recommended .select-box a {
+  display: inline-block;
+  margin: 5px;
+}
+.whmpress_domain_search_ajax_results .not-found-title .rate,
+.whmpress_domain_search_bulk .not-found-title .rate,
+.whmpress_domain_search_ajax_results .not-found-div .rate,
+.whmpress_domain_search_bulk .not-found-div .rate,
+.whmpress_domain_search_ajax_results .not-found-title .year,
+.whmpress_domain_search_bulk .not-found-title .year,
+.whmpress_domain_search_ajax_results .not-found-div .year,
+.whmpress_domain_search_bulk .not-found-div .year {
+  display: none;
+}
+.whmpress_domain_search_ajax_results .recommended,
+.whmpress_domain_search_bulk .recommended {
+  justify-content: center;
+}
+.whmpress_domain_search_ajax_results .load-more-div,
+.whmpress_domain_search_bulk .load-more-div {
+  padding: 10px;
+  text-align: center;
+}
+.whmp-not-valid-name {
+  padding-top: 5px;
+  color: red;
+}
+@media only screen and (max-width: 768px) {
+  .whmpress_domain_search_ajax_results .found-title,
+  .whmpress_domain_search_ajax_results .not-found-title,
+  .whmpress_domain_search_ajax_results .found-div,
+  .whmpress_domain_search_ajax_results .not-found-div,
+  .whmpress_domain_search_ajax_results .recommended {
+    flex-direction: column;
+    text-align: center;
+  }
+  .whmpress_domain_search_ajax_results .found-title div[style="clear:both"],
+  .whmpress_domain_search_ajax_results .not-found-title div[style="clear:both"],
+  .whmpress_domain_search_ajax_results .found-div div[style="clear:both"],
+  .whmpress_domain_search_ajax_results .not-found-div div[style="clear:both"],
+  .whmpress_domain_search_ajax_results .recommended div[style="clear:both"] {
+    display: none !important;
+  }
+  .whmpress_domain_search_ajax_results .found-title .select-box,
+  .whmpress_domain_search_ajax_results .not-found-title .select-box,
+  .whmpress_domain_search_ajax_results .found-div .select-box,
+  .whmpress_domain_search_ajax_results .not-found-div .select-box,
+  .whmpress_domain_search_ajax_results .recommended .select-box {
+    margin-right: auto;
+  }
+}
+/***********************************************************
+    Section: WHMPress Domain Search Ajax Results (template)
+***********************************************************/
+.whmp_domain_search_ajax_results {
+  padding-top: 60px;
+}
+.whmp_domain_search_ajax_results .whmp_search_ajax_title {
+  padding: 20px;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 20px;
+  border-radius: 6px;
+}
+.whmp_domain_search_ajax_results .whmp_search_ajax_title .whmp_search_ajax_domain {
+  font-size: 2.5em;
+  font-weight: bold;
+  word-break: break-all;
+}
+.whmp_domain_search_ajax_results .whmp_search_ajax_title .whmp_search_ajax_buttons a {
+  cursor: pointer;
+  padding: 8px 15px;
+  color: #fff;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+.whmp_domain_search_ajax_results .whmp_search_ajax_title.whmp_found_title {
+  background: #bfd6c1;
+  color: #3a573d;
+  border-top: 6px solid #3a573d;
+}
+.whmp_domain_search_ajax_results .whmp_search_ajax_title.whmp_found_title .whmp_search_ajax_buttons a {
+  cursor: pointer;
+  background: #3a573d;
+  border-color: #5a775d;
+}
+.whmp_domain_search_ajax_results .whmp_search_ajax_title.whmp_not_found_title {
+  background: #f7c6c6;
+  color: #4A2929;
+  border-top: 6px solid #4A2929;
+}
+.whmp_domain_search_ajax_results .whmp_search_ajax_title.whmp_not_found_title .whmp_search_ajax_buttons a {
+  cursor: pointer;
+  background: #4A2929;
+  border-color: #6A4949;
+}
+.whmp_domain_search_ajax_results .whmp_search_ajax_result {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  border-radius: 3px;
+  margin: 0 0 15px;
+  align-items: center;
+}
+.whmp_domain_search_ajax_results .whmp_search_ajax_result li {
+  list-style: none;
+}
+.whmp_domain_search_ajax_results .whmp_search_ajax_result .whmp_icon {
+  margin-right: 10px;
+}
+.whmp_domain_search_ajax_results .whmp_search_ajax_result .whmp_domain {
+  width: 40%;
+}
+.whmp_domain_search_ajax_results .whmp_search_ajax_result .whmp_domain strong {
+  display: block;
+  margin-right: 10px;
+}
+.whmp_domain_search_ajax_results .whmp_search_ajax_result .whmp_domain_price {
+  width: 15%;
+}
+.whmp_domain_search_ajax_results .whmp_search_ajax_result .whmp_duration {
+  width: 15%;
+}
+.whmp_domain_search_ajax_results .whmp_search_ajax_result .whmp_search_ajax_buttons {
+  width: 20%;
+  min-width: 150px;
+  text-align: right;
+}
+.whmp_domain_search_ajax_results .whmp_search_ajax_result .whmp_search_ajax_buttons a {
+  padding: 8px 15px;
+  color: #fff;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+.whmp_domain_search_ajax_results .whmp_found_result {
+  background: #bfd6c1;
+  color: #3a573d;
+  border-left: 3px solid #3a573d;
+}
+.whmp_domain_search_ajax_results .whmp_found_result .whmp_search_ajax_buttons a {
+  cursor: pointer;
+  background: #3a573d;
+  border-color: #5a775d;
+}
+.whmp_domain_search_ajax_results .whmp_not_found_result {
+  background: #f7c6c6;
+  color: #4A2929;
+  border-left: 3px solid #4A2929;
+}
+.whmp_domain_search_ajax_results .whmp_not_found_result .whmp_duration {
+  display: none;
+}
+.whmp_domain_search_ajax_results .whmp_not_found_result .whmp_search_ajax_buttons {
+  width: 35%;
+  min-width: 150px;
+}
+.whmp_domain_search_ajax_results .whmp_not_found_result .whmp_search_ajax_buttons a {
+  background: #4A2929;
+  border-color: #6A4949;
+}
+.whmp_domain_search_ajax_results .load-more-div {
+  padding: 10px;
+  text-align: center;
+}
+.whmp_domain_search_ajax_results .load-more-div button {
+  padding: 8px 15px;
+  color: #fff;
+  border-radius: 6px;
+  border: 1px solid #5a775d;
+  display: inline-block;
+  background: #3a573d;
+}
+.whmp_domain_search_ajax_results .load-more-div button:hover {
+  background: #304832;
+}
+.whmp_domain_search_ajax_results .whmp_loading_div {
+  text-align: center;
+  font-size: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .whmp_domain_search_ajax_results .whmp_search_ajax_result {
+    text-align: center;
+  }
+  .whmp_domain_search_ajax_results .whmp_search_ajax_result li {
+    margin-bottom: 15px;
+  }
+  .whmp_domain_search_ajax_results .whmp_search_ajax_result .whmp_icon {
+    display: none;
+  }
+  .whmp_domain_search_ajax_results .whmp_search_ajax_result .whmp_domain {
+    width: 100%;
+  }
+  .whmp_domain_search_ajax_results .whmp_search_ajax_result .whmp_duration,
+  .whmp_domain_search_ajax_results .whmp_search_ajax_result .whmp_domain_price {
+    display: block;
+    width: 50%;
+    padding: 0 10px;
+    text-align: left;
+  }
+  .whmp_domain_search_ajax_results .whmp_search_ajax_result .whmp_domain_price {
+    text-align: right;
+  }
+  .whmp_domain_search_ajax_results .whmp_search_ajax_result .whmp_search_ajax_buttons {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .whmp_domain_search_ajax_results .whmp_search_ajax_title .whmp_search_ajax_domain {
+    font-size: 1.5em;
+  }
+  .whmp_domain_search_ajax_results .whmp_search_ajax_result .whmp_icon {
+    margin-right: 10px;
+  }
+  .whmp_domain_search_ajax_results .whmp_search_ajax_result .whmp_domain {
+    width: 100%;
+  }
+  .whmp_domain_search_ajax_results .whmp_search_ajax_result .whmp_search_ajax_buttons {
+    width: 100%;
+    min-width: 150px;
+  }
+}
+/***********************************************************
+    Section: WHMPress Domain Search Bulk
+***********************************************************/
+.whmpress_domain_search_bulk form {
+  display: flex;
+}
+.whmpress_domain_search_bulk form .bulk-domains,
+.whmpress_domain_search_bulk form .bulk-options {
+  width: 50%;
+  padding: 10px;
+}
+.whmpress_domain_search_bulk form .bulk-domains textarea {
+  width: 100%;
+  height: 200px;
+  max-width: 100%;
+}
+.whmpress_domain_search_bulk form .bulk-options .extentions {
+  margin: 20px auto;
+  display: block;
+}
+.whmpress_domain_search_bulk form .bulk-options .extentions div {
+  width: 20%;
+  display: inline-block;
+}
+.whmpress_domain_search_bulk form .bulk-options .extentions div:last-child:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.whmpress_domain_search_bulk form .bulk-options .extentions div label {
+  display: inline-block;
+}
+.whmpress_domain_search_bulk .search-button {
+  text-align: center;
+  padding: 10px;
+}
+@media only screen and (max-width: 640px) {
+  .whmpress_domain_search_bulk form {
+    display: block;
+  }
+  .whmpress_domain_search_bulk form .bulk-domains,
+  .whmpress_domain_search_bulk form .bulk-options {
+    width: 100%;
+  }
+  .whmpress_domain_search_bulk form .bulk-options .extentions > div {
+    width: 30%;
+  }
+}
+/***********************************************************
+    Section: WHMPress Domain Search Whois
+***********************************************************/
+.whmpress_domain_whois {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.whmpress_domain_whois form {
+  display: flex;
+  font-size: 18px;
+}
+.whmpress_domain_whois form input {
+  border-bottom-right-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-right: 0 !important;
+  height: 56px;
+  width: 80%;
+}
+.whmpress_domain_whois form button {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  width: 20%;
+  height: 56px;
+}
+@media only screen and (max-width: 480px) {
+  .whmpress_domain_whois form {
+    display: block;
+  }
+  .whmpress_domain_whois form input,
+  .whmpress_domain_whois form button {
+    width: 100% !important;
+  }
+  .whmpress_domain_whois form input {
+    outline: 0 !important;
+    padding: 8px 10px !important;
+    border-radius: 4px !important;
+    border: 2px solid #ddd !important;
+    margin-bottom: 10px;
+  }
+  .whmpress_domain_whois form button {
+    border-radius: 4px !important;
+    margin-bottom: 10px;
+  }
+}
+/***********************************************************
+    Section: WHMPress Login Form
+***********************************************************/
+.whmpress_login_form {
+  box-shadow: 0 0 0 4px #eee inset, 0 0 0 5px #ddd inset;
+  border: 6px solid transparent;
+  border-radius: 20px;
+  max-width: 480px;
+  min-width: 450px;
+  padding: 50px 20px 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.whmpress_login_form form div {
+  margin-bottom: 20px;
+}
+.whmpress_login_form form label,
+.whmpress_login_form form input {
+  display: block;
+  width: 100%;
+}
+.whmpress_login_form form button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 480px) {
+  .whmpress_login_form form div label,
+  .whmpress_login_form form div input {
+    display: block;
+    width: 100%;
+    min-width: 160px;
+  }
+  .whmpress_login_form form button {
+    display: block;
+    width: 100%;
+  }
+}
+/***********************************************************
+	.whmpress_announcements Css
+***********************************************************/
+.whmpress_announcements .announcement-date {
+  background-color: #fb4400;
+  display: inline-block;
+  width: 150px;
+  padding: 5px 10px;
+  margin-right: 15px;
+  color: white;
+}
+.whmpress_announcements .announcement-summary {
+  margin-top: 15px;
+}
+.whmpress_announcements a {
+  color: #fb4400;
+  text-decoration: none;
+}
+.whmpress_announcements a :hover {
+  color: #c83600;
+}
+/***********************************************************
+	Section: WHMPress Domain Price List
+***********************************************************/
+.whmpress_domain_price_list {
+  padding: 0;
+  margin-bottom: 40px;
+}
+.whmpress_domain_price_list ul {
+  padding: 15px;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+  font-size: 0px;
+  text-align: center;
+}
+.whmpress_domain_price_list ul li {
+  list-style: none;
+  background: white;
+  padding: 5px;
+  font-size: 16px;
+  text-align: left;
+  display: inline-block;
+}
+.whmpress_domain_price_list ul li > a {
+  border: 1px solid #666;
+  display: block;
+  padding: 10px;
+  color: #333;
+}
+.whmpress_domain_price_list ul li > a > span {
+  display: block;
+}
+.whmpress_domain_price_list ul li > a:hover {
+  color: #222;
+  border-color: #1A5EC6;
+}
+.whmpress_domain_price_list ul li .domain_tld {
+  font-size: 48px;
+  text-align: center;
+}
+.whmpress_domain_price_list ul li .domain_tld .price_title {
+  display: none;
+}
+/***********************************************************
+	Section: WHMPress Pricing Bubdle
+***********************************************************/
+.whmpress_pricing_bundle {
+  box-shadow: 0 0 0 4px #eee inset, 0 0 0 5px #ddd inset;
+  border: 6px solid transparent;
+  border-radius: 20px;
+  text-align: center;
+}
+.whmpress_pricing_bundle .pricing_bundle_heading {
+  padding: 15px;
+}
+.whmpress_pricing_bundle .pricing_bundle_heading span {
+  font-size: 28px;
+}
+.whmpress_pricing_bundle .pricing_bundle_items {
+  border: 1px solid #e1e1e1;
+}
+.whmpress_pricing_bundle .pricing_bundle_items .pricing_bundle_item {
+  border-bottom: 1px solid #e1e1e1;
+  padding: 15px;
+}
+.whmpress_pricing_bundle .pricing_bundle_items .pricing_bundle_item:last-child {
+  border-bottom: 0;
+}
+.whmpress_pricing_bundle .pricing_bundle_submit {
+  padding: 15px;
+}
+.whmpress_pricing_bundle.whmpress-02 .pricing_bundle_items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.whmpress_pricing_bundle.whmpress-02 .pricing_bundle_items .pricing_bundle_item {
+  flex-grow: 1;
+  min-width: 300px;
+  border: 0;
+  width: 10%;
+}
+.whmpress {
+  /*.btn.btn-yellow {*/
+  /*color: #383838;*/
+  /*background-color: #fdc400;*/
+  /*box-shadow: none;*/
+  /*display: block;*/
+  /*padding: 10px;*/
+  /*border-radius: 5px;*/
+  /*}*/
+}
+.whmpress .box1 {
+  box-shadow: 0px 10px 18px -3px #dcdcdc;
+  height: 50px;
+  text-align: center;
+  padding-top: 13px;
+}
+.whmpress .box0 {
+  padding: 11px 20px;
+  background: #337ab7;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+}
+.whmpress .box0 span {
+  font-size: 20px;
+  display: block;
+  font-weight: 400;
+}
+.whmpress .headline-container {
+  padding: 11px 20px;
+  background: #337ab7;
+  color: #fff;
+  font-weight: 600;
+}
+.whmpress .content {
+  padding: 20px;
+  line-height: 1.6em;
+  background: #ffffff;
+}
+.whmpress .product-label {
+  text-align: center;
+  padding: 6px 0 5px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #d05b00;
+  color: #ffffff;
+  font-weight: 500;
+}
+.whmpress .list-inline > li {
+  display: inline-block;
+}
+.whmpress .brand {
+  background: #fff;
+  padding: 20px 0;
+}
+.whmpress .content-container.content-container-list {
+  background: #fff;
+}
+.whmpress .hr-grey {
+  background-color: #ededed;
+}
+.whmpress .hr-grey {
+  height: 1px;
+  border-top: 0;
+  border-bottom: 0;
+  margin: 15px 0;
+}
+.whmpress ul.list-operating-systems li figure > img {
+  max-width: 40px;
+}
+.whmpress ul.list-operating-systems {
+  margin: 0;
+  text-align: center;
+}
+.whmpress .wpl-gapeges {
+  height: 30px;
+}
+.whmpress .content-container.content-container-list {
+  background: #fff;
+}
+.whmpress ul.list-items li {
+  background-color: #fff;
+  padding: 15px 15px;
+}
+.whmpress ul.list-items li:nth-child(2n) {
+  background-color: #f5f5f5;
+}
+.whmpress .color-green {
+  color: #59a219;
+}
+.whmpress .side-barleft {
+  font-size: 18px;
+  font-weight: 500;
+}
+.whmpress .side-baright {
+  font-size: 18px;
+  font-weight: 400;
+}
+.whmpress .product-order-sidebar-ordering {
+  background: #337ab7;
+  padding: 20px;
+  line-height: 1em;
+  text-align: center;
+}
+.whmpress .product-order-sidebar-ordering .price {
+  font-size: 2.8rem;
+  background: #FFD520;
+  font-weight: 500;
+  line-height: 1em;
+}
+.whmpress .product-order-sidebar-ordering .price-additional {
+  line-height: 1.6em;
+  padding: 10px 0 20px;
+  color: #fff;
+  font-size: 0.8rem;
+}
+.whmpress .product-order-sidebar-check-availability {
+  text-align: center;
+  padding-top: 10px;
+}
+.whmpress .product-order-sidebar-check-availability a {
+  color: #337ab7;
+}
+.whmpress .product-order-sidebar-check-availability a i {
+  padding-right: 5px;
+}
+.whmpress .btn {
+  text-decoration: none;
+  border: 0;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.whmpress #whcom_product ul {
+  margin: 0;
+}
+.whmpress #whcom_product ul li {
+  list-style: none;
+}
+.whmpress #whcom_product .whcom_row .whcom_col_6 {
+  padding: 0;
+}
+.whmpress #whcom_product ul li a {
+  color: #383838;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.whmpress #whcom_product ul li a:hover {
+  color: #d50c2d;
+}
+.whmpress #whcom_product .whcom_row.row-content {
+  margin: 0;
+}
+.whmpress #whcom_product .whcom_row .whcom_col_6.right-side-border {
+  border-right: 1px solid #e0e0e0;
+}
+.whmpress #whcom_product figure {
+  padding: 10px;
+}
+.whmpress .text-center.color-green {
+  text-align: center;
+}
+/**===============================================**/
+/**==       Grid                                ==**/
+/**===============================================**/
+.whcom_row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.whcom_row * {
+  box-sizing: border-box;
+}
+.whcom_row:before,
+.whcom_row:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.whcom_row > [class*="whcom_col"] {
+  padding: 0 10px;
+  min-height: 16px;
+  float: left;
+  width: 100%;
+}
+.whcom_row .whcom_col_1,
+.whcom_row .whcom_col_xs_1 {
+  width: 8.33333333%;
+}
+.whcom_row .whcom_col_2,
+.whcom_row .whcom_col_xs_2 {
+  width: 16.66666667%;
+}
+.whcom_row .whcom_col_3,
+.whcom_row .whcom_col_xs_3 {
+  width: 25%;
+}
+.whcom_row .whcom_col_4,
+.whcom_row .whcom_col_xs_4 {
+  width: 33.33333333%;
+}
+.whcom_row .whcom_col_5,
+.whcom_row .whcom_col_xs_5 {
+  width: 41.66666667%;
+}
+.whcom_row .whcom_col_6,
+.whcom_row .whcom_col_xs_6 {
+  width: 50%;
+}
+.whcom_row .whcom_col_7,
+.whcom_row .whcom_col_xs_7 {
+  width: 58.33333333%;
+}
+.whcom_row .whcom_col_8,
+.whcom_row .whcom_col_xs_8 {
+  width: 66.66666667%;
+}
+.whcom_row .whcom_col_9,
+.whcom_row .whcom_col_xs_9 {
+  width: 75%;
+}
+.whcom_row .whcom_col_10,
+.whcom_row .whcom_col_xs_10 {
+  width: 83.33333333%;
+}
+.whcom_row .whcom_col_11,
+.whcom_row .whcom_col_xs_11 {
+  width: 91.66666667%;
+}
+.whcom_row .whcom_col_12,
+.whcom_row .whcom_col_xs_12 {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .whcom_row .whcom_col_sm_1 {
+    width: 8.33333333%;
+  }
+  .whcom_row .whcom_col_sm_2 {
+    width: 16.66666667%;
+  }
+  .whcom_row .whcom_col_sm_3 {
+    width: 25%;
+  }
+  .whcom_row .whcom_col_sm_4 {
+    width: 33.33333333%;
+  }
+  .whcom_row .whcom_col_sm_5 {
+    width: 41.66666667%;
+  }
+  .whcom_row .whcom_col_sm_6 {
+    width: 50%;
+  }
+  .whcom_row .whcom_col_sm_7 {
+    width: 58.33333333%;
+  }
+  .whcom_row .whcom_col_sm_8 {
+    width: 66.66666667%;
+  }
+  .whcom_row .whcom_col_sm_9 {
+    width: 75%;
+  }
+  .whcom_row .whcom_col_sm_10 {
+    width: 83.33333333%;
+  }
+  .whcom_row .whcom_col_sm_11 {
+    width: 91.66666667%;
+  }
+  .whcom_row .whcom_col_sm_12 {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .whcom_row .whcom_col_md_1 {
+    width: 8.33333333%;
+  }
+  .whcom_row .whcom_col_md_2 {
+    width: 16.66666667%;
+  }
+  .whcom_row .whcom_col_md_3 {
+    width: 25%;
+  }
+  .whcom_row .whcom_col_md_4 {
+    width: 33.33333333%;
+  }
+  .whcom_row .whcom_col_md_5 {
+    width: 41.66666667%;
+  }
+  .whcom_row .whcom_col_md_6 {
+    width: 50%;
+  }
+  .whcom_row .whcom_col_md_7 {
+    width: 58.33333333%;
+  }
+  .whcom_row .whcom_col_md_8 {
+    width: 66.66666667%;
+  }
+  .whcom_row .whcom_col_md_9 {
+    width: 75%;
+  }
+  .whcom_row .whcom_col_md_10 {
+    width: 83.33333333%;
+  }
+  .whcom_row .whcom_col_md_11 {
+    width: 91.66666667%;
+  }
+  .whcom_row .whcom_col_md_12 {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .whcom_row .whcom_col_lg_1 {
+    width: 8.33333333%;
+  }
+  .whcom_row .whcom_col_lg_2 {
+    width: 16.66666667%;
+  }
+  .whcom_row .whcom_col_lg_3 {
+    width: 25%;
+  }
+  .whcom_row .whcom_col_lg_4 {
+    width: 33.33333333%;
+  }
+  .whcom_row .whcom_col_lg_5 {
+    width: 41.66666667%;
+  }
+  .whcom_row .whcom_col_lg_6 {
+    width: 50%;
+  }
+  .whcom_row .whcom_col_lg_7 {
+    width: 58.33333333%;
+  }
+  .whcom_row .whcom_col_lg_8 {
+    width: 66.66666667%;
+  }
+  .whcom_row .whcom_col_lg_9 {
+    width: 75%;
+  }
+  .whcom_row .whcom_col_lg_10 {
+    width: 83.33333333%;
+  }
+  .whcom_row .whcom_col_lg_11 {
+    width: 91.66666667%;
+  }
+  .whcom_row .whcom_col_lg_12 {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .whcom_row .whcom_col_xl_1 {
+    width: 8.33333333%;
+  }
+  .whcom_row .whcom_col_xl_2 {
+    width: 16.66666667%;
+  }
+  .whcom_row .whcom_col_xl_3 {
+    width: 25%;
+  }
+  .whcom_row .whcom_col_xl_4 {
+    width: 33.33333333%;
+  }
+  .whcom_row .whcom_col_xl_5 {
+    width: 41.66666667%;
+  }
+  .whcom_row .whcom_col_xl_6 {
+    width: 50%;
+  }
+  .whcom_row .whcom_col_xl_7 {
+    width: 58.33333333%;
+  }
+  .whcom_row .whcom_col_xl_8 {
+    width: 66.66666667%;
+  }
+  .whcom_row .whcom_col_xl_9 {
+    width: 75%;
+  }
+  .whcom_row .whcom_col_xl_10 {
+    width: 83.33333333%;
+  }
+  .whcom_row .whcom_col_xl_11 {
+    width: 91.66666667%;
+  }
+  .whcom_row .whcom_col_xl_12 {
+    width: 100%;
+  }
+}
+.whcom_row.whcom_row_no_gap {
+  margin-left: 0;
+  margin-right: 0;
+}
+.whcom_row.whcom_row_no_gap > [class^="whcom_col"] {
+  padding: 0;
+}
+.btn.btn-yellow button {
+  background: #fdc400;
+  width: 100%;
+  color: #383838;
+  font-size: 20px;
+  font-weight: bold;
+}
+.whcom_product_name {
+  text-align: center;
+}
+.whcom_tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.whcom_tooltip .whcom_tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.whcom_tooltip:hover .whcom_tooltiptext {
+  visibility: visible;
+}
+/*# sourceMappingURL=default.css.map */

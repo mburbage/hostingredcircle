@@ -1,0 +1,27 @@
+<div class="pricebox  style2 animate fadeInUp animated {$featured}">
+	<div class="pricebox-header">
+		<div class="pricebox-header-content">
+			<div class="pricebox-icon-wrapper">
+				<div class="pricebox-icon">
+					<i style="font-size:13px" class="theme-color {$sub_icon}"></i>
+				</div>
+			</div>
+			<h3 class="pricebox-title theme-color">{$product_name}</h3>
+			<div class="pricebox-price">
+				{$prefix}{$amount}{$decimal}{$fraction} / <span> {$duration}</span>
+			</div>
+		</div>
+	</div>
+	<div class="pricebox-body">
+		<div class="pricebox-body-content">
+			<div class="pricebox-description">
+				{$product_description}
+			</div>
+			<div class="pricebox-purchased-link">
+				<a href="{$order_url}" class="ibutton ibutton1 ibutton-small ibutton-effect1">
+					<span class="ibutton-inner" data-hover="Purchase It">{$button_text}</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

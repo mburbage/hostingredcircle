@@ -1,0 +1,23 @@
+<div class="{$featured} PlanPricing">
+	<div class="planName"><span class="price">{$prefix}{$amount}{if $fraction ne ""}{$decimal}{$fraction}{/if}</span>
+		<h3>{$product_name}</h3>
+		<p>per {$duration}</p>
+	</div>
+	<div class="planFeatures">
+		{$product_description}
+	</div>
+	{if $product_order_combo ne ""}
+	<div class="pricing_table_combo" style="background: none">
+		<div class="holder">
+			{$product_order_combo}
+		</div>
+	</div>
+	<script>
+		jQuery(".PlanPricing .whmpress_order_combo").removeClass("whmpress");
+		jQuery(".PlanPricing .whmpress_order_combo button").addClass("btn btn-lg btn-danger");
+	</script>
+	{/if}
+	{if $product_order_combo eq ""}
+	<p><a href="{$order_url}" role="button" class="btn btn-lg btn-danger">{$button_text}</a></p>
+	{/if}
+</div>

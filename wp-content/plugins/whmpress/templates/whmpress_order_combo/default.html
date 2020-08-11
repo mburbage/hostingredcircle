@@ -1,0 +1,59 @@
+{$product_order_combo}
+
+{*------------Notes------------
+
+Shortcode:
+=========
+Displays price of a WHMCS Service (Hosting Plan) for all billing cycle in dropdown list along with optional order button
+
+Place Holders:
+=============
+
+{$product_order_combo}: returns complete order combo as a whole
+{$product_order_button}: order combo button
+{$product_id}: product ID select by customer
+{$currency_id}: ID of selected currency
+{$action_url}: Action URL to submit the form
+{$data}: Data aray containing all data for order combo
+
+Follwing Elements are used with $data array only
+-----------------------------------------------
+{$prefix}: currency prefix
+{$suffix}: currency suffix
+{$amount}: whole price, before decimal
+{$decimal}: default decimal symbol, or as mentioned by user in settings
+{$fraction}: fraction part of price
+{$duration}: duration
+{$discount}: weather user have selected show discount option or not
+{$discount}: discount
+
+
+Example:
+========
+<div class="whmp_order_combo second">
+    <form action="{$action_url}">
+        <input type="hidden" value="add" name="a">
+        <input type="hidden" value="{$pid}" name="pid">
+        <input type="hidden" value="{$currency_id}" name="currency">
+
+        <select name="billingcycle" class="form-control">
+            <option value="">Select Duration</option>
+            {foreach from=$data item=whmp}
+            <option value="{$whmp.duration}">{$whmp.duration} - {$whmp.prefix}{$whmp.amount}{$whmp.decimal}{$whmp.fraction} {$whmp.suffix} {if $whmp.discount}Save {$whmp.discount} {/if}</option>
+            {/foreach}
+        </select>
+        {$product_order_button}
+    </form>
+</div>
+
+
+Important:
+==========
+Names of form elements must stay same.
+
+
+------------End Notes------------*}
+
+
+
+

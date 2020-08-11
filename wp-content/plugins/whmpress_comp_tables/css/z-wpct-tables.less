@@ -1,0 +1,688 @@
+/*--------------------------------------------------------------
+		WPCT Pricing Tables (For Comparison Tables
+--------------------------------------------------------------*/
+.wpct_combo {
+	display: none !important;
+}
+.wpct_pricing_table {
+	@textDark: #333;
+	@textLight: #fff;
+	@bg: #eee;
+	@bgHighlight: darken(@bg, 10%);
+	@bgButton: #FB4400;
+	@bgButtonHvr: darken(@bgButton, 10%);
+
+	box-sizing: border-box;
+	*, *:after, *:before {
+		box-sizing: border-box;
+	}
+	background: @bg;
+	color: @textDark;
+	font-size: 16px;
+	line-height: 1.4;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+	padding: 15px;
+	border: 2px solid @bgHighlight;
+	.wpct_heading h2 {
+		margin: 0;
+		padding-bottom: 20px;
+		font-weight: bold;
+	}
+	.whmp_text {
+		padding: 15px 0;
+		p {
+			margin: 0;
+			padding: 0;
+		}
+	}
+	.wpct_features ul {
+		margin: 0 -15px;
+		padding: 0;
+		list-style: none;
+		li {
+			padding: 10px;
+			list-style: none;
+			border-bottom: 1px solid @bgHighlight;
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
+	}
+	.wpct_price {
+		padding: 15px;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-weight: 300;
+		font-size: 60px;
+		line-height: 1;
+		background: @bgHighlight;
+		margin: 0 -15px;
+		.wpct_unit, .wpct_fraction {
+			font-size: 40%;
+		}
+		.wpct_period {
+			display: block;
+			text-align: center;
+			font-size: 16px;
+			word-spacing: 0;
+		}
+	}
+	.wpct_button {
+		padding: 15px;
+		text-align: center;
+		.wpct_submit-button {
+			background: @bgButton;
+			border: 2px solid @bgButtonHvr;
+			color: #fff;
+			cursor: pointer;
+			padding: 6px 15px;
+			display: inline-block;
+			text-decoration: none;
+			transition: all .5s ease-in-out;
+			font-weight: 300;
+			&:hover {
+				background: @bgButtonHvr;
+				color: @textLight;
+			}
+		}
+	}
+	&.featured {
+	}
+
+	/*--------Pricing Table first styles--------*/
+	&.comparison-01 {
+		.wpct_icon {
+			position: absolute;
+			display: block;
+			width: 100%;
+			top: -50px;
+			left: 0;
+			.wpct_holder {
+				background: #999;
+				color: #fff;
+				width: 100px;
+				height: 100px;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+				line-height: 100px;
+				border-radius: 50%;
+				font-size: 40px;
+			}
+		}
+		.wpct_promo-text {
+			display: none
+		}
+		.whmp_text {
+			display: block;
+		}
+		.wpct_heading h2 {
+			padding-bottom: 0;
+		}
+		.wpct_price {
+			margin-right: -15px;
+			margin-left: -15px;
+			background: #bbb;
+			color: #333;
+			.wpct_decimal {
+				display: none;
+			}
+		}
+		.wpct_submit-button {
+			background: #337ab7;
+			border: 1px solid darken(#337ab7, 10%);
+			&:hover {
+				background: darken(#337ab7, 10%);
+			}
+		}
+		&.featured {
+			background: #4796b3;
+			border-color: darken(#4796b3, 10%);
+			color: @textLight;
+			.wpct_icon .wpct_holder {
+				background: #2776b3;
+				border: 3px solid #fff;
+			}
+			.wpct_price {
+				background: #2776b3;
+				color: #fff;
+			}
+			.wpct_heading h2 {
+				color: #fff;
+			}
+		}
+	}
+
+	/*--------Pricing Table second styles-------*/
+	&.comparison-02 {
+		background: #fff;
+		padding-top: 0;
+		border: 2px solid #333;
+		.wpct_promo-text { display: none }
+		.wpct_text { display: none }
+		.wpct_icon { display: none }
+		.wpct_heading {
+			padding-bottom: 60px;
+			margin-left: -15px;
+			margin-right: -15px;
+			padding-top: 25px;
+			background: #333;
+			color: #fff;
+		}
+		.wpct_price {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			margin-left: auto;
+			margin-right: auto;
+			box-shadow:inset 0 0 5px 5px #666;
+			margin-top: -50px;
+			padding: 0;
+			background: #fff;
+			border: 3px solid #fff;
+			.wpct_amount {
+				font-size: 36px;
+				font-weight: 700;
+			}
+			.wpct_unit, .wpct_fraction {
+				font-size: 18px;
+			}
+			.wpct_decimal {
+				display: none;
+			}
+		}
+		.wpct_heading h2 {
+			color: #fff;
+		}
+		&.featured {
+			background: #333;
+			color: #fff;
+			.wpct_price {
+				border-color: #777;
+				box-shadow: none;
+				color: #333;
+			}
+		}
+		.wpct_button .wpct_submit-button {
+			background: #00ab00;
+			border: 0;
+			&:hover {
+				background: darken(#00ab00, 10%);
+			}
+		}
+	}
+
+	/*--------Pricing Table third styles--------*/
+	&.comparison-03 {
+		background: #fff;
+		border: 2px solid #eee;
+		border-radius: 10px;
+		padding-top: 15px;
+		.wpct_promo-text, .wpct_text, .wpct_icon {
+			display: none
+		}
+		.wpct_price {
+			.wpct_decimal {
+				display: none;
+			}
+		}
+		.wpct_button .wpct_submit-button {
+			border-radius: 4px;
+			background: #ff4d00;
+			border: 0;
+			&:hover {
+				background: darken(#ff4d00, 10%);
+			}
+		}
+		&.featured {
+			border-color: #ff4d00;
+			.wpct_price {
+				color: @textLight;
+				background: #ff4d00;
+			}
+		}
+	}
+
+	/*--------Pricing Table fourth styles-------*/
+	&.comparison-04 {
+		border: 0;
+		background: #42444a;
+		border-radius: 10px;
+		color: #fff;
+		padding-top: 25px;
+		.wpct_promo-text, .wpct_text, .wpct_icon {
+			display: none;
+		}
+		.wpct_price {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			background: #42444a;
+			margin: 0 auto;
+			padding: 0;
+			border: 2px solid #fff;
+			.wpct_amount{
+				font-size: 38px;
+			}
+			.wpct_unit, .wpct_fraction, .wpct_period {
+				font-size: 16px;
+				line-height: 1;
+			}
+			.wpct_decimal {
+				display: none;
+			}
+		}
+		.wpct_heading h2 {
+			color: @textLight;
+		}
+		.wpct_submit-button {
+			background: #84c9f6;
+			border: 0;
+			&:hover {
+				background: darken(#84c9f6, 10%);
+			}
+		}
+		&.featured {
+			background: #54b4f2;
+			.wpct_price {
+				background: #54b4f2;
+			}
+		}
+	}
+
+	/*--------Pricing Table fifth styles-------*/
+	&.comparison-05 {
+		background: #323232;
+		color: #fff;
+		border: 0;
+		.wpct_promo-text, .wpct_text, .wpct_icon {
+			display: none;
+		}
+		.wpct_heading {
+			background: gold;
+			color: #323232;
+			margin-top: -30px;
+			h2 {
+				margin: 0;
+				padding-bottom: 0;
+				line-height: 60px;
+			}
+		}
+		.wpct_price {
+			position: relative;
+			background: none;
+			color: #fff;
+			.wpct_fraction {
+				position: absolute;
+				top: 20px;
+				font-size: 25px;
+			}
+			.wpct_decimal {
+				display: none;
+			}
+		}
+		.wpct_submit-button {
+			background: gold;
+			color: @textDark;
+			border: 0;
+			&:hover {
+				background: goldenrod;
+				color: @textDark;
+			}
+		}
+	}
+
+	/*--------Pricing Table sixth styles-------*/
+	&.comparison-06 {
+		background: #3399fe;
+		color: #fff;
+		padding-top: 30px;
+		border: 0;
+		.wpct_text, .wpct_icon, .wpct_promo-text {
+			display: none;
+		}
+		.wpct_heading h2 {
+			color: #fff;
+		}
+		.wpct_price {
+			position: relative;
+			width: 160px;
+			height: 160px;
+			background: #62b2fe;
+			border: 5px solid #4eaefd;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 100%;
+			padding: 30px 20px 0 0;
+			.wpct_fraction {
+				position: absolute;
+				top: 40px;
+				font-weight: bold;
+				text-decoration: underline;
+				font-size: 20px;
+				margin-left: 3px;
+			}
+			.wpct_decimal {
+				display: none;
+			}
+		}
+		.wpct_features ul li {
+			border-color: #1379de;
+		}
+		.wpct_submit-button {
+			background: #1379de;
+			border: none;
+			width: 100%;
+			font-size: 18px;
+			font-weight: normal;
+			&:hover {
+				background: darken(#1379de, 10%);
+			}
+		}
+		&.featured {
+			.wpct_promo-text {
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				background: #008000;
+				font-size: 12px;
+				padding: 2px 10px;
+			}
+			.wpct_price {
+				margin-left: -15px;
+				margin-right: -15px;
+				border-left: 0;
+				border-right: 0;
+				border-radius: 0;
+				width: auto;
+			}
+		}
+
+
+	}
+
+	/*--------Pricing Table seventh styles-----*/
+	&.comparison-07 {
+		background: #fff;
+		padding: 0;
+		box-shadow: 0 -2px 2px 2px #ccc;
+		.wpct_text, .wpct_icon, .wpct_promo-text {
+			display: none;
+		}
+		.wpct_heading {
+			background: #fda462;
+			margin: 0 0 10px;
+			box-shadow: 0 0 2px 2px #ccc;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			h2 {
+				margin: 0;
+				padding-bottom: 0;
+			}
+		}
+		.wpct_price {
+			position: relative;
+			margin: 0;
+			box-shadow: 0 -1px 2px 2px #ccc;
+			background: #fd8730;
+			.wpct_unit {
+				vertical-align: middle;
+				font-size: 20px;
+				font-weight: bold;
+			}
+			.wpct_amount {
+				font-size: 60px;
+				font-weight: 700;
+			}
+			.wpct_decimal {
+				display: none;
+			}
+			.wpct_fraction {
+				position: absolute;
+				font-weight: bold;
+				text-decoration: underline;
+				font-size: 20px;
+			}
+			.wpct_period {
+				display: block;
+				text-transform: uppercase;
+				font-size: 12px;
+			}
+		}
+		.wpct_features ul {
+			margin: 0;
+			li {
+				color: #f56a05;
+				border: none;
+				&:nth-child(even) {
+					background: #fdeadc;
+				}
+			}
+		}
+		.wpct_submit-button {
+			background: #fda462;
+			border: 0;
+		}
+		&.featured {
+			.wpct_promo-text {
+				position: absolute;
+				display: block;
+				top: 57px;
+				width: 120px;
+				left: 0;
+				right: 0;
+				background: orange;
+				color: #fff;
+				margin-left: auto;
+				margin-right: auto;
+				box-shadow: 0 0 2px 2px #ccc;
+				z-index: 10;
+			}
+			.wpct_heading {
+				background: #f56a05;
+			}
+			.wpct_features ul {
+				li:nth-child(odd) {
+					background: #fda462;
+					color: #fff;
+				}
+				li:nth-child(even) {
+					background: #fd8730;
+					color: #fff;
+				}
+			}
+			.wpct_button {
+				background: #f56a05;
+			}
+		}
+	}
+
+	/*--------Pricing Table eighth styles-----*/
+	&.comparison-08 {
+		@color1: #2A363F;
+		@color2: #86C724;
+		background: #EEEEEE;
+		border: 0;
+		padding: 0;
+		.wpct_heading {
+			padding-top: 20px;
+			background: 0;
+		}
+		.wpct_price {
+			margin: 0;
+			background: 0;
+			.wpct_amount {
+				font-size: 45px;
+				font-weight: 800;
+				color: @color2;
+			}
+			.wpct_decimal {
+				display: none;
+			}
+		}
+		.wpct_button {
+			.wpct_submit-button {
+				background: @color1;
+				border: 0;
+				border-radius: 4px;
+				&:hover {
+					background: @color2;
+				}
+			}
+		}
+		&.featured {
+			background: @color1;
+			padding-top: 30px;
+			position: relative;
+			color: #fff;
+			.wpct_promo-text {
+				position: absolute;
+				top: 0;
+				width: 100%;
+				background: @color2;
+				line-height: 2;
+				color: #fff;
+				font-size: 14px;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+			.wpct_heading h2{
+				color: #fff;
+			}
+			.wpct_button {
+				.wpct_submit-button {
+					background: #eee;
+					color: @color1;
+					&:hover {
+						background: @color2;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	/*--------Pricing Table alaska styles-----*/
+	&.alaska {
+		border: 0;
+		background: #f8f8f8;
+		padding-top: 20px;
+		.wpct_icon {
+			.holder {
+				background: #fd4326;
+				height: 78px;
+				width: 78px;
+				border-radius: 78px;
+				color: #fff;
+				margin: 0 auto;
+				.fa {
+					font-size: 27px;
+					line-height: 78px;
+				}
+			}
+		}
+		.wpct_heading {
+			h2 {
+				font-size: 20px;
+				line-height: 22px;
+				margin: 17px 0 20px;
+			}
+		}
+		.wpct_price {
+			background: #ebebeb;
+			color: #fd4326;
+			font-size: 40px;
+			line-height: 26px;
+			.wpct_unit, .wpct_amount, .wpct_fraction {
+				font-size: 100%;
+			}
+			.wpct_period {
+				font-size: 14px;
+				display: inline;
+			}
+
+		}
+		.wpct_summary {
+			font-family: 'Roboto', sans-serif;
+			padding: 20px 5px;
+			font-size: 13px;
+			line-height: 26px;
+			font-weight: 400;
+		}
+		.wpct_button {
+			.wpct_submit-button {
+				border-radius: 4px;
+				border: 1px solid #fd4326;
+				background: #fd4326;
+				color: #fff;
+				font-size: 12px;
+				line-height: 40px;
+				text-transform: uppercase;
+				padding: 0 15px;
+				&:hover {
+					background: #fff;
+					color: #fd4326;
+				}
+			}
+		}
+
+	}
+
+	/*--------Pricing Table simple-09 styles-----*/
+	&.simple-09 {
+		border: 1px solid #ccc;
+		background: 0;
+		padding-top: 35px;
+		.wpct_promo-text {
+			display: none;
+		}
+		.wpct_heading {
+			background: 0;
+			padding-bottom: 20px;
+			h2 {
+				color: black;
+				font-weight: bold;
+				font-size: 23px;
+				text-transform: uppercase;
+				padding: 0;
+			}
+		}
+		.wpct_price {
+			color: black;
+			padding: 0;
+			background: 0;
+			font-size: 46px;
+			.wpct_unit {
+				vertical-align: super;
+			}
+			.wpct_unit, .wpct_fraction {
+				font-size: 40%;
+			}
+			.wpct_period {
+				color: gray;
+			}
+		}
+		.wpct_button {
+			.wpct_submit-button {
+				border: 0;
+				background-color: #ffd800;
+				border-bottom: 4px solid rgba(174,117,0,.5);
+				color: #ae7500;
+				padding: 16px 32px;
+				width: 100%;
+				border-radius: 6px;
+				font-weight: bold;
+				text-transform: uppercase;
+				&:hover {
+					background-color: #ffea00;
+					color: #ae7500;
+					outline: 0;
+					box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+				}
+			}
+		}
+	}
+}

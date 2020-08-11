@@ -1,0 +1,312 @@
+#wcap_admin_logo {
+  background-image: url(../images/whitelogo189.png);
+  background-color: #32373c;
+  box-sizing: content-box;
+}
+/******************************************/
+/**         Grid System Styling          **/
+/******************************************/
+.wcap_admin_row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.wcap_admin_row * {
+  box-sizing: border-box;
+}
+.wcap_admin_row:before,
+.wcap_admin_row:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.wcap_admin_row .wcap_admin_pull_left {
+  float: left;
+}
+.wcap_admin_row .wcap_admin_pull_right {
+  float: right;
+}
+.wcap_admin_row [class^="wcap_admin_column"] {
+  padding: 0 15px;
+  min-height: 16px;
+}
+@media only screen and (min-width: 769px) {
+  .wcap_admin_row [class^="wcap_admin_column"] {
+    float: left;
+  }
+  .wcap_admin_row .wcap_admin_column_1 {
+    width: 8.33333333%;
+  }
+  .wcap_admin_row .wcap_admin_column_2 {
+    width: 16.66666667%;
+  }
+  .wcap_admin_row .wcap_admin_column_3 {
+    width: 25%;
+  }
+  .wcap_admin_row .wcap_admin_column_4 {
+    width: 33.33333333%;
+  }
+  .wcap_admin_row .wcap_admin_column_5 {
+    width: 41.66666667%;
+  }
+  .wcap_admin_row .wcap_admin_column_6 {
+    width: 50%;
+  }
+  .wcap_admin_row .wcap_admin_column_7 {
+    width: 58.33333333%;
+  }
+  .wcap_admin_row .wcap_admin_column_8 {
+    width: 66.66666667%;
+  }
+  .wcap_admin_row .wcap_admin_column_9 {
+    width: 75%;
+  }
+  .wcap_admin_row .wcap_admin_column_10 {
+    width: 83.33333333%;
+  }
+  .wcap_admin_row .wcap_admin_column_11 {
+    width: 91.66666667%;
+  }
+  .wcap_admin_row .wcap_admin_column_12 {
+    width: 100%;
+  }
+}
+/******************************************/
+/**         Page Styling                 **/
+/******************************************/
+.wcap_admin_wrapper {
+  font-size: 16px;
+  line-height: 1.4;
+}
+.wcap_admin_wrapper,
+.wcap_admin_wrapper:after,
+.wcap_admin_wrapper:before,
+.wcap_admin_wrapper *,
+.wcap_admin_wrapper *:after,
+.wcap_admin_wrapper *:before {
+  box-sizing: border-box;
+}
+.wcap_admin_wrapper p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+.wcap_admin_wrapper .button.button_block {
+  display: block;
+  margin-bottom: 15px;
+}
+.wcap_admin_wrapper .button.button_big {
+  padding: 12px 36px;
+  height: auto;
+  font-size: 18px;
+}
+.wcap_admin_wrapper h2.nav-tab-wrapper {
+  margin-bottom: 15px;
+}
+/******************************************/
+/**         Different Components         **/
+/******************************************/
+.wcap_admin_text_center {
+  text-align: center;
+}
+.wcap_admin_text_right {
+  text-align: right;
+}
+.wcap_admin_feature_list {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+.wcap_admin_feature_list li {
+  margin: 0 0 5px;
+  padding: 0 10px 5px;
+  position: relative;
+}
+.wcap_admin_feature_list li.has_icon {
+  padding-left: 50px;
+}
+.wcap_admin_feature_list li.has_icon .lnr {
+  font-size: 30px;
+  line-height: 30px;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  top: 50%;
+  left: 10px;
+  margin-top: -20px;
+}
+.wcap_admin_card {
+  border: 1px solid #ddd;
+  background: white;
+  margin-bottom: 15px;
+}
+.wcap_admin_card h3,
+.wcap_admin_card h4,
+.wcap_admin_card p {
+  margin: 0;
+}
+.wcap_admin_card .wcap_card_heading {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+.wcap_admin_card .wcap_card_heading h3 {
+  font-size: 18px;
+  line-height: 1.4;
+}
+.wcap_admin_card .wcap_card_body {
+  padding: 10px;
+  /*height: 250px;*/
+  overflow-y: auto;
+}
+.wcap_admin_card .wcap_admin_feature_list {
+  margin-left: -10px;
+}
+.wcap_admin_card .wcap_admin_row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.wcap_admin_card .wcap_admin_row [class^="wcap_admin_column"] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.wcap_admin_pretty_table {
+  width: 100% !important;
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  margin: 0 0 60px;
+}
+.wcap_admin_pretty_table tr {
+  border: 1px solid #ddd;
+}
+.wcap_admin_pretty_table tr td,
+.wcap_admin_pretty_table tr th {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.wcap_admin_pretty_table tr:hover {
+  background: #c6cdd3;
+}
+.wcap_admin_pretty_table tr.active {
+  background: #a9b3bd;
+}
+.wcap_admin_pretty_table tr.table-heading1 {
+  background: transparent;
+}
+.wcap_admin_pretty_table tr.table-heading1 th {
+  border-color: transparent;
+}
+.wcap_admin_pretty_table tr.table-heading2 {
+  background: #32373c;
+  color: white;
+  border-bottom-color: #32373c;
+}
+.wcap_admin_pretty_table tr.table-heading3 {
+  background: darkslategrey;
+  color: whitesmoke;
+  border-bottom-color: darkslategray;
+}
+.wcap_form_control {
+  margin-bottom: 15px;
+}
+.wcap_form_control label {
+  line-height: 28px;
+}
+.wcap_form_control label:not(.label_inline) {
+  display: block;
+}
+.wcap_form_control input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]),
+.wcap_form_control textarea,
+.wcap_form_control select {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  outline: none;
+}
+.wcap_form_control input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):focus,
+.wcap_form_control textarea:focus,
+.wcap_form_control select:focus {
+  border-color: #2c7879;
+}
+.wcap_form_control input:not([type="radio"]):not([type="checkbox"]):not([type="submit"])textarea,
+.wcap_form_control textareatextarea,
+.wcap_form_control selecttextarea {
+  height: auto;
+}
+.wcap_admin_help_text {
+  background: #4388cc;
+  max-width: 250px;
+  margin-left: 40px;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #2f6ead;
+  position: relative;
+  z-index: 99;
+}
+.wcap_admin_help_text .wcap_admin_help_text_tail {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 28px 50px;
+  border-color: transparent transparent #2f6ead transparent;
+  left: -50px;
+  top: 30px;
+  z-index: 98;
+}
+.wcap_admin_help_text .wcap_admin_help_text_tail:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 25px 50px;
+  border-color: transparent transparent #4388cc transparent;
+  left: -41px;
+}
+.wcap_admin_notice {
+  margin: 0 0 5px;
+  padding: 0 10px 10px 50px;
+  position: relative;
+}
+.wcap_admin_notice .lnr {
+  font-size: 30px;
+  line-height: 30px;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  top: 50%;
+  left: 10px;
+  margin-top: -20px;
+}
+.wcap_admin_notice.wcap_admin_notice_success {
+  color: green;
+}
+.wcap_admin_notice.wcap_admin_notice_error {
+  color: red;
+}
+.wcap_admin_notice.wcap_admin_notice_info {
+  color: #0085BA;
+}
+.wcap_admin_notice.wcap_admin_notice_warning {
+  color: darkorange;
+}
+.wcap_selectable_text {
+  user-select: all;
+  cursor: pointer;
+}
+#wcap_debug_container .wcap_debug_title {
+  display: inline-block;
+  min-width: 350px;
+  font-weight: bold;
+}
+.wcap_admin_fancy_box {
+  padding: 15px;
+  border: 2px solid #ddd;
+  margin-bottom: 15px;
+}
+i.wcap-own-icon {
+  background-image: url('../images/logo32.png');
+}
+/*# sourceMappingURL=wca_api_admin_styles.css.map */

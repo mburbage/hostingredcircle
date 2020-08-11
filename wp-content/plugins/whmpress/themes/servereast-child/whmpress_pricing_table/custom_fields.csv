@@ -1,0 +1,2 @@
+param_name,heading,description,type,value
+featured,Featured Product,Select if the product is featured product or not,dropdown,"['normal','most-popular']"

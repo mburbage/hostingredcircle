@@ -1,0 +1,19 @@
+<div class="wow zoomIn" data-wow-delay="0.2s"
+     style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;">
+	<div class="pricingtables default">
+		<div class="panel panel-info {if $featured ne ''}most-popular{/if}">
+			<div class="panel-heading">
+				<h3 class="text-center">{$product_name}</h3>
+			</div>
+			<div class="panel-body text-center">
+				<span>STARTING FROM</span>
+				<h4>{$prefix}{$amount}{if $fraction ne ""}{$decimal}{$fraction}{/if}</h4>
+				<span class="per">PER {$duration}</span>
+			</div>
+			{$product_description}
+			<div class="panel-footer">
+				<a class="btn btn-lg btn-pricetable" href="{$order_url}">{$button_text}</a>
+			</div>
+		</div>
+	</div>
+</div>

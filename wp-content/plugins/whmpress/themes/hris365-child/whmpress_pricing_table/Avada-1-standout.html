@@ -1,0 +1,204 @@
+<div class="fusion-spacing-yes" style="margin-top:0px;margin-bottom:20px;">
+	<div class="fusion-column-wrapper">
+		<style type="text/css">
+			. {
+				$ bg_color |
+				replace: '#': 'class-'
+			}
+			
+			.pricing-table-5 .panel-container,
+			. {
+				$ bg_color |
+				replace: '#': 'class-'
+			}
+			
+			.pricing-table-5 .standout .panel-container,
+			. {
+				$ bg_color |
+				replace: '#': 'class-'
+			}
+			
+			.pricing-table-5.full-boxed-pricing {
+			
+			background-color: {
+				$ bg_color
+			}
+			
+			;
+			}
+			
+			.fusion-pricing-table.myTable .panel-heading .title-row,
+			.fusion-pricing-table.myTable .pricing-row .price .currency,
+			.fusion-pricing-table.myTable .pricing-row .price .integer-part,
+			.fusion-pricing-table.myTable .pricing-row .price .decimal-part,
+			.fusion-pricing-table.myTable .pricing-row .price .time {
+			}
+			
+			. {
+				$ bg_color |
+				replace: '#': 'class-'
+			}
+			
+			.pricing-table-5 .list-group .list-group-item,
+			. {
+				$ bg_color |
+				replace: '#': 'class-'
+			}
+			
+			.pricing-table-5 .list-group .list-group-item:last-child {
+			
+			background-color: {
+				$ bg_color_light
+			}
+			
+			;
+			border-color: #fff
+			
+			;
+			}
+			
+			.fusion-pricing-table .panel-body .price .time {
+				margin-left: 0;
+			}
+			
+			. {
+				$ bg_color |
+				replace: '#': 'class-'
+			}
+			
+			.pricing-table-5.full-boxed-pricing .panel-wrapper:hover .panel-heading,
+			. {
+				$ bg_color |
+				replace: '#': 'class-'
+			}
+			
+			.pricing-table-5 .panel-wrapper:hover .list-group-item {
+			
+			background-color: {
+				$ bg_color
+			}
+			
+			;
+			}
+			
+			. {
+				$ bg_color |
+				replace: '#': 'class-'
+			}
+			
+			.pricing-table-5.full-boxed-pricing .panel-heading {
+			
+			background-color: {
+				$ bg_color_light
+			}
+			
+			;
+			}
+			
+			.pricing-table-5 .fusion-panel, .pricing-table-5 .panel-wrapper:last-child .fusion-panel,
+			.pricing-table-5 .standout .fusion-panel, .pricing-table-5 .panel-heading,
+			.pricing-table-5 .panel-body,
+			.pricing-table-5 .panel-footer {
+				border-color: #fff;
+			}
+			
+			. {
+				$ bg_color |
+				replace: '#': 'class-'
+			}
+			
+			.pricing-table-5 .panel-body,
+			. {
+				$ bg_color |
+				replace: '#': 'class-'
+			}
+			
+			.pricing-table-5 .panel-footer {
+			
+			background-color: {
+				$ bg_color
+			}
+			
+			;
+			}</style>
+		<div
+			class="fusion-pricing-table pricing-table-5 {$bg_color|replace:'#':'class-'} full-boxed-pricing row fusion-columns-1 columns-1 fusion-clearfix myTable">
+			<div
+				class="panel-wrapper fusion-column column col-lg-12 col-md-12 col-sm-12 standout fusion-pricingtable-column">
+				<div class="panel-container">
+					<div class="fusion-panel">
+						<div class="panel-heading"><h3 class="title-row" data-fontsize="17"
+						                               data-lineheight="24">{$product_name}</h3></div>
+						<div class="panel-body pricing-row">
+							<div class="price price-with-decimal"><span class="currency">{$prefix}</span><span
+								class="integer-part">{$amount}</span><sup class="decimal-part">{$fraction}</sup><span
+								class="time">{$duration}</span></div>
+						</div>
+						{$product_description}
+						<div class="panel-footer footer-row">
+							<div class="fusion-button-wrapper">
+								<style type="text/css"
+								       scoped="scoped">.fusion-button.button-11 .fusion-button-text, .fusion-button.button-11 i {
+									color: #fff
+								}
+								
+								.fusion-button.button-11 {
+									border-width: 0px;
+									border-color: #fff
+								}
+								
+								.fusion-button.button-11 .fusion-button-icon-divider {
+									border-color: #fff
+								}
+								
+								.fusion-button.button-11:hover .fusion-button-text, .fusion-button.button-11:hover i, .fusion-button.button-11:focus .fusion-button-text, .fusion-button.button-11:focus i, .fusion-button.button-11:active .fusion-button-text, .fusion-button.button-11:active {
+									color: #fff
+								}
+								
+								.fusion-button.button-11:hover, .fusion-button.button-11:focus, .fusion-button.button-11:active {
+									border-width: 0px;
+									border-color: #fff
+								}
+								
+								.fusion-button.button-11:hover .fusion-button-icon-divider, .fusion-button.button-11:hover .fusion-button-icon-divider, .fusion-button.button-11:active .fusion-button-icon-divider {
+									border-color: #fff
+								}
+								
+								. {
+									$ bg_color |
+									replace: '#': 'class-'
+								}
+								
+								.fusion-button.button-11 {
+								
+								background: {
+									$ bg_color_light
+								}
+								
+								;
+								}
+								
+								.fusion-button.button-11:hover, .button-11:focus, .fusion-button.button-11:active {
+									opacity: 0.8;
+								}
+								
+								.fusion-button.button-11 {
+									width: auto
+								}</style>
+								<a class="fusion-button button-flat button-round button-small button-custom button-11"
+								   target="_blank"
+								   href="{$order_url}"><span
+									class="fusion-button-text">{$button_text}</span></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fusion-clearfix"></div>
+	</div>
+</div>
+{literal}
+<script>jQuery('ul').addClass('list-group ');</script>{/literal}
+{literal}
+<script>jQuery('ul li').addClass('list-group-item normal-row ');</script>{/literal}
+

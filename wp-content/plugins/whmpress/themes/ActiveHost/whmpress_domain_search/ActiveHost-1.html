@@ -1,0 +1,16 @@
+<div class="domainsearch">
+	<form action="{$action_url}" method="post">
+		<div class="searchbar">
+			<input type="hidden" name="direct" value="true">
+			<input type="text" name="domain" placeholder="Enter Domain Here">
+			{if !empty($combo_data.rows)}
+			<select name="tld">
+				{foreach from=$combo_data.rows item=whmp}
+				<option value="{$whmp.extension}">{$whmp.extension}</option>
+				{/foreach}
+			</select>
+			{/if}
+		</div>
+		<input type="submit" value="Search">
+	</form>
+</div>

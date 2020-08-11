@@ -1,0 +1,334 @@
+/*--------------------------------------------------------------
+		Pricing Tables Group Styling
+--------------------------------------------------------------*/
+.wpct_table_group {
+	box-sizing: border-box;
+	*, *:before, *:after { box-sizing: border-box}
+	.wpct_table_group_row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding: 30px 0;
+	}
+	.wpct_table_group_col {
+		width: 20%;
+		padding: 10px;
+		min-width: 250px;
+		text-align: center;
+		.whmpress_pricing_table {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 100% !important;
+            background-color: white !important;
+			.whmpress_order_button{
+				display: inline-block;
+			}
+		}
+	}
+	&.wpct_have_carousel {
+		.wpct_table_group_col {
+			min-width: 100px;
+		}
+	}
+	&.one_col {
+		.wpct_table_group_col { width: 100% }
+	}
+	&.two_cols {
+		.wpct_table_group_col { width: 50% }
+	}
+	&.three_cols {
+		.wpct_table_group_col { width: 33% }
+	}
+	&.four_cols {
+		.wpct_table_group_col { width: 25% }
+	}
+	.slick-dots {
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		margin: 0 auto 15px;
+		&:after {
+			content: '';
+			position: absolute;
+			background: #7ecefd;
+			height: 10px;
+			border-radius: 10px;
+			left: 10px;
+			right: 10px;
+			z-index: 97;
+			bottom: 10px;
+		}
+		li {
+			position: relative;
+			cursor: pointer;
+			min-width: 70px;
+			text-align: center;
+			> span {
+				content: '';
+				display: block;
+				position: relative;
+				width: 20px;
+				height: 20px;
+				margin: 5px auto;
+				background: #7ecefd;
+				border-radius: 20px;
+				z-index: 98;
+				&:after {
+					content: '';
+					position: absolute;
+					width: 10px;
+					height: 10px;
+					z-index: 99;
+					background: #7ecefd;
+					border-radius: 10px;
+					left: 5px;
+					top: 5px;
+				}
+			}
+			&.slick-active {
+				cursor: default;
+				> span {
+					&:after {
+						background: white !important;
+					}
+				}
+			}
+		}
+	}
+	.wpct_group_title {
+		display: none !important;
+	}
+	&.wpct_have_carousel .wpct_table_group_row {
+		padding-left: 60px;
+		padding-right: 60px;
+		position: relative;
+		.wpct_prev, .wpct_next {
+			position: absolute;
+			height: 50px;
+			width: 50px;
+			box-sizing: border-box;
+			padding: 0;
+			background: 0;
+			left: 2px;
+			top: 50%;
+			margin-top: -25px;
+			color: #333;
+			font-size: 50px;
+			line-height: 50px;
+			text-align: center;
+			border: 0;
+			outline: transparent !important;
+			&:hover {
+				color: #333;
+				background: 0;
+				border: 0;
+			}
+			&.wpct_next {
+				left: auto;
+				right: 0;
+			}
+		}
+	}
+	
+	
+	&.group-01 {
+		.slick-dots {
+			&:after {
+				background: #2cd26c;
+			}
+			li {
+				> span {
+					background: #2cd26c;
+					&:after {
+						background: #2cd26c;
+					}
+				}
+			}
+		}
+	}
+	&.group-02 {
+		.slick-dots {
+			&:after {
+				background: #e84c3d;
+			}
+			li {
+				> span {
+					background: #e84c3d;
+					&:after {
+						background: #e84c3d;
+					}
+				}
+			}
+		}
+	}
+	&.group-03 {
+		.slick-dots {
+			&:after {
+				background: #ffac00;
+			}
+			li {
+				> span {
+					background: #ffac00;
+					&:after {
+						background: #ffac00;
+					}
+				}
+			}
+		}
+	}
+	&.group-04 {
+		.slick-dots {
+			&:after {
+				background: #7c3ac9;
+			}
+			li {
+				> span {
+					background: #7c3ac9;
+					&:after {
+						background: #7c3ac9;
+					}
+				}
+			}
+		}
+	}
+	&.group-05 {
+		.slick-dots {
+			&:after {
+				background: #a6374a;
+			}
+			li {
+				> span {
+					background: #a6374a;
+					&:after {
+						background: #a6374a;
+					}
+				}
+			}
+		}
+	}
+	&.group-06 {
+		.slick-dots {
+			&:after {
+				background: #7ec01e;
+			}
+			li {
+				> span {
+					background: #7ec01e;
+					&:after {
+						background: #7ec01e;
+					}
+				}
+			}
+		}
+	}
+	&.group-07 {
+		.slick-dots {
+			&:after {
+				background: #d4300c;
+			}
+			li {
+				> span {
+					background: #d4300c;
+					&:after {
+						background: #d4300c;
+					}
+				}
+			}
+		}
+	}
+	&.group-08 {
+		.slick-dots {
+			&:after {
+				background: #2edb7c;
+			}
+			li {
+				> span {
+					background: #2edb7c;
+					&:after {
+						background: #2edb7c;
+					}
+				}
+			}
+		}
+	}
+	&.group-09 {
+		.slick-dots {
+			&:after {
+				background: #ff813b;
+			}
+			li {
+				> span {
+					background: #ff813b;
+					&:after {
+						background: #ff813b;
+					}
+				}
+			}
+		}
+	}
+	&.group-10 {
+		.slick-dots {
+			&:after {
+				background: #26c3f6;
+			}
+			li {
+				> span {
+					background: #26c3f6;
+					&:after {
+						background: #26c3f6;
+					}
+				}
+			}
+		}
+	}
+	&.simple-01 {
+		.slick-dots {
+			&:after {
+				background: #009cfc;
+			}
+			li {
+				> span {
+					background: #009cfc;
+					&:after {
+						background: #009cfc;
+					}
+				}
+			}
+		}
+	}
+	&.simple-02 {
+		.slick-dots {
+			&:after {
+				background: #b43a7e;
+			}
+			li {
+				> span {
+					background: #b43a7e;
+					&:after {
+						background: #b43a7e;
+					}
+				}
+			}
+		}
+	}
+	&.simple-03 {
+		.slick-dots {
+			&:after {
+				background: #242424;
+			}
+			li {
+				> span {
+					background: #242424;
+					&:after {
+						background: #242424;
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 968px) {
+}
+@media only screen and (max-width: 640px) {
+}

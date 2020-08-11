@@ -1,0 +1,28 @@
+/***************************************************************/
+/*-------------------Domain Search AJAX Styles-----------------*/
+/***************************************************************/
+.whmp_domain_search_ajax_results .whmp_found_title,
+.whmp_domain_search_ajax_results .whmp_found_result {
+  border-color: #FB4400;
+  background: #ffe9e2;
+}
+.whmp_domain_search_ajax_results .whmp_found_title .whmp_search_ajax_buttons a,
+.whmp_domain_search_ajax_results .whmp_found_result .whmp_search_ajax_buttons a {
+  color: white;
+  background: #FB4400;
+  border-color: #c83600;
+}
+.whmp_domain_search_ajax_results .whmp_found_title .whmp_search_ajax_buttons a:hover,
+.whmp_domain_search_ajax_results .whmp_found_result .whmp_search_ajax_buttons a:hover {
+  background: #c83600;
+}
+/***************************************************************/
+/*-------------------WHMPress styles fixes---------------------*/
+/***************************************************************/
+.g1-box.featured .g1-box__icon {
+  background: #FB4400;
+  color: #fff;
+}
+.whmpress_domain_search_bulk form .bulk-options .extentions div label {
+  padding: 0;
+}

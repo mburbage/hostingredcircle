@@ -1,0 +1,80 @@
+.pricing-box {
+  min-width: 250px;
+}
+.pricing-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+.envor-domain-search input[type="text"] {
+  padding: 0 10px;
+  height: 34px;
+  background: transparent;
+}
+/*********************************************************
+*******************Domain Search Ajax*********************
+*********************************************************/
+/*Ajax Form*/
+.whmpress_domain_search_ajax form button {
+  background: #1a8b49;
+  border-color: #1a8b49;
+  color: #fff;
+}
+.whmpress_domain_search_ajax form button:hover {
+  background: #363636;
+  border-color: #363636;
+  color: #fff;
+}
+/*Ajax Search Results*/
+.whmp_search_ajax_result {
+  list-style: none !important;
+}
+.whmp_search_ajax_result i {
+  float: none !important;
+  margin-bottom: 0 !important;
+}
+.whmp_found_title {
+  border: 2px solid #1a8b49;
+  border-top-width: 6px;
+  background: #fff;
+  color: #1a8b49;
+}
+.whmp_not_found_title {
+  color: #eb534e;
+  border: 2px solid #eb534e;
+  border-top-width: 6px;
+  background: #fff;
+}
+.whmp_found_result {
+  border-radius: 0;
+  border: 3px solid #1a8b49;
+  background: #fff;
+  color: #363636;
+}
+.whmp_found_title .whmp_search_ajax_buttons a,
+.whmp_found_result .whmp_search_ajax_buttons a,
+.whmpress_domain_search_ajax_results .result-div button {
+  background: #1a8b49;
+  border-color: #1a8b49;
+  color: #fff;
+}
+.whmp_found_title .whmp_search_ajax_buttons a:hover,
+.whmp_found_result .whmp_search_ajax_buttons a:hover,
+.whmpress_domain_search_ajax_results .result-div button:hover {
+  background: #363636;
+  border-color: #363636;
+  color: #fff;
+}
+.whmp_not_found_result {
+  border: 3px solid #eb534e;
+  background: #fff;
+  color: #eb534e;
+}
+.whmp_not_found_title .whmp_search_ajax_buttons a,
+.whmp_not_found_result .whmp_search_ajax_buttons a,
+.whmp_not_found_title .whmp_search_ajax_buttons a:hover,
+.whmp_not_found_result .whmp_search_ajax_buttons a:hover {
+  background: none;
+  border: 0;
+  color: #eb534e;
+  font-weight: 500;
+}

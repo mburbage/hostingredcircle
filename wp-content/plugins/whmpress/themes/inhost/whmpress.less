@@ -1,0 +1,212 @@
+/***************************************************************/
+/*-------------------WHMPress Styles overrides-----------------*/
+/***************************************************************/
+.whmpress {
+	button,
+	a.whmpress-btn,
+	a.buy-button,
+	a.www-button,
+	a.whois-button,
+	input[type="submit"] {
+		background: #42454A;
+		&:hover {
+			background: #FD4326;
+		}
+	}
+}
+
+.whmp_domain_search_ajax_results {
+	h3 {
+		text-align: center;
+		line-height: 4;
+		margin-bottom: -20px;
+	}
+	.whmp_found_title,
+	.whmp_not_found_title,
+	.whmp_found_result,
+	.whmp_not_found_result {
+		background: none;
+		border: 1px solid #42454A;
+		border-radius: 0;
+		margin-top: -1px;
+		color: #42454A;
+		margin-bottom: 0;
+		border-collapse: collapse;
+		.whmp_search_ajax_buttons a {
+			background: #42454A;
+			border: 0;
+			border-radius: 4px;
+			&:hover {
+				background: #FD4326;
+			}
+		}
+	}
+}
+
+/*********************************************************
+*******************Domain Search Ajax*********************
+*********************************************************/
+/*Ajax Form*/
+.whmpress_domain_search_ajax form button {
+	background: #49a32b;
+	border-color: #49a32b;
+	color: #fff;
+}
+
+.whmpress_domain_search_ajax form button:hover {
+	background: #69d34b;
+	border-color: #69d34b;
+	color: #fff;
+}
+
+/*Ajax Search Results*/
+.whmp_search_ajax_result {
+	list-style: none !important;
+}
+
+.whmp_found_title {
+	border: 2px solid #49a32b;
+	border-top-width: 6px;
+	background: #fff;
+	color: #49a32b;
+}
+
+.whmp_not_found_title {
+	color: #eb534e;
+	border: 2px solid #eb534e;
+	border-top-width: 6px;
+	background: #fff;
+}
+
+.whmp_found_result {
+	border-radius: 0;
+	border: 3px solid #49a32b;
+	background: #fff;
+	color: #232a31;
+}
+
+.whmp_found_title .whmp_search_ajax_buttons a,
+.whmp_found_result .whmp_search_ajax_buttons a,
+.whmpress_domain_search_ajax_results .result-div button {
+	background: #49a32b;
+	border-color: #49a32b;
+	color: #fff;
+}
+
+.whmp_found_title .whmp_search_ajax_buttons a:hover,
+.whmp_found_result .whmp_search_ajax_buttons a:hover,
+.whmpress_domain_search_ajax_results .result-div button:hover {
+	background: #398439;
+	border-color: #398439;
+	color: #fff;
+}
+
+.whmp_not_found_result {
+	border: 3px solid #eb534e;
+	background: #fff;
+	color: #eb534e;
+}
+
+.whmp_not_found_title .whmp_search_ajax_buttons a,
+.whmp_not_found_result .whmp_search_ajax_buttons a,
+.whmp_not_found_title .whmp_search_ajax_buttons a:hover,
+.whmp_not_found_result .whmp_search_ajax_buttons a:hover {
+	background: none;
+	border: 0;
+	color: #eb534e;
+	font-weight: 500;
+}
+
+/*Price and Domain Matrices*/
+.whmpress_price_matrix tr,
+.whmpress_price_matrix_domain tr {
+	height: 50px;
+}
+
+.whmpress_price_matrix thead tr,
+.whmpress_price_matrix_domain thead tr {
+	height: 60px;
+}
+
+.whmpress_price_matrix tr:nth-of-type(even),
+.whmpress_price_matrix_domain tr:nth-of-type(even) {
+	background: #fff;
+}
+
+.whmpress_price_matrix .whmpress_order_button,
+.whmpress_price_matrix_domain .whmpress_order_button {
+	margin-bottom: 0;
+}
+
+/*Order Button*/
+.inhost-order-button {
+	min-width: 150px;
+	text-align: center;
+}
+
+/*Order Combo*/
+.inhost_order_combo form {
+	display: flex;
+}
+
+.inhost_order_combo form select {
+	min-height: 52px;
+}
+
+.inhost_order_combo form button {
+	min-width: 160px;
+}
+
+/*Domain Search Bulk*/
+.whmp_domain_search_bulk .ext {
+	width: 25%;
+	float: left;
+}
+
+@media only screen and (max-width: 640px) {
+	.whmp_domain_search_bulk .ext {
+		width: 25%;
+		float: left;
+	}
+	
+	.whmp_domain_search_bulk form {
+		display: block;
+	}
+}
+
+/*Domain WhoIs*/
+.inhost_whois_form input {
+	outline: none;
+	padding: 8px 10px;
+	border-radius: 5px;
+	border: 2px solid #ddd;
+}
+
+/*Login form*/
+.inhost_login_form {
+	min-width: 350px;
+	text-align: center;
+}
+
+.inhost_login_form form div {
+	margin-bottom: 20px;
+}
+
+.inhost_login_form form div label {
+	text-align: left;
+}
+
+.inhost_login_form form div input {
+	display: inline-block;
+	width: 100%;
+	min-width: 200px;
+	background: #fff;
+	text-align: left;
+}
+
+.inhost_login_form input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
+	outline: none;
+	padding: 8px 10px;
+	border-radius: 5px;
+	border: 2px solid #ddd;
+}

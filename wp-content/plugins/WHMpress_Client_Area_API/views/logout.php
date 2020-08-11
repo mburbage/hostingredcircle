@@ -1,0 +1,1 @@
+<button id="whmcs_logout_btn">Logout</button>

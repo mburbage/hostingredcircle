@@ -1,0 +1,36 @@
+/*
+
+    Theme Name: Hosted
+
+    Theme URI: http://demo.oceanthemes.net/hosted/
+
+    Author: OceanThemes
+
+    Author URI: http://oceanthemes.net
+
+    Release Date: 30 December 2016
+
+    Requirements: WordPress 4.0 or higher, PHP 5
+
+    Compatibility: WordPress 4.7
+
+    Tags: web app
+
+    Last Update Date:
+
+*/
+
+
+
+/**** Changelog ****/
+
+
+
+"Please backup your theme pack files at first before you update the theme into the latest version"
+
+
+
+2016.12.30 - version 1.0.0
+
+- First release.
+

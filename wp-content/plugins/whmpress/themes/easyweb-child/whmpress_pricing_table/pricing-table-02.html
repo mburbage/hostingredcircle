@@ -1,0 +1,20 @@
+<div class="w-pricing-table pt-type2 {$featured}">
+	<span class="icon {$sub_icon}"></span>
+	<h3 class="plan-title">{$product_name}</h3>
+	{$product_description}
+	<h4 class="pt-price"><span>{$prefix}{$amount}{if $fraction ne ""}{$decimal}{$fraction}{/if}{$suffix}</span>
+		<small>/{$duration}</small>
+	</h4>
+	<h5>{$old_price}</h5>
+
+	<div class="pt-footer">
+		<a href="{$order_url}" class="magicmore">{$button_text}</a>
+	</div>
+</div>
+
+{literal}
+<script>
+	jQuery('.whmpress_description > ul > li').addClass('feature-item');
+	jQuery('.whmpress_description > ul').addClass('pt-features').unwrap();
+</script>
+{/literal}

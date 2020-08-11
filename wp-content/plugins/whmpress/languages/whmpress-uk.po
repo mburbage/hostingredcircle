@@ -1,0 +1,2315 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WHMpress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-06 07:49+0000\n"
+"PO-Revision-Date: 2018-03-07 10:13+0000\n"
+"Last-Translator: admin <abid@ecom.pk>\n"
+"Language-Team: Ukrainian\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: whmpress.php:320
+#, php-format
+msgid ""
+"Your WHMPress installation folder name is %1s. Please rename folder to %2s, "
+"otherwise you may face problems in performance."
+msgstr ""
+"Ваше WHMPress ім'я папки установки% 1s. Будь ласка, перейменуйте папку в% 2s,"
+" в іншому випадку ви можете зіткнутися з проблемами в продуктивності."
+
+#: whmpress.php:595
+msgid "An unknown error occurred"
+msgstr "Виникла невідома помилка"
+
+#: includes/ajax.php:91 includes/ajax.php:533 includes/ajax-saved.php:85
+#: includes/ajax-saved.php:430
+msgid "Load More"
+msgstr "Завантажити ще"
+
+#: includes/ajax.php:137 includes/ajax.php:316 includes/ajax-saved.php:106
+msgid "Domain name required."
+msgstr "слід вказати ім'я домену."
+
+#: includes/ajax.php:180 includes/ajax.php:359 includes/ajax.php:546
+#: includes/ajax-saved.php:188 includes/ajax-saved.php:445
+#: includes/functions.php:1527
+#: includes/shortcodes/whmpress_domain_search_ajax_extended.php:37
+#: includes/shortcodes/whmpress_domain_search_bulk_backup.php:31
+#: includes/shortcodes/whmpress_domain_search_bulk.php:179
+msgid "WWW"
+msgstr ""
+
+#: includes/ajax.php:181 includes/ajax.php:360 includes/ajax.php:547
+#: includes/ajax-saved.php:189 includes/ajax-saved.php:446
+#: includes/shortcodes/whmpress_domain_search_ajax_extended.php:38
+#: includes/shortcodes/whmpress_domain_search_bulk.php:181
+msgid "WHOIS"
+msgstr "ХТО Є"
+
+#: includes/ajax.php:182 includes/ajax.php:361 includes/ajax.php:548
+#: includes/ajax-saved.php:190 includes/ajax-saved.php:447 includes/tmp.php:159
+#: includes/shortcodes/whmpress_domain_search_ajax_extended.php:39
+#: includes/shortcodes/whmpress_price_table_domain.php:385
+#: includes/shortcodes/whmpress_domain_search_bulk.php:200
+msgid "Transfer"
+msgstr "передача"
+
+#: includes/functions_i.php:64
+msgid "Service/Product id not provided"
+msgstr "Ідентифікатор послуги / продукту не передбачено"
+
+#: includes/functions_i.php:73
+msgid "Product with this ID does not exist."
+msgstr "Продукт з таким ідентифікатором не існує."
+
+#: includes/functions_i.php:168
+msgid "*when ordered "
+msgstr "* При замовленні"
+
+#: includes/functions_i.php:462
+msgid "OneTime"
+msgstr "Одного разу"
+
+#: includes/functions_i.php:463
+msgid "Pay Once"
+msgstr "Зверніть Після"
+
+#: includes/functions_i.php:464 includes/functions_i.php:466
+#: includes/shortcodes/whmpress_order_combo.php:120
+#: includes/shortcodes/whmpress_price.php:284
+#: includes/shortcodes/whmpress_price.php:295
+#: includes/shortcodes/whmpress_price.php:337
+msgid "One Time"
+msgstr "Одного разу"
+
+#: includes/functions_i.php:465 includes/shortcodes/whmpress_price.php:329
+msgid "OT"
+msgstr ""
+
+#: includes/functions_i.php:471 includes/shortcodes/whmpress_price_table.php:72
+#: includes/shortcodes/whmpress_price_table.php:92
+msgid "Monthly"
+msgstr "щомісяця"
+
+#: includes/functions_i.php:472
+msgid "1 month"
+msgstr "1 місяць"
+
+#: includes/functions_i.php:473 includes/shortcodes/whmpress_price.php:242
+msgid "Month"
+msgstr "місяць"
+
+#: includes/functions_i.php:474
+#: includes/shortcodes/whmpress_order_combo.php:233
+#: includes/shortcodes/whmpress_order_combo.php:296
+#: includes/shortcodes/whmpress_order_combo.php:363
+#: includes/shortcodes/whmpress_order_combo.php:437
+#: includes/shortcodes/whmpress_order_combo.php:511
+#: includes/shortcodes/whmpress_price.php:290
+msgid "mo"
+msgstr "мі"
+
+#: includes/functions_i.php:475
+#: includes/shortcodes/whmpress_order_combo.php:127
+#: includes/shortcodes/whmpress_order_combo.php:146
+#: includes/shortcodes/whmpress_order_combo.php:165
+msgid "1 Month"
+msgstr "1 місяць"
+
+#: includes/functions_i.php:480
+msgid "Quarterly"
+msgstr "Quarterly"
+
+#: includes/functions_i.php:481
+msgid "3 month"
+msgstr "3 місяці"
+
+#: includes/functions_i.php:482
+msgid "Quarter"
+msgstr "чверть"
+
+#: includes/functions_i.php:483
+msgid "qu"
+msgstr "чв"
+
+#: includes/functions_i.php:484
+#: includes/shortcodes/whmpress_order_combo.php:196
+#: includes/shortcodes/whmpress_order_combo.php:215
+#: includes/shortcodes/whmpress_order_combo.php:233
+#: includes/shortcodes/whmpress_price_table.php:73
+#: includes/shortcodes/whmpress_price_table.php:93
+msgid "3 Months"
+msgstr "3 місяці"
+
+#: includes/functions_i.php:489
+msgid "Semi Annually"
+msgstr "раз в півроку"
+
+#: includes/functions_i.php:490
+msgid "6 month"
+msgstr "6 місяці"
+
+#: includes/functions_i.php:491
+msgid "Half year"
+msgstr ""
+
+#: includes/functions_i.php:492
+msgid "sa"
+msgstr "ра пі"
+
+#: includes/functions_i.php:493
+#: includes/shortcodes/whmpress_order_combo.php:261
+#: includes/shortcodes/whmpress_order_combo.php:278
+#: includes/shortcodes/whmpress_order_combo.php:296
+#: includes/shortcodes/whmpress_price_table.php:74
+#: includes/shortcodes/whmpress_price_table.php:94
+msgid "6 Months"
+msgstr "6 місяці"
+
+#: includes/functions_i.php:498
+msgid "Annually"
+msgstr "щорічно"
+
+#: includes/functions_i.php:499
+msgid "1 year"
+msgstr "1 рік"
+
+#: includes/functions_i.php:500 includes/functions.php:1244
+#: includes/shortcodes/whmpress_domain_price.php:172
+#: includes/shortcodes/whmpress_domain_price.php:192
+#: includes/shortcodes/whmpress_domain_search_bulk.php:149
+#: includes/shortcodes/whmpress_price.php:241
+#: includes/shortcodes/domain_search_ajax_extended_parts/results/default.php:46
+#: includes/shortcodes/domain_search_ajax_extended_parts/results/default.php:57
+#: includes/shortcodes/domain_search_ajax_extended_parts/results/default.php:132
+#: includes/shortcodes/domain_search_ajax_extended_parts/results/default.php:142
+msgid "Year"
+msgstr "рік"
+
+#: includes/functions_i.php:501
+msgid "yr"
+msgstr "рік"
+
+#: includes/functions_i.php:502
+#: includes/shortcodes/whmpress_order_combo.php:328
+#: includes/shortcodes/whmpress_order_combo.php:361
+msgid "12 Months"
+msgstr "12 місяці"
+
+#: includes/functions_i.php:507
+msgid "Biennially"
+msgstr "раз на два роки"
+
+#: includes/functions_i.php:508
+#: includes/shortcodes/whmpress_price_table_domain.php:530
+msgid "2 Year"
+msgstr "2 рік"
+
+#: includes/functions_i.php:509
+#: includes/shortcodes/whmpress_order_combo.php:414
+#: includes/shortcodes/whmpress_price_table.php:76
+#: includes/shortcodes/whmpress_price_table.php:96
+msgid "2 Years"
+msgstr "2 роки"
+
+#: includes/functions_i.php:510
+msgid "2 yrs"
+msgstr "2 роки"
+
+#: includes/functions_i.php:511
+#: includes/shortcodes/whmpress_order_combo.php:398
+#: includes/shortcodes/whmpress_order_combo.php:435
+msgid "24 Months"
+msgstr "24 місяці"
+
+#: includes/functions_i.php:516
+msgid "Triennially"
+msgstr "трирічної"
+
+#: includes/functions_i.php:517
+#: includes/shortcodes/whmpress_price_table_domain.php:531
+msgid "3 Year"
+msgstr "3 Year"
+
+#: includes/functions_i.php:518
+#: includes/shortcodes/whmpress_order_combo.php:489
+#: includes/shortcodes/whmpress_price_table.php:77
+#: includes/shortcodes/whmpress_price_table.php:97
+msgid "3 Years"
+msgstr "3 роки"
+
+#: includes/functions_i.php:519
+msgid "3 yrs"
+msgstr "3 роки"
+
+#: includes/functions_i.php:520
+#: includes/shortcodes/whmpress_order_combo.php:473
+#: includes/shortcodes/whmpress_order_combo.php:509
+msgid "36 Months"
+msgstr "36 місяці"
+
+#: includes/functions_i.php:528
+msgid "Invalid billing cycle"
+msgstr "Невірний платіжний цикл"
+
+#: includes/shortcodes.php:53
+#: includes/shortcodes/whmpress_price_table_domain.php:648
+msgid "Price"
+msgstr "ціна"
+
+#: includes/shortcodes.php:54
+msgid "Domain Price"
+msgstr "домен Ціна"
+
+#: includes/shortcodes.php:55 includes/shortcodes.php:56
+msgid "Price Matrix"
+msgstr "Ціна Матриця"
+
+#: includes/shortcodes.php:57 includes/shortcodes.php:58
+msgid "Price Matrix Domain"
+msgstr "Ціна Матриця доменів"
+
+#: includes/shortcodes.php:59
+msgid "Domain Price List"
+msgstr "Прайс-лист домену"
+
+#: includes/shortcodes.php:60
+msgid "Order Combo"
+msgstr "Замовити Combo"
+
+#: includes/shortcodes.php:61
+msgid "Order Button"
+msgstr "кнопка замовлення"
+
+#: includes/shortcodes.php:62
+msgid "Order Link"
+msgstr "Замовити Посилання"
+
+#: includes/shortcodes.php:63
+msgid "Order URL"
+msgstr "URL замовлення"
+
+#: includes/shortcodes.php:64
+msgid "Currency"
+msgstr "валюта"
+
+#: includes/shortcodes.php:65
+msgid "Currency Combo"
+msgstr "Валюта Combo"
+
+#: includes/shortcodes.php:66
+msgid "Fancy Currency Combo"
+msgstr "Незвичайні валюти Combo"
+
+#: includes/shortcodes.php:67 includes/shortcodes/whmpress_price_table.php:70
+msgid "Name"
+msgstr "ім'я"
+
+#: includes/shortcodes.php:68
+msgid "Description"
+msgstr "опис"
+
+#: includes/shortcodes.php:69
+msgid "Price Box"
+msgstr "Ціна Box"
+
+#: includes/shortcodes.php:70
+msgid "Pricing Table"
+msgstr "ціноутворення Таблиця"
+
+#: includes/shortcodes.php:71
+msgid "Domain Search"
+msgstr "Пошук домена"
+
+#: includes/shortcodes.php:72
+msgid "Domain Search Ajax"
+msgstr "Пошук домена Ajax"
+
+#: includes/shortcodes.php:73
+msgid "Domain Search AJAX Extended"
+msgstr "Пошук домена AJAX Extended"
+
+#: includes/shortcodes.php:77
+msgid "Domain Search Bulk"
+msgstr "Пошук домена Bulk"
+
+#: includes/shortcodes.php:78
+msgid "Domain Whois"
+msgstr "доменні WhoIs"
+
+#: includes/shortcodes.php:79
+msgid "Login Form"
+msgstr "Ввійти Форма"
+
+#: includes/shortcodes.php:80
+msgid "WHMPress URL"
+msgstr "URL WHMPress"
+
+#: includes/shortcodes.php:81
+msgid "Announcements"
+msgstr "оголошення"
+
+#: includes/shortcodes.php:82
+msgid "Bundle Price"
+msgstr "Bundle Ціна"
+
+#: includes/shortcodes.php:83
+msgid "Bundle Name"
+msgstr "Bundle Ім'я"
+
+#: includes/shortcodes.php:84
+msgid "Bundle Description"
+msgstr "Bundle Опис"
+
+#: includes/shortcodes.php:85
+msgid "Bundle Order Button"
+msgstr "Кнопка Bundle Замовити"
+
+#: includes/shortcodes.php:86
+msgid "Bundle Pricing Table"
+msgstr "Bundle Таблиця ціноутворення"
+
+#: includes/shortcodes.php:258 includes/shortcodes.php:258
+msgid "Email address"
+msgstr "Адреса електронної пошти"
+
+#: includes/shortcodes.php:259 includes/shortcodes.php:259
+msgid "Password"
+msgstr "пароль"
+
+#: includes/shortcodes.php:309
+msgid "No domain selected"
+msgstr "Немає домен обраний"
+
+#: includes/functions.php:1247
+#: includes/shortcodes/whmpress_price_table_domain.php:380
+#: includes/shortcodes/whmpress_price_table_domain.php:649
+#: includes/shortcodes/whmpress_domain_price.php:174
+#: includes/shortcodes/whmpress_domain_price.php:194
+#: includes/shortcodes/whmpress_domain_search_bulk.php:152
+#: includes/shortcodes/domain_search_ajax_extended_parts/results/default.php:46
+#: includes/shortcodes/domain_search_ajax_extended_parts/results/default.php:57
+#: includes/shortcodes/domain_search_ajax_extended_parts/results/default.php:132
+#: includes/shortcodes/domain_search_ajax_extended_parts/results/default.php:142
+msgid "Years"
+msgstr "роки"
+
+#: includes/functions.php:1540 includes/functions.php:1560
+msgid "[domain-name] is not available"
+msgstr "[Ім'я домену] не доступний"
+
+#: includes/functions.php:1550 includes/functions.php:1570
+#: includes/shortcodes/whmpress_domain_search_bulk.php:111
+msgid "[domain-name] is available"
+msgstr "[Ім'я домену] доступний"
+
+#: includes/functions.php:1581
+#: includes/shortcodes/whmpress_domain_search_bulk.php:130
+msgid "Select"
+msgstr "вибрати"
+
+#: includes/functions.php:1592
+msgid "Recommended domains list"
+msgstr "Список Рекомендовані домени"
+
+#: admin/services.php:43 admin/settings.php:104 admin/pricing_tables.php:17
+#: admin/admin.php:144 admin/debug.php:56
+msgctxt "admin"
+msgid "Dashboard"
+msgstr ""
+
+#: admin/services.php:45 admin/settings.php:105 admin/pricing_tables.php:19
+#: admin/admin.php:153 admin/debug.php:57
+msgctxt "admin"
+msgid "Products/Services"
+msgstr ""
+
+#: admin/services.php:47 admin/settings.php:106 admin/settings.php:115
+#: admin/pricing_tables.php:21 admin/admin.php:173 admin/debug.php:58
+msgctxt "admin"
+msgid "Settings"
+msgstr ""
+
+#: admin/services.php:49 admin/sync.php:20 admin/dashboard.php:93
+#: admin/settings.php:107 admin/pricing_tables.php:23 admin/admin.php:182
+#: admin/debug.php:59
+msgctxt "admin"
+msgid "Pricing Tables"
+msgstr ""
+
+#: admin/services.php:51 admin/sync.php:70 admin/settings.php:108
+#: admin/pricing_tables.php:25 admin/admin.php:191 admin/debug.php:60
+msgctxt "admin"
+msgid "Sync WHMCS"
+msgstr ""
+
+#: admin/services.php:52 admin/sync.php:22 admin/dashboard.php:95
+#: admin/settings.php:109 admin/pricing_tables.php:26 admin/extensions.php:21
+#: admin/debug.php:61
+msgctxt "admin"
+msgid "Debug info"
+msgstr ""
+
+#: admin/services.php:58
+msgctxt "admin"
+msgid "Products and Services"
+msgstr ""
+
+#: admin/services.php:59 admin/settings.php:116
+msgctxt "admin"
+msgid "WHMCS is not Synced"
+msgstr ""
+
+#: admin/services.php:60
+msgctxt "admin"
+msgid "You will not be able to view/modify any products until you sync WHMCS"
+msgstr ""
+
+#: admin/services.php:61 admin/dashboard.php:152 admin/settings.php:118
+msgctxt "admin"
+msgid "Please Sync WHMCS"
+msgstr ""
+
+#: admin/services.php:68
+msgctxt "admin"
+msgid "This page has all services list"
+msgstr ""
+
+#: admin/services.php:98 admin/dashboard.php:174 admin/debug.php:180
+msgctxt "admin"
+msgid "Domains"
+msgstr ""
+
+#: admin/services.php:99 admin/dashboard.php:180 admin/debug.php:192
+msgctxt "admin"
+msgid "Currencies"
+msgstr ""
+
+#: admin/services.php:110 admin/services.php:208 admin/services.php:296
+#: admin/pricing_tables.php:180
+msgctxt "admin"
+msgid "ID"
+msgstr ""
+
+#: admin/services.php:111
+msgctxt "admin"
+msgid "Name"
+msgstr ""
+
+#: admin/services.php:112
+msgctxt "admin"
+msgid "Description"
+msgstr ""
+
+#: admin/services.php:113
+msgctxt "admin"
+msgid "Description Override"
+msgstr ""
+
+#: admin/services.php:114
+msgctxt "admin"
+msgid "Description Append"
+msgstr ""
+
+#: admin/services.php:123 admin/services.php:131
+msgctxt "admin"
+msgid "Hidden"
+msgstr ""
+
+#: admin/services.php:135
+msgctxt "admin"
+msgid "Name override for current language"
+msgstr ""
+
+#: admin/services.php:149
+msgctxt "admin"
+msgid "Tag line"
+msgstr ""
+
+#: admin/services.php:165
+msgctxt "admin"
+msgid "Override description according to current language"
+msgstr ""
+
+#: admin/services.php:173
+msgctxt "admin"
+msgid "Append description according to current language"
+msgstr ""
+
+#: admin/services.php:182 admin/services.php:281 admin/services.php:292
+#: admin/services.php:380
+msgctxt "admin"
+msgid "Save"
+msgstr ""
+
+#: admin/services.php:204
+msgctxt "admin"
+msgid "You are selling"
+msgstr ""
+
+#: admin/services.php:209
+msgctxt "admin"
+msgid "Group"
+msgstr ""
+
+#: admin/services.php:210
+msgctxt "admin"
+msgid "Domain"
+msgstr ""
+
+#: admin/services.php:211
+msgctxt "admin"
+msgid "Registeration"
+msgstr ""
+
+#: admin/services.php:212
+msgctxt "admin"
+msgid "Renewel"
+msgstr ""
+
+#: admin/services.php:213
+msgctxt "admin"
+msgid "Transfer"
+msgstr ""
+
+#: admin/services.php:214
+msgctxt "admin"
+msgid "Restore"
+msgstr ""
+
+#: admin/services.php:215
+msgctxt "admin"
+msgid "Promo"
+msgstr ""
+
+#: admin/services.php:216
+msgctxt "admin"
+msgid "Promo Text"
+msgstr ""
+
+#: admin/services.php:217
+msgctxt "admin"
+msgid "Promo Details"
+msgstr ""
+
+#: admin/services.php:218
+msgctxt "admin"
+msgid "Register Off"
+msgstr ""
+
+#: admin/services.php:219
+msgctxt "admin"
+msgid "Renew Off"
+msgstr ""
+
+#: admin/services.php:220
+msgctxt "admin"
+msgid "Transfer Off"
+msgstr ""
+
+#: admin/services.php:221
+msgctxt "admin"
+msgid "Apply all years"
+msgstr ""
+
+#: admin/services.php:297 admin/settings.php:202
+msgctxt "admin"
+msgid "Code"
+msgstr ""
+
+#: admin/services.php:298 admin/settings.php:198
+msgctxt "admin"
+msgid "Prefix"
+msgstr ""
+
+#: admin/services.php:299 admin/settings.php:200
+msgctxt "admin"
+msgid "Suffix"
+msgstr ""
+
+#: admin/services.php:300
+msgctxt "admin"
+msgid "Decimal Sep."
+msgstr ""
+
+#: admin/services.php:301
+msgctxt "admin"
+msgid "Thousand Sep."
+msgstr ""
+
+#: admin/services.php:342
+msgctxt "admin"
+msgid "Override code"
+msgstr ""
+
+#: admin/services.php:349
+msgctxt "admin"
+msgid "Override pefix"
+msgstr ""
+
+#: admin/services.php:356
+msgctxt "admin"
+msgid "Override suffix"
+msgstr ""
+
+#: admin/services.php:363
+msgctxt "admin"
+msgid "Override decimal separator"
+msgstr ""
+
+#: admin/sync.php:26
+msgctxt "admin"
+msgid ""
+"WHMpress makes your life easy by fetching all the services related "
+"information from WHMCS. Once you Sync WHMCS, all the services are fetched "
+"from WHMCS and are cached and made available in WHMpress for quick access"
+msgstr ""
+"WHMpress робить ваше життя простіше, запитуючи усі послуги, пов'язані з "
+"інформацією WHMCS. Після того як ви синхронізація WHMCS, усі послуги "
+"вибираються з WHMCS і кешуються і доступні в WHMpress для швидкого доступу"
+
+#: admin/sync.php:41
+msgctxt "admin"
+msgid "WHMCS Database Server"
+msgstr ""
+
+#: admin/sync.php:46
+msgctxt "admin"
+msgid "WHMCS Database Name"
+msgstr ""
+
+#: admin/sync.php:51
+msgctxt "admin"
+msgid "WHMCS Database User"
+msgstr ""
+
+#: admin/sync.php:56
+msgctxt "admin"
+msgid "WHMCS Database Password"
+msgstr ""
+
+#: admin/dashboard.php:27
+msgctxt "admin"
+msgid "Done"
+msgstr ""
+
+#: admin/dashboard.php:28
+msgctxt "admin"
+msgid "WHMpress cached data removed ...."
+msgstr ""
+
+#: admin/dashboard.php:42
+msgctxt "admin"
+msgid "WHMPress is not verfified"
+msgstr ""
+
+#: admin/dashboard.php:45 admin/dashboard.php:48 admin/settings.php:633
+#: admin/debug.php:176
+msgctxt "admin"
+msgid "Email address"
+msgstr ""
+
+#: admin/dashboard.php:52 admin/dashboard.php:54 admin/settings.php:637
+msgctxt "admin"
+msgid "Purchase Code"
+msgstr ""
+
+#: admin/dashboard.php:57
+msgctxt "admin"
+msgid "Verify WHMPress"
+msgstr ""
+
+#: admin/dashboard.php:75 admin/settings.php:59 admin/debug.php:50
+msgctxt "admin"
+msgid "Loading"
+msgstr ""
+
+#: admin/dashboard.php:79
+msgctxt "admin"
+msgid "WHMPress"
+msgstr ""
+
+#: admin/dashboard.php:82
+msgctxt "admin"
+msgid ""
+"It is used to display WHMCS products in a fancy way, without effort. Links "
+"will still point to WHMCS. Can be further extended using Addon, WHMCS "
+"Sliders & Comparison Tables (WPCT). WPCT is intended for users who need "
+"Sliders & Comparison tables."
+msgstr ""
+"Він використовується для відображення продуктів Whmcs в химерному способі, "
+"без зусиль. Посилання як і раніше вказують на WHMCS. Може бути додатково "
+"розширено за допомогою аддона Whmcs повзунків & Порівняльні таблиці (WPCT). "
+"WPCT призначений для користувачів, які потребують повзунки і Порівняльні "
+"таблиці."
+
+#: admin/dashboard.php:104
+msgctxt "admin"
+msgid "Registered WHMpress"
+msgstr ""
+
+#: admin/dashboard.php:106 admin/dashboard.php:121
+msgctxt "admin"
+msgid "Congratulation! WHMPress is verified"
+msgstr ""
+
+#: admin/dashboard.php:109 admin/dashboard.php:124
+msgctxt "admin"
+msgid "Un-Verify WHMpress"
+msgstr ""
+
+#: admin/dashboard.php:113 admin/dashboard.php:127
+msgctxt "admin"
+msgid "Verify your purchase"
+msgstr ""
+
+#: admin/dashboard.php:120
+msgctxt "admin"
+msgid "Verified Product"
+msgstr ""
+
+#: admin/dashboard.php:134 admin/dashboard.php:140
+msgctxt "admin"
+msgid "Reset WHMpress"
+msgstr ""
+
+#: admin/dashboard.php:136
+msgctxt "admin"
+msgid ""
+"If you want to reset all WHMpress as it was newly installed, press this "
+"button"
+msgstr ""
+
+#: admin/dashboard.php:148 admin/dashboard.php:158
+msgctxt "admin"
+msgid "System Info"
+msgstr ""
+
+#: admin/dashboard.php:151
+msgctxt "admin"
+msgid "No system info available"
+msgstr ""
+
+#: admin/dashboard.php:160 admin/dashboard.php:162 admin/debug.php:153
+msgctxt "admin"
+msgid "Version"
+msgstr ""
+
+#: admin/dashboard.php:164 admin/debug.php:172
+msgctxt "admin"
+msgid "Company Name"
+msgstr ""
+
+#: admin/dashboard.php:166
+msgctxt "admin"
+msgid "Language"
+msgstr ""
+
+#: admin/dashboard.php:168
+msgctxt "admin"
+msgid "Email"
+msgstr ""
+
+#: admin/dashboard.php:170 admin/debug.php:157
+msgctxt "admin"
+msgid "Last Synced"
+msgstr ""
+
+#: admin/dashboard.php:176 admin/debug.php:184
+msgctxt "admin"
+msgid "Products"
+msgstr ""
+
+#: admin/dashboard.php:178 admin/debug.php:188
+msgctxt "admin"
+msgid "Product Groups"
+msgstr ""
+
+#: admin/dashboard.php:187 admin/settings.php:129
+#: admin/js/shortcodes.js.php:365
+msgctxt "admin"
+msgid "General"
+msgstr ""
+
+#: admin/dashboard.php:189
+msgctxt "admin"
+msgid "Watch this video to quickly learn about the use of WHMpress"
+msgstr ""
+
+#: admin/dashboard.php:191
+msgctxt "admin"
+msgid "Introduction Tour"
+msgstr ""
+
+#: admin/dashboard.php:200
+msgctxt "admin"
+msgid "Warning! All cached data and all settings of WHMpress will removed"
+msgstr ""
+
+#: admin/dashboard.php:200
+msgid "Are you sure"
+msgstr ""
+
+#: admin/settings.php:75
+#, php-format
+msgctxt "admin"
+msgid ""
+"This plugin comes pre-configured for your current theme %1s.\n"
+"            The look and feel of WHMCS client area have been adjusted to "
+"match %2s."
+msgstr ""
+
+#: admin/settings.php:78
+msgctxt "admin"
+msgid "To further adjust the settings click the button(s) below."
+msgstr ""
+
+#: admin/settings.php:82
+msgctxt "admin"
+msgid "Adjust All Settings"
+msgstr ""
+
+#: admin/settings.php:117
+msgctxt "admin"
+msgid "You will not be able to modify any settings until you sync WHMCS"
+msgstr ""
+
+#: admin/settings.php:130
+msgctxt "admin"
+msgid "Styles"
+msgstr ""
+
+#: admin/settings.php:132 admin/settings-tabs/defaults.php:11
+msgctxt "admin"
+msgid "Domain Search"
+msgstr ""
+
+#: admin/settings.php:134
+msgctxt "admin"
+msgid "Default Values"
+msgstr ""
+
+#: admin/settings.php:135
+msgctxt "admin"
+msgid "3rd Party"
+msgstr ""
+
+#: admin/settings.php:136
+msgctxt "admin"
+msgid "Advanced"
+msgstr ""
+
+#: admin/settings.php:137
+msgctxt "admin"
+msgid "Registration"
+msgstr ""
+
+#: admin/settings.php:149
+msgctxt "admin"
+msgid ""
+"If you have SSL URL configured in WHMCS Admin Area > Setup > General "
+"Settings then you must select HTTPS from here, Or you will endup with "
+"redirect loop."
+msgstr ""
+"Якщо у вас є URL SSL конфігурований в зоні WHMCS адміністратора> "
+"Налаштування> Загальні налаштування, то ви повинні вибрати HTTPS тут, або ви "
+"endup з петлею перенаправлення."
+
+#: admin/settings.php:155 admin/debug.php:196
+msgctxt "admin"
+msgid "WHMCS URL"
+msgstr ""
+
+#: admin/settings.php:175
+msgctxt "admin"
+msgid "Price Styling options"
+msgstr ""
+
+#: admin/settings.php:178
+msgctxt "admin"
+msgid ""
+"These settings will be applied to prices shown through out the plugin, "
+"except price shortcode it self."
+msgstr ""
+"Ці налаштування будуть застосовані до цін, представлених через поза плагіна, "
+"за винятком ціни шорткода це сам."
+
+#: admin/settings.php:183
+msgctxt "admin"
+msgid "Show trailing zeros in price"
+msgstr ""
+
+#: admin/settings.php:187 admin/settings.php:265 admin/settings.php:277
+#: admin/settings.php:289 admin/settings.php:370 admin/debug.php:86
+#: admin/debug.php:99 admin/debug.php:281
+msgctxt "admin"
+msgid "No"
+msgstr ""
+
+#: admin/settings.php:189 admin/settings.php:267 admin/settings.php:279
+#: admin/settings.php:291 admin/settings.php:372 admin/debug.php:83
+#: admin/debug.php:96 admin/debug.php:281
+msgctxt "admin"
+msgid "Yes"
+msgstr ""
+
+#: admin/settings.php:194
+msgctxt "admin"
+msgid "Show symbol with price"
+msgstr ""
+
+#: admin/settings.php:204
+msgctxt "admin"
+msgid "None"
+msgstr ""
+
+#: admin/settings.php:209
+msgctxt "admin"
+msgid "Duration Style"
+msgstr ""
+
+#: admin/settings.php:214
+msgctxt "admin"
+msgid "Default"
+msgstr ""
+
+#: admin/settings.php:216
+msgctxt "admin"
+msgid "Long (year)"
+msgstr ""
+
+#: admin/settings.php:218
+msgctxt "admin"
+msgid "Short (yr)"
+msgstr ""
+
+#: admin/settings.php:220
+msgctxt "admin"
+msgid "Convert to Months (12 month)"
+msgstr ""
+
+#: admin/settings.php:225
+msgctxt "admin"
+msgid "Duration Connector"
+msgstr ""
+
+#: admin/settings.php:232 admin/settings-tabs/defaults.php:54
+#: admin/settings-tabs/defaults.php:246 admin/settings-tabs/defaults.php:364
+#: admin/settings-tabs/defaults.php:441 admin/settings-tabs/defaults.php:540
+msgctxt "admin"
+msgid "Decimals"
+msgstr ""
+
+#: admin/settings.php:239
+msgctxt "admin"
+msgid "String to show if price not configured"
+msgstr ""
+
+#: admin/settings.php:246
+msgctxt "admin"
+msgid "String to show if price is zero"
+msgstr ""
+
+#: admin/settings.php:253
+msgctxt "admin"
+msgid "Override string if billing cycle is \"One Time\""
+msgstr ""
+
+#: admin/settings.php:261
+msgctxt "admin"
+msgid "Calculate Configurable Options"
+msgstr ""
+
+#: admin/settings.php:273
+msgctxt "admin"
+msgid "Include Setup Price"
+msgstr ""
+
+#: admin/settings.php:285
+msgctxt "admin"
+msgid "Calculate Tax"
+msgstr ""
+
+#: admin/settings.php:304
+msgctxt "admin"
+msgid "Select style"
+msgstr ""
+
+#: admin/settings.php:317
+msgctxt "admin"
+msgid ""
+"These styles are used if you do not select any templates while inserting "
+"WHMpress shortcodes."
+msgstr "v"
+
+#: admin/settings.php:339
+msgctxt "admin"
+msgid " - Custom Templates"
+msgstr ""
+
+#: admin/settings.php:341 admin/settings.php:346
+msgctxt "admin"
+msgid "(Not found)"
+msgstr ""
+
+#: admin/settings.php:344
+msgctxt "admin"
+msgid " Templates by WHMpress"
+msgstr ""
+
+#: admin/settings.php:350
+msgctxt "admin"
+msgid "Templates to Use"
+msgstr ""
+
+#: admin/settings.php:354
+msgctxt "admin"
+msgid "Default (Works with any theme)"
+msgstr ""
+
+#: admin/settings.php:362
+msgctxt "admin"
+msgid ""
+"Matching Pricing Tables and other templates for your active theme are "
+"available. To use them select appropriate option"
+msgstr ""
+"Відповідні таблиці ціноутворення та інші шаблони для вашої активної теми "
+"доступні. Для того, щоб використовувати їх вибрати підходящий варіант"
+
+#: admin/settings.php:367
+msgctxt "admin"
+msgid "Include font awesome"
+msgstr ""
+
+#: admin/settings.php:380
+msgctxt "admin"
+msgid "Custom CSS codes"
+msgstr ""
+
+#: admin/settings.php:401
+msgctxt "admin"
+msgid "URL override for compatibility with third party tools (WHMCS Bridge)"
+msgstr ""
+
+#: admin/settings.php:406
+msgctxt "admin"
+msgid ""
+"WHMCS Client Area Addon is Active. If you want to use a third party plugin "
+"for this purpose (WHMCS-bridge) please deactivate the WHMCS Client Area "
+"Addon by WHMpress"
+msgstr ""
+"WHMCS Client Area Аддон активний. Якщо ви хочете використовувати плагін "
+"третьою стороною для цієї мети (WHMCS моста), будь ласка, вимкніть WHMCS "
+"Client Area аддон по WHMpress"
+
+#: admin/settings.php:414 admin/debug.php:201
+msgctxt "admin"
+msgid "Client Area URL"
+msgstr ""
+
+#: admin/settings.php:422
+msgctxt "admin"
+msgid "Announcements URL"
+msgstr ""
+
+#: admin/settings.php:430
+msgctxt "admin"
+msgid "Submit Ticket URL"
+msgstr ""
+
+#: admin/settings.php:438
+msgctxt "admin"
+msgid "Downloads page URL"
+msgstr ""
+
+#: admin/settings.php:446
+msgctxt "admin"
+msgid "Support Tickets URL"
+msgstr ""
+
+#: admin/settings.php:454
+msgctxt "admin"
+msgid "Knowledgebase URL"
+msgstr ""
+
+#: admin/settings.php:462
+msgctxt "admin"
+msgid "Affiliates URL"
+msgstr ""
+
+#: admin/settings.php:470
+msgctxt "admin"
+msgid "Order URL"
+msgstr ""
+
+#: admin/settings.php:478
+msgctxt "admin"
+msgid "Pre-sales Contact URL"
+msgstr ""
+
+#: admin/settings.php:487
+msgctxt "admin"
+msgid "Domain Checker URL"
+msgstr ""
+
+#: admin/settings.php:495
+msgctxt "admin"
+msgid "Server Status URL"
+msgstr ""
+
+#: admin/settings.php:503
+msgctxt "admin"
+msgid "Network Issues URL"
+msgstr ""
+
+#: admin/settings.php:511
+msgctxt "admin"
+msgid "WHMCS Login URL"
+msgstr ""
+
+#: admin/settings.php:519
+msgctxt "admin"
+msgid "WHMCS Register URL"
+msgstr ""
+
+#: admin/settings.php:527
+msgctxt "admin"
+msgid "WHMCS Forget Password URL"
+msgstr ""
+
+#: admin/settings.php:542
+msgctxt "admin"
+msgid "Save Changes"
+msgstr ""
+
+#: admin/settings.php:550
+msgctxt "admin"
+msgid "Override WHMCS URL"
+msgstr ""
+
+#: admin/settings.php:558
+msgctxt "admin"
+msgid "Use UTF encode/decode"
+msgstr ""
+
+#: admin/settings.php:574
+msgctxt "admin"
+msgid "Package Details from WHMpress"
+msgstr ""
+
+#: admin/settings.php:586
+msgctxt "admin"
+msgid "WHMCS Sync Frequency"
+msgstr ""
+
+#: admin/settings.php:603
+msgctxt "admin"
+msgid "You must of have (Save Password) enabled on Sync WHMCS page."
+msgstr ""
+
+#: admin/settings.php:618
+msgctxt "admin"
+msgid "Your purchase of WHMpress is registered"
+msgstr ""
+
+#: admin/settings.php:621
+msgctxt "admin"
+msgid "Un-Register WHMpress"
+msgstr ""
+
+#: admin/settings.php:629
+msgctxt "admin"
+msgid "Email required for providing support for this product"
+msgstr ""
+
+#: admin/settings.php:641
+msgctxt "admin"
+msgid "Verify"
+msgstr ""
+
+#: admin/import.php:2
+msgctxt "admin"
+msgid "Import"
+msgstr ""
+
+#: admin/pricing_tables.php:33 admin/pricing_tables.php:39
+#: admin/pricing_tables.php:44
+msgctxt "admin"
+msgid ""
+"You can use tool tips to give extra details about package features you are "
+"offering. Tool tip will appear if you have enabled it in group and a feature "
+"name matches with a tool tip."
+msgstr ""
+"Ви можете використовувати підказки, щоб дати додаткові відомості про пакет "
+"функції ви пропонуєте. Кінчик інструмента буде з'являтися, якщо ви включили "
+"його в групу і назва об'єкта збігається з наконечником інструменту."
+
+#: admin/pricing_tables.php:181
+msgctxt "admin"
+msgid "Match String"
+msgstr ""
+
+#: admin/pricing_tables.php:182
+msgctxt "admin"
+msgid "Tooltip Text"
+msgstr ""
+
+#: admin/pricing_tables.php:183
+msgctxt "admin"
+msgid "Icon Class"
+msgstr ""
+
+#: admin/pricing_tables.php:184
+msgctxt "admin"
+msgid "Actions"
+msgstr ""
+
+#: admin/pricing_tables.php:206
+msgctxt "admin"
+msgid "Delete"
+msgstr ""
+
+#: admin/pricing_tables.php:257
+msgctxt "admin"
+msgid "Are you sure you want to delete this group?"
+msgstr ""
+
+#: admin/extensions.php:29
+msgctxt "admin"
+msgid "WHMCS Client Area Integration"
+msgstr ""
+
+#: admin/extensions.php:32
+msgctxt "admin"
+msgid ""
+"Go one step further, offer your users their WHMCS client area with the same "
+"look and feel as your website. \n"
+"                    Giving them a feel that they never left your website for "
+"their hosting management and website. \n"
+"                    Again offering several Shortcodes for seamless "
+"integration with your site."
+msgstr ""
+"Перейти один крок далі, запропонувати своїм користувачам свою клієнтську "
+"область WHMCS з тим же виглядати і відчувати себе, як ваш сайт."
+
+#: admin/extensions.php:39 admin/extensions.php:58
+msgctxt "admin"
+msgid "Buy this Addon"
+msgstr ""
+
+#: admin/extensions.php:46
+msgctxt "admin"
+msgid "WHMCS Pricing Sliders and Comparison Tables"
+msgstr ""
+
+#: admin/extensions.php:51
+msgctxt "admin"
+msgid ""
+"Comparison Table and Slider are essential part of every web-hosting site. \n"
+"                        It helps user to make informed decisions. \n"
+"                        Simply select packages to compare and get a complete "
+"comparison table or slider in your desired template."
+msgstr ""
+"Порівняльна таблиця і Slider є невід'ємною частиною будь-якого веб-хостинг "
+"сайту."
+
+#: admin/sidebar.php:4
+msgctxt "admin"
+msgid "Spread the word"
+msgstr ""
+
+#: admin/sidebar.php:5
+msgctxt "admin"
+msgid ""
+"We are working hard to make your WHMpress more useful for your hosting "
+"business. Please support us, here is how"
+msgstr ""
+"Ми докладаємо всіх зусиль, щоб зробити ваш WHMpress більш корисним для "
+"вашого хостингу. Будь ласка, підтримайте нас, ось як"
+
+#: admin/sidebar.php:8
+msgctxt "admin"
+msgid "Give us a Good Rating"
+msgstr ""
+
+#: admin/sidebar.php:10
+msgctxt "admin"
+msgid "Contact Us"
+msgstr ""
+
+#: admin/sidebar.php:12
+msgctxt "admin"
+msgid "Post to Twitter"
+msgstr ""
+
+#: admin/search_logs.php:48
+msgctxt "admin"
+msgid "Page"
+msgstr ""
+
+#: admin/search_logs.php:54
+msgctxt "admin"
+msgid "Total Records:"
+msgstr ""
+
+#: admin/search_logs.php:58
+msgctxt "admin"
+msgid "Search Term"
+msgstr ""
+
+#: admin/search_logs.php:59
+msgctxt "admin"
+msgid "Domain Available"
+msgstr ""
+
+#: admin/search_logs.php:60
+msgctxt "admin"
+msgid "Search Time"
+msgstr ""
+
+#: admin/search_logs.php:61
+msgctxt "admin"
+msgid "From IP"
+msgstr ""
+
+#: admin/custom-css.php:7
+msgctxt "admin"
+msgid "Success"
+msgstr ""
+
+#: admin/custom-css.php:7
+msgctxt "admin"
+msgid "CSS saved"
+msgstr ""
+
+#: admin/export.php:2
+msgctxt "admin"
+msgid "Export"
+msgstr ""
+
+#: admin/admin.php:11 admin/admin.php:43
+msgctxt "admin"
+msgid "WHMpress Warning!"
+msgstr ""
+
+#: admin/admin.php:24
+msgctxt "admin"
+msgid "Verify Purchase"
+msgstr ""
+
+#: admin/admin.php:28
+#, php-format
+msgctxt "admin"
+msgid ""
+"%1s WHMPress is not verified, kindly click %2s here%3s to verify your "
+"purchase.%4s"
+msgstr ""
+
+#: admin/admin.php:29
+#, php-format
+msgctxt "admin"
+msgid ""
+"%1s Or you can purchase WHMPress using below link %2s %3s purchase WHMPress "
+"%4s"
+msgstr ""
+
+#: admin/admin.php:47
+#, php-format
+msgctxt "admin"
+msgid "WHMpress data not found, Please run %1s Sync WHMCS %2s to use WHMpress"
+msgstr ""
+
+#: admin/admin.php:138
+msgctxt "admin"
+msgid "WHMpress Dashboard"
+msgstr ""
+
+#: admin/admin.php:138
+msgctxt "admin"
+msgid "WHMpress"
+msgstr ""
+
+#: admin/admin.php:201
+msgctxt "admin"
+msgid "Debug Info"
+msgstr ""
+
+#: admin/admin.php:212
+msgctxt "admin"
+msgid "Search Logs"
+msgstr ""
+
+#: admin/country_settings.php:28
+msgctxt "admin"
+msgid "-- Currency --"
+msgstr ""
+
+#: admin/country_settings.php:46
+msgctxt "admin"
+msgid "Country Redirection"
+msgstr ""
+
+#: admin/country_settings.php:48
+msgctxt "admin"
+msgid "Set default currency for specific country. Default currency is"
+msgstr ""
+
+#: admin/country_settings.php:56
+msgctxt "admin"
+msgid "Saving..."
+msgstr ""
+
+#: admin/debug.php:66
+msgctxt "admin"
+msgid "WordPress"
+msgstr ""
+
+#: admin/debug.php:69
+msgctxt "admin"
+msgid "Site URL"
+msgstr ""
+
+#: admin/debug.php:73
+msgctxt "admin"
+msgid "Home URL"
+msgstr ""
+
+#: admin/debug.php:77
+msgctxt "admin"
+msgid "WordPress Version"
+msgstr ""
+
+#: admin/debug.php:81
+msgctxt "admin"
+msgid "WordPress Multisite"
+msgstr ""
+
+#: admin/debug.php:90
+msgctxt "admin"
+msgid "WordPress Language"
+msgstr ""
+
+#: admin/debug.php:94
+msgctxt "admin"
+msgid "WordPress Debug Mode"
+msgstr ""
+
+#: admin/debug.php:103
+msgctxt "admin"
+msgid "WordPress Active Plugins"
+msgstr ""
+
+#: admin/debug.php:107
+msgctxt "admin"
+msgid "WordPress Max Upload Size"
+msgstr ""
+
+#: admin/debug.php:117
+#, php-format
+msgctxt "admin"
+msgid "%s (The server only allows %s)"
+msgstr ""
+
+#: admin/debug.php:123
+msgctxt "admin"
+msgid "WordPress Memory Limit"
+msgstr ""
+
+#: admin/debug.php:128
+msgctxt "admin"
+msgid "Server Info"
+msgstr ""
+
+#: admin/debug.php:131
+msgctxt "admin"
+msgid "PHP Version"
+msgstr ""
+
+#: admin/debug.php:137
+msgctxt "admin"
+msgid "Server Software"
+msgstr ""
+
+#: admin/debug.php:141
+msgctxt "admin"
+msgid "MySQLi Extension"
+msgstr ""
+
+#: admin/debug.php:142 admin/debug.php:146 admin/debug.php:218
+msgctxt "admin"
+msgid "Installed"
+msgstr ""
+
+#: admin/debug.php:142 admin/debug.php:146
+msgctxt "admin"
+msgid "Not Installed"
+msgstr ""
+
+#: admin/debug.php:168
+msgctxt "admin"
+msgid "WHMCS Version"
+msgstr ""
+
+#: admin/debug.php:215
+msgctxt "admin"
+msgid "Plugins"
+msgstr ""
+
+#: admin/debug.php:258
+msgctxt "admin"
+msgid "Theme"
+msgstr ""
+
+#: admin/debug.php:261
+msgctxt "admin"
+msgid "Theme Name"
+msgstr ""
+
+#: admin/debug.php:268
+msgctxt "admin"
+msgid "Theme Version"
+msgstr ""
+
+#: admin/debug.php:274
+msgctxt "admin"
+msgid "Theme Author URL"
+msgstr ""
+
+#: admin/debug.php:280
+msgctxt "admin"
+msgid "Is Child Theme"
+msgstr ""
+
+#: admin/debug.php:288
+msgctxt "admin"
+msgid "Parent Theme Name"
+msgstr ""
+
+#: admin/debug.php:292
+msgctxt "admin"
+msgid "Parent Theme Version"
+msgstr ""
+
+#: admin/debug.php:296
+msgctxt "admin"
+msgid "Parent Theme Author URL"
+msgstr ""
+
+#: admin/debug.php:303
+msgctxt "admin"
+msgid "Addons"
+msgstr ""
+
+#: includes/shortcodes/whmpress_bundle_pricing_table.php:18
+#: includes/shortcodes/whmpress_bundle_name.php:17
+#: includes/shortcodes/whmpress_bundle_order_button_function.php:30
+#, php-format
+msgid "No Bundle Found for ID: %1$s"
+msgstr "Немає Bundle Знайдено по ID:% 1 $ s"
+
+#: includes/shortcodes/whmpress_bundle_pricing_table.php:32
+msgid "Bundle data not found"
+msgstr "Bundle дані не знайдені"
+
+#: includes/shortcodes/whmpress_bundle_pricing_table.php:49
+msgid "No Template file selected or selected file is not available"
+msgstr "Немає файлу шаблону обраний або обраний файл не недоступний"
+
+#: includes/shortcodes/whmpress_domain_search_ajax_extended.php:7
+msgid ""
+"Shortcode \"[whmpress_domain_search_ajax]\" requires at least one of the "
+"following plugin."
+msgstr ""
+"Скорочений «[whmpress_domain_search_ajax]» вимагає, щонайменше, одну з таких "
+"дій плагіна."
+
+#: includes/shortcodes/whmpress_domain_search_ajax_extended.php:12
+msgid "WHMCS Client Area with API (WCAP)"
+msgstr "WHMCS Область клієнта з API (WCAP)"
+
+#: includes/shortcodes/whmpress_domain_search_ajax_extended.php:17
+msgid "WHMCS Cart & Order Pages (WCOP)"
+msgstr "WHMCS Кошик і замовлення Сторінки (WCOP)"
+
+#: includes/shortcodes/whmpress_domain_search_ajax_extended.php:40
+msgid "Added"
+msgstr "доданої"
+
+#: includes/shortcodes/whmpress_domain_search_ajax_extended.php:41
+msgid "Continue"
+msgstr "продовжувати"
+
+#: includes/shortcodes/whmpress_domain_search_bulk_backup.php:32
+msgid "WhoIs"
+msgstr "ХТО Є"
+
+#: includes/shortcodes/whmpress_domain_search_bulk_backup.php:53
+#: includes/shortcodes/whmpress_domain_search_ajax.php:89
+msgid "Loading"
+msgstr "Loading"
+
+#: includes/shortcodes/whmpress_domain_search_bulk_backup.php:239
+#: includes/shortcodes/whmpress_domain_search_bulk.php:266
+#: includes/shortcodes/whmpress_domain_search_bulk.php:309
+msgid "I entered fully qualified names"
+msgstr "Я увійшов повністю кваліфіковані імена"
+
+#: includes/shortcodes/whmpress_domain_search_bulk_backup.php:240
+#: includes/shortcodes/whmpress_domain_search_bulk.php:310
+msgid "Search these extentions"
+msgstr "Пошук цих розширень"
+
+#: includes/shortcodes/whmpress_order_combo.php:80
+msgid "Invalid ID"
+msgstr "Невірний ID"
+
+#: includes/shortcodes/whmpress_order_combo.php:198
+#: includes/shortcodes/whmpress_order_combo.php:217
+#: includes/shortcodes/whmpress_order_combo.php:263
+#: includes/shortcodes/whmpress_order_combo.php:280
+#: includes/shortcodes/whmpress_order_combo.php:345
+#: includes/shortcodes/whmpress_order_combo.php:417
+#: includes/shortcodes/whmpress_order_combo.php:491
+msgctxt "discount"
+msgid "Save"
+msgstr "зберегти"
+
+#: includes/shortcodes/whmpress_order_combo.php:343
+#: includes/shortcodes/whmpress_price_table_domain.php:529
+msgid "1 Year"
+msgstr "1 рік"
+
+#: includes/shortcodes/whmpress_domain_search.php:94
+msgid "Please fill out this field"
+msgstr "Будь ласка, заповніть це поле"
+
+#: includes/shortcodes/whmpress_bundle_description.php:12
+msgid "No bundle found in database"
+msgstr "Чи не розшарування знайдено в базі даних"
+
+#: includes/shortcodes/whmpress_price_table_domain.php:376
+#: includes/shortcodes/whmpress_price_table_domain.php:528
+#: includes/shortcodes/whmpress_price_table_domain.php:647
+msgid "Domain"
+msgstr "домен"
+
+#: includes/shortcodes/whmpress_price_table_domain.php:378
+msgid "Type"
+msgstr "тип"
+
+#: includes/shortcodes/whmpress_price_table_domain.php:384
+msgid "Register"
+msgstr "Реєстрація"
+
+#: includes/shortcodes/whmpress_price_table_domain.php:386
+msgid "Renew"
+msgstr "відновлювати"
+
+#: includes/shortcodes/whmpress_price_table_domain.php:388
+msgid "Restore"
+msgstr "Відновлення"
+
+#: includes/shortcodes/whmpress_price_table_domain.php:532
+msgid "4 Year"
+msgstr "4 рік"
+
+#: includes/shortcodes/whmpress_price_table_domain.php:533
+msgid "5 Year"
+msgstr "5 рік"
+
+#: includes/shortcodes/whmpress_price_table_domain.php:534
+msgid "6 Year"
+msgstr "6 рік"
+
+#: includes/shortcodes/whmpress_price_table_domain.php:535
+msgid "7 Year"
+msgstr "7 рік"
+
+#: includes/shortcodes/whmpress_price_table_domain.php:536
+msgid "8 Year"
+msgstr "8 рік"
+
+#: includes/shortcodes/whmpress_price_table_domain.php:537
+msgid "9 Year"
+msgstr "9 рік"
+
+#: includes/shortcodes/whmpress_price_table_domain.php:538
+msgid "10 Year"
+msgstr "10 рік"
+
+#: includes/shortcodes/whmpress_price_table_domain.php:650
+msgid "Renewal Price"
+msgstr "оновлення цін"
+
+#: includes/shortcodes/whmpress_price_table_domain.php:651
+msgid "Transfer Price"
+msgstr "передача Ціна"
+
+#: includes/shortcodes/whmpress_domain_price.php:33
+msgid "Invalid type"
+msgstr "невірний тип"
+
+#: includes/shortcodes/whmpress_domain_price.php:63
+msgid "Invalid year"
+msgstr "неприпустимий рік"
+
+#: includes/shortcodes/whmpress_domain_price.php:168
+msgid " Years"
+msgstr "роки"
+
+#: includes/shortcodes/whmpress_domain_search_bulk.php:266
+msgid "Search these extensions"
+msgstr "Пошук цих розширень"
+
+#: includes/shortcodes/whmpress_price_table.php:68
+msgid "Sr"
+msgstr ""
+
+#: includes/shortcodes/whmpress_price_table.php:69
+msgid "ID"
+msgstr ""
+
+#: includes/shortcodes/whmpress_price_table.php:71
+msgid "Group"
+msgstr "група"
+
+#: includes/shortcodes/whmpress_price_table.php:75
+#: includes/shortcodes/whmpress_price_table.php:95
+msgid "Yearly"
+msgstr "щороку"
+
+#: includes/shortcodes/whmpress_price.php:89
+#, php-format
+msgid "Invalid ID (%1s) or Invalid Currency (%2s)"
+msgstr "Неприпустимий ідентифікатор (% 1s) або Неприпустимі валюти (% 2s)"
+
+#: includes/shortcodes/whmpress_price.php:243
+#: includes/shortcodes/whmpress_price.php:282
+#: includes/shortcodes/whmpress_price.php:335
+msgid "Free"
+msgstr "безкоштовно"
+
+#: includes/shortcodes/whmpress_price.php:244
+msgid "Onetime"
+msgstr "одного разу"
+
+#: includes/shortcodes/whmpress_price.php:247
+msgid "Yr"
+msgstr ""
+
+#: includes/shortcodes/whmpress_price.php:248
+msgid "Mo"
+msgstr ""
+
+#: includes/shortcodes/whmpress_price.php:249
+msgid "Fe"
+msgstr ""
+
+#: includes/shortcodes/whmpress_price.php:250
+#: includes/shortcodes/whmpress_price.php:275
+msgid "Ot"
+msgstr ""
+
+#: includes/shortcodes/whmpress_price.php:292
+msgid "month"
+msgstr "місяць"
+
+#: includes/shortcodes/whmpress_price.php:305
+msgid "free"
+msgstr "безкоштовно"
+
+#: includes/shortcodes/whmpress_price.php:307
+msgid "onetime"
+msgstr "одного разу"
+
+#: includes/shortcodes/whmpress_pricing_table.php:277
+msgid "Invalid Product ID Provided"
+msgstr "Неприпустимий ідентифікатор продукту за умови"
+
+#: admin/settings-tabs/domain_search.php:7
+#: admin/settings-tabs/domain_search.php:13
+msgctxt "admin"
+msgid "Search Options"
+msgstr ""
+
+#: admin/settings-tabs/domain_search.php:8
+#: admin/settings-tabs/domain_search.php:60
+msgctxt "admin"
+msgid "Custom Messages"
+msgstr ""
+
+#: admin/settings-tabs/domain_search.php:9
+#: admin/settings-tabs/domain_search.php:118
+#: admin/settings-tabs/domain_search.php:122
+msgctxt "admin"
+msgid "WhoIs Servers"
+msgstr ""
+
+#: admin/settings-tabs/domain_search.php:16
+msgctxt "admin"
+msgid "Enable logs for searches"
+msgstr ""
+
+#: admin/settings-tabs/domain_search.php:30
+msgctxt "admin"
+msgid "Use WHMCS API for domain search"
+msgstr ""
+
+#: admin/settings-tabs/domain_search.php:45
+msgctxt "admin"
+msgid "Number of domains to show in load more page"
+msgstr ""
+
+#: admin/settings-tabs/domain_search.php:63
+msgctxt "admin"
+msgid "Domain available message"
+msgstr ""
+
+#: admin/settings-tabs/domain_search.php:70
+msgctxt "admin"
+msgid "Domain not available message"
+msgstr ""
+
+#: admin/settings-tabs/domain_search.php:77
+msgctxt "admin"
+msgid "Recommended domains list message"
+msgstr ""
+
+#: admin/settings-tabs/domain_search.php:84
+msgctxt "admin"
+msgid "Ongoing domain available message"
+msgstr ""
+
+#: admin/settings-tabs/domain_search.php:87
+msgctxt "admin"
+msgid "[domain-name] is available"
+msgstr ""
+
+#: admin/settings-tabs/domain_search.php:91
+msgctxt "admin"
+msgid "Ongoing domain not available message"
+msgstr ""
+
+#: admin/settings-tabs/domain_search.php:94
+msgctxt "admin"
+msgid "[domain-name] is registered"
+msgstr ""
+
+#: admin/settings-tabs/domain_search.php:98
+msgctxt "admin"
+msgid "Register domain button text"
+msgstr ""
+
+#: admin/settings-tabs/domain_search.php:101
+msgctxt "admin"
+msgid "Select"
+msgstr ""
+
+#: admin/settings-tabs/domain_search.php:105
+msgctxt "admin"
+msgid "Load more button text"
+msgstr ""
+
+#: admin/settings-tabs/domain_search.php:108
+msgctxt "admin"
+msgid "Load More"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:4
+msgctxt "admin"
+msgid "Price"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:5
+msgctxt "admin"
+msgid "Domain Price"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:6
+msgctxt "admin"
+msgid "Price Matrix"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:7
+msgctxt "admin"
+msgid "Price Matrix Domain"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:8
+msgctxt "admin"
+msgid "Order Combo"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:9
+msgctxt "admin"
+msgid "Order Button"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:10
+msgctxt "admin"
+msgid "Pricing Table"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:12
+msgctxt "admin"
+msgid "Domain Search Ajax"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:13
+msgctxt "admin"
+msgid "Domain Search Bulk"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:14
+msgctxt "admin"
+msgid "Domain WhoIS"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:15
+msgctxt "admin"
+msgid "Order Link"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:22
+msgctxt "admin"
+msgid "Billing cycle"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:27
+msgctxt "admin"
+msgid "Monthly"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:28
+msgctxt "admin"
+msgid "Annually"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:29
+msgctxt "admin"
+msgid "Quarterly"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:30
+msgctxt "admin"
+msgid "Semi Annually"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:31
+msgctxt "admin"
+msgid "Biennially"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:32
+msgctxt "admin"
+msgid "Triennially"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:38
+msgctxt "admin"
+msgid "Select default billing cycle for price"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:42
+msgctxt "admin"
+msgid "Hide decimals"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:50
+msgctxt "admin"
+msgid "Hide/Show decimals with price"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:77 admin/settings-tabs/defaults.php:583
+msgctxt "admin"
+msgid "Show prefix"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:95 admin/settings-tabs/defaults.php:593
+msgctxt "admin"
+msgid "Show suffix"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:113
+msgctxt "admin"
+msgid "Show duration"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:132
+msgctxt "admin"
+msgid "Long Duration (Year)"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:133
+msgctxt "admin"
+msgid "Short Duration (Yr)"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:140
+msgctxt "admin"
+msgid "Price/Setup"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:150
+msgctxt "admin"
+msgid "Convert price into monthly price"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:160
+msgctxt "admin"
+msgid "Calculate configurable options"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:170
+msgctxt "admin"
+msgid "String for config price"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:177 admin/settings-tabs/defaults.php:340
+msgctxt "admin"
+msgid "Price/Tax"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:192
+msgctxt "admin"
+msgid "Currency"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:219
+msgctxt "admin"
+msgid "Type"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:233
+msgctxt "admin"
+msgid "Years"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:259
+msgctxt "admin"
+msgid "Hide Decimals"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:269
+msgctxt "admin"
+msgid "Show Decimals As"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:286
+msgctxt "admin"
+msgid "Show Currency Prefix"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:304
+msgctxt "admin"
+msgid "Show Currency Suffix"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:322
+msgctxt "admin"
+msgid "Show number of years"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:377
+msgctxt "admin"
+msgid "Show Hidden"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:387
+msgctxt "admin"
+msgid "Replace Zero With"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:394
+msgctxt "admin"
+msgid "Replace Empty With"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:404 admin/settings-tabs/defaults.php:474
+msgctxt "admin"
+msgid "Hide Search"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:414 admin/settings-tabs/defaults.php:484
+msgctxt "admin"
+msgid "Search Label"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:423 admin/settings-tabs/defaults.php:493
+msgctxt "admin"
+msgid "Search Placeholder"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:454
+msgctxt "admin"
+msgid "Show Renewel Price"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:464
+msgctxt "admin"
+msgid "Show Transfer Price"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:502
+msgctxt "admin"
+msgid "Show Disabled Domains"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:536
+msgctxt "admin"
+msgid "Press {Ctrl} button for multiple selection"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:550
+msgctxt "admin"
+msgid "Show button"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:560 admin/settings-tabs/defaults.php:629
+#: admin/settings-tabs/defaults.php:724
+msgctxt "admin"
+msgid "Button text"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:569
+msgctxt "admin"
+msgid "Show discount"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:612 admin/settings-tabs/defaults.php:647
+msgctxt "admin"
+msgid "Billing Cycle"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:664 admin/settings-tabs/defaults.php:867
+msgctxt "admin"
+msgid "Show Price"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:674 admin/settings-tabs/defaults.php:742
+msgctxt "admin"
+msgid "Show Combo"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:684
+msgctxt "admin"
+msgid "Show Button"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:694
+msgctxt "admin"
+msgid "Process Description"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:704
+msgctxt "admin"
+msgid "Show Description Icon"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:714
+msgctxt "admin"
+msgid "Show Description Tooltip"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:752 admin/settings-tabs/defaults.php:778
+#: admin/settings-tabs/defaults.php:907 admin/settings-tabs/defaults.php:933
+msgctxt "admin"
+msgid "Placeholder"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:761 admin/settings-tabs/defaults.php:785
+#: admin/settings-tabs/defaults.php:916 admin/settings-tabs/defaults.php:942
+msgctxt "admin"
+msgid "Button Text"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:795
+msgctxt "admin"
+msgid "Show WhoIs Link"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:806
+msgctxt "admin"
+msgid "Show WWW Link"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:817
+msgctxt "admin"
+msgid "Show Transfer Link"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:828
+msgctxt "admin"
+msgid "Disable Domain Spinning"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:839
+msgctxt "admin"
+msgid "Order Landing Page"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:853
+msgctxt "admin"
+msgid "Order process in new tab?"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:878
+msgctxt "admin"
+msgid "Show Years"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:889
+msgctxt "admin"
+msgid "Search in Extensions"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:959
+msgctxt "admin"
+msgid "Link Text"
+msgstr ""
+
+#: admin/settings-tabs/defaults.php:976
+msgctxt "admin"
+msgid "Show As"
+msgstr ""
+
+#: includes/shortcodes/domain_search_ajax_extended_parts/forms/default.php:72
+#: includes/shortcodes/domain_search_ajax_extended_parts/forms/default.php:80
+msgid "Loading..."
+msgstr ""
+
+#. Name of the plugin
+msgid "WHMpress"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"WHMpress makes it easy for you to sell webhosting using WordPress & WHMCS. "
+"It offers you several options including prices, order links, order button, "
+"order drop downs, domain registration and domain search forms to integrate "
+"WHMCS services (plans, packages, resellers packages, VPS & dedicated servers)"
+" into your WordPress installation."
+msgstr ""
+"WHMpress робить його легким для вас, щоб продати веб-хостинг за допомогою "
+"WordPress & Whmcs. Він пропонує кілька варіантів, включаючи ціни, посилання "
+"замовлення, кнопку замовлення, падіння порядку падіння, реєстрацію домену та "
+"пошук домену форм інтеграції Whmcs послуги (плани, пакети, пакети реселерів, "
+"VPS і виділені сервера) в установку WordPress."
+
+#. URI of the plugin
+msgid "http://www.whmpress.com"
+msgstr ""
+
+#. Author of the plugin
+msgid "creativeON"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://creativeon.com"
+msgstr ""

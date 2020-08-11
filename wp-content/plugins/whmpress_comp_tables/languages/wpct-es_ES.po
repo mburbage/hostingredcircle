@@ -1,0 +1,595 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WHMpress - Slider and Comparison Tables\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-07-11 12:24+0000\n"
+"PO-Revision-Date: 2017-07-11 12:24+0000\n"
+"Last-Translator: admin <farooqomer@gmail.com>\n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es-ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: inc/functions.php:556
+msgid "COMPARISON TABLE INCLUDES"
+msgstr "CUADRO DE COMPARACIÓN INCLUYE"
+
+#: class/whmp_grp_class.php:81
+msgid "WHMpress is not activated. Please activate WHMpress"
+msgstr "WHMpress no está activado. Por favor active WHMpress"
+
+#: inc/functions.php:287 inc/functions.php:295
+msgid "No Group Created"
+msgstr "No hay grupo creado"
+
+#: inc/functions.php:1146
+msgid "monthly"
+msgstr "mensual"
+
+#: inc/functions.php:1148
+msgid "Month"
+msgstr "Mes"
+
+#: inc/functions.php:1149
+msgid "/Month"
+msgstr "/Mes"
+
+#: inc/functions.php:1150 inc/functions.php:1162
+msgid "per Month"
+msgstr "por mes"
+
+#: inc/functions.php:1154
+msgid "mo"
+msgstr "mes"
+
+#: inc/functions.php:1155
+msgid "/mo"
+msgstr "/mes"
+
+#: inc/functions.php:1156
+msgid "per mo"
+msgstr "Por mes"
+
+#: inc/functions.php:1160
+msgid "1 Month"
+msgstr "1 mes"
+
+#: inc/functions.php:1161
+msgid "/ Month"
+msgstr "/ Mes"
+
+#: inc/functions.php:1168
+msgid "quarterly"
+msgstr "trimestral"
+
+#: inc/functions.php:1171
+msgid "Quarter"
+msgstr "Trimestre"
+
+#: inc/functions.php:1172
+msgid "/Quarter"
+msgstr "/Trimestre"
+
+#: inc/functions.php:1173
+msgid "per Quarter"
+msgstr "por cuarto"
+
+#: inc/functions.php:1176
+msgid "qu"
+msgstr "Qu"
+
+#: inc/functions.php:1177
+msgid "/qu"
+msgstr "Qu"
+
+#: inc/functions.php:1178
+msgid "per qu"
+msgstr "Perqu"
+
+#: inc/functions.php:1182
+msgid "3 Months"
+msgstr "3 meses"
+
+#: inc/functions.php:1183
+msgid "/3 Months"
+msgstr "/3 meses"
+
+#: inc/functions.php:1184
+msgid "per 3 Months"
+msgstr "Por 3 Meses"
+
+#: inc/functions.php:1190
+msgid "semiannually"
+msgstr "semi anualmente"
+
+#: inc/functions.php:1192
+msgid "Half Year"
+msgstr "Medio año"
+
+#: inc/functions.php:1193
+msgid "/Half year"
+msgstr "/Medio año"
+
+#: inc/functions.php:1194
+msgid "per Half year"
+msgstr "Por semestre"
+
+#: inc/functions.php:1197
+msgid "sa"
+msgstr "Sa"
+
+#: inc/functions.php:1198
+msgid "/sa"
+msgstr "Sa"
+
+#: inc/functions.php:1199
+msgid "per sa"
+msgstr "Per sa"
+
+#: inc/functions.php:1202
+msgid "6 Months"
+msgstr "6 meses"
+
+#: inc/functions.php:1203
+msgid "/6 Months"
+msgstr "/6 meses"
+
+#: inc/functions.php:1204
+msgid "per 6 Months"
+msgstr "Por 6 Meses"
+
+#: inc/functions.php:1210
+msgid "Yearly"
+msgstr "Anual"
+
+#: inc/functions.php:1212
+msgid "Year"
+msgstr "Año"
+
+#: inc/functions.php:1213
+msgid "/Year"
+msgstr "/Año"
+
+#: inc/functions.php:1214
+msgid "per Year"
+msgstr "por año"
+
+#: inc/functions.php:1217
+msgid "yr"
+msgstr "Año"
+
+#: inc/functions.php:1218
+msgid "/yr"
+msgstr "Año"
+
+#: inc/functions.php:1219
+msgid "per yr"
+msgstr "Por año"
+
+#: inc/functions.php:1222
+msgid "12 Months"
+msgstr "12 meses"
+
+#: inc/functions.php:1223
+msgid "/12 Months"
+msgstr "/12 meses"
+
+#: inc/functions.php:1224
+msgid "per 12 Months"
+msgstr "Por 12 Meses"
+
+#: inc/functions.php:1230
+msgid "Biennially"
+msgstr "Bienalmente"
+
+#: inc/functions.php:1232
+msgid "2 Years"
+msgstr "2 años"
+
+#: inc/functions.php:1233
+msgid "/2 Years"
+msgstr "/2 años"
+
+#: inc/functions.php:1234
+msgid "per 2 Years"
+msgstr "Por 2 Años"
+
+#: inc/functions.php:1238
+msgid "2 yrs"
+msgstr "2 años"
+
+#: inc/functions.php:1239
+msgid "/2 yrs"
+msgstr "/ 2 años"
+
+#: inc/functions.php:1240
+msgid "per 2 yrs"
+msgstr "Por 2 años"
+
+#: inc/functions.php:1244
+msgid "24 Months"
+msgstr "24 meses"
+
+#: inc/functions.php:1245
+msgid "/24 Months"
+msgstr "/24 meses"
+
+#: inc/functions.php:1246
+msgid "per 24 Months"
+msgstr "Por 24 Meses"
+
+#: inc/functions.php:1252
+msgid "Triennially"
+msgstr "Trienal"
+
+#: inc/functions.php:1255
+msgid "3 Years"
+msgstr "3 años"
+
+#: inc/functions.php:1256
+msgid "/3 years"
+msgstr "/3 años"
+
+#: inc/functions.php:1257
+msgid "per 3 years"
+msgstr "Por 3 años"
+
+#: inc/functions.php:1261
+msgid "3 yrs"
+msgstr "3 años"
+
+#: inc/functions.php:1262
+msgid "/3 yrs"
+msgstr "/ 3 años"
+
+#: inc/functions.php:1263
+msgid "per 3 yrs"
+msgstr "Por 3 años"
+
+#: inc/functions.php:1267
+msgid "36 Months"
+msgstr "36 Meses"
+
+#: inc/functions.php:1268
+msgid "/36 Months"
+msgstr "/ 36 Meses"
+
+#: inc/functions.php:1269
+msgid "per 36 Months"
+msgstr "Por 36 Meses"
+
+#: shortcodes/whmpress_comparison_table.php:23
+#: shortcodes/whmpress_order_slider.php:12
+#: shortcodes/whmpress_pricing_table_group.php:23
+msgid "No plans selected to show"
+msgstr "No se han seleccionado planes para mostrar"
+
+#: shortcodes/whmpress_comparison_table.php:24
+#: shortcodes/whmpress_order_slider.php:13
+#: shortcodes/whmpress_pricing_table_group.php:24
+msgid "Please choose plans from "
+msgstr "Por favor, elija los planes de"
+
+#: shortcodes/whmpress_comparison_table.php:25
+#: shortcodes/whmpress_order_slider.php:14
+#: shortcodes/whmpress_pricing_table_group.php:25
+msgid "\"List All > Select Plans\" "
+msgstr "\\ List All> Seleccionar planes \\"
+
+#: shortcodes/whmpress_comparison_table.php:26
+#: shortcodes/whmpress_order_slider.php:15
+#: shortcodes/whmpress_pricing_table_group.php:26
+msgid "then select products to include."
+msgstr "Luego seleccione los productos a incluir."
+
+#: admin/admin-pages/settings.php:49
+msgid "Up-sell/ Discount"
+msgstr "Up-sell / Descuento"
+
+#: admin/admin-pages/settings.php:52
+msgid ""
+"You can customize the text that appear when you enable discount. Use "
+"placeholders {duration} and {discount} where you want to show duration and "
+"discount values."
+msgstr ""
+"Puede personalizar el texto que aparece cuando habilita el descuento. "
+"Utilice los marcadores {duración} y {descuento} donde desea mostrar los "
+"valores de duración y descuento."
+
+#: admin/admin-pages/settings.php:82
+msgid ""
+"Used with primary duration to show who much user will save for switching to "
+"longer duration. "
+msgstr ""
+"Se utiliza con duración primaria para mostrar cuánto usuario ahorrará para "
+"cambiar a mayor duración."
+
+#: admin/admin-pages/settings.php:95
+msgid "Used to show how much user is saving with this duration. "
+msgstr ""
+"Se utiliza para mostrar cuánto usuario está ahorrando con esta duración."
+
+#: admin/admin-pages/settings.php:108
+msgid "Up-sell text to show on banner while with First Duration, "
+msgstr ""
+"Up-sell texto para mostrar en la pancarta, mientras que con la primera "
+"duración,"
+
+#: admin/admin-pages/settings.php:121
+msgid "Discount text to show with second duration."
+msgstr "Texto de descuento para mostrar con segunda duración."
+
+#: admin/admin-pages/tooltips.php:31 admin/admin-pages/tooltips.php:37
+#: admin/admin-pages/tooltips.php:42
+msgid ""
+"You can use tool tips to give extra details about package features you are "
+"offering. Tool tip will appear if you have enabled it in group and a feature "
+"name matches with a tool tip."
+msgstr ""
+"Puede utilizar consejos de herramientas para proporcionar detalles "
+"adicionales sobre las características del paquete que está ofreciendo. La "
+"sugerencia de la herramienta aparecerá si la ha habilitado en grupo y un "
+"nombre de entidad coincide con una sugerencia de herramienta."
+
+#: admin/admin-pages/tooltips.php:98
+msgid "ID"
+msgstr "CARNÉ DE IDENTIDAD"
+
+#: admin/admin-pages/tooltips.php:99
+msgid "Match String"
+msgstr "Match String"
+
+#: admin/admin-pages/tooltips.php:100
+msgid "Tooltip Text"
+msgstr "Herramienta para escribir texto"
+
+#: admin/admin-pages/tooltips.php:101
+msgid "Actions"
+msgstr "Comportamiento"
+
+#: admin/admin-pages/tooltips.php:122
+msgid "Delete"
+msgstr "Borrar"
+
+#: admin/admin-pages/groups/group-add.php:17
+#: admin/admin-pages/groups/group-add.php:20
+#: admin/admin-pages/groups/group-edit.php:43
+msgid "Group Name"
+msgstr "Nombre del grupo"
+
+#: admin/admin-pages/groups/group-add.php:24
+#: admin/admin-pages/groups/group-add.php:31
+#: admin/admin-pages/groups/group-edit.php:54
+msgid "Group Notes"
+msgstr "Notas de grupo"
+
+#: admin/admin-pages/groups/group-add.php:27
+msgid "Note: these notes are not visible on front-end..."
+msgstr "Nota: estas notas no son visibles en el front-end ..."
+
+#: admin/admin-pages/groups/group-add.php:37
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: admin/admin-pages/groups/group-edit.php:14
+#: admin/admin-pages/groups/group-edit.php:479
+msgid "Save Group Options"
+msgstr "Guardar opciones de grupo"
+
+#: admin/admin-pages/groups/group-edit.php:36
+msgid "General Options"
+msgstr "Opciones generales"
+
+#: admin/admin-pages/groups/group-edit.php:40
+msgid "Group Name:"
+msgstr "Nombre del grupo:"
+
+#: admin/admin-pages/groups/group-edit.php:47
+msgid "Group Description"
+msgstr "Descripción del Grupo"
+
+#: admin/admin-pages/groups/group-edit.php:50
+msgid "Note: This description is not visible on front-end..."
+msgstr "Nota: Esta descripción no es visible en front-end ..."
+
+#: admin/admin-pages/groups/group-edit.php:58
+msgid "Description Separator"
+msgstr "Descripción Separator"
+
+#: admin/admin-pages/groups/group-edit.php:61
+msgid "Description separator"
+msgstr "Descripción separator"
+
+#: admin/admin-pages/groups/group-edit.php:66
+msgid "Highlight text for featured plan"
+msgstr "Resaltar texto para el plan destacado"
+
+#: admin/admin-pages/groups/group-edit.php:67
+msgid "Most Popular"
+msgstr "Más popular"
+
+#: admin/admin-pages/groups/group-edit.php:70
+msgid "Button Text"
+msgstr "Botón de texto"
+
+#: admin/admin-pages/groups/group-edit.php:72
+msgid "Buy Now"
+msgstr "Compra ahora"
+
+#: admin/admin-pages/groups/group-edit.php:76
+msgid "Convert YES/NO (beta)"
+msgstr "Convertir SÍ / NO (beta)"
+
+#: admin/admin-pages/groups/group-edit.php:83
+msgid ""
+"Replace YES/NO with these fontawsome classes. For example if you want to "
+"show thumbs up for YES, use fa-thumbs-upFor more information on fontawsome "
+"icons and fontawesome visit: "
+msgstr ""
+"Reemplace YES / NO con estas clases impresionantes de fuentes. Por ejemplo, "
+"si desea mostrar los pulgares para sí, utilice fa-thumbs-upPara obtener más "
+"información sobre los iconos fontawesome y fontawesome visite:"
+
+#: admin/admin-pages/groups/group-edit.php:84
+msgid "Font Awesome Icons"
+msgstr "Iconos impresionantes de la fuente"
+
+#: admin/admin-pages/groups/group-edit.php:91
+msgid "Convert Yes/NO values to icons."
+msgstr "Convierta los valores Sí / NO en iconos."
+
+#: admin/admin-pages/groups/group-edit.php:102
+msgid "Convert Yes with"
+msgstr "Convertir Sí con"
+
+#: admin/admin-pages/groups/group-edit.php:107
+#: admin/admin-pages/groups/group-edit.php:295
+msgid "Convert No with"
+msgstr "Convertir No con"
+
+#: admin/admin-pages/groups/group-edit.php:113
+msgid "Enable Tooltips (beta)"
+msgstr "Habilitar Tooltips (beta)"
+
+#: admin/admin-pages/groups/group-edit.php:130
+msgid "Billing Cycle"
+msgstr "Ciclo de facturación"
+
+#: admin/admin-pages/groups/group-edit.php:155
+msgid "Secondary billing cycle (beta):"
+msgstr "Ciclo de facturación secundario (beta):"
+
+#: admin/admin-pages/groups/group-edit.php:157
+msgid ""
+"It should be longer than Primary billing cycle and required if you want to "
+"show discount."
+msgstr ""
+"Debe ser más largo que el ciclo de facturación principal y necesario si "
+"desea mostrar descuento."
+
+#: admin/admin-pages/groups/group-edit.php:183
+msgid "Select currency:"
+msgstr "Seleccione el tipo de moneda:"
+
+#: admin/admin-pages/groups/group-edit.php:197
+msgid "Up-Sell Discount"
+msgstr "Descuento actualizado"
+
+#: admin/admin-pages/groups/group-edit.php:204
+msgid "Discount feature assumes customer pays less for longer durations."
+msgstr ""
+"La función de descuento supone que el cliente paga menos por más tiempo."
+
+#: admin/admin-pages/groups/group-edit.php:205
+msgid ""
+"You must select secondary billing cycle if you want to use discount feature."
+msgstr ""
+"Debe seleccionar el ciclo de facturación secundario si desea utilizar la "
+"función de descuento."
+
+#: admin/admin-pages/groups/group-edit.php:229
+msgid "Show Discount Banner:"
+msgstr "Mostrar Billete de Descuento:"
+
+#: admin/admin-pages/groups/group-edit.php:232
+msgid "This big, bold text is shown just above the duration selection button. "
+msgstr ""
+"Este texto grande y en negrita se muestra justo encima del botón de "
+"selección de duración."
+
+#: admin/admin-pages/groups/group-edit.php:239
+#: admin/admin-pages/groups/group-edit.php:254
+msgid "No"
+msgstr "No"
+
+#: admin/admin-pages/groups/group-edit.php:242
+#: admin/admin-pages/groups/group-edit.php:257
+msgid "Yes"
+msgstr "Sí"
+
+#: admin/admin-pages/groups/group-edit.php:249
+msgid "Show Discount for Secondary Billing Cycle:"
+msgstr "Mostrar descuento para el ciclo de facturación secundaria:"
+
+#: admin/admin-pages/groups/group-edit.php:264
+msgid "Others (beta)"
+msgstr "Otros (beta)"
+
+#: admin/admin-pages/groups/group-edit.php:270
+msgid ""
+"These features are not available in all templates and short-codes. These "
+"depends on template design mostly..."
+msgstr ""
+"Estas características no están disponibles en todas las plantillas y códigos "
+"cortos. Estos dependen del diseño de la plantilla en su mayoría ..."
+
+#: admin/admin-pages/groups/group-edit.php:345
+msgid "Hide Comparison Table below"
+msgstr "Ocultar tabla de comparación a continuación"
+
+#: admin/admin-pages/groups/group-edit.php:352
+msgid "Select width on which you want to hide comparison table"
+msgstr "Seleccione el ancho en el que desea ocultar la tabla de comparación"
+
+#: admin/admin-pages/groups/group-edit.php:383
+msgid "Number of Rows for Slider Features:"
+msgstr "Número de filas para funciones de deslizamiento:"
+
+#: admin/admin-pages/groups/group-edit.php:393
+msgid "Hide Slider below"
+msgstr "Ocultar deslizante a continuación"
+
+#: admin/admin-pages/groups/group-edit.php:400
+msgid "Select width on which you want to hide slider"
+msgstr "Seleccione el ancho en el que desea ocultar el deslizador"
+
+#: admin/admin-pages/groups/group-edit.php:410
+msgid "Pricing Table Options"
+msgstr "Opciones de tabla de precios"
+
+#: admin/admin-pages/groups/group-edit.php:414
+msgid "Select template file:"
+msgstr "Seleccionar archivo de plantilla:"
+
+#: admin/admin-pages/groups/group-edit.php:441
+msgid "Hide Table Group below"
+msgstr "Ocultar grupo de tabla a continuación"
+
+#: admin/admin-pages/groups/group-edit.php:448
+msgid "Select width on which you want to hide table group"
+msgstr "Seleccione el ancho en el que desea ocultar el grupo de la tabla"
+
+#: admin/admin-pages/groups/group-edit.php:454
+msgid "Enable Price Dots (beta)"
+msgstr "Habilitar puntos de precio (beta)"
+
+#: admin/admin-pages/groups/group-edit.php:465
+msgid "Enable Table Carousel (beta)"
+msgstr "Habilitar Carrusel de tabla (beta)"
+
+#. Name of the plugin
+msgid "WHMpress - Slider and Comparison Tables"
+msgstr "WHMpress - Slider and Comparison Tables"
+
+#. Description of the plugin
+msgid ""
+"Adds comparison table and sliders to WHMpress, with options to select "
+"different templates."
+msgstr ""
+"Agrega tabla de comparación y deslizadores a WHMpress, con opciones para "
+"seleccionar diferentes plantillas."
+
+#. URI of the plugin
+msgid "http://WHMpress.com"
+msgstr "http://WHMpress.com"
+
+#. Author of the plugin
+msgid "creativeON"
+msgstr "creativeON"
+
+#. Author URI of the plugin
+msgid "http://creativeon.com"
+msgstr "http://creativeon.com"

@@ -1,0 +1,18 @@
+<div class="ts-search-domain">
+	<div class="search-section">
+		<form method="post" action="{$action_url}" id="domain-searchform">
+			<input class="input-text" name="domain" id="s" placeholder="Enter your Domain Name here..." type="text">
+			<select class="ts-option-search" name="tld">
+				{*
+				<option value>Select Extention</option>
+				*}
+				{foreach from=$combo_data.rows item=whmp}
+				<option value="{$whmp.extension}">{$whmp.extension}</option>
+				{/foreach}
+			</select>
+			<span class="ts_selected"></span>
+			<input type="submit" value="Search" id="searchsubmit">
+		</form>
+	</div>
+	<div class="clearfix"></div>
+</div>

@@ -1,0 +1,8 @@
+param_name,heading,description,type,value,group
+sub_icon,icon heading,icon description,whmpress_icon,"fa fa-fake_icon",whmpress
+featured,Featured Product or Not,Select if the product is featured product or not,dropdown,"['normal','pricing-featured']",whmpress
+sub_heading,Sub Heading,Enter additional settings,textfield,one,whmpress
+promo_text,Promo Text,Promo Text to Display,textfield,Value,whmpress
+tax_info,Tax Ifno Line One,Tax Ifno Line One,textfield,Value,whmpress
+tax_info_2,Tax Info Line Two,Tax Ifno Line Two,textfield,Value,whmpress
+product_detail,Product Detail,Product Details to display,textarea,Value,whmpress

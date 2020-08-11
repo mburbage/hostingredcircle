@@ -1,0 +1,5 @@
+param_name,heading,description,type,value,group
+sub_icon,icon heading,icon description,whmpress_icon,"fa fa-shakeel",whmpress
+featured,Featured Product,Select if the product is featured product or not,dropdown,"['normal','featured']",whmpress
+promo_text,Promo Text,Promo Text to Display,textfield,Value,whmpress
+product_detail,Product Detail,Product Details to display,textarea,Value,whmpress

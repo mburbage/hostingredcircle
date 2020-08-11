@@ -1,0 +1,1977 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Hosted v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2017-07-04 08:22:30+0000\n"
+"Last-Translator: admin <learn@oceanthemes.net>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:18
+#@ hosted
+msgid "404"
+msgstr ""
+
+#: vc_shortcode.php:356
+#@ hosted
+msgid "1"
+msgstr ""
+
+#: comments.php:36
+#@ hosted
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:37
+#@ hosted
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:43
+#@ hosted
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:57
+#@ hosted
+msgid "Your Name"
+msgstr ""
+
+#: comments.php:58
+#@ hosted
+msgid "Your Email"
+msgstr ""
+
+#: comments.php:60
+#@ hosted
+msgid "Your Comment"
+msgstr ""
+
+#: comments.php:61
+#@ hosted
+msgid "Post Comment"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:334
+#@ hosted
+msgid "Install Required Plugins"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:335
+#@ hosted
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: framework/class-tgm-plugin-activation.php:337
+#, php-format
+#@ hosted
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: framework/class-tgm-plugin-activation.php:339
+#, php-format
+#@ hosted
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:340
+#@ hosted
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+#: framework/class-tgm-plugin-activation.php:343
+#, php-format
+#@ hosted
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: framework/class-tgm-plugin-activation.php:349
+#, php-format
+#@ hosted
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: framework/class-tgm-plugin-activation.php:355
+#, php-format
+#@ hosted
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: framework/class-tgm-plugin-activation.php:361
+#, php-format
+#@ hosted
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: framework/class-tgm-plugin-activation.php:367
+#, php-format
+#@ hosted
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: framework/class-tgm-plugin-activation.php:373
+#, php-format
+#@ hosted
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/class-tgm-plugin-activation.php:378
+#@ hosted
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/class-tgm-plugin-activation.php:383
+#@ hosted
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/class-tgm-plugin-activation.php:388
+#@ hosted
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/class-tgm-plugin-activation.php:392
+#@ hosted
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:393
+#: framework/class-tgm-plugin-activation.php:912
+#: framework/class-tgm-plugin-activation.php:2618
+#: framework/class-tgm-plugin-activation.php:3665
+#@ hosted
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:394
+#: framework/class-tgm-plugin-activation.php:3244
+#@ hosted
+msgid "Plugin activated successfully."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: framework/class-tgm-plugin-activation.php:397
+#, php-format
+#@ hosted
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: framework/class-tgm-plugin-activation.php:399
+#, php-format
+#@ hosted
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: framework/class-tgm-plugin-activation.php:401
+#, php-format
+#@ hosted
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:402
+#@ hosted
+msgid "Dismiss this notice"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:403
+#@ hosted
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:404
+#@ hosted
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:607
+#@ hosted
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:608
+#@ hosted
+msgid "Update Required"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1019
+#@ hosted
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1019
+#: framework/class-tgm-plugin-activation.php:1022
+#@ hosted
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1022
+#@ hosted
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1206
+#: framework/class-tgm-plugin-activation.php:3033
+#@ hosted
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: framework/class-tgm-plugin-activation.php:2067
+#, php-format
+#@ hosted
+msgid "TGMPA v%s"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2358
+#@ hosted
+msgid "Required"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2361
+#@ hosted
+msgid "Recommended"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2377
+#@ hosted
+msgid "WordPress Repository"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2380
+#@ hosted
+msgid "External Source"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2383
+#@ hosted
+msgid "Pre-Packaged"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2400
+#@ hosted
+msgid "Not Installed"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2404
+#@ hosted
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2406
+#@ hosted
+msgid "Active"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2412
+#@ hosted
+msgid "Required Update not Available"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2415
+#@ hosted
+msgid "Requires Update"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2418
+#@ hosted
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: framework/class-tgm-plugin-activation.php:2427
+#, php-format
+#@ hosted
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: framework/class-tgm-plugin-activation.php:2473
+#, php-format
+#@ hosted
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: framework/class-tgm-plugin-activation.php:2477
+#, php-format
+#@ hosted
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: framework/class-tgm-plugin-activation.php:2481
+#, php-format
+#@ hosted
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: framework/class-tgm-plugin-activation.php:2485
+#, php-format
+#@ hosted
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/class-tgm-plugin-activation.php:2567
+#@ hosted
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2575
+#@ hosted
+msgid "Installed version:"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2583
+#@ hosted
+msgid "Minimum required version:"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2595
+#@ hosted
+msgid "Available version:"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2618
+#@ hosted
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2632
+#@ hosted
+msgid "Plugin"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2633
+#@ hosted
+msgid "Source"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2634
+#@ hosted
+msgid "Type"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2638
+#@ hosted
+msgid "Version"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2639
+#@ hosted
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: framework/class-tgm-plugin-activation.php:2688
+#, php-format
+#@ hosted
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: framework/class-tgm-plugin-activation.php:2693
+#, php-format
+#@ hosted
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: framework/class-tgm-plugin-activation.php:2699
+#, php-format
+#@ hosted
+msgid "Activate %2$s"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2769
+#@ hosted
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2802
+#@ hosted
+msgid "Install"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2808
+#@ hosted
+msgid "Update"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2811
+#@ hosted
+msgid "Activate"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2842
+#@ hosted
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2844
+#@ hosted
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2885
+#@ hosted
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2887
+#@ hosted
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2993
+#@ hosted
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:3019
+#@ hosted
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#. gettext fix: identical singular and plural forms found, that may be ambiguous! Please check the code!
+#: framework/class-tgm-plugin-activation.php:3037
+#: framework/class-tgm-plugin-activation.php:395
+#@ hosted
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/class-tgm-plugin-activation.php:3243
+#@ hosted
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: framework/class-tgm-plugin-activation.php:3583
+#, php-format
+#@ hosted
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: framework/class-tgm-plugin-activation.php:3586
+#, php-format
+#@ hosted
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: framework/class-tgm-plugin-activation.php:3588
+#, php-format
+#@ hosted
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:3592
+#@ hosted
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: framework/class-tgm-plugin-activation.php:3594
+#, php-format
+#@ hosted
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:3594
+#: framework/class-tgm-plugin-activation.php:3602
+#@ hosted
+msgid "Show Details"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:3594
+#: framework/class-tgm-plugin-activation.php:3602
+#@ hosted
+msgid "Hide Details"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:3595
+#@ hosted
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: framework/class-tgm-plugin-activation.php:3597
+#, php-format
+#@ hosted
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:3600
+#@ hosted
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: framework/class-tgm-plugin-activation.php:3602
+#, php-format
+#@ hosted
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:3603
+#@ hosted
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: framework/class-tgm-plugin-activation.php:3605
+#, php-format
+#@ hosted
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/customizer.php:156
+#@ hosted
+msgid "General"
+msgstr ""
+
+#: framework/customizer.php:160
+#@ hosted
+msgid "Header"
+msgstr ""
+
+#: framework/customizer.php:164
+#: framework/customizer.php:201
+#: framework/customizer.php:326
+#: vc_shortcode.php:291
+#@ hosted
+msgid "Socials"
+msgstr ""
+
+#: framework/customizer.php:172
+#@ hosted
+msgid "Top Header"
+msgstr ""
+
+#: framework/customizer.php:179
+#@ hosted
+msgid "Navigation"
+msgstr ""
+
+#: framework/customizer.php:186
+#@ hosted
+msgid "Site Logo"
+msgstr ""
+
+#: framework/customizer.php:193
+#: framework/customizer.php:430
+#@ hosted
+msgid "Page Header"
+msgstr ""
+
+#: framework/customizer.php:210
+#: index.php:21
+#@ hosted
+msgid "Blog"
+msgstr ""
+
+#: framework/customizer.php:218
+#@ hosted
+msgid "Portfolio"
+msgstr ""
+
+#: framework/customizer.php:234
+#@ hosted
+msgid "Footer"
+msgstr ""
+
+#: framework/customizer.php:252
+#@ hosted
+msgid "Miscellaneous"
+msgstr ""
+
+#: framework/customizer.php:355
+#@ hosted
+msgid "Sticky Header"
+msgstr ""
+
+#: framework/customizer.php:362
+#@ hosted
+msgid "Background Main Menu"
+msgstr ""
+
+#: framework/customizer.php:369
+#@ hosted
+msgid "Color Text Menu"
+msgstr ""
+
+#: framework/customizer.php:394
+#: framework/customizer.php:603
+#@ hosted
+msgid "Logo"
+msgstr ""
+
+#: framework/customizer.php:401
+#@ hosted
+msgid "Logo Width"
+msgstr ""
+
+#: framework/customizer.php:408
+#@ hosted
+msgid "Logo Height"
+msgstr ""
+
+#: framework/customizer.php:415
+#@ hosted
+msgid "Logo Margin"
+msgstr ""
+
+#: framework/customizer.php:431
+#@ hosted
+msgid "Enable to show page header on whole site"
+msgstr ""
+
+#: vc_shortcode.php:943
+#@ hosted
+msgid "Height (px)"
+msgstr ""
+
+#: framework/customizer.php:464
+#: framework/customizer.php:569
+#: framework/customizer.php:610
+#@ hosted
+msgid "Background Image"
+msgstr ""
+
+#: framework/customizer.php:465
+#: framework/customizer.php:570
+#@ hosted
+msgid "Upload a page header background image"
+msgstr ""
+
+#: framework/customizer.php:518
+#@ hosted
+msgid "Blog List Layout"
+msgstr ""
+
+#: framework/customizer.php:530
+#@ hosted
+msgid "Single Blog Layout"
+msgstr ""
+
+#: framework/customizer.php:542
+#@ hosted
+msgid "Title Header Single"
+msgstr ""
+
+#: framework/customizer.php:549
+#@ hosted
+msgid "Read More Button"
+msgstr ""
+
+#: framework/customizer.php:556
+#@ hosted
+msgid "Excerpt Length"
+msgstr ""
+
+#: framework/customizer.php:305
+#: framework/customizer.php:333
+#@ hosted
+msgid "Icon Class"
+msgstr ""
+
+#: framework/customizer.php:334
+#@ hosted
+msgid "This will be the social icon: http://fontawesome.io/icons/"
+msgstr ""
+
+#: framework/customizer.php:339
+#@ hosted
+msgid "Link URL"
+msgstr ""
+
+#: framework/customizer.php:340
+#@ hosted
+msgid "This will be the social link"
+msgstr ""
+
+#: vc_shortcode.php:336
+#: vc_shortcode.php:408
+#: vc_shortcode.php:461
+#: vc_shortcode.php:689
+#@ hosted
+msgid "Name"
+msgstr ""
+
+#: framework/customizer.php:586
+#@ hosted
+msgid "Background Footer"
+msgstr ""
+
+#: framework/customizer.php:593
+#@ hosted
+msgid "Color Text Footer"
+msgstr ""
+
+#: framework/customizer.php:479
+#@ hosted
+msgid "Background Color"
+msgstr ""
+
+#: framework/customizer.php:636
+#@ hosted
+msgid "Preloader"
+msgstr ""
+
+#: framework/customizer.php:650
+#@ hosted
+msgid "Primary Color"
+msgstr ""
+
+#: framework/customizer.php:657
+#@ hosted
+msgid "Custom Code"
+msgstr ""
+
+#: framework/customizer.php:658
+#@ hosted
+msgid "Add more js, css, html... code here."
+msgstr ""
+
+#: framework/meta-boxes.php:20
+#@ hosted
+msgid "Format Details"
+msgstr ""
+
+#: framework/meta-boxes.php:34
+#@ hosted
+msgid "Image"
+msgstr ""
+
+#: framework/meta-boxes.php:48
+#@ hosted
+msgid "Gallery"
+msgstr ""
+
+#: framework/meta-boxes.php:60
+#@ hosted
+msgid "Audio"
+msgstr ""
+
+#: framework/meta-boxes.php:78
+#@ hosted
+msgid "Video"
+msgstr ""
+
+#: framework/plugin-requires.php:9
+#@ hosted
+msgid "Meta Box"
+msgstr ""
+
+#: framework/plugin-requires.php:16
+#@ hosted
+msgid "Kirki Customizer"
+msgstr ""
+
+#: framework/plugin-requires.php:26
+#@ hosted
+msgid "WPBakery Visual Composer"
+msgstr ""
+
+#: framework/plugin-requires.php:38
+#@ hosted
+msgid "Contact Form 7"
+msgstr ""
+
+#: framework/plugin-requires.php:48
+#@ hosted
+msgid "MailChimp for WordPress"
+msgstr ""
+
+#: framework/template-tags.php:121
+#@ hosted
+msgid "Search..."
+msgstr ""
+
+#: framework/template-tags.php:141
+#, php-format
+#@ hosted
+msgid "%s"
+msgstr ""
+
+#: framework/template-tags.php:148
+#@ hosted
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:51
+#@ hosted
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:101
+#@ hosted
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:103
+#: functions.php:112
+#@ hosted
+msgid "Appears in the sidebar section of the site."
+msgstr ""
+
+#: functions.php:110
+#@ hosted
+msgid "Shop Sidebar"
+msgstr ""
+
+#: functions.php:119
+#@ hosted
+msgid "Footer One Widget Area"
+msgstr ""
+
+#: functions.php:121
+#: functions.php:131
+#: functions.php:141
+#: functions.php:151
+#@ hosted
+msgid "Footer Widget that appears on the Footer."
+msgstr ""
+
+#: functions.php:129
+#@ hosted
+msgid "Footer Two Widget Area"
+msgstr ""
+
+#: functions.php:139
+#@ hosted
+msgid "Footer Three Widget Area"
+msgstr ""
+
+#: functions.php:149
+#@ hosted
+msgid "Footer Fourth Widget Area"
+msgstr ""
+
+#: functions.php:271
+#@ hosted
+msgid "Setup Full Width"
+msgstr ""
+
+#: functions.php:274
+#@ hosted
+msgid "No"
+msgstr ""
+
+#: functions.php:275
+#@ hosted
+msgid "Yes"
+msgstr ""
+
+#: functions.php:277
+#@ hosted
+msgid "Select Full width for row : yes or not, Default: No fullwidth"
+msgstr ""
+
+#: functions.php:282
+#@ hosted
+msgid "Background Parallax"
+msgstr ""
+
+#: functions.php:290
+#: functions.php:325
+#@ hosted
+msgid "CSS Animation"
+msgstr ""
+
+#: functions.php:293
+#: functions.php:328
+#@ hosted
+msgid "None"
+msgstr ""
+
+#: functions.php:294
+#: functions.php:329
+#@ hosted
+msgid "Fade In Up"
+msgstr ""
+
+#: functions.php:295
+#: functions.php:330
+#@ hosted
+msgid "Fade In Down"
+msgstr ""
+
+#: functions.php:296
+#: functions.php:331
+#@ hosted
+msgid "Fade In"
+msgstr ""
+
+#: functions.php:297
+#: functions.php:332
+#@ hosted
+msgid "Fade In Left"
+msgstr ""
+
+#: functions.php:298
+#: functions.php:333
+#@ hosted
+msgid "Fade In Right"
+msgstr ""
+
+#: functions.php:300
+#: functions.php:335
+#@ hosted
+msgid "Select Animate , Default: None"
+msgstr ""
+
+#: functions.php:305
+#: functions.php:340
+#@ hosted
+msgid "Animation time delay number"
+msgstr ""
+
+#: functions.php:308
+#: functions.php:317
+#: functions.php:343
+#: functions.php:352
+#@ hosted
+msgid "Example : 0.2, 0.6, 1, etc"
+msgstr ""
+
+#: functions.php:314
+#: functions.php:349
+#@ hosted
+msgid "Animation time duration number"
+msgstr ""
+
+#: page.php:70
+#: single.php:119
+#@ hosted
+msgid "Pages:"
+msgstr ""
+
+#: page.php:74
+#: single.php:123
+#@ hosted
+msgid "Page"
+msgstr ""
+
+#: search.php:17
+#, php-format
+#@ hosted
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:48
+#@ hosted
+msgid "Nothing Found"
+msgstr ""
+
+#: search.php:51
+#@ hosted
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: single.php:32
+#@ hosted
+msgid "Single Blog"
+msgstr ""
+
+#: 404.php:19
+#@ hosted
+msgid "Page Not Found"
+msgstr ""
+
+#: 404.php:20
+#@ hosted
+msgid "The page you have requested cannot be found."
+msgstr ""
+
+#: 404.php:21
+#@ hosted
+msgid "Maybe the page was moved or deleted, or perhaps you just mistyped the address.<br> Why not to try and find your way using the navigation bar above or click on the logo to return to our  home page."
+msgstr ""
+
+#: archive.php:19
+#: index.php:24
+#: page-templates/template-fullwidth.php:35
+#: page.php:46
+#: search.php:20
+#: single-portfolio.php:32
+#: single.php:39
+#: woocommerce/archive-product.php:31
+#: woocommerce/single-product.php:31
+#@ hosted
+msgid "search..."
+msgstr ""
+
+#: comments.php:28
+#@ hosted
+msgid "0 Comment"
+msgstr ""
+
+#: comments.php:28
+#@ hosted
+msgid "1 Comment"
+msgstr ""
+
+#: comments.php:28
+#@ hosted
+msgid "% Comments"
+msgstr ""
+
+#: comments.php:55
+#@ hosted
+msgid "Add a Comment"
+msgstr ""
+
+#: content-audio.php:13
+#: content-gallery.php:18
+#: content-image.php:18
+#: content-video.php:11
+#: content.php:12
+#: single.php:108
+#@ hosted
+msgid "Posted on"
+msgstr ""
+
+#: content-audio.php:14
+#: content-gallery.php:19
+#: content-image.php:19
+#: content-video.php:12
+#: content.php:13
+#: single.php:109
+#@ hosted
+msgid "by"
+msgstr ""
+
+#: content-audio.php:15
+#: content-gallery.php:20
+#: content-image.php:20
+#: content-video.php:13
+#: content.php:14
+#: single.php:110
+#@ hosted
+msgid "under"
+msgstr ""
+
+#: content-audio.php:19
+#: content-gallery.php:24
+#: content-image.php:24
+#: content-video.php:17
+#: content.php:18
+#@ hosted
+msgid "Read the rest"
+msgstr ""
+
+#: framework/customizer.php:226
+#@ hosted
+msgid "Shop"
+msgstr ""
+
+#: framework/customizer.php:243
+#@ hosted
+msgid "Coming Soon"
+msgstr ""
+
+#: framework/customizer.php:264
+#@ hosted
+msgid "Enable Top Header"
+msgstr ""
+
+#: framework/customizer.php:271
+#@ hosted
+msgid "Background"
+msgstr ""
+
+#: framework/customizer.php:285
+#@ hosted
+msgid "Color Text"
+msgstr ""
+
+#: framework/customizer.php:299
+#@ hosted
+msgid "Top Infomation"
+msgstr ""
+
+#: framework/customizer.php:306
+#@ hosted
+msgid "This will be the icon: http://fontawesome.io/icons/"
+msgstr ""
+
+#: framework/customizer.php:311
+#: vc_shortcode.php:285
+#: vc_shortcode.php:368
+#: vc_shortcode.php:695
+#@ hosted
+msgid "Details"
+msgstr ""
+
+#: framework/customizer.php:312
+#@ hosted
+msgid "This will be the details"
+msgstr ""
+
+#: framework/customizer.php:377
+#@ hosted
+msgid "Background Dropdown Menu"
+msgstr ""
+
+#: framework/customizer.php:384
+#@ hosted
+msgid "Color Dropdown Menu"
+msgstr ""
+
+#: framework/customizer.php:438
+#@ hosted
+msgid "Padding Top & Bottom"
+msgstr ""
+
+#: framework/customizer.php:486
+#@ hosted
+msgid "Color Page Title"
+msgstr ""
+
+#: framework/customizer.php:493
+#@ hosted
+msgid "Breadcrumb"
+msgstr ""
+
+#: framework/customizer.php:494
+#@ hosted
+msgid "Enable to show a breadcrumb bellow the site header"
+msgstr ""
+
+#: framework/customizer.php:501
+#@ hosted
+msgid "Search Form"
+msgstr ""
+
+#: framework/customizer.php:502
+#@ hosted
+msgid "Enable to show search form in the page header"
+msgstr ""
+
+#: framework/customizer.php:577
+#@ hosted
+msgid "Products Per Page"
+msgstr ""
+
+#: framework/customizer.php:617
+#@ hosted
+msgid "Date Time"
+msgstr ""
+
+#: framework/customizer.php:620
+#@ hosted
+msgid "Date format: dd/mm/yyyy. Example: 10/25/2017"
+msgstr ""
+
+#: framework/customizer.php:625
+#@ hosted
+msgid "Shortcode Newsletter"
+msgstr ""
+
+#: framework/customizer.php:629
+#@ hosted
+msgid "Find in MailChimp for WP > Forms."
+msgstr ""
+
+#: framework/customizer.php:643
+#@ hosted
+msgid "API Google Map"
+msgstr ""
+
+#: framework/plugin-requires.php:21
+#@ hosted
+msgid "Woocommerce"
+msgstr ""
+
+#: framework/plugin-requires.php:32
+#@ hosted
+msgid "Revolution Slider"
+msgstr ""
+
+#: framework/plugin-requires.php:43
+#@ hosted
+msgid "Breadcrumb Navxt"
+msgstr ""
+
+#: framework/plugin-requires.php:53
+#@ hosted
+msgid "OT Portfolio"
+msgstr ""
+
+#: framework/template-tags.php:142
+#@ hosted
+msgid "Post on"
+msgstr ""
+
+#: functions.php:52
+#@ hosted
+msgid "Top Menu"
+msgstr ""
+
+#: functions.php:172
+#@ hosted
+msgctxt "Nunito font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:173
+#@ hosted
+msgctxt "Merriweather font: on or off"
+msgid "on"
+msgstr ""
+
+#: page-templates/template-canvas.php:15
+#@ hosted
+msgid "Page Canvas For Page Builder"
+msgstr ""
+
+#: page-templates/template-coming-soon.php:43
+#@ hosted
+msgid "Something awesome is coming soon"
+msgstr ""
+
+#: page-templates/template-coming-soon.php:44
+#@ hosted
+msgid "We are working hard to finish our amazing new website. We are almost done!"
+msgstr ""
+
+#: page-templates/template-coming-soon.php:53
+#@ hosted
+msgid "days"
+msgstr ""
+
+#: page-templates/template-coming-soon.php:59
+#@ hosted
+msgid "hours"
+msgstr ""
+
+#: page-templates/template-coming-soon.php:65
+#@ hosted
+msgid "minutes"
+msgstr ""
+
+#: page-templates/template-coming-soon.php:71
+#@ hosted
+msgid "seconds"
+msgstr ""
+
+#: page-templates/template-coming-soon.php:79
+#@ hosted
+msgid "Subscribe & stay updated"
+msgstr ""
+
+#: page-templates/template-coming-soon.php:80
+#@ hosted
+msgid ""
+"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n"
+"\t\t\t\t\t   \tExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+msgstr ""
+
+#: single.php:115
+#@ hosted
+msgid "Tags: "
+msgstr ""
+
+#: vc_shortcode.php:6
+#@ hosted
+msgid "OT Button"
+msgstr ""
+
+#: vc_shortcode.php:16
+#: vc_shortcode.php:147
+#: vc_shortcode.php:173
+#: vc_shortcode.php:548
+#@ hosted
+msgid "Button"
+msgstr ""
+
+#: vc_shortcode.php:23
+#@ hosted
+msgid "Button Style"
+msgstr ""
+
+#: vc_shortcode.php:26
+#@ hosted
+msgid "Default"
+msgstr ""
+
+#: vc_shortcode.php:27
+#@ hosted
+msgid "Dark"
+msgstr ""
+
+#: vc_shortcode.php:28
+#@ hosted
+msgid "Color"
+msgstr ""
+
+#: vc_shortcode.php:37
+#@ hosted
+msgid "OT Features Box"
+msgstr ""
+
+#: vc_shortcode.php:45
+#: vc_shortcode.php:101
+#@ hosted
+msgid "Type Box"
+msgstr ""
+
+#: vc_shortcode.php:48
+#@ hosted
+msgid "Style 1: Grey Box"
+msgstr ""
+
+#: vc_shortcode.php:49
+#@ hosted
+msgid "Style 2: Icon Left"
+msgstr ""
+
+#: vc_shortcode.php:56
+#: vc_shortcode.php:113
+#@ hosted
+msgid "Icon Image"
+msgstr ""
+
+#: vc_shortcode.php:64
+#: vc_shortcode.php:121
+#: vc_shortcode.php:777
+#@ hosted
+msgid "Icon"
+msgstr ""
+
+#: vc_shortcode.php:72
+#: vc_shortcode.php:129
+#: vc_shortcode.php:166
+#: vc_shortcode.php:507
+#: vc_shortcode.php:770
+#: vc_shortcode.php:810
+#@ hosted
+msgid "Title"
+msgstr ""
+
+#: vc_shortcode.php:75
+#: vc_shortcode.php:132
+#@ hosted
+msgid "Title of box"
+msgstr ""
+
+#: vc_shortcode.php:81
+#: vc_shortcode.php:138
+#: vc_shortcode.php:542
+#@ hosted
+msgid "Description"
+msgstr ""
+
+#: vc_shortcode.php:84
+#: vc_shortcode.php:141
+#@ hosted
+msgid "content right."
+msgstr ""
+
+#: vc_shortcode.php:93
+#@ hosted
+msgid "OT Icon Box"
+msgstr ""
+
+#: vc_shortcode.php:104
+#@ hosted
+msgid "Style 1: Icon Left"
+msgstr ""
+
+#: vc_shortcode.php:105
+#@ hosted
+msgid "Style 2: White Box"
+msgstr ""
+
+#: vc_shortcode.php:106
+#@ hosted
+msgid "Style 3: Icon Center"
+msgstr ""
+
+#: vc_shortcode.php:158
+#@ hosted
+msgid "OT Call To Action"
+msgstr ""
+
+#: vc_shortcode.php:185
+#@ hosted
+msgid "OT Domain Search Form"
+msgstr ""
+
+#: vc_shortcode.php:193
+#@ hosted
+msgid "Placeholder"
+msgstr ""
+
+#: vc_shortcode.php:200
+#@ hosted
+msgid "Action Link"
+msgstr ""
+
+#: vc_shortcode.php:211
+#@ hosted
+msgid "OT Domain List"
+msgstr ""
+
+#: vc_shortcode.php:219
+#@ hosted
+msgid "Width (%)"
+msgstr ""
+
+#: vc_shortcode.php:220
+#@ hosted
+msgid "Example: 25%."
+msgstr ""
+
+#: vc_shortcode.php:225
+#@ hosted
+msgid "Domain"
+msgstr ""
+
+#: vc_shortcode.php:251
+#@ hosted
+msgid "OT Member Team"
+msgstr ""
+
+#: vc_shortcode.php:261
+#: vc_shortcode.php:328
+#: vc_shortcode.php:683
+#@ hosted
+msgid "Photo"
+msgstr ""
+
+#: vc_shortcode.php:269
+#@ hosted
+msgid "Member Name"
+msgstr ""
+
+#: vc_shortcode.php:277
+#@ hosted
+msgid "Member Job"
+msgstr ""
+
+#: vc_shortcode.php:318
+#@ hosted
+msgid "OT Single Testimonial"
+msgstr ""
+
+#: vc_shortcode.php:344
+#: vc_shortcode.php:414
+#: vc_shortcode.php:467
+#@ hosted
+msgid "Job"
+msgstr ""
+
+#: vc_shortcode.php:352
+#@ hosted
+msgid "Rating"
+msgstr ""
+
+#: vc_shortcode.php:355
+#@ hosted
+msgid "Choose One"
+msgstr ""
+
+#: vc_shortcode.php:357
+#@ hosted
+msgid "2"
+msgstr ""
+
+#: vc_shortcode.php:358
+#@ hosted
+msgid "3"
+msgstr ""
+
+#: vc_shortcode.php:359
+#@ hosted
+msgid "4"
+msgstr ""
+
+#: vc_shortcode.php:360
+#@ hosted
+msgid "5"
+msgstr ""
+
+#: vc_shortcode.php:362
+#@ hosted
+msgid "Default: 5 star."
+msgstr ""
+
+#: vc_shortcode.php:381
+#@ hosted
+msgid "OT Testimonials"
+msgstr ""
+
+#: vc_shortcode.php:391
+#: vc_shortcode.php:495
+#: vc_shortcode.php:759
+#@ hosted
+msgid "Style"
+msgstr ""
+
+#: vc_shortcode.php:394
+#: vc_shortcode.php:498
+#: vc_shortcode.php:762
+#@ hosted
+msgid "Style 1"
+msgstr ""
+
+#: vc_shortcode.php:395
+#: vc_shortcode.php:499
+#: vc_shortcode.php:763
+#@ hosted
+msgid "Style 2"
+msgstr ""
+
+#: vc_shortcode.php:400
+#: vc_shortcode.php:447
+#@ hosted
+msgid "Testimonial"
+msgstr ""
+
+#: vc_shortcode.php:420
+#: vc_shortcode.php:455
+#@ hosted
+msgid "Text"
+msgstr ""
+
+#: vc_shortcode.php:429
+#@ hosted
+msgid "Dark Text"
+msgstr ""
+
+#: vc_shortcode.php:439
+#@ hosted
+msgid "OT Testimonials 2"
+msgstr ""
+
+#: vc_shortcode.php:473
+#@ hosted
+msgid "Avatar"
+msgstr ""
+
+#: vc_shortcode.php:485
+#@ hosted
+msgid "OT Pricing Table"
+msgstr ""
+
+#: vc_shortcode.php:500
+#@ hosted
+msgid "Style 3"
+msgstr ""
+
+#: vc_shortcode.php:510
+#@ hosted
+msgid "Title of table"
+msgstr ""
+
+#: vc_shortcode.php:516
+#@ hosted
+msgid "Price"
+msgstr ""
+
+#: vc_shortcode.php:524
+#@ hosted
+msgid "Per"
+msgstr ""
+
+#: vc_shortcode.php:533
+#@ hosted
+msgid "VAT"
+msgstr ""
+
+#: vc_shortcode.php:550
+#@ hosted
+msgid "Add link to Button."
+msgstr ""
+
+#: vc_shortcode.php:556
+#@ hosted
+msgid "Featured Table?"
+msgstr ""
+
+#: vc_shortcode.php:564
+#@ hosted
+msgid "Featured Text"
+msgstr ""
+
+#: vc_shortcode.php:568
+#@ hosted
+msgid "Featured text display on top table."
+msgstr ""
+
+#: vc_shortcode.php:574
+#@ hosted
+msgid "Width"
+msgstr ""
+
+#: vc_shortcode.php:578
+#@ hosted
+msgid "Width of Table."
+msgstr ""
+
+#: vc_shortcode.php:587
+#@ hosted
+msgid "OT Pricing Table Compare"
+msgstr ""
+
+#: vc_shortcode.php:597
+#@ hosted
+msgid "Header Column?"
+msgstr ""
+
+#: vc_shortcode.php:605
+#@ hosted
+msgid "Title Pricing"
+msgstr ""
+
+#: vc_shortcode.php:609
+#@ hosted
+msgid "Title display in Pricing Table."
+msgstr ""
+
+#: vc_shortcode.php:615
+#@ hosted
+msgid "Price Pricing"
+msgstr ""
+
+#: vc_shortcode.php:619
+#@ hosted
+msgid "Price display in Pricing Table."
+msgstr ""
+
+#: vc_shortcode.php:625
+#@ hosted
+msgid "Time"
+msgstr ""
+
+#: vc_shortcode.php:629
+#@ hosted
+msgid "Per Month or Year display in Pricing Table."
+msgstr ""
+
+#: vc_shortcode.php:635
+#@ hosted
+msgid "Detail Pricing"
+msgstr ""
+
+#: vc_shortcode.php:638
+#@ hosted
+msgid "Content Pricing Table."
+msgstr ""
+
+#: vc_shortcode.php:644
+#@ hosted
+msgid "Label Button"
+msgstr ""
+
+#: vc_shortcode.php:648
+#@ hosted
+msgid "Text display in button."
+msgstr ""
+
+#: vc_shortcode.php:654
+#: vc_shortcode.php:701
+#@ hosted
+msgid "Link Button"
+msgstr ""
+
+#: vc_shortcode.php:658
+#@ hosted
+msgid "Link in button."
+msgstr ""
+
+#: vc_shortcode.php:667
+#@ hosted
+msgid "OT Data Center"
+msgstr ""
+
+#: vc_shortcode.php:675
+#@ hosted
+msgid "Center List"
+msgstr ""
+
+#: vc_shortcode.php:713
+#@ hosted
+msgid "OT FAQs"
+msgstr ""
+
+#: vc_shortcode.php:721
+#@ hosted
+msgid "FAQs"
+msgstr ""
+
+#: vc_shortcode.php:748
+#@ hosted
+msgid "OT Fun Facts"
+msgstr ""
+
+#: vc_shortcode.php:784
+#@ hosted
+msgid "Number"
+msgstr ""
+
+#: vc_shortcode.php:786
+#@ hosted
+msgid "Number of box"
+msgstr ""
+
+#: vc_shortcode.php:795
+#@ hosted
+msgid "OT Popup Video"
+msgstr ""
+
+#: vc_shortcode.php:803
+#@ hosted
+msgid "Link Video"
+msgstr ""
+
+#: vc_shortcode.php:822
+#@ hosted
+msgid "OT Portfolio Filter"
+msgstr ""
+
+#: vc_shortcode.php:832
+#@ hosted
+msgid "Number Show"
+msgstr ""
+
+#: vc_shortcode.php:839
+#@ hosted
+msgid "Text Show All"
+msgstr ""
+
+#: vc_shortcode.php:844
+#@ hosted
+msgid "Column"
+msgstr ""
+
+#: vc_shortcode.php:847
+#@ hosted
+msgid "3 Columns"
+msgstr ""
+
+#: vc_shortcode.php:848
+#@ hosted
+msgid "4 Columns"
+msgstr ""
+
+#: vc_shortcode.php:849
+#@ hosted
+msgid "2 Columns"
+msgstr ""
+
+#: vc_shortcode.php:856
+#@ hosted
+msgid "Popup"
+msgstr ""
+
+#: vc_shortcode.php:866
+#@ hosted
+msgid "OT Logo Clients"
+msgstr ""
+
+#: vc_shortcode.php:876
+#@ hosted
+msgid "Images"
+msgstr ""
+
+#: vc_shortcode.php:879
+#@ hosted
+msgid "Use link out for logo client by enter link input caption image, View guide here: http://vegatheme.com/images/add-link-logo.jpg , Recomended Size: 200 x 130. "
+msgstr ""
+
+#: vc_shortcode.php:883
+#@ hosted
+msgid "Visible Number"
+msgstr ""
+
+#: vc_shortcode.php:886
+#@ hosted
+msgid "Number columns each rows. Recommend: 4, 5 or 6. Default: 6."
+msgstr ""
+
+#: vc_shortcode.php:896
+#@ hosted
+msgid "OT Google Maps"
+msgstr ""
+
+#: vc_shortcode.php:907
+#@ hosted
+msgid "Latitude"
+msgstr ""
+
+#: vc_shortcode.php:916
+#@ hosted
+msgid "Longitude"
+msgstr ""
+
+#: vc_shortcode.php:925
+#@ hosted
+msgid "Location Image"
+msgstr ""
+
+#: vc_shortcode.php:928
+#@ hosted
+msgid "Upload Location Image."
+msgstr ""
+
+#: vc_shortcode.php:934
+#@ hosted
+msgid "Zoom map number"
+msgstr ""
+
+#: vc_shortcode.php:946
+#@ hosted
+msgid "Ex: 400px."
+msgstr ""
+
+#: vc_shortcode.php:955
+#@ hosted
+msgid "OT Multiple Markers Map"
+msgstr ""
+
+#: vc_shortcode.php:965
+#@ hosted
+msgid "Height Map"
+msgstr ""
+
+#: vc_shortcode.php:968
+#@ hosted
+msgid "Please enter number height Map, 300, 350, 380, ..etc. Default: 420."
+msgstr ""
+
+#: vc_shortcode.php:972
+#@ hosted
+msgid "Address"
+msgstr ""
+
+#: vc_shortcode.php:980
+#@ hosted
+msgid "Latitude and Longitude"
+msgstr ""
+
+#: vc_shortcode.php:982
+#@ hosted
+msgid "Please enter http://www.latlong.net/ Latitude,Longitude google map. Example: 39.98978,-83.00632."
+msgstr ""
+
+#: vc_shortcode.php:987
+#@ hosted
+msgid "Infomation"
+msgstr ""
+
+#: vc_shortcode.php:996
+#@ hosted
+msgid "Zoom Map"
+msgstr ""
+
+#: vc_shortcode.php:999
+#@ hosted
+msgid "Please enter Zoom Map, Default: 15"
+msgstr ""
+
+#: vc_shortcode.php:1008
+#@ hosted
+msgid "Icon Map marker, 47 x 68"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:60
+#@ hosted
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:79
+#@ hosted
+msgid "No products in the cart."
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:87
+#@ hosted
+msgid "Subtotal"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:92
+#@ hosted
+msgid "View Cart"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:93
+#@ hosted
+msgid "Checkout"
+msgstr ""
+
+#: woocommerce/product-searchform.php:26
+#@ hosted
+msgctxt "placeholder"
+msgid "Search Products&hellip;"
+msgstr ""
+
+#: woocommerce/product-searchform.php:26
+#@ hosted
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: framework/plugin-requires.php:59
+#@ construction
+msgid "OT One Click Demo Content"
+msgstr ""
+

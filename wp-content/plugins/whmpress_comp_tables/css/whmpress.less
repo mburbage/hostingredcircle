@@ -1,0 +1,1386 @@
+.whmp_clearfix {
+	&:after, &:before {
+		display: block;
+		content: "";
+		clear: both;
+	}
+}
+
+/*--------------------------------------------------------------
+    Section: WHMPress Pricing Tables Templates
+--------------------------------------------------------------*/
+.whmpress_pricing_table {
+	background: #ffffff;
+	.pricing_table_detail {
+		padding: 15px;
+	}
+	.pricing_table_combo, .pricing_table_submit {
+		button {
+			display: block;
+			margin: 0 auto 15px;
+		}
+	}
+	&.featured {
+		transform: scaleY(1.05);
+	}
+
+	/***********************  Table ONE  **************************/
+	&.one {
+		font-family: 'Open Sans', sans-serif;
+		box-shadow: none;
+		@baseColor: #2CD26C;
+		border: 0;
+		margin: 0 2px;
+		padding: 15px 0;
+		position: relative;
+		> div {
+			padding: 0 0 15px;
+		}
+		.pricing_table_promo {
+			display: none;
+		}
+		.pricing_table_icon {
+			display: none;
+		}
+		.pricing_table_heading {
+			h2 {
+				margin: 0;
+			}
+		}
+		.pricing_table_detail {
+			padding: 15px;
+		}
+		.pricing_table_price {
+			font-family: Montserrat, sans-serif;
+			background: @baseColor;
+			color: #fff;
+			padding: 20px 0;
+			font-size: 60px;
+			line-height: 1.2;
+			font-weight: 900;
+			.currency {
+				font-size: 30px;
+			}
+			.duration {
+				display: block;
+				font-size: 18px;
+				font-weight: 400;
+			}
+		}
+		.pricing_table_features {
+			ul {
+				margin: 0;
+				padding: 0;
+				li:nth-child(odd) {
+					background: lighten(@baseColor, 45%);
+				}
+			}
+		}
+		.pricing_table_combo {
+
+		}
+		.pricing_table_combo, .pricing_table_submit {
+			button, a, .whmpress_order_button {
+				background: darken(@baseColor, 10%);
+				&:hover {
+					background: darken(@baseColor, 20%);
+				}
+			}
+		}
+	}
+
+	/***********************  Table TOW  **************************/
+	&.two {
+		font-family: 'Open Sans', sans-serif;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		@baseColor: #4DBDBE;
+		border: 0;
+		margin: 0 2px;
+		padding: 0;
+		position: relative;
+		overflow: hidden;
+		> div {
+			padding: 0 0 15px;
+		}
+		.pricing_table_promo {
+			display: none;
+		}
+		.pricing_table_icon {
+			display: none;
+		}
+		.pricing_table_heading {
+			background: @baseColor;
+			padding-top: 15px;
+			h2 {
+				margin: 0;
+				color: #fff;
+			}
+		}
+		.pricing_table_detail {
+			padding: 15px;
+			background: lighten(@baseColor, 40%);
+			color: darken(@baseColor, 10%);
+		}
+		.pricing_table_price {
+			background: lighten(@baseColor, 50%);
+			color: darken(@baseColor, 10%);
+			padding: 20px 0;
+			font-size: 60px;
+			line-height: 1.2;
+			font-weight: 400;
+			.currency {
+				font-size: 30px;
+			}
+			.duration {
+				display: block;
+				font-size: 16px;
+			}
+		}
+		.pricing_table_features {
+			ul {
+				margin: 0;
+				padding: 0;
+				li:nth-child(odd) {
+					background: lighten(@baseColor, 40%);
+					color: darken(@baseColor, 10%);
+				}
+			}
+		}
+		.pricing_table_combo {
+
+		}
+		.pricing_table_combo, .pricing_table_submit {
+			button, a, .whmpress_order_button {
+				background: darken(@baseColor, 10%);
+				&:hover {
+					background: darken(@baseColor, 20%);
+				}
+			}
+		}
+		&.featured {
+			@baseColor: #E84C3D;
+			.pricing_table_heading {
+				background: @baseColor;
+			}
+			.pricing_table_detail {
+				background: lighten(@baseColor, 40%);
+				color: darken(@baseColor, 10%);
+			}
+			.pricing_table_price {
+				background: lighten(@baseColor, 50%);
+				color: darken(@baseColor, 10%);
+			}
+			.pricing_table_features {
+				ul {
+					li:nth-child(odd) {
+						background: lighten(@baseColor, 40%);
+						color: darken(@baseColor, 10%);
+					}
+				}
+			}
+			.pricing_table_combo {
+
+			}
+			.pricing_table_submit {
+				button {
+					background: darken(@baseColor, 10%);
+					&:hover {
+						background: darken(@baseColor, 20%);
+					}
+				}
+			}
+		}
+	}
+
+	/***********************  Table THREE  ************************/
+	&.three {
+		font-family: 'Open Sans', sans-serif;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		@baseColor: #ffac00;
+		border-radius: 0;
+		border: 0;
+		margin: 0 2px;
+		padding: 0;
+		position: relative;
+		overflow: hidden;
+		> div {
+			padding: 0 0 15px;
+		}
+		.pricing_table_promo {
+			position: absolute;
+			left: 15px;
+			height: 40px;
+			width: 35px;
+			background: #333;
+			padding: 5px;
+			-webkit-box-shadow: 0 0 2px 0 darken(@baseColor, 50%);
+			box-shadow: 0 0 2px 0 darken(@baseColor, 50%);
+			.fa {
+				color: #fff;
+				font-size: 24px;
+			}
+		}
+		.pricing_table_icon {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 60px;
+			padding: 0;
+			height: 75px;
+			margin-right: auto;
+			width: 75px;
+			background: #fff;
+			border-radius: 100%;
+			margin-left: auto;
+			-webkit-box-shadow: 0 0 2px 0 #000;
+			box-shadow: 0 0 2px 0 #000;
+			.fa {
+				font-size: 50px;
+				line-height: 75px;
+				color: @baseColor;
+			}
+		}
+		.pricing_table_heading {
+			background: @baseColor;
+			padding-top: 15px;
+			margin-bottom: 15px;
+			h2 {
+				margin: 0;
+				color: #fff;
+				font-weight: normal;
+			}
+		}
+		.pricing_table_detail {
+			padding: 15px;
+		}
+		.pricing_table_price {
+			background: lighten(@baseColor, 50%);
+			color: darken(@baseColor, 10%);
+			padding: 0 0 15px;
+			font-size: 60px;
+			line-height: 1.2;
+			font-weight: 400;
+			.duration {
+				display: block;
+				font-size: 18px;
+			}
+		}
+		.pricing_table_features {
+			ul {
+				margin: 0;
+				padding: 0;
+				li:nth-child(odd) {
+					background: lighten(@baseColor, 40%);
+					color: darken(@baseColor, 20%);
+				}
+			}
+		}
+		.pricing_table_combo {
+
+		}
+		.pricing_table_combo, .pricing_table_submit {
+			button, a, .whmpress_order_button {
+				background: darken(@baseColor, 10%);
+				&:hover {
+					background: darken(@baseColor, 20%);
+				}
+			}
+		}
+	}
+
+	/***********************  Table FOUR   ************************/
+	&.four {
+		font-family: 'Open Sans', sans-serif;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		@baseColor: #7c3ac9;
+		border: 0;
+		margin: 0 2px;
+		padding: 0;
+		position: relative;
+		overflow: hidden;
+		-webkit-border-radius: 70px 0;
+		border-radius: 70px 0;
+		> div {
+			padding: 0 0 15px;
+		}
+		.pricing_table_heading {
+			background: @baseColor;
+			padding-top: 15px;
+			padding-bottom: 65px;
+			h2 {
+				margin: 0;
+				color: #fff;
+				font-weight: normal;
+			}
+		}
+		.pricing_table_price {
+			background: lighten(@baseColor, 10%);
+			position: relative;
+			padding: 0 0 65px;
+			.holder {
+				position: absolute;
+				width: 100px;
+				height: 100px;
+				border-radius: 100px;
+				background: #fff;
+				margin-left: auto;
+				margin-right: auto;
+				top: -40px;
+				left: 0;
+				right: 0;
+				color: darken(@baseColor, 10%);
+				font-size: 38px;
+				line-height: 1;
+				font-weight: 400;
+				border-top: 2px solid lighten(@baseColor, 10%);
+				border-bottom: 2px solid darken(@baseColor, 10%);
+				padding-top: 15px;
+			}
+			.amount {
+				letter-spacing: -2px;
+				margin-bottom: 8px;
+			}
+			.currency, .fraction {
+				font-size: 20px;
+			}
+			.decimal {
+				display: none;
+			}
+			.duration {
+				display: block;
+				font-size: 16px;
+				word-spacing: 0;
+				font-weight: bold;
+			}
+		}
+		.pricing_table_detail {
+			padding: 15px;
+		}
+		.pricing_table_features {
+			ul {
+				margin: 0;
+				padding: 0;
+				li:nth-child(odd) {
+					background: lighten(@baseColor, 40%);
+					color: darken(@baseColor, 20%);
+				}
+			}
+		}
+		.pricing_table_combo {
+
+		}
+		.pricing_table_combo, .pricing_table_submit {
+			button, a, .whmpress_order_button {
+				background: darken(@baseColor, 10%);
+				width: auto;
+				&:hover {
+					background: darken(@baseColor, 20%);
+				}
+			}
+		}
+	}
+
+	/***********************  Table FIVE   ************************/
+	&.five {
+		font-family: 'Open Sans', sans-serif;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		@baseColor: #A6374A;
+		border: 0;
+		margin: 0 2px;
+		padding: 0;
+		position: relative;
+		overflow: hidden;
+		background: @baseColor;
+		> div {
+			padding: 0 0 15px;
+		}
+		.pricing_table_heading {
+			background: @baseColor;
+			padding: 15px;
+			h2 {
+				margin: 0;
+				color: #fff;
+				font-weight: normal;
+			}
+		}
+		.pricing_table_price {
+			background: lighten(@baseColor, 10%);
+			.holder {
+				color: #fff;
+				font-size: 40px;
+				line-height: 40px;
+				font-weight: 400;
+				padding-top: 15px;
+			}
+			.currency {
+				font-size: 20px;
+			}
+			.duration {
+				display: block;
+				font-size: 16px;
+				margin-top: -15px;
+				word-spacing: 0;
+			}
+		}
+		.pricing_table_detail {
+			color: white;
+			padding: 15px;
+		}
+		.pricing_table_features {
+			ul {
+				margin: 0;
+				padding: 0;
+				li:nth-child(odd) {
+					background: lighten(@baseColor, 40%);
+					color: darken(@baseColor, 20%);
+				}
+				li:nth-child(even) {
+					color: #fff;
+				}
+			}
+		}
+		.pricing_table_combo {
+
+		}
+		.pricing_table_combo, .pricing_table_submit {
+			button, a, .whmpress_order_button {
+				background: darken(@baseColor, 10%);
+				width: auto;
+				&:hover {
+					background: darken(@baseColor, 20%);
+				}
+			}
+		}
+	}
+
+	/***********************  Table SIX    ************************/
+	&.six {
+		font-family: 'Open Sans', sans-serif;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		@baseColor: #7EC01E;
+		border: 0;
+		margin: 0 2px;
+		padding: 60px 0 0;
+		position: relative;
+		overflow: hidden;
+		background: @baseColor;
+		-webkit-border-radius: 100px 100px 100px 0;
+		border-radius: 100px 100px 100px 0;
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 20px;
+			margin: auto;
+			background: #fff;
+			width: 15px;
+			height: 15px;
+			border-radius: 100%;
+		}
+		> div {
+			padding: 0 0 15px;
+		}
+		.pricing_table_icon {
+			font-size: 100px;
+			color: #fff;
+			padding-bottom: 0;
+		}
+		.pricing_table_detail {
+			padding: 15px;
+			color: white;
+		}
+		.pricing_table_heading {
+			padding: 0 0 15px;
+			h2 {
+				margin: 0;
+				font-size: 22px;
+				//color: darken(@baseColor, 30%);
+				color: white;
+				font-weight: normal;
+			}
+		}
+		.pricing_table_price {
+			padding: 0;
+			.holder {
+				color: #fff;
+				font-size: 40px;
+				line-height: 40px;
+				font-weight: 400;
+			}
+			.currency {
+				font-size: 20px;
+			}
+			.duration {
+				font-size: 16px;
+				word-spacing: 0;
+			}
+		}
+		.pricing_table_features {
+			ul {
+				margin: 0;
+				padding: 0;
+				li:nth-child(odd) {
+					background: lighten(@baseColor, 40%);
+					color: darken(@baseColor, 20%);
+				}
+				li:nth-child(even) {
+					color: #fff;
+				}
+			}
+		}
+		.pricing_table_combo {
+
+		}
+		.pricing_table_combo, .pricing_table_submit {
+			button, a, .whmpress_order_button {
+				background: #fff;
+				color: darken(@baseColor, 10%);
+				width: auto;
+				&:hover {
+					color: #fff;
+					background: darken(@baseColor, 20%);
+				}
+			}
+		}
+	}
+
+	/***********************  Table SEVEN    ************************/
+	&.seven {
+		font-family: 'Open Sans', sans-serif;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		@baseColor: #D4300C;
+		border: 0;
+		margin: 0 2px;
+		padding: 0;
+		position: relative;
+		overflow: hidden;
+		background: @baseColor;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+		> div {
+			padding: 0 0 15px;
+		}
+		.pricing_table_icon {
+			font-size: 100px;
+			color: #fff;
+			padding-bottom: 0;
+		}
+		.pricing_table_heading {
+			background: lighten(@baseColor, 10%);
+			border-bottom: 1px solid lighten(@baseColor, 20%);
+			padding: 15px;
+			h2 {
+				margin: 0;
+				color: #fff;
+				font-weight: normal;
+			}
+		}
+		.pricing_table_price {
+			padding: 15px;
+			.holder {
+				color: #fff;
+				font-size: 40px;
+				line-height: 1;
+				font-weight: 400;
+			}
+			.currency {
+				font-size: 20px;
+			}
+			.duration {
+				display: block;
+				font-size: 16px;
+				word-spacing: 0;
+			}
+		}
+		.pricing_table_detail {
+			padding: 15px;
+			color: white;
+		}
+		.pricing_table_features {
+			ul {
+				margin: 0;
+				padding: 0;
+				li:nth-child(odd) {
+					background: lighten(@baseColor, 40%);
+					color: darken(@baseColor, 20%);
+				}
+				li:nth-child(even) {
+					color: #fff;
+				}
+			}
+		}
+		.pricing_table_combo {
+
+		}
+		.pricing_table_combo, .pricing_table_submit {
+			button, a, .whmpress_order_button {
+				width: auto;
+				-webkit-border-radius: 0;
+				border-radius: 0;
+				background: darken(@baseColor, 10%);
+				color: #fff;
+				&:hover {
+					background: darken(@baseColor, 20%);
+				}
+			}
+		}
+	}
+
+	/***********************  Table EIGHT    ************************/
+	&.eight {
+		font-family: 'Open Sans', sans-serif;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		@baseColor: #2EDB7C;
+		border: 0;
+		margin: 0 2px;
+		padding: 0;
+		position: relative;
+		overflow: hidden;
+		> div {
+			padding: 0 0 15px;
+		}
+		.pricing_table_icon {
+			font-size: 100px;
+			color: @baseColor;
+			padding-bottom: 0;
+		}
+		.pricing_table_heading {
+			padding: 15px;
+			h2 {
+				margin: 0;
+				font-weight: normal;
+			}
+		}
+		.pricing_table_features {
+			ul {
+				margin: 0;
+				padding: 0;
+				li:nth-child(odd) {
+					background: lighten(@baseColor, 40%);
+					color: darken(@baseColor, 20%);
+				}
+			}
+		}
+		.pricing_table_combo {
+
+		}
+		.pricing_table_combo, .pricing_table_submit {
+			button, a, .whmpress_order_button {
+				width: auto;
+				background: darken(@baseColor, 10%);
+				color: #fff;
+				&:hover {
+					background: darken(@baseColor, 20%);
+				}
+			}
+		}
+	}
+
+	/***********************  Table NINE    ************************/
+	&.nine {
+		font-family: 'Open Sans', sans-serif;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		@baseColor: #FF813B;
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+		border: 0;
+		margin: 0 2px;
+		padding: 60px 0 15px;
+		position: relative;
+		overflow: hidden;
+		&::before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 30px 400px 0 0;
+			border-color: @baseColor transparent transparent transparent;
+		}
+		> div {
+			padding: 0 0 15px;
+		}
+		.pricing_table_promo {
+			display: none;
+		}
+		.pricing_table_icon {
+			display: none;
+		}
+		.pricing_table_heading {
+			h2 {
+				margin: 0;
+			}
+		}
+		.pricing_table_detail {
+			padding: 15px;
+		}
+		.pricing_table_price {
+			padding: 0 0 30px;
+			font-size: 60px;
+			line-height: 1.2;
+			font-weight: 700;
+			.currency {
+				font-size: 30px;
+			}
+			.duration {
+				display: block;
+				font-size: 16px;
+				line-height: 20px;
+				word-spacing: 0;
+			}
+		}
+		.pricing_table_features {
+			ul {
+				margin: 0;
+				padding: 0;
+				li:nth-child(odd) {
+					background: lighten(@baseColor, 30%);
+				}
+			}
+		}
+		.pricing_table_combo {
+
+		}
+		.pricing_table_combo, .pricing_table_submit {
+			button, a, .whmpress_order_button {
+				display: inline-block;
+				width: auto;
+				background: darken(@baseColor, 10%);
+				&:hover {
+					background: darken(@baseColor, 20%);
+				}
+			}
+		}
+	}
+
+	/***********************  Table TEN    ************************/
+	&.ten {
+		font-family: 'Open Sans', sans-serif;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		@baseColor: #26C3F6;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+		border: 0;
+		margin: 0 2px;
+		padding: 0;
+		position: relative;
+		overflow: hidden;
+		> div {
+			padding: 0 0 15px;
+		}
+		.pricing_table_heading {
+			background: lighten(@baseColor, 10%);
+			border-bottom: 1px solid lighten(@baseColor, 20%);
+			padding: 10px;
+			h2 {
+				margin: 0;
+				color: #fff;
+				font-weight: normal;
+			}
+		}
+		.pricing_table_icon {
+			background: @baseColor;
+			font-size: 60px;
+			line-height: 80px;
+			padding: 15px;
+			color: #fff;
+		}
+		.pricing_table_price {
+			.holder {
+				font-size: 30px;
+				line-height: 40px;
+				font-weight: 400;
+				word-spacing: -10px;
+				padding-top: 15px;
+			}
+		}
+		.pricing_table_features {
+			ul {
+				margin: 0;
+				padding: 0;
+				li {
+					color: darken(@baseColor, 20%);
+				}
+				li:nth-child(odd) {
+					background: #eee;
+				}
+			}
+		}
+		.pricing_table_combo {
+
+		}
+		.pricing_table_combo, .pricing_table_submit {
+			button, a, .whmpress_order_button {
+				background: darken(@baseColor, 10%);
+				width: auto;
+				&:hover {
+					background: darken(@baseColor, 20%);
+				}
+			}
+		}
+	}
+
+	/***********************  Table Reseller    ************************/
+	&.reseller {
+		box-shadow: 0px 1px 3px 1px rgba(144, 144, 144, 0.23);
+		border-radius: 0;
+		background-color: #f7f7f7;
+		padding-top: 0;
+		border: 0;
+		.pricing_table_heading {
+			background: #242424;
+			color: #fff;
+			padding: 20px 15px 0;
+			margin-bottom: -1px;
+			h2 {
+				margin: 0;
+				font-size: 34px;
+				line-height: 35px;
+				font-weight: 400;
+				text-transform: uppercase;
+				color: white;
+				&:before {
+					content: '';
+					display: block;
+					width: 65px;
+					height: 10px;
+					background: #f7f7f7;
+					border-radius: 6px;
+					margin: 0 auto 20px;
+					box-shadow: inset 0 0 6px 0 #333;
+				}
+			}
+		}
+		.pricing_table_price {
+			background: #242424;
+			color: #fff;
+			padding: 20px 15px 25px;
+			.currency, .amount, .decimal, .fraction {
+				font-size: 40px;
+				font-weight: bold;
+				font-family: Arial, Helvetica;
+			}
+			.duration {
+				font-size: 18px;
+			}
+
+		}
+		.pricing_table_features {
+			ul {
+				padding: 15px 0;
+				border-top: 0;
+				li {
+					border-bottom: 2px dotted #ccc;
+					padding: 20px 15px;
+					text-align: center;
+				}
+			}
+		}
+		.pricing_table_combo {
+			select {
+				padding: 10px 10px;
+				border: solid 1px #DEDBDB;
+				width: 135px;
+				border-radius: 3px;
+				letter-spacing: 1px;
+			}
+			button {
+				background: #27ae60;
+				display: inline-block;
+				width: auto;
+				padding: 12px 14px;
+				&:hover {
+					background: #17944c;
+				}
+			}
+		}
+		.pricing_table_submit {
+			a, button {
+				background: #27ae60;
+				display: inline-block;
+				width: auto;
+				padding: 12px 14px;
+				&:hover {
+					background: #17944c;
+				}
+			}
+		}
+	}
+
+	/***********************  Table simple-01    ************************/
+	&.simple-01 {
+		@tableColor: #009cfc;
+		@featureColor: #68b300;
+		box-shadow: none;
+		border: 1px solid #CCCCCC;
+		border-top: 5px solid @tableColor;
+		border-radius: 0;
+		font-size: 14px;
+		position: relative;
+		font-weight: 400;
+		margin: 50px auto 25px;
+		.whmpress {
+			font-size: 14px;
+			font-weight: 400;
+		}
+		.pricing_table_promo_text {
+			position: absolute;
+			left: -1px;
+			right: -1px;
+			height: 40px;
+			top: -40px;
+			background: @featureColor;
+			line-height: 40px;
+			color: white;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		.pricing_table_heading {
+			h2 {
+				font-weight: 400;
+			}
+		}
+		.pricing_table_price {
+			font-weight: 400;
+			font-size: 40px;
+			line-height: 10px;
+			.amount {
+				line-height: 70px;
+			}
+			.currency {
+				vertical-align: super;
+			}
+			.currency, .fraction, .duration {
+				font-size: 40%;
+			}
+			.decimal {
+				display: none
+			}
+		}
+		.whmpress_description {
+			ul {
+				border: 0;
+				padding: 0;
+				margin: 0;
+				li {
+					border: 0;
+					text-align: left;
+					padding-left: 40px;
+					line-height: 20px;
+					position: relative;
+					&:after {
+						font-family: "FontAwesome";
+						content: "\f00c";
+						position: absolute;
+						left: 0;
+						width: 30px;
+						height: 30px;
+						top: 50%;
+						margin-top: -15px;
+						line-height: 30px;
+						text-align: right;
+					}
+				}
+			}
+		}
+		select {
+			border: 1px solid @tableColor;
+		}
+		button {
+			width: auto !important;
+			background: @tableColor;
+			&:hover {
+				background: darken(@tableColor, 10%);
+			}
+		}
+
+		&.featured {
+			transform: scaleY(1);
+			border-color: @featureColor;
+			.pricing_table_price {
+				font-size: 50px;
+			}
+			.whmpress_description {
+				ul {
+					li {
+						&:after {
+							color: @featureColor;
+						}
+					}
+				}
+			}
+			select {
+				border: 1px solid @featureColor;
+			}
+			button {
+				background: @featureColor;
+				&:hover {
+					background: darken(@featureColor, 10%);
+				}
+			}
+		}
+	}
+
+	/***********************  Table simple-02    ************************/
+	&.simple-02 {
+		box-shadow: none;
+		border: 1px solid #eeeeee;
+		border-radius: 4px;
+		font-size: 14px;
+		position: relative;
+		font-weight: 400;
+		margin: 0 auto 25px;
+		padding: 0;
+		.whmpress {
+			font-size: 14px;
+			font-weight: 400;
+		}
+		.pricing_table_heading {
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+			background: #b43a7e;
+			border-bottom: 1px solid #444444;
+			color: white;
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+		.pricing_table_price {
+			font-weight: 400;
+			font-size: 26px;
+		}
+		.whmpress_description {
+			ul {
+				border: 0;
+				padding: 0;
+				margin: 0;
+			}
+		}
+		select {
+			border: 1px solid #eeeeee;
+		}
+		button {
+			width: auto !important;
+			background: #b43a7e;
+			padding: 4px 15px;
+			min-width: 80px;
+			&:hover {
+				background: darken(#b43a7e, 10%);
+			}
+		}
+
+		&.featured {
+			transform: scaleY(1);
+		}
+	}
+
+	/***********************  Table creativeon-02    ************************/
+	&.creativeon-01 {
+		background: #f5f5f5;
+		padding: 15px;
+		color: #333;
+		.fa {
+			color: #888;
+			font-size: 48px;
+			padding: 10px;
+		}
+		.pricing_table_heading {
+			strong {
+				font-size: 22px;
+				line-height: 28px;
+				color: #f46e01;
+				font-weight: 700;
+			}
+		}
+		.pricing_table_price {
+			font-size: 43px;
+			line-height: 56px;
+			font-weight: 900;
+			color: #666;
+			.currency, .decimal, .duration, .fraction {
+				font-size: 21px;
+				font-weight: 300;
+			}
+		}
+		.whmpress_order_combo {
+			button, .order_button {
+				background: #48e0a4;
+				&:hover {
+					background: #23d28d;
+				}
+			}
+		}
+	}
+	
+	/***********************  Table webreplex    ************************/
+	&.webreplex {
+		box-shadow: none;
+		border: 0;
+		background: #eeeeee;
+		padding: 20px 0;
+		border-radius: 0;
+		.pricing_table_heading {
+			background: #00ace8;
+			h2 {
+				font-size: 22px;
+				line-height: 33px;
+				font-weight: normal;
+				color: white;
+				margin: 0;
+			}
+		}
+		.pricing_table_detail {
+			padding: 5px 20px 0;
+			font-size: 13px;
+			p {
+				margin: 0;
+				i {
+					margin: 0 5px;
+				}
+			}
+		}
+		.pricing_table_price {
+			font-size: 60px;
+			line-height: 1;
+			font-weight: 100;
+			padding: 20px 15px;
+			color: black;
+			.currency, .duration {
+				display: inline;
+				font-weight: 200;
+				min-height: 50px !important;
+				vertical-align: top;
+				font-size: 20px;
+				font-weight: normal;
+			}
+			.duration {
+				vertical-align: bottom;
+			}
+		}
+		.pricing_table_features {
+			position: relative;
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 15px;
+				li {
+					list-style: none;
+					padding: 5px 5px 5px 35px;
+					background: #00ace8;
+					color: white;
+					text-align: left;
+					position: relative;
+					text-align: left;
+					&:before {
+						content: "\f00c";
+						position: absolute;
+						font-family: FontAwesome;
+						width: 30px;
+						height: 30px;
+						top: 50%;
+						margin-top: -15px;
+						left: 0;
+						text-align: center;
+						line-height: 30px;
+					}
+					&:nth-child(even) {
+						background: lighten(#00ace8, 10%);
+					}
+				}
+			}
+			.corner_before, .corner_after {
+				position: absolute;
+				border: 6px solid #989898;
+				height: 40px;
+				width: 40px;
+				z-index: 3;
+			}
+			.corner_before {
+				top: 17px;
+				left: 6px;
+				border-bottom: 0;
+				border-right: 0;
+			}
+			.corner_after {
+				bottom: 16px;
+				right: 6px;
+				border-top: 0;
+				border-left: 0;
+			}
+		}
+		.whmpress_order_combo {
+			form {
+				text-align: center;
+				button {
+					display: inline-block;
+					background: #00ace8;
+					width: auto;
+					border-radius: 0;
+					&:hover {
+						background: darken(#00ace8, 10%);
+					}
+				}
+			}
+		}
+		.pricing_table_submit {
+			
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+    Section: WHMPress Domain Search Ajax Templates
+--------------------------------------------------------------*/
+
+/***********************  Table simple-01    ************************/
+.whmpress_domain_search_ajax {
+	&.simple-01 {
+		.form_container {
+			max-width: 980px;
+			margin: 0 auto;
+			form {
+				background: rgba(0, 0, 0, 0.3);
+				padding: 10px;
+				border-radius: 4px;
+				display: flex;
+				margin-bottom: 35px;
+				float: left;
+				max-width: 100%;
+				width: 75%;
+				min-height: 77px;
+				input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]),
+				select, textarea {
+					background: white;
+					border: 0;
+				}
+				.search_box {
+					flex-grow: 7;
+					margin: 0 10px 0 0;
+				}
+				.select2-container--default {
+					flex-grow: 2;
+					margin-right: 10px;
+					background: white;
+					font-size: 14px;
+					border-radius: 4px;
+					max-width: 25%;
+					.select2-selection--multiple {
+						border: 2px solid transparent;
+						margin-top: 4px;
+					}
+					&.select2-container--focus {
+						.select2-selection--multiple {
+							border: 2px solid transparent;
+
+						}
+					}
+				}
+				.search_btn {
+					flex-grow: 1;
+					height: auto;
+					width: auto;
+					border-radius: 4px;
+					margin: 0;
+					padding: 0px;
+					min-width: 30px;
+				}
+			}
+			.extension_toggle_container {
+				float: left;
+				width: 25%;
+				padding: 15px;
+				label {
+					padding: 0;
+					font-weight: normal;
+				}
+			}
+			.whmp_bulk_search_results {
+				border: 1px solid #ddd;
+				.result-div {
+					> div {
+						border-bottom: 1px solid #ddd;
+					}
+					> div:last-child {
+						border-bottom: 0;
+					}
+				}
+			}
+		}
+		.whmp_domain_search_ajax_results {
+			max-width: 980px;
+			margin: 0 auto;
+			.whmp_search_ajax_title {
+
+			}
+			.result-div {
+				border: 1px solid #ccc;
+				.whmp_search_ajax_result {
+					background: 0;
+					border: 0;
+					border-bottom: 1px solid #ccc;
+					border-radius: 0;
+					display: block;
+					color: black;
+					font-size: 14px;
+					.whmp_icon {
+						display: none;
+					}
+					.whmp_domain {
+						float: left;
+						width: 50%;
+						strong {
+							display: block;
+						}
+					}
+					.whmp_domain_details {
+						float: left;
+						width: 50%;
+						> div {
+							float: right;
+							&.whmp_search_ajax_buttons {
+								width: auto;
+								min-width: 0;
+							}
+							&.whmp_search_ajax_links {
+								a {
+									margin-right: 10px;
+									cursor: pointer;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		@media (max-width: 640px) {
+			.form_container {
+				form {
+					display: block;
+					float: none;
+					width: 100%;
+					.search_box, .select2-container--default, .search_btn {
+						width: 100% !important;
+						margin: 0 0 10px;
+					}
+				}
+				.extension_toggle_container {
+					float: none;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+

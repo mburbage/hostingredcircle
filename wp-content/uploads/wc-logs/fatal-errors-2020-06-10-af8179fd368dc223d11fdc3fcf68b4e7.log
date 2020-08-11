@@ -1,0 +1,6 @@
+2020-06-10T19:36:26+00:00 CRITICAL Allowed memory size of 41943040 bytes exhausted (tried to allocate 155648 bytes) in /home/hostingredcircle/public_html/wp-includes/wp-db.php on line 2024
+
+2020-06-10T19:45:00+00:00 CRITICAL Allowed memory size of 41943040 bytes exhausted (tried to allocate 20480 bytes) in /home/hostingredcircle/public_html/wp-content/plugins/js_composer/include/params/iconpicker/iconpicker.php on line 188
+
+2020-06-10T19:45:08+00:00 CRITICAL Allowed memory size of 41943040 bytes exhausted (tried to allocate 32768 bytes) in /home/hostingredcircle/public_html/wp-content/plugins/js_composer/include/templates/shortcodes/vc_column_text.php on line 1
+

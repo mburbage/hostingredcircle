@@ -1,0 +1,338 @@
+1.1.1
+- Added complete German Translation, contributed by Ulf Schroeder
+- Fixed menu overflow hidden
+- Tweaks: label changed,
+1.1.2
+- Changed registration links to WCOP
+- Matched configuration strings with WCOP
+- Fixed ticketing area
+- Improved WHMCS configuration area
+1.1.3
+- Match pages outlook to WHMCS pages
+1.3.9
+- debug info
+- several tweaks
+- bug fixed in communication to helper when index.html is being served from whmcs end
+1.4.0
+- new pages > qoutes, network issues, announcements, downloads, email history
+- Admin page for general settings formated
+1.4.1
+- button class bug when menu is hidden
+- stop redirect for view invoices
+1.4.2
+- fixed order process (missing configurations)
+- updated language files
+- formated network status
+- Contacts subaccoutns heading remains issue - fixed
+1.4.3
+- All common language files added
+1.4.4
+- Bug fixed in ticket reply
+- client area now open in customer currency (change were made by shakeel sb, this is being added for record only)
+1.4.5
+- All languages updated for translations (other than admin strings)
+1.4.6
+- Removed %> from services.php
+- fixed "products/service" > "product/service" string
+1.4.7
+- Improved helper testing function
+- implimented reset password feature
+- Missing strings in menus
+- no_redirect added to email history
+- removed all alerts, now messages are shown on pages
+- logout, now goes to logged out page, logout URL created.
+1.9 (beta)
+- SSO and many other things in process
+- WCOM is being implimented
+- Admin tranlation strings converted to admin context
+2.0 (beta7)
+- WCOM implimented
+2.0 (b12)
+- upgrade/downgrade implimented
+- Product not found in database error - fixed
+2.0 (b13)
+- updated WCOM for enhanced data-tables
+- fixed order new service tabs links from other pages
+2.0 (b14)
+- styled wcap admin settings
+- some more classes in whcom
+2.0 (b15)
+- Upgrade/ products implimented(pending review)
+- Admin styled more
+2.0 (beta)
+- Urgent release for current clients
+2.0 (beta-1)
+- Removed rdudendent CSS from CAP
+- Improved WCOM > Styles page
+2.0 (beta-2)
+- bulk payments
+- improved order follow
+- upgrade/downgrade services
+2.0 (beta-3)
+- HTML updated
+- work in progress options upgrade
+2.0 (beta-4)
+- domain order fixed
+2.0 (beta-5b)
+- Major HTML changes, only WHCOM is being used now
+2.0 (beta6)
+- HTML mega changes
+2.0 (beta7)
+- Implimented heartbeat to refresh page incase of session is expired.
+- Domain renewal process complete.
+2.1
+- releasing 2.1
+- Works with latest WHMPress,
+2.1.1
+- Dashboard services fixed
+- Tickets spinner updated
+- Typos fixed.
+- Added all domain pages to work with not logged in users
+- Bug Fix while ordering from WHMPress with services that require domain
+2.1.2
+- Changed duration dropdown name to work with CSS for compatibility issues with WCOP
+- Get currencies functions changed with whcom function
+- little changes in wcom
+2.1.3
+- PHP Notice in case of 404/ invalid URL in client area
+2.2
+- Changing WCAP to complete JSON
+- Order-Processes replaced to new codes
+- Removed all old cart files.
+2.3
+- beeing released, compatible with WHMPress 4.3
+- compatible with with WP 4.9
+2.3.1
+- Order process with summry updated
+- Security questions always requried bug fixed
+2.3.2
+- Language files shifted to whcom
+2.3.3
+- fixed data-table reload warning issue.
+2.5b
+- Debug info improved and moved to whcom
+- 2.5.1
+- helper changed,
+- all payments methods visible bug fixed.
+-2.5.2
+- helper updated to remove missing setup for addons
+- several cap improvements
+- sidebar not hiding on all pages
+- translations updated
+
+- 2.5.3
+- Translation bug fixed for Ajax Loading...
+- 2.5.3-revision.1
+- Sidebar issue on store/order new server page, side bar will always be visisble regardless of user choice.
+- Option added to select POPUP or new Page for invoices
+- Multilingual options for client area
+
+- 2.5.3-revision.5
+- upgrade downgrade services > fixed
+- upgrade downgrade options > fixed
+- domain renewals invoicing > fixed
+- date translations now follow WP rules
+
+- 2.5.4
+- released
+
+- 2.5.4-revision.1
+- whcom updated
+- invoice view settings implimented in invoices section too
+
+- 2.5.4-revision.2
+- table width for columns on certain views fixed.
+- .js double submit on load fixed.
+
+- 2.5.4-revision.3
+- All Helper settings can now be done from WP admin
+
+- 2.5.4-revision.4
+- Admin menu's/ pages rearranged to be more user friendly
+- All advance settings moved to a new section, advance setting
+
+- 2.5.4-revision.5
+- Registration implimented
+- Summry pages added with ID's and further classes to offer easy customization
+
+- 2.6.0-revision.0
+- common updated.
+- bug removed in helper for verification email redirection
+- new shortcode whmpress-extended domain search implimented, multidomain ordering functions added
+
+- 2.6.0-revision.2
+- several tweaks
+- password change bug fixed
+
+2.6.0-revision.4
+- Fixed bug in debug showing warning for whcom
+- tweaked order process shortcode
+
+2.6.0-revision.5
+- custom templates form theme folders implimented
+- templates are now in their own folder
+- option added to ignore SSL warnings
+
+2.6.0-revision.6
+- updated common
+
+2.6.0-revision.7
+- implimented Cart shortcode
+- updated pot file
+
+2.6.2
+- bug resolved in case of already registered domain
+- domain trasnslations added for the part where things are returned from API
+- Added Ids to name server containers so they can be controlled using CSS
+- works with latest whmpress-helper, 3.6.2
+
+2.6.2-revision.1
+- Implimented country wise taxes
+
+2.6.4-revision.5
+- reverted changes made for makli
+
+2.6.5
+- Compatibility confirmed with PHP version 7.2
+- Compatibility confirmed with WHMCS version 7.5
+
+2.6.9
+- New option added "hide menu on order pages"
+- Custom order complete message
+- Conveersion tracking code on order completion
+- New shortcode whcom_client_login_from
+
+2.6.9-rev.1
+- possible fixes, testing
+
+2.7
+- Currency from URL is now being updated in session too.
+- Promocode implementation as a parameter
+- Checkbox custom field description is being shown properly.
+- Client IP is now being properly pass for all orders.
+
+2.7.1
+- Custom Email message with subject implementation
+- Domain Addon Bug Fix
+- Additional Required Information title separate base on "|" operator
+- Additional Required Information dropdown values separate base on "|" operator
+
+2.7.1-rev.0
+-Added Russian language
+- Already have a domain bug fix
+
+2.7.2
+- Product name and description translation base on WP settings
+  and WP plugins.
+- Password change js bug fix
+
+2.7.2 revision-0
+- Turkish translation
+- Group heading & Group sidebar translation according to WP plugins
+  and wordpress language settings
+
+2.7.2 revision-1
+- Additional Required Information in client registration implementation
+
+2.7.3
+- File Attachment implementation in support tickets
+- Bug Fixes
+2.7.3 revision-0
+- hide and show message on request cancellation.
+2.7.3 revision-2
+Bug Fixes
+ * Manage credit card
+ * Reset password success message
+
+2.7.4
+- Auto Renew Bug fixed
+- Google reCaptcha is implementation on user registration.
+- Strip spaces from domain search for both product domain and check domain
+- Compatibility confirmed with WordPress 5
+
+2.7.5
+- Email Verification Message with show option
+- Match state for tax
+
+2.7.5 revision 1
+- 404 js error resolved
+
+2.7.5 revision 2
+Open ticket link fix
+Debug log option added
+
+3.0
+- Tax bug fix
+- Tax enable disable module implemented
+- Credit card bug fix
+- Compatibility checked with WHMCS 7.7
+
+3.1
+- Compatible with fusion builder and wp bakery
+
+3.1-revision-0
+- Swedish translation
+
+3.2
+- ShortCode added on classic editor
+
+3.2-revision-0
+- Client area url notice implemented
+
+3.3 23-4-2019
+- Get invoice id on order completion page
+- Scroll to top bug fix
+- Price render bug fix
+- Order completion custom message with placeholders implemented.
+- Hidden configuration option bug fix.
+
+3.3-revision-1 17-8-2019
+- Make WCAP compatible with Elementor.
+
+3.3-revision-2 17-8-2019
+- define variable which is used in condition but not defined
+
+3.3-revision-3 23-11-2019
+- Fixed Support Department issue ("hidden departments were showing")
+- Fixed the issue about categories ("e" was appearing after groups)
+
+3.3-revision-4 30-1-2020
+- Fixed Support ticket Number issue ("Ticket Number was not showing when client login for the first time")
+
+3.3-revision-5 30-1-2020
+- Translate plugin in italian language
+
+3.3-revision-6 04-02-2020
+- Show ticket id instead of row id in open ticket notice
+- Bug fixed about selection of department (had to reselect on openticket page).
+
+3.3-revision-7 18-03-2020
+- Include whcom_show_notification in common files.
+- Include whmcs_relevant_language in common files.
+
+3.3-revision-8 19-03-2020
+- Retrieve product names according to polylang language.
+
+3.3-revision-9 7-4-202
+- Add shortcode wcap_login_form
+
+3.4-revision-0 18-4-2020
+- Make common same for both WCAP and WCOP.
+
+3.4-revision-1 18-4-2020
+- Bug fixed around available addons.
+
+3.4-revision-2 27-4-2020
+- Adding portuguese trnslation.
+
+3.4-revision-3 5-5-2020
+- Added our own category(WCAP) in Elementor.
+
+3.4-revision-4 8-5-2020
+- Compatibility issue with elementor pro is fixed.
+
+3.4-revision-5 21-5-2020
+- invalid id issue fixed in store shortcode
+
+3.4-revision-6 23-5-2020
+- Little CSS changings

@@ -1,0 +1,6 @@
+param_name,heading,description,type,value,group
+sub_icon,icon heading,icon description,whmpress_icon,"fa fa-shakeel",whmpress
+featured,Featured Product,Select if the product is featured product or not,dropdown,"['normal','active']",whmpress
+promo_text,Promo Text,Promo Text to Display,textfield,Value,whmpress
+bg_color,Base Color,Base color of template,colorpicker,#A2CC55,whmpress
+bg_color_light,Light Base Color,Base color of light parts of template,colorpicker,#cde1a8,whmpress
