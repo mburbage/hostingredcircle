@@ -60,6 +60,8 @@ define('NONCE_SALT',       '78/Re3jX8miyV86d+PV4RJe6IsULTexQoO370vW3dhz9YrKVImBQ
  *
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
+ *
+ * Github Test Edit
  */
 $table_prefix = 'rcwp_';
 
