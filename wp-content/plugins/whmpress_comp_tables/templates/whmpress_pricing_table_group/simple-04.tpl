@@ -47,6 +47,6 @@
 				</div>
 			</div>
 		</div>
-		{/foreach} 
+		{/foreach}
 	
 </div>
