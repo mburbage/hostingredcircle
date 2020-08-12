@@ -105,7 +105,7 @@ endif;
 if ( ! function_exists( 'hosted_custom_wp_admin_style' ) ) :
 function hosted_custom_wp_admin_style() {
 
-        wp_register_style( 'hosted_custom_wp_admin_css', get_template_directory_uri() . '/framework/admin/admin-style.css', false, '1.0.0' );
+        wp_register_style( 'hosted_custom_wp_admin_css', get_template_directory_uri() . '/framework/admin/admin-style.css', true, '1.0.0' );
         wp_enqueue_style( 'hosted_custom_wp_admin_css' );
 
         wp_enqueue_script( 'hosted-backend-js', get_template_directory_uri()."/framework/admin/admin-script.js", array( 'jquery' ), '1.0.0', true );
