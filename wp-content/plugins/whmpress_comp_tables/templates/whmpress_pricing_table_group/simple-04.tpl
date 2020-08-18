@@ -1,7 +1,12 @@
 <div class="row">
 	
 		{foreach from=$group.plans item=plan}
-		<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-4"
+		<div class="wpb_column vc_column_container  
+		{if $group.plans|count eq 1}vc_col-sm-12
+{elseif $group.plans|count eq 2}vc_col-md-6
+{elseif $group.plans|count eq 3}vc_col-md-4
+{elseif $group.plans|count eq 4}vc_col-md-3
+{/if}"
 			data-plan-price="{$plan.prefix}{$plan.amount}{if $plan.fraction ne ""}{$plan.decimal}{$plan.fraction}{/if}">
 
 			<div class="vc_column-inner">
@@ -20,7 +25,7 @@
 									class="fraction">{$plan.fraction}</span>{/if}</p>
 							{if $plan.duration ne ""}
 							<span class="per">{$plan.duration}</span>{/if}
-
+							<br/><span class="per">{$plan.all_durations.monthly.discount.discount_string}</span>
 						</div>
 						<div class="pricing-features">
 							{if $plan.cdescription ne ""}
