@@ -67,7 +67,7 @@ if ( ! function_exists( 'whcom_css_overrides' ) ) {
 		}
 
 		$less_code = ob_get_clean();
-		require WHCOM_PATH . "/assets/libs/lessphp/lessc.inc.php";
+		require_once WHCOM_PATH . "/assets/libs/lessphp/lessc.inc.php";
 
 		$less = new whcom_lessc();
 

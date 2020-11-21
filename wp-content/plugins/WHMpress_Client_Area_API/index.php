@@ -3,12 +3,16 @@
  * Plugin Name: WHMPress - WHMCS Client Area
  *  * Plugin URI: http://WHMpress.com
  * Description: WHMCS Client Area using API (WCAP) for WordPress impliments WHMCS Client Area within WordPress using API. It uses WHMCS API and Extended API called WHMPress Helper.
- * Version: 3.4-revision-6
+ * Version: 3.6
  * Text domain: whcom
  * Domain Path: /common/languages
  * Author: creativeON
  * Author URI: http://creativeon.com
 */
+
+//wp_die();
+
+//echo '<script>console.log('.json_encode( sprintf( "A: %d MB used\n", ( memory_get_usage() / 100000 ) ) ).');</script>';
 
 if (!defined('WCAP_PATH')) {
     define('WCAP_PATH', dirname(__FILE__));
@@ -26,7 +30,7 @@ if (!defined('WCAP_FILE')) {
     define('WCAP_FILE', __FILE__);
 }
 if (!defined('WCAP_VERSION')) {
-    define('WCAP_VERSION', '3.4-revision-6');
+    define('WCAP_VERSION', '3.6');
 }
 
 

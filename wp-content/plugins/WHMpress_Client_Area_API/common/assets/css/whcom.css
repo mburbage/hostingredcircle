@@ -4741,6 +4741,7 @@ h2.whcom_page_heading {
 .whcom_form_field textarea:focus {
   border-color: #333333;
   color: #333333;
+  outline: 1px;
 }
 .whcom_form_field > input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not(textarea),
 .whcom_form_field select:not(textarea),

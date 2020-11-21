@@ -1,7 +1,7 @@
 <?php
 //page initialization, veriables for whole page
 $show_sidebar = wcap_show_side_bar("openticket", true);
-$response['id'] = $_SESSION['response_id'];
+$response['id'] = isset($_SESSION['response_id']) ? $_SESSION['response_id'] : '';
 
 //show front menu where applicable
 if (wcap_show_front_menu()) {

@@ -4,8 +4,8 @@ $ca_url = ( ! empty( $args['ca_url'] ) ) ? $argc['ca_url'] : site_url( '/client-
 
 <li class="menu-item menu-item-has-children wcap_whmcs_universal_nav">
 	<?php if ( whcom_is_client_logged_in() ) { ?>
-		<a href="#" style="outline: none;"><span><?php echo esc_html_x( "Hello", "menu", "whcom" ) . " " . $this->get_user_data( "client_firstname" ); ?></span></a>
-		<ul class="sub-menu">
+		<a href="#" style="outline: none;"><span><?php echo esc_html_x( "Hello", "menu", "whcom" ) . " " . $this->get_user_data( "firstname" ); ?></span></a>
+        <ul class="sub-menu">
 			<li class="menu-item">
 				<a class="wcap_load_page" href="<?php echo $ca_url ?>?whmpca=profile">
 					<span><?php esc_html_e( 'Edit Account Details', "whcom" ) ?></span>

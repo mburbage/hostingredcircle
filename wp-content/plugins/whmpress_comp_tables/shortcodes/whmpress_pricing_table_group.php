@@ -2,6 +2,7 @@
 /**
  * Pricing Group Shortcode
  */
+		
 
 //== Enqueue the style file which is using in pricing table shortcode
 $custom_css_file = WPCT_GRP_URL . "/css/default.css";
@@ -128,9 +129,20 @@ if ( is_file( $html_template ) ) {
 		$currency='';
 		if (isset ($group["currency"])) $currency=$group["currency"];
 
+		$get_price_raw = whmp_price_i(
+			[
+				"id" => $plan["product_id"],
+				"billingcycle" => $group["billingcycle"],
+				"configurable_options" => 'yes',
+				"currency_id" =>$currency,
+			]
+		);
+
+		$billing_cycle = $get_price_raw['price'] == '-1' ? 'annually' : $group["billingcycle"];
+
 		//~~----Price
-		$price_tmp = BreakPrice( $group_saved, $plan["product_id"],$group["billingcycle"] );
-		
+		$price_tmp = BreakPrice( $group_saved, $plan["product_id"], $billing_cycle );
+
 		$plan["price"]         = $price_tmp["price"];
 		$plan["amount"]        = $price_tmp["amount"];
 		$plan["fraction"]      = $price_tmp["fraction"];
@@ -140,9 +152,10 @@ if ( is_file( $html_template ) ) {
 		$plan["duration"]      = $price_tmp["duration"];
 		$plan["billingcycle"]  = $group["billingcycle"];
 
+
 		$plan["all_durations"] = AllPrices($group, $plan["product_id"], $currency, [$group["billingcycle"], $group["billingcycle2"]] );
-        //$group['billingcycle'] = ltrim($plan["duration"]) == 'OneTime' ? "" : $group['billingcycle'];
-		
+		//$group['billingcycle'] = ltrim($plan["duration"]) == 'OneTime' ? "" : $group['billingcycle'];
+
 		//~~----Description
 		//~~Simple Description
 		$plan_description = $plan["description"];

@@ -64,7 +64,7 @@ $status_array = wcap_count_status( $fill_array, $invoices["invoices"]["invoice"]
 					<?php
 					//show mass pay button only if option is enabled
 					$all_config    = whcom_process_helper( [ "action" => "configurations" ] );
-					$EnableMassPay = $all_config["EnableMassPay"];
+					$EnableMassPay = isset($all_config["EnableMassPay"]) ? $all_config["EnableMassPay"] : '';
 					if ( $EnableMassPay == "on" ) {
 						?>
                         <div class="whcom_panel_footer">

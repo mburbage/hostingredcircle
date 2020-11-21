@@ -483,7 +483,7 @@ if (!function_exists('whcom_render_product_addons')) {
                 <div class="whcom_row">
                     <?php if ($style == '10_server'){ ?>
                         <label class="whcom_product_option_label main_label">Addons: </label>
-                    <?php } ?>
+					<?php } ?>
                     <?php foreach ($product['prd_addons'] as $i => $addon) {
                         $addon_billingcycle = strtolower($addon['billingcycle']);
                         if ($addon_billingcycle == 'recurring') {

@@ -20,7 +20,7 @@ $active_tab = "";
 global $WCOP;
 $currency_id = $gids = $pids = $domain_products = '';
 $currency_id = whcom_get_current_currency_id();
-
+$field = 'configure_product' . whcom_get_current_language();
 $page_id         = url_to_postid( esc_attr( get_option( $field ) ) );
 $config_prod_url = get_permalink( $page_id );
 $groups = whcom_get_all_products();

@@ -501,7 +501,7 @@ if (!function_exists('whcom_render_product_addons')) {
                         }
 
                         ?>
-                        <?php if ($style == '08_gator') { ?>
+                        <?php if ($style == '08_elegant') { ?>
 
                             <div class="whcom_col_sm_12">
                                 <div class="whcom_addon_section_content">
@@ -555,7 +555,7 @@ if (!function_exists('whcom_render_product_addons')) {
                                 </div>
                             </div>
 
-                        <?php } if ($style == '10_server') { ?>
+                        <?php } elseif ($style == '10_server') { ?>
                             <label class="whcom_product_addon_recurring whcom_checkbox">
                                 <input name="addons<?php echo $index_append; ?>[]"
                                        value="<?php echo $addon['id']; ?>"
@@ -1088,7 +1088,7 @@ if (!function_exists('whcom_render_tos_fields')) {
         $required_fields = whcom_get_client_required_fields();
         ob_start(); ?>
         <?php if ($required_fields['accepttos']) { ?>
-        <?php if($style == '08_gator'){ ?>
+        <?php if($style == '08_elegant'){ ?>
             <div class="whcom_form_field">
                 <div class="whcom_panel_body">
                     <label class="checkbox whcom_checkbox">

@@ -71,7 +71,7 @@ $fill_array = [
     "Terminated" => "0",
     "Cancelled" => "0",
 ];
-$status_array = wcap_count_status($fill_array, $response["products"]["product"]);
+$status_array = wcap_count_status($fill_array, isset($response["products"]["product"]) ? $response["products"]["product"] : '' );
 $show_sidebar = wcap_show_side_bar("my_services", TRUE);
 ?>
 
@@ -144,6 +144,8 @@ $show_sidebar = wcap_show_side_bar("my_services", TRUE);
                         </tr>
                         </thead>
                         <tbody>
+                        <!-- if response array is populated with products -->
+                        <?php if(isset($response["products"]["product"])) { ?>
                         <?php foreach ($response["products"]["product"] as $product) { ?>
                             <tr data-status="<?php echo $product["status"]; ?>">
                                 <td>
@@ -177,6 +179,7 @@ $show_sidebar = wcap_show_side_bar("my_services", TRUE);
                                     </a>
                                 </td>
                             </tr>
+                        <?php } ?>
                         <?php } ?>
                         </tbody>
                     </table>

@@ -95,8 +95,8 @@ msgstr "Scegli Ciclo Di Fatturazione"
 #: templates/single_page/01_default/10_summary_generator.php:254
 #: templates/single_page/04_ease/10_summary_generator.php:181
 #: templates/single_page/04_ease/10_summary_generator.php:257
-#: templates/single_page/08_gator/10_summary_generator.php:172
-#: templates/single_page/08_gator/10_summary_generator.php:248
+#: templates/single_page/08_elegant/10_summary_generator.php:172
+#: templates/single_page/08_elegant/10_summary_generator.php:248
 #: templates/single_page/02_sleek_minimal/10_summary_generator.php:181
 #: templates/single_page/02_sleek_minimal/10_summary_generator.php:257
 msgid "Setup Fee"
@@ -178,24 +178,24 @@ msgstr "Anni"
 #: common/assets/translations_wcop.php:76
 #: common/assets/translations_wcop.php:77 common/assets/translations.php:120
 #: templates/single_page/07_minimal/07_checkout.php:17
-#: templates/single_page/08_gator/10_summary_generator.php:477
-#: templates/single_page/08_gator/10_summary_generator.php:520
+#: templates/single_page/08_elegant/10_summary_generator.php:477
+#: templates/single_page/08_elegant/10_summary_generator.php:520
 msgid "Coupon Code"
 msgstr "Codice Coupon"
 
 #: inc/cart-functions.php:443 common/assets/translations_wcop.php:83
 #: common/assets/translations.php:505
-#: templates/single_page/08_gator/10_summary_generator.php:494
+#: templates/single_page/08_elegant/10_summary_generator.php:494
 msgid "Validate"
 msgstr "Convalida"
 
 #: inc/cart-functions.php:487 common/assets/translations_wcop.php:82
-#: templates/single_page/08_gator/10_summary_generator.php:532
+#: templates/single_page/08_elegant/10_summary_generator.php:532
 msgid "Remove Coupon"
 msgstr "Rimuovi il Coupon"
 
 #: inc/cart-functions.php:495 common/assets/translations_wcop.php:117
-#: templates/single_page/08_gator/10_summary_generator.php:540
+#: templates/single_page/08_elegant/10_summary_generator.php:540
 msgid "The promotion code entered has expired"
 msgstr "Il codice inserito è scaduto"
 
@@ -599,7 +599,7 @@ msgstr "Imposte stimate, il ricaricamento della pagina"
 #: templates/single_page/06_sleek/10_summary_generator.php:510
 #: templates/single_page/01_default/10_summary_generator.php:513
 #: templates/single_page/04_ease/10_summary_generator.php:510
-#: templates/single_page/08_gator/10_summary_generator.php:443
+#: templates/single_page/08_elegant/10_summary_generator.php:443
 #: templates/single_page/02_sleek_minimal/10_summary_generator.php:510
 msgid "The promotion code entered does not exist"
 msgstr "Il codice inserito non esiste"
@@ -624,8 +624,8 @@ msgstr ""
 #: templates/single_page/04_ease/01_top_nav.php:39
 #: templates/single_page/04_ease/05_client.php:10
 #: templates/single_page/05_simple/05_client.php:10
-#: templates/single_page/08_gator/01_top_nav.php:39
-#: templates/single_page/08_gator/05_client.php:5
+#: templates/single_page/08_elegant/01_top_nav.php:39
+#: templates/single_page/08_elegant/05_client.php:5
 #: templates/single_page/02_sleek_minimal/01_top_nav.php:39
 #: templates/single_page/02_sleek_minimal/05_client.php:10
 msgid "Billing Info"
@@ -641,7 +641,7 @@ msgstr ""
 #: templates/single_page/01_default/05_client.php:20
 #: templates/single_page/04_ease/05_client.php:20
 #: templates/single_page/05_simple/05_client.php:24
-#: templates/single_page/08_gator/05_client.php:17
+#: templates/single_page/08_elegant/05_client.php:17
 #: templates/single_page/02_sleek_minimal/05_client.php:24
 msgid "Enter Your Billing Info"
 msgstr "Inserisci i tuoi dati di fatturazione"
@@ -922,7 +922,7 @@ msgstr "Qualcosa è andato storto, sto ricaricando la pagina..."
 #: common/shortcodes/order_process/01_domain.php:98
 #: templates/domain_first/default/01_domain.php:125
 #: templates/single_page/01_default/99_domain_form.php:178
-#: templates/single_page/08_gator/99_domain_form.php:176
+#: templates/single_page/08_elegant/99_domain_form.php:176
 msgid "Transfer"
 msgstr "Trasferisci"
 
@@ -939,7 +939,7 @@ msgstr ""
 #: common/assets/translations_wcop.php:90 common/assets/translations.php:44
 #: common/includes/domains.php:247
 #: templates/single_page/01_default/99_domain_form.php:57
-#: templates/single_page/08_gator/99_domain_form.php:55
+#: templates/single_page/08_elegant/99_domain_form.php:55
 msgid "Already in Cart"
 msgstr "Già nel Carrello"
 
@@ -947,13 +947,13 @@ msgstr "Già nel Carrello"
 #: common/assets/translations.php:80 common/includes/domains.php:328
 #: templates/domain_first/default/01_domain.php:85
 #: templates/single_page/01_default/99_domain_form.php:138
-#: templates/single_page/08_gator/99_domain_form.php:130
+#: templates/single_page/08_elegant/99_domain_form.php:130
 msgid "Check"
 msgstr "Controllare"
 
 #: common/assets/translations_wcop.php:104
 #: templates/single_page/01_default/99_domain_form.php:67
-#: templates/single_page/08_gator/99_domain_form.php:186
+#: templates/single_page/08_elegant/99_domain_form.php:186
 msgid "I already own a Domain"
 msgstr "Ho già un Dominio"
 
@@ -961,21 +961,21 @@ msgstr "Ho già un Dominio"
 #: common/assets/translations.php:388 common/includes/domains.php:291
 #: templates/domain_first/default/01_domain.php:45
 #: templates/single_page/01_default/99_domain_form.php:61
-#: templates/single_page/08_gator/99_domain_form.php:94
+#: templates/single_page/08_elegant/99_domain_form.php:94
 msgid "Register a new domain"
 msgstr "Registra un nuovo dominio"
 
 #: common/assets/translations_wcop.php:113 common/assets/translations.php:414
 #: common/includes/domains.php:260
 #: templates/single_page/01_default/99_domain_form.php:80
-#: templates/single_page/08_gator/99_domain_form.php:66
+#: templates/single_page/08_elegant/99_domain_form.php:66
 msgid "Select a domain"
 msgstr "Seleziona un dominio"
 
 #: common/assets/translations_wcop.php:120 common/assets/translations.php:483
 #: templates/domain_first/default/01_domain.php:48
 #: templates/single_page/01_default/99_domain_form.php:64
-#: templates/single_page/08_gator/99_domain_form.php:140
+#: templates/single_page/08_elegant/99_domain_form.php:140
 msgid "Transfer a Domain"
 msgstr "Trasferisci un Dominio"
 
@@ -984,8 +984,8 @@ msgstr "Trasferisci un Dominio"
 #: common/includes/domains.php:277 common/includes/domains.php:420
 #: templates/single_page/01_default/99_domain_form.php:97
 #: templates/single_page/01_default/99_domain_form.php:210
-#: templates/single_page/08_gator/99_domain_form.php:83
-#: templates/single_page/08_gator/99_domain_form.php:214
+#: templates/single_page/08_elegant/99_domain_form.php:83
+#: templates/single_page/08_elegant/99_domain_form.php:214
 msgid "Use"
 msgstr "Usa"
 
@@ -1059,7 +1059,7 @@ msgstr "10"
 #: templates/single_page/01_default/06_coupon.php:8
 #: templates/single_page/04_ease/06_coupon.php:8
 #: templates/single_page/05_simple/06_coupon.php:8
-#: templates/single_page/08_gator/06_coupon.php:8
+#: templates/single_page/08_elegant/06_coupon.php:8
 #: templates/single_page/02_sleek_minimal/06_coupon.php:8
 msgid "Enter a Coupon Code"
 msgstr "Inserire un Codice Coupon"
@@ -1071,7 +1071,7 @@ msgstr "Inserire un Codice Coupon"
 #: templates/single_page/01_default/07_checkout.php:7
 #: templates/single_page/04_ease/07_checkout.php:7
 #: templates/single_page/05_simple/07_checkout.php:7
-#: templates/single_page/08_gator/07_checkout_summary.php:7
+#: templates/single_page/08_elegant/07_checkout_summary.php:7
 #: templates/single_page/02_sleek_minimal/07_checkout.php:7
 msgid "Review Order Details"
 msgstr "Rivedi i dettagli dell'ordine"
@@ -1180,7 +1180,7 @@ msgstr "Tutti"
 #: templates/single_page/01_default/05_client.php:32
 #: templates/single_page/04_ease/05_client.php:34
 #: templates/single_page/05_simple/05_client.php:34
-#: templates/single_page/08_gator/05_client.php:21
+#: templates/single_page/08_elegant/05_client.php:21
 #: templates/single_page/02_sleek_minimal/05_client.php:59
 msgid "Already Registered?"
 msgstr "Già Registrato?"

@@ -13,8 +13,7 @@ $args = [
 ];
 
 $currencies = whcom_process_helper($args);
-
-$conversion_rate = $currencies["all"][$cur_id]["rate"];
+$conversion_rate = $currencies["data"]["all"][$cur_id]["rate"];
 
 $args = [
     "action" => "configurations",
@@ -29,11 +28,11 @@ $all_config = whcom_process_helper($args);
  * AffiliateLinks
  */
 
-$AffiliateEnabled = $all_config["AffiliateEnabled"];
-$AffiliateEarningPercent = $all_config["AffiliateEarningPercent"];
-$AffiliateBonusDeposit = $all_config["AffiliateBonusDeposit"];
-$AffiliatePayout = $all_config["AffiliatePayout"];
-$AffiliateLinks = $all_config["AffiliateLinks"];
+$AffiliateEnabled = $all_config["data"]["AffiliateEnabled"];
+$AffiliateEarningPercent = $all_config["data"]["AffiliateEarningPercent"];
+$AffiliateBonusDeposit = $all_config["data"]["AffiliateBonusDeposit"];
+$AffiliatePayout = $all_config["data"]["AffiliatePayout"];
+$AffiliateLinks = $all_config["data"]["AffiliateLinks"];
 $AffiliateEarningPercent = rtrim($AffiliateEarningPercent, "%");
 
 

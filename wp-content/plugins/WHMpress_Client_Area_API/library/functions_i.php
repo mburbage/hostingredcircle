@@ -312,9 +312,9 @@ function wcap_get_tickets($args = "")
     if ($args["subject"] == "") {
         unset($args["subject"]);
     }
-    if ($args["ignore_dept_assignments"] == "") {
+    /*if ($args["ignore_dept_assignments"] == "") {
         unset($args["ignore_dept_assignments"]);
-    }
+    }*/
 
     $response = whcom_process_api($args);
 
@@ -1407,7 +1407,8 @@ function wcap_page_info($page)
         $page_ = $menu[$index]['page'];
         $class = $menu[$index]['class'];
         $icon = $menu[$index]['icon'];
-        $href = $menu[$index]['href'];
+        //== Apply condition as there is warning about undefine index href
+        $href = isset($menu[$index]['href']) ? $menu[$index]['href'] : '' ;
         $show = $menu[$index]['show'];
 
 
@@ -1419,12 +1420,12 @@ function wcap_page_info($page)
             $url = $menu_a[$index]['[url_override]'];
         }
     } else {
-
         $label = $menu[$index]['sub'][$page]['label'];
         $page_ = $menu[$index]['sub'][$page]['page'];
         $class = $menu[$index]['sub'][$page]['class'];
-        $icon = $menu[$index]['sub'][$page]['icon'];
-        $href = $menu[$index]['sub'][$page]['href'];
+        $icon = isset($menu[$index]['sub'][$page]['icon']) ? $menu[$index]['sub'][$page]['icon'] : '';
+        //== Apply condition as there is warning about undefine index href
+        $href = isset($menu[$index]['sub'][$page]['href']) ? $menu[$index]['sub'][$page]['href'] : '#';
         $show = $menu[$index]['sub'][$page]['show'];
 
 
@@ -1824,6 +1825,7 @@ if (!function_exists('wcap_verify_client_check')) {
             "action" => "whcom_validate_email_check",
             'clientid' => $client_id,
         ]);
+        $message = '';
         if (get_option("whcom_email_verification_message") == "yes" && $response['data'] == 'not-verified') {
             $message = '<div class="whcom_alert whcom_alert_warning">';
             $message .= esc_html__('Please check your email and follow the link to verify your email address.', 'whcom');

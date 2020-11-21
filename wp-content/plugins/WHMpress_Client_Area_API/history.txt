@@ -336,3 +336,33 @@ Debug log option added
 
 3.4-revision-6 23-5-2020
 - Little CSS changings
+
+3.4-revision-7 1-6-2020
+- Resolved onetime sync client update issue.
+
+3.4-revision-8 18-6-2020
+- Hide the service sections according to settings
+
+3.4-revision-9 19-6-2020
+- Hide the Recent support ticket section according to settings
+
+3.5-revision-0 24-6-2020
+- Display name issue fixed in nav_menu shortcode
+
+3.5-revision-1 7-7-2020
+- Fixed some warning
+
+3.5-revision-2 25-7-2020
+- Site health issue fixed sue to the plugin.
+
+3.5-revision-3 27-7-2020
+- Move helper outside the package.
+- Session related issues fixed.
+
+3.5-revision-4 20-8-2020
+- CSS changing in WCAP login form shortcode.
+- Reset password issue fixed in wcap login form shortcode.
+
+3.6 21-09-2020
+- Make Plugin compatible with php 7.4
+- Update Spanish language translation.

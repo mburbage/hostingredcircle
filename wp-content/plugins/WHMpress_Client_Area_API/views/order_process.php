@@ -1,10 +1,10 @@
 <?php
 
-$atts = $_SESSION['atts'];
-
+$atts = isset($_SESSION['atts']) ? $_SESSION['atts'] : '';
+$promocode = !empty($atts['promocode']) ? $atts['promocode'] : "";
 $page = "order_new_service";
-$page = ($_POST["domain"]=="register")?"domain_register":$page;
-$page = ($_POST["domain"]=="transfer")?"domain_transfer":$page;
+$page = (isset($_POST["domain"]) && $_POST["domain"]=="register")?"domain_register":$page;
+$page = (isset($_POST["domain"]) && $_POST["domain"]=="transfer")?"domain_transfer":$page;
 //page initialization, veriables for whole page
 $show_sidebar = wcap_show_side_bar($page);
 
@@ -28,7 +28,7 @@ if (!empty($_REQUEST['dp'])) {
                 </div>
             <?php } ?>
             <div class="<?php echo ($show_sidebar) ? 'whcom_col_sm_9' : 'whcom_col_sm_12'; ?>">
-                <?php echo do_shortcode('[whcom_order_process promocode=' .$atts['promocode'].' ]'); ?>
+                <?php echo do_shortcode('[whcom_order_process promocode=' .$promocode.' ]'); ?>
             </div>
         </div>
     </div>

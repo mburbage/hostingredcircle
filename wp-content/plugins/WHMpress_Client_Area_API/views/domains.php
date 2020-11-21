@@ -80,10 +80,10 @@ $show_sidebar = wcap_show_side_bar( "my_domains");
 								<td><?php echo wcap_date( $domain["regdate"], 'd/m/Y' ) ?></td>
 								<td><?php echo wcap_date( $domain["nextduedate"], 'd/m/Y' ) ?></td>
 								<td>
-									<?php// if ( $domain["status"] == "Active" ) { ?>
+									<?php // if ( $domain["status"] == "Active" ) { ?>
 										<i class="<?php echo ( $domain["donotrenew"] == 0 ) ? 'whcom_icon_ok whcom_text_success': 'whcom_icon_cancel whcom_text_danger';  ?>"></i>
 										<?php echo wcap_ed( $domain["donotrenew"] ); ?>
-									<?php// }
+									<?php // }
 									//else {
 									//	echo wcap_yesno( $domain["donotrenew"] );
 									//} ?>

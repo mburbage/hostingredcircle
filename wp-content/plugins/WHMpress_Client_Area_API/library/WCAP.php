@@ -1052,7 +1052,7 @@ class WCAP
     //		require_once( $this->Path . "/admin/pages/help.php" );
     //	}
 
-    function update_wp_user_from_whmcs($whmcs_row)
+    function update_wp_user_from_whmcs_0($whmcs_row)
     {
         if (!is_array($whmcs_row) && is_email($whmcs_row)) {
             $whmcs_row = $this->get_whmcs_users("email=" . $whmcs_row);
@@ -1145,7 +1145,7 @@ class WCAP
         return get_option("wcapfield_new_user_profile_fields") == "1";
     }
 
-    function create_wp_user_from_whmcs_row($whmcs_row)
+    function create_wp_user_from_whmcs_row_0($whmcs_row)
     {
         //todo: check user row using email field
         if (!isset($whmcs_row["firstname"])) {
@@ -5249,7 +5249,7 @@ class WCAP
         return $fields_array;
     }
 
-    function get_wp_users()
+    function get_wp_users_0()
     {
         global $wpdb;
         $Q = "SELECT ID,`user_login`,`user_email`,`user_pass` FROM `{$wpdb->prefix}users` WHERE LEFT(`user_pass`, 2) = '$2'";

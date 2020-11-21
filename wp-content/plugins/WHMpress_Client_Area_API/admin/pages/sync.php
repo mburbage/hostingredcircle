@@ -51,6 +51,9 @@
 			}
 			else {
 				$rows     = $this->get_wp_users();
+				foreach($rows as &$row){
+                    $row['securityqid'] = 0;
+                }
 				$response = $this->update_whmcs_users( [ "postdata" => $rows ] );
 				if ( $this->is_json( $response ) ) {
 					$response = json_decode( $response, true );

@@ -1,19 +1,19 @@
-<?php /* Smarty version 3.1.27, created on 2020-08-23 19:58:15
-         compiled from "C:\Users\Michael1\Documents\GitHub\redcirclehost\app\public\wp-content\plugins\whmpress_comp_tables\templates\whmpress_pricing_table_group\simple-04.tpl" */ ?>
+<?php /* Smarty version 3.1.27, created on 2020-11-14 03:20:52
+         compiled from "C:\Users\Michael1\Documents\Development\redcirclehost\app\public\wp-content\plugins\whmpress_comp_tables\templates\whmpress_pricing_table_group\simple-04.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:18546637215f42ca577eb0a2_77404683%%*/
+/*%%SmartyHeaderCode:2549838765faf4d14995015_15213361%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '38d24b0e67ffda5a76e6459a936bacf86644f7fe' => 
+    '57a7e785a6743ac99f2c3454569466c145cdc596' => 
     array (
-      0 => 'C:\\Users\\Michael1\\Documents\\GitHub\\redcirclehost\\app\\public\\wp-content\\plugins\\whmpress_comp_tables\\templates\\whmpress_pricing_table_group\\simple-04.tpl',
-      1 => 1598007784,
+      0 => 'C:\\Users\\Michael1\\Documents\\Development\\redcirclehost\\app\\public\\wp-content\\plugins\\whmpress_comp_tables\\templates\\whmpress_pricing_table_group\\simple-04.tpl',
+      1 => 1601219692,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '18546637215f42ca577eb0a2_77404683',
+  'nocache_hash' => '2549838765faf4d14995015_15213361',
   'variables' => 
   array (
     'group' => 0,
@@ -22,15 +22,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5f42ca578ae7c8_85694235',
+  'unifunc' => 'content_5faf4d14a94ff5_62182457',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5f42ca578ae7c8_85694235')) {
-function content_5f42ca578ae7c8_85694235 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5faf4d14a94ff5_62182457')) {
+function content_5faf4d14a94ff5_62182457 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '18546637215f42ca577eb0a2_77404683';
+$_smarty_tpl->properties['nocache_hash'] = '2549838765faf4d14995015_15213361';
 ?>
 <div class="row">
+	
 		<?php
 $_from = $_smarty_tpl->tpl_vars['group']->value['plans'];
 if (!is_array($_from) && !is_object($_from)) {
@@ -44,7 +45,7 @@ $foreach_plan_Sav = $_smarty_tpl->tpl_vars['plan'];
 ?>
 		<div class="wpb_column vc_column_container  
 		<?php if (count($_smarty_tpl->tpl_vars['group']->value['plans']) == 1) {?>vc_col-sm-12
-<?php } elseif (count($_smarty_tpl->tpl_vars['group']->value['plans']) == 2) {?>vc_col-md-6
+<?php } elseif (count($_smarty_tpl->tpl_vars['group']->value['plans']) == 2) {?>vc_col-md-4
 <?php } elseif (count($_smarty_tpl->tpl_vars['group']->value['plans']) == 3) {?>vc_col-md-4
 <?php } elseif (count($_smarty_tpl->tpl_vars['group']->value['plans']) == 4) {?>vc_col-md-3
 <?php }?>"
@@ -64,9 +65,13 @@ echo $_smarty_tpl->tpl_vars['plan']->value['fraction'];
 						<h3 class="pricing-title id-color"><?php echo $_smarty_tpl->tpl_vars['plan']->value['name'];?>
 </h3>
 
+						<?php echo '<script'; ?>
+>console.log(<?php echo json_encode($_smarty_tpl->tpl_vars['plan']->value);?>
+);<?php echo '</script'; ?>
+>
 
 						<div class="pricing-price">
-
+							
 							<p class="price"><?php echo $_smarty_tpl->tpl_vars['plan']->value['prefix'];
 echo $_smarty_tpl->tpl_vars['plan']->value['amount'];
 if ($_smarty_tpl->tpl_vars['plan']->value['fraction'] != '') {?><span class="decimal"><?php echo $_smarty_tpl->tpl_vars['plan']->value['decimal'];?>
@@ -76,8 +81,14 @@ if ($_smarty_tpl->tpl_vars['plan']->value['fraction'] != '') {?><span class="dec
 							<?php if ($_smarty_tpl->tpl_vars['plan']->value['duration'] != '') {?>
 							<span class="per"><?php echo $_smarty_tpl->tpl_vars['plan']->value['duration'];?>
 </span><?php }?>
-							<br/><span class="per"><?php echo $_smarty_tpl->tpl_vars['plan']->value['all_durations']['monthly']['discount']['discount_string'];?>
+							<br/>
+							<?php if (trim($_smarty_tpl->tpl_vars['plan']->value['duration']," ") != "Monthly") {?>
+							<span class="per"><?php echo $_smarty_tpl->tpl_vars['plan']->value['all_durations']['annually']['discount']['discount_string'];?>
 </span>
+							<?php } else { ?>
+							<span class="per"><?php echo $_smarty_tpl->tpl_vars['plan']->value['all_durations']['monthly']['discount']['discount_string'];?>
+</span>
+							<?php }?>
 						</div>
 						<div class="pricing-features">
 							<?php if ($_smarty_tpl->tpl_vars['plan']->value['cdescription'] != '') {?>

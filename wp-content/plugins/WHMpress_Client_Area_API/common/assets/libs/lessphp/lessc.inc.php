@@ -710,11 +710,12 @@ class whcom_lessc {
 				$oldParent = $mixin->parent;
 				if ($mixin != $block) $mixin->parent = $block;
 
+                //== change curly brackets to [] >> PHP 7.4 warning
 				foreach ($this->sortProps($mixin->props) as $subProp) {
 					if ($suffix !== null &&
 						$subProp[0] == "assign" &&
 						is_string($subProp[1]) &&
-						$subProp[1]{0} != $this->vPrefix)
+						$subProp[1][0] != $this->vPrefix)
 					{
 						$subProp[2] = array(
 							'list', ' ',
@@ -1764,8 +1765,9 @@ class whcom_lessc {
 	protected function injectVariables($args) {
 		$this->pushEnv();
 		$parser = new whcom_lessc_parser($this, __METHOD__);
+        //== change curly brackets to [] >> PHP 7.4 warning
 		foreach ($args as $name => $strValue) {
-			if ($name{0} != '@') $name = '@'.$name;
+			if ($name[0] != '@') $name = '@'.$name;
 			$parser->count = 0;
 			$parser->buffer = (string)$strValue;
 			if (!$parser->propertyValue($value)) {
@@ -2417,11 +2419,12 @@ class whcom_lessc_parser {
 			}
 
 			$hidden = false;
+            //== change curly brackets to [] >> PHP 7.4 warning
 			if (is_null($block->type)) {
 				$hidden = true;
 				if (!isset($block->args)) {
 					foreach ($block->tags as $tag) {
-						if (!is_string($tag) || $tag{0} != $this->whcom_lessc->mPrefix) {
+						if (!is_string($tag) || $tag[0] != $this->whcom_lessc->mPrefix) {
 							$hidden = false;
 							break;
 						}
@@ -2474,8 +2477,9 @@ class whcom_lessc_parser {
 
 	protected function fixTags($tags) {
 		// move @ tags out of variable namespace
+        //== change curly brackets to [] >> PHP 7.4 warning
 		foreach ($tags as &$tag) {
-			if ($tag{0} == $this->whcom_lessc->vPrefix)
+			if ($tag[0] == $this->whcom_lessc->vPrefix)
 				$tag[0] = $this->whcom_lessc->mPrefix;
 		}
 		return $tags;

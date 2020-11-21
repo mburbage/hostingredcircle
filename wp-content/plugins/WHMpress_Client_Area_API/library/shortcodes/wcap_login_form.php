@@ -1,3 +1,16 @@
+<style>
+    form#whmcs_validation_form .whcom_button.whcom_text_center {
+        background: #287fad;
+        border-radius: 4px;
+    }
+
+    form#whmcs_validation_form a.whcom_button.whcom_button_secondary {
+        padding: 10px 20px;
+        border: 1px solid #333;
+        color: #333;
+        border-radius: 4px;
+    }
+</style>
 <?php
 /**
  * Created by PhpStorm.
@@ -5,7 +18,9 @@
  * Date: 4/7/2020
  * Time: 1:09 PM
  */ ?>
-
+<?php
+$order_url = get_option('wcapfield_client_area_url' . whcom_get_current_language(), '');
+?>
 <div class="whcom_row">
     <div class="whcom_col_sm_3">
 
@@ -42,10 +57,9 @@
 
                         <div class="whcom_form_field whcom_text_center">
                             <input type="submit" class="whcom_button whcom_text_center" value="Login">
-                            <button class="whcom_button whcom_button_secondary wcap_load_page"
-                                    data-page="password_reset">
+                            <a class="whcom_button whcom_button_secondary" href="<?php echo $order_url ?>?whmpca=password_reset">
                                 <?php esc_html_e("Reset Password", "whcom" ) ?>
-                            </button>
+                            </a>
                         </div>
 
                     </form>

@@ -606,7 +606,7 @@ msgstr "Taxe estimate, reîncărcare pagina"
 #: templates/single_page/03_bold/10_summary_generator.php:512 
 #: templates/single_page/04_ease/10_summary_generator.php:510 
 #: templates/single_page/06_sleek/10_summary_generator.php:510 
-#: templates/single_page/08_gator/10_summary_generator.php:467 
+#: templates/single_page/08_elegant/10_summary_generator.php:467
 #: templates/single_page/01_default/10_summary_generator.php:513
 msgid "The promotion code entered does not exist"
 msgstr "Promovarea codul introdus nu există"
@@ -631,8 +631,8 @@ msgstr "Autentificare Cu Succes."
 #: templates/single_page/06_sleek/05_client.php:10 
 #: templates/single_page/06_sleek/01_top_nav.php:39 
 #: templates/single_page/05_simple/05_client.php:10 
-#: templates/single_page/08_gator/05_client.php:5 
-#: templates/single_page/08_gator/01_top_nav.php:39 
+#: templates/single_page/08_elegant/05_client.php:5
+#: templates/single_page/08_elegant/01_top_nav.php:39
 #: templates/single_page/01_default/05_client.php:10 
 #: templates/single_page/01_default/01_top_nav.php:40
 msgid "Billing Info"
@@ -649,7 +649,7 @@ msgstr "Deconectare De Succes."
 #: templates/single_page/04_ease/05_client.php:20 
 #: templates/single_page/06_sleek/05_client.php:24 
 #: templates/single_page/05_simple/05_client.php:24 
-#: templates/single_page/08_gator/05_client.php:17 
+#: templates/single_page/08_elegant/05_client.php:17
 #: templates/single_page/01_default/05_client.php:20
 msgid "Enter Your Billing Info"
 msgstr "Introduceți Informațiile De Facturare"
@@ -798,7 +798,7 @@ msgstr "Alege Ciclu De Facturare"
 #: templates/single_page/04_ease/10_summary_generator.php:257 
 #: templates/single_page/06_sleek/10_summary_generator.php:181 
 #: templates/single_page/06_sleek/10_summary_generator.php:257 
-#: templates/single_page/08_gator/10_summary_generator.php:259 
+#: templates/single_page/08_elegant/10_summary_generator.php:259
 #: templates/single_page/01_default/10_summary_generator.php:182 
 #: templates/single_page/01_default/10_summary_generator.php:254 
 #: templates/domain_first/default/05_product_config.php:48
@@ -850,25 +850,25 @@ msgstr "Perioada De Înregistrare"
 #: common/assets/translations_wcop.php:76 
 #: common/assets/translations_wcop.php:77 common/assets/translations.php:120 
 #: templates/single_page/07_minimal/07_checkout.php:17 
-#: templates/single_page/08_gator/10_summary_generator.php:506 
-#: templates/single_page/08_gator/10_summary_generator.php:511 
-#: templates/single_page/08_gator/10_summary_generator.php:550
+#: templates/single_page/08_elegant/10_summary_generator.php:506
+#: templates/single_page/08_elegant/10_summary_generator.php:511
+#: templates/single_page/08_elegant/10_summary_generator.php:550
 msgid "Coupon Code"
 msgstr "Cod Cupon"
 
 #: inc/cart-functions.php:467 common/assets/translations_wcop.php:83 
 #: common/assets/translations.php:505 
-#: templates/single_page/08_gator/10_summary_generator.php:519
+#: templates/single_page/08_elegant/10_summary_generator.php:519
 msgid "Validate"
 msgstr "Valida"
 
 #: inc/cart-functions.php:511 common/assets/translations_wcop.php:82 
-#: templates/single_page/08_gator/10_summary_generator.php:558
+#: templates/single_page/08_elegant/10_summary_generator.php:558
 msgid "Remove Coupon"
 msgstr "Elimina Coupon"
 
 #: inc/cart-functions.php:519 common/assets/translations_wcop.php:117 
-#: templates/single_page/08_gator/10_summary_generator.php:566
+#: templates/single_page/08_elegant/10_summary_generator.php:566
 msgid "The promotion code entered has expired"
 msgstr "Codul promoțional introdus a expirat"
 
@@ -1257,7 +1257,7 @@ msgstr "Registrul"
 #: common/assets/translations_wcop.php:122 common/assets/translations.php:487 
 #: common/includes/domains.php:387 
 #: common/shortcodes/order_process/01_domain.php:98 
-#: templates/single_page/08_gator/99_domain_form.php:175 
+#: templates/single_page/08_elegant/99_domain_form.php:175
 #: templates/single_page/01_default/99_domain_form.php:178 
 #: templates/domain_first/default/01_domain.php:125
 msgid "Transfer"
@@ -1364,7 +1364,7 @@ msgstr "Adauga la Comanda"
 
 #: common/assets/translations_wcop.php:90 common/assets/translations.php:44 
 #: common/includes/domains.php:256 
-#: templates/single_page/08_gator/99_domain_form.php:54 
+#: templates/single_page/08_elegant/99_domain_form.php:54
 #: templates/single_page/01_default/99_domain_form.php:57
 msgid "Already in Cart"
 msgstr "Deja în Coș"
@@ -1378,14 +1378,14 @@ msgstr "Anula"
 
 #: common/assets/translations_wcop.php:96 common/assets/translations.php:79 
 #: common/assets/translations.php:80 common/includes/domains.php:337 
-#: templates/single_page/08_gator/99_domain_form.php:129 
+#: templates/single_page/08_elegant/99_domain_form.php:129
 #: templates/single_page/01_default/99_domain_form.php:138 
 #: templates/domain_first/default/01_domain.php:85
 msgid "Check"
 msgstr "Verifica"
 
 #: common/assets/translations_wcop.php:104 
-#: templates/single_page/08_gator/99_domain_form.php:185 
+#: templates/single_page/08_elegant/99_domain_form.php:185
 #: templates/single_page/01_default/99_domain_form.php:67
 msgid "I already own a Domain"
 msgstr "Am deja un Domeniu"
@@ -1399,7 +1399,7 @@ msgstr "Înregistreze un domeniu nou"
 
 #: common/assets/translations_wcop.php:113 common/assets/translations.php:414 
 #: common/includes/domains.php:269 
-#: templates/single_page/08_gator/99_domain_form.php:65 
+#: templates/single_page/08_elegant/99_domain_form.php:65
 #: templates/single_page/01_default/99_domain_form.php:80
 msgid "Select a domain"
 msgstr "Selectați un domeniu"
@@ -1413,8 +1413,8 @@ msgstr "Transferul unui Domeniu"
 #: common/assets/translations_wcop.php:123 
 #: common/assets/translations_wcop.php:124 common/assets/translations.php:500 
 #: common/includes/domains.php:286 common/includes/domains.php:429 
-#: templates/single_page/08_gator/99_domain_form.php:82 
-#: templates/single_page/08_gator/99_domain_form.php:213 
+#: templates/single_page/08_elegant/99_domain_form.php:82
+#: templates/single_page/08_elegant/99_domain_form.php:213
 #: templates/single_page/01_default/99_domain_form.php:97 
 #: templates/single_page/01_default/99_domain_form.php:210
 msgid "Use"
@@ -1491,7 +1491,7 @@ msgstr "10"
 #: templates/single_page/04_ease/06_coupon.php:8 
 #: templates/single_page/06_sleek/06_coupon.php:8 
 #: templates/single_page/05_simple/06_coupon.php:8 
-#: templates/single_page/08_gator/06_coupon.php:8 
+#: templates/single_page/08_elegant/06_coupon.php:8
 #: templates/single_page/01_default/06_coupon.php:8
 msgid "Enter a Coupon Code"
 msgstr "Introduceți un Cod Promoțional"
@@ -1503,7 +1503,7 @@ msgstr "Introduceți un Cod Promoțional"
 #: templates/single_page/04_ease/07_checkout.php:7 
 #: templates/single_page/06_sleek/07_checkout.php:7 
 #: templates/single_page/05_simple/07_checkout.php:7 
-#: templates/single_page/08_gator/07_checkout_summary.php:7 
+#: templates/single_page/08_elegant/07_checkout_summary.php:7
 #: templates/single_page/01_default/07_checkout.php:7
 msgid "Review Order Details"
 msgstr "Revizuire Pentru Detalii"
@@ -1613,7 +1613,7 @@ msgstr "Toate"
 #: templates/single_page/04_ease/05_client.php:34 
 #: templates/single_page/06_sleek/05_client.php:72 
 #: templates/single_page/05_simple/05_client.php:34 
-#: templates/single_page/08_gator/05_client.php:21 
+#: templates/single_page/08_elegant/05_client.php:21
 #: templates/single_page/01_default/05_client.php:32 
 #: templates/domain_first/default/06_checkout.php:90
 msgid "Already Registered?"
@@ -1766,7 +1766,7 @@ msgstr "Modificările Au Fost Salvate Cu Succes!"
 #: templates/single_page/06_sleek/05_client.php:18 
 #: templates/single_page/06_sleek/05_client.php:86 
 #: templates/single_page/05_simple/07_checkout.php:52 
-#: templates/single_page/08_gator/07_checkout.php:20 
+#: templates/single_page/08_elegant/07_checkout.php:20
 #: templates/single_page/01_default/07_checkout.php:52
 msgid "Checkout Now!"
 msgstr "Plateste Acum!"
@@ -1780,7 +1780,7 @@ msgstr "Plateste Acum!"
 #: templates/single_page/03_bold/01_top_nav.php:46 
 #: templates/single_page/04_ease/01_top_nav.php:46 
 #: templates/single_page/06_sleek/01_top_nav.php:46 
-#: templates/single_page/08_gator/01_top_nav.php:46 
+#: templates/single_page/08_elegant/01_top_nav.php:46
 #: templates/single_page/01_default/01_top_nav.php:48 
 #: templates/domain_first/default/06_summary_main.php:98 
 #: templates/domain_first/default/00_top_icons.php:51
@@ -1802,7 +1802,7 @@ msgstr "Alege Produsul"
 #: templates/single_page/04_ease/02_domain.php:5 
 #: templates/single_page/06_sleek/02_domain.php:5 
 #: templates/single_page/05_simple/02_domain.php:5 
-#: templates/single_page/08_gator/02_domain.php:5 
+#: templates/single_page/08_elegant/02_domain.php:5
 #: templates/single_page/01_default/02_domain.php:5
 msgid "Choose a Domain"
 msgstr "Alege un Domeniu"
@@ -1942,7 +1942,7 @@ msgstr "Client-Răspuns"
 #: templates/single_page/03_bold/10_summary_generator.php:324 
 #: templates/single_page/04_ease/10_summary_generator.php:323 
 #: templates/single_page/06_sleek/10_summary_generator.php:323 
-#: templates/single_page/08_gator/10_summary_generator.php:330 
+#: templates/single_page/08_elegant/10_summary_generator.php:330
 #: templates/single_page/01_default/10_summary_generator.php:319
 msgid "DNS Management"
 msgstr "De Management DNS"
@@ -2001,7 +2001,7 @@ msgstr "Dezactivate"
 #: templates/single_page/03_bold/01_top_nav.php:10 
 #: templates/single_page/04_ease/01_top_nav.php:10 
 #: templates/single_page/06_sleek/01_top_nav.php:10 
-#: templates/single_page/08_gator/01_top_nav.php:10 
+#: templates/single_page/08_elegant/01_top_nav.php:10
 #: templates/single_page/01_default/01_top_nav.php:11 
 #: templates/domain_first/default/00_top_icons.php:33
 msgid "Domain"
@@ -2014,7 +2014,7 @@ msgstr "Domeniu"
 #: templates/single_page/04_ease/01_main.php:538 
 #: templates/single_page/06_sleek/01_main.php:886 
 #: templates/single_page/05_simple/01_main.php:23 
-#: templates/single_page/08_gator/01_main.php:638 
+#: templates/single_page/08_elegant/01_main.php:638
 #: templates/single_page/01_default/01_main.php:29
 msgid "Domain Configuration"
 msgstr "Domeniu De Configurare"
@@ -2115,7 +2115,7 @@ msgstr "Adresa De E-Mail"
 #: templates/single_page/03_bold/10_summary_generator.php:333 
 #: templates/single_page/04_ease/10_summary_generator.php:332 
 #: templates/single_page/06_sleek/10_summary_generator.php:332 
-#: templates/single_page/08_gator/10_summary_generator.php:340 
+#: templates/single_page/08_elegant/10_summary_generator.php:340
 #: templates/single_page/01_default/10_summary_generator.php:328
 msgid "Email Forwarding"
 msgstr "E-Mail Forwarding"
@@ -2308,7 +2308,7 @@ msgstr "Voi folosi domeniu existent și actualiza nameserverele"
 #: templates/single_page/03_bold/10_summary_generator.php:342 
 #: templates/single_page/04_ease/10_summary_generator.php:341 
 #: templates/single_page/06_sleek/10_summary_generator.php:341 
-#: templates/single_page/08_gator/10_summary_generator.php:350 
+#: templates/single_page/08_elegant/10_summary_generator.php:350
 #: templates/single_page/01_default/10_summary_generator.php:337
 msgid "ID Protection"
 msgstr "ID-ul de Protecție"
@@ -2453,12 +2453,12 @@ msgstr ""
 
 #: common/assets/translations.php:242 common/shortcodes/client_login.php:10 
 #: common/shortcodes/log_in_out_link.php:10 
-#: templates/single_page/08_gator/05_client.php:27
+#: templates/single_page/08_elegant/05_client.php:27
 msgid "Log In"
 msgstr "Log In"
 
 #: common/assets/translations.php:243 common/shortcodes/log_in_out_link.php:13 
-#: templates/single_page/08_gator/05_client.php:10
+#: templates/single_page/08_elegant/05_client.php:10
 msgid "Log Out"
 msgstr "Log Out"
 
@@ -3047,7 +3047,7 @@ msgstr "Înregistrare Pentru"
 #: templates/single_page/03_bold/10_summary_generator.php:314 
 #: templates/single_page/04_ease/10_summary_generator.php:313 
 #: templates/single_page/06_sleek/10_summary_generator.php:313 
-#: templates/single_page/08_gator/10_summary_generator.php:315 
+#: templates/single_page/08_elegant/10_summary_generator.php:315
 #: templates/single_page/01_default/10_summary_generator.php:309
 msgid "Registration"
 msgstr "Înregistrare"
@@ -3141,7 +3141,7 @@ msgstr "Software-Ul Serverului:"
 #: templates/single_page/03_bold/01_top_nav.php:31 
 #: templates/single_page/04_ease/01_top_nav.php:31 
 #: templates/single_page/06_sleek/01_top_nav.php:31 
-#: templates/single_page/08_gator/01_top_nav.php:31 
+#: templates/single_page/08_elegant/01_top_nav.php:31
 #: templates/single_page/01_default/01_top_nav.php:31
 msgid "Services"
 msgstr "Servicii"
@@ -3169,7 +3169,7 @@ msgstr ""
 #: common/includes/functions.php:152 common/includes/functions.php:153 
 #: common/includes/functions.php:154 common/includes/functions.php:155 
 #: common/includes/order_process.php:533 
-#: templates/single_page/08_gator/10_summary_generator.php:172
+#: templates/single_page/08_elegant/10_summary_generator.php:172
 msgid "Setup"
 msgstr "Setup"
 
@@ -3400,7 +3400,7 @@ msgstr ""
 #: templates/single_page/03_bold/10_summary_generator.php:494 
 #: templates/single_page/04_ease/10_summary_generator.php:493 
 #: templates/single_page/06_sleek/10_summary_generator.php:493 
-#: templates/single_page/08_gator/10_summary_generator.php:609 
+#: templates/single_page/08_elegant/10_summary_generator.php:609
 #: templates/single_page/01_default/10_summary_generator.php:488
 msgid "Total Due Today"
 msgstr "Total Din Cauza Astăzi"
@@ -3416,7 +3416,7 @@ msgstr "Total"
 #: templates/single_page/03_bold/10_summary_generator.php:465 
 #: templates/single_page/04_ease/10_summary_generator.php:464 
 #: templates/single_page/06_sleek/10_summary_generator.php:464 
-#: templates/single_page/08_gator/10_summary_generator.php:579 
+#: templates/single_page/08_elegant/10_summary_generator.php:579
 #: templates/single_page/01_default/10_summary_generator.php:459
 msgid "Totals"
 msgstr "Totaluri"
@@ -5872,7 +5872,7 @@ msgstr "Pentru "
 #: templates/single_page/03_bold/10_summary_generator.php:404 
 #: templates/single_page/04_ease/10_summary_generator.php:403 
 #: templates/single_page/06_sleek/10_summary_generator.php:403 
-#: templates/single_page/08_gator/10_summary_generator.php:418 
+#: templates/single_page/08_elegant/10_summary_generator.php:418
 #: templates/single_page/01_default/10_summary_generator.php:398
 msgid "Recurring Discount"
 msgstr "Reducere Recurente"
@@ -5884,7 +5884,7 @@ msgstr "Reducere Recurente"
 #: templates/single_page/03_bold/10_summary_generator.php:402 
 #: templates/single_page/04_ease/10_summary_generator.php:401 
 #: templates/single_page/06_sleek/10_summary_generator.php:401 
-#: templates/single_page/08_gator/10_summary_generator.php:416 
+#: templates/single_page/08_elegant/10_summary_generator.php:416
 #: templates/single_page/01_default/10_summary_generator.php:396
 msgid "One Time Discount"
 msgstr "O Dată Cu Discount"
@@ -6536,7 +6536,7 @@ msgstr "Nu De Hosting! Faceți clic pentru a Adăuga"
 #: templates/single_page/03_bold/10_summary_generator.php:254 
 #: templates/single_page/04_ease/10_summary_generator.php:253 
 #: templates/single_page/06_sleek/10_summary_generator.php:253 
-#: templates/single_page/08_gator/10_summary_generator.php:255 
+#: templates/single_page/08_elegant/10_summary_generator.php:255
 #: templates/single_page/01_default/10_summary_generator.php:250
 msgid "Addon"
 msgstr "Addon"
@@ -6548,7 +6548,7 @@ msgstr "Addon"
 #: templates/single_page/03_bold/10_summary_generator.php:314 
 #: templates/single_page/04_ease/10_summary_generator.php:313 
 #: templates/single_page/06_sleek/10_summary_generator.php:313 
-#: templates/single_page/08_gator/10_summary_generator.php:315 
+#: templates/single_page/08_elegant/10_summary_generator.php:315
 #: templates/single_page/01_default/10_summary_generator.php:309
 msgid "Domain "
 msgstr "Domeniu "
@@ -6564,7 +6564,7 @@ msgstr "Domeniu De Reînnoire"
 #: templates/single_page/03_bold/10_summary_generator.php:410 
 #: templates/single_page/04_ease/10_summary_generator.php:409 
 #: templates/single_page/06_sleek/10_summary_generator.php:409 
-#: templates/single_page/08_gator/10_summary_generator.php:424 
+#: templates/single_page/08_elegant/10_summary_generator.php:424
 #: templates/single_page/01_default/10_summary_generator.php:404
 msgid "Free Setup"
 msgstr "Instalare Gratuit"
@@ -6575,7 +6575,7 @@ msgstr "Instalare Gratuit"
 #: templates/single_page/03_bold/10_summary_generator.php:420 
 #: templates/single_page/04_ease/10_summary_generator.php:419 
 #: templates/single_page/06_sleek/10_summary_generator.php:419 
-#: templates/single_page/08_gator/10_summary_generator.php:434 
+#: templates/single_page/08_elegant/10_summary_generator.php:434
 #: templates/single_page/01_default/10_summary_generator.php:414
 msgid "Price Override"
 msgstr "Prețul Trece Peste"
@@ -6586,7 +6586,7 @@ msgstr "Prețul Trece Peste"
 #: templates/single_page/03_bold/10_summary_generator.php:425 
 #: templates/single_page/04_ease/10_summary_generator.php:424 
 #: templates/single_page/06_sleek/10_summary_generator.php:424 
-#: templates/single_page/08_gator/10_summary_generator.php:439 
+#: templates/single_page/08_elegant/10_summary_generator.php:439
 #: templates/single_page/01_default/10_summary_generator.php:419
 msgid "%"
 msgstr ""
@@ -6597,7 +6597,7 @@ msgstr ""
 #: templates/single_page/03_bold/10_summary_generator.php:502 
 #: templates/single_page/04_ease/10_summary_generator.php:500 
 #: templates/single_page/06_sleek/10_summary_generator.php:500 
-#: templates/single_page/08_gator/10_summary_generator.php:459 
+#: templates/single_page/08_elegant/10_summary_generator.php:459
 #: templates/single_page/01_default/10_summary_generator.php:505
 msgid "Promotion Code Accepted! Your order total has been updated."
 msgstr "Cod De Promovare A Acceptat! Comanda total a fost actualizat."
@@ -6608,7 +6608,7 @@ msgstr "Cod De Promovare A Acceptat! Comanda total a fost actualizat."
 #: templates/single_page/03_bold/10_summary_generator.php:507 
 #: templates/single_page/04_ease/10_summary_generator.php:505 
 #: templates/single_page/06_sleek/10_summary_generator.php:505 
-#: templates/single_page/08_gator/10_summary_generator.php:463 
+#: templates/single_page/08_elegant/10_summary_generator.php:463
 #: templates/single_page/01_default/10_summary_generator.php:509
 msgid ""
 "The promotion code you entered has been applied to your cart but no items "
@@ -6638,7 +6638,7 @@ msgstr "Produs/Opțiuni"
 #: templates/single_page/04_ease/07_checkout.php:27 
 #: templates/single_page/06_sleek/07_checkout.php:23 
 #: templates/single_page/05_simple/07_checkout.php:23 
-#: templates/single_page/08_gator/10_summary_generator.php:618 
+#: templates/single_page/08_elegant/10_summary_generator.php:618
 #: templates/single_page/01_default/07_checkout.php:23 
 #: templates/domain_first/default/06_summary_main.php:58
 msgid "Estimate Taxes"
@@ -6677,7 +6677,7 @@ msgstr "Edit Domeniu"
 #: templates/single_page/04_ease/04_options.php:7 
 #: templates/single_page/06_sleek/04_options.php:7 
 #: templates/single_page/05_simple/04_options.php:7 
-#: templates/single_page/08_gator/04_options.php:7 
+#: templates/single_page/08_elegant/04_options.php:7
 #: templates/single_page/01_default/04_options.php:7
 msgid "Add Additional Services and Order Configuration"
 msgstr "Adăugați Servicii Suplimentare și Pentru Configurare"
@@ -6687,7 +6687,7 @@ msgstr "Adăugați Servicii Suplimentare și Pentru Configurare"
 #: templates/single_page/03_bold/01_top_nav.php:22 
 #: templates/single_page/04_ease/01_top_nav.php:22 
 #: templates/single_page/06_sleek/01_top_nav.php:22 
-#: templates/single_page/08_gator/01_top_nav.php:22 
+#: templates/single_page/08_elegant/01_top_nav.php:22
 #: templates/single_page/01_default/01_top_nav.php:22
 msgid "Hosting Plan"
 msgstr "Plan De Hosting"
@@ -6698,7 +6698,7 @@ msgstr "Plan De Hosting"
 #: templates/single_page/04_ease/03_product.php:15 
 #: templates/single_page/06_sleek/03_product.php:15 
 #: templates/single_page/05_simple/03_product.php:15 
-#: templates/single_page/08_gator/03_product.php:31 
+#: templates/single_page/08_elegant/03_product.php:31
 #: templates/single_page/01_default/03_product.php:18
 msgid "Select Product /Service"
 msgstr "Selectați Produsul /Serviciul"
@@ -6716,23 +6716,23 @@ msgstr "Selecție De Plată"
 msgid "Choose a Hosting Plan"
 msgstr "Alege un Plan de Hosting"
 
-#: templates/single_page/08_gator/99_domain_form.php:93
+#: templates/single_page/08_elegant/99_domain_form.php:93
 msgid "I will register a new domain"
 msgstr "Eu va inregistra un domeniu nou"
 
-#: templates/single_page/08_gator/99_domain_form.php:139
+#: templates/single_page/08_elegant/99_domain_form.php:139
 msgid "I will transfer a Domain"
 msgstr "Eu va transfera un Domeniu"
 
-#: templates/single_page/08_gator/05_client.php:22
+#: templates/single_page/08_elegant/05_client.php:22
 msgid "LogIn"
 msgstr "LogIn"
 
-#: templates/single_page/08_gator/05_client.php:28
+#: templates/single_page/08_elegant/05_client.php:28
 msgid "Go Back"
 msgstr "Du-Te Înapoi"
 
-#: templates/single_page/08_gator/07_checkout.php:6
+#: templates/single_page/08_elegant/07_checkout.php:6
 msgid "Select Payment Option"
 msgstr "Selectați Opțiunea De Plată"
 

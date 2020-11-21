@@ -37,9 +37,12 @@ function wcap_count_status($fill_array, $status_array)
 {
 
     $tmp = [];
+    //== if status array is the the array
+    if(is_array($status_array)){
     foreach ($status_array as $status) {
         $tmp[] = $status["status"];
         $tmp[] = "All";
+    }
     }
 
     $status_array = array_count_values($tmp);
@@ -429,6 +432,8 @@ function wcap_render_categories_panel($remote_page = true) {
         <div class="whcom_panel_body whcom_has_list">
             <ul class="whcom_list_wcap_style_2">
                 <?php
+                unset($groups["groups"]['test-language']);
+                unset($groups["groups"]['test-pll_language']);
                 foreach ($groups["groups"] as $index => $group)
                     {
                         $group_unique_id=strtolower( str_replace( ' ', '', $group["name"] ) ) . $group["id"];
@@ -713,13 +718,15 @@ function wcap_show_side_bar($page,$logged_in="")
     if (isset($map[$page])){
 
         $main_index = $map[$page];
-        $menu_settings[$main_index]['sub'][$page]['hide_sidebar'];
 
-        if ($menu_settings[$main_index]['sub'][$page]['hide_sidebar'] == 'hide_sidebar') {
+        //== hide because there is no purpose fot it
+        //$menu_settings[$main_index]['sub'][$page]['hide_sidebar'];
+
+        if (isset($menu_settings[$main_index]['sub'][$page]['hide_sidebar']) && $menu_settings[$main_index]['sub'][$page]['hide_sidebar'] == 'hide_sidebar') {
             $show_side_bar=false;
         }
 
-        elseif ($menu_settings[$main_index]['hide_sidebar'] == 'hide_sidebar') {
+        elseif (isset($menu_settings[$main_index]['hide_sidebar']) && $menu_settings[$main_index]['hide_sidebar'] == 'hide_sidebar') {
             $show_side_bar=false;
         }
         return $show_side_bar;
@@ -1195,7 +1202,7 @@ function wcap_debug_info()
 
         extract($args);
 
-        if ($args["status"] == "") {
+        if (isset($args["status"]) && $args["status"] == "") {
             unset($args["status"]);
         }
 

@@ -20,11 +20,13 @@ if (is_string($domains)) {
     $domains = [];
     $domains["totalresults"] = 0;
 }
-foreach ($domains["domains"]["domain"] as $row) {
-    if ($row["status"] == "Active") {
-        $active_domains++;
-    }
+if (isset($domains["domains"]["domain"])) {
+    foreach ($domains["domains"]["domain"] as $row) {
+        if ($row["status"] == "Active") {
+            $active_domains++;
+        }
 
+    }
 }
 
 $tickets = wcap_get_tickets("limitnum=9999&clientid=" . whcom_get_current_client_id());
@@ -46,11 +48,56 @@ if (isset($invoices["invoices"]["invoice"]) && is_array($invoices["invoices"]["i
     $invoices = 0;
 }
 
+
+//== Get service either it would show or not
+$service_settings = (get_option("wcapfield_hide_whmcs_menu_sections") == '') ? [] :
+    get_option("wcapfield_hide_whmcs_menu_sections");
+$hide_container_count = 0;
+$service_container = array();
+foreach ($service_settings as $service_key => $service_data) {
+    if ($service_key <= 40) {
+        if (isset($service_data['hide']) && $services_data['hide'] = 'hide') {
+            $service_container['index'][] = $service_key;
+            $service_container['hide'][$service_key] = true;
+            $hide_container_count++;
+        }
+    }
+}
+
+//== Get service container class
+switch ($hide_container_count) {
+    case '0' :
+        {
+            $service_container_class = 'whcom_col_sm_3';
+            break;
+        }
+    case '1' :
+        {
+            $service_container_class = 'whcom_col_sm_4';
+            break;
+        }
+    case '2' :
+        {
+            $service_container_class = 'whcom_col_sm_6';
+            break;
+        }
+    case '3' :
+        {
+            $service_container_class = 'whcom_col_sm_12';
+            break;
+        }
+    default :
+        {
+
+        }
+
+}
 ?>
 
 
 <div class="wcap_services ">
-    <?php echo wcap_verify_client(); echo wcap_verify_client_check(); ?>
+    <?php echo wcap_verify_client();
+    echo wcap_verify_client_check(); ?>
     <div class="whcom_row">
         <?php if ($show_sidebar) { ?>
             <div class="whcom_col_sm_3">
@@ -99,7 +146,7 @@ if (isset($invoices["invoices"]["invoice"]) && is_array($invoices["invoices"]["i
                              * Assign WCAP_IS_WCOP_ACTIVE function to $wcop_active variable
                              * Author: zain
                              */
-                            $wcop_active=wcap_is_wcop_active();
+                            $wcop_active = wcap_is_wcop_active();
                             //todo: move this sidebar in function
                             if ($wcop_active) {
                                 $class = "";
@@ -158,7 +205,8 @@ if (isset($invoices["invoices"]["invoice"]) && is_array($invoices["invoices"]["i
             <?php //main content ?>
             <div class="wcap_services ">
                 <div class="wcap_services_boxes whcom_clearfix whcom_row whcom_row_no_gap">
-                    <div class="whcom_col_sm_3">
+                    <!-- Services section -->
+                    <div class="<?php echo $service_container_class?>" style="<?php echo ($service_container['hide'][10] && $service_container['hide'][10] == true) ? 'display:none' : 'display:block' ?>">
                         <div class="wcap_service_box">
                             <i class="whcom_icon_cube wcap_service_icon"></i>
                             <div class="wcap_service_box_qty">
@@ -170,7 +218,8 @@ if (isset($invoices["invoices"]["invoice"]) && is_array($invoices["invoices"]["i
                             </div>
                         </div>
                     </div>
-                    <div class="whcom_col_sm_3">
+                    <!-- Domain section -->
+                    <div class="<?php echo $service_container_class?>" style="<?php echo ($service_container['hide'][20] && $service_container['hide'][20] == true) ? 'display:none' : 'display:block' ?>">
                         <div class="wcap_service_box">
                             <i class="whcom_icon_globe-1 wcap_service_icon"></i>
                             <div class="wcap_service_box_qty">
@@ -182,7 +231,8 @@ if (isset($invoices["invoices"]["invoice"]) && is_array($invoices["invoices"]["i
                             </div>
                         </div>
                     </div>
-                    <div class="whcom_col_sm_3">
+                    <!-- Tickets section -->
+                    <div class="<?php echo $service_container_class?>" style="<?php echo ($service_container['hide'][40] && $service_container['hide'][40] == true) ? 'display:none' : 'display:block' ?>">
                         <div class="wcap_service_box">
                             <I class="whcom_icon_chat wcap_service_icon"></I>
                             <div class="wcap_service_box_qty">
@@ -194,8 +244,8 @@ if (isset($invoices["invoices"]["invoice"]) && is_array($invoices["invoices"]["i
                             </div>
                         </div>
                     </div>
-
-                    <div class="whcom_col_sm_3">
+                    <!-- Invoice section -->
+                    <div class="<?php echo $service_container_class?>" style="<?php echo ($service_container['hide'][30] && $service_container['hide'][30] == true) ? 'display:none' : 'display:block' ?>">
                         <div class="wcap_service_box">
                             <I class="whcom_icon_credit-card wcap_service_icon"></I>
                             <div class="wcap_service_box_qty">
@@ -211,7 +261,8 @@ if (isset($invoices["invoices"]["invoice"]) && is_array($invoices["invoices"]["i
             </div>
             <div class="wcap_dashboard_panels">
                 <div class="whcom_row">
-                    <div class="whcom_col_sm_6">
+                    <!-- Active product/Services section -->
+                    <div class="<?php echo ($service_container['hide'][40] && $service_container['hide'][40] == true) ? 'whcom_col_sm_12' : 'whcom_col_sm_6' ?>">
                         <div class="whcom_panel whcom_panel_fancy_1 whcom_panel_success">
                             <div class="whcom_panel_header whcom_has_icon">
                                 <i class="whcom_icon_cube panel_header_icon"></i>
@@ -249,7 +300,8 @@ if (isset($invoices["invoices"]["invoice"]) && is_array($invoices["invoices"]["i
                             <div class="whcom_panel_footer"></div>
                         </div>
                     </div>
-                    <div class="whcom_col_sm_6">
+                    <!-- Recent Support ticket section -->
+                    <div class="whcom_col_sm_6" style="<?php echo ($service_container['hide'][40] && $service_container['hide'][40] == true) ? 'display:none' : 'display:block' ?>">
                         <div class="whcom_panel whcom_panel_fancy_1 whcom_panel_primary">
                             <div class="whcom_panel_header whcom_has_icon">
                                 <i class="whcom_icon_chat panel_header_icon"></i>

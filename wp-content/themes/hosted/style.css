@@ -189,6 +189,9 @@ input, textarea{
 section.vc_row{
   margin: 0;
 }
+section.vc_rows.three-two-row {
+    padding: 0 25%;
+}
 
 .post-password-form input[type=submit]{
   padding: 3px 20px;
@@ -1331,7 +1334,7 @@ section.bg-error{
   line-height: 30px;
 }
 .arrow-list li:before{
-  content: "\f18e";
+  content: "\f101";
   font-family: FontAwesome;
   margin-right: 5px;
   color: #259b24;
@@ -1685,6 +1688,9 @@ section.bg-error{
 .pricing-features p.top-20{
   margin-top: 20px;
 }
+.pricing-description{
+	min-height: 200px;
+}
 .price-btn{
   margin-top: 40px;
 }
@@ -1782,14 +1788,34 @@ section.bg-error{
   left: 50%;
   margin-left: -12px;
   top: 50%;
-  margin-top: -20px;
+  transform: translateY(-50%);
+  margin-top: 0;
   font-size: 26px;
 }
 .style1.whmpress_domain_search .submit_div:after{
   margin-top: -27px;
   margin-left: -5px;
 }
+.domain-search-wrapper{
+	display: flex;
+	flex-direction: row;
+}
+.tld-price{
+	background-color: #ed2024;
+	box-sizing: border-box;
+	height: 100%;
+	margin: 0px 10px;
+	color: #fff;
+}
+.tld-price h2{
+	line-height: 1.2em;
+}
 .hosted-domain-price{
+  float: left;
+  color: #fff;
+}
+.hosted-domain-price-desc{
+	font-weight: bold;
   float: left;
   color: #fff;
 }
@@ -1797,7 +1823,7 @@ section.bg-error{
   background: #259b24;
   margin-right: 1px;
   height: 93px;
-  padding: 20px 10px 10px 25px;
+  padding: 15px 22px 15px 22px;
 }
 .hosted-domain-price h2{
   color: #fff;
@@ -1977,7 +2003,8 @@ div.whmp_domain_search_ajax_results .whmp_search_ajax_buttons a{
 }
 
 .icon3{
-  text-align: center;
+  text-align: left;
+  padding: 10px 20px;
 }
 .icon3 .fea-img3{
   margin-bottom: 35px;
@@ -1986,9 +2013,20 @@ div.whmp_domain_search_ajax_results .whmp_search_ajax_buttons a{
   font-size: 16px;
   margin-bottom: 25px;
 }
-
+.dark-ground-text h2, .dark-ground-text h5, .dark-ground-text .fea-box-3 {
+	color: #fff;
+}
+.active-button{
+	background-color: #ed2024;
+}
+.active-button:hover{
+	background-color: #fd7274;
+}
 .vc_row.list-table{
   margin: 0 -55px 0 -5px;
+}
+h3.pricing-title.id-color {
+    min-height: 80px;
 }
 .pricing2{
   text-align: center;
@@ -2036,6 +2074,71 @@ div.whmp_domain_search_ajax_results .whmp_search_ajax_buttons a{
   font-size: 10px;
   padding: 2px 8px;
   border: 1px solid;
+}
+.expandable-description{
+	overflow: hidden;
+	height: 225px;
+	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+}
+.show-pricing-description{
+	height: auto;
+}
+.more-button{
+	font-weight: bold;
+	font-size: 0.8em;
+	width: 100%;
+	color: #adadad;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 15px;
+	cursor: pointer;
+}
+.fa-down-chevron:before{
+
+	content: "\f078";
+	font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	display: block;
+    align-content: center;
+	
+}
+.fa-up-chevron:before{
+
+	content: "\f077";
+	font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	display: block;
+    align-content: center;
+	
+}
+.hide-btn{
+	display: none;
+}
+.full-description{
+	overflow: hidden;
+	height: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+}
+.show-desc{
+	visibility: visible;
+	overflow: visible;
+	opacity: 1;
+	height: auto;
 }
 
 .style3.style2.whmpress_domain_search{
@@ -2295,6 +2398,9 @@ div.whmp_domain_search_ajax_results .whmp_search_ajax_buttons a{
   }
   .main-nav ul ul a{
     padding: 15px 0;
+	line-height: 1;
+	padding: 15px 20px;
+    width: 100%;
     line-height: 1;
   }
   .main-nav ul ul a:hover{
@@ -2401,6 +2507,7 @@ div.whmp_domain_search_ajax_results .whmp_search_ajax_buttons a{
   .header-page form{
     display: none;
   }
+  
 }
 
 @media (max-width: 600px){
@@ -2432,8 +2539,39 @@ div.whmp_domain_search_ajax_results .whmp_search_ajax_buttons a{
   .color-box{
     padding: 30px;
   }
+  .domain-search-wrapper{
+	flex-direction: column;
+}
+.hosted-domain-price .inner {
+	margin-right: 0;
+	margin-left: 0 !important;
+	height: 60px;
+	padding: 10px;
+}
   .hosted-domain-price{
-    width: 100%!important;
+	width: 100% !important;
+	margin-bottom: 15px;
+  }
+  .hosted-domain-price h2{
+	float: left;
+	
+  }
+  .hosted-domain-price-desc{
+	font-size: 24px;
+	font-weight: 400;
+	margin-left: 15px;
+  }
+  .style1.whmpress_domain_search_ajax form{
+	  padding: 0px !important;
+  }
+  .style1.whmpress_domain_search_ajax form input#search_box{
+	margin-bottom: 0px !important;
+  }
+  
+  .style1.whmpress_domain_search_ajax form button{
+	  width: 70px !important;
+	  top: 6px;
+    height: 40px;
   }
 }
 
@@ -2465,8 +2603,8 @@ ul.wpb_thumbnails-fluid>li{
   clear: both;
 }
 .wpb-js-composer div.vc_tta-color-grey.vc_tta-style-classic.vc_tta-tabs .vc_tta-panels .vc_tta-panel-body{
-  border-color: #e5e5e5;
-  border-radius: 0;
+  /* border-color: #e5e5e5;
+  border-radius: 0; */
   margin-top: 1px;
   margin-left: 1px;
 }
@@ -2569,10 +2707,12 @@ ul.wpb_thumbnails-fluid>li{
 }
 
 .wpb-js-composer div.vc_tta-color-grey.vc_tta-style-classic.vc_tta-tabs-position-top .vc_tta-panels .vc_tta-panel-body{
-  padding: 40px 50px 50px;
+  padding: 0;
   background: #fff;
 }
-
+.wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body{
+	border-color: #fff !important;
+}
 .wpb_row.vc_row-o-equal-height .vc_column_container {
   display: flex;
 }
@@ -2670,7 +2810,7 @@ body.page{
   font-family: 'Nunito', sans-serif;
   line-height: 1.6;
   color: #777;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   overflow-x: hidden;
 }
