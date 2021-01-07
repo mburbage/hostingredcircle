@@ -4,7 +4,7 @@
 
 <div class="wcop_sp_section_heading">
 	<i class="whcom_icon_thumbs-up-alt"></i>
-	<span><?php esc_html_e( "Review Order Details", "whcom" ) ?></span>
+	<span><?php esc_html_e( "Finalize Order", "whcom" ) ?></span>
 	<span class="whcom_icon_spinner-1 whcom_animate_spin wcop_sp_product_summary_spinner" style="display: none;"></span>
 </div>
 <div class="wcop_sp_section_content">

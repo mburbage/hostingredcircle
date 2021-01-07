@@ -87,5 +87,14 @@ else { ?>
     </div>-->
 <?php } ?>
 </div>
+<div class="wcop_sp_section_navi">
+    <div class="my-button-item">
+        <div class="wcop_sp_button">
+            <button type="button" name="prev" class="prev whcom_button_secondary" onclick="Gotoprevious('.sleek_billing_info_section')" style="float: left;"><i class="whcom_icon_angle-circled-left"></i> Previous</button>
+
+            <button type="button" name="next" class="next"  value="continue" onclick="Gotonext('.sleek_billing_info_section')" style="float:right;">Next <i class="whcom_icon_angle-circled-right"></i></button>
+        </div>
+    </div>
+</div>
 
 

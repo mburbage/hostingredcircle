@@ -196,7 +196,7 @@ Releasing domain first template
 - Make WCOP compatible with Elementor
 
 3.4-revision-4
-- Added Gator template of order page and much more changings by Abdul Waheed
+- Added elegant template of order page and much more changings by Abdul Waheed
 
 3.4-revision-5
 - Bug fixed if "/" occurs in helper response
@@ -204,7 +204,7 @@ Releasing domain first template
 3.5-revision-0
 - Resolve speed issues
 - get translated product name from WHMCS
-- Refine 08_gator template
+- Refine 08_elegant template
 - introduce new parameters in one page checkout
 - And Much more
 
@@ -225,3 +225,23 @@ Releasing domain first template
 
 3.5-revision-6
 - Little CSS changings
+
+3.5-revision-7
+- Little CSS changings in 04_ease
+
+3.5-revision-8
+- show free domain notice issue fixed when Free domain is set to None in WHMCS.
+- Lot of changing in one page checkout templates.
+
+3.6
+- Add new templates for single page checkout.
+- Review all one page checkout templates.
+- Fixed site health issue due to the plugin.
+
+3.6-revision-1
+- Move helper outside the package.
+- Session related issues fixed.
+
+3.7
+- Make Plugin compatible with PHP 7.4
+- Update spanish language translations.

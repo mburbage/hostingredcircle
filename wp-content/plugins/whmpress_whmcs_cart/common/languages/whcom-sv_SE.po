@@ -3002,7 +3002,7 @@ msgstr "Något gick fel, vänligen försök igen senare ..."
 #: common/assets/translations_wcop.php:89 
 #: common/shortcodes/order_process/02_product.php:141
 msgid "Additional Required Information"
-msgstr "Ytterligare Obligatorisk information"
+msgstr "Ytterligare Oblielegantisk information"
 
 #: common/includes/client.php:514 common/includes/client.php:725 
 #: common/includes/client.php:845 common/assets/translations.php:844

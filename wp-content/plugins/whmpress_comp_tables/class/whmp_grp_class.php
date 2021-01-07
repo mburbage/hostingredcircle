@@ -86,8 +86,8 @@ class WHMPress_Group_Class {
     // Register and enqueue a custom stylesheet in the front-end.
     function enqueue_styles_scripts() {
         // Enqueue Slick Carousel Plugin.
-        wp_enqueue_style( 'whmp_grp_slick', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css' );
-        wp_enqueue_script( 'whmp_grp_slick', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js', [ 'jquery' ] );
+        //wp_enqueue_style( 'whmp_grp_slick', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css' );
+        //wp_enqueue_script( 'whmp_grp_slick', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js', [ 'jquery' ] );
 
         // Enqueue jQuery UI on front-end
         wp_enqueue_style( 'whmp_grp_jQuery_UI_CSS', '//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css' );

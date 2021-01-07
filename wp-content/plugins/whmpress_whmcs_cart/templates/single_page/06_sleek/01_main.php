@@ -1,7 +1,4 @@
 <style>
-    .wcop_main.wcop_sp_main.wcop_sp_06_sleek {
-        background-color: transparent !important;
-    }
     .wcop_main.wcop_sp_main.wcop_sp_06_sleek .wcop-wight-li ul {
         display: table;
         table-layout: fixed;
@@ -15,15 +12,15 @@
         position: relative;
         display: table-cell;
         width: 2%;
-        padding: 0 10px 20px;
+        padding: 0 10px 36px;
         font-size: 17px;
         text-align: center;
         vertical-align: middle;
         counter-increment: step;
     }
     .wcop_main.wcop_sp_main.wcop_sp_06_sleek .wcop-wight-li {
-        background-color: #3f5167;
-        color: #a6afba;
+        background-color: #fff;
+        color: rgba(0,24,94,.4) ;
         text-align: center;
         padding: 40px 0;
     }
@@ -31,16 +28,17 @@
     .wcop_main.wcop_sp_main.wcop_sp_06_sleek .wcop-wight-li ul li:before {
         content: " ";
         position: absolute;
-        left: 50%;
-        bottom: -2px;
-        width: 100%;
         border-bottom: 4px solid #59697d;
+        left: 63%;
+        bottom: -2px;
+        width: 73%;
+        border-bottom: 1px solid rgba(0,24,94,.4);
     }
     .wcop_main.wcop_sp_main.wcop_sp_06_sleek .wcop-wight-li ul li:last-child:before{
         border: none;
     }
     .wcop_main.wcop_sp_main.wcop_sp_06_sleek .wcop-wight-li ul li.active:before {
-        border-color: #52d2f0;
+        border-color: #0050d7;
     }
     .wcop_main.wcop_sp_main.wcop_sp_06_sleek .wcop-wight-li ul li.current:before {
         border-color: #59697d;
@@ -53,30 +51,28 @@
         -ms-transform: translate(-50%, 50%);
         transform: translate(-50%, 50%);
         display: block;
-        width: 20px;
-        height: 20px;
+        width: 42px;
+        height: 42px;
         font-size: 14px;
-        line-height: 1;
+        line-height: 33px;
         padding: 3px;
         font-weight: 700;
         text-align: center;
         color: #3f5167;
-        background-color: #59697d;
         border-radius: 50%;
+        border: 1px solid rgba(0,24,94,.4);
+        background: transparent;
+        color: rgba(0,24,94,.4);
+        box-shadow: none;
     }
-    .wcop_main.wcop_sp_main.wcop_sp_06_sleek .wcop-wight-li ul.active:after {
+    .wcop_main.wcop_sp_main.wcop_sp_06_sleek .wcop-wight-li ul li.active:after {
         color: #3f5167;
         background-color: #52d2f0;
     }
     .wcop_main.wcop_sp_main.wcop_sp_06_sleek .wcop-wight-li ul li.current:after {
-        color: #3f5167;
-        background-color: #fff !important;
-        box-shadow: 0 0 0 4px rgba(82, 210, 240, 0.5);
-    }
-    .wcop_main.wcop_sp_main.wcop_sp_06_sleek .wcop-wight-li ul li.current:after {
-        color: #3f5167;
-        background-color: #fff;
-        box-shadow: 0 0 0 4px rgba(82, 210, 240, 0.5);
+        color: #0050d7;
+        background-color: transparent;
+        border: 2px solid #0050d7;
     }
     .wcop_main.wcop_sp_main.wcop_sp_06_sleek .wcop-wight-li ul li.active:not(.current):after {
         display: inline-block;
@@ -86,19 +82,18 @@
         -moz-osx-font-smoothing: grayscale;
         content: "\f00c";
         font-size: 14px;
-        line-height: 16px;
+        line-height: 33px;
     }
     .wcop_main.wcop_sp_main.wcop_sp_06_sleek .wcop-wight-li ul li.active.current{
-        color: #fff;
-        fo
+        color: #0050d7;
     }
     .wcop_main.wcop_sp_main.wcop_sp_06_sleek .wcop-wight-li ul li.active{
-        color: #52d2f0;
+        color: #0050d7;
     }
 
     .wcop_main.wcop_sp_main.wcop_sp_06_sleek .wcop-wight-li ul li.active:after {
-        color: #3f5167;
-        background-color: #52d2f0;
+        color: #0050d7;
+        border: 2px solid #0050d7;
     }
     .wcop_main.wcop_sp_main.wcop_sp_06_sleek.whcom_bordered_sides {
         border: none;
@@ -288,11 +283,13 @@
     }
 
     #wcop_sp_main.whcom_main.wcop_sp_06_sleek .wcop_sp_section_heading {
-        /*color: #0068b1;*/
+        color: #00185e;
         border-bottom: none;
-        padding: 15px 15px;
+        padding: 15px 0px;
         margin-bottom: 0px;
         padding-top: 0;
+        font-weight: 400;
+        font-size: 36px;
     }
     #wcop_sp_main.whcom_main.wcop_sp_06_sleek div#wcop_sp_domain_config .wcop_sp_section_heading{
         background-color: #e9ebe7 !important;
@@ -322,7 +319,7 @@
         /*background: #b0ca67 ;*/
     }
     #wcop_sp_main.whcom_main.wcop_sp_06_sleek div#wcop_sp_choose_a_domain .whcom_tabs_container .whcom_button{
-        height: 67px;
+        height: 60px;
         line-height: 18px !important;
         text-transform: uppercase;
         font-weight: 600;
@@ -361,7 +358,7 @@
     }
     #wcop_sp_main.whcom_main.wcop_sp_06_sleek div#wcop_review_checkout .whcom_button_block {
         /*background-color: #0068b1;*/
-        height: 67px;
+        height: 60px;
         line-height: 18px !important;
     }
     /*#wcop_sp_main.whcom_main.wcop_sp_06_sleek .whcom_button_block:hover{*/
@@ -371,13 +368,15 @@
     #wcop_sp_main.whcom_main.wcop_sp_06_sleek button.whcom_button.whcom_button_big{
         /*background-color: #0068b1;*/
         /*border: none;*/
-        font-size: 14px !important;
+        font-size: 20px !important;
         background-color: #59d2ef;
         padding: .8rem 2rem !important;
         border: none;
         font-weight: 700;
         color: #113f6d;
-        height: 47px;
+        height: 70px;
+        padding: 15px 59px !important;
+        margin-top: 20px;
     }
     #wcop_sp_main.whcom_main.wcop_sp_06_sleek button.whcom_button.whcom_button_big:hover{
         /*background-color: #22527b;*/
@@ -390,6 +389,7 @@
     #wcop_sp_main.whcom_main.wcop_sp_06_sleek .whcom_tabs_container.whcom_tabs_fancy_2 ul {
         font-size: 0;
         border: none;
+        margin-bottom: 31px;
     }
     .whcom_main.wcop_sp_06_sleek .whcom_tabs_container.whcom_tabs_fancy_2 ul.whcom_tab_links li{
         background: #c6eff9;
@@ -400,10 +400,10 @@
         padding: 12px 49px;
         padding-top: 53px;
         border: 1px solid #59d2ef;
-        font-size: 13px;
         border-radius: 8px;
         font-weight: 700;
         font-size: 18px;
+        overflow: hidden;
     }
     #wcop_sp_main.whcom_main.wcop_sp_06_sleek div#wcop_sp_choose_a_domain .whcom_tabs_container.whcom_tabs_fancy_2 ul.whcom_tab_links li::before{
         content: "\f0ec";
@@ -452,7 +452,7 @@
         content: "\f080";
     }
     div#wcop_choose_a_hosting .prev {
-        display: none;
+        /*display: none;*/
     }
     div#wcop_choose_a_hosting .prev.show-button{
         display: block;
@@ -498,7 +498,7 @@
     }
 
     label.whcom_label_product.whcom_radio {
-        border: 2px solid #59d2ef;
+        border: 1px solid #59d2ef;
         background: #fff;
         display: block;
         position: relative;
@@ -516,12 +516,12 @@
 
     }
     label.whcom_label_product.whcom_radio.whcom_checked {
-        border: 2px solid #00a2bf;
+        border: 1px solid #0050d7;
         background: #e0f6fd;
         box-shadow: 0 4px 6px 1px #dfeaf8;
     }
     label.whcom_label_product.whcom_radio.whcom_checked:hover {
-        border: 2px solid #59d2ef;
+        border: 1px solid #59d2ef;
         background: #e0f6fd;
     }
     label.whcom_label_product.whcom_radio:before {
@@ -667,7 +667,7 @@
     #wcop_sp_main.wcop_sp_main .wcop_sp_check_product_domain .whcom_form_field > input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]),
     #wcop_sp_main.wcop_sp_main .wcop_sp_check_product_domain .whcom_form_field select,
     #wcop_sp_main.wcop_sp_main div#wcop_review_checkout .whcom_form_field select{
-        height: 67px !important;
+        height: 60px !important;
         background: #fff;
         border: .2rem solid #e1e4df;
     }
@@ -688,7 +688,7 @@
         margin-left: 10px;
     }
     .wcop_main.wcop_sp_main.wcop_sp_06_sleek .my-button-item button#skip_prev,
-    .wcop_main.wcop_sp_main.wcop_sp_06_sleek .my-button-item button.prev.whcom_button_secondary.show-button {
+    .wcop_main.wcop_sp_main.wcop_sp_06_sleek .my-button-item button.prev {
         padding: .7rem 2rem;
         background-color: #fff;
         border: 1px solid #bdbec0;
@@ -697,15 +697,17 @@
         padding-left: 1rem;
     }
     .wcop_main.wcop_sp_main.wcop_sp_06_sleek .my-button-item button#skip_prev i,
-    .wcop_main.wcop_sp_main.wcop_sp_06_sleek .my-button-item button.prev.whcom_button_secondary.show-button i{
+    .wcop_main.wcop_sp_main.wcop_sp_06_sleek .my-button-item button.prev i{
         margin-right: 10px;
     }
+    .wcop_main.wcop_sp_main.wcop_sp_06_sleek .whcom_prod_collapse,
     .wcop_main.wcop_sp_main.wcop_sp_06_sleek .open{
      cursor: pointer;
+        font-size: 18px;
+        margin-bottom: 18px;
+        font-weight: 700;
     }
-    .wcop_main.wcop_sp_main.wcop_sp_06_sleek .whcom_prod_collapse{
-        cursor: pointer;
-    }
+
 
     div#wcop_choose_a_hosting .wcop_sp_section_content {
         padding: 0 !important;
@@ -779,6 +781,46 @@
         border: 1px solid #cccccc;
         padding: 10px 10px 0 10px !important;
         max-width: 940px !important;
+    }
+    #wcop_sp_main.whcom_main.wcop_sp_06_sleek .wcop_sp_section_content {
+        max-width: 1100px;
+        margin: 0 auto 30px;
+        padding: 5% 5% !important;
+        overflow: hidden;
+        box-shadow: 0 0 0.2em rgba(0,14,156,.4);
+        background: #fff;
+        border-radius: 4px;
+    }
+
+    #wcop_sp_main.whcom_main.wcop_sp_06_sleek .whcom_bg_white{
+        background-color: transparent !important;
+    }
+    #wcop_sp_main.whcom_main.wcop_sp_06_sleek .wcop_sp_section_content.wcop_sp_section_navi {
+        background: transparent;
+        box-shadow: none;
+        padding: 10px;
+    }
+
+    #wcop_sp_main.wcop_sp_main .whcom_form_field > input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]), #wcop_sp_main.wcop_sp_main .whcom_form_field select, #wcop_sp_main.wcop_sp_main .whcom_form_field textarea, #wcop_sp_main.wcop_sp_main .whcom_form_field .whcom_plus, #wcop_sp_main.wcop_sp_main .whcom_form_field .whcom_minus {
+        border-radius: 4px !important;
+    }
+    #wcop_sp_main.wcop_sp_main .whcom_form_field .whcom_plus,
+    #wcop_sp_main.wcop_sp_main .whcom_form_field .whcom_minus{
+        background: #113f6d;
+        color: #fff;
+    }
+    #wcop_sp_main.whcom_main.wcop_sp_06_sleek .wcop_sp_section_heading.whcom_bg_primary span#edit_domain {
+        border: 2px solid #113f6d;
+        font-weight: 700;
+        color: #113f6d;
+        font-size: 18px;
+        padding: 7px 23px;
+    }
+
+    #wcop_sp_main.whcom_main.wcop_sp_06_sleek .whcom_tabs_container .whcom_button {
+        background: #59d2ef;
+        border: 1px solid #59d2ef;
+        color: #113f6d;
     }
     @media (max-width: 1150px){
         .wcop_main.wcop_sp_main.wcop_sp_06_sleek .wcop-wight-li li span{
@@ -932,7 +974,7 @@ $_SESSION['prod_desc']       = $show_prod_desc;
         <?php include wcop_get_template_directory() . '/templates/single_page/01_default/01_top_nav.php'?>
         <?php include wcop_get_template_directory() . '/templates/single_page/01_default/02_product_dropdowns.php'?>
         <?php if ( strtolower( $atts['hide_domain'] ) != 'yes' ) { ?>
-            <div id="wcop_sp_choose_a_domain" class="wcop_sp_section wcop_sp_section_domain whcom_margin_bottom_0 whcom_bg_white whcom_padding_bottom_30">
+            <div id="wcop_sp_choose_a_domain" class="wcop_sp_section wcop_sp_section_domain whcom_margin_bottom_0 whcom_bg_white whcom_padding_bottom_30 sleek_domain_section">
                 <?php include_once( wcop_get_template_directory() . '/templates/single_page/06_sleek/02_domain.php' ); ?>
             </div>
         <?php } ?>
@@ -945,7 +987,7 @@ $_SESSION['prod_desc']       = $show_prod_desc;
                 <input type="hidden" name="default_billingcycle" value="<?php echo $atts['billingcycle'];?>">
                 <div class="mydivs">
                     <?php if ( strtolower( $atts['hide_domain'] ) != 'yes' ) { ?>
-                        <div id="wcop_sp_domain_config" class="wcop_sp_section wcop_sp_section_domain" style="display: none">
+                        <div id="wcop_sp_domain_config" class="wcop_sp_section wcop_sp_section_domain sleek_domain_config_section" style="display: none">
                             <div class="wcop_sp_section_heading whcom_bg_primary">
                                 <i class="whcom_icon_www"></i>
                                 <span><?php esc_html_e( "Domain Configuration", "whcom" ) ?></span>
@@ -953,20 +995,27 @@ $_SESSION['prod_desc']       = $show_prod_desc;
                             </div>
                             <div class="wcop_sp_section_content">
                             </div>
+                            <div class="wcop_sp_section_navi">
+                                <div class="my-button-item">
+                                    <div class="wcop_sp_button">
+                                        <button type="button" name="next" class="next"  disabled="disabled" value="continue" onclick="Gotonext('.sleek_domain_config_section')" style="float:right;">Next <i class="whcom_icon_angle-circled-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     <?php } ?>
                     <?php if ( strtolower( $atts['hide_product'] ) != 'yes' ) { ?>
                         <div id="wcop_choose_a_hosting"
-                             class="wcop_sp_section <?php echo (!empty($atts['hide_selected_product']) && strtolower($atts['hide_selected_product']) == 'yes' && !empty($atts['pid'])) ? 'hidden' : '' ?>">
+                             class="sleek_product_section wcop_sp_section <?php echo (!empty($atts['hide_selected_product']) && strtolower($atts['hide_selected_product']) == 'yes' && !empty($atts['pid'])) ? 'hidden' : '' ?>">
                             <?php include_once( wcop_get_template_directory() . '/templates/single_page/06_sleek/03_product.php' ); ?>
                         </div>
                     <?php } ?>
                     <?php if ( strtolower( $atts['hide_additional_services'] ) != 'yes' ) { ?>
-                        <div id="wcop_additional_services" class="wcop_sp_section">
+                        <div id="wcop_additional_services" class="wcop_sp_section sleek_additional_services_section">
                             <?php include_once( wcop_get_template_directory() . '/templates/single_page/06_sleek/04_options.php' ); ?>
                         </div>
                     <?php } ?>
-                    <div id="wcop_billing_info" class="wcop_sp_section">
+                    <div id="wcop_billing_info" class="wcop_sp_section sleek_billing_info_section">
                         <?php if ($atts['post_load_login_form'] == 'yes') { ?>
                             <div class="wcop_billing_info_predecessor">
                                 <div class="wcop_sp_section_heading">
@@ -998,54 +1047,14 @@ $_SESSION['prod_desc']       = $show_prod_desc;
                         <?php include_once( wcop_get_template_directory() . '/templates/single_page/06_sleek/05_client.php' ); ?>
                     </div>
 
-                    <div id="wcop_review_checkout" class="wcop_sp_section">
+                    <div id="wcop_review_checkout" class="wcop_sp_section sleek_checkout_section">
                         <?php include_once( wcop_get_template_directory() . '/templates/single_page/06_sleek/07_checkout.php' ); ?>
                     </div>
 
                 </div>
             </form>
         </div>
-        <div class="wcop_sp_section_content" >
-            <div class="my-button-item">
-                <?php if (strtolower($atts['hide_domain']) != 'yes') { ?>
-                <div class="wcop_sp_button">
-                    <?php if ( strtolower( $atts['hide_product'] ) != 'yes' ) { ?>
-                    <button name="skip" id="skip" class="skip whcom_button_secondary" value="skip" onclick="skip()" style="float: left;">Skip <i class="whcom_icon_angle-circled-right"></i></button>
-                    <?php } ?>
-                    <button name="next" class="next"  disabled="disabled" value="continue" onclick="Gotonext()" style="float:right;">Next <i class="whcom_icon_angle-circled-right"></i></button>
-                </div>
-                <?php } ?>
-                <div class="wcop_sp_button">
-                    <?php if (strtolower($atts['hide_domain']) != 'yes') { ?>
-                    <button name="skip_prev" id="skip_prev" class="skip_prev whcom_button_secondary" value="skip_prev" onclick="skip_prev()" style="float: left;"><i class="whcom_icon_angle-circled-left"></i> Previous</button>
-                    <?php } ?>
-                    <button name="next" class="next"   value="continue" onclick="Gotonext()" style="float:right;">Next <i class="whcom_icon_angle-circled-right"></i></button>
-                </div>
-                <?php if (strtolower($atts['hide_product']) != 'yes') { ?>
-                <div class="wcop_sp_button">
-                    <button name="prev" class="prev whcom_button_secondary" onclick="Gotoprevious()" style="float: left;"><i class="whcom_icon_angle-circled-left"></i> Previous</button>
-                    <button name="next" class="next"   value="continue" onclick="Gotonext()" style="float:right;">Next <i class="whcom_icon_angle-circled-right"></i></button>
-                </div>
-                <?php } ?>
-                <?php if (strtolower($atts['hide_additional_services']) != 'yes') { ?>
-                <div class="wcop_sp_button">
-                    <div class="wcop__inner__billing__info" <?php echo $atts['post_load_login_form'] == 'yes' ? 'style="display: none"' : 'style="display: block"'  ?>>
-                    <button name="prev" class="prev whcom_button_secondary" onclick="Gotoprevious()" style="float: left;"><i class="whcom_icon_angle-circled-left"></i> Previous</button>
-                    <button name="next" class="next" value="continue" onclick="Gotonext()" style="float:right;">Next <i class="whcom_icon_angle-circled-right"></i></button>
-                    </div>
-                </div>
 
-                <div class="wcop_sp_button">
-                    <button name="prev" class="prev whcom_button_secondary" onclick="Gotoprevious()" style="float: left;"><i class="whcom_icon_angle-circled-left"></i> Previous</button>
-                </div>
-                <?php } ?>
-            </div>
-            <!--<button name="prev" class="prev" onclick="Gotoprevious()" style="color: #fff; background-color: #929FAC; border: none; float: left">Back</button>
-            <button name="next" disabled="disabled" class="next" value="continue" onclick="Gotonext()" style="float:right; background-color: #0068b1; border: none;">Continue</button>-->
-<!--            <button name="skip" class="skip" value="skip" onclick="skip()" style="color: #fff; background-color: #929FAC; border: none; float: left">Skip</button>-->
-<!--            <button name="skip_prev" class="skip_prev" value="skip_prev" onclick="skip_prev()" style="color: #fff; background-color: #929FAC; border: none; float: left">Back</button>-->
-            <div style="clear: both"></div>
-        </div>
     </div>
 </div>
 
@@ -1054,179 +1063,63 @@ $_SESSION['prod_desc']       = $show_prod_desc;
 
 <script>
 
-
-
-    jQuery(document).ready(function() {
+    jQuery(document).ready(function () {
         var divs = jQuery('.mydivs > .wcop_sp_section');
-        var now = 0; // currently shown div
-        divs.hide().first().show(); // hide all divs except first
-
+        divs.hide().first().show();
         jQuery('.step-0').addClass('active current');
-
-        jQuery("button[name=skip]").click(function() {
-            divs.eq(now).hide();
-            now = (now + 1 < divs.length) ? now + 1 : 0;
-            divs.eq(now).show(); // show next
-        });
-        jQuery("button[name=next]").click(function() {
-            divs.eq(now).hide();
-            now = (now + 1 < divs.length) ? now + 1 : 0;
-            divs.eq(now).show(); // show next
-        });
-        jQuery("button[name=prev]").click(function() {
-            divs.eq(now).hide();
-            now = (now > 0) ? now - 1 : divs.length - 1;
-            divs.eq(now).show(); // show previous
-        });
-        jQuery("button[name=skip_prev]").click(function() {
-            divs.eq(now).hide();
-            now = (now > 0) ? now - 1 : divs.length - 1;
-            divs.eq(now).show(); // show previous
-        });
     });
 
-    jQuery(document).ready(function() {
-        var divs = jQuery('.my-button-item > .wcop_sp_button');
-        var now = 0; // currently shown div
-        divs.hide().first().show(); // hide all divs except first
-        jQuery("button[name=skip]").click(function() {
-            divs.eq(now).hide();
-            now = (now + 1 < divs.length) ? now + 1 : 0;
-            divs.eq(now).show(); // show next
-        });
-        jQuery("button[name=next]").click(function() {
-            divs.eq(now).hide();
-            now = (now + 1 < divs.length) ? now + 1 : 0;
-            divs.eq(now).show(); // show next
-        });
-        jQuery("button[name=prev]").click(function() {
-            divs.eq(now).hide();
-            now = (now > 0) ? now - 1 : divs.length - 1;
-            divs.eq(now).show(); // show previous
-        });
-        jQuery("button[name=skip_prev]").click(function() {
-            divs.eq(now).hide();
-            now = (now > 0) ? now - 1 : divs.length - 1;
-            divs.eq(now).show(); // show previous
-        });
-    });
+    sleek_step_count = 0;
+    function Gotonext(current_class_name){
+        jQuery('.sleek_domain_section').css('display', 'none');
+        jQuery('.sleek_domain_config_section').css('display', 'none');
+        jQuery('.sleek_product_section').css('display', 'none');
+        jQuery('.sleek_additional_services_section').css('display', 'none');
+        jQuery('.sleek_checkout_section').css('display', 'none');
+        jQuery('.sleek_billing_info_section').css('display', 'none');
 
+        jQuery(current_class_name).next().css('display', 'block');
 
-    jQuery(document).ready(function() {
-        var divs = jQuery('.nav_div > .wcop_sp_div');
-        var now = 0; // currently shown div
-        divs.hide().first().show(); // hide all divs except first
-        jQuery("button[name=skip]").click(function() {
-            divs.eq(now).hide();
-            now = (now + 1 < divs.length) ? now + 1 : 0;
-            divs.eq(now).show(); // show next
-        });
-        jQuery("button[name=next]").click(function() {
-            divs.eq(now).hide();
-            now = (now + 1 < divs.length) ? now + 1 : 0;
-            divs.eq(now).show(); // show next
-        });
-        jQuery("button[name=prev]").click(function() {
-            divs.eq(now).hide();
-            now = (now > 0) ? now - 1 : divs.length - 1;
-            divs.eq(now).show(); // show previous
-        });
-        jQuery("button[name=skip_prev]").click(function() {
-            divs.eq(now).hide();
-            now = (now > 0) ? now - 1 : divs.length - 1;
-            divs.eq(now).show(); // show previous
-        });
+        var advanced_sleek_count = sleek_step_count+1;
+        if (jQuery('.wcop-wight-li li').hasClass('step-' + sleek_step_count + ' active current')) {
+            jQuery(".wcop-wight-li li.step-" + sleek_step_count).removeClass(' current');
+            jQuery(".wcop-wight-li li.step-" + advanced_sleek_count).addClass(' active current');
+        }
+        sleek_step_count++;
+    }
 
-    });
-    ////    jQuery( document ).ready(function() {
-    ////        jQuery("button").click(function (e) {
-    ////            jQuery(".wcop-wight-li li.step-1").addClass("active current");
-    ////            jQuery(".wcop-wight-li li.active").removeClass("current");
-    ////            e.stopPropagation();
-    ////        });
-    //
-    //    });
+    function Gotoprevious(current_class_name) {
+        jQuery('.sleek_domain_section').css('display', 'none');
+        jQuery('.sleek_domain_config_section').css('display', 'none');
+        jQuery('.sleek_product_section').css('display', 'none');
+        jQuery('.sleek_additional_services_section').css('display', 'none');
+        jQuery('.sleek_checkout_section').css('display', 'none');
+        jQuery('.sleek_billing_info_section').css('display', 'none');
 
+        jQuery(current_class_name).prev().css('display', 'block');
 
-    var count=0;
+        var advanced_sleek_prev_count = sleek_step_count-1;
+        if (jQuery('.wcop-wight-li li').hasClass('step-' + sleek_step_count + ' active')) {
+            jQuery(".wcop-wight-li li.step-" + sleek_step_count).removeClass(' active current');
+            jQuery(".wcop-wight-li li.step-" + advanced_sleek_prev_count).addClass(' active current');
+        }
+        sleek_step_count--;
+    }
+
     function skip(){
-        jQuery("#wcop_sp_choose_a_domain").css("display","none");
-        jQuery("#wcop_sp_domain_config").css("display","none");
-        var divs = jQuery('.mydivs > .wcop_sp_section');
-        var now = 0; // currently shown div
+        jQuery('.sleek_domain_section').css('display', 'none');
+        jQuery('.sleek_product_section').css('display', 'block');
         jQuery(".wcop-wight-li li.step-" + 0).removeClass(' current');
         jQuery(".wcop-wight-li li.step-" + 1).addClass(' active current');
-        /*divs.first().hide(); // hide all divs except first
-        divs.eq("1").show();*/
-       /* jQuery('.next').removeAttr("disabled");*/
-//        jQuery('.skip_prev').show();
-//        jQuery(".skip").hide();
-        count++;
-
-    }
-    function skip_prev(){
-        jQuery("#wcop_sp_choose_a_domain").css("display","block");
-        jQuery("#wcop_sp_domain_config").css("display","block");
-        if (jQuery('.wcop-wight-li li').hasClass('step-' + 1 + ' active')) {
-            jQuery(".wcop-wight-li li.step-" + 1).removeClass(' active current');
-            jQuery(".wcop-wight-li li.step-" + 0).addClass(' active current');
-        }
-        var divs = jQuery('.mydivs > .wcop_sp_section');
-        var now = 0;
-        /*divs.first().show(); // hide all divs except first
-        divs.eq("1").hide();*/
-//        jQuery(".skip_prev").hide();
-        count=0;
+        sleek_step_count++;
     }
 
-    function Gotonext()
-    {
-        var advanced_count = count+1;
-        if (jQuery('.wcop-wight-li li').hasClass('step-' + count + ' active current')) {
-            jQuery(".wcop-wight-li li.step-" + count).removeClass(' current');
-            jQuery(".wcop-wight-li li.step-" + advanced_count).addClass(' active current');
-        }
-//        var element = document.getElementsByClassName("prev");
-//        element.classList.add("active");
-        jQuery(".prev").addClass('show-button');
-//        jQuery(".skip").hide();
-//        jQuery(".skip_prev").hide();
-        count++;
-    }
-    function Gotoprevious()
-    {
-        var advanced_prev_count = count-1;
-        if (jQuery('.wcop-wight-li li').hasClass('step-' + count + ' active')) {
-            jQuery(".wcop-wight-li li.step-" + count).removeClass(' active current');
-            jQuery(".wcop-wight-li li.step-" + advanced_prev_count).addClass(' active current');
-        }
-        count--;
-    }
-
-
-    //    jQuery(".whcom_button").click(function(event){
-    //        event.preventDefault();
-    //        jQuery('button').removeAttr("disabled")
-    //    });
-
-    //jQuery('.next').prop("disabled", true);
-    jQuery("#require_Domain_search").click (function () {
+    jQuery(document).on('submit', '.wcop_sp_attach_product_domain', function (e) {
         var domain_name_text = document.getElementById("domain");
         if ((domain_name_text.value) !== '') {
             jQuery('.next').removeAttr("disabled");
-            //jQuery('.next').text('Continue')
         }
     });
-    /*var domain_name_text_simple_03 = document.getElementById("domain");
-    var domain_name = document.getElementById("domain_search_div");
-    if ((domain_name_text_simple_03.value) === '') {
-        //jQuery(".next" ).button( "option", "label", "Skip" );
-        jQuery('.next').text('Skip');
-        jQuery(".next").click (function () {
-            jQuery('.wcop_sp_choose_a_domain').hide();
-        });
-    }*/
-
 
     jQuery("#require_Domain_transfer").click (function () {
         var domain_name_text = document.getElementById("domain_transfer");
@@ -1242,13 +1135,7 @@ $_SESSION['prod_desc']       = $show_prod_desc;
         }
     });
 
-
-
-
     jQuery(document).ready(function() {
-        jQuery('.whcom_label_product.whcom_radio').click(function(){
-            jQuery('.whcom_label_product.whcom_radio').addClass('selected');
-        });
         jQuery('.open').click(function(){
             jQuery('.whcom_label_product.whcom_radio').removeClass('selected');
             jQuery(this).css("display","none");
@@ -1260,7 +1147,6 @@ $_SESSION['prod_desc']       = $show_prod_desc;
             jQuery('.open').css("display","block")
         });
     });
-
 
     jQuery(document).ready(function() {
         jQuery('#login-tab').click(function(){

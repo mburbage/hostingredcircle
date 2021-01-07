@@ -19,8 +19,7 @@
  * search_label = Set label for search
  * search_placeholder = Set placeholder for search box
  * show_disabled = Show disabled domains yes or no.. (Disabled in WHMCS)
- */
-
+ */ 
 
 if (!isset ($atts)){$atts=[];}
 

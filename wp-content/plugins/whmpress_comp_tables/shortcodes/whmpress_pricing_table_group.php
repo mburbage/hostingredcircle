@@ -126,6 +126,8 @@ if ( is_file( $html_template ) ) {
 	$group_saved=$group;
 
 	foreach ( $group["plans"] as &$plan ) {
+
+		
 		$currency='';
 		if (isset ($group["currency"])) $currency=$group["currency"];
 
@@ -151,7 +153,30 @@ if ( is_file( $html_template ) ) {
 		$plan["suffix"]        = $group["suffix"];
 		$plan["duration"]      = $price_tmp["duration"];
 		$plan["billingcycle"]  = $group["billingcycle"];
+		
+		//Get plan promotion and add to smarty array
 
+		$promotions = whcom_get_promotion();
+
+		foreach ( $promotions as $promo ) {
+
+			//$plan["promotions"] = $plan["product_id"] . ' - ' . $promo["appliesto"];
+
+			if ( in_array( $plan['product_id'], explode( ',', $promo['appliesto'] ), true ) ) {
+				$months = array(
+					'monthly' => 1,
+					'quarterly' => 3,
+					'semi-annually' => 6,
+					'annually' => 12,
+					'biennially' => 24,
+					'triennially' => 36,
+				);
+				$plan['promotions'] = $promo;
+				$plan['promotions-months'] = $months;
+			}
+		}
+
+		$plan['product-details'] = whcom_get_product_details( $plan['product_id'] );
 
 		$plan["all_durations"] = AllPrices($group, $plan["product_id"], $currency, [$group["billingcycle"], $group["billingcycle2"]] );
 		//$group['billingcycle'] = ltrim($plan["duration"]) == 'OneTime' ? "" : $group['billingcycle'];

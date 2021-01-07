@@ -44,3 +44,13 @@
 <!--	<div class="wcop_sp_order_summary">-->
 <!--	</div>-->
 </div>
+<div class="wcop_sp_button">
+    <button type="button" name="gotoprev" id="gotoprev" class="prev whcom_button_secondary" value="Previous"
+            onclick="Gotoprev('.bold_checkout_section')">
+        ❮ Previous
+    </button>
+</div>
+    <div class="whcom_form_field whcom_text_center">
+        <button type="submit"
+                class="whcom_button whcom_button_big"><?php esc_html_e("Checkout Now!", "whcom") ?></button>
+    </div>

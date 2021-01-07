@@ -66,7 +66,7 @@ if (!function_exists('wcop_sp_process')) {
                                 if ($response['status'] == 'OK') {
                                     ob_start() ?>
                                     <div class="whcom_text_center whcom_text_success whcom_text_2x">
-                                        <?php if ($_POST['wcop_sp_current_template'] == '08_gator') {
+                                        <?php if ($_POST['wcop_sp_current_template'] == '08_elegant') {
                                             esc_html_e('Yes!', "whcom");
                                         } else {
                                             esc_html_e('Congratulations!', "whcom");
@@ -75,7 +75,7 @@ if (!function_exists('wcop_sp_process')) {
                                     </div>
                                     <div class="whcom_text_center whcom_margin_bottom_15">
                                         <?php esc_html_e('Continue to register this domain for', "whcom") ?>
-                                        <?php if ($is_free_domain_attached == 'yes' || ($_POST['wcop_sp_current_template'] == '08_gator' && $free_domain == 'true')) {
+                                        <?php if ($is_free_domain_attached == 'yes' || ($_POST['wcop_sp_current_template'] == '08_elegant' && $free_domain == 'true')) {
                                             esc_html_e('Free', "whcom");
                                         } else { ?>
                                             <?php echo $tld_price; ?>
@@ -101,7 +101,7 @@ if (!function_exists('wcop_sp_process')) {
                                     <div class="whcom_text_center whcom_margin_bottom_15 whcom_text_danger whcom_text_2x">
                                         <strong><?php echo $domain_name ?><?php echo $domain_ext ?></strong> <?php esc_html_e('is unavailable', "whcom") ?>
                                     </div>
-                                    <?php if ($_POST['wcop_sp_current_template'] == '08_gator') { ?>
+                                    <?php if ($_POST['wcop_sp_current_template'] == '08_elegant') { ?>
                                         <div class="whcom_text_center">
                                             <button class="whcom_button whcom_button_danger wcop_sp_reset_domain_form">
                                                 <strong><?php esc_html_e('Search Again', "whcom") ?></strong>
@@ -567,7 +567,7 @@ if (!function_exists('wcop_sp_process')) {
                         $response['file_path_before'] = $file;
                         if (!is_file($file)) {
                             $response['template_not_found'] = 'ERROR';
-                            $file = wcop_get_template_directory() . '/templates/single_page/08_gator/05_client.php';;
+                            $file = wcop_get_template_directory() . '/templates/single_page/08_elegant/05_client.php';;
                         }
                         require $file;
                         $response['file_path'] = $file;
@@ -591,7 +591,7 @@ if (!function_exists('wcop_sp_process')) {
                     $response['file_path_before'] = $file;
                     if (!is_file($file)) {
                         $response['template_not_found'] = 'ERROR';
-                        $file = wcop_get_template_directory() . '/templates/single_page/08_gator/05_client.php';;
+                        $file = wcop_get_template_directory() . '/templates/single_page/08_elegant/05_client.php';;
                     }
                     require $file;
                     $response['file_path'] = $file;

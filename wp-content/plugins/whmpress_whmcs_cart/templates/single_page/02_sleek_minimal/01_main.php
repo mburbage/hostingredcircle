@@ -466,7 +466,7 @@
     }
 
     div#wcop_choose_a_hosting .prev {
-        display: none;
+        /*display: none;*/
     }
 
     div#wcop_choose_a_hosting .prev.show-button {
@@ -518,6 +518,13 @@
         padding: 10px 10px 0 10px !important;
         max-width: 940px !important;
     }
+
+    .wcop_main.wcop_sp_main.wcop_sp_02_sleek_minimal div#wcop_billing_info .whcom_form_field.whcom_text_center {
+        position: absolute;
+        right: 73px;
+        bottom: 31px;
+    }
+
     @media (max-width: 1150px) {
         .wcop_main.wcop_sp_main.wcop_sp_02_sleek_minimal .wcop-wight-li li span {
             display: none;
@@ -618,7 +625,7 @@ $_SESSION['prod_desc'] = $show_prod_desc;
         <?php include wcop_get_template_directory() . '/templates/single_page/01_default/02_product_dropdowns.php' ?>
         <?php if (strtolower($atts['hide_domain']) != 'yes') { ?>
             <div id="wcop_sp_choose_a_domain"
-                 class="wcop_sp_section wcop_sp_section_domain whcom_margin_bottom_0 whcom_bg_white whcom_padding_bottom_30">
+                 class="wcop_sp_section wcop_sp_section_domain whcom_margin_bottom_0 whcom_bg_white whcom_padding_bottom_30 sleek_minimal_domain_section">
                 <?php include_once(wcop_get_template_directory() . '/templates/single_page/02_sleek_minimal/02_domain.php'); ?>
             </div>
         <?php } ?>
@@ -631,7 +638,7 @@ $_SESSION['prod_desc'] = $show_prod_desc;
                 <input type="hidden" name="default_billingcycle" value="<?php echo $atts['billingcycle']; ?>">
                 <div class="mydivs">
                     <?php if (strtolower($atts['hide_domain']) != 'yes') { ?>
-                        <div id="wcop_sp_domain_config" class="wcop_sp_section wcop_sp_section_domain"
+                        <div id="wcop_sp_domain_config" class="wcop_sp_section wcop_sp_section_domain sleek_minimal_domain_config_section"
                              style="display: none">
                             <div class="wcop_sp_section_heading whcom_bg_primary whcom_text_white">
                                 <i class="whcom_icon_www"></i>
@@ -641,21 +648,28 @@ $_SESSION['prod_desc'] = $show_prod_desc;
                             </div>
                             <div class="wcop_sp_section_content">
                             </div>
+
+                                <div class="my-button-item">
+                                    <div class="wcop_sp_button">
+                                        <button type="button" name="next" class="next"  disabled="disabled" value="continue" onclick="Gotonext('.sleek_minimal_domain_config_section')" style="float:right;">Continue</button>
+                                    </div>
+                                </div>
+
                         </div>
                     <?php } ?>
                     <?php if (strtolower($atts['hide_product']) != 'yes') { ?>
                         <div id="wcop_choose_a_hosting"
-                             class="wcop_sp_section <?php echo (!empty($atts['hide_selected_product']) && strtolower($atts['hide_selected_product']) == 'yes' && !empty($atts['pid'])) ? 'hidden' : '' ?>">
+                             class="sleek_minimal_product_section wcop_sp_section <?php echo (!empty($atts['hide_selected_product']) && strtolower($atts['hide_selected_product']) == 'yes' && !empty($atts['pid'])) ? 'hidden' : '' ?>">
                             <?php include_once(wcop_get_template_directory() . '/templates/single_page/02_sleek_minimal/03_product.php'); ?>
                         </div>
                     <?php } ?>
                     <?php if (strtolower($atts['hide_additional_services']) != 'yes') { ?>
-                        <div id="wcop_additional_services" class="wcop_sp_section">
+                        <div id="wcop_additional_services" class="wcop_sp_section sleek_minimal_additional_services_section">
                             <?php include_once(wcop_get_template_directory() . '/templates/single_page/02_sleek_minimal/04_options.php'); ?>
                         </div>
                     <?php } ?>
 
-                    <div id="wcop_billing_info" class="wcop_sp_section">
+                    <div id="wcop_billing_info" class="wcop_sp_section sleek_minimal_billing_info_section">
                         <!-- Billing info Predecessor -->
                         <?php if ($atts['post_load_login_form'] == 'yes') { ?>
                             <div class="wcop_billing_info_predecessor">
@@ -689,200 +703,70 @@ $_SESSION['prod_desc'] = $show_prod_desc;
                         <?php include_once(wcop_get_template_directory() . '/templates/single_page/02_sleek_minimal/05_client.php'); ?>
                     </div>
 
-                    <div id="wcop_review_checkout" class="wcop_sp_section">
+                    <div id="wcop_review_checkout" class="wcop_sp_section sleek_minimal_checkout_section">
                         <?php include_once(wcop_get_template_directory() . '/templates/single_page/02_sleek_minimal/07_checkout.php'); ?>
                     </div>
 
                 </div>
             </form>
         </div>
-        <div class="wcop_sp_section_content">
-            <div class="my-button-item">
-                <?php if (strtolower($atts['hide_domain']) != 'yes') { ?>
-                    <div class="wcop_sp_button">
-                        <?php if (strtolower($atts['hide_product']) != 'yes') { ?>
-                            <button name="skip" id="skip" class="skip whcom_button_secondary" value="skip"
-                                    onclick="skip()" style="float: left;">Skip
-                            </button>
-                        <?php } ?>
-                        <button name="next" class="next" disabled="disabled" value="continue" onclick="Gotonext()"
-                                style="float:right;">Continue
-                        </button>
-                    </div>
-                <?php } ?>
-                <div class="wcop_sp_button">
-                    <?php if (strtolower($atts['hide_domain']) != 'yes') { ?>
-                        <button name="skip_prev" id="skip_prev" class="skip_prev whcom_button_secondary"
-                                value="skip_prev" onclick="skip_prev()" style="float: left;">Back
-                        </button>
-                    <?php } ?>
-                    <button name="next" class="next" value="continue" onclick="Gotonext()" style="float:right;">
-                        Continue
-                    </button>
-                </div>
-                <?php if (strtolower($atts['hide_product']) != 'yes') { ?>
-                    <div class="wcop_sp_button">
-                        <button name="prev" class="prev whcom_button_secondary" onclick="Gotoprevious()"
-                                style="float: left;">Back
-                        </button>
-                        <button name="next" class="next" value="continue" onclick="Gotonext()" style="float:right;">
-                            Continue
-                        </button>
-                    </div>
-                <?php } ?>
-                <?php if (strtolower($atts['hide_additional_services']) != 'yes') { ?>
-                    <div class="wcop_sp_button">
-                        <div class="wcop__inner__billing__info" <?php echo $atts['post_load_login_form'] == 'yes' ? 'style="display: none"' : 'style="display: block"'  ?>>
-                        <button name="prev" class="prev whcom_button_secondary" onclick="Gotoprevious()"
-                                style="float: left;">Back
-                        </button>
-                        <button name="next" class="next" value="continue" onclick="Gotonext()" style="float:right;">
-                            Continue
-                        </button>
-                        </div>
-                    </div>
-                <?php } ?>
-                <div class="wcop_sp_button">
-                    <button name="prev" class="prev whcom_button_secondary" onclick="Gotoprevious()"
-                            style="float: left;">Back
-                    </button>
-                </div>
-            </div>
-            <div style="clear: both"></div>
-        </div>
+
     </div>
 </div>
 
 
 <script>
 
+
     jQuery(document).ready(function () {
         var divs = jQuery('.mydivs > .wcop_sp_section');
-        var now = 0; // currently shown div
-        divs.hide().first().show(); // hide all divs except first
-
+        divs.hide().first().show();
         jQuery('.step-0').addClass('active current');
-
-
-        jQuery("button[name=skip]").click(function () {
-            divs.eq(now).hide();
-            now = (now + 1 < divs.length) ? now + 1 : 0;
-            divs.eq(now).show(); // show next
-        });
-        jQuery("button[name=next]").click(function () {
-            divs.eq(now).hide();
-            now = (now + 1 < divs.length) ? now + 1 : 0;
-            divs.eq(now).show(); // show next
-        });
-        jQuery("button[name=prev]").click(function () {
-            divs.eq(now).hide();
-            now = (now > 0) ? now - 1 : divs.length - 1;
-            divs.eq(now).show(); // show previous
-        });
-        jQuery("button[name=skip_prev]").click(function () {
-            divs.eq(now).hide();
-            now = (now > 0) ? now - 1 : divs.length - 1;
-            divs.eq(now).show(); // show previous
-        });
     });
 
-    jQuery(document).ready(function () {
-        var divs = jQuery('.my-button-item > .wcop_sp_button');
-        var now = 0; // currently shown div
-        divs.hide().first().show(); // hide all divs except first
-        jQuery("button[name=skip]").click(function () {
-            divs.eq(now).hide();
-            now = (now + 1 < divs.length) ? now + 1 : 0;
-            divs.eq(now).show(); // show next
-        });
-        jQuery("button[name=next]").click(function () {
-            divs.eq(now).hide();
-            now = (now + 1 < divs.length) ? now + 1 : 0;
-            divs.eq(now).show(); // show next
-        });
-        jQuery("button[name=prev]").click(function () {
-            divs.eq(now).hide();
-            now = (now > 0) ? now - 1 : divs.length - 1;
-            divs.eq(now).show(); // show previous
-        });
-        jQuery("button[name=skip_prev]").click(function () {
-            divs.eq(now).hide();
-            now = (now > 0) ? now - 1 : divs.length - 1;
-            divs.eq(now).show(); // show previous
-        });
-    });
+    sleek_minimal_step_count = 0;
+    function Gotonext(current_class_name){
+        jQuery('.sleek_minimal_domain_section').css('display', 'none');
+        jQuery('.sleek_minimal_domain_config_section').css('display', 'none');
+        jQuery('.sleek_minimal_product_section').css('display', 'none');
+        jQuery('.sleek_minimal_additional_services_section').css('display', 'none');
+        jQuery('.sleek_minimal_checkout_section').css('display', 'none');
+        jQuery('.sleek_minimal_billing_info_section').css('display', 'none');
 
+        jQuery(current_class_name).next().css('display', 'block');
 
-    jQuery(document).ready(function () {
-        var divs = jQuery('.nav_div > .wcop_sp_div');
-        var now = 0; // currently shown div
-        divs.hide().first().show(); // hide all divs except first
-        jQuery("button[name=skip]").click(function () {
-            divs.eq(now).hide();
-            now = (now + 1 < divs.length) ? now + 1 : 0;
-            divs.eq(now).show(); // show next
-        });
-        jQuery("button[name=next]").click(function () {
-            divs.eq(now).hide();
-            now = (now + 1 < divs.length) ? now + 1 : 0;
-            divs.eq(now).show(); // show next
-        });
-        jQuery("button[name=prev]").click(function () {
-            divs.eq(now).hide();
-            now = (now > 0) ? now - 1 : divs.length - 1;
-            divs.eq(now).show(); // show previous
-        });
-        jQuery("button[name=skip_prev]").click(function () {
-            divs.eq(now).hide();
-            now = (now > 0) ? now - 1 : divs.length - 1;
-            divs.eq(now).show(); // show previous
-        });
+        var advanced_sleek_minimal_count = sleek_minimal_step_count+1;
+        if (jQuery('.wcop-wight-li li').hasClass('step-' + sleek_minimal_step_count + ' active current')) {
+            jQuery(".wcop-wight-li li.step-" + sleek_minimal_step_count).removeClass(' current');
+            jQuery(".wcop-wight-li li.step-" + advanced_sleek_minimal_count).addClass(' active current');
+        }
+        sleek_minimal_step_count++;
+    }
 
-    });
+    function Gotoprevious(current_class_name) {
+        jQuery('.sleek_minimal_domain_section').css('display', 'none');
+        jQuery('.sleek_minimal_domain_config_section').css('display', 'none');
+        jQuery('.sleek_minimal_product_section').css('display', 'none');
+        jQuery('.sleek_minimal_additional_services_section').css('display', 'none');
+        jQuery('.sleek_minimal_checkout_section').css('display', 'none');
+        jQuery('.sleek_minimal_billing_info_section').css('display', 'none');
 
+        jQuery(current_class_name).prev().css('display', 'block');
 
-    var count = 0;
+        var advanced_sleek_minimal_prev_count = sleek_minimal_step_count-1;
+        if (jQuery('.wcop-wight-li li').hasClass('step-' + sleek_minimal_step_count + ' active')) {
+            jQuery(".wcop-wight-li li.step-" + sleek_minimal_step_count).removeClass(' active current');
+            jQuery(".wcop-wight-li li.step-" + advanced_sleek_minimal_prev_count).addClass(' active current');
+        }
+        sleek_minimal_step_count--;
+    }
 
-    function skip() {
-        jQuery("#wcop_sp_choose_a_domain").css("display", "none");
-        jQuery("#wcop_sp_domain_config").css("display", "none");
-        var divs = jQuery('.mydivs > .wcop_sp_section');
-        var now = 0; // currently shown div
+    function skip(){
+        jQuery('.sleek_minimal_domain_section').css('display', 'none');
+        jQuery('.sleek_minimal_product_section').css('display', 'block');
         jQuery(".wcop-wight-li li.step-" + 0).removeClass(' current');
         jQuery(".wcop-wight-li li.step-" + 1).addClass(' active current');
-        count++;
-
-    }
-
-    function skip_prev() {
-        jQuery("#wcop_sp_choose_a_domain").css("display", "block");
-        jQuery("#wcop_sp_domain_config").css("display", "block");
-        if (jQuery('.wcop-wight-li li').hasClass('step-' + 1 + ' active')) {
-            jQuery(".wcop-wight-li li.step-" + 1).removeClass(' active current');
-            jQuery(".wcop-wight-li li.step-" + 0).addClass(' active current');
-        }
-        var divs = jQuery('.mydivs > .wcop_sp_section');
-        var now = 0;
-        count = 0;
-    }
-
-    function Gotonext() {
-        var advanced_count = count + 1;
-        if (jQuery('.wcop-wight-li li').hasClass('step-' + count + ' active current')) {
-            jQuery(".wcop-wight-li li.step-" + count).removeClass(' current');
-            jQuery(".wcop-wight-li li.step-" + advanced_count).addClass(' active current');
-        }
-        jQuery(".prev").addClass('show-button');
-        count++;
-    }
-
-    function Gotoprevious() {
-        var advanced_prev_count = count - 1;
-        if (jQuery('.wcop-wight-li li').hasClass('step-' + count + ' active')) {
-            jQuery(".wcop-wight-li li.step-" + count).removeClass(' active current');
-            jQuery(".wcop-wight-li li.step-" + advanced_prev_count).addClass(' active current');
-        }
-        count--;
+        sleek_minimal_step_count++;
     }
 
     jQuery("#require_Domain_search").click(function () {

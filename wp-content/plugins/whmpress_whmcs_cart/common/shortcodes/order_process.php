@@ -54,7 +54,8 @@ if ( ! empty( $_REQUEST['a'] ) ) {
                     echo ob_get_clean();
                     break;
                 }
-                continue;
+                //== replace continue with break as there is a warning
+                break;
             }
             case 'confdomains' : {
                 ob_start();
@@ -85,7 +86,8 @@ if ( ! empty( $_REQUEST['a'] ) ) {
                     echo whcom_generate_invoice_iframe((int)$_REQUEST['id'], $order_complete_url);
                     break;
                 }
-                continue;
+                //== replace continue with break as there is a warning
+                break;
             }
             default : {
                 echo whcom_order_list_products_render($atts, $content, $tag);

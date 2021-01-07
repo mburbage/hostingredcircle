@@ -692,6 +692,7 @@ function portfoliof_func($atts, $content = null){
 
 // Logo Clients
 add_shortcode('clients','clients_func');
+
 function clients_func($atts, $content = null){
 	extract(shortcode_atts(array(
 		'gallery'		=> 	'',

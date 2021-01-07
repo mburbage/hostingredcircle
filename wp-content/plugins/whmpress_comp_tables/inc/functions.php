@@ -356,7 +356,6 @@ function wpct_order_url($id, $billing_cycle, $currency)
 if (!function_exists('wpct_prepare_html')) {
 	function wpct_prepare_html($group, $html_table_class, $r)
 	{
-
 		$style_2 = [
 			'comparison-02',
 			'comparison-04',
@@ -743,11 +742,10 @@ if (!function_exists('wpct_values_row_html')) {
 		return $mid2;
 	}
 }
-
+		
 if (!function_exists('wpct_prepare_plan_price')) {
 	function wpct_prepare_plan_price($plan)
 	{
-
 		$price = "";
 		$c = 0;
 		if (is_array($plan['all_durations']) && !empty($plan['all_durations'])) {

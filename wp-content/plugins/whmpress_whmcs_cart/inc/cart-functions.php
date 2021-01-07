@@ -165,7 +165,7 @@ if (!function_exists('wcop_sp_render_products_radio')) {
         ob_start();
         ?>
         <div class="whcom_radio_container">
-            <div class="whcom_row">
+            <div class="whcom_row whcom_sleek_products">
                 <?php foreach ($products as $product) {
 
                     $product_desc = $product['description'];
@@ -245,8 +245,8 @@ if (!function_exists('wcop_sp_render_product_billingcycles')) {
                         $billing_cycle_class .= ' wcop_update_product_options';
                     }
                     ?>
-                    <?php if ($current_template == '08_gator' || $current_template == '06_sleek') { ?>
-                        <!-- Make billing cycles as radio in 08_gator and 06_sleek template -->
+                    <?php if ($current_template == '06_sleek') { ?>
+                        <!-- Make billing cycles as radio in 08_elegant and 06_sleek template -->
 
 
                         <label><?php esc_html_e("Choose Billing Cycle", "whcom") ?></label>
@@ -299,9 +299,9 @@ if (!function_exists('wcop_sp_render_product_billingcycles')) {
                 <input id="wcop_sp_product_billingcycle" class="wcop_input" type="hidden" name="billingcycle"
                        value="<?php echo $billing_cycle ?>">
             <?php } ?>
-            <?php if ($current_template != '08_gator') { ?>
+            <?php if ($current_template != '08_elegant') { ?>
                 <div class="wcop_sp_free_tlds_info whcom_padding_0_10">
-                    <?php if (!empty($product_details['freedomainpaymentterms']) && !empty($product_details['freedomaintlds'])) { ?>
+                    <?php if (!empty($product_details['freedomainpaymentterms']) && !empty($product_details['freedomaintlds']) && $product_details['freedomain'] == 'on') { ?>
                         <div class="whcom_alert whcom_alert_info">
                             <div>
                                 <?php esc_html_e('Free Domain is only available for following TLD\'s', "whcom") ?>
@@ -409,7 +409,7 @@ if (!function_exists('wcop_sp_render_domain_config')) {
                     </label>
 
                     <!-- Added by zain -->
-                    <?php if ($free_domain && $style == '08_gator') { ?>
+                    <?php if ($free_domain && $style == '08_elegant') { ?>
                         <label class="wcop__domainpricing" style="float: right;">
                             <?php if ($domain_type == 'register') { ?>
                                 <small> 1st Year:

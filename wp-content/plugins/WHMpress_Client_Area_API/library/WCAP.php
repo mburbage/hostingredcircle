@@ -1902,13 +1902,12 @@ class WCAP
             /* ]]> */
          </script>' . PHP_EOL;
 
-        echo '<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">' . PHP_EOL;
         echo '<link rel="stylesheet" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">' . PHP_EOL;
         echo '<link rel="stylesheet" href="//cdn.datatables.net/responsive/1.0.4/css/dataTables.responsive.css">' . PHP_EOL;
         echo '<link rel="stylesheet" href="' . $this->URL . '/assets/js/tablesaw/tablesaw.css">' . PHP_EOL;
         echo '<link rel="stylesheet" href="' . $this->URL . '/assets/js/simplemde.css">' . PHP_EOL;
         echo '<link rel="stylesheet" href="' . $this->URL . '/assets/css/jquery.circliful.css">' . PHP_EOL;
-        echo '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.6/css/jquery.fancybox.min.css">' . PHP_EOL;
+        //echo '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.6/css/jquery.fancybox.min.css">' . PHP_EOL;
         //echo '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.6/summernote.css">' . PHP_EOL;
 
         $hash = md5_file($this->Path . "/assets/css/styles.css");

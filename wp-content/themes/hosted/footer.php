@@ -25,7 +25,7 @@
     <?php } ?>
     <a id="scroll-top"><i class="fa fa-angle-up"></i></a>
 
-</div>
+
 
 <?php wp_footer(); ?>
 

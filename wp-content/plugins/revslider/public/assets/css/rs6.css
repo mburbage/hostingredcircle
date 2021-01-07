@@ -175,14 +175,13 @@ rs-module i[class*=" fa-"],
 #builderView i[class*=" fa-"] 
 {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-rs-module [class^="fa-"]:before, 
+/* rs-module [class^="fa-"]:before, 
 rs-module [class*=" fa-"]:before,
 .rb-modal-wrapper [class^="fa-"]:before, 
 .rb-modal-wrapper [class*=" fa-"]:before,
@@ -197,10 +196,6 @@ rs-module [class*=" fa-"]:before,
 #builderView [class^="fa-"]:before, 
 #builderView [class*=" fa-"]:before
 {
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: 400;
-   
     speak: none;
     display: inline-block;
     text-decoration: inherit;
@@ -211,7 +206,7 @@ rs-module [class*=" fa-"]:before,
     text-transform: none;
     line-height: inherit;
     margin-left: 0;
-}
+} */
 
 rs-module .sr-only,
 #objectlibrary .sr-only,

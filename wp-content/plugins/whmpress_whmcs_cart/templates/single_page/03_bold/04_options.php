@@ -14,3 +14,14 @@
 <div class="wcop_sp_section_content">
 
 </div>
+
+<div class="wcop_sp_button">
+    <button type="button" name="gotoprev" id="gotoprev" class="prev whcom_button_secondary" value="Previous"
+            onclick="Gotoprev('.bold_addition_services_section')">
+        ❮ Previous
+    </button>
+    <button type="button" name="next" class="next" value="continue"
+            onclick="Gotonext1('.bold_addition_services_section')">NEXT
+        ❯
+    </button>
+</div>

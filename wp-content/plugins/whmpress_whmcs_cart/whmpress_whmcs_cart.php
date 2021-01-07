@@ -6,7 +6,7 @@ Description: WHMCS Cart & Order Pages (WCOP) has beautifully designed order page
 user-friendly and functional.
 Text domain: whcom
 Domain Path: /common/languages
-Version: 3.5-revision-6
+Version: 3.7
 Author: creativeON
 Author URI: http://creativeon.com
 */
@@ -27,7 +27,7 @@ if (! defined('WCOP_ADMIN_URL')){
  * Some more Constants
  */
 if ( ! defined( 'WCOP_VERSION' ) ) {
-	define( 'WCOP_VERSION', '3.5-revision-6' );
+	define( 'WCOP_VERSION', '3.7' );
 }
 ## Adding Common functions
 if ( ! defined( 'WHCOM_VERSION' ) ) {

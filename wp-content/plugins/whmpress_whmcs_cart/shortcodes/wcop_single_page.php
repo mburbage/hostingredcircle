@@ -32,7 +32,7 @@ $atts = shortcode_atts( [
 	'gids'                             => ( isset( $_REQUEST['gids'] ) && is_string( $_REQUEST['gids'] ) ) ? $_REQUEST['gids'] : '',
 	'pids'                             => ( isset( $_REQUEST['pids'] ) && is_string( $_REQUEST['pids'] ) ) ? $_REQUEST['pids'] : '',
 	'style'                            => ( isset( $_REQUEST['style'] ) && is_string( $_REQUEST['style'] ) ) ? $_REQUEST['style'] : '01_default',
-    //== copy all gator parameters to core
+    //== copy all elegant parameters to core
     'pid'                              => ( isset( $_REQUEST['pid'] ) && is_integer( intval( $_REQUEST['pid'] ) ) ) ? $_REQUEST['pid'] : '0',
     'promocode'                        => (!empty($_REQUEST['promocode'])) ? esc_attr($_REQUEST['promocode']) : '',
     'hide_selected_product'            => isset( $_REQUEST['hide_selected_product'] )? strtolower($_REQUEST['hide_selected_product']) : '',
@@ -54,7 +54,7 @@ if ( is_file( $file ) ) {
 else {
 	require wcop_get_template_directory() . '/templates/single_page/01_default/01_main.php';
 }
-if($style == '08_gator') {
+if($style == '08_elegant') {
     require_once WCOP_PATH . '/skeleton.html';
     ?>
     <script>

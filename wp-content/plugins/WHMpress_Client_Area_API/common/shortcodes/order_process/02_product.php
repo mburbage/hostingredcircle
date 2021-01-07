@@ -48,7 +48,7 @@ $pids = ( ! empty( $pids ) ) ? $pids : '';
 			<?php esc_html_e( 'Configure', 'whcom' ) ?>
 		</div>
 		<div class="whcom_margin_bottom_15">
-			<?php esc_html_e( 'Configure your desired options and continue to checkout.', 'whcom' ) ?>
+			<?php esc_html_e( 'Configure your desired options and continue to checkout .', 'whcom' ) ?>
 		</div>
 
 		<form class="whcom_op_add_product" method="post">
@@ -66,17 +66,19 @@ $pids = ( ! empty( $pids ) ) ? $pids : '';
 					<div class="whcom_product_details">
 						<div class="whcom_product_details_container">
 							<div class="whcom_product_config_description whcom_product_config_block">
-								<div>
-									<strong><?php echo $final_array['name']; ?></strong>
+								<div class="whcom_product_config_title">
+									<?php echo $final_array['name']; ?>
 								</div>
-								<?php echo $final_array['description']; ?>
-								<?php //$current = '';
-								//foreach ( $final_array['description_array'] as $des => $det ) {
-								//	echo '<div class="whcom_product_feature">';
-								//	echo '<div class="whcom_product_feature_title">' . $det['feature_title'] . '</div>';
-								//	echo '<div class="whcom_product_feature_value">' . $det['feature_value'] . '</div>';
-								//	echo '</div>';
-								//} ?>
+								<?php //echo $final_array['description']; ?>
+								<?php 
+								$current = '';
+								foreach ( $final_array['description_array'] as $des => $det ) {
+									echo '<div class="whcom_product_feature">';
+									echo '<div class="whcom_product_feature_title">' . $det['feature_title'] . '</div>';
+									echo '<div class="whcom_product_feature_value">' . $det['feature_value'] . '</div>';
+									echo '</div>';
+								} 
+								?>
 							</div>
 							<div class="whcom_clearfix"></div>
 							<?php if ( $final_array['paytype'] == 'recurring' ) { ?>
@@ -91,11 +93,25 @@ $pids = ( ! empty( $pids ) ) ? $pids : '';
 										?>
 										<label for="whcom_product_billingcycle" class="main_label"><?php esc_html_e( 'Choose Billing Cycle', 'whcom' ) ?></label>
 										<select id="whcom_product_billingcycle" name="billingcycle" class="<?php echo $billing_cycle_class ?>">
-											<?php $current = '';
+											<?php 
+											$current = '';
+											$months = array(
+												'monthly' => 1,
+												'quarterly' => 3,
+												'semi-annually' => 3,
+												'annually' => 12,
+												'biennially' => 24,
+												'triennially' => 36,
+											);
 											foreach ( $all_prices as $key => $price ) {
 												( $billing_cycle == $key ) ? $current = 'selected' : $current = '';
 												$option_string = '<option value="' . $key . '" ' . $current . '>';
-												$option_string .= whcom_format_amount( [ 'amount' => $price['price'] ] ) . ' ' . whcom_convert_billingcycle($key);
+												
+												if(whcom_convert_billingcycle($key) != "Monthly"){
+													$option_string .= ' '. whcom_format_amount( [ 'amount' => round( ( $price[ 'price' ] ) / $months[ $key ], 2 ) ] ) . ' / mon - ' . $months[ $key ] . ' months';
+												}else{
+													$option_string .= whcom_format_amount( [ 'amount' => $price['price'] ] ) . ' / mon';
+												}
 												if ($price['setup'] > 0) {
 													$option_string .= ' + ' . whcom_format_amount( [ 'amount' => $price['setup'] ] ) . ' ' . esc_html__( 'Setup Fee', 'whcom' );
                                                 }

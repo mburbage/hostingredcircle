@@ -286,9 +286,13 @@
     }
 
     .whcom_main.wcop_sp_04_ease .wcop_sp_section_heading {
-        font-size: 20px ;
+        font-size: 20px;
         font-weight: 300 !important;
         text-transform: uppercase;
+        background: #288feb;
+        color: #fff;
+        padding: 15px !IMPORTANT;
+        border-radius: 5px;
     }
     .whcom_main.wcop_sp_04_ease .whcom_button.whcom_button_success{
         /*border: none;*/
@@ -579,7 +583,7 @@
         text-align: center;
         width: 100%;
         max-width: 135px;
-        top: -11px;
+        top: -8px;
         position: relative;
     }
     .whcom_main.wcop_sp_04_ease .edit_inline_domain {

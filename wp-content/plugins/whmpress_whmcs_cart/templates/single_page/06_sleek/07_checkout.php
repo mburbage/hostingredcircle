@@ -47,8 +47,16 @@
 	<div class="whcom_sp_order_response">
 
 	</div>
+
 	<div class="whcom_form_field whcom_text_center">
 		<button type="submit"
 		        class="whcom_button whcom_button_big"><?php esc_html_e( "Checkout Now!", "whcom" ) ?></button>
 	</div>
+</div>
+<div class="wcop_sp_section_navi">
+    <div class="my-button-item">
+        <div class="wcop_sp_button">
+            <button type="button" name="prev" class="prev whcom_button_secondary" onclick="Gotoprevious('.sleek_checkout_section')" style="float: left;"><i class="whcom_icon_angle-circled-left"></i> Previous</button>
+        </div>
+    </div>
 </div>

@@ -13,7 +13,6 @@
     #wcop_sp_main.whcom_main.wcop_sp_07_minimal .whcom_form_field .whcom_plus,
     #wcop_sp_main.whcom_main.wcop_sp_07_minimal .whcom_form_field .whcom_minus {
         padding: 10px 12px;
-        width: 100%;
         border: 1px solid #ccc;
         border-radius: 3px;
         font-size: 14px;
@@ -23,7 +22,7 @@
         font-size: 20px;
         line-height: 1.4;
         color: #222222;
-        padding: 0;
+        padding: 0 10px;
         text-transform: none;
         border-bottom: none;
         font-weight: bold;
@@ -47,9 +46,15 @@
         padding: 12px 18px;
         margin: 0;
         text-align: left;
+        background: transparent;
+        color: #337ab7;
+        border: none;
+        border-bottom: 1px solid;
     }
     #wcop_sp_main.whcom_main.wcop_sp_07_minimal .whcom_tabs_container.whcom_tabs_fancy_2 ul.whcom_tab_links li.active{
-        border: 1px solid;
+        border: none;
+        border-bottom: 2px solid;
+        font-weight: bold;
     }
     #wcop_sp_main.whcom_main.wcop_sp_07_minimal .whcom_sub_heading_style_1{
         border: none;
@@ -170,6 +175,22 @@
         padding: 10px 10px 0 10px !important;
         max-width: 940px !important;
     }
+
+    #wcop_sp_main.whcom_main.wcop_sp_07_minimal .whcom_product_option.whcom_form_field.whcom_form_field_horizontal label.whcom_padding_0_10 {
+        padding-top: 7px !important;
+    }
+    #wcop_sp_main.whcom_main.wcop_sp_07_minimal div#wcop_billing_info .whcom_tabs_container.whcom_tabs_fancy_2 ul.whcom_tab_links li{
+        border-bottom: none;
+        cursor: pointer;
+    }
+    #wcop_sp_main.whcom_main.wcop_sp_07_minimal div#wcop_billing_info .whcom_tabs_container.whcom_tabs_fancy_2 ul.whcom_tab_links li span{
+        cursor: pointer !important;
+    }
+    #wcop_sp_main.whcom_main.wcop_sp_07_minimal div#wcop_billing_info .whcom_tabs_container.whcom_tabs_fancy_2 ul.whcom_tab_links li.active {
+        display: none;
+        border-bottom: none;
+    }
+
     @media only screen and (max-width: 767px){
         #wcop_sp_main.whcom_main.wcop_sp_07_minimal  .wcop_sp_order_summary.xs-hidden.sm-show{
             display: block;
@@ -202,7 +223,7 @@ $_SESSION['prod_desc']       = $show_prod_desc;
 
 <div class="whcom_main wcop_main wcop_sp_main wcop_sp_07_minimal" id="wcop_sp_main">
     <div class="whcom_row">
-        <div class="whcom_col_xl_9 whcom_col_md_8 whcom_col_sm_12">
+        <div class="whcom_col_xl_8 whcom_col_md_8 whcom_col_sm_12">
             <?php include wcop_get_template_directory() . '/templates/single_page/01_default/01_top_nav.php'?>
             <?php include wcop_get_template_directory() . '/templates/single_page/01_default/02_product_dropdowns.php'?>
             <?php if ( strtolower($atts['hide_domain']) != 'yes') { ?>
@@ -252,7 +273,7 @@ $_SESSION['prod_desc']       = $show_prod_desc;
                 </form>
             </div>
         </div>
-        <div class="whcom_col_xl_3 whcom_col_md_4 whcom_col_sm_12">
+        <div class="whcom_col_xl_4 whcom_col_md_4 whcom_col_sm_12">
             <div class="wcop_sp_order_summary whcom_sticky_item" data-nav-top-gap="60" style="">
             </div>
         </div>

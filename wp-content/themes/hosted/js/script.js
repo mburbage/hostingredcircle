@@ -6,7 +6,7 @@
 	$('.title-features').height(high);
 
 	//Preloader
-	$(window).load(function () {
+	$(window).on('load', function () {
 		$('.images-preloader').fadeOut();
 	});
 
@@ -85,7 +85,7 @@
 		});
 	}
 
-	$(window).load(function () {
+	$(window).on('load', function () {
 		menu_mobile();
 		menu_arrow();
 	});

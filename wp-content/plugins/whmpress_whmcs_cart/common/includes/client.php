@@ -745,8 +745,8 @@ if (!function_exists('whcom_render_login_form_fields')) {
     }
 }
 
-if (!function_exists('whcom_gator_render_register_form_fields')) {
-    function whcom_gator_render_register_form_fields($custom_fields_name_prepend = '')
+if (!function_exists('whcom_elegant_render_register_form_fields')) {
+    function whcom_elegant_render_register_form_fields($custom_fields_name_prepend = '')
     {
         $rand = '_' . rand(1111, 9999);
         $currencies = whcom_get_all_currencies();
@@ -966,9 +966,9 @@ if (!function_exists('whcom_gator_render_register_form_fields')) {
     }
 }
 
-//login from gator
-if (!function_exists('whcom_gator_render_login_form_fields')) {
-    function whcom_gator_render_login_form_fields()
+//login from elegant
+if (!function_exists('whcom_elegant_render_login_form_fields')) {
+    function whcom_elegant_render_login_form_fields()
     {
         $rand = '_' . rand(1111, 9999);
         ob_start(); ?>

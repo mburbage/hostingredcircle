@@ -27,7 +27,6 @@
       <div class="preloader4"></div>
     </div>
     <?php } ?>
-    <div class="wrapper">
         <?php if(hosted_get_option( 'top_header' )) { ?>
         <div class="top-info">
             <div class="container">
@@ -97,7 +96,10 @@
                 </h1>
                 <div class="mobile-menu">
                     <a href=""><i class="fa fa-bars"></i></a>
-                </div>
+				</div>
+				<div class="whmpress-cart">
+				<?php echo do_shortcode('[whcom_op_cart_summary type="dropdown"]'); ?>
+				</div>
                 <div class="main-nav">
                     <?php
                         $primary = array(
@@ -122,6 +124,7 @@
                             wp_nav_menu( $primary );
                         }
                     ?>
-                </div>
+				</div>
+				
             </div>
         </header>

@@ -23,13 +23,13 @@ else { ?>
 		<div class="whcom_tabs_container whcom_tabs_fancy_2">
 			<ul class="whcom_tab_links whcom_text_center">
 				<li data-tab="wcop_sp_register_account" class="active whcom_tab_link wcop_sp_client_type_switch wcop_sp_billing_tab_link">
-                     <span style="color:#000; cursor: auto;"> <?php esc_html_e( 'Already Registered', "whcom" ) ?></span>
+                     <span style="color:#000; cursor: auto; font-weight: bold;"> <?php esc_html_e( 'Login', "whcom" ) ?></span>
 					<label for="wcop_sp_client_type_register">
 						<?php esc_html_e( 'Register New Account', "whcom" ) ?>
 					</label>
 				</li>
 				<li data-tab="wcop_sp_user_login" class="whcom_tab_link wcop_sp_client_type_switch wcop_sp_billing_tab_link">
-                    <span style="color: #000; cursor: auto;"> <?php esc_html_e( 'Register New Account', "whcom" ) ?></span>
+                    <span style="color: #000; cursor: auto; font-weight: bold;"> <?php esc_html_e( 'Login', "whcom" ) ?></span>
 					<label for="wcop_sp_client_type_login">
 						<?php esc_html_e( 'Already Registered?', "whcom" ) ?>
 					</label>

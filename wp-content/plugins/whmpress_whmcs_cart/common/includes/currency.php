@@ -221,7 +221,7 @@ if ( ! function_exists( 'whcom_get_payment_gateways' ) ) {
 			else {
 				$response['message']          = esc_html__( 'Payment gateways are found', 'whcom' );
 				$response['status']           = 'OK';
-				$response['payment_gateways'] = $res['paymentmethods']['paymentmethod'];
+				$response['payment_gateways'] = isset($res['paymentmethods']['paymentmethod']) ? $res['paymentmethods']['paymentmethod'] : '' ;
 				if ( $show_visible_only == 'yes' ) {
 					$payment_gateways             = $response['payment_gateways'];
 					$response['payment_gateways'] = [];

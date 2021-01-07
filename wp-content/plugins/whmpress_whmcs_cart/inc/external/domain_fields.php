@@ -241,7 +241,8 @@ $travel_id = array (
     'UIN'		=> 'Use My Information (Requires UIN)'
 );
 
-$additionaldomainfields['.travel'][] = array('Name'	=> 'Trustee Service', 'DisplayName'	=> 'Trustee Service <sup style="cursor:help;" title="Trustee service allows you to register domains under the name of the trustee if you do not meet the requiremets.">what\'s this?</sup>', 'Options'	=> join($travel_id, ','),  'Type'	=> 'dropdown', 'Required' => true);
+//== swap parameter in join >> warning in PHP 7.4
+$additionaldomainfields['.travel'][] = array('Name'	=> 'Trustee Service', 'DisplayName'	=> 'Trustee Service <sup style="cursor:help;" title="Trustee service allows you to register domains under the name of the trustee if you do not meet the requiremets.">what\'s this?</sup>', 'Options'	=> join(',', $travel_id),  'Type'	=> 'dropdown', 'Required' => true);
 $additionaldomainfields['.travel'][] = array('Name'	=> '.TRAVEL UIN Code', 'DisplayName' => '.TRAVEL UIN Code <sup style="cursor:help;" title="Travel UIN Code obtained from http://www.authentication.travel/">what\'s this?</sup>', 'Type'	=> 'text', 'Size' => '30');
 $additionaldomainfields['.travel'][] = array('Name'	=> 'Trustee Service Agreement ', 'Description' => 'I agree to the <a href="http://www.101domain.com/trustee_agreement.htm" target="_BLANK">Trustee Service Agreement</a>', 'Type' => 'tickbox');
 $additionaldomainfields['.travel'][] = array('Name'	=> '.TRAVEL Usage Agreement', 'Description'	=> 'I agree that .travel domains are restricted to those who are primarily active in the travel industry.', 'Type'	=> 'tickbox');
@@ -253,7 +254,7 @@ $ru_type = array (
     'IND'			=> 'Individual'
 );
 
-$additionaldomainfields['.ru'][] = array('Name'	=> 'Registrant Type', 'Type' => 'dropdown', 'Options' => join($ru_type,','), 'Required' => true);
+$additionaldomainfields['.ru'][] = array('Name'	=> 'Registrant Type', 'Type' => 'dropdown', 'Options' => join(',',$ru_type), 'Required' => true);
 $additionaldomainfields['.ru'][] = array('Name'	=> 'Individuals Birthday', 'DisplayName' => 'Individuals: Birthday (YYYY-MM-DD)', 'Type' => 'text', 'Size' => '10');
 $additionaldomainfields['.ru'][] = array('Name'	=> 'Individuals Passport Number', 'DisplayName'	=> 'Individuals: Passport Number', 'Type' => 'text', 'Size'	=> '20');
 $additionaldomainfields['.ru'][] = array('Name' => 'Individuals Passport Issuer', 'DisplayName' => 'Individuals: Passport Issuer', 'Type' => 'text', 'Size' => '20');
@@ -279,7 +280,7 @@ $ro_person_type = array (
 
 $additionaldomainfields['.ro'][] = array('Name'	=> 'CNPFiscalCode', 'Type' => 'text', 'Size' => '20');
 $additionaldomainfields['.ro'][] = array('Name'	=> 'Registration Number', 'Type' => 'text', 'Size' => '20');
-$additionaldomainfields['.ro'][] = array('Name'	=> 'Registrant Type', 'Type' => 'dropdown', 'Options' => join($ro_person_type,','), 'Required' => true);
+$additionaldomainfields['.ro'][] = array('Name'	=> 'Registrant Type', 'Type' => 'dropdown', 'Options' => join(',',$ro_person_type), 'Required' => true);
 
 $additionaldomainfields['.arts.ro'] = $additionaldomainfields['.ro'];
 $additionaldomainfields['.co.ro'] = $additionaldomainfields['.ro'];
@@ -412,13 +413,13 @@ $hk_ind_type =  array (
     'org'	=> 'Organization'
 );
 
-$additionaldomainfields[".hk"][] = array("Name" => "Registrant Type", "Type" => "dropdown", 'Options' => join ( $hk_ind_type, ',' ), "Default" => "ind",    'Required' => true);
+$additionaldomainfields[".hk"][] = array("Name" => "Registrant Type", "Type" => "dropdown", 'Options' => join ( ',', $hk_ind_type ), "Default" => "ind",    'Required' => true);
 $additionaldomainfields[".hk"][] = array('Name' => 'Organizations Name in Chinese', 'DisplayName' => 'Organizations: Name in Chinese', 'Type' => 'text', 'Size' => 20);
-$additionaldomainfields[".hk"][] = array('Name' => 'Organizations Supporting Documentation', 'DisplayName' => 'Organizations: Supporting Documentation', 'Type' => 'dropdown', 'Options' => join ( $hk_org_doctype, ',' ));
+$additionaldomainfields[".hk"][] = array('Name' => 'Organizations Supporting Documentation', 'DisplayName' => 'Organizations: Supporting Documentation', 'Type' => 'dropdown', 'Options' => join (',',$hk_org_doctype ));
 $additionaldomainfields[".hk"][] = array('Name' => 'Organizations Document Number', 'DisplayName' => 'Organizations: Document Number', 'Type' => 'text', 'Size' => 20);
 $additionaldomainfields[".hk"][] = array('Name' => 'Organizations Issuing Country', 'DisplayName' => 'Organizations: Issuing Country', 'Type' => 'dropdown', 'Options' => '{Countries}');
-$additionaldomainfields[".hk"][] = array('Name' => 'Organizations Industry Type', 'DisplayName' => 'Organizations: Industry Type', 'Type' => 'dropdown', 'Options' => join ( $hk_industry_type, ',' ));
-$additionaldomainfields[".hk"][] = array('Name' => 'Individuals Supporting Documentation', 'DisplayName' => 'Individuals: Supporting Documentation', 'Type' => 'dropdown', 'Options' => join ( $hk_ind_doctype, ',' ));
+$additionaldomainfields[".hk"][] = array('Name' => 'Organizations Industry Type', 'DisplayName' => 'Organizations: Industry Type', 'Type' => 'dropdown', 'Options' => join ( ',',$hk_industry_type ));
+$additionaldomainfields[".hk"][] = array('Name' => 'Individuals Supporting Documentation', 'DisplayName' => 'Individuals: Supporting Documentation', 'Type' => 'dropdown', 'Options' => join (',',$hk_ind_doctype ));
 $additionaldomainfields[".hk"][] = array('Name' => 'Individuals Document Number', 'DisplayName' => 'Individuals: Document Number', 'Type' => 'text', 'Size' => 20);
 $additionaldomainfields[".hk"][] = array('Name' => 'Individuals Issuing Country', 'DisplayName' => 'Individuals: Issuing Country', 'Type' => 'dropdown', 'Options' => '{Countries}');
 $additionaldomainfields[".hk"][] = array('Name' => 'Individuals Under 18', 'DisplayName' => 'Individuals: Under 18 Years old?', 'Type' => 'dropdown', 'Options' => 'Yes,No', 'Default' => 'No');

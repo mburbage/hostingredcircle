@@ -22,7 +22,7 @@ switch ($atts['type']) {
         <div class="whcom_main whcom_op_summary_container">
             <div class="whcom_dropdown whcom_dropdown_full">
                 <span class="whcom_dropdown_toggle">
-                    <i class="whcom_icon_basket"></i>
+                    <i class="fal fa-shopping-cart"></i>
                     <span class="whcom_op_universal_cart_summary_button"></span>
                 </span>
                 <div class="whcom_dropdown_content whcom_has_list">

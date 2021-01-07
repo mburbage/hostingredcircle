@@ -215,9 +215,10 @@
             }
 
             //== show or hide free domain notice
-            if (wcop_sp_template === '08_gator') {
+            if (wcop_sp_template === '08_elegant') {
                 if (is_free_domain_attached === 'yes') {
                     free_domain_notice.show();
+                    domain_notice.hide();
                 } else {
                     free_domain_notice.hide();
                 }
@@ -414,6 +415,7 @@
             data.push({'name': 'eppcode', 'value': spepp});
             response_field.show();
             response_field.html(whcom_spinner_icon);
+            console.log(data);
             jQuery.ajax({
                 url: wcop_ajax.ajax_url,
                 type: 'post',
@@ -1160,7 +1162,7 @@
         });
 
         //== Change Summary section heading either it is empty or populated with content
-        if (jQuery('#whcom_08_gator_summary_section').is(':empty')) {
+        if (jQuery('#whcom_08_elegant_summary_section').is(':empty')) {
             jQuery('.whcom_empty_summary_section_heading').css("display", "block");
             jQuery('.whcom_filled_summary_section_heading').css("display", "none");
         } else {
@@ -1170,12 +1172,22 @@
 
         //== Show Summary Message if 04_ease Cart Summary is empty
         $(document).ready(function () {
-            if (jQuery('#ease_summary_area').is(':empty')) {
-                empty_summary_section_message = '<h2>Your Cart is empty</h2>';
-                empty_summary_section_message += '<p class="wcop_4_ease_dekstop_summary_section">Contact us -  if you need more information.</p>';
-                empty_summary_section_message += '<p class="wcop_4_ease_dekstop_summary_section"><b>Search a domain or choose a service.</b></p>';
+            bold_summary_area = jQuery('#bold_summary_area');
+            ease_summary_area = jQuery('#ease_summary_area');
+            if (ease_summary_area.is(':empty')) {
+                empty_summary_section_message = '<h2><b>Your Cart is empty</b></h2>';
+                empty_summary_section_message += '<p class="wcop_4_ease_dekstop_summary_section">Search a domain or choose a service.</p>';
                 empty_summary_section_message += '<div class="wcop_4_ease_mobile_summary_section">Chose a product or service below.</div>';
-                jQuery('#ease_summary_area').html(empty_summary_section_message);
+                ease_summary_area.html(empty_summary_section_message);
+                bold_summary_area.html(empty_summary_section_message);
+            }
+
+            if (bold_summary_area.is(':empty')){
+                empty_summary_section_message = "<div style='padding: 10px; min-height: 200px' class='summary-simple-4'>";
+                empty_summary_section_message += '<h2>Your Cart is empty</h2>';
+                empty_summary_section_message += '<p>Search a domain or choose a service.</p>';
+                empty_summary_section_message += '</div>';
+                bold_summary_area.html(empty_summary_section_message);
             }
         });
 

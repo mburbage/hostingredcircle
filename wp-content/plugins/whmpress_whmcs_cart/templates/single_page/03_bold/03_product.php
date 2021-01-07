@@ -23,3 +23,13 @@ $billing_cycle = ( isset( $_REQUEST['billingcycle'] ) && is_string( $_REQUEST['b
 
     </div>
 </div>
+<div class="wcop_sp_button">
+    <button type="button" name="gotoprev" id="gotoprev" class="prev whcom_button_secondary" value="Previous"
+            onclick="Gotoprev('.bold_product_section')">
+        ❮ Previous
+    </button>
+    <button type="button" name="next" class="next" value="continue"
+            onclick="Gotonext1('.bold_product_section')">NEXT
+        ❯
+    </button>
+</div>

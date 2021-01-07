@@ -167,7 +167,7 @@ else {
 								if ( is_array( $domains_list ) && ! empty ( $domains_list ) ) {
 									foreach ( $domains_list as $tld_l => $det ) {
 										$selected = ( $tld_l == $tld ) ? 'selected' : '';
-										echo '<option value="' . $tld_l . '" ' . $selected . '>' . $tld_l . '</option>';
+										echo '<option value="' . $tld_l . '" ' . $selected . '>' . strtoupper($tld_l) . '</option>';
 									}
 								}
 								?>
@@ -203,7 +203,7 @@ else {
 					<div class="whcom_col_sm_2">
 						<div class="whcom_form_field">
 							<input type="text" name="ext" required="required" title="Enter TLD TLD"
-							       placeholder=".com">
+							       placeholder=".COM">
 						</div>
 					</div>
 					<div class="whcom_col_sm_3">

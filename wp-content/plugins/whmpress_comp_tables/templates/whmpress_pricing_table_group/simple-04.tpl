@@ -1,5 +1,5 @@
 <div class="row">
-	
+	{debug}
 		{foreach from=$group.plans item=plan}
 		<div class="wpb_column vc_column_container  
 		{if $group.plans|count eq 1}vc_col-sm-12
@@ -17,21 +17,33 @@
 
 						<h3 class="pricing-title id-color">{$plan.name}</h3>
 
-						<script>console.log({json_encode($plan)});</script>
-
 						<div class="pricing-price">
-							
-							<p class="price">{$plan.prefix}{$plan.amount}{if
-								$plan.fraction ne ""}<span class="decimal">{$plan.decimal}</span><span
-									class="fraction">{$plan.fraction}</span>{/if}</p>
-							{if $plan.duration ne ""}
-							<span class="per">{$plan.duration}</span>{/if}
-							<br/>
-							{if trim($plan.duration, " ") ne "Monthly"}
-							<span class="per">{$plan.all_durations.annually.discount.discount_string}</span>
+							{if $plan.promotions != false}
+								<p class="price"><span class="price-prefix">{$plan.prefix}</span>{($plan.amount/12)|string_format:"%.2f"}
+									</p>
+
+								{if $plan.duration ne ""}
+								<span class="per">{$plan.duration}</span>{/if}
+								<br/>
+								{if trim($plan.duration, " ") ne "Monthly"}
+								<span class="per">{$plan.all_durations.annually.discount.discount_string}</span>
+								{else}
+								<span class="per">{$plan.all_durations.monthly.discount.discount_string}</span>
+								{/if}
 							{else}
-							<span class="per">{$plan.all_durations.monthly.discount.discount_string}</span>
+								<p class="price"><span class="price-prefix">{$plan.prefix}</span>{$plan.amount}{if
+									$plan.fraction ne ""}<span class="decimal">{$plan.decimal}</span><span
+										class="fraction">{$plan.fraction}</span>{/if}</p>
+								{if $plan.duration ne ""}
+								<span class="per">{$plan.duration}</span>{/if}
+								<br/>
+								{if trim($plan.duration, " ") ne "Monthly"}
+								<span class="per">{$plan.all_durations.annually.discount.discount_string}</span>
+								{else}
+								<span class="per">{$plan.all_durations.monthly.discount.discount_string}</span>
+								{/if}
 							{/if}
+							
 						</div>
 						<div class="pricing-features">
 							{if $plan.cdescription ne ""}
