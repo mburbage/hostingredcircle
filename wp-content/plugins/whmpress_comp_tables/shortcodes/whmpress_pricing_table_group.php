@@ -176,7 +176,9 @@ if ( is_file( $html_template ) ) {
 			}
 		}
 
-		$plan['product-details'] = whcom_get_product_details( $plan['product_id'] );
+		$product_details = whcom_get_product_details( $plan['product_id'] );
+
+		$plan['productfeatured'] = $product_details['is_featured'];
 
 		$plan["all_durations"] = AllPrices($group, $plan["product_id"], $currency, [$group["billingcycle"], $group["billingcycle2"]] );
 		//$group['billingcycle'] = ltrim($plan["duration"]) == 'OneTime' ? "" : $group['billingcycle'];

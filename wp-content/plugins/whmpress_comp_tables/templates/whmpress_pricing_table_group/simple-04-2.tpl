@@ -14,27 +14,13 @@
 					<h3 class="pricing-title id-color">{$plan.name}</h3>
 
 					<div class="pricing-price">
-						{if $plan.promotions != false}
-						<p class="price"><span class="price-prefix">{$plan.prefix}</span>{((($plan.amount/12))*((100 - $plan.promotions.value)/100))|string_format:"%.2f"}<span class="price-postfix">/ mon</span>
+						
+						<p class="price"><span class="price-prefix">{$plan.prefix}</span>{$plan.amount}{if
+							$plan.fraction ne ""}<span class="decimal">{$plan.decimal}</span><span class="fraction">{$plan.fraction}</span>{/if}<span class="price-postfix">/ mon</span>
 						</p>
 						
-						<span class="per onsale">ON SALE - SAVE {$plan.promotions.value|string_format:"%.0f"}%</span>
-						<span class="per renewal">{$plan.prefix}{($plan.amount/12)|string_format:"%.2f"}/mo when you renew</span>
-						<br />
-						{if trim($plan.duration, " ") ne "Monthly"}
-						<span class="per">{$plan.all_durations.annually.discount.discount_string}</span>
-						{else}
-						<span class="per">{$plan.all_durations.monthly.discount.discount_string}</span>
-						{/if}
-						{else}
-						<p class="price"><span class="price-prefix">{$plan.prefix}</span>{(($plan.amount/12))|string_format:"%.2f"}<span class="price-postfix">/ mon</span>
-						</p>
-						{if trim($plan.duration, " ") ne "Monthly"}
-						<span class="per">{$plan.all_durations.annually.discount.discount_string}</span>
-						{else}
-						<span class="per">{$plan.all_durations.monthly.discount.discount_string}</span>
-						{/if}
-						{/if}
+						<span class="per">Switch Yearly and save 33%</span>
+						
 
 					</div>
 					<div class="pricing-features">

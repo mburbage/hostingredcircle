@@ -43,9 +43,9 @@
 							{implode(" ", $string)}
 							{/foreach}
 							{if count($desc_array) gte 25 }
-							<div id="more-btn-{$plan.product_id}" class="more-button" onclick="toggleMoreDescription({$plan.product_id})">Read More<i class="fa-down-chevron"></i></div>
+							<div id="more-btn-{$plan.product_id}" class="more-button" onclick="toggleMoreDescription({$plan.product_id})">Read More<i class="fal fa-chevron-down"></i></div>
 							<span id="{$plan.product_id}" class="full-description">{implode(" ", $string_two)}</span>
-							<div id="hide-btn-{$plan.product_id}" class="more-button hide-btn" onclick="toggleMoreDescription({$plan.product_id})"><i class="fa-up-chevron"></i>Close</div>
+							<div id="hide-btn-{$plan.product_id}" class="more-button hide-btn" onclick="toggleMoreDescription({$plan.product_id})"><i class="fal fa-chevron-up"></i>Close</div>
 							{/if}
 
 						</div>

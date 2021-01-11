@@ -48,7 +48,7 @@ $pids = ( ! empty( $pids ) ) ? $pids : '';
 			<?php esc_html_e( 'Configure', 'whcom' ) ?>
 		</div>
 		<div class="whcom_margin_bottom_15">
-			<?php esc_html_e( 'Configure your desired options and continue to checkout .', 'whcom' ) ?>
+			<?php esc_html_e( 'Configure your desired options and continue to checkout.', 'whcom' ) ?> <strong>Available promotions will be applied during checkout.</strong>
 		</div>
 
 		<form class="whcom_op_add_product" method="post">
@@ -108,7 +108,7 @@ $pids = ( ! empty( $pids ) ) ? $pids : '';
 												$option_string = '<option value="' . $key . '" ' . $current . '>';
 												
 												if(whcom_convert_billingcycle($key) != "Monthly"){
-													$option_string .= ' '. whcom_format_amount( [ 'amount' => round( ( $price[ 'price' ] ) / $months[ $key ], 2 ) ] ) . ' / mon - ' . $months[ $key ] . ' months';
+													$option_string .= ' '. whcom_format_amount( [ 'amount' => round( ( $price[ 'price' ] ) / $months[ $key ], 2 ) ] ) . ' / mon - for ' . $months[ $key ] . ' months';
 												}else{
 													$option_string .= whcom_format_amount( [ 'amount' => $price['price'] ] ) . ' / mon';
 												}

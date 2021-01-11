@@ -923,7 +923,7 @@ var whcom_spinner_block = '<div class="whcom_text_center_xs"><i class="whcom_ico
 					domain_options_container.html( res.domain_config_form ).show();
 					product_container.slideDown( 500 );
 					domain_free_tlds_info.show();
-					product_domain_container.html( res.message ).fadeOut( 2000 );
+					product_domain_container.html( res.message ).fadeOut( 4000 );
 					$( document ).trigger( 'scroll' );
 					console.log( 'Okay' );
 					whcom_op_update_product_summary();

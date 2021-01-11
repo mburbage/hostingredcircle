@@ -1699,7 +1699,7 @@ section.bg-error{
   position: relative;
 }
 .pricing .price-btn a:after{
-  font-family: FontAwesome;
+  font-family: 'FontAwesome';
   color: #fff;
   content: "\f178";
   position: absolute;
@@ -2103,18 +2103,17 @@ h3.pricing-title.id-color {
 	padding: 15px;
 	cursor: pointer;
 }
-.fa-down-chevron:before{
+.fa-chevron-down:before{
 
 	content: "\f078";
 	font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
-	display: block;
     align-content: center;
 	
 }
-.fa-up-chevron:before{
+.fa-chevron-up:before{
 
 	content: "\f077";
 	font: normal normal normal 14px/1 FontAwesome;
@@ -2124,6 +2123,9 @@ h3.pricing-title.id-color {
 	display: block;
     align-content: center;
 	
+}
+i.fal.fa-chevron-down, i.fal.fa-chevron-up {
+    display: block;
 }
 .hide-btn{
 	display: none;

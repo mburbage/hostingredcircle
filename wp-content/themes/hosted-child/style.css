@@ -13,197 +13,315 @@
 */
 
 @import url("../hosted/style.css");
-
 /* .fal:before {
 	font-family: Font Awesome 5 Pro !important;
 	font-weight: 300 !important;
 } */
-rs-module [class^="fa-"]:before, rs-module [class*=" fa-"]:before, .rb-modal-wrapper [class^="fa-"]:before, .rb-modal-wrapper [class*=" fa-"]:before, #rs_overview [class^="fa-"]:before, #rs_overview [class*=" fa-"]:before, #objectlibrary [class^="fa-"]:before, #objectlibrary [class*=" fa-"]:before, #waitaminute [class^="fa-"]:before, #waitaminute [class*=" fa-"]:before, #rs_overview_menu [class^="fa-"]:before, #rs_overview_menu [class*=" fa-"]:before, #builderView [class^="fa-"]:before, #builderView [class*=" fa-"]:before {
-    font-family: 'Font Awesome 5 Pro' !important;
-    
+
+/* rs-module [class^="fa-"]:before, rs-module [class*=" fa-"]:before, .rb-modal-wrapper [class^="fa-"]:before, .rb-modal-wrapper [class*=" fa-"]:before, #rs_overview [class^="fa-"]:before, #rs_overview [class*=" fa-"]:before, #objectlibrary [class^="fa-"]:before, #objectlibrary [class*=" fa-"]:before, #waitaminute [class^="fa-"]:before, #waitaminute [class*=" fa-"]:before, #rs_overview_menu [class^="fa-"]:before, #rs_overview_menu [class*=" fa-"]:before, #builderView [class^="fa-"]:before, #builderView [class*=" fa-"]:before {
+	font-family: 'Font Awesome 5 Pro' !important;
+	font-weight: 200 !important;
 }
+rs-module [class^="fab-"]:before, rs-module [class*=" fab"]:before, .rb-modal-wrapper [class^="fab"]:before, .rb-modal-wrapper [class*=" fab"]:before, #rs_overview [class^="fab"]:before, #rs_overview [class*=" fab"]:before, #objectlibrary [class^="fab"]:before, #objectlibrary [class*=" fab"]:before, #waitaminute [class^="fab"]:before, #waitaminute [class*=" fab"]:before, #rs_overview_menu [class^="fab"]:before, #rs_overview_menu [class*=" fab"]:before, #builderView [class^="fab"]:before, #builderView [class*=" fab"]:before {
+	font-family: 'Font Awesome 5 Brands' !important;
+	
+}*/
+
+i[class^='fal fa-']::before{
+	font-family: 'Font Awesome 5 Pro' !important;
+	font-weight: 300 !important;
+} 
 
 a {
 	color: #ed2024;
 }
-.domain-search-orange form{
+
+.domain-search-orange form {
 	border-color: #b24000 !important;
 }
 
-.loader,
-.loader:after {
-  border-radius: 50%;
-  width: 10em;
-  height: 10em;
+h2.line:after {
+	font-family: 'Font Awesome 5 Pro' !important;
 }
+
+.loader, .loader:after {
+	border-radius: 50%;
+	width: 10em;
+	height: 10em;
+}
+
 .loader {
-  margin: 60px auto;
-  font-size: 10px;
-  position: relative;
-  text-indent: -9999em;
-  border-top: 1.1em solid rgba(173,173,173, 0.2);
-  border-right: 1.1em solid rgba(173,173,173, 0.2);
-  border-bottom: 1.1em solid rgba(173,173,173, 0.2);
-  border-left: 1.1em solid #adadad;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: load8 1.1s infinite linear;
-  animation: load8 1.1s infinite linear;
+	margin: 60px auto;
+	font-size: 10px;
+	position: relative;
+	text-indent: -9999em;
+	border-top: 1.1em solid rgba(173, 173, 173, 0.2);
+	border-right: 1.1em solid rgba(173, 173, 173, 0.2);
+	border-bottom: 1.1em solid rgba(173, 173, 173, 0.2);
+	border-left: 1.1em solid #adadad;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-animation: load8 1.1s infinite linear;
+	animation: load8 1.1s infinite linear;
 }
-@-webkit-keyframes load8 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes load8 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-#loading-domain{
+.sitelock-emergency{
 	text-align: center;
 }
+@-webkit-keyframes load8 {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes load8 {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+#loading-domain {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
 .whmpress-cart {
-    width: 20px;
-    float: right;
-    margin-top: 29px;
-    padding: 0 8px;
+	width: 20px;
+	float: right;
+	margin-top: 29px;
+	padding: 0 8px;
 }
+
 span.price-prefix {
-    font-size: 21px;
-    font-weight: 500;
-    position: relative;
-    top: -16px;
+	font-size: 21px;
+	font-weight: 500;
+	position: relative;
+	top: -16px;
 }
+
+span.price-postfix {
+	font-size: 16px;
+	font-weight: 600;
+}
+
 h3.pricing-title.id-color {
-    min-height: 0;
+	min-height: 0;
 }
+
 .pricing .pricing-title {
-    border-bottom: 2px solid #cc2529;
+	border-bottom: 2px solid #cc2529;
 }
-.pricing-price .price{
+
+.pricing-price {
+	padding: 0;
+	margin: 40px 0 10px;
+	text-align: center;
+}
+
+.pricing-price .price {
 	font-size: 48px;
 	font-weight: 200;
-  }
+}
+
+span.per.onsale {
+	display: block;
+	border: 2px solid #cc2529;
+	color: #cc2529;
+	padding: 5px;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+span.per.renewal {
+	font-size: 12px;
+	margin: 10px 0;
+	font-size: 14px;
+}
 
 i.whcom_icon_basket {
 	color: #ffffff;
 	font-size: 1.5em;
 }
-span.whcom_op_universal_cart_summary_button{
+
+span.whcom_op_universal_cart_summary_button {
 	display: none;
 }
+
 .whcom_dropdown_content.whcom_has_list {
-    width: 300px !important;
-    transform: translateX(-95%);
-    padding: 8px;
-    box-shadow: none;
-} 
-.logo-footer{
+	width: 300px !important;
+	transform: translateX(-95%);
+	padding: 8px;
+	box-shadow: none;
+}
+
+.logo-footer {
 	width: 200px;
 }
-footer .half-list{
+
+footer .half-list {
 	width: 100%;
-  }
-@media (max-width: 1023px){
+}
+
+@media (max-width: 1023px) {
+	rs-module [class^="fa-"]:before, rs-module [class*=" fa-"]:before, .rb-modal-wrapper [class^="fa-"]:before, .rb-modal-wrapper [class*=" fa-"]:before, #rs_overview [class^="fa-"]:before, #rs_overview [class*=" fa-"]:before, #objectlibrary [class^="fa-"]:before, #objectlibrary [class*=" fa-"]:before, #waitaminute [class^="fa-"]:before, #waitaminute [class*=" fa-"]:before, #rs_overview_menu [class^="fa-"]:before, #rs_overview_menu [class*=" fa-"]:before, #builderView [class^="fa-"]:before, #builderView [class*=" fa-"]:before {
+		font-family: 'Font Awesome 5 Pro' !important;
+		font-weight: 200 !important;
+	}
+	rs-module [class^="fab"]:before, rs-module [class*=" fab"]:before, .rb-modal-wrapper [class^="fab"]:before, .rb-modal-wrapper [class*=" fab"]:before, #rs_overview [class^="fab"]:before, #rs_overview [class*=" fab"]:before, #objectlibrary [class^="fab"]:before, #objectlibrary [class*=" fab"]:before, #waitaminute [class^="fab"]:before, #waitaminute [class*=" fab"]:before, #rs_overview_menu [class^="fab"]:before, #rs_overview_menu [class*=" fab"]:before, #builderView [class^="fab"]:before, #builderView [class*=" fab"]:before {
+		font-family: 'Font Awesome 5 Brands' !important;
+		
+	}
+	.fa{
+		font-family: 'Font Awesome 5 Pro' !important;
+		font-weight: 400 !important;
+	}
+	.fab{
+		font-family: 'Font Awesome 5 Brands' !important;
+		font-weight: 400 !important;
+	}
 	.whmpress-cart {
 		width: 40px;
 		float: right;
 		margin-top: 20px;
 		padding: 0 8px;
 	}
+	.mobile-menu {
+		display: block;
+		float: right;
+		font-size: 24px;
+		margin-top: 30px;
+		margin-left: 10px;
+	}
+	i.fal.fa-shopping-cart {
+		color: #fff;
+		font-size: 24px;
+		margin-top: 16px;
+	}
+	.wpb-js-composer div.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-title>a {
+		background: #d8d8d8;
+	 }
+	div[id^='whmpress_pricing_table_group'] .vc_tta-panel-title>a span:after {
+		font-family: 'Font Awesome 5 Pro';
+		content: '\f078';
+		font-weight: 300;
+		float: right;
 
+	 }
 }
+
 .fa-arrow-circle-right:before {
-    font-family: 'Font Awesome 5 Pro';
+	font-family: 'Font Awesome 5 Pro';
 }
-.rev-slider-row{
+
+.rev-slider-row {
 	min-height: 600px;
 }
+
 .whcom_product_config_title {
-    font-size: 39px;
-    font-weight: 200;
-    margin-bottom: 16px;
+	font-size: 39px;
+	font-weight: 200;
+	margin-bottom: 16px;
 }
-.whcom_button{
+
+.whcom_button {
 	border-radius: 0 !important;
 	-webkit-border-radius: 0 !important;
 	-moz-border-radius: 0 !important;
 	-ms-border-radius: 0 !important;
 	-o-border-radius: 0 !important;
 }
+
 .whcom_panel {
-    border: 1px solid #eeeeee;
-    border-radius: 0 !important;
-    -webkit-border-radius: 0 !important;
-    -moz-border-radius: 0 !important;
-    -ms-border-radius: 0 !important;
-    -o-border-radius: 0 !important;
+	border: 1px solid #eeeeee;
+	border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	-ms-border-radius: 0 !important;
+	-o-border-radius: 0 !important;
 }
+
 .whcom_product_addon_description {
-    font-weight: 400;
+	font-weight: 400;
 }
+
 label.whcom_product_addon_recurring.whcom_checkbox {
-    left: 8px;
+	left: 8px;
 }
+
 i.fal.fa-shopping-cart {
-    color: #fff;
+	color: #fff;
 }
-.whcom_op_addon_container label{
+
+.whcom_op_addon_container label {
 	width: 100%;
 	margin: 0;
 	padding: 6px !important;
 }
+
 .whcom_product_billingcycle {
 	padding: 0;
-    margin-top: 25px;
+	margin-top: 25px;
 }
+
 .whcom_op_addon_container .whcom_form_field {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
-.whcom_form_field select:not(textarea){
+
+.whcom_form_field select:not(textarea) {
 	border-radius: 0 !important;
 	-webkit-border-radius: 0 !important;
 	-moz-border-radius: 0 !important;
 	-ms-border-radius: 0 !important;
 	-o-border-radius: 0 !important;
 }
-.whcom_product_price_custom{
+
+.whcom_product_price_custom {
 	display: inline-block;
 	margin-top: 3px;
 }
+
 .whcom_addon_add_button {
-    width: 200px !important;
-   float: right;
-   margin-top: 10px;
-   background: #222 !important;
-    border-color: #222 !important;
+	width: 200px !important;
+	float: right;
+	margin-top: 10px;
+	background: #222 !important;
+	border-color: #222 !important;
 }
+
 .whcom_addon_add_button:hover {
-    
-   background: #cc2529 !important;
-    border-color: #cc2529 !important;
+	background: #cc2529 !important;
+	border-color: #cc2529 !important;
 }
+
 .whcom_addon_remove_button {
-    width: 200px !important;
-   float: right;
-   margin-top: 10px;
+	width: 200px !important;
+	float: right;
+	margin-top: 10px;
 }
+
 .whcom_product_price_custom span {
-    font-size: 1.7em !important;
-    font-weight: 300;
+	font-size: 1.7em !important;
+	font-weight: 300;
 }
+
+.pricing-features ul.price-list li:before {
+	font-family: 'Font Awesome 5 Pro';
+}
+
+.pricing .price-btn a:after {
+	font-family: 'Font Awesome 5 Pro' !important;
+}
+
 /* .whcom_product_addon_description{
 	display: none;
 }
@@ -245,5 +363,3 @@ span.whcom_button.whcom_button_block.whcom_button_success.whcom_addon_add_button
 	width: 40% !important;
 	float: right;
 } */
-
-

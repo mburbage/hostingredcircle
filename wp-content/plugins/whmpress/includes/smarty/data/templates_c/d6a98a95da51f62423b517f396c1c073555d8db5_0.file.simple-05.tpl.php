@@ -127,7 +127,7 @@ $_smarty_tpl->tpl_vars['desc'] = $foreach_desc_Sav;
 </span>
 							<div id="hide-btn-<?php echo $_smarty_tpl->tpl_vars['plan']->value['product_id'];?>
 " class="more-button hide-btn" onclick="toggleMoreDescription(<?php echo $_smarty_tpl->tpl_vars['plan']->value['product_id'];?>
-)"><i class="fa-up-chevron"></i>Close</div>
+)"><i class="fal fa-chevron-up"></i>Close</div>
 							<?php }?>
 
 						</div>

@@ -177,10 +177,10 @@ function hosted_fonts_url() {
         $font_families = array();
 
         if ( 'off' !== $nuni ) {
-            $font_families[] = 'Nunito:200,300,400,500,600,700,800';
+            $font_families[] = 'Nunito:200,500';
         } 
         if ( 'off' !== $merr ) {
-            $font_families[] = 'Merriweather:300,400,400i,700';
+            $font_families[] = 'Merriweather:300,700';
         } 
  
         $query_args = array(
@@ -227,7 +227,7 @@ function hosted_scripts() {
 	wp_enqueue_script("sticky-kit", get_template_directory_uri()."/js/jquery.sticky-kit.min.js",array('jquery'),false,true);
 	wp_enqueue_script("sticky", get_template_directory_uri()."/js/sticky.js",array('jquery'),false,true);
     }
-	//wp_enqueue_script("magnific", get_template_directory_uri()."/js/magnific-popup/jquery.magnific-popup.js",array('jquery'),false,true);
+	wp_enqueue_script("magnific", get_template_directory_uri()."/js/magnific-popup/jquery.magnific-popup.js",array('jquery'),false,true);
     wp_enqueue_script("hosted-js", get_template_directory_uri()."/js/script.js",array('jquery'),false,true);
 }
 add_action( 'wp_enqueue_scripts', 'hosted_scripts' );

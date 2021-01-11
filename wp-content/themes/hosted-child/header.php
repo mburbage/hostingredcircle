@@ -18,7 +18,16 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
-    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146527552-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-146527552-3');
+</script>
+
 </head>
 
 <body <?php body_class(); ?> >
@@ -65,7 +74,7 @@
                                 <?php if($info) { ?>
                                     <?php foreach ( $info as $inf ) { ?>
                                     <div class="col">
-                                        <?php if($inf['icon']) { ?><span class="id-color"><i class="fa <?php echo esc_attr($inf['icon']); ?>"></i></span><?php } ?><?php echo do_shortcode($inf['details']); ?>
+                                        <?php if($inf['icon']) { ?><span class="id-color"><i class="fal <?php echo esc_attr($inf['icon']); ?>"></i></span><?php } ?><?php echo do_shortcode($inf['details']); ?>
                                     </div>
                                     <?php } ?>
                                 <?php } ?>
@@ -75,7 +84,7 @@
                             <?php if($socials) { ?>
                             <div class="social-top">
                                 <?php foreach ( $socials as $social ) { ?>
-                                <a href="<?php echo esc_url($social['link']); ?>"><i class="fa <?php echo esc_attr($social['icon']); ?>" aria-hidden="true"></i></a>
+                                <a href="<?php echo esc_url($social['link']); ?>" target="_blank"><i class="fab <?php echo esc_attr($social['icon']); ?>" aria-hidden="true"></i></a>
                                 <?php } ?>
                             </div>
                             <?php } ?>

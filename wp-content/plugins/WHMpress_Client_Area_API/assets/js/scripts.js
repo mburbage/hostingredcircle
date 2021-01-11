@@ -2601,7 +2601,7 @@ var wcap_spinner_block = '<div class="whcom_text_center_xs"><i class="whcom_icon
                         domain_options_container.html(res.domain_config_form).show();
                         product_container.slideDown(500);
                         domain_free_tlds_info.show();
-                        product_domain_container.html(res.message).fadeOut(2000);
+                        product_domain_container.html(res.message).fadeOut(4000);
                         wcap_op_update_product_summary();
                     }
                     else {
