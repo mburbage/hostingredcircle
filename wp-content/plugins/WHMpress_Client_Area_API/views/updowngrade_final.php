@@ -55,6 +55,7 @@ if ($upgrade_type == "configoptions") {
 
 if ($upgrade_type != "configoptions") {
 
+    $FORM_DATA["client_id"] = $user_id;
     $data = wcap_updowngrade_service($FORM_DATA);
     $service_id = $FORM_DATA['serviceid'];
 

@@ -55,11 +55,21 @@ $response = wcap_get_email_history($args);
                             <tbody>
                             <?php foreach ($response["data"] as $key => $email) {
 
-                                $args=[
+                                $sso_token_args = [
+                                    'action' => 'CreateSsoToken',
+                                    'client_id' => $userid,
+                                    'destination' => 'sso:custom_redirect',
+                                    'sso_redirect_path' => "viewemail.php?id=" . $email["id"] . "&wcap_iframe",
+                                ];
+
+                                $sso_result = whcom_process_api($sso_token_args);
+                                $link = $sso_result["redirect_url"];
+
+                                /*$args=[
                                     'goto'                  => "viewemail.php?id=" . $email["id"] . "&wcap_iframe",
                                     'append_no_redirect'    => 'yes'
                                 ];
-                                $link =whcom_generate_auto_auth_link($args);
+                                $link =whcom_generate_auto_auth_link($args);*/
 
 
                                 ?>

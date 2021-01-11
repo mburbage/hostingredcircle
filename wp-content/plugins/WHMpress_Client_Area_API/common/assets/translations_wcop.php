@@ -42,7 +42,7 @@ esc_html__( 'Incorrect Information', 'whcom' );
 esc_html__( 'Invoice ID' );
 esc_html__( 'Invoice payment successful' );
 esc_html__( 'No Payment method selected', "whcom" );
-esc_html__( 'Payment Gateway' );
+esc_html__( 'Payment Gateway',"whcom" );
 esc_html__( 'Product is attached with domain', "whcom" );
 esc_html__( 'Product is detached from domain', "whcom" );
 esc_html__( 'Select Product', "whcom" );

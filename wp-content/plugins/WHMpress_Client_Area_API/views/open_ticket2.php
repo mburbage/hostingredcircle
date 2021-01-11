@@ -130,9 +130,16 @@ $current_user = whcom_get_current_client();
                         </div>
                     </div>
                     <div class="whcom_col_sm_12">
+                        <label class="main_label" style="display: block; padding-left: 10px"><?php esc_html_e('Attachments', "whcom") ?></label>
+                    </div>
+                    <div class="whcom_col_sm_9">
+                        <div class="whcom_form_field wcap_ticket_attachment_area">
+                            <input type="file" name="upload[]" id="upload" class="form-control" multiple  style="line-height: 15px;">
+                        </div>
+                    </div>
+                    <div class="whcom_col_sm_3">
                         <div class="whcom_form_field">
-                            <label class="main_label"><?php esc_html_e('Attachments', "whcom") ?></label>
-                            <input type="file" name="upload" id="upload" class="form-control" style="line-height: 15px;">
+                            <button type="button" class="whcom_button whcom_button_secondary" id="wcap_add_more_attachments" value=""><i class="fas fa-plus" style="font-family: FontAwesome; font-style: normal"></i> <?php esc_html_e('Add More', "whcom") ?></button>
                         </div>
                     </div>
                     <div class="whcom_col_sm_12">
@@ -152,6 +159,11 @@ $current_user = whcom_get_current_client();
 <script>
     var simplemde = new SimpleMDE({element: jQuery('.wcap_md_editor')[0]});
 
+    jQuery("#wcap_add_more_attachments").click(function () {
+        let wcap_file_upload_html = '<input type="file" name="upload[]" id="upload" class="form-control" multiple style="line-height: 15px; margin-top:5px">';
+        jQuery(document).find('.wcap_ticket_attachment_area').append(wcap_file_upload_html);
+
+    });
 
     var uploadForm = jQuery("#open_ticket_form");
     jQuery("#success-message").hide();
@@ -170,6 +182,8 @@ $current_user = whcom_get_current_client();
             processData: false,
             success: function (d) {
                 res = JSON.parse(d);
+                console.log("Support ticket response");
+                console.log(res);
                 jQuery("#open_ticket_form").hide();
                 jQuery('html, body').animate({
                     scrollTop: jQuery('#open_ticket_message').offset().top - 10000 //#DIV_ID is an example. Use the id of your destination on the page

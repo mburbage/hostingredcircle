@@ -636,6 +636,7 @@ function wcap_updowngrade_service($args = "")
 {
     $default = [
         "serviceid" => "",
+        "client_id" => "",
         "calconly" => "1",
         "paymentmethod" => "",
         "type" => "product",
@@ -682,10 +683,19 @@ function wcap_updowngrade_service($args = "")
             $response['redirect_link'] = '<a href="?whmpca=dashboard" class="whcom_button">' . esc_html__('Dashboard', 'whcom') . '</a> ';
 
             # Generate AutoAuth URL & Redirect
-            $args = [
+            $sso_token_args = [
+                'action' => 'CreateSsoToken',
+                'client_id' => $args['userid'],
+                'destination' => 'sso:custom_redirect',
+                'sso_redirect_path' => "viewinvoice.php?id=" . $res['invoiceid']
+            ];
+
+            $sso_result = whcom_process_api($sso_token_args);
+            $url = $sso_result["redirect_url"];
+            /*$args = [
                 'goto' => "viewinvoice.php?wcap_no_redirect=1&id=" . $res['invoiceid'],
             ];
-            $url = whcom_generate_auto_auth_link($args);
+            $url = whcom_generate_auto_auth_link($args);*/
 
             // todo: to be changed
             $order_complete_url = get_option('wcapfield_client_area_url' . whcom_get_current_language(), '?whmpca=dashboard');

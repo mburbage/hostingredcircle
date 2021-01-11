@@ -366,3 +366,30 @@ Debug log option added
 3.6 21-09-2020
 - Make Plugin compatible with php 7.4
 - Update Spanish language translation.
+
+3.6-revision-1 23-09-2020
+- Reset Password issue is fixed.
+
+3.6-revision-2 10-10-2020
+- PHP 7.4 warnings fixed in comman area
+- Registration issue fixed with WHMCS 8.0
+- Login issue fixed with WHMCS 8.0
+
+3.6-revision-3 02-11-2020
+- Implemented: More than one attachment in support ticket
+
+3.6-revision-4 09-11-2020
+- Fixed missing css file issue.
+
+3.6-revision-5 20-11-2020
+- Fixed activate li issue on front menu.
+
+3.7 08-12-2020
+- Fixed Reset Client password issue
+- Stop WHMCS 7 support
+
+3.7-revision-1 09-12-2020
+- Fixed issues about client custom fields.
+
+3.8
+- Make Compatible with WHMCS version 8.1

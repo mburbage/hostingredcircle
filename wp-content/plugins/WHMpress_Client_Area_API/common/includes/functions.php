@@ -1,6 +1,4 @@
-<?php 
-
-defined( 'ABSPATH' ) or die( "Cannot access pages directly." );
+<?php defined( 'ABSPATH' ) or die( "Cannot access pages directly." );
 
 /**====================================================================**/
 /**==       General Functions                                        ==**/
@@ -142,7 +140,6 @@ if ( ! function_exists( 'whcom_get_user_ip' ) ) {
         return "";
     }
 }
-
 if ( ! function_exists( 'whcom_convert_billingcycle' ) ) {
     function whcom_convert_billingcycle( $args ) {
         $return_string        = '';
@@ -1267,3 +1264,10 @@ require_once WHCOM_PATH . "/includes/ajax.php";
 /**==       Order Process                                            ==**/
 /**====================================================================**/
 require_once WHCOM_PATH . "/includes/order_process.php";
+
+
+
+
+
+
+

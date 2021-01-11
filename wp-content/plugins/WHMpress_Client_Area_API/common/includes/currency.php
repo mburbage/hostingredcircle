@@ -1,6 +1,4 @@
-<?php 
-
- defined( 'ABSPATH' ) or die( "Cannot access pages directly." );
+<?php defined( 'ABSPATH' ) or die( "Cannot access pages directly." );
 
 
 if ( ! function_exists( 'whcom_format_amount' ) ) {
@@ -247,3 +245,6 @@ if ( ! function_exists( 'whcom_get_payment_gateways' ) ) {
 		return $response;
 	}
 }
+
+
+

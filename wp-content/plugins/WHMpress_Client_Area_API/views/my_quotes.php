@@ -95,11 +95,20 @@ $status_array = wcap_count_stage($fill_array, $quotes["quotes"]["quote"]);
                     foreach ($quotes["quotes"]["quote"] as $quote) {
                         //$link = $thi->generate_auto_auth_url("dl.php?wcap_no_redirect=1&id=" . $quote["id"] . "&type=q");
 
-                        $args = [
+                        $sso_token_args = [
+                            'action' => 'CreateSsoToken',
+                            'client_id' => $args['userid'],
+                            'destination' => 'sso:custom_redirect',
+                            'sso_redirect_path' => "dl.php?id=" . $quote["id"] . "&type=q"
+                        ];
+
+                        $sso_result = whcom_process_api($sso_token_args);
+                        $link = $sso_result["redirect_url"];
+                        /*$args = [
                             'goto' => "dl.php?id=" . $quote["id"] . "&type=q",
                             'append_no_redirect' => 'yes'
                         ];
-                        $link = whcom_generate_auto_auth_link($args);
+                        $link = whcom_generate_auto_auth_link($args);*/
 
                         if ($quote["stage"] != "Draft") {
                             if ($quote["stage"] == "Dead" || $quote["stage"] == "Lost") {

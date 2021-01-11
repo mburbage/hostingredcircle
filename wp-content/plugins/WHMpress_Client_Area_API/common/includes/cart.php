@@ -448,14 +448,12 @@ if (!function_exists('whcom_validate_item_promotion')) {
     function whcom_validate_item_promotion($type = 'product', $item = '', $duration = '', $promo_array = [])
     {
 
-		$response = false;
-		
-		if (!empty($item) && !empty($duration)) {
+        $response = false;
+
+        if (!empty($item) && !empty($duration)) {
             if (empty($promo_array)) {
                 $promo_array = whcom_get_current_promo();
-			}
-			
-			
+            }
 
             // Checking if promo is expired
             if ($promo_array["startdate"] <> "0000-00-00" && $promo_array["expirationdate"] <> "0000-00-00") {
@@ -506,9 +504,10 @@ if (!function_exists('whcom_validate_item_promotion')) {
                     $eligible_years[] = $key;
                 }
             }
-			
-			$eligible_items = explode(',', (string)$promo_array["appliesto"]);
-			
+
+
+            $eligible_items = explode(',', (string)$promo_array["appliesto"]);
+
             // Type is product
             if ($type == 'product' && in_array($item, $eligible_items) && (!empty($eligible_billingcycles) || in_array($duration, $eligible_billingcycles))) {
                 $response = true;

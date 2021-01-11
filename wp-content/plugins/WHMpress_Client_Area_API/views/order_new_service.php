@@ -15,7 +15,7 @@ $show_sidebar = true;
 
 
 //$active_tab = $_POST["active"];
-$active_tab = "";
+$active_tab = isset($_POST['gid']) ? "whcom_products_group_" . $_POST['gid'] : '';
 
 global $WCOP;
 $currency_id = $gids = $pids = $domain_products = '';

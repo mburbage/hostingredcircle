@@ -558,10 +558,21 @@ if ( ! function_exists( 'whcom_op' ) ) {
                                     $response['message']       = esc_html__( 'Your product has been ordered...' );
                                     $response['redirect_link'] = $response['response_form'] = $response['invoice_link'] = $response['show_cc'] = '';
                                     # Generate AutoAuth URL & Redirect
-                                    $args = [
+
+                                    $sso_token_args = [
+                                        'action' => 'CreateSsoToken',
+                                        'client_id' => $client_id,
+                                        'destination' => 'sso:custom_redirect',
+                                        'sso_redirect_path' => "viewinvoice.php?wcap_no_redirect=1&id=" . $response['invoiceid']
+                                    ];
+
+                                    $sso_result = whcom_process_api($sso_token_args);
+                                    $url = $sso_result["redirect_url"];
+
+                                    /*$args = [
                                         'goto' => "viewinvoice.php?wcap_no_redirect=1&id=" . $response['invoiceid'],
                                     ];
-                                    $url  = whcom_generate_auto_auth_link( $args );
+                                    $url  = whcom_generate_auto_auth_link( $args );*/
 
 
                                     $is_wcop = ( ! empty( $_POST['is_wcop'] ) && (string) $_POST['is_wcop'] == 'yes' ) ? true : false;

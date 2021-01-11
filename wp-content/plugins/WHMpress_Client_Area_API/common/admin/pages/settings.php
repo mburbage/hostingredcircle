@@ -114,16 +114,16 @@ $helper_test = whcom_helper_test();
 					       value="<?php echo esc_attr( get_option( $field ) ); ?>">
 				</div>
 
-				<div class="whcom_form_field whcom_form_field_horizontal">
-					<?php $field = 'whcom_whmcs_admin_auth_key' ?>
-					<label for="<?php echo "$field" ?>">
-						<?php echo esc_html_x( 'WHMCS Invoice Auth Key', "admin", 'whcom' ) ?>
+				<!--<div class="whcom_form_field whcom_form_field_horizontal">
+					<?php /*$field = 'whcom_whmcs_admin_auth_key' */?>
+					<label for="<?php /*echo "$field" */?>">
+						<?php /*echo esc_html_x( 'WHMCS Invoice Auth Key', "admin", 'whcom' ) */?>
 						<a href="http://docs.whmpress.com/whmcs-cart-order-pages/creating-autoauth-key-in-whmcs/"
 						   target="_blank" style="text-decoration: none;"><i class="whcom_icon_help-circled"></i></a>
 					</label>
-					<input id="<?php echo "$field" ?>" type="text" name="<?php echo "$field" ?>"
-					       value="<?php echo esc_attr( get_option( $field ) ); ?>">
-				</div>
+					<input id="<?php /*echo "$field" */?>" type="text" name="<?php /*echo "$field" */?>"
+					       value="<?php /*echo esc_attr( get_option( $field ) ); */?>">
+				</div>-->
 
 
 				<div class="whcom_text_center">

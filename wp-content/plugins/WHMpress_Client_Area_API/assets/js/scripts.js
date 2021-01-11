@@ -908,7 +908,8 @@ function is_json(str) {
             },
             complete: function () {
                 current_request = null;
-
+                jQuery("li.current-menu-item").removeClass("current-menu-item");
+                jQuery("#primary_nav_wrap").find('a[data-page=' + get_params['whmpca'] + ']').closest("li").addClass("current-menu-item");
             }
         });
 

@@ -1,7 +1,7 @@
 <?php
 //page initialization, veriables for whole page
 $show_sidebar = wcap_show_side_bar("addons", true);
-
+$user_id = whcom_get_current_client_id();
 $args = [
     "catid" => $_POST['catid'],
 ];
@@ -38,11 +38,22 @@ $response = wcap_get_download_files($args);
                             <ul class="whcom_tab_links whcom_list_fancy whcom_list_bordered whcom_list_hover whcom_list_padded">
 
                                 <?php foreach ($response["data"] as $key => $file) {
-                                    $args=[
+
+                                    $sso_token_args = [
+                                        'action' => 'CreateSsoToken',
+                                        'client_id' => $user_id,
+                                        'destination' => 'sso:custom_redirect',
+                                        'sso_redirect_path' => "dl.php?type=d&id=" . $file["id"]
+                                    ];
+
+                                    $sso_result = whcom_process_api($sso_token_args);
+                                    $link = $sso_result["redirect_url"];
+
+                                    /*$args=[
                                         'goto'                  => "dl.php?type=d&id=" . $file["id"] ,
                                         'append_no_redirect'    => 'yes'
                                     ];
-                                    $link =whcom_generate_auto_auth_link($args);
+                                    $link =whcom_generate_auto_auth_link($args);*/
                                     //$link = $thi->generate_auto_auth_url("dl.php?wcap_no_redirect=1&id=" . $file["id"] . "&type=d");
                                     ?>
 

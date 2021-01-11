@@ -32,7 +32,7 @@ if (!function_exists('whcom_validate_client')) {
                     $response['message'] = $res['message'];
                     $response['status'] = 'ERROR';
                 } else {
-                    $user_array = whcom_get_client((int)$res["userid"]);
+                    $user_array = whcom_get_client(0,$credentials['email']);
                     if (!empty($user_array["client"]) && is_array($user_array["client"])) {
                         $_SESSION['whcom_user'] = [];
                         whcom_update_current_currency($user_array['client']['currency']);
@@ -61,12 +61,17 @@ if (!function_exists('whcom_validate_client')) {
 }
 
 if (!function_exists('whcom_get_client')) {
-    function whcom_get_client($id = 0)
+    function whcom_get_client($id = 0,$client_email = '')
     {
         if ($id > 0) {
             $args = [
                 'action' => 'GetClientsDetails',
                 'clientid' => $id,
+            ];
+        }elseif(!empty($client_email)){
+            $args = [
+                'action' => 'GetClientsDetails',
+                'email' => $client_email,
             ];
         } else {
             $args = [
@@ -162,7 +167,7 @@ if (!function_exists('whcom_register_new_client')) {
                 $user['clientip'] = whcom_get_user_ip();
 
                 $customfields = ( isset( $user_data['customfields'] ) ) ? $user_data['customfields'] : [];
-                $user['customfields'] = base64_encode( serialize( $customfields ) );
+                $user['customfields'] = $customfields;
 
                 $user['language'] = whcom_get_whmcs_relevant_language();
                 $res = whcom_process_api($user);
@@ -1162,11 +1167,11 @@ if (!function_exists('whcom_render_update_client_custom_fields')) {
                                 {
                                     // case 2 represents <input type="number">
                                     echo '<label class="main_label" for="custom_field_[' . $custom_field['id'] . ']">' . $custom_field['fieldname'] . ':</label>';
-                                   foreach($client['customfields'] as $customfield){
-                                       if($custom_field['id'] == $customfield['id'] ){
-                                           $result = $customfield['value'];
-                                       }
-                                   }
+                                    foreach($client['customfields'] as $customfield){
+                                        if($custom_field['id'] == $customfield['id'] ){
+                                            $result = $customfield['value'];
+                                        }
+                                    }
                                     echo '<input type="text" class="" value="'. $result . '" name="' . $name_prepend . 'customfields[' . $custom_field['id'] . ']" id="custom_field_[' . $custom_field['id'] . ']" ' . $required . '>';
                                     break;
                                 }
@@ -2270,11 +2275,3 @@ if (!function_exists('whcom_logout_client_from_whmcs_direct')) {
 
     }
 }
-
-
-
-
-
-
-
-

@@ -1052,7 +1052,7 @@ class WCAP
     //		require_once( $this->Path . "/admin/pages/help.php" );
     //	}
 
-    function update_wp_user_from_whmcs_0($whmcs_row)
+    function update_wp_user_from_whmcs($whmcs_row)
     {
         if (!is_array($whmcs_row) && is_email($whmcs_row)) {
             $whmcs_row = $this->get_whmcs_users("email=" . $whmcs_row);
@@ -1145,7 +1145,7 @@ class WCAP
         return get_option("wcapfield_new_user_profile_fields") == "1";
     }
 
-    function create_wp_user_from_whmcs_row_0($whmcs_row)
+    function create_wp_user_from_whmcs_row($whmcs_row)
     {
         //todo: check user row using email field
         if (!isset($whmcs_row["firstname"])) {
@@ -1711,6 +1711,10 @@ class WCAP
         $lang = whcom_get_current_language();
         $field = get_option("configure_product" . $lang);
 
+        //== Get Category names to introduce that in store dropsown
+        $groups = $this->get_all_products_x();
+        $groups = $groups["data"];
+
         if ($wcop_active) {
             $class = "";
             $services_data = "";
@@ -1767,6 +1771,29 @@ class WCAP
             "href" => $services_url,
             "show" => true,
         ];
+
+
+        $WCAP_Menu[10]["sub"]["browse_all"] = [
+            "label" => "Browse All",
+            "page"  => "order_new_service",
+            "class" => "wcap_load_page",
+            "show" => true,
+        ];
+        foreach ($groups["groups"] as $index => $group) {
+            $cat_gid = isset($group['id']) ? $group['id'] : '';
+            $cat_url = '?whmpca=order_new_service&gid='.$cat_gid;
+            $name = (isset($group["name"]) ? $group['name'] : '');
+            if (is_numeric($index)) {
+
+                $WCAP_Menu[10]["sub"][] = [
+					"label" => $name,
+					"page"  => "order_new_service",
+					"class" => "wcap_load_page",
+                    "href" => $cat_url,
+                    "show" => true,
+				];
+             }
+        }
         /*        $WCAP_Menu[10]["sub"][] = [
 					"label" => esc_html_x( "My Services","menu", "whcom" ),
 					"page"  => "services",
@@ -2706,9 +2733,9 @@ class WCAP
         $args = wp_parse_args($args, $default);
         extract($args);
 
-        if (!$this->validate_reset_password_url($args)) {
+        /*if (!$this->validate_reset_password_url($args)) {
             return __("Invalid token validation", "whcom");
-        }
+        }*/
 
         if ($password1 <> $password2) {
             return __("Invalid password confirmation", "whcom");
@@ -2718,13 +2745,29 @@ class WCAP
             return __("Password length 8 characters required.");
         }
 
-        $args["action"] = "UpdateClient";
-        $args["clientemail"] = $args["email"];
-        unset($args["token"], $args["password1"], $args["what"], $args["email"]);
+        /*$args["action"] = "GetClientsDetails";
+        unset($args["token"], $args["password1"], $args["what"]);
 
-        $response = $this->run_whmcs_api($args);
+        $client_response = $this->run_whmcs_api($args);*/
 
-        if (@$response["result"] == "error" && isset($response["message"])) {
+
+
+        /*$args["action"] = "UpdateClient";
+        $args["clientid"] = $client_response["id"];
+        unset($args["email"]);*/
+
+        /*//== Update User password
+        $args["action"] = "ResetPassword";
+        $args["id"] = $client_response["owner_user_id"];
+        unset($args["email"]);*/
+
+        //$response = $this->run_whmcs_api($args);
+
+        $args["action"] = "update_user_password";
+        unset($args["token"]);
+        $response = whcom_process_helper($args)['data'];
+
+        if ($response["status"] == "ERROR") {
             return $response["message"];
         }
 
@@ -3184,21 +3227,24 @@ class WCAP
         return "Unknown error";
     }
 
-    public
-    function open_ticket(
-        $args = ""
-    )
+    public function open_ticket($args = "")
     {
+        $file_attachment_info = array();
+        foreach($_FILES['upload']['name'] as $filename){
+            if (isset($_FILES['upload'])) {
+                if ($_FILES['upload']['error'] > 0) {
+                    $file_error = '<br />Error: ' . $_FILES['upload']['error'] . '<br />';
+                } else {
+                    $filename = $_FILES['upload']['name'];
+                    $filecontent = file_get_contents($_FILES['upload']['tmp_name']);
+                }
+                $file_attachment_info[] = ['name' => "$filename", 'data' => base64_encode("$filecontent")];
 
-        if (isset($_FILES['upload'])) {
-            if ($_FILES['upload']['error'] > 0) {
-                $file_error = '<br />Error: ' . $_FILES['upload']['error'] . '<br />';
-            } else {
-                $filename = $_FILES['upload']['name'];
-                $filecontent = file_get_contents($_FILES['upload']['tmp_name']);
+
             }
-
         }
+        $file_attachment = base64_encode(json_encode($file_attachment_info));
+
 
         $default = [
             "deptid" => "",
@@ -3213,7 +3259,7 @@ class WCAP
             "domainid" => "",
             "relatedservice" => "",
             'markdown' => true,
-            'attachments' => base64_encode(json_encode([['name' => "$filename", 'data' => base64_encode("$filecontent")]])),
+            'attachments' => $file_attachment,
         ];
         $args = wp_parse_args($args, $default);
 
@@ -3248,6 +3294,7 @@ class WCAP
 
 
             $response['response_html'] = $response_html;
+            $response['message'] = $file_attachment_info;
 
 
             return json_encode($response);
@@ -5248,7 +5295,7 @@ class WCAP
         return $fields_array;
     }
 
-    function get_wp_users_0()
+    function get_wp_users()
     {
         global $wpdb;
         $Q = "SELECT ID,`user_login`,`user_email`,`user_pass` FROM `{$wpdb->prefix}users` WHERE LEFT(`user_pass`, 2) = '$2'";
@@ -5388,16 +5435,28 @@ class WCAP
                 $response['message'] = esc_html__('Invoice is generated');
                 $response['redirect_link'] = $response['response_form'] = $response['invoice_link'] = $response['show_cc'] = '';
                 # Generate AutoAuth URL & Redirect
-                $args = [
+                $sso_token_args = [
+                    'action' => 'CreateSsoToken',
+                    'client_id' => $args['userid'],
+                    'destination' => 'sso:custom_redirect',
+                    'sso_redirect_path' => "viewinvoice.php?id=" . $response['invoiceid']
+                ];
+
+                $sso_result = whcom_process_api($sso_token_args);
+                $url = $sso_result["redirect_url"];
+
+
+                /*$args = [
                     'goto' => "viewinvoice.php?wcap_no_redirect=1&id=" . $response['invoiceid'],
                 ];
-                $url = whcom_generate_auto_auth_link($args);
+                $url = whcom_generate_auto_auth_link($args);*/
 
 
                 $response['redirect_link'] = '<a href="?whmpca=dashboard" class="whcom_button">' . esc_html__('Dashboard', 'whcom') . '</a> ';
                 $order_complete_url = get_option('wcapfield_client_area_url' . whcom_get_current_language(), '?whmpca=dashboard');
                 if (get_option('wcapfield_show_invoice_as', 'popup') == 'minimal') {
                     $response['invoice_link'] = '<a href="' . $url . '" class="whcom_button wcop_view_invoice_button">' . esc_html__('Review Invoice & Pay', "whcom") . '</a> ';
+
                 } else if (get_option('wcapfield_show_invoice_as', 'popup') == 'same_tab') {
                     $response['invoice_link'] = '<a href="?whmpca=order_process&a=viewinvoice&id=' . $response['invoiceid'] . '" class="whcom_button wcop_view_invoice_button">' . esc_html__('Review Invoice & Pay', "whcom") . '</a> ';
                 } else if (get_option('wcapfield_show_invoice_as', 'popup') == 'new_tab') {

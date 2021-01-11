@@ -22,7 +22,8 @@ foreach ( $invoices_stats["invoices"]["invoice"] as $invoice ) {
 $invoice_total .= " " . $currency["suffix"];
 
 
-$invoices = wcap_get_invoices( "userid=" . whcom_get_current_client_id() );
+$user_id = whcom_get_current_client_id();
+$invoices = wcap_get_invoices( "userid=" . $user_id );
 
 // count status
 $fill_array   = [
@@ -137,13 +138,24 @@ $status_array = wcap_count_status( $fill_array, $invoices["invoices"]["invoice"]
                     </thead>
                     <tbody>
 					<?php
-					$invoices = wcap_get_invoices( "userid=" . whcom_get_current_client_id() );
+					//$invoices = wcap_get_invoices( "userid=" . whcom_get_current_client_id() );
 					foreach ( $invoices["invoices"]["invoice"] as $invoice ) {
-						$args = [
+
+                        $sso_token_args = [
+                            'action' => 'CreateSsoToken',
+                            'client_id' => $user_id,
+                            'destination' => 'sso:custom_redirect',
+                            'sso_redirect_path' => "viewinvoice.php?wcap_no_redirect=1&id=" . $invoice["id"] . "&wcap_iframe"
+                        ];
+
+                        $sso_result = whcom_process_api($sso_token_args);
+                        $link = $sso_result["redirect_url"];
+
+					    /*$args = [
 							'goto'               => "viewinvoice.php?wcap_no_redirect=1&id=" . $invoice["id"] . "&wcap_iframe",
 							'append_no_redirect' => 'yes'
 						];
-						$link = whcom_generate_auto_auth_link( $args );
+						$link = whcom_generate_auto_auth_link( $args );*/
 
 
 						?>
