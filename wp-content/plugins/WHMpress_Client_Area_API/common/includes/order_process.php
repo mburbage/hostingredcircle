@@ -615,43 +615,36 @@ if (!function_exists('whcom_render_product_addons')) {
                                        type="checkbox">
                                 <span><?php echo $addon['name']; ?></span> </label>
                         <?php } else { ?>
-                            <div class="whcom_col_sm_6">
-                                <div class="whcom_panel whcom_text_small whcom_text_center whcom_op_addon_container whcom_bg_white">
-                                    <label style="cursor: pointer">
-                                        <div class="whcom_op_product_addon whcom_panel_body whcom_form_field">
-                                            <div class="whcom_product_addon_price whcom_checkbox_container">
-                                                <label class="whcom_product_addon_recurring whcom_checkbox">
-                                                    <input name="addons<?php echo $index_append; ?>[]"
-                                                           value="<?php echo $addon['id']; ?>"
-                                                           id="whcom_product_addon_<?php echo $addon['id'] . $random; ?>"
-                                                           class="whcom_op_input wcop_input whcom_addon_input"
-                                                           type="checkbox">
-                                                    <strong><?php echo $addon['name']; ?></strong> </label>
-                                                <div class="whcom_product_addon_description">
-                                                    <span><?php echo $addon['description']; ?></span>
-                                                </div>
-                                            </div>
-                                        </div>
+                            <div class="whcom_col_sm_12">
+								<div class="whcom_panel whcom_text_small whcom_text_left whcom_op_addon_container whcom_bg_white">
+									<label style="cursor: pointer">
+										<div class="whcom_op_product_addon whcom_panel_body whcom_form_field">
+											<div class="whcom_product_addon_price whcom_checkbox_container">
+												<label class="whcom_product_addon_recurring whcom_checkbox">
+													<input name="addons<?php echo $index_append; ?>[]" value="<?php echo $addon['id']; ?>" id="whcom_product_addon_<?php echo $addon['id'] . $random; ?>" class="whcom_op_input wcop_input whcom_addon_input" type="checkbox">
+													<strong><?php echo $addon['name']; ?></strong> </label>
 
-                                        <div class="whcom_panel_footer  whcom_bg_white">
-                                            <div class="whcom_padding_10">
-                                                <span><?php echo whcom_format_amount($curr_addon_price); ?></span>
-                                                <span><?php echo whcom_convert_billingcycle($addon_billingcycle); ?></span>
-                                                +
-                                                <span><?php echo whcom_format_amount($curr_addon_setup); ?></span>
-                                                <span><?php echo esc_html__('Setup Fee', 'whcom'); ?></span>
-                                            </div>
-                                            <span class="whcom_button whcom_button_block whcom_button_danger whcom_addon_remove_button"
-                                                  style="display: none">
-											<i class="whcom_icon_basket-1"></i> <?php esc_html_e("Added to Cart (Remove)", "whcom") ?>
-										</span>
-                                            <span class="whcom_button whcom_button_block whcom_button_success whcom_addon_add_button">
-											<i class="whcom_icon_plus"></i> <?php esc_html_e("Add to Cart", "whcom") ?>
-										</span>
-                                        </div>
-                                    </label>
-                                </div>
-                            </div>
+												<div class="whcom_product_addon_description">
+													<span><?php echo $addon['description']; ?></span>
+												</div>
+												<div class="whcom_product_price_custom">
+													<span><?php echo whcom_format_amount($curr_addon_price); ?></span>
+													<span><?php echo whcom_convert_billingcycle($addon_billingcycle); ?></span>
+													<!-- +
+													<span><?php echo whcom_format_amount($curr_addon_setup); ?></span>
+													<span><?php echo esc_html__('Setup Fee', 'whcom'); ?></span> -->
+												</div>
+												<span class="whcom_button whcom_button_block whcom_button_danger whcom_addon_remove_button" style="display: none">
+													<i class="whcom_icon_basket-1"></i> <?php esc_html_e("Remove", "whcom") ?>
+												</span>
+												<span class="whcom_button whcom_button_block whcom_button_success whcom_addon_add_button">
+													<i class="whcom_icon_plus"></i> <?php esc_html_e("Add to Cart", "whcom") ?>
+												</span>
+											</div>
+										</div>
+									</label>
+								</div>
+							</div>
                         <?php }
                     } ?>
                 </div>
