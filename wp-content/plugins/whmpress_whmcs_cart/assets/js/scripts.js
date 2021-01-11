@@ -132,8 +132,10 @@
             e.preventDefault();
             let form = $(this);
             let product_selector = $('#wcop_sp_product_select');
+            let domain_selector = $('form.wcop_sp_add_product');
             let main_form = product_selector.closest('form.wcop_sp_add_product');
             let domain_options_container = $('#wcop_sp_domain_config');
+            let show_domain_nameservers = domain_selector.find('[name="show_domain_nameservers"]').val();
             let submit = form.find('button[type="submit"]');
             let submit_val = submit.html();
             let selected_product = product_selector.find(':selected').val();
@@ -152,6 +154,9 @@
             data.push({'name': 'pid', 'value': pid});
             data.push({'name': 'default_billingcycle', 'value': default_billingcycle});
             data.push({'name': 'wcop_sp_template', 'value': wcop_sp_template});
+            data.push({'name': 'show_domain_nameservers', 'value': show_domain_nameservers});
+            console.log("Attach product domain");
+            console.log(data);
             if (data[3].value === "transfer") {
                 window.eppcode = data[5].value;
             }
@@ -204,6 +209,7 @@
             let domain_required = selected_option.data('domain-required');
             let domain_notice = main_form.find('#wcop_sp_product_domain_notice');
             let wcop_sp_template = main_form.find('[name="wcop_sp_template"]').val();
+            let hide_server_fields = main_form.find('[name="hide_server_fields"]').val();
             //== picking free domain notice div to show or hide
             let is_free_domain_attached = selected_option.data('is-free-domain-attached');
             let free_domain_notice = main_form.find('#wcop_sp_product_free_domain_notice');
@@ -231,6 +237,8 @@
             data.pid = $(this).val();
             //== Add wcop template options
             data.wcop_sp_template = wcop_sp_template;
+            data.hide_server_fields = hide_server_fields;
+            console.log("I am in product select new");
             console.log(data);
             if (domain_attached === 'yes') {
                 data.tld = main_form.find('[name=tld]').val();
@@ -407,6 +415,7 @@
             e.preventDefault();
             let $form = $(this);
             let response_field = $form.find('.whcom_sp_order_response');
+            let show_direct_invoice = $form.find('[name="show_direct_invoice"]').val();;
             let response_div = $('#wcop_sp_main');
             let spepp = window.eppcode;
             let data = $(this).serializeArray();
@@ -415,7 +424,8 @@
             data.push({'name': 'eppcode', 'value': spepp});
             response_field.show();
             response_field.html(whcom_spinner_icon);
-            console.log(data);
+            console.log("show direct invoice");
+            console.log(show_direct_invoice);
             jQuery.ajax({
                 url: wcop_ajax.ajax_url,
                 type: 'post',
@@ -426,17 +436,25 @@
                     response_field.html(res.message);
                     whcom_show_notification(res.message, 'whcom_alert whcom_alert_danger');
                     console.log("I am here");
-                    console.log(res.message);
+                    console.log(res);
                     if (res.message === 'Your product has been ordered...') {
                         window.scrollTo(0, 0);
                     }
                     if (res.status === "OK") {
                         response_div.html(res.response_html);
                         if (res.show_cc === 'show_invoice') {
-                            $('.wcop_view_invoice_button').trigger('click');
+                            if(show_direct_invoice === 'yes') {
+                                let invoise_href = $('.wcop_view_invoice_button').attr('href');
+                                window.location.href = invoise_href;
+                            }else{
+                                $('.wcop_view_invoice_button').trigger('click');
+                            }
                         }
                     } else if (res.status === 'invoice_generated') {
-                        response_div.html(res.response_html).prepend(res.response_html);
+                        /*response_div.html(res.response_html).prepend(res.response_html);*/
+                        response_div.html(res.response_html);
+                        let invoise_href = $('.wcop_view_invoice_button').attr('href');
+                        window.location.href = invoise_href;
                     } else {
                     }
                 }
@@ -1047,7 +1065,6 @@
 
             let prd_form = $('form.wcop_sp_add_product');
             let curr_temp = prd_form.find('[name="wcop_current_template"]').val();
-            console.log("I am here in update summary");
             if (prd_form[0]) {
                 let prd_summary = $('.wcop_sp_order_summary');
                 let prd_summary_spinner = $('.wcop_sp_product_summary_spinner');
@@ -1063,7 +1080,9 @@
 
                 let data = prd_form.serializeArray();
                 data.push({'name': 'wcop_sp_what', 'value': 'wcop_sp_generate_summary'});
-                data.push({'name': 'wcop_sp_template', 'value': curr_temp });
+                /*data.push({'name': 'wcop_sp_template', 'value': curr_temp });*/
+                console.log("I am here in update summary");
+                console.log(data);
                 $.ajax({
                     url: wcop_ajax.ajax_url,
                     type: 'post',
@@ -1075,6 +1094,19 @@
                             //== Change Summary section heading either it is empty or populated with content
                             jQuery('.whcom_empty_summary_section_heading').css("display", "none");
                             jQuery('.whcom_filled_summary_section_heading').css("display", "block");
+                            if(jQuery(window).width() <= 600){
+                                jQuery('.wcop_sp_sidebar-mobile-summary').css("display","block");
+                            }else{
+                                jQuery('.wcop_sp_sidebar-mobile-summary').css("display","none");
+                            }
+                            $(window).resize(function() {
+                                if(jQuery(window).width() <= 600){
+                                    jQuery('.wcop_sp_sidebar-mobile-summary').css("display","block");
+                                }else{
+                                    jQuery('.wcop_sp_sidebar-mobile-summary').css("display","none");
+                                }
+                            });
+
 
                             whcom_show_notification(res.message, 'whcom_alert whcom_alert_success');
                             $("#wcop_loader_id").css("opacity", "1");
@@ -1097,6 +1129,7 @@
                             }
                             if (res.summary_html.discount_message) {
                                 $('.wcop_sp_coupon_response').html(res.summary_html.discount_message);
+                                $('.cpn').addClass('slow');
                             }
                         } else {
                             whcom_show_notification(res.message, 'whcom_alert whcom_alert_danger');
@@ -1173,15 +1206,6 @@
         //== Show Summary Message if 04_ease Cart Summary is empty
         $(document).ready(function () {
             bold_summary_area = jQuery('#bold_summary_area');
-            ease_summary_area = jQuery('#ease_summary_area');
-            if (ease_summary_area.is(':empty')) {
-                empty_summary_section_message = '<h2><b>Your Cart is empty</b></h2>';
-                empty_summary_section_message += '<p class="wcop_4_ease_dekstop_summary_section">Search a domain or choose a service.</p>';
-                empty_summary_section_message += '<div class="wcop_4_ease_mobile_summary_section">Chose a product or service below.</div>';
-                ease_summary_area.html(empty_summary_section_message);
-                bold_summary_area.html(empty_summary_section_message);
-            }
-
             if (bold_summary_area.is(':empty')){
                 empty_summary_section_message = "<div style='padding: 10px; min-height: 200px' class='summary-simple-4'>";
                 empty_summary_section_message += '<h2>Your Cart is empty</h2>';

@@ -917,7 +917,7 @@
 <?php
 $show_prod_desc              = $atts['show_summary_product_description'];
 $promocode                   = $atts['promocode'];
-$hide_group_name             = $atts['hide_group_name_summary'];
+$hide_group_name             = $atts['hide_summary_group_name'];
 $hide_domain_transfer        = $atts['hide_domain_transfer'];
 $_SESSION['hide_domain_transfer_section'] = $hide_domain_transfer;
 $_SESSION['hide_group_name'] = $hide_group_name;
@@ -947,24 +947,24 @@ $_SESSION['prod_desc']       = $show_prod_desc;
                 <ul id="foo">
                     <?php if ($atts['hide_domain'] != 'yes'){ ?>
                         <li class="step-<?php echo $steps_array_count['domain_count'] ?>">
-                            <span>Domain</span>
+                            <span> <?php esc_html_e("Domain","whcom") ?> </span>
                         </li>
                     <?php } ?>
                     <?php if ($atts['hide_product'] != 'yes'){  ?>
                         <li class="step-<?php echo $steps_array_count['product_count'] ?>">
-                            <span>Hosting Plan</span>
+                            <span> <?php esc_html_e("Hosting Plan","whcom") ?> </span>
                         </li>
                     <?php } ?>
                     <?php if ($atts['hide_additional_services'] != 'yes'){  ?>
                         <li class="step-<?php echo $steps_array_count['service_count'] ?>">
-                            <span>Services</span>
+                            <span> <?php esc_html_e("Services",'whcom') ?> </span>
                         </li>
                     <?php } ?>
                     <li class="step-<?php echo $steps_array_count['billing_count'] ?>">
-                        <span>Billing Info</span>
+                        <span> <?php esc_html_e("Billing Info","whcom") ?> </span>
                     </li>
                     <li class="step-<?php echo $steps_array_count['checkout_count'] ?>">
-                        <span>Checkout</span>
+                        <span> <?php esc_html_e("Checkout","whcom") ?> </span>
                     </li>
                 </ul>
             </div>
@@ -998,7 +998,7 @@ $_SESSION['prod_desc']       = $show_prod_desc;
                             <div class="wcop_sp_section_navi">
                                 <div class="my-button-item">
                                     <div class="wcop_sp_button">
-                                        <button type="button" name="next" class="next"  disabled="disabled" value="continue" onclick="Gotonext('.sleek_domain_config_section')" style="float:right;">Next <i class="whcom_icon_angle-circled-right"></i></button>
+                                        <button type="button" name="next" class="next"  disabled="disabled" value="continue" onclick="Gotonext('.sleek_domain_config_section')" style="float:right;"> <?php esc_html_e("Next","whcom") ?> <i class="whcom_icon_angle-circled-right"></i></button>
                                     </div>
                                 </div>
                             </div>

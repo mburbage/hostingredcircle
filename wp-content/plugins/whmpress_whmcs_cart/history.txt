@@ -245,3 +245,31 @@ Releasing domain first template
 3.7
 - Make Plugin compatible with PHP 7.4
 - Update spanish language translations.
+
+3.7-revision-1
+- Directly go to invoice on order submit
+
+3.7-revision-2
+- Make an option to redirect to invoice on order submit or not in admin panel.
+- Implement parameter shortforms for one page checkout.
+- Implement new parameter in Single page order.
+    . show_domain_nameservers
+    . hide_server_fields
+
+3.7-revision-3
+- PHP 7.4 warnings fixed in comman area
+- Registration issue fixed with WHMCS 8.0
+- Login issue fixed with WHMCS 8.0
+- Introduce Discounts in one page checkout.
+- Add option to go to invoice directly.
+
+3.7-revision-4
+- Add dutch translations
+
+3.7-revision-5
+- Fixed some strings translations issues
+
+3.8 (02-01-2020)
+- Make compatible with WHMCS version 8.1
+
+

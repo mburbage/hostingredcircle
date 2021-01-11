@@ -354,3 +354,90 @@ if ( ! function_exists( 'wcop_get_template_directory' ) ) {
 	}
 }
 
+if ( ! function_exists( 'wcop_param_value' ) ) {
+    function wcop_param_value($long_form,$short_form,$type,$default = '') {
+        if($type == 'string') {
+            if (isset($_REQUEST[$long_form]) && is_string($_REQUEST[$long_form])) {
+                return strtolower($_REQUEST[$long_form]);
+            } elseif (isset($_REQUEST[$short_form]) && is_string($_REQUEST[$short_form])) {
+                return strtolower($_REQUEST[$short_form]);
+            } elseif($default != '') {
+                return $default;
+            }else{
+                return "";
+            }
+        }elseif ($type == 'int'){
+            if (isset($_REQUEST[$long_form]) && is_integer(intval($_REQUEST[$long_form]))) {
+                return $_REQUEST[$long_form];
+            } elseif (isset($_REQUEST[$short_form]) && is_integer(intval($_REQUEST[$short_form]))) {
+                return $_REQUEST[$short_form];
+            }elseif($default != '') {
+                return $default;
+            } else {
+                return "";
+            }
+        }
+    }
+}
+
+if (!function_exists('order_combo_discount')){
+    function order_combo_discount($lowest_price_key,$lowest_billing_price,$key,$key_price,$on_page = false){
+        if($lowest_price_key == 'monthly') {
+            if ($lowest_billing_price > 0 && $key != 'monthly') {
+                if ($key == 'quarterly') {
+                    /*$per = round(100 - ($key_price / ($monthly_price * 3) * 100), 0);*/
+                    $respective_price = $key_price / 3;
+                    $discounted_price = (($lowest_billing_price * 3) - $key_price);
+                    $dis = "(@" . whcom_format_amount(['amount' => $respective_price]) . "/mo - " . esc_html__('Save', 'whcom') . ' ' . whcom_format_amount(['amount' => $discounted_price]) . ')';
+                } elseif ($key == 'semiannually') {
+                    /*$per = round(100 - ($key_price / ($monthly_price * 6) * 100), 0);*/
+                    $respective_price = $key_price / 6;
+                    $discounted_price = (($lowest_billing_price * 6) - $key_price);
+                    $dis = "(@" . whcom_format_amount(['amount' => $respective_price]) . "/mo - " . esc_html__('Save', 'whcom') . ' ' . whcom_format_amount(['amount' => $discounted_price]) . ')';
+                } elseif ($key == 'annually') {
+                    /*$per = round(100 - ($key_price / ($monthly_price * 12) * 100), 0);*/
+                    $respective_price = $key_price / 12;
+                    $discounted_price = (($lowest_billing_price * 12) - $key_price);
+                    $dis = "(@" . whcom_format_amount(['amount' => $respective_price]) . "/mo - " . esc_html__('Save', 'whcom') . ' ' . whcom_format_amount(['amount' => $discounted_price]) . ')';
+                } elseif ($key == 'biennially') {
+                    /*$per = round(100 - ($key_price / ($monthly_price * 24) * 100), 0);*/
+                    $respective_price = $key_price / 24;
+                    $discounted_price = (($lowest_billing_price * 24) - $key_price);
+                    $dis = "(@" . whcom_format_amount(['amount' => $respective_price]) . "/mo - " . esc_html__('Save', 'whcom') . ' ' . whcom_format_amount(['amount' => $discounted_price]) . ')';
+                } elseif ($key == 'triennially') {
+                    /*$per = round(100 - ($key_price / ($monthly_price * 36) * 100), 0);*/
+                    $respective_price = $key_price / 36;
+                    $discounted_price = (($lowest_billing_price * 36) - $key_price);
+                    $dis = "(@" . whcom_format_amount(['amount' => $respective_price]) . "/mo - " . esc_html__('Save', 'whcom') . ' ' . whcom_format_amount(['amount' => $discounted_price]) . ')';
+                }
+
+                if ($on_page == true) {
+                    return esc_html__('Pay only','whcom') .' '.whcom_format_amount(['amount' => $respective_price]) . '/mo ' . esc_html__("when paid","whcom") . ' ' . $key . ' - ' . '<span>' . esc_html__("Save","whcom") . ' ' . whcom_format_amount(['amount' => $discounted_price]) . '</span>';
+                } else {
+                    return $dis;
+                }
+            }
+        }elseif($lowest_price_key == 'annually') {
+            if ($lowest_billing_price > 0 && $key != 'annually') {
+                if ($key == 'biennially') {
+                    /*$per = round(100 - ($key_price / ($monthly_price * 24) * 100), 0);*/
+                    $respective_price = $key_price / 2;
+                    $discounted_price = (($lowest_billing_price * 2) - $key_price);
+                    $dis = "(@" . whcom_format_amount(['amount' => $respective_price]) . "/yr - " . esc_html__('Save', 'whcom') . ' ' . whcom_format_amount(['amount' => $discounted_price]) . ')';
+                } elseif ($key == 'triennially') {
+                    /*$per = round(100 - ($key_price / ($monthly_price * 36) * 100), 0);*/
+                    $respective_price = $key_price / 3;
+                    $discounted_price = (($lowest_billing_price * 3) - $key_price);
+                    $dis = "(@" . whcom_format_amount(['amount' => $respective_price]) . "/yr - " . esc_html__('Save', 'whcom') . ' ' . whcom_format_amount(['amount' => $discounted_price]) . ')';
+                }
+
+                if ($on_page == true) {
+                    return esc_html__('Pay only','whcom') .' '.whcom_format_amount(['amount' => $respective_price]) . '/yr ' . esc_html__("When paid","whcom") . ' ' . $key . ' - ' . '<span>' . esc_html__("Save","whcom") . ' '  . whcom_format_amount(['amount' => $discounted_price]) . '</span>';
+                } else {
+                    return $dis;
+                }
+            }
+        }
+    }
+}
+

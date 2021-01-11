@@ -4,10 +4,10 @@
 if ( ! function_exists( 'whcom_enqueues' ) ) {
 	function whcom_enqueues() {
 		add_thickbox();
-		wp_enqueue_style( 'whcom_styles', WHCOM_URL . '/assets/css/whcom.css', false, WHCOM_VERSION );
+		wp_enqueue_style( 'whcom_styles', WHCOM_URL . '/assets/css/whcom.min.css', false, WHCOM_VERSION );
 		wp_add_inline_style( 'whcom_styles', whcom_css_overrides() );
 
-		wp_enqueue_script( 'whcom_scripts', WHCOM_URL . '/assets/js/whcom.js', [ 'jquery' ], WHCOM_VERSION, false );
+		wp_enqueue_script( 'whcom_scripts', WHCOM_URL . '/assets/js/whcom.min.js', [ 'jquery' ], WHCOM_VERSION, false );
 		$localized_array = [
 			'ajax_url'                    => admin_url( 'admin-ajax.php' ),
 			'whcom_loading_text'          => esc_html__( 'Loading...', 'whcom' ),
@@ -31,7 +31,7 @@ if ( ! function_exists( 'whcom_admin_enqueues' ) ) {
 			'wp-color-picker',
 			'jquery'
 		], WHCOM_VERSION, true );
-		wp_enqueue_script( 'whcom_scripts', WHCOM_URL . '/assets/js/whcom.js', [ 'jquery' ], WHCOM_VERSION, false );
+		wp_enqueue_script( 'whcom_scripts', WHCOM_URL . '/assets/js/whcom.min.js', [ 'jquery' ], WHCOM_VERSION, false );
 		$localized_array = [
 			'ajax_url'                  => admin_url( 'admin-ajax.php' ),
 			'whcom_loading_text'        => esc_html__( 'Loading...', 'whcom' ),

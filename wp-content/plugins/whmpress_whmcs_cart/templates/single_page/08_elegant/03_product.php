@@ -1,5 +1,7 @@
 <?php defined( 'ABSPATH' ) or die( "Cannot access pages directly." );
 $product_id    = $atts['pid'];
+$hide_selected_pro = $atts['hide_selected_product'];
+$hide_hosting_section_title = $atts['hide_hosting_section_title'];
 $billing_cycle = ( isset( $_REQUEST['billingcycle'] ) && is_string( $_REQUEST['billingcycle'] ) ) ? $_REQUEST['billingcycle'] : '';
 
 $sld = ( isset( $_GET['sld'] ) ) ? esc_attr( $_GET['sld'] ) : '';
@@ -17,7 +19,7 @@ if ( ! empty( $product_id ) ) {
 	}
 } ?>
 
-
+<?php if($hide_hosting_section_title !='yes'){ ?>
 <div class="wcop_sp_section_heading">
 	<i class="whcom_icon_ok-circled"></i>
 	<?php if ( !empty( $atts['hosting_section_title'] ) ) { ?>
@@ -26,8 +28,9 @@ if ( ! empty( $product_id ) ) {
 		<span><?php echo esc_html_x( "Choose a Hosting Plan (Optional)", "whcom" ) ?></span>
 	<?php } ?>
 </div>
+<?php } ?>
 <div class="wcop_sp_section_content">
-	<div class="whcom_form_field">
+	<div class="whcom_form_field <?php echo $hide_selected_pro == 'yes' ? 'hidden' :'' ?>">
 		<label for="wcop_sp_product_select"><?php esc_html_e( "Select Product /Service", "whcom" ) ?></label>
 		<?php echo wcop_sp_render_products_dropdown( $product_id, $pids, $gids, $domain_products ); ?>
 	</div>

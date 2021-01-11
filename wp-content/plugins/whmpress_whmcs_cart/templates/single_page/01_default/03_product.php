@@ -10,7 +10,7 @@ $billing_cycle = ( isset( $_REQUEST['billingcycle'] ) && is_string( $_REQUEST['b
     <?php if (!empty($atts['hosting_section_title'])){?>
         <span><?php echo $atts['hosting_section_title'] ?></span>
     <?php }else { ?>
-        <span><?php echo esc_html_x( "Choose a Hosting Plan (Optional)", "whcom" ) ?></span>
+        <span><?php echo esc_html_e( "Choose a Hosting Plan (Optional)", "whcom" ) ?></span>
     <?php } ?>
 </div>
 <div class="wcop_sp_section_content">

@@ -11,9 +11,9 @@
 <div class="wcop_sp_section_content wcop_sp_section_navi">
     <div class="my-button-item">
         <div class="wcop_sp_button">
-            <button type="button" name="skip" id="skip" class="skip whcom_button_secondary" value="skip" onclick="skip()" style="float: left;">Skip <i class="whcom_icon_angle-circled-right"></i></button>
+            <button type="button" name="skip" id="skip" class="skip whcom_button_secondary" value="skip" onclick="skip()" style="float: left;"> <?php esc_html_e("Skip","whcom") ?> <i class="whcom_icon_angle-circled-right"></i></button>
 
-            <button type="button" name="next" class="next"  disabled="disabled" value="continue" onclick="Gotonext('.sleek_domain_section')" style="float:right;">Next <i class="whcom_icon_angle-circled-right"></i></button>
+            <button type="button" name="next" class="next"  disabled="disabled" value="continue" onclick="Gotonext('.sleek_domain_section')" style="float:right;"> <?php esc_html_e("Next","whcom") ?> <i class="whcom_icon_angle-circled-right"></i></button>
         </div>
     </div>
 </div>

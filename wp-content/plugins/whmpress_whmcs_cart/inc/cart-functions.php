@@ -117,7 +117,7 @@ if (!function_exists('wcop_sp_render_products_dropdown')) {
 
         <?php //todo: Remove this select in future implement it in a better way.
         ?>
-        <div id="wcop_sp_product_free_domain_notice" style="display: none; margin: 15px 0 0;">
+        <div id="wcop_sp_product_free_domain_notice" style="display: none; margin: 8px 0 0; color: #d05e28;">
             <span><?php esc_html_e('Includes FREE domain', 'whcom') ?></span> <i id="myBtn"
                                                                                  class="whcom_icon_question-circle-o"></i>
         </div>
@@ -223,7 +223,6 @@ if (!function_exists('wcop_sp_render_product_billingcycles')) {
     {
         $product_details = (is_array($product_details)) ? $product_details : whcom_get_product_details((int)$product_details);
 
-
         if ((empty($billing_cycle)) && (!empty($product_details['lowest_price']))) {
             reset($product_details['lowest_price']);
             $billing_cycle = key($product_details['lowest_price']);
@@ -254,7 +253,7 @@ if (!function_exists('wcop_sp_render_product_billingcycles')) {
                         <?php $count = 0; ?>
                         <?php foreach ($all_prices as $key => $price) { ?>
 
-                            <?php $product_billingcycle_label_text = '<strong class="wcop_price_key">' .$key . '</strong>' . " " . '<strong class="wcop_actual_price">' . whcom_format_amount(['amount' => $price['price']]) . ' ' . whcom_convert_billingcycle($key) .'</strong>'  . '<span class="wcop_price_setup_fee">' .' + ' .whcom_format_amount(['amount' => $price['setup']]) . ' ' . esc_html__('Setup Fee', "whcom") . '</span>' ?>
+                            <?php $product_billingcycle_label_text = '<strong class="wcop_price_key">' .whcom_convert_billingcycle($key) . '</strong>' . " " . '<strong class="wcop_actual_price">' . whcom_format_amount(['amount' => $price['price']]) . ' ' . whcom_convert_billingcycle($key) .'</strong>'  . '<span class="wcop_price_setup_fee">' .' + ' .whcom_format_amount(['amount' => $price['setup']]) . ' ' . esc_html__('Setup Fee', "whcom") . '</span>' ?>
                             <?php ($billing_cycle == $key) ? $current = 'whcom_checked' : $current = ''; ?>
                             <?php ($billing_cycle == $key) ? $checked = 'checked' : $checked = ''; ?>
                             <div class="wcop_sp_radio_billingcycle_box">
@@ -276,18 +275,30 @@ if (!function_exists('wcop_sp_render_product_billingcycles')) {
                         <select id="wcop_sp_product_billingcycle" name="billingcycle"
                                 class="<?php echo $billing_cycle_class ?> wcop_input">
                             <?php $current = '';
+                            $lowest_price_array = $product_details['lowest_price'];
+                            $lowest_price_key = array_key_first($lowest_price_array);
+                            $lowest_billing_price = $lowest_price_array[$lowest_price_key]['price'];
+                            $monthly_price = isset($all_prices["monthly"]["price"]) ? $all_prices["monthly"]["price"] : 0;
                             foreach ($all_prices as $key => $price) {
                                 ($billing_cycle == $key) ? $current = 'selected' : $current = '';
                                 $option_string = '<option value="' . $key . '" ' . $current . '>';
-                                $option_string .= whcom_format_amount(['amount' => $price['price']]) . ' ' . whcom_convert_billingcycle($key) . ' + ' . whcom_format_amount(['amount' => $price['setup']]) . ' ' . esc_html__('Setup Fee', "whcom");
+                                $option_string .= whcom_format_amount(['amount' => $price['price']]) . ' ' . whcom_convert_billingcycle($key) . ' + ' . whcom_format_amount(['amount' => $price['setup']]) . ' ' . esc_html__('Setup', "whcom") .' '.order_combo_discount($lowest_price_key,$lowest_billing_price,$key,$price['price']);
                                 if (in_array($key, $free_domain_billingcycles)) {
-                                    $option_string .= ' (' . esc_html__('Free Domain only with ' . whcom_render_free_domain_tlds($product_details['freedomaintlds']), "whcom") . ') ';
+                                    $option_string .= ' (' . esc_html__('Free Domain only with', "whcom") .' '.whcom_render_free_domain_tlds($product_details['freedomaintlds']) . ') ';
                                 }
                                 $option_string .= '</option>';
                                 echo $option_string;
                             }
                             ?>
                         </select>
+                        <div class="wcop_op_discount_notice">
+                            <?php
+                            $biggest_price_key =  array_key_last($all_prices);
+                            $biggest_price =  end($all_prices);
+                            $biggest_price = $biggest_price['price'];
+                            echo '<span>' .order_combo_discount($lowest_price_key,$lowest_billing_price,$biggest_price_key,$biggest_price,true) .'</span>';
+                            ?>
+                        </div>
                     <?php } ?>
                 </div>
             <?php } ?>
@@ -337,6 +348,7 @@ if (!function_exists('wcop_sp_render_domain_config')) {
             'post' => $_POST
         ];
         $domain_type = (!empty($_POST['domaintype'])) ? esc_attr($_POST['domaintype']) : '';
+        $show_domain_nameservers = (!empty($_POST['show_domain_nameservers'])) ? esc_attr($_POST['show_domain_nameservers']) : '';
         $tld = (!empty($_POST['tld'])) ? esc_attr($_POST['tld']) : '';
         if ($domain_type == 'existing') {
             $domain_name = (!empty($_POST['domain'])) ? esc_attr($_POST['domain']) : '';
@@ -404,7 +416,7 @@ if (!function_exists('wcop_sp_render_domain_config')) {
                         <?php /*} */ ?><br>
                         <small><?php echo $domain_name . " " ?>(<span class="edit_inline_domain" id="edit_domain"
                                                                       style=" cursor: pointer"
-                                                                      onclick="jQuery( '#wcop_sp_choose_a_domain' ).show();"><?php esc_html_e("change", "whcom") ?></span>)
+                                                                      onclick="jQuery( '#wcop_sp_choose_a_domain' ).show();"> <?php esc_html_e("change", "whcom") ?> </span>)
                         </small>
                     </label>
 
@@ -456,6 +468,11 @@ if (!function_exists('wcop_sp_render_domain_config')) {
                 <div class="">
                     <?php echo whcom_render_tld_specific_fields($tld, -1) ?>
                 </div>
+                <?php if($show_domain_nameservers == 'yes'){ ?>
+                <div class="">
+                    <?php echo whcom_render_tld_nameservers() ?>
+                </div>
+                    <?php } ?>
                 <?php
                 $response['domain_config_form'] = ob_get_clean();
                 $response['status'] = 'OK';

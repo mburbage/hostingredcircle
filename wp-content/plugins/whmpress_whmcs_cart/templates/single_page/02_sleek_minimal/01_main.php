@@ -569,7 +569,7 @@
 <?php
 $show_prod_desc = $atts['show_summary_product_description'];
 $promocode = $atts['promocode'];
-$hide_group_name = $atts['hide_group_name_summary'];
+$hide_group_name = $atts['hide_summary_group_name'];
 $_SESSION['hide_group_name'] = $hide_group_name;
 $_SESSION['prod_desc'] = $show_prod_desc;
 ?>

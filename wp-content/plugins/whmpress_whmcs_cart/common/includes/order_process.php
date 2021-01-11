@@ -285,6 +285,57 @@ if (!function_exists('whcom_render_tld_specific_addons')) {
     }
 }
 
+if ( ! function_exists( 'whcom_render_tld_nameservers' ) ) {
+    function whcom_render_tld_nameservers() {
+        $nameservers = whcom_get_nameservers();
+        ob_start(); ?>
+        <div class="whcom_op_domain_nameservers whcom_row whcom_row_no_gap">
+            <div class="whcom_col_sm_6" id="NS1_container">
+                <div class="whcom_form_field">
+                    <label for="inputNs1" class="main_label"><?php esc_html_e( 'Nameserver 1', 'whcom' ); ?></label>
+                    <input type="text"
+                           class=""
+                           id="inputNs1"
+                           name="domainns1"
+                           value="<?php echo $nameservers['ns1']; ?>">
+                </div>
+            </div>
+            <div class="whcom_col_sm_6" id="NS2_container">
+                <div class="whcom_form_field">
+                    <label for="inputNs2" class="main_label"><?php esc_html_e( 'Nameserver 2', 'whcom' ); ?></label>
+                    <input type="text"
+                           class=""
+                           id="inputNs2"
+                           name="domainns2"
+                           value="<?php echo $nameservers['ns2']; ?>">
+                </div>
+            </div>
+            <div class="whcom_col_sm_6" id="NS3_container">
+                <div class="whcom_form_field">
+                    <label for="inputNs3" class="main_label"><?php esc_html_e( 'Nameserver 3', 'whcom' ); ?></label>
+                    <input type="text"
+                           class=""
+                           id="inputNs3"
+                           name="domainns3"
+                           value="<?php echo $nameservers['ns3']; ?>">
+                </div>
+            </div>
+            <div class="whcom_col_sm_6" id="NS4_container">
+                <div class="whcom_form_field">
+                    <label for="inputNs4" class="main_label"><?php esc_html_e( 'Nameserver 4', 'whcom' ); ?></label>
+                    <input type="text"
+                           class=""
+                           id="inputNs4"
+                           name="domainns4"
+                           value="<?php echo $nameservers['ns4']; ?>">
+                </div>
+            </div>
+        </div>
+
+        <?php return ob_get_clean();
+    }
+}
+
 if (!function_exists('whcom_render_product_config_options')) {
     function whcom_render_product_config_options($product, $index = -1, $billing_cycle = '')
     {
@@ -506,7 +557,7 @@ if (!function_exists('whcom_render_product_addons')) {
                             <div class="whcom_col_sm_12">
                                 <div class="whcom_addon_section_content">
                                     <div class="whcom_panel whcom_text_small whcom_text_center whcom_op_addon_container whcom_bg_white">
-                                        <label style="cursor: pointer">
+                                        <label style="cursor: pointer; margin-bottom: 0;">
                                             <div class="whcom_row">
                                                 <div class="whcom_col_xl_8 whcom_col_lg_8">
                                                     <div class="whcom_op_product_addon whcom_panel_body whcom_form_field">
@@ -527,7 +578,7 @@ if (!function_exists('whcom_render_product_addons')) {
                                                 <div class="whcom_col_xl_4 whcom_col_lg_4">
                                                     <div class="whcom_panel_footer  whcom_bg_white">
                                                         <div class="whcom_row">
-                                                            <div class="whcom_col_xl_12 whcom_col_lg_12 whcom_col_sm_6 whcom_col_xs_6">
+                                                            <div class="whcom_col_xl_12 whcom_col_lg_12 whcom_col_sm_6 whcom_col_xs_12">
                                                                 <div class="whcom_padding_10">
                                                                     <span><?php echo whcom_format_amount($curr_addon_price); ?></span>
                                                                     <span><?php echo whcom_convert_billingcycle($addon_billingcycle); ?></span>
@@ -536,7 +587,7 @@ if (!function_exists('whcom_render_product_addons')) {
                                                                     <span><i><?php echo esc_html__('Setup', 'whcom'); ?></i></span>
                                                                 </div>
                                                             </div>
-                                                            <div class="whcom_col_xl_12 whcom_col_lg_12 whcom_col_sm_6 whcom_col_xs_6">
+                                                            <div class="whcom_col_xl_12 whcom_col_lg_12 whcom_col_sm_6 whcom_col_xs_12">
                                                               <span class="whcom_button whcom_button_danger whcom_addon_remove_button"
                                                                     style="display: none">
 											 <?php esc_html_e("Remove", "whcom") ?>
@@ -1348,10 +1399,20 @@ if (!function_exists('whcom_generate_promo_applied_text')) {
 if (!function_exists('whcom_generate_invoice_iframe')) {
     function whcom_generate_invoice_iframe($invoice_id, $redirect_link = '#')
     {
-        $args = [
+        $user_id = whcom_get_current_client_id();
+        $sso_token_args = [
+            'action' => 'CreateSsoToken',
+            'client_id' => $user_id,
+            'destination' => 'sso:custom_redirect',
+            'sso_redirect_path' => "viewinvoice.php?wcap_no_redirect=1&id=" . (int)$invoice_id
+        ];
+
+        $sso_result = whcom_process_api($sso_token_args);
+        $url = $sso_result["redirect_url"];
+        /*$args = [
             'goto' => "viewinvoice.php?wcap_no_redirect=1&id=" . (int)$invoice_id,
         ];
-        $url = whcom_generate_auto_auth_link($args);
+        $url = whcom_generate_auto_auth_link($args);*/
         $redirect_link = '<a class="whcom_op_thickbox_redirect_overlay" href="' . $redirect_link . '">' . esc_html__('Close', "whcom") . '</a> ';
         $invoice_div = '<div style="position: relative; height: 80vh; max-height: 700px; width: 850px; margin: 0 auto;"><iframe style="width: 100%; height: 100%; overflow: auto;" src="' . $url . '"></iframe>' . $redirect_link . '</div>';
 

@@ -139,6 +139,17 @@ if ( ! empty( $all_gateways ) && is_array( $all_gateways ) ) {
                                         </div>
 			                        <?php } ?>
                                 </div>
+
+                            </div>
+                            <!-- Show Invoice directly -->
+                            <div class="whcom_form_field whcom_form_field_horizontal">
+
+                                <label for="show_invoice_direct"><?php echo esc_html_x( 'Show Invoice Directly?', "admin", "whcom" ) ?></label>
+                                <?php $field = 'show_invoice_directly'; ?>
+                                <?php $checked = ( esc_attr( get_option( $field ) ) == 'yes' ) ? ' checked' : ''; ?>
+                                <input id="direct_invoice" type="checkbox" name="<?php echo "$field" ?>"
+                                       value="yes" <?php echo $checked; ?>>
+                                <i><?php echo esc_html_x( 'help: Client will be redirected to invoice page directly after checkout if enabled. This feature could be used in one page checkout.', "admin", "whcom" ); ?></i>
                             </div>
                         </div>
                     </div>

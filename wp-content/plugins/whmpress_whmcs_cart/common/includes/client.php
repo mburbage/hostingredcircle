@@ -32,7 +32,7 @@ if (!function_exists('whcom_validate_client')) {
                     $response['message'] = $res['message'];
                     $response['status'] = 'ERROR';
                 } else {
-                    $user_array = whcom_get_client((int)$res["userid"]);
+                    $user_array = whcom_get_client(0,$credentials['email']);
                     if (!empty($user_array["client"]) && is_array($user_array["client"])) {
                         $_SESSION['whcom_user'] = [];
                         whcom_update_current_currency($user_array['client']['currency']);
@@ -61,12 +61,17 @@ if (!function_exists('whcom_validate_client')) {
 }
 
 if (!function_exists('whcom_get_client')) {
-    function whcom_get_client($id = 0)
+    function whcom_get_client($id = 0,$client_email = '')
     {
         if ($id > 0) {
             $args = [
                 'action' => 'GetClientsDetails',
                 'clientid' => $id,
+            ];
+        }elseif(!empty($client_email)){
+            $args = [
+                'action' => 'GetClientsDetails',
+                'email' => $client_email,
             ];
         } else {
             $args = [
@@ -514,7 +519,7 @@ if (!function_exists('whcom_render_client_security_questions')) {
                     <div class="whcom_form_field">
                         <input type="password"
                                name="securityqans"
-                               placeholder="Please enter an answer"
+                               placeholder= <?php echo esc_html__("Please enter an answer","whcom") ?>
                                autocomplete="off">
                     </div>
                 </div>
@@ -2270,11 +2275,3 @@ if (!function_exists('whcom_logout_client_from_whmcs_direct')) {
 
     }
 }
-
-
-
-
-
-
-
-

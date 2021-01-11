@@ -106,61 +106,6 @@ $summary_html = [
                                                 <?php echo $cart_item['hostname']; ?>
                                             </div>
                                         <?php } ?>
-                                        <?php if ($found_array['product_options']) { ?>
-                                            <div class="whcom_text_small whcom_summary_product_configoptions whcom_padding_0_10">
-                                                <?php foreach ($found_array['product_options'] as $option_id => $sub_option_id) { ?>
-                                                    <?php
-                                                    $curr_option = $product['prd_configoptions'][$option_id];
-                                                    $curr_option_html = $curr_option['optionname'] . ' ';
-                                                    $configoption_amount = 0.00;
-                                                    $configoption_setup = 0.00;
-                                                    ?>
-                                                    <?php switch ($curr_option['optiontype']) {
-                                                        case '1':
-                                                        case '2' :
-                                                            {
-                                                                $curr_sub_option = $curr_option['sub_options'][$sub_option_id];
-                                                                $curr_option_html .= '(' . whcom_format_amount($curr_sub_option['all_prices'][$cart_item['billingcycle']]['price']) . ')';
-                                                                $configoption_amount = (float)$curr_sub_option['all_prices'][$cart_item['billingcycle']]['price'];
-                                                                $configoption_setup = (float)$curr_sub_option['all_prices'][$cart_item['billingcycle']]['setup'];
-                                                                break;
-                                                            }
-                                                        case '3' :
-                                                            {
-                                                                $curr_sub_option = reset($curr_option['sub_options']);
-                                                                if ($sub_option_id > 0) {
-                                                                    $curr_option_html .= '(' . whcom_format_amount($curr_sub_option['all_prices'][$cart_item['billingcycle']]['price']) . ')';
-                                                                    $configoption_amount = (float)$curr_sub_option['all_prices'][$cart_item['billingcycle']]['price'];
-                                                                    $configoption_setup = (float)$curr_sub_option['all_prices'][$cart_item['billingcycle']]['setup'];
-                                                                }
-                                                                break;
-                                                            }
-                                                        case '4' :
-                                                            {
-                                                                $curr_sub_option = reset($curr_option['sub_options']);
-                                                                $curr_option_html .= '(';
-                                                                $curr_option_html .= whcom_format_amount($curr_sub_option['all_prices'][$cart_item['billingcycle']]['price']) . ' x ';
-                                                                $curr_option_html .= $sub_option_id;
-                                                                $curr_option_html .= ')';
-
-                                                                $configoption_amount = (float)($curr_sub_option['all_prices'][$cart_item['billingcycle']]['price'] * $sub_option_id);
-                                                                $configoption_setup = (float)($curr_sub_option['all_prices'][$cart_item['billingcycle']]['setup'] * $sub_option_id);
-                                                                break;
-                                                            }
-                                                        default :
-                                                            {
-                                                                $curr_sub_option = [];
-                                                            }
-                                                    }
-                                                    ?>
-                                                    <div class="whcom_summary_product_configoption">
-                                                        <i class="whcom_icon_angle-double-right"></i> <?php echo $curr_option_html ?>
-                                                    </div>
-                                                    <?php $product_price = $product_price + $configoption_amount; ?>
-                                                    <?php $product_setup = $product_setup + $configoption_setup; ?>
-                                                <?php } ?>
-                                            </div>
-                                        <?php } ?>
                                     </div>
                                     <div class="whcom_col_sm_5 whcom_text_right">
                                         <div class="whcom_op_summary_item_price wcop_sp_replace_spinner whcom_summary_product_price <?php echo ((float)$product_price > 0) ? '' : 'free'; ?>">
@@ -173,6 +118,63 @@ $summary_html = [
                                             <?php echo $product_setup == 0 ? "<i>Free</i>" : '<i>' . whcom_format_amount($product_setup) . '</i>' ?>
                                             <i><?php esc_html_e('Setup', 'whcom') ?></i>
                                         </div>
+                                    </div>
+                                    <div class="whcom_col_sm_12">
+                                    <?php if ($found_array['product_options']) { ?>
+                                        <div class="whcom_text_small whcom_summary_product_configoptions whcom_padding_0_10">
+                                            <?php foreach ($found_array['product_options'] as $option_id => $sub_option_id) { ?>
+                                                <?php
+                                                $curr_option = $product['prd_configoptions'][$option_id];
+                                                $curr_option_html = $curr_option['optionname'] . ' ';
+                                                $configoption_amount = 0.00;
+                                                $configoption_setup = 0.00;
+                                                ?>
+                                                <?php switch ($curr_option['optiontype']) {
+                                                    case '1':
+                                                    case '2' :
+                                                        {
+                                                            $curr_sub_option = $curr_option['sub_options'][$sub_option_id];
+                                                            $curr_option_html .= '(' . whcom_format_amount($curr_sub_option['all_prices'][$cart_item['billingcycle']]['price']) . ')';
+                                                            $configoption_amount = (float)$curr_sub_option['all_prices'][$cart_item['billingcycle']]['price'];
+                                                            $configoption_setup = (float)$curr_sub_option['all_prices'][$cart_item['billingcycle']]['setup'];
+                                                            break;
+                                                        }
+                                                    case '3' :
+                                                        {
+                                                            $curr_sub_option = reset($curr_option['sub_options']);
+                                                            if ($sub_option_id > 0) {
+                                                                $curr_option_html .= '(' . whcom_format_amount($curr_sub_option['all_prices'][$cart_item['billingcycle']]['price']) . ')';
+                                                                $configoption_amount = (float)$curr_sub_option['all_prices'][$cart_item['billingcycle']]['price'];
+                                                                $configoption_setup = (float)$curr_sub_option['all_prices'][$cart_item['billingcycle']]['setup'];
+                                                            }
+                                                            break;
+                                                        }
+                                                    case '4' :
+                                                        {
+                                                            $curr_sub_option = reset($curr_option['sub_options']);
+                                                            $curr_option_html .= '(';
+                                                            $curr_option_html .= whcom_format_amount($curr_sub_option['all_prices'][$cart_item['billingcycle']]['price']) . ' x ';
+                                                            $curr_option_html .= $sub_option_id;
+                                                            $curr_option_html .= ')';
+
+                                                            $configoption_amount = (float)($curr_sub_option['all_prices'][$cart_item['billingcycle']]['price'] * $sub_option_id);
+                                                            $configoption_setup = (float)($curr_sub_option['all_prices'][$cart_item['billingcycle']]['setup'] * $sub_option_id);
+                                                            break;
+                                                        }
+                                                    default :
+                                                        {
+                                                            $curr_sub_option = [];
+                                                        }
+                                                }
+                                                ?>
+                                                <div class="whcom_summary_product_configoption">
+                                                    <i class="whcom_icon_angle-double-right"></i> <?php echo $curr_option_html ?>
+                                                </div>
+                                                <?php $product_price = $product_price + $configoption_amount; ?>
+                                                <?php $product_setup = $product_setup + $configoption_setup; ?>
+                                            <?php } ?>
+                                        </div>
+                                    <?php } ?>
                                     </div>
                                     <?php // Final Array Population -> product
 
@@ -205,16 +207,17 @@ $summary_html = [
                         </li>
                     <?php } ?>
 
+                    <?php
+                    $show_prod_desc = $_SESSION['prod_desc'];
+                    if ($show_prod_desc == 'yes') { ?>
                     <!-- Product Description -->
                     <div class="summary_product_description whcom_text_small"><?php
-                        $show_prod_desc = $_SESSION['prod_desc'];
-                        if ($show_prod_desc == 'yes') {
-                            if (!empty($_REQUEST['pid'])) {
-                                echo '<strong>Includes: </strong>' . wcop_sp_render_products_description($_REQUEST['pid']);
-                            }
+                        if (!empty($_REQUEST['pid'])) {
+                            echo '<strong>Includes: </strong>' . wcop_sp_render_products_description($_REQUEST['pid']);
                         }
                         ?>
                     </div>
+                        <?php } ?>
 
                     <?php // Addons with product ?>
                     <?php if ($found_array['product_addons']) { ?>
@@ -250,7 +253,7 @@ $summary_html = [
                                             <div>
                                                 <strong class="whcom_op_summary_item_product_addon_title"><?php echo $curr_addon['name']; ?></strong>
                                                 <div class="whcom_text_small whcom_op_summary_item_product_addon_label">
-                                                    <?php esc_html_e("Addon", "whcom"); ?>
+                                                    <?php /*esc_html_e("Addon", "whcom"); */?>
                                                 </div>
                                                 <div class="whcom_text_small  wcop_sp_replace_spinner whcom_op_summary_item_product_addon_setup">
                                                     <?php echo $curr_addon_setup == 0 ? 'Free' : whcom_format_amount($curr_addon_setup); ?>
@@ -483,10 +486,10 @@ $summary_html = [
                         <div class="whcom_form_field" style="padding: 0;">
                             <div class="whcom_checkbox_container">
                                 <div class="whcom_row">
-                                    <div class="whcom_col_sm_8">
+                                    <div class="whcom_col_sm_6">
                                         <?php if ($promocode) { ?>
                                             <div class="whcom_form_field" style="padding: 0; margin: 0;">
-                                                <label for="wcop_coupon"><?php esc_html_e("Coupon Code", "whcom") ?></label>
+                                                <label for="wcop_coupon" class="cpn"><?php esc_html_e("Coupon Code", "whcom") ?></label>
                                                 <input type="text" name="promocode" placeholder=""
                                                        value="<?php echo $promocode ?>">
                                             </div>
@@ -497,17 +500,17 @@ $summary_html = [
                                             </div>
                                         <?php } ?>
                                     </div>
-                                    <div class="whcom_col_sm_4">
+                                    <div class="whcom_col_sm_6">
                                         <button class="whcom_button whcom_button_primary whcom_button_block wcop_sp_summary_apply_remove_coupon <?php echo '' ?>"
                                                 data-promo-action="add_coupon">
-                                            <?php esc_html_e("Validate", "whcom") ?>
+                                            <?php esc_html_e("Apply Coupon", "whcom") ?>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <?php $promo_form_fields = ob_get_clean(); ?>
-                        <?php if (empty($current_promo) || empty($promocode)) { ?>
+                        <?php if (empty($promocode)) { ?>
                             <?php echo $promo_form_fields ?>
                         <?php } else { ?>
                             <?php
@@ -527,28 +530,30 @@ $summary_html = [
                                 <div class="whcom_form_field" style="padding: 0;">
                                     <div class="whcom_checkbox_container">
                                         <div class="whcom_row">
-                                            <div class="whcom_col_sm_8">
+                                            <div class="whcom_col_sm_6">
                                                 <div class="whcom_alert">
                                                     <?php echo $current_promo['code'] ?>
                                                     <label for="wcop_coupon"><?php esc_html_e("Coupon Code", "whcom") ?></label>
                                                     <input type="hidden" name="promocode"
                                                            value="<?php echo $current_promo['code'] ?>">
                                                 </div>
-                                                <small><?php whcom_generate_promo_applied_text($current_promo) ?> </small>
                                             </div>
-                                            <div class="whcom_col_sm_4">
+                                            <div class="whcom_col_sm_6">
                                                 <button class="whcom_button whcom_button_primary whcom_button_block wcop_sp_summary_apply_remove_coupon"
                                                         data-promo-action="remove_coupon">
                                                     <?php esc_html_e("Remove Coupon", "whcom") ?>
                                                 </button>
                                             </div>
+<!--                                            <div class="whcom_col_sm_12">-->
+<!--                                                <small>--><?php //whcom_generate_promo_applied_text($current_promo) ?><!-- </small>-->
+<!--                                            </div>-->
                                         </div>
                                     </div>
                                 </div>
                             <?php } else { ?>
-                                <div class="whcom_alert whcom_alert_danger whcom_text_center">
-                                    <?php esc_html_e('The promotion code entered has expired', 'whcom') ?>
-                                </div>
+                                <!--<div class="whcom_alert whcom_alert_danger whcom_text_center">
+                                    <?php /*esc_html_e('The promotion code entered has expired', 'whcom') */?>
+                                </div>-->
                                 <?php echo $promo_form_fields ?>
                             <?php } ?>
 
@@ -558,9 +563,9 @@ $summary_html = [
                     </div>
                 <?php }
             } ?>
-            <div class="whcom_clearfix whcom_margin_bottom_30">
+            <div class="whcom_clearfix whcom_margin_bottom_5">
                 <div class="whcom_pull_left_sm">
-                    <span class="whcom_pull_left"><?php esc_html_e('Totals', 'whcom') ?></span>
+                    <span class="whcom_pull_left"><?php esc_html_e('Totals (Recurring)', 'whcom') ?></span>
                 </div>
                 <div class="whcom_pull_right_sm">
                     <?php
@@ -581,8 +586,15 @@ $summary_html = [
                                     <span><?php echo whcom_convert_billingcycle($key) ?></span>
                                 </div>
                             </div>
-                        <?php } ?>
-                    <?php } ?>
+                            <?php break; ?>
+                        <?php }else{ ?>
+                            <div class="whcom_clearfix">
+                                <div class="whcom_pull_right  wcop_sp_replace_spinner">
+                                    <span><?php echo "0" ?></span>
+                                </div>
+                            </div>
+                            <?php break; ?>
+                    <?php } } ?>
                 </div>
             </div>
 
@@ -590,25 +602,35 @@ $summary_html = [
                 <div class="whcom_text_right  wcop_sp_replace_spinner wcop_sp_replace_spinner whcom_text_2x">
                     <?php echo whcom_format_amount(['amount' => $totals['final_price'], 'add_suffix' => 'yes']); ?>
                 </div>
-                <div class="whcom_text_right"><?php esc_html_e('Total Due Today', 'whcom') ?></div>
+                <div class="whcom_text_right desktop_summry_total_price"><?php esc_html_e('Total Due Today', 'whcom') ?></div>
+                <div class="whcom_text_right mobile_summry_total_price"><?php esc_html_e('Total', 'whcom') ?></div>
             </div>
 
         </div>
     </div>
 <?php ob_start();
-
 if (!empty ($cart_item['promocode'])) {
-    if ((float)$totals['discount'] > 0.00) { ?>
+    if (!empty($current_discount) && $current_discount["startdate"] <> "0000-00-00" && $current_discount["expirationdate"] <> "0000-00-00") {
+        if (time() < strtotime($current_discount["startdate"]) || time() > strtotime($current_discount["expirationdate"])) { ?>
+            <div class="whcom_alert whcom_alert_warning">
+                <?php esc_html_e("The promotion code you entered has been expired", "whcom") ?>
+            </div>
+        <?php }
+    } elseif (!empty($current_discount) && $current_discount["uses"] > 0 && $current_discount["maxuses"] > 0 && $current_discount["uses"] >= $current_discount["maxuses"]) { ?>
+        <div class="whcom_alert whcom_alert_warning">
+            <small> <?php esc_html_e("The coupon code you entered has been reached its limit", "whcom") ?></small>
+        </div>
+    <?php } elseif ((float)$totals['discount'] > 0.00) { ?>
         <div class="whcom_alert whcom_alert_success">
-            <?php esc_html_e("Promotion Code Accepted! Your order total has been updated.", "whcom") ?>
+            <small><?php esc_html_e("Coupon accepted! Your order total is updated.", "whcom") ?></small>
         </div>
     <?php } else if (!empty($current_discount)) { ?>
         <div class="whcom_alert whcom_alert_info">
-            <?php esc_html_e("The promotion code you entered has been applied to your cart but no items qualify for the discount yet - please check the promotion terms", "whcom") ?>
+            <small><?php esc_html_e("promotion code valid, but does not apply to selected product.", "whcom") ?></small>
         </div>
     <?php } else { ?>
         <div class="whcom_alert whcom_alert_warning">
-            <?php esc_html_e("The promotion code entered does not exist", "whcom") ?>
+            <small><?php esc_html_e("Coupon is not valid", "whcom") ?></small>
         </div>
     <?php } ?>
 <?php }

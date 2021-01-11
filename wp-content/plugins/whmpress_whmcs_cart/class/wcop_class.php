@@ -36,6 +36,7 @@ class WCOP_CLASS {
 
 		register_setting( 'wcop', 'include_domain_with_hosting' );
 		register_setting( 'wcop', 'use_merchant_gateway' );
+		register_setting( 'wcop', 'show_invoice_directly' );
 		register_setting( 'wcop', 'merchant_gateway_key' );
 		register_setting( 'wcop', 'wcop_show_invoice_as' );
 		register_setting( 'wcop', 'cart_listing_page' . whcom_get_current_language() );

@@ -183,7 +183,9 @@ else {
 		</div>
 	</div>
     <?php } ?>
-	<div class="whcom_domain_form_item_container">
+    <?php $hide_domain_owned_option = $_SESSION['hide_domain_owned_section'] ?>
+    <?php if (strtolower($hide_domain_owned_option) != 'yes'){ ?>
+    <div class="whcom_domain_form_item_container">
 		<div data-accordion="existing_domain" class="whcom_domain_form_item_toggle">
 			<span></span>
 			<?php esc_html_e( 'I already own a Domain', "whcom" ) ?>
@@ -221,5 +223,6 @@ else {
 			</form>
 		</div>
 	</div>
+    <?php } ?>
 </div>
 

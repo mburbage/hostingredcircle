@@ -56,7 +56,7 @@
 <div class="wcop_sp_section_navi">
     <div class="my-button-item">
         <div class="wcop_sp_button">
-            <button type="button" name="prev" class="prev whcom_button_secondary" onclick="Gotoprevious('.sleek_checkout_section')" style="float: left;"><i class="whcom_icon_angle-circled-left"></i> Previous</button>
+            <button type="button" name="prev" class="prev whcom_button_secondary" onclick="Gotoprevious('.sleek_checkout_section')" style="float: left;"><i class="whcom_icon_angle-circled-left"></i> <?php esc_html_e("Previous","whcom") ?> </button>
         </div>
     </div>
 </div>

@@ -197,7 +197,7 @@ else {
 							       name="domain"
 							       title="Domain Name"
 							       id="domain_use"
-							       placeholder="yourdomainname">
+							       placeholder=<?php echo esc_html__("yourdomainname",'whcom') ?> >
 						</div>
 					</div>
 					<div class="whcom_col_sm_2">

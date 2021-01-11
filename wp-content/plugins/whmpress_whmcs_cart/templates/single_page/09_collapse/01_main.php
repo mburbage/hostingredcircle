@@ -150,7 +150,7 @@
 <?php
 $show_prod_desc              = $atts['show_summary_product_description'];
 $promocode                   = $atts['promocode'];
-$hide_group_name             = $atts['hide_group_name_summary'];
+$hide_group_name             = $atts['hide_summary_group_name'];
 $hide_domain_transfer        = $atts['hide_domain_transfer'];
 $_SESSION['hide_domain_transfer_section'] = $hide_domain_transfer;
 $_SESSION['hide_group_name'] = $hide_group_name;

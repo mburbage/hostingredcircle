@@ -81,7 +81,7 @@ if (!function_exists('wcop_sp_process')) {
                                             <?php echo $tld_price; ?>
                                         <?php } ?>
                                     </div>
-                                    <form class="wcop_sp_attach_product_domain whcom_text_center_xs" method="post">
+                                    <form id="wcop_sp_attach_product_domain" class="wcop_sp_attach_product_domain whcom_text_center_xs" method="post">
                                         <input type="hidden" name="action" value="wcop_sp_process">
                                         <input type="hidden" name="wcop_sp_what" value="attach_domain">
                                         <input type="hidden" name="domain"
@@ -210,6 +210,7 @@ if (!function_exists('wcop_sp_process')) {
                     $response['response_html']['billingcycles'] = '';
                     $response['response_html']['configurations'] = '';
                     $wcop_sp_template = !empty($_POST['wcop_sp_template']) ? $_POST['wcop_sp_template'] : '';
+                    $hide_server_fields = !empty($_POST['hide_server_fields']) ? $_POST['hide_server_fields'] : '';
                     if (!empty($_POST['pid'])) {
                         $product_details = whcom_get_product_details((int)$_POST['pid']);
                         $default_billingcycle = (!empty($_POST['default_billingcycle'])) ? esc_attr($_POST['default_billingcycle']) : '';
@@ -283,13 +284,14 @@ if (!function_exists('wcop_sp_process')) {
                                                 </div>
                                             </div>
                                         <?php } else { ?>
+                                        <?php if(isset($hide_server_fields) && $hide_server_fields != 'yes'){ ?>
                                             <div class="wcop_sp_server_options_container wcop_sp_product_config_block">
                                                 <div class="whcom_sub_heading_style_1">
                                                     <span><?php esc_html_e('Server Options', 'whcom') ?></span>
                                                 </div>
                                                 <?php echo whcom_render_server_specific_fields(); ?>
                                             </div>
-                                        <?php }
+                                        <?php } }
                                     } ?>
                                     <?php if (!empty($product_details['custom_fields'])) { ?>
                                         <?php if ($wcop_sp_template == '10_server') { ?>
@@ -309,7 +311,7 @@ if (!function_exists('wcop_sp_process')) {
                                                 </div>
                                                 <?php echo whcom_render_product_custom_fields($product_details); ?>
                                             </div>
-                                        <?php }
+                                        <?php  }
                                     } ?>
                                 </div>
                             <?php } ?>
@@ -431,11 +433,19 @@ if (!function_exists('wcop_sp_process')) {
                                         $field = 'order_complete_redirect' . whcom_get_current_language();
                                         $response_data['redirect_link'] = '<a href="' . esc_attr(get_option($field)) . '" class="whcom_button">' . esc_html__('Dashboard', "whcom") . '</a> ';
 
-
                                         $args = [
+                                            'action' => 'CreateSsoToken',
+                                            'client_id' => $client_id,
+                                            'destination' => 'sso:custom_redirect',
+                                            'sso_redirect_path' => "viewinvoice.php?wcap_no_redirect=1&id=" . $response['invoiceid']
+                                        ];
+
+                                        $sso_result = whcom_process_api($args);
+                                        $url = $sso_result["redirect_url"];
+                                        /*$args = [
                                             'goto' => "viewinvoice.php?wcap_no_redirect=1&id=" . $response['invoiceid'],
                                         ];
-                                        $url = whcom_generate_auto_auth_link($args);
+                                        $url = whcom_generate_auto_auth_link($args);*/
 
                                         $order_complete_url = get_option('order_complete_redirect' . whcom_get_current_language(), home_url('/'));
 

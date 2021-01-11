@@ -28,11 +28,11 @@ else { ?>
             <div class="whcom_row">
                 <div class="whcom_col_sm_6 whcom_client-area">
                     <div class="whcom_tabs_content active" id="wcop_sp_register_account">
-                        <div class="login-heading-title"> Register New Account</div>
+                        <div class="login-heading-title"> <?php esc_html_e("Register New Account","whcom") ?></div>
                         <?php echo whcom_render_register_form_fields('client_'); ?>
                     </div>
                     <div class="whcom_tabs_content wcop_login_form" id="wcop_sp_user_login">
-                        <div class="login-heading-title">Login Here</div>
+                        <div class="login-heading-title"> <?php esc_html_e("Login Here","whcom") ?> </div>
                         <?php echo whcom_render_login_form_fields(); ?>
                     </div>
                     <?php echo wcop_sp_render_payment_selection(); ?>
@@ -40,24 +40,24 @@ else { ?>
                 <div class="whcom_col_sm_6 whcom_client-area">
                     <div class="whcom_tabs_content" style="display: block">
                         <div class="login-tab-1">
-                            <div class="login-heading-title">I am New Here</div>
+                            <div class="login-heading-title"><?php esc_html_e("I am New Here","whcom") ?></div>
                             <div class="login-new-account">
-                                Create account to:
+                                <?php esc_html_e("Create account to","whcom") ?>:
                                 <ul>
-                                    <li>Place new orders</li>
-                                    <li>Get access to ticketing system</li>
-                                    <li>Track your existing orders</li>
+                                    <li> <?php esc_html_e("Place new orders","whcom") ?> </li>
+                                    <li> <?php esc_html_e("Get access to ticketing system","whcom") ?> </li>
+                                    <li> <?php esc_html_e("Track your existing orders","whcom") ?></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="login-tab-2 selected">
-                            <div class="login-heading-title">I am Already Customer</div>
+                            <div class="login-heading-title"> <?php esc_html_e("I am Already Customer","whcom") ?> </div>
                             <div class="login-new-account">
-                                Use your existing account to
+                                <?php esc_html_e("Use your existing account to","whcom") ?>
                             <ul>
-                                <li>Manage your services</li>
-                                <li>Manage your orders</li>
-                                <li>Manage your bills and payment methods</li>
+                                <li> <?php esc_html_e("Manage your services","whcom") ?> </li>
+                                <li> <?php esc_html_e("Manage your orders","whcom") ?> </li>
+                                <li> <?php esc_html_e("Manage your bills and payment methods","whcom") ?> </li>
                             </ul>
                         </div>
                         </div>
@@ -90,9 +90,9 @@ else { ?>
 <div class="wcop_sp_section_navi">
     <div class="my-button-item">
         <div class="wcop_sp_button">
-            <button type="button" name="prev" class="prev whcom_button_secondary" onclick="Gotoprevious('.sleek_billing_info_section')" style="float: left;"><i class="whcom_icon_angle-circled-left"></i> Previous</button>
+            <button type="button" name="prev" class="prev whcom_button_secondary" onclick="Gotoprevious('.sleek_billing_info_section')" style="float: left;"><i class="whcom_icon_angle-circled-left"></i> <?php esc_html_e("Previous","whcom") ?> </button>
 
-            <button type="button" name="next" class="next"  value="continue" onclick="Gotonext('.sleek_billing_info_section')" style="float:right;">Next <i class="whcom_icon_angle-circled-right"></i></button>
+            <button type="button" name="next" class="next"  value="continue" onclick="Gotonext('.sleek_billing_info_section')" style="float:right;"> <?php esc_html_e("Next","whcom") ?> <i class="whcom_icon_angle-circled-right"></i></button>
         </div>
     </div>
 </div>

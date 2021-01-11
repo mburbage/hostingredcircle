@@ -9,7 +9,12 @@
 </div>
 <div class="wcop_sp_section_content">
     <?php $taxes_temp = whcom_get_tax_levels(); ?>
-    <div class="wcop_sp_order_summary" id="ease_summary_area"></div>
+    <div class="wcop_sp_order_summary" id="ease_summary_area">
+        <div class='summary-simple-4' style= "padding:10px; min-height: 100px;">
+            <b><?php esc_html_e("Your Cart is empty","whcom") ?></b>
+            <p><?php esc_html_e("Search a domain or choose a service.","whcom") ?></p>
+        </div>
+    </div>
     <?php if ( $taxes_temp['hav_countries'] || empty( get_option( 'whcom_hide_calculate_discount_box', '' ) ) ) { ?>
         <div class="whcom_tabs_container whcom_tabs_fancy_2">
             <ul class="whcom_tab_links whcom_text_center whcom_margin_bottom_0">

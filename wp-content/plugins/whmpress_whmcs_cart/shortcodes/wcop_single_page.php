@@ -18,43 +18,48 @@ else {
 }
 
 $atts = shortcode_atts( [
-	'currency_id'                      => ( isset( $_REQUEST['currency'] ) && is_integer( intval( $_REQUEST['currency'] ) ) ) ? $_REQUEST['currency'] : whcom_get_current_currency_id(),
-	'billingcycle'                     => ( ! empty( $_REQUEST['billingcycle'] ) ) ? esc_attr( $_REQUEST['billingcycle'] ) : '',
+	'currency_id'                      => wcop_param_value('currency','cid','int',whcom_get_current_currency_id()),
+	'billingcycle'                     => wcop_param_value('billingcycle','bicy','string'),
 	'affiliate_id'                     => ( isset( $_REQUEST['affiliate_id'] ) && is_string( $_REQUEST['affiliate_id'] ) ) ? $_REQUEST['affiliate_id'] : '',
 	'domain_products'                  => ( ! empty( $_REQUEST['dp'] ) && strtolower( $_REQUEST['dp'] ) == 'yes' ) ? true : false,
-	'hide_navigation'                  => ( isset( $_REQUEST['hide_navigation'] ) && is_string( $_REQUEST['hide_navigation'] ) ) ? $_REQUEST['hide_navigation'] : '',
-	'hide_domain'                      => ( isset( $_REQUEST['hide_domain'] ) && is_string( $_REQUEST['hide_domain'] ) ) ? $_REQUEST['hide_domain'] : '',
-	'hide_domain_transfer'             => ( isset( $_REQUEST['hide_domain_transfer'] ) && is_string( $_REQUEST['hide_domain_transfer'] ) ) ? $_REQUEST['hide_domain_transfer'] : '',
-	'hide_domain_configuration'        => ( isset( $_REQUEST['hide_domain_configuration'] ) && is_string( $_REQUEST['hide_domain_configuration'] ) ) ? $_REQUEST['hide_domain_configuration'] : '',
-	'hide_product'                     => '',
-	'hide_additional_services'         => ( isset( $_REQUEST['hide_additional_services'] ) && is_string( $_REQUEST['hide_additional_services'] ) ) ? strtolower($_REQUEST['hide_additional_services']) : '',
-	'hide_promo'                       => ( isset( $_REQUEST['hide_promo'] ) ) ? strtolower($_REQUEST['hide_promo']) : '',
+	'hide_navigation'                  => wcop_param_value('hide_navigation','hn','string'),
+	'hide_domain'                      => wcop_param_value('hide_domain','hd','string'),
+	'hide_domain_transfer'             => wcop_param_value('hide_domain_transfer','hdt','string'),
+    'hide_domain_owned'                => wcop_param_value('hide_domain_owned','hdo','string'),
+	'hide_domain_configuration'        => wcop_param_value('hide_domain_configuration','hdc','string'),
+	'hide_product'                     => wcop_param_value('hide_product','hp','string'),
+	'hide_additional_services'         => wcop_param_value('hide_additional_services','has','string'),
+	'hide_promo'                       => wcop_param_value('hide_promo','hpc','string'),
 	'gids'                             => ( isset( $_REQUEST['gids'] ) && is_string( $_REQUEST['gids'] ) ) ? $_REQUEST['gids'] : '',
 	'pids'                             => ( isset( $_REQUEST['pids'] ) && is_string( $_REQUEST['pids'] ) ) ? $_REQUEST['pids'] : '',
-	'style'                            => ( isset( $_REQUEST['style'] ) && is_string( $_REQUEST['style'] ) ) ? $_REQUEST['style'] : '01_default',
+	'style'                            => wcop_param_value('style','st','string','01_default'),
     //== copy all elegant parameters to core
     'pid'                              => ( isset( $_REQUEST['pid'] ) && is_integer( intval( $_REQUEST['pid'] ) ) ) ? $_REQUEST['pid'] : '0',
-    'promocode'                        => (!empty($_REQUEST['promocode'])) ? esc_attr($_REQUEST['promocode']) : '',
-    'hide_selected_product'            => isset( $_REQUEST['hide_selected_product'] )? strtolower($_REQUEST['hide_selected_product']) : '',
-    'show_summary_product_description' => isset( $_REQUEST['show_summary_product_description'] )? strtolower($_REQUEST['show_summary_product_description']) : '',
-    'hosting_section_title'            => ( isset( $_REQUEST['hosting_section_title'] ) && is_string( $_REQUEST['hosting_section_title'] ) ) ? $_REQUEST['hosting_section_title'] : '',
-    'addon_section_title'              => ( isset( $_REQUEST['addon_section_title'] ) && is_string( $_REQUEST['addon_section_title'] ) ) ? $_REQUEST['addon_section_title'] : '',
-    'hide_group_name_summary'          => ( isset( $_REQUEST['hide_group_name_summary'] ) ) ? strtolower($_REQUEST['hide_group_name_summary']) : '',
-    'post_load_login_form'              => ( isset( $_REQUEST['post_load_login_form'] ) ) ? strtolower($_REQUEST['post_load_login_form']) : 'no',
+    'promocode'                        => wcop_param_value('promocode','pc','string'),
+    'hide_selected_product_section'    => wcop_param_value('hide_selected_product_section','hsps','string'),
+    'hide_selected_product'            => wcop_param_value('hide_selected_product','hsp','string'),
+    'show_summary_product_description' => wcop_param_value('show_summary_product_description','spds','string'),
+    'hosting_section_title'            => wcop_param_value('hosting_section_title','hst','string'),
+    'addon_section_title'              => wcop_param_value('addon_section_title','ast','string'),
+    'hide_summary_group_name'          => wcop_param_value('hide_summary_group_name','hsgn','string'),
+    'post_load_login_form'             => wcop_param_value('post_load_login_form','pllf','string'),
+    'hide_server_fields'               => wcop_param_value('hide_server_fields','hsf','string'),
+    'show_domain_nameservers'          => wcop_param_value('show_domain_nameservers','sdn','string'),
+    'hide_hosting_section_title'       => wcop_param_value('hide_hosting_section_title','hhst','string'),
 ], $atts );
 
 extract( $atts );
 $currency_id = whcom_validate_currency_id( $currency_id );
 whcom_update_current_currency( $currency_id ); ?>
 <?php
-$file = wcop_get_template_directory() . '/templates/single_page/' . $style . '/01_main.php';
+$file = wcop_get_template_directory() . '/templates/single_page/' . $atts["style"] . '/01_main.php';
 if ( is_file( $file ) ) {
 	require $file;
 }
 else {
 	require wcop_get_template_directory() . '/templates/single_page/01_default/01_main.php';
 }
-if($style == '08_elegant') {
+if($atts["style"] == '08_elegant') {
     require_once WCOP_PATH . '/skeleton.html';
     ?>
     <script>
